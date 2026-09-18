@@ -1,0 +1,38 @@
+# Crowdin configuration for the Procurement Checklist using the MIMs.
+#
+# WHAT TRANSLATORS SEE
+#   booklet/content/en.json, the English master. It holds translatable text only,
+#   including "quote_translations" and "capability_translations": the full text
+#   of every requirement and capability heading in the specification.
+#   Non-English editions print the translation above the verbatim English original.
+#
+# WHAT NEVER GOES TO CROWDIN
+#   booklet/content/shared.json   spec URLs, requirement references (MIM0 R1.1),
+#                                 tool names: identical in every language
+#   booklet/content/quotes.json   the verbatim English quotes (normative reference)
+#
+# TARGET LANGUAGES are chosen in the Crowdin project, not here. The 23 other
+# official EU languages all have distinct two-letter codes:
+#   bg cs da de el es et fi fr ga hr hu it lt lv mt nl pl pt ro sk sl sv
+# Use "Portuguese" (pt-PT), not Brazilian: both would export to pt.json.
+# The booklet font (Inter) covers Latin, Greek and Cyrillic. Any other script
+# needs a font added to style.typ first; check_content.py reports missing glyphs.
+#
+# AFTER EXPORT
+#   Crowdin writes booklet/content/<xx>.json. build.sh validates every language
+#   (check_content.py) and builds a PDF and a DOCX for each one it finds.
+#   Untranslated strings are exported in English, so a half-done language still
+#   builds; the validator counts them as a warning.
+#
+# Credentials for the CLI come from the environment, never from this file:
+#   CROWDIN_PROJECT_ID, CROWDIN_PERSONAL_TOKEN
+
+project_id_env: CROWDIN_PROJECT_ID
+api_token_env: CROWDIN_PERSONAL_TOKEN
+preserve_hierarchy: true
+
+files:
+  - source: /booklet/content/en.json
+    translation: /booklet/content/%two_letters_code%.json
+    type: json
+    skip_untranslated_strings: false

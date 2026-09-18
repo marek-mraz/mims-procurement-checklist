@@ -1,0 +1,69 @@
+{
+  "_about": "Language-neutral data: never sent to Crowdin. Per MIM: the spec URL and the requirement references of its checklist items (same order as mims.<id>.items in the language files).",
+  "sheet_url": "",
+  "mims": {
+    "MIM0": {
+      "url": "https://mims.oascities.org/accessing-data",
+      "refs": [
+        "MIM0 R1.1, R1.2",
+        "MIM0 R1.3",
+        "MIM0 R2.1, R2.2",
+        "MIM0 R3.1",
+        "MIM0 C2"
+      ]
+    },
+    "MIM1": {
+      "url": "https://mims.oascities.org/interlinking-data",
+      "refs": [
+        "MIM1 R1.1, R1.5",
+        "MIM1 R1.2, R2.1, R2.2",
+        "MIM1 R1.3, R1.4",
+        "MIM1 M1 §3.1"
+      ]
+    },
+    "MIM2": {
+      "url": "https://mims.oascities.org/representing-data",
+      "refs": [
+        "MIM2 R1.2a",
+        "MIM2 R1.1",
+        "MIM2 R1.2b, R4.1, R4.2",
+        "MIM2 R3.1, R3.4"
+      ]
+    },
+    "MIM3": {
+      "url": "https://mims.oascities.org/exchanging-data",
+      "refs": [
+        "MIM3 RC4.1–RC4.3",
+        "MIM3 RC2.2, RC2.3",
+        "MIM3 RC1.1, RC2.1"
+      ]
+    },
+    "MIM6": {
+      "url": "https://mims.oascities.org/securing-data",
+      "refs": [
+        "MIM6 R2.1, M1.1",
+        "MIM6 R3.1, M1.2, M1.3",
+        "MIM6 R1.1, R1.3, 8.15",
+        "MIM6 C1–C3 (ISO/IEC 27001)"
+      ]
+    },
+    "MIM7": {
+      "url": "https://mims.oascities.org/geospatial-data",
+      "refs": [
+        "MIM7 R1.1",
+        "MIM7 R2.1",
+        "MIM7 R5.1",
+        "MIM7 R4.1"
+      ]
+    },
+    "MIM8": {
+      "url": "https://mims.oascities.org/local-digital-twins",
+      "refs": [
+        "MIM8 R1.1",
+        "MIM8 R3.1, R3.2",
+        "MIM8 M2",
+        "MIM8 R4.4"
+      ]
+    }
+  }
+}

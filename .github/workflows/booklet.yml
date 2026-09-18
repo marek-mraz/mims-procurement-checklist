@@ -1,0 +1,85 @@
+# Builds the booklet with ./build.sh, the same script you run locally.
+# Every run validates all languages first (booklet/check_content.py): a broken
+# or overflowing translation fails the run before any PDF is made.
+#
+#   any other branch,   -> draft build, files as a run artifact only (open the run,
+#   pull request           download "mims-booklet-…"): check a fix before it reaches dev
+#   dev                 -> draft build (faint DRAFT on every page), on GitHub Pages as
+#                          MIMs-draft-<xx>.pdf / .docx
+#   main                -> edition "9.0.2": tag v9.0.2 + GitHub release with the files
+#                          MIMs-9.0.2-<xx>.pdf / .docx; on Pages only as
+#                          MIMs-latest-<xx>.pdf / .docx
+#   release/<n>         -> tag + GitHub release for an older MIMs Plus version that still
+#                          gets fixes (booklet/VERSION on that branch says 8.0):
+#                          MIMs-8.0.3-<xx>.pdf, never on Pages
+#
+# Pages is served from the branch gh-pages (Settings -> Pages -> Deploy from a
+# branch -> gh-pages, once) and holds only the draft and the latest edition.
+#
+# Work on dev, open a pull request dev -> main, merge = publish.
+name: booklet
+
+on:
+  push:
+    branches: ["**"]             # every branch builds; dev and main publish to Pages
+    paths: ["booklet/**", "build.sh", ".github/workflows/booklet.yml"]
+  pull_request:
+    paths: ["booklet/**", "build.sh", ".github/workflows/booklet.yml"]
+  workflow_dispatch:
+
+concurrency:
+  group: booklet-${{ github.ref }}
+  cancel-in-progress: false      # never cancel a release half way
+
+jobs:
+  build:
+    # a pull request from a branch of this repository was already built by its push
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write          # only used to tag and publish a release
+    env:
+      RELEASE: ${{ github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/')) && '1' || '0' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0         # version.sh counts the v9.0.* tags
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache typst, Inter and the Python venv
+        uses: actions/cache@v4
+        with:
+          path: booklet/tools
+          key: booklet-tools-${{ runner.os }}-${{ hashFiles('build.sh') }}
+
+      - name: Validate and build all languages
+        run: |
+          echo "BOOKLET_VERSION=$(booklet/version.sh)" >> "$GITHUB_ENV"
+          ./build.sh
+
+      - name: Warn when booklet/readable was not regenerated before the commit
+        run: git diff --quiet -- booklet/readable || echo "::warning::booklet/readable is stale. Run ./build.sh and commit the result."
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mims-booklet-${{ env.BOOKLET_VERSION }}
+          path: |
+            MIMs-*.pdf
+            MIMs-*.docx
+          if-no-files-found: error
+
+      - name: Tag and publish the edition
+        if: env.RELEASE == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "v$BOOKLET_VERSION" MIMs-"$BOOKLET_VERSION"-* \
+            --target "$GITHUB_SHA" --title "MIMs booklet $BOOKLET_VERSION" --generate-notes \
+            --latest=${{ github.ref == 'refs/heads/main' }}
+
+      - name: Publish to GitHub Pages (dev -> draft, main -> latest)
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/main')
+        run: booklet/pages.sh

@@ -1,0 +1,595 @@
+{
+  "MIM0": [
+    {
+      "cap": "MIM0 · C1",
+      "title": "Machine-readable data is retrievable through the web",
+      "quotes": [
+        {
+          "id": "MIM0 · R1.1",
+          "en": "Systems SHALL allow retrieval of data in at least one machine-readable format. Formats can be specified through HTTP Content-Negotiation"
+        },
+        {
+          "id": "MIM0 · R1.2",
+          "en": "Data SHALL be retrievable via at least one standard web-based mechanism"
+        },
+        {
+          "id": "MIM0 · R1.3",
+          "en": "Access mechanism(s) SHALL be formally described"
+        },
+        {
+          "id": "MIM0 · R1.4",
+          "en": "Data Models used by payloads should be specified (see MIM2)"
+        }
+      ]
+    },
+    {
+      "cap": "MIM0 · C2",
+      "title": "Access is structured and queryable",
+      "quotes": [
+        {
+          "id": "MIM0 · R2.1",
+          "en": "Systems SHALL provide data through a structured and consistent interface"
+        },
+        {
+          "id": "MIM0 · R2.2",
+          "en": "Systems SHALL support basic querying and/or filtering (e.g. by time, location, attributes)"
+        }
+      ]
+    },
+    {
+      "cap": "MIM0 · C2 best practice",
+      "title": "Additional best practice to consider:",
+      "sub": true,
+      "quotes": [
+        {
+          "id": "MIM0 · C2",
+          "en": "APIs SHOULD support retrieval of current data · APIs SHOULD support retrieval of historical data when applicable · APIs SHOULD support geospatial querying when applicable (see MIM7) · APIs SHOULD support subscription to changes when applicable · APIs SHOULD expose next expected update timestamp · APIs SHOULD support explicit versioning of endpoints · APIs SHOULD provide example payloads or test queries · APIs SHOULD support standard HTTP caching headers · APIs SHOULD communicate rate limit status via standard HTTP headers · APIs SHOULD return structured error bodies · APIs MAY support partial responses or query projections · APIs MAY expose a standard health/status endpoint"
+        }
+      ]
+    },
+    {
+      "cap": "MIM0 · C3",
+      "title": "Changes in data can be subscribed to",
+      "quotes": [
+        {
+          "id": "MIM0 · R3.1",
+          "en": "Systems for use cases that require notifications SHALL provide at least one mechanism to receive updates on data changes"
+        },
+        {
+          "id": "MIM0 · R3.2",
+          "en": "Systems MAY support multiple subscription mechanisms depending on use case"
+        }
+      ]
+    },
+    {
+      "cap": "MIM0 · C4",
+      "title": "Access to information can be restricted",
+      "quotes": [
+        {
+          "id": "MIM0 · C4",
+          "en": "If such restrictions are in place, they SHALL follow the requirements defined in MIM3 and MIM6, specifically: actor identification (MIM3.C5.R0), authorization and actor roles (MIM6.C1.R4), data asset-level policies (MIM6.C1.R4)"
+        }
+      ]
+    }
+  ],
+  "MIM1": [
+    {
+      "cap": "MIM1 · C1",
+      "title": "Entities are identified using unique identifiers",
+      "quotes": [
+        {
+          "id": "MIM1 · R1.1",
+          "en": "Every entity within the system has a unique identifier"
+        },
+        {
+          "id": "MIM1 · R1.2",
+          "en": "There exists a way to retrieve information about an entity by looking up the identifier within a system"
+        },
+        {
+          "id": "MIM1 · R1.3",
+          "en": "if a unique identifier points to the same entity within multiple systems, it is possible to derive the way to look up information about it in each of these systems"
+        },
+        {
+          "id": "MIM1 · R1.4",
+          "en": "if a multiple [sic] unique identifiers point to the same entity, it is possible to map them"
+        },
+        {
+          "id": "MIM1 · R1.5",
+          "en": "It is possible to create identifiers that are persistent over time"
+        }
+      ]
+    },
+    {
+      "cap": "MIM1 · C2",
+      "title": "Entities can be typed",
+      "quotes": [
+        {
+          "id": "MIM1 · R2.1",
+          "en": "There is a way to retreive [sic] the semantics of an entity, only using its unique identifier"
+        },
+        {
+          "id": "MIM1 · R2.2",
+          "en": "These semantics are described in a machine-readable format"
+        }
+      ]
+    },
+    {
+      "cap": "MIM1 · C3",
+      "title": "Entities can be (de)referenced",
+      "quotes": [
+        {
+          "id": "MIM1 · R3.1",
+          "en": "There exists a way to dereference a relation defined on an entity"
+        },
+        {
+          "id": "MIM1 · R3.2",
+          "en": "There exists a way to apply additional semantics to an existing ontology"
+        }
+      ]
+    },
+    {
+      "cap": "MIM1 · M1",
+      "title": "Mechanism 1, section 3.1: Entity Identification with Globally Unique IRIs",
+      "quotes": [
+        {
+          "id": "MIM1 · §3.1",
+          "en": "The IRI is treated as the canonical identifier in all downstream systems; implementations MUST NOT generate IRIs that embed volatile implementation details such as database row IDs or server hostnames."
+        }
+      ]
+    }
+  ],
+  "MIM2": [
+    {
+      "cap": "MIM2 · C1",
+      "title": "All entities included in data sources are described using consistent data models to enable interoperability for applications and systems",
+      "quotes": [
+        {
+          "id": "MIM2 · R1.1",
+          "en": "Data models used for all entities in any data source shall be made explicit. They shall be well documented and have descriptive metadata, where the terms used shall be semantically unambiguous. For attributes related to units of measurement, time formats etc, the units, formats etc, used shall be made explicit. The data models should be catalogued so that they can be easily findable."
+        },
+        {
+          "id": "MIM2 · R1.2a",
+          "en": "Data models used shall be based (wherever possible) on commonly recognised standardised data models as listed below"
+        },
+        {
+          "id": "MIM2 · R1.2b",
+          "en": "Where it is not possible to use existing standardised data models, efforts shall be made to extend existing standardised data models that are most closely aligned or to define new ones, following best practice and conventions of the community or organisation defining the data models."
+        },
+        {
+          "id": "MIM2 · R1.3",
+          "en": "Data models used shall support the exchange of data by using the relevant requirements of the MIMs on Accessing data and Interlinking data"
+        }
+      ]
+    },
+    {
+      "cap": "MIM2 · C2",
+      "title": "Different data models for the same entity that are used within a common data sharing ecosystem should be easily transformable into a common data model",
+      "quotes": [
+        {
+          "id": "MIM2 · R2.1",
+          "en": "A common data model for each key entity should be developed for any data ecosystem. That common data model should contain all the fields included within the different data models for that entity that are used within that data ecosystem. Each different data model used within that data ecosystem could then be transformed into the common data model."
+        }
+      ]
+    },
+    {
+      "cap": "MIM2 · C3",
+      "title": "Any data and its associated metadata can be shared in open, standardised, data transport formats so that data can be exchanged and interpreted consistently by different tools and implementations",
+      "quotes": [
+        {
+          "id": "MIM2 · R3.1",
+          "en": "Each data model used shall have at least one defined machine-readable data transport format (“serialisation”) that is open, publicly available and implementation-independent."
+        },
+        {
+          "id": "MIM2 · R3.2",
+          "en": "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor that is able to reconstruct all the data stored in such a data format."
+        },
+        {
+          "id": "MIM2 · R3.3",
+          "en": "Where multiple data transport formats are supported for the same data model, they shall represent the same information content consistently and without loss of meaning."
+        },
+        {
+          "id": "MIM2 · R3.4",
+          "en": "The representation should support validation using openly published schemas, grammars, or equivalent machine-readable constraints, where such validation mechanisms exist for the chosen format."
+        }
+      ]
+    },
+    {
+      "cap": "MIM2 · C4",
+      "title": "When useful, it should be possible to create \"Application Profiles\" for a data model, so that use case specific attributes can be added or specified without changing the underlying data model",
+      "quotes": [
+        {
+          "id": "MIM2 · R4.1",
+          "en": "Application Profiles that extend a data model should not impact the already existing model and its users"
+        },
+        {
+          "id": "MIM2 · R4.2",
+          "en": "The specialisations or extensions introduced in the Application Profile of the model should be well documented, separate from the base data model"
+        }
+      ]
+    }
+  ],
+  "MIM3": [
+    {
+      "cap": "MIM3 · C1",
+      "title": "Governance rules for the data sharing ecosystem can be defined",
+      "quotes": [
+        {
+          "id": "MIM3 · RC1.1",
+          "en": "The orchestrator of a data ecosystem should be able to define a governance model (e.g. a rulebook) that outlines membership rules, the roles, responsibilities and obligations of ecosystem participants, and the overall principles that govern data exchange between them."
+        },
+        {
+          "id": "MIM3 · RC1.2",
+          "en": "Members who participate in a data ecosystem should be aware of its governance model and any changes made to it."
+        },
+        {
+          "id": "MIM3 · RC1.3",
+          "en": "The governance model should be easily comprehensible by all ecosystem participants."
+        }
+      ]
+    },
+    {
+      "cap": "MIM3 · C2",
+      "title": "Terms and conditions for data sharing can be defined",
+      "quotes": [
+        {
+          "id": "MIM3 · RC2.1",
+          "en": "Data providers are free to define terms and conditions under which they want their data to be exchanged. (Note: Before sharing data assets, data providers should ensure they have adequate permission from data owners.)"
+        },
+        {
+          "id": "MIM3 · RC2.2",
+          "en": "Terms and conditions for a data exchange should be described clearly and unambiguously so that they are easily understandable for data users."
+        },
+        {
+          "id": "MIM3 · RC2.3",
+          "en": "Terms and conditions for a data exchange should be expressed through data licences or data sharing agreements based on well-defined templates or standards."
+        },
+        {
+          "id": "MIM3 · RC2.4",
+          "en": "Terms and conditions should be in line with the overall governance model of the data ecosystem and must not conflict with it. (Note: A data provider can decide not to participate in a data ecosystem if the underlying governance model is too restrictive or too permissive.)"
+        }
+      ]
+    },
+    {
+      "cap": "MIM3 · C3",
+      "title": "Compliance with data sharing terms and conditions can be validated",
+      "quotes": [
+        {
+          "id": "MIM3 · RC3.1",
+          "en": "The orchestrator of a data ecosystem must be able to ascertain compliance of its participants with the underlying governance model."
+        },
+        {
+          "id": "MIM3 · RC3.2",
+          "en": "Data providers should be able to ascertain that the use of data by a data user complies with previously agreed-upon terms and conditions."
+        },
+        {
+          "id": "MIM3 · RC3.3",
+          "en": "Data users should be able to ascertain that the data provider's supply of data follows previously agreed-upon terms and conditions."
+        }
+      ]
+    },
+    {
+      "cap": "MIM3 · C4",
+      "title": "Available data assets can be discovered",
+      "quotes": [
+        {
+          "id": "MIM3 · RC4.1",
+          "en": "Data users should be able to discover what data is available in a data sharing ecosystem without prior knowledge of it."
+        },
+        {
+          "id": "MIM3 · RC4.2",
+          "en": "Data assets should be adequately described with metadata so that data users can make reliable decisions about their further intended use."
+        },
+        {
+          "id": "MIM3 · RC4.3",
+          "en": "Metadata used to describe data assets should be based on well-defined, easy-to-understand description formats that are both human- and machine-readable."
+        }
+      ]
+    },
+    {
+      "cap": "MIM3 · C5",
+      "title": "Ecosystem participants can be discovered",
+      "quotes": [
+        {
+          "id": "MIM3 · RC5.1",
+          "en": "Ecosystem participants (e.g. data users and providers) should be able to discover each other within a data-sharing ecosystem."
+        },
+        {
+          "id": "MIM3 · RC5.2",
+          "en": "Sufficient metadata about each ecosystem participant should be available to ascertain their trustworthiness relevant for data exchange."
+        },
+        {
+          "id": "MIM3 · RC5.3",
+          "en": "Data providers should be able to reliably identify data users who want to access their data assets and verify their metadata before granting access."
+        },
+        {
+          "id": "MIM3 · RC5.4",
+          "en": "Data users should be able to identify data providers who share data in a data ecosystem before accessing or using that data."
+        },
+        {
+          "id": "MIM3 · RC5.5",
+          "en": "Ecosystem participants may also choose to remain anonymous if the governance model of the data-sharing ecosystem allows for it. In this case, RC5.1 to RC5.4 can be ignored."
+        }
+      ]
+    },
+    {
+      "cap": "MIM3 · C6",
+      "title": "Data exchange can be agreed upon",
+      "quotes": [
+        {
+          "id": "MIM3 · RC6.1",
+          "en": "Data users and providers should be able to agree to a data exchange and the terms and conditions associated with it (e.g. acceptance of terms, legal signature of an agreement, or negotiation)."
+        },
+        {
+          "id": "MIM3 · RC6.2",
+          "en": "Data users and providers should be able to terminate a previously agreed-upon data exchange in accordance with the terms and conditions associated with it."
+        },
+        {
+          "id": "MIM3 · RC6.3",
+          "en": "Where possible, electronic means for the agreement and termination of a data exchange may be provided."
+        }
+      ]
+    },
+    {
+      "cap": "MIM3 · C7",
+      "title": "New data currently not available can be requested",
+      "quotes": [
+        {
+          "id": "MIM3 · RC7.1",
+          "en": "Data users should be able to express their interest in data assets currently unavailable in the data sharing ecosystem."
+        },
+        {
+          "id": "MIM3 · RC7.2",
+          "en": "Data providers should be able to obtain requests made by data users for new data assets."
+        }
+      ]
+    }
+  ],
+  "MIM6": [
+    {
+      "cap": "MIM6 · C1",
+      "title": "Data is only accessible to users that should have access to it",
+      "quotes": [
+        {
+          "id": "MIM6 · R1.1",
+          "en": "Rules to control physical and logical access to information and other associated assets SHALL be established and implemented based on business and information security requirements. (ISO 27001 5.15 Access control)"
+        },
+        {
+          "id": "MIM6 · R1.2",
+          "en": "Allocation and management of authentication information SHALL be controlled by a management process, including advising personnel on appropriate handling of authentication information. (ISO 27001 5.17: Authentication information)"
+        },
+        {
+          "id": "MIM6 · R1.3",
+          "en": "Access rights to information and other associated assets SHALL be provisioned, reviewed, modified and removed in accordance with the organization’s topic-specific policy on and rules for access control. (ISO 27001 5.18: Access rights)"
+        }
+      ]
+    },
+    {
+      "cap": "MIM6 · C2",
+      "title": "Data accessed by users has not been altered",
+      "quotes": [
+        {
+          "id": "MIM6 · R2.1",
+          "en": "Rules for the effective use of cryptography, including cryptographic key management, SHALL be defined and implemented. (ISO 27001 8.24 Use of cryptography)"
+        }
+      ]
+    },
+    {
+      "cap": "MIM6 · C3",
+      "title": "Data accessed by users originates from a verified source",
+      "quotes": [
+        {
+          "id": "MIM6 · R3.1",
+          "en": "Secure authentication technologies and procedures shall be implemented based on information access restrictions and the topic-specific policy on access control. (ISO 27001 8.5 Secure authentication)"
+        }
+      ]
+    },
+    {
+      "cap": "MIM6 · M1",
+      "title": "Mechanism candidate",
+      "quotes": [
+        {
+          "id": "MIM6 · M1.1",
+          "en": "The Transport Layer Security (TLS) Protocol, Version 1.3"
+        },
+        {
+          "id": "MIM6 · M1.2",
+          "en": "The OAuth 2.0 Authorization Framework"
+        },
+        {
+          "id": "MIM6 · M1.3",
+          "en": "OpenID Connect 1.0, Identity layer for authentication on OAuth 2.0"
+        },
+        {
+          "id": "MIM6 · M1.4",
+          "en": "OIDC4VCI / OIDC4VP, OpenID for Verifiable Credential Issuance and Presentations"
+        }
+      ]
+    },
+    {
+      "cap": "MIM6 · P",
+      "title": "Pre- and Post-requisites (based on ISO 27001 Annex A): the control this booklet refers to",
+      "quotes": [
+        {
+          "id": "MIM6 · 8.15",
+          "en": "Logging. Logs that record activities, exceptions, faults and other relevant events shall be produced, stored, protected and analysed."
+        }
+      ]
+    }
+  ],
+  "MIM7": [
+    {
+      "cap": "MIM7 · C1",
+      "title": "Cities and communities can easily transfer geospatial data between internal and external (including IoT-related) IT systems",
+      "quotes": [
+        {
+          "id": "MIM7 · R1.1",
+          "en": "Geospatial data shall be exposed through a standards-based web service interface."
+        }
+      ]
+    },
+    {
+      "cap": "MIM7 · C2",
+      "title": "Cities and communities can integrate 2D and 3D geospatial data coming from a variety of sources, for example geodata and building information models, and share that data within and between them in an interoperable way",
+      "quotes": [
+        {
+          "id": "MIM7 · R2.1",
+          "en": "Geospatial data shall be encoded using open standards. It is recommended to use relevant standards from OGC and BuildingSMART International."
+        }
+      ]
+    },
+    {
+      "cap": "MIM7 · C3",
+      "title": "Cities and communities can integrate geospatial data with other data that can provide further information about the context",
+      "quotes": [
+        {
+          "id": "MIM7 · R3.1",
+          "en": "All data sets used to provide further information about the context covered by geospatial data shall comply with MIM1 and MIM2."
+        }
+      ]
+    },
+    {
+      "cap": "MIM7 · C4",
+      "title": "Cities and communities have a consistent and persistent way of describing individual instances of all features, things or entities included in the geospatial data sources",
+      "quotes": [
+        {
+          "id": "MIM7 · R4.1",
+          "en": "Unique and persistent identifiers shall be used to identify particular instances of any entity used in data sets. (See MIM1: Interlinking Data.)"
+        }
+      ]
+    },
+    {
+      "cap": "MIM7 · C5",
+      "title": "Coordinate Reference Systems (CRS) used in data sharing are easily transformable into a common CRS",
+      "quotes": [
+        {
+          "id": "MIM7 · R5.1",
+          "en": "Coordinate Reference Systems (CRS) shall comply with standards, and information shall be provided regarding which standard (e.g. EPSG:4326, EPSG:3857) is being used. This includes the EPSG number or WGS number, along with information about any variation based on national systems such as the Latvian LKS-92, so that data can be transformed to a common CRS. (Note: Within the EU, for geospatial data it is required to use metadata compliant with the INSPIRE Directive, including the metadata needed to describe the CRS information.)"
+        }
+      ]
+    }
+  ],
+  "MIM8": [
+    {
+      "cap": "MIM8 · C1",
+      "title": "Provide access to datasets used within the LDT, including static, real-time, and simulation data and calculation models",
+      "quotes": [
+        {
+          "id": "MIM8 · R1.1",
+          "en": "The LDT shall provide access to simulation outputs and calculation-model inputs where these are needed as part of LDT workflows."
+        },
+        {
+          "id": "MIM8 · R1.2",
+          "en": "The LDT should distinguish clearly between raw source data, transformed workflow-ready data, model inputs, and model outputs."
+        }
+      ]
+    },
+    {
+      "cap": "MIM8 · C2",
+      "title": "Exchange data with external systems and other LDTs using interoperable interfaces",
+      "quotes": [
+        {
+          "id": "MIM8 · C2",
+          "en": "This capability relies on MIM3 (Exchanging Data) for data exchange."
+        }
+      ]
+    },
+    {
+      "cap": "MIM8 · C3",
+      "title": "Reuse deterministic or AI models across different domains, communities, use cases, and/or LDTs",
+      "quotes": [
+        {
+          "id": "MIM8 · R3.1",
+          "en": "The model should provide standard model metadata, including a description of its methods and parameters, and data-parameters (either by value or by reference). To this end common metadata standards should be used."
+        },
+        {
+          "id": "MIM8 · R3.2",
+          "en": "The model shall expose or be callable through a documented interface, preferably using a known standardised API. The dataset that forms the outcome of the model shall be described (at data-level)."
+        },
+        {
+          "id": "MIM8 · R3.3",
+          "en": "Trustworthy, reliable, and ethical use of innovative methods (LLMs, agentic AI, etc.) should be safeguarded. Bias should minimised [sic] where applicable. The methods used to guarantee this, should be described."
+        },
+        {
+          "id": "MIM8 · R3.4",
+          "en": "The model must be able to access data on behalf of the end-user or organisation. See MIM3"
+        },
+        {
+          "id": "MIM8 · R3.5",
+          "en": "For data to be used in AI models, provenance and trust should be guaranteed. In some cases, an authoratitive sourc [sic], such as a government agency must be listed."
+        }
+      ]
+    },
+    {
+      "cap": "MIM8 · C4",
+      "title": "Coordinate and manage data, models, and processing workflows within an LDT (intra-LDT) and across LDTs (inter-LDT)",
+      "quotes": [
+        {
+          "id": "MIM8 · R4.1",
+          "en": "The LDT supports workflows that connect data sources, data transformations, model execution, simulation processes, and outputs."
+        },
+        {
+          "id": "MIM8 · R4.2",
+          "en": "The LDT chains workflow steps, where the output of one step can be used as the input for another."
+        },
+        {
+          "id": "MIM8 · R4.3",
+          "en": "The LDT monitors workflow execution status, including completed, failed, and interrupted processes."
+        },
+        {
+          "id": "MIM8 · R4.4",
+          "en": "The LDT records workflow provenance, including datasets used (including version, timestamped), models executed, parameters selected, and outputs generated."
+        }
+      ]
+    },
+    {
+      "cap": "MIM8 · C5",
+      "title": "Provide multiple visualisations of data and results (e.g. 2D, 3D, dashboards) from common underlying data and models for interaction and comparison",
+      "quotes": [
+        {
+          "id": "MIM8 · R5.1",
+          "en": "The LDT provides metadata explaining what is visualised, including timestamp, spatial scope, data source, and scenario- and variant-assumptions where relevant."
+        },
+        {
+          "id": "MIM8 · R5.2",
+          "en": "The LDT supports different interactive visualisation types, such as 2D maps, 3D scenes, dashboards, reports, or public-facing views."
+        }
+      ]
+    },
+    {
+      "cap": "MIM8 · C6",
+      "title": "Ensure that data exchanged (and simulation outputs) within and between LDTs can be interpreted consistently through shared or mapped semantics and clear provenance",
+      "quotes": [
+        {
+          "id": "MIM8 · R6.1",
+          "en": "The LDT should document unresolved semantic gaps, assumptions, or mappings that may affect the interpretation, reuse, or comparison of results."
+        }
+      ]
+    },
+    {
+      "cap": "MIM8 · M",
+      "title": "Mechanisms (under active development)",
+      "quotes": [
+        {
+          "id": "MIM8 · M1",
+          "en": "API-based LDT Resource Access"
+        },
+        {
+          "id": "MIM8 · M2",
+          "en": "Standardised Data and Output Formats"
+        },
+        {
+          "id": "MIM8 · M3",
+          "en": "Model-as-a-Service"
+        },
+        {
+          "id": "MIM8 · M4",
+          "en": "LDT Workflow Orchestration"
+        },
+        {
+          "id": "MIM8 · M5",
+          "en": "Multi-view Output and Visualisation Access"
+        }
+      ]
+    }
+  ]
+}

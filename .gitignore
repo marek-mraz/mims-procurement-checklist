@@ -1,0 +1,23 @@
+# downloaded by build.sh: typst binary, Inter fonts, Python venv
+booklet/tools/
+__pycache__/
+site/
+# built booklets: published by the workflow (GitHub Pages + releases), not committed
+MIMs-*.pdf
+MIMs-*.docx
+
+# source material kept locally, not ours to publish: the OASC specification PDFs
+# and clones of the OASC MIM repositories
+mims-plus-*.pdf
+mims-repos/
+
+# working notes and agent instructions, not part of the booklet
+GOAL.md
+PROMPT.md
+goal-command.md
+mims-audit.md
+sprava-kolegom.md
+
+# editor and OS leftovers
+~$*
+.DS_Store
