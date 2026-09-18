@@ -75,8 +75,9 @@ Settings, once:
    through a pull request from `dev`.
 2. Settings → Actions → General → Workflow permissions: "Read and write". The
    workflow creates tags and releases and writes the branch `gh-pages`.
-3. Push to `dev`. The first run creates `gh-pages`. Then Settings → Pages →
-   "Deploy from a branch" → `gh-pages`.
+3. Settings → Pages → Source: "GitHub Actions". Settings → Environments →
+   `github-pages` → Deployment branches: add `dev` next to `main`. The workflow
+   stores the files in the branch `gh-pages` and deploys that branch itself.
 4. Connect Crowdin to the branch `dev` (`crowdin.yml` is in the repository root).
 5. Put the address of the editable compliance table (the DOCX on Pages) into
    `sheet_url` in `booklet/content/shared.json`; the booklet then prints it under

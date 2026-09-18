@@ -13,8 +13,11 @@
 #                          gets fixes (booklet/VERSION on that branch says 8.0):
 #                          MIMs-8.0.3-<xx>.pdf, never on Pages
 #
-# Pages is served from the branch gh-pages (Settings -> Pages -> Deploy from a
-# branch -> gh-pages, once) and holds only the draft and the latest edition.
+# The Pages site holds only the draft and the latest edition, under addresses that never
+# change: https://<owner>.github.io/<repo>/MIMs-latest-<xx>.pdf. The branch gh-pages
+# stores the files (dev and main each add their own); the job "pages" deploys that branch.
+# Once: Settings -> Pages -> Source "GitHub Actions"; Settings -> Environments ->
+# github-pages -> Deployment branches: add "dev" next to "main".
 #
 # Work on dev, open a pull request dev -> main, merge = publish.
 name: booklet
@@ -80,6 +83,29 @@ jobs:
             --target "$GITHUB_SHA" --title "MIMs booklet $BOOKLET_VERSION" --generate-notes \
             --latest=${{ github.ref == 'refs/heads/main' }}
 
-      - name: Publish to GitHub Pages (dev -> draft, main -> latest)
-        if: github.event_name == 'push' && (github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/main')
+      - name: Store the files in the branch gh-pages (dev -> draft, main -> latest)
+        if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/main')
         run: booklet/pages.sh
+
+  pages:
+    needs: build
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    concurrency:
+      group: pages               # one deployment at a time; each takes gh-pages as it is then
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
