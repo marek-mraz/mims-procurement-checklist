@@ -246,11 +246,7 @@ def build(lang):
         for c in Q[m["id"]]:
             rows = [(True, c["cap"], c["title"], ctr.get(c["cap"]))]
             rows += [(False, q["id"], q["en"], qtr.get(q["id"])) for q in c["quotes"]]
-            notes = L.get("quote_notes", {})
             for cap, rid, en, tr in rows:
-                if rid in notes:                       # remark of the booklet under the text
-                    tr = (tr or en) + "\n" + notes[rid] if two else tr
-                    en = en if two else en + "\n" + notes[rid]
                 cells = st.add_row().cells
                 rid = "" if cap and c.get("sub") else rid      # a heading inside a capability has no code
                 texts = [rid.split(" · ")[-1]] + [t.replace(" · ", "\n") for t in ([tr or en, en] if two else [en])]

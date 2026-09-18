@@ -76,8 +76,7 @@
     spec-page(id: m.id, title: L.spec_title, leadin: L.spec_leadin + if lang != "en" { " " + L.spec_translation_note }, back: L.nav.back)
     spec-list(mim: m.id, ..Q.at(m.id).map(c => (
       capability(short(c.cap), c.title, tr: tr("capability_translations", c.cap), sub: c.at("sub", default: false)),
-      ..c.quotes.map(q => req(short(q.id), en: q.en, tr: tr("quote_translations", q.id),
-        note: L.quote_notes.at(q.id, default: none))))).flatten())
+      ..c.quotes.map(q => req(short(q.id), en: q.en, tr: tr("quote_translations", q.id))))).flatten())
     spec-link(L.spec_link_label, m.url)
   })
   pagebreak()

@@ -810,8 +810,5 @@
     "MIM1 · M1": "Mechanizmus 1, časť 3.1: Identifikácia entít globálne jedinečnými IRI",
     "MIM6 · P": "Predpoklady a nadväzujúce požiadavky (podľa prílohy A normy ISO 27001): opatrenie, na ktoré sa brožúra odvoláva"
   },
-  "spec_link_label": "Celé znenie špecifikácie:",
-  "quote_notes": {
-    "MIM0 · C4": "Poznámka brožúry: požiadavka nemá v špecifikácii vlastný kód. Označenia MIM3.C5.R0 a MIM6.C1.R4 v MIMs Plus 9.0 neexistujú; pravdepodobne ide o pozostatok staršieho číslovania. Najbližšie sú MIM3 RC5.1–RC5.5 a MIM6 R1.1–R1.3."
-  }
+  "spec_link_label": "Celé znenie špecifikácie:"
 }

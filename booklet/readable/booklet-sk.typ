@@ -268,8 +268,7 @@
       tr: "Prístup k informáciám je možné obmedziť"),
     req("C4",
       tr: "Ak sú takéto obmedzenia zavedené, MUSIA sa riadiť požiadavkami definovanými v MIM3 a MIM6, konkrétne: identifikácia aktérov (MIM3.C5.R0), autorizácia a roly aktérov (MIM6.C1.R4), politiky na úrovni dátových aktív (MIM6.C1.R4).",
-      en: "If such restrictions are in place, they SHALL follow the requirements defined in MIM3 and MIM6, specifically: actor identification (MIM3.C5.R0), authorization and actor roles (MIM6.C1.R4), data asset-level policies (MIM6.C1.R4)",
-      note: "Poznámka brožúry: požiadavka nemá v špecifikácii vlastný kód. Označenia MIM3.C5.R0 a MIM6.C1.R4 v MIMs Plus 9.0 neexistujú; pravdepodobne ide o pozostatok staršieho číslovania. Najbližšie sú MIM3 RC5.1–RC5.5 a MIM6 R1.1–R1.3."),
+      en: "If such restrictions are in place, they SHALL follow the requirements defined in MIM3 and MIM6, specifically: actor identification (MIM3.C5.R0), authorization and actor roles (MIM6.C1.R4), data asset-level policies (MIM6.C1.R4)"),
   )
 
   #spec-link("Celé znenie špecifikácie:", "https://mims.oascities.org/accessing-data")

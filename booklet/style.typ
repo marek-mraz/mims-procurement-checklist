@@ -619,8 +619,7 @@
 // sub: true is a heading of the specification inside a capability ("Additional best
 //   practice to consider:"): same type, no chip, and the capability above stays current.
 #let capability(id, title, tr: none, sub: false) = (cap: true, id: id, en: title, tr: tr, sub: sub)
-// note: a remark of this booklet under the card text (small, upright)
-#let req(id, en: "", tr: none, note: none) = (cap: false, id: id, en: en, tr: tr, note: note)
+#let req(id, en: "", tr: none) = (cap: false, id: id, en: en, tr: tr)
 
 // mim: the MIM id; with it every card and heading gets its label (see 1c).
 #let spec-list(mim: "", ..rows) = {
@@ -648,8 +647,6 @@
             block(above: 10pt, text(size: 8pt, fill: gray-ink, lang: "en", quoted(lines(r.en))))   // original stays English
           } else {
             text(size: 9.2pt, style: "italic", lang: "en", quoted(lines(r.en)))
-          } + if r.note != none {
-            block(above: 7pt, text(size: 7.8pt, fill: magenta.darken(10%), r.note))
           }))
     }
   }

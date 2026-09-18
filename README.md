@@ -31,6 +31,12 @@ The script downloads Typst and the Inter font on first run, validates every
 language, and writes `MIMs-draft-<lang>.pdf` and `.docx` next to itself. GitHub
 runs the same script.
 
+## Translating
+
+Translators work in Crowdin on the English master and never touch the layout. The
+flow, the Crowdin setup, the rules for translators and the validator checks are in
+[`booklet/TRANSLATING.md`](booklet/TRANSLATING.md).
+
 ## Where things are
 
 | Path | What |

@@ -37,7 +37,7 @@ def page(name, blocks, opts=""):
 def build(lang):
     L = load(lang)
     Q, tr, ctr, url = L["quotes"], L["quote_translations"], L["capability_translations"], L["urls"]
-    notes, ex = L.get("quote_notes", {}), L["example"]
+    ex = L["example"]
     short = lambda i: i.split(" · ")[-1]          # "MIM0 · R1.1" -> "R1.1"
     c, w, h, g, x, t, gl = (L[k] for k in ("cover", "why", "howto", "glance", "cross", "tearout", "glossary"))
     nav = L["nav"]
@@ -121,8 +121,7 @@ def build(lang):
                 + "".join(
                     f"  req({S(short(q['id']))},\n"
                     + (f"    tr: {S(tr[q['id']])},\n" if tr.get(q["id"]) else "")
-                    + f"    en: {S(q['en'])}"
-                    + (f",\n    note: {S(notes[q['id']])}" if q["id"] in notes else "") + "),\n" for q in c["quotes"])
+                    + f"    en: {S(q['en'])}),\n" for q in c["quotes"])
                 for c in Q[m["id"]]) + ")",
             f"#spec-link({S(L['spec_link_label'])}, {S(url[m['id']])})"],
             opts=", floor: 92, flow: true")]

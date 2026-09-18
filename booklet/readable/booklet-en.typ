@@ -253,8 +253,7 @@
       en: "Systems MAY support multiple subscription mechanisms depending on use case"),
     capability("C4", "Access to information can be restricted"),
     req("C4",
-      en: "If such restrictions are in place, they SHALL follow the requirements defined in MIM3 and MIM6, specifically: actor identification (MIM3.C5.R0), authorization and actor roles (MIM6.C1.R4), data asset-level policies (MIM6.C1.R4)",
-      note: "Note of this booklet: the requirement has no code of its own in the specification. MIMs Plus 9.0 has nothing numbered MIM3.C5.R0 or MIM6.C1.R4; probably a leftover of an older numbering. The closest are MIM3 RC5.1–RC5.5 and MIM6 R1.1–R1.3."),
+      en: "If such restrictions are in place, they SHALL follow the requirements defined in MIM3 and MIM6, specifically: actor identification (MIM3.C5.R0), authorization and actor roles (MIM6.C1.R4), data asset-level policies (MIM6.C1.R4)"),
   )
 
   #spec-link("Full specification:", "https://mims.oascities.org/accessing-data")

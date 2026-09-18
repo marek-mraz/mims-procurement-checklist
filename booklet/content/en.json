@@ -810,8 +810,5 @@
     "MIM1 · M1": "Mechanism 1, section 3.1: Entity Identification with Globally Unique IRIs",
     "MIM6 · P": "Pre- and Post-requisites (based on ISO 27001 Annex A): the control this booklet refers to"
   },
-  "spec_link_label": "Full specification:",
-  "quote_notes": {
-    "MIM0 · C4": "Note of this booklet: the requirement has no code of its own in the specification. MIMs Plus 9.0 has nothing numbered MIM3.C5.R0 or MIM6.C1.R4; probably a leftover of an older numbering. The closest are MIM3 RC5.1–RC5.5 and MIM6 R1.1–R1.3."
-  }
+  "spec_link_label": "Full specification:"
 }
