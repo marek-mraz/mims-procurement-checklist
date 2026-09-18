@@ -1006,6 +1006,7 @@
 )
 
 #note(size: 8.4pt, gap: 6pt, "Short labels below stand for the full checklist items on the MIM pages — in case of doubt, the full item text governs.")
+#spec-link("An editable version of the table is at:", "https://marek-mraz.github.io/mims-procurement-checklist/")
 #pagebreak()
 
 

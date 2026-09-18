@@ -1,6 +1,6 @@
 {
   "_about": "Language-neutral data: never sent to Crowdin. Per MIM: the spec URL and the requirement references of its checklist items (same order as mims.<id>.items in the language files).",
-  "sheet_url": "",
+  "sheet_url": "https://marek-mraz.github.io/mims-procurement-checklist/",
   "mims": {
     "MIM0": {
       "url": "https://mims.oascities.org/accessing-data",

@@ -10,6 +10,19 @@ Mechanisms of Open & Agile Smart Cities (OASC). One PDF and one DOCX per languag
 | Slovak | Kontrolný zoznam pre verejné obstarávanie pomocou minimálnych mechanizmov interoperability (MIMs) |
 | Czech | Kontrolní seznam pro veřejné zakázky pomocí minimálních mechanismů interoperability (MIMs) |
 
+## Download
+
+| | PDF | DOCX (editable, with the compliance table) |
+|---|---|---|
+| English | [MIMs-latest-en.pdf](https://marek-mraz.github.io/mims-procurement-checklist/MIMs-latest-en.pdf) | [MIMs-latest-en.docx](https://marek-mraz.github.io/mims-procurement-checklist/MIMs-latest-en.docx) |
+| Slovak | [MIMs-latest-sk.pdf](https://marek-mraz.github.io/mims-procurement-checklist/MIMs-latest-sk.pdf) | [MIMs-latest-sk.docx](https://marek-mraz.github.io/mims-procurement-checklist/MIMs-latest-sk.docx) |
+| Czech | [MIMs-latest-cs.pdf](https://marek-mraz.github.io/mims-procurement-checklist/MIMs-latest-cs.pdf) | [MIMs-latest-cs.docx](https://marek-mraz.github.io/mims-procurement-checklist/MIMs-latest-cs.docx) |
+
+- All downloads, with the work-in-progress draft: <https://marek-mraz.github.io/mims-procurement-checklist/>
+- Numbered editions (`MIMs-9.0.N-<lang>.pdf`): <https://github.com/marek-mraz/mims-procurement-checklist/releases>
+- Source and issues: <https://github.com/marek-mraz/mims-procurement-checklist>
+- The specification: <https://mims.oascities.org>
+
 ## Build
 
     ./build.sh
@@ -51,7 +64,7 @@ About, description:
 
     Procurement Checklist using the Minimal Interoperability Mechanisms (MIMs): what to put in a tender so your city keeps its data. Built on OASC MIMs Plus 9.0. PDF and DOCX in English, Slovak and Czech.
 
-About, website: `https://<account>.github.io/mims-procurement-checklist/`
+About, website: `https://marek-mraz.github.io/mims-procurement-checklist/`
 
 Topics: `mims` `oasc` `interoperability` `public-procurement` `smart-cities`
 `open-data` `vendor-lock-in` `checklist` `typst` `living-in-eu`

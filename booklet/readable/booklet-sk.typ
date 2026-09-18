@@ -1132,6 +1132,7 @@
 )
 
 #note(size: 8.4pt, gap: 6pt, "Skrátené názvy zastupujú plné položky na stranách MIMs; v prípade pochybností platí plné znenie.")
+#spec-link("Tabuľku v editovateľnej podobe nájdete na:", "https://marek-mraz.github.io/mims-procurement-checklist/")
 #pagebreak()
 
 
