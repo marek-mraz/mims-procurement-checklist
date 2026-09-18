@@ -1,0 +1,814 @@
+{
+  "cover": {
+    "title": "Hankekontroll-leht · vähimate koostalitlus- · mehhanismide (MIMide) abil",
+    "subtitle": "Mida panna hankesse, et andmed jääksid linnale",
+    "tagline": "OASC-i MIMs Plus 9.0 jaoks",
+    "footer": "Euroopa omavalitsuste hankeametnikele, projektijuhtidele ja IT-juhtidele"
+  },
+  "why": {
+    "title": "Miks see teatmik",
+    "paras": [
+      "Igal aastal ostavad linnad tarkvara: parkimissüsteeme, sensorplatvorme, kaardiportaale, digitaalseid kaksikuid. Liiga sageli jäävad süsteemide kogutud andmed nendesse lõksu. Lepingu lõppedes lahkuvad maksumaksja raha eest hangitud andmed koos tarnijaga või jäävad vormingusse, mida keegi teine ei suuda lugeda.",
+      "See ei pea nii olema. Vähimad koostalitlusmehhanismid (MIMid), mida haldab Open & Agile Smart Cities (OASC) ja toetab Euroopa liikumine living-in.eu, kirjeldavad tehnilisi miinimumnõudeid, mis hoiavad teie andmed avatuna, korduvkasutatavana ja tarnijaneutraalsena. Need on teadlikult kompaktsed: mitte hiiglaslik arhitektuur, vaid üksikud vältimatud tingimused süsteemide omavaheliseks suhtluseks.",
+      "Nende kasutamiseks ei pea olema insener. Iga kontroll-leht teisendab ühe MIMi selgesõnalisteks hanketingimusteks, mida saate kopeerida riigihankesse, selgitades ühtlasi, kuidas iga nõue teid kaitseb. Vahetult kontroll-lehe järel leiate selle MIMi nõuded sõna-sõnalt, et teie tehnilised spetsialistid ja pakkujad saaksid detaile kontrollida.",
+      "Linnad, kes nõuavad MIMe, ostavad korra ja taaskasutavad mitu korda: õhukvaliteedi andmed toidavad kooli armatuurlauda, tänavavalgustuse register energiaplaani ja järgmine tarnija jätkab sealt, kus eelmine pooleli jäi. See ongi koostalitlusvõime praktikas — ning seda oodatakse üha enam ka ELi rahastatud projektides."
+    ],
+    "quote": {
+      "text": "Vähimad koostalitlusmehhanismid (MIMid) võimaldavad andmete, süsteemide ja teenuste minimaalset, kuid piisavat koostalitlusvõimet just nutikate linnade lahenduste kontekstis. · Käesoleva dokumendi sihtrühmaks on: · 1. Lahenduste pakkujad, kes soovivad tagada oma lahenduste koostalitlusvõime teistega ning sujuva andmevahetuse nutikate linnade ja kogukondade kontekstis. · 2. Hankijad, kes soovivad hankida tulevikukindlaid lahendusi, mis võimaldavad kulutõhusat integreerimist nutikate linnade ja kogukondade olemasolevasse info- ja kommunikatsioonitehnoloogia (IKT) arhitektuuri."
+    },
+    "policy": {
+      "title": "Kuidas MIMid sobituvad ELi õigusega",
+      "intro": "MIMid on tehniline kirjeldus, mitte seadus. Need liiguvad samas suunas kui avalikele andmetele ja digiteenustele juba kohalduvad ELi eeskirjad:",
+      "items": [
+        {
+          "name": "Riigihangete direktiiv",
+          "ref": "Direktiiv 2014/24/EL, artikkel 42",
+          "text": "tehnilised kirjeldused võivad viidata standarditele, alati märkega „või sellega samaväärne”; reeglina ei tohi nimetada kindlat marki ega toodet."
+        },
+        {
+          "name": "Andmemäärus",
+          "ref": "Määrus (EL) 2023/2854",
+          "text": "juurdepääs ühendatud toodete andmetele ja pilveteenuse pakkujate vahetamine ilma lukustatuseta."
+        },
+        {
+          "name": "Koostalitlusvõimelise Euroopa määrus",
+          "ref": "Määrus (EL) 2024/903",
+          "text": "piiriüleste digitaalsete avalike teenuste koostalitlusvõime hindamine ja avatud lahenduste korduvkasutamine."
+        },
+        {
+          "name": "Avaandmete direktiiv",
+          "ref": "Direktiiv (EL) 2019/1024",
+          "text": "väärtuslikud andmestikud avaldatakse tasuta, masinloetavalt ja API-de kaudu."
+        },
+        {
+          "name": "NIS2 direktiiv",
+          "ref": "Direktiiv (EL) 2022/2555",
+          "text": "küberturvalisuse baasnõuded; siseriiklik õigus määrab, kui kaugele see kohaliku omavalitsuse puhul ulatub."
+        },
+        {
+          "name": "IKÜM (GDPR)",
+          "ref": "Määrus (EL) 2016/679",
+          "text": "isikuandmed linnasüsteemides (parkimine, kaamerad, mobiilsus)."
+        },
+        {
+          "name": "Tehisintellekti määrus",
+          "ref": "Määrus (EL) 2024/1689",
+          "text": "reeglid tehisintellektisüsteemidele; asjakohane digitaalsete kaksikute tehisintellektimudelite jaoks."
+        }
+      ],
+      "note": "Üksnes orientiiriks. Kontrollige, kuidas teie riik on iga õigusakti üle võtnud."
+    }
+  },
+  "howto": {
+    "title": "Kuidas seda teatmikku kasutada",
+    "steps": [
+      {
+        "name": "Ettevalmistus",
+        "text": "Lugege läbi seitse kontroll-lehte. Märkige need, mis kohalduvad teie ostule. Enamik hankeid vajab MIM0, MIM1, MIM2 ja MIM6; lisage MIM3, kui andmeid jagatakse kolmandate isikutega või andmeportaalis, MIM7 kõige puhul, mis kasutab kaarti, ja MIM8 digitaalsete kaksikute jaoks."
+      },
+      {
+        "name": "Hange",
+        "text": "Kopeerige märgitud kontroll-lehe punktid oma nõuetesse. Iga punkt on sõnastatud kopeeritava lausena. Lisage läbivad lepingutingimused: need maksavad vähe ja hoiavad ära lukustatuse."
+      },
+      {
+        "name": "Hindamine",
+        "text": "Paluge pakkujatel näidata, mitte lubada (vt samanimelist klauslit). Kontrollige vastavust pakkuja täidetud vastavustabeli alusel."
+      },
+      {
+        "name": "Üleandmine",
+        "text": "Vastuvõtmisel kontrollige üle iga märgitud punkt. Nõue, mida üleandmisel ei testita, polnud kunagi päriselt nõue."
+      }
+    ],
+    "legend_title": "Spetsifikatsiooni tsitaatide lugemine",
+    "legend": {
+      "SHALL / MUST": {
+        "term": "PEAB, PEAVAD (SHALL / MUST)",
+        "text": "kohustuslik. Süsteem ei vasta nõuetele ilma selleta."
+      },
+      "MUST NOT": {
+        "term": "EI TOHI (MUST NOT)",
+        "text": "keelatud. Seda tegev süsteem ei vasta nõuetele."
+      },
+      "SHOULD": {
+        "term": "PEAKS, PEAKSID (SHOULD)",
+        "text": "tungivalt soovitatav. Kõrvalekalleteks on vaja mõjuvat kirjalikku põhjendust."
+      },
+      "MAY": {
+        "term": "VÕIB, VÕIVAD (MAY)",
+        "text": "valikuline. Hea lisa, kuid mitte kunagi nõutav."
+      },
+      "CAN": {
+        "term": "SAAB, SAAVAD (CAN)",
+        "text": "võimalus, mitte nõue. See näitab, mis on võimalik, ega kohusta kedagi."
+      }
+    },
+    "note": "Igal kontroll-lehe punktil on väike viide nagu → MIM0 R1.1. See on nõue standardis MIMs Plus 9.0, millest punkt pärineb; vahetult pärast kontroll-lehte leiate selle MIMi iga nõude sõna-sõnalt. Ainult MIM0 määratleb võtmesõnad: need kehtivad suurtähtedega kirjutatult (IETF RFC 2119 ja RFC 8174 konventsioon; CAN pärineb ISO/IEC direktiivide 2. osast). Teistes MIMides määratlust pole: MIM6 kirjutab SHALL enamasti suurtähtedega, MIM2, MIM3, MIM7 ja MIM8 kirjutavad shall, should ja must väiketähtedega ning MIM1 kasutab neid ainult mehhanismi kirjelduses (MUST NOT jaotises 3.1). Teatmik loeb väiketähtedega sõnu samamoodi; pakkuja võib neid tõlgendada leebemalt.",
+    "legend_note": "Kontroll-lehe punktides on kirjas „peab” ka seal, kus spetsifikatsioon ainult soovitab (peaks) või loetleb võimaliku mehhanismi. See on hankija otsus."
+  },
+  "glance": {
+    "title": "Seitse MIMi ja kolm tööriista",
+    "intro": "Seitse väikest mehhanismi, üks eesmärk: teie andmed jäävad teile ja teie süsteemid suudavad omavahel suhelda.",
+    "items": {
+      "MIM0": {
+        "name": "Andmetele juurdepääs",
+        "q": "Kas saame oma andmed kätte?",
+        "d": "Andmed on kättesaadavad standardsete veebi-API-de kaudu masinloetavates vormingutes."
+      },
+      "MIM1": {
+        "name": "Andmete seostamine",
+        "q": "Kas igal asjal on püsiv nimi?",
+        "d": "Igal sensoril, valgustil ja hoonel on kordumatu püsiv identifikaator."
+      },
+      "MIM2": {
+        "name": "Andmete esitamine",
+        "q": "Kas me räägime ühist keelt?",
+        "d": "Andmed järgivad standardseid dokumenteeritud andmemudeleid selgete mõõtühikutega."
+      },
+      "MIM3": {
+        "name": "Andmevahetus",
+        "q": "Kas saame jagada selgetel tingimustel?",
+        "d": "Andmestikud on kataloogitud ning neid jagatakse tüüptingimuste ja selge halduse alusel."
+      },
+      "MIM6": {
+        "name": "Andmete turvamine",
+        "q": "Kas meie andmed on kaitstud?",
+        "d": "Krüpteeritud edastus, standardsed sisselogimised, rollipõhine juurdepääs, auditi logid."
+      },
+      "MIM7": {
+        "name": "Ruumilised andmed",
+        "q": "Kas see töötab kaardil?",
+        "d": "Ruumilised andmed kasutavad OGC liideseid, avatud vorminguid ja määratud koordinaatsüsteeme."
+      },
+      "MIM8": {
+        "name": "Kohalikud digitaalsed kaksikud",
+        "q": "Kas meie digitaalne kaksik saab areneda?",
+        "d": "Kaksiku andmed, mudelid ja tulemused jäävad ligipääsetavaks, dokumenteerituks ja taaskasutatavaks."
+      }
+    },
+    "numbering_note": "Nummerdusest: MIMs Plus 9.0 määratleb seitse mehhanismi numbritega 0, 1, 2, 3, 6, 7 ja 8. MIM4 (isikuandmed) ja MIM5 (õiglane tehisintellekt) kuuluvad varasemate OASC-i versioonide juurde ega ole osa versioonist 9.0. Sellest teatmikust pole midagi puudu.",
+    "tools_title": "Tööriistad teie hanke jaoks",
+    "tools": {
+      "clauses": {
+        "name": "Läbivad hanketingimused",
+        "q": "Mis kuulub igasse lepingusse?",
+        "d": "Väljumine, andmeõigused, API stabiilsus."
+      },
+      "example": {
+        "name": "Näide: õhukvaliteedi sensorid",
+        "q": "Kuidas see praktikas välja näeb?",
+        "d": "Mis kuhu läheb ja kopeeritavad näidistekstid."
+      },
+      "table": {
+        "name": "Vastavustabel",
+        "q": "Kuidas pakkuja seda tõendab?",
+        "d": "Pakkuja täidab, komisjon kontrollib, lisatakse lepingule."
+      }
+    }
+  },
+  "nav": {
+    "overview": "Ülevaade",
+    "clauses": "Tingimused",
+    "example": "Näide",
+    "table": "Vastavustabel",
+    "glossary": "Sõnastik",
+    "list": "Kontroll-leht",
+    "back": "tagasi kontroll-lehele",
+    "page": "lk"
+  },
+  "spec_title": "Mida spetsifikatsioon ütleb",
+  "spec_leadin": "Selle MIMi iga nõue sõna-sõnalt standardist MIMs Plus 9.0:",
+  "spec_translation_note": "Spetsifikatsioon on koostatud ainult inglise keeles: eestikeelne tekst on käesoleva teatmiku autori mitteametlik tõlge; selle all olev ingliskeelne originaal on siduv.",
+  "why_title": "Miks see on oluline",
+  "flags_title": "Ohumärgid",
+  "mims": {
+    "MIM0": {
+      "name": "Andmetele juurdepääs",
+      "question": "Kas saame oma andmed kätte?",
+      "intro": "See on vundament. Kui andmed ei saa süsteemist väljuda standardse liidese kaudu, on kõik muu selles teatmikus vaid teooria. MIM0 nõuab igalt ostetavalt süsteemilt üht: andmed peavad olema kättesaadavad tavalise veebi kaudu masinloetaval kujul.",
+      "items": [
+        {
+          "text": "Kõik andmed, mida süsteem kogub või toodab, on standardsel veebi-API-l kättesaadavad vähemalt ühes masinloetavas vormingus (nt JSON, CSV).",
+          "why": "Teie järgmine lepingupartner — või teie oma töötajad — saavad andmeid kasutada ilma tarnijalt luba küsimata."
+        },
+        {
+          "text": "API on ametlikult kirjeldatud avatud masinloetavas dokumendis (näiteks OpenAPI), mis on avaldatud püsival aadressil.",
+          "why": "Iga arendaja saab süsteemiga ühenduda ilma tasulise „liidestustöötoata”."
+        },
+        {
+          "text": "Andmeid saab filtreerida aja, asukoha ja atribuutide järgi otse API kaudu.",
+          "why": "Pärite seda, mida vajate, mitte igal ööl terveid andmemassiive."
+        },
+        {
+          "text": "Kui kasutusjuht vajab reaalajas andmeid, saavad tarbijad pideva pärimise asemel tellida teavitusi muudatuste kohta (veebihaagid, MQTT vms).",
+          "why": "Reaalajas armatuurlauad ja häireteavitused muutuvad võimalikuks ja odavaks."
+        },
+        {
+          "text": "Vead, vahemällu salvestamine ja päringulimiidid kasutavad standardseid HTTP reegleid ning on dokumenteeritud.",
+          "why": "Liidestusvead ilmnevad arusaadavalt ja parandatavalt, mitte varjatult."
+        }
+      ],
+      "why_panel": [
+        "Andmed, mille eest maksite, jäävad kasutatavaks ka pärast lepingu lõppu.",
+        "Uued teenused toetuvad vanadele andmetele, alustamata nullist.",
+        "Liidestamiskulud vähenevad iga järgmise projekti puhul."
+      ],
+      "red_flags": [
+        "„Andmete eksport taotluse alusel meie kasutajatoe kaudu.”",
+        "„API on saadaval tasulise lisamoodulina.”",
+        "Päringupõhine tasu linna enda andmete eest (vt tingimust „Kasutaja- ja päringutasude puudumine”)."
+      ]
+    },
+    "MIM1": {
+      "name": "Andmete seostamine",
+      "question": "Kas igal asjal on püsiv nimi?",
+      "intro": "Linn on täis objekte: valgustid, torud, hooned, parkimiskohad. Süsteemid tulevad ja lähevad, kuid objektid jäävad. MIM1 nõuab, et iga objekt saaks nime — identifikaatori —, mis elab kauem kui seda esmakordselt kirjeldanud tarkvara, tagades ajaloo ja seoste säilimise igal migreerimisel.",
+      "items": [
+        {
+          "text": "Igal olemil (sensor, valgusti, hoone, parkimiskoht…) on kordumatu püsiv identifikaator, mis ei muutu tarkvara asendamisel.",
+          "why": "Ajalugu ja süsteemidevahelised seosed elavad tarnija vahetuse üle."
+        },
+        {
+          "text": "Identifikaatori järgi saab teha päringu olemi andmete ja selle tähenduse (tüübi) masinloetavaks allalaadimiseks.",
+          "why": "Teised süsteemid saavad linki automaatselt järgida."
+        },
+        {
+          "text": "Kui sama reaalne objekt esineb mitmes süsteemis, saab identifikaatoreid omavahel vastendada.",
+          "why": "GIS-i hoone ja energiasüsteemi hoone on tõendatult üks ja seesama hoone."
+        },
+        {
+          "text": "Identifikaatorid ei sisalda tarnija sisemisi tunnuseid (andmebaasi reaindeksid, serverinimed).",
+          "why": "Vastasel juhul kaovad identifikaatorid koos lepinguga."
+        }
+      ],
+      "why_panel": [
+        "Kümne aasta mõõtmistulemused jäävad seotuks õige valgustipostiga.",
+        "Ametid ei pea enam samade varade kohta viit vasturääkivat registrit.",
+        "Andmestike sidumine muutub lihtsaks päringuks, mitte konsultatsiooniprojektiks."
+      ],
+      "red_flags": [
+        "„Identifikaatorid on meie platvormi sisesed.”",
+        "Identifikaatorid luuakse igal andmete migreerimisel uuesti."
+      ]
+    },
+    "MIM2": {
+      "name": "Andmete esitamine",
+      "question": "Kas me räägime ühist keelt?",
+      "intro": "Kaks süsteemi võivad mõlemad eksportida JSON-i ja ometi teineteisest mitte aru saada. MIM2 keskendub tähendusele: ühiste dokumenteeritud andmemudelite kasutamisele koos selgete mõõtühikute ja vormingutega, et „temperatuur”, „parkimiskoht” või „õhukvaliteet” tähendaks igas süsteemis sama asja.",
+      "items": [
+        {
+          "text": "Andmetes kasutatakse üldtunnustatud standardseid andmemudeleid (nt Smart Data Models, SAREF, ISO/IEC 5087) alati, kui need on olemas; kõrvalekaldeid põhjendatakse kirjalikult.",
+          "why": "Kahe tarnija andmed ühildatakse ilma eraldi tõlkeprojektita."
+        },
+        {
+          "text": "Kõik kasutusel olevad andmemudelid on selgesõnaliselt dokumenteeritud koos esitatud mõõtühikute ja kuupäeva-/kellaajavormingutega.",
+          "why": "„Temperatuur: 23” on kasutu, kui pole kirja pandud, kas tegemist on °C või °F skaalaga."
+        },
+        {
+          "text": "Laiendused tarnitakse dokumenteeritud profiilidena/täiendustena standardmudeli peal — mitte kunagi muudetud eraharu kujul.",
+          "why": "Säilib ühilduvus kogukonna ja tulevaste uuendustega."
+        },
+        {
+          "text": "Igal mudelil on vähemalt üks avatud, skeemiga valideeritav serialiseering (nt JSON koos JSON Schemaga).",
+          "why": "Sissetulevaid andmeid saab automaatselt kohe alguses kontrollida."
+        }
+      ],
+      "why_panel": [
+        "Üks armatuurlaud loeb mitme tarnija andmeid ilma vaheadapteriteta.",
+        "Teiste linnade tööriistad mõistavad teie andmeid ja teie omad teiste andmeid.",
+        "Automaatne valideerimine tuvastab vigased andmed enne nende levimist."
+      ],
+      "red_flags": [
+        "„Meie suletud andmemudel on standardist rikkalikum.”",
+        "Dokumentatsioon on kättesaadav ainult konfidentsiaalsuslepingu alusel."
+      ]
+    },
+    "MIM3": {
+      "name": "Andmevahetus",
+      "question": "Kas saame jagada selgetel tingimustel?",
+      "intro": "Kõiki linna andmeid ei saa lihtsalt avalikustada: osa on ärilised, osa tundlikud. MIM3 võimaldab ka neid turvaliselt jagada: otsitav kataloog, lepingupõhjad erilahenduste asemel ja kõigile loetavad haldusreeglid. Spetsifikatsioonis on peaaegu kogu MIM3 sõnastatud soovitusena (vt lk 3).",
+      "items": [
+        {
+          "text": "Iga süsteemi pakutav andmestik on kataloogis kirjeldatud standardsete metaandmetega (näiteks DCAT-AP), et teised saaksid seda leida.",
+          "why": "Andmeid, mida keegi ei leia, ei kasuta mitte keegi."
+        },
+        {
+          "text": "Andmete kasutamise tingimused ja litsentsid põhinevad tuntud mallidel (nt avatud litsentsid, standardsed andmejagamislepingud), mitte iga andmestiku jaoks eraldi koostatud juriidikal.",
+          "why": "Kokkulepped on skaleeritavad; juristidest ei saa kitsaskohta."
+        },
+        {
+          "text": "Linn saab määrata, kes millisele andmevarale ja millistel tingimustel ligi pääseb, ning seda tarnija kaasamiseta muuta.",
+          "why": "Haldusõigus jääb omavalitsusele."
+        }
+      ],
+      "why_panel": [
+        "Kohalikud ettevõtted ja teadlased loovad lisandväärtust linna andmetele — tulu jääb piirkonda.",
+        "Tundlikke andmeid saab jagada täpselt õigete partneritega, mitte kõigiga või mitte kellegagi.",
+        "Üks reeglistik asendab hulga eraldiseisvaid andmejagamislepinguid."
+      ],
+      "red_flags": [
+        "Tarnija nõuab õigusi linna andmetele (vt tingimust „Õigused andmetele”).",
+        "Kolmandate isikutega jagamine nõuab tarnija nõusolekut või lisatasusid."
+      ]
+    },
+    "MIM6": {
+      "name": "Andmete turvamine",
+      "question": "Kas meie andmed on edastamisel ja kasutamisel kaitstud?",
+      "intro": "Targad linnad on rünnakute sihtmärgid. MIM6 hoiab fookuse teadlikult kitsana ja praktilisena: andmete krüpteerimine liikumisel, standardsed sisselogimised omanduslike asemel, kontroll ja logimine selle üle, kes millele ligi pääseb. Siin pole midagi eriskummalist — kõik see peab olema lepingus.",
+      "items": [
+        {
+          "text": "Kogu andmeedastus on krüpteeritud (TLS 1.3 või kehtiv parim tava).",
+          "why": "Baashügieen; ka NIS2 eeldab seda, kui see teile kohaldub."
+        },
+        {
+          "text": "Sisselogimine ja masinjuurdepääs kasutavad avatud standardeid — OAuth 2.0 / OpenID Connect — ning ühilduvad linna olemasoleva identiteedipakkujaga.",
+          "why": "Üks konto töötaja kohta, mitte eraldi konto iga tarnija tootes; lahkujad kaotavad juurdepääsu igal pool korraga."
+        },
+        {
+          "text": "Juurdepääsuõigused on rollipõhised, kontrollitavad ja tühistatavad; juurdepääsud ja administraatori toimingud logitakse.",
+          "why": "Auditid ja intsidentidele reageerimine muutuvad võimalikuks. Logimine vastab standardi ISO/IEC 27001:2022 A-lisa meetmele 8.15, mille MIM6 loetleb eeltingimuste hulgas."
+        },
+        {
+          "label": "Kuulub kõrvaldamise ja kvalifitseerimise tingimuste, mitte tehnilise kirjelduse juurde",
+          "text": "Tarnija peab tõendama vastavust standardile ISO/IEC 27001:2022 (või samaväärsele) tema hallatava teenuse osas.",
+          "why": "Turvalisus on protsess, mitte vastuvõtmisel tehtav linnuke. Spetsifikatsioon viitab ISO/IEC 27001 meetmetele, mitte sertifikaadile."
+        }
+      ],
+      "why_panel": [
+        "Ühe süsteemi turvarike ei ava ust kõigisse süsteemidesse.",
+        "Kui NIS2 teile kohaldub, muutub selle ja riiklike kübereeskirjade järgimine märgatavalt lihtsamaks.",
+        "Kui midagi läheb valesti, näitavad logid täpselt, mis ja kelle poolt toimus."
+      ],
+      "red_flags": [
+        "Ainult tootjapõhine sisselogimine.",
+        "„Logid on saadaval taotluse alusel.”",
+        "Jagatud administraatorikontod."
+      ]
+    },
+    "MIM7": {
+      "name": "Ruumilised andmed",
+      "question": "Kas see töötab kaardil?",
+      "intro": "Peaaegu kõigel, mis linnale kuulub, on asukoht. MIM7 tagab, et asukoht poleks kuvatõmmis: ruumiandmed liiguvad standardsete OGC liideste kaudu avatud vormingutes koos deklareeritud koordinaatsüsteemiga — nii sobitub iga ostetud kaardikiht iga juba olemasoleva kihiga.",
+      "items": [
+        {
+          "text": "Ruumiandmed tehakse kättesaadavaks standardipõhiste liideste kaudu (OGC API Features, SensorThings; vanemate süsteemide puhul WFS).",
+          "why": "Kõik turul olevad GIS-tööriistad suudavad neid kohe lugeda."
+        },
+        {
+          "text": "Ruumiandmed on kodeeritud avatud vormingutes (GeoJSON, CityJSON; vajadusel GML/CityGML).",
+          "why": "Ei mingeid konverterite litsentse ega tupikuid."
+        },
+        {
+          "text": "Koordinaatsüsteem on alati deklareeritud (EPSG kood) ja andmed on teisendatavad ühtsesse koordinaatsüsteemi.",
+          "why": "Erinevatest allikatest pärinevad kihid asetuvad kaardil täpselt kohakuti."
+        },
+        {
+          "text": "Ruumiobjektid kannavad samu püsivaid identifikaatoreid nagu MIM1-s.",
+          "why": "Punkt kaardil ja kirje registris tähistavad täpselt sama objekti."
+        }
+      ],
+      "why_panel": [
+        "Üks linnakaart kümne tarnijapõhise vaaturi asemel.",
+        "INSPIRE ja riiklike geoportaalide nõuete täitmine muutub lihtsamaks.",
+        "3D- ja BIM-andmed saab hiljem lisada samasse pilti."
+      ],
+      "red_flags": [
+        "Kaardiandmed on kasutatavad ainult tarnija vaaturis.",
+        "„Eksport PDF-i või kuvatõmmisena.”"
+      ]
+    },
+    "MIM8": {
+      "name": "Kohalikud digitaalsed kaksikud",
+      "question": "Kas meie digitaalne kaksik saab areneda?",
+      "intro": "Digitaalne kaksik on pikaajaline investeering: andmed, 3D-mudelid, simulatsioonid, otsused. MIM8 kaitseb seda investeeringut — kaksiku andmed ja mudelid jäävad ligipääsetavaks ja dokumenteerituks, tulemused on korratavad ja ühe projekti komponente saab kasutada järgmises. Kasutage seda lehte kaksikuplatvormide, simulatsioonimudelite või 3D-linnatööriistade hankimisel.",
+      "items": [
+        {
+          "text": "Andmestikud, mudelite sisendid ja simulatsioonide väljundid on ligipääsetavad API-de kaudu (vastavalt MIM0-le), mitte kaksikusse lukustatud.",
+          "why": "Tulemused toidavad aruandeid, armatuurlaudu ja järgmist projekti."
+        },
+        {
+          "text": "Mudelid on dokumenteeritud (meetod, parameetrid, sisendid/väljundid) ja väljakutsutavad dokumenteeritud liidese kaudu.",
+          "why": "Ühe korra hangitud üleujutusmudelit saavad taaskasutada teised osakonnad ja linnad."
+        },
+        {
+          "text": "Väljundid kasutavad standardvorminguid (GeoJSON, CityJSON, 3D Tiles, NetCDF…), mida saab kasutada ilma selle tarnija lisatööriistadeta.",
+          "why": "Visualiseerimine ja analüüs jäävad avatud konkurentsiga turgudeks."
+        },
+        {
+          "text": "Töövood salvestavad päritolu: milline andmeversioon, mudel ja parameetrid tulemuse lõid.",
+          "why": "Kaksikul põhinevaid otsuseid saab hiljem selgitada ja põhjendada."
+        }
+      ],
+      "why_panel": [
+        "Kaksik kestab kauem kui ükski üksik tarnija või projektieelarve.",
+        "Simulatsioone saab omavalitsuse otsustusprotsessis kontrollida, korrata ja põhjendada.",
+        "Mudeleid ja komponente saab linnade vahel jagada."
+      ],
+      "red_flags": [
+        "Simulatsiooni tulemused on vaadatavad ainult tarnija portaalis.",
+        "Mudelid on suletud mustad kastid ilma metaandmeteta."
+      ]
+    }
+  },
+  "cross": {
+    "title": "Läbivad hanketingimused",
+    "subtitle": "Kaitsemeetmed lukustatuse vastu",
+    "intro": "Need klauslid kuuluvad igasse hankesse, mida iganes te ka ei ostaks. Need pärinevad MIMide ja liikumise living-in.eu hankepraktikast. Enamik neist ei toetu ühele kindlale spetsifikatsiooni nõudele, mistõttu puuduvad neil viitekoodid (API versioonihaldus on ühtlasi MIM0 C2 soovitus). Nende lisamine maksab vähe; nende välja jätmine võib maksta kõik.",
+    "items": [
+      {
+        "name": "Lepingu lõppemise klausel",
+        "text": "Lepingu lõppemisel antakse kõik linna andmed (ja seadistused) tasuta üle avatud dokumenteeritud vormingutes."
+      },
+      {
+        "name": "Õigused andmetele",
+        "text": "Kõik õigused lepingu alusel kogutud ja tuletatud andmetele kuuluvad hankijale."
+      },
+      {
+        "name": "Kasutaja- ja päringutasude puudumine",
+        "text": "Linnale ei kohaldata tasusid omaenda andmetele juurdepääsu eest."
+      },
+      {
+        "name": "API stabiilsus ja versioonihaldus",
+        "text": "Tarnija tagab API tagasiühilduvuse kogu lepingu kehtivuse ajal. Ühildumatutest muudatustest teavitatakse vähemalt 6 kuud ette ja need avaldatakse uue versioonina, samal ajal kui eelmine versioon jääb kättesaadavaks kuni kokkulepitud üleminekukuupäevani."
+      },
+      {
+        "name": "Näidata, mitte lubada",
+        "text": "Pakkujad tõendavad nõuetele vastavust pakkumuste hindamise käigus, mitte ei esita pelgalt kinnitusi. API puhul tähendab see avaldatud interaktiivset dokumentatsiooni (nt OpenAPI) ja reaalset päringut, mis tagastab kehtivad andmed. Iga märgitud punkti testitakse üleandmisel uuesti."
+      },
+      {
+        "name": "Avatud standardite nimetamine",
+        "text": "Hankes nimetatakse eespool toodud standardid; väited ühilduvuse kohta peavad viitama täpsele liidesele ja versioonile. Iga viide standardile või tehnilisele kirjeldusele lubab samaväärset lahendust; pakkuja tõendab samaväärsust."
+      },
+      {
+        "name": "MIMide vastavusdeklaratsioon",
+        "text": "Pakkuja täidab vastavustabeli (lk 28); sellest saab lepingu lisa."
+      }
+    ]
+  },
+  "example": {
+    "title": "Näide: linn ostab õhukvaliteedi sensorite võrgustiku",
+    "scenario": "Märgitud lehed: MIM0, MIM1, MIM2, MIM6 ja MIM7 (andmed lähevad kaardile). MIM3-st ainult punkt 3.1 (õhukvaliteedi andmed avaldatakse avaandmetena, seega kuuluvad need kataloogi); mitte MIM8: tegemist pole digitaalse kaksikuga.",
+    "table_title": "Mis kuhu läheb",
+    "table_headers": [
+      "Dokument",
+      "Direktiivi 2014/24/EL mõiste",
+      "Mida sinna märkida"
+    ],
+    "table_rows": [
+      [
+        "Tehniline kirjeldus",
+        "tehniline kirjeldus (artikkel 42)",
+        "MIM0, MIM1, MIM2, MIM3 (ainult 3.1), MIM6 (v.a 6.4) ja MIM7 märgitud punktid sõna-sõnalt koos koodiga, pluss lause samaväärsuse kohta"
+      ],
+      [
+        "Kvalifitseerimise tingimused",
+        "valikukriteeriumid (artiklid 58 ja 62)",
+        "tõendatud vastavus standardile ISO/IEC 27001:2022 või samaväärsele (punkt 6.4)"
+      ],
+      [
+        "Tõendusvahendid",
+        "katseprotokollid, sertifitseerimine ja muud tõendusvahendid (artikkel 44)",
+        "vastavustabel pakkumuse kohustusliku lisana: iga punkti kohta T, S või E koos tõenditega (API dokumentatsiooni aadress, testligipääs)"
+      ],
+      [
+        "Lepingu projekt",
+        "lepingu täitmise tingimused (artikkel 70)",
+        "Lepingu lõppemise klausel, Õigused andmetele, Kasutaja- ja päringutasude puudumine, API stabiilsus ja versioonihaldus; täidetud vastavustabel lisana"
+      ],
+      [
+        "Vastuvõtuakt",
+        "lepingu täitmise tingimused (artikkel 70)",
+        "vastavustabeli veerg „Kontrollitud” testimisprotokollina"
+      ]
+    ],
+    "sample_title": "Tehnilise kirjelduse näidissõnastus",
+    "sample": [
+      "4.3 Koostalitlusvõime ja juurdepääs andmetele",
+      "4.3.1 Kõik andmed, mida süsteem kogub või toodab, on standardsel veebi-API-l kättesaadavad vähemalt ühes masinloetavas vormingus (nt JSON, CSV). (MIMs Plus 9.0, MIM0 R1.1, R1.2)",
+      "4.3.2 API on ametlikult kirjeldatud avatud masinloetavas dokumendis (näiteks OpenAPI), mis on avaldatud püsival aadressil. (MIM0 R1.3)",
+      "4.3.3 API võimaldab andmete filtreerimist mõõtmise aja ja koha järgi. (MIM0 R2.1, R2.2)",
+      "… 4.3.4 kuni 4.3.21: muud märgitud punktid …",
+      "4.3.22 Iga viide standardile või tehnilisele kirjeldusele lubab samaväärset lahendust; pakkuja tõendab samaväärsust.",
+      "4.3.23 Pakkuja täidab vastavustabeli (hankedokumentide lisa) ja esitab tõendid iga nõutud punkti kohta. Pakkuja demonstreerib punkte 4.3.1 kuni 4.3.21 pakkumuste hindamise ajal reaalajas API-päringuga; hankija testib neid uuesti vastuvõtmisel. Nende mittetäitmine on alus vastuvõtmisest keeldumiseks."
+    ],
+    "tip": "Punkt 4.3.3 näitab, et punkti võib ostu vajadustele vastavalt täpsustada: sensorite puhul on mõistlik nõuda filtreerimist mõõtmise aja ja koha järgi.",
+    "note": "Kohandage sõnastust siseriikliku õigusega ja laske see hanke eest vastutaval isikul üle vaadata.",
+    "filled_title": "Täidetud vastavustabel (väljavõte)",
+    "filled_rows": [
+      [
+        "0.1",
+        "Masinloetavad andmed standardse veebi-API kaudu",
+        "T",
+        "REST API tagastab JSON-i ja CSV; dokumentatsioon pakkumuses toodud aadressil, lk 12; testligipääs lisas 3",
+        "✓"
+      ],
+      [
+        "0.4",
+        "Muudatuste tellimine vajaduse korral",
+        "E",
+        "pole veel toetatud; kavandatud järgmises versioonis",
+        "—"
+      ],
+      [
+        "7.2",
+        "Avatud geovormingud",
+        "S",
+        "pakub GeoJSON-i asemel OGC avatud standardit GeoPackage; samaväärsust selgitatud pakkumuses, lk 15",
+        "✓"
+      ]
+    ],
+    "filled_note": "Tulevikulubadus on E: komisjon kontrollib ainult seda, mida pakkuja saab näidata."
+  },
+  "tearout": {
+    "title": "Vastavustabel",
+    "intro": "Üks rida iga punkti kohta. Hankija märgib ära hankelepingus nõutavad punktid ja lisab tabeli hankedokumentidele pakkumuse kohustusliku lisana. Iga nõutud punkti kohta märgib pakkuja T (täidab), S (täidab samaväärsega) või E (ei täida), lühidalt kuidas ja kus asuvad tõendid: dokumentatsiooni aadress, testjuurdepääs, pakkumuse lehekülg. Pelgast kinnitusest ilma tõendita ei piisa. Hindamiskomisjon kontrollib iga punkti pakkumuste hindamisel ja uuesti üleandmisel (✓ kinnitatud, ✗ kinnitamata, — kontrollimata).",
+    "intro2": "Täidetud tabel on pakkumuse osa ja saab lepingu lisaks. See tõendab hankelepingu esemele esitatud nõuete täitmist (vastab või ei vasta); see ei ole pakkumuste hindamiskriteerium. Nõuetele vastavuse hindamiseks punktidega sätestage see eelnevalt hankedokumentides avaldatud hindamiskriteeriumide hulgas (direktiiv 2014/24/EL, artikkel 67).",
+    "headers": [
+      "#",
+      "Nõue (lühidalt)",
+      "Spets. viide",
+      "Nõutav?",
+      "T / S / E",
+      "Tõendid: kuidas ja kus",
+      "Kontrollitud"
+    ],
+    "header_roles": [
+      "hankija",
+      "pakkuja",
+      "pakkuja",
+      "komisjon"
+    ],
+    "note": "Allolevad lühinimed asendavad MIM-lehtedel olevaid täielikke punkte — kahtluse korral kehtib punkti täistekst.",
+    "download_label": "Tabeli muudetav versioon asub aadressil:",
+    "cross_note": "Pakkuja kinnitab lepingutingimuse aktsepteerimist (T / E)."
+  },
+  "tearout_short": {
+    "MIM0": [
+      "Masinloetavad andmed standardse veebi-API kaudu",
+      "Avatud API kirjeldus (OpenAPI) püsival aadressil",
+      "Filtreerimine aja, koha ja atribuutide järgi",
+      "Muudatuste tellimine vajaduse korral",
+      "Standardsed HTTP vead, vahemälu ja limiidid"
+    ],
+    "MIM1": [
+      "Kordumatu püsiv identifikaator igal olemil",
+      "Identifikaatori päring tagastab andmed + tüübi",
+      "Süsteemidevaheline identifikaatorite sidumine",
+      "Tarnija siseandmed identifikaatorites puuduvad"
+    ],
+    "MIM2": [
+      "Standardmudelid igal võimalusel",
+      "Mudelid dokumenteeritud, ühikud selged",
+      "Laiendused profiilidena, mitte harudena",
+      "Avatud, skeemiga kontrollitav serialiseering"
+    ],
+    "MIM3": [
+      "Andmestikud kataloogitud standardandmetega",
+      "Malli alusel litsentsid ja lepingud",
+      "Linn kontrollib juurdepääsutingimusi ise"
+    ],
+    "MIM6": [
+      "Krüpteeritud andmeedastus (TLS 1.3)",
+      "Standardne sisselogimine (OAuth 2.0 / OIDC)",
+      "Rollipõhine ligipääs ja auditi logid",
+      "Tõendatud ISO/IEC 27001:2022 järgimine"
+    ],
+    "MIM7": [
+      "OGC standardliidesed",
+      "Avatud geovormingud",
+      "CRS deklareeritud (EPSG)",
+      "Püsivad ID-d ruumiobjektidel (vt 1.1)"
+    ],
+    "MIM8": [
+      "Kaksiku andmed ja väljundid API kaudu",
+      "Mudelid dokumenteeritud ja väljakutsutavad",
+      "Väljundite standardvormingud",
+      "Töövoo päritolu salvestatud"
+    ],
+    "CROSS": [
+      "Väljumisklausel: tasuta üleandmine avatud kujul",
+      "Õigused andmetele kuuluvad hankijale",
+      "Oma andmetele ligipääs tasuta",
+      "API stabiilsus: versioonitud, etteteade 6 kuud"
+    ]
+  },
+  "glossary": {
+    "title": "Väike sõnastik",
+    "terms": [
+      {
+        "t": "API",
+        "d": "Liides, mille kaudu üks programm küsib teiselt andmeid veebi kaudu ilma inimese sekkumiseta."
+      },
+      {
+        "t": "Andmemudel",
+        "d": "Andmete kokkulepitud struktuur: millised väljad eksisteerivad, mida need tähendavad ja mis ühikuid kasutatakse."
+      },
+      {
+        "t": "DCAT-AP",
+        "d": "Andmekataloogide Euroopa metaandmete profiil; võimaldab leida andmestikke ka riiklikest ja Euroopa portaalidest."
+      },
+      {
+        "t": "EPSG",
+        "d": "Koordinaatsüsteemide numbrikoodide register (nt EPSG:4326 tähistab süsteemi WGS 84)."
+      },
+      {
+        "t": "Identifikaator",
+        "d": "Ühe kindla objekti (üks valgusti, üks hoone) püsiv nimi, mida kõik süsteemid selle tähistamiseks kasutavad."
+      },
+      {
+        "t": "Koostalitlusvõime",
+        "d": "Erinevate tarnijate süsteemide võime andmeid vahetada ja neist ühtemoodi aru saada."
+      },
+      {
+        "t": "IRI",
+        "d": "Veebiidentifikaatori rahvusvaheline kuju (nagu URL, kus on lubatud mitte-ASCII tähemärgid). MIM1 nimetab sellega olemeid."
+      },
+      {
+        "t": "LDT",
+        "d": "Local Digital Twin: linna või selle osa digitaalne mudel, mis on ühendatud andmete ja simulatsioonidega."
+      },
+      {
+        "t": "Masinloetav",
+        "d": "Struktureeritud nii, et tarkvara saab seda otse töödelda (JSON, CSV) — tabeli PDF seda ei ole."
+      },
+      {
+        "t": "Metaandmed",
+        "d": "Andmed andmete kohta: mida andmestik sisaldab, kes seda pakub, kui värske see on ja millise litsentsiga."
+      },
+      {
+        "t": "OAuth 2.0 / OIDC",
+        "d": "Avatud standardid sisselogimiseks ja juurdepääsu andmiseks. OpenID Connect (OIDC) lisab OAuth 2.0-le isikutuvastuse."
+      },
+      {
+        "t": "OGC",
+        "d": "Open Geospatial Consortium: organisatsioon, mis avaldab ruumiandmete ja -teenuste standardeid (OGC API, WFS, SensorThings)."
+      },
+      {
+        "t": "Avatud standard",
+        "d": "Tehniline reegel, mida igaüks võib tasuta ja luba küsimata lugeda ning rakendada."
+      },
+      {
+        "t": "OpenAPI",
+        "d": "Avatud vorming veebi-API masinloetavaks kirjeldamiseks: aadressid, parameetrid, vastused."
+      },
+      {
+        "t": "Serialiseering",
+        "d": "Andmete esitamine konkreetses vormingus (nt JSON, XML), et neid saaks salvestada või edastada."
+      },
+      {
+        "t": "TLS",
+        "d": "Protokoll, mis krüpteerib võrgus liikuvaid andmeid (HTTPS-i alus)."
+      },
+      {
+        "t": "Tarnijalukustus",
+        "d": "Olukord, kus tarnija vahetamine on andmete, vormingute või tasude tõttu nii kulukas, et see on praktiliselt võimatu."
+      },
+      {
+        "t": "Veebihaak / MQTT",
+        "d": "Kaks viisi, kuidas süsteem annab muutusest ise teada: veebihaak pöördub teie aadressi poole, MQTT edastab sõnumeid tellijatele."
+      }
+    ],
+    "more_title": "Kust lisateavet leida",
+    "links": {
+      "mims.oascities.org": "MIMs Plus täielik spetsifikatsioon, mida haldab OASC.",
+      "living-in.eu": "Euroopa linnade digipöörde liikumine — deklaratsioon ja MIMs Plus kontekst.",
+      "smartdatamodels.org": "Standardsete andmemudelite avatud teek (FIWARE, TM Forum, IUDX, OASC).",
+      "oascities.org/academy": "CITYxCITY Academy — kursused linnade töötajatele teistelt linnadelt."
+    }
+  },
+  "back": {
+    "text": "Koostatud organisatsiooni Open & Agile Smart Cities väljaande MIMs Plus spetsifikatsioon 9.0 põhjal (mims.oascities.org). Spetsifikatsiooni sisu © OASC. See teatmik on sõltumatu selgekeelne abimaterjal kohalikele omavalitsustele riigihangete läbiviimiseks; kahtluse korral lähtutakse spetsifikatsioonist.",
+    "credits": "Loodud avatud tööriistadega. Taaskasutage ja kohandage vabalt oma linna vajadustele.",
+    "author": "Teatmiku autor: Marek Mráz"
+  },
+  "quote_translations": {
+    "MIM0 · R1.1": "Süsteemid PEAVAD võimaldama andmete kättesaamist vähemalt ühes masinloetavas vormingus. Vorminguid SAAB määrata HTTP sisuläbirääkimiste (Content-Negotiation) kaudu",
+    "MIM0 · R1.2": "Andmed PEAVAD olema kättesaadavad vähemalt ühe standardse veebipõhise mehhanismi kaudu",
+    "MIM0 · R1.3": "Juurdepääsumehhanism(id) PEAVAD olema ametlikult kirjeldatud",
+    "MIM0 · R1.4": "Andmesisu kasutatavad andmemudelid peaksid olema määratud (vt MIM2)",
+    "MIM0 · R2.1": "Süsteemid PEAVAD pakkuma andmeid struktureeritud ja järjepideva liidese kaudu",
+    "MIM0 · R2.2": "Süsteemid PEAVAD toetama põhilisi päringuid ja/või filtreerimist (nt aja, asukoha, atribuutide järgi)",
+    "MIM0 · C2": "API-d PEAKSID toetama kehtivate andmete pärimist · API-d PEAKSID toetama ajalooliste andmete pärimist, kui see on kohaldatav · API-d PEAKSID toetama ruumilisi päringuid, kui see on kohaldatav (vt MIM7) · API-d PEAKSID toetama muudatuste tellimist, kui see on kohaldatav · API-d PEAKSID näitama järgmise eeldatava uuenduse ajatemplit · API-d PEAKSID toetama otspunktide selget versioonihaldust · API-d PEAKSID pakkuma näidisandmeid või testpäringuid · API-d PEAKSID toetama standardseid HTTP vahemällu salvestamise päiseid · API-d PEAKSID edastama päringulimiidi staatust standardsete HTTP päiste kaudu · API-d PEAKSID tagastama struktureeritud veateateid · API-d VÕIVAD toetada osalisi vastuseid või päringu projektsioone · API-d VÕIVAD pakkuda standardset tervise-/olekukontrolli otspunkti",
+    "MIM0 · R3.1": "Süsteemid teavitusi vajavate kasutusjuhtude jaoks PEAVAD pakkuma vähemalt ühte mehhanismi andmemuudatuste kohta teavituste saamiseks",
+    "MIM0 · R3.2": "Süsteemid VÕIVAD sõltuvalt kasutusjuhust toetada mitut tellimismehhanismi",
+    "MIM0 · C4": "Kui sellised piirangud on kehtestatud, PEAVAD need järgima standardites MIM3 ja MIM6 määratletud nõudeid, eelkõige: osapoole tuvastamine (MIM3.C5.R0), autoriseerimine ja osapoole rollid (MIM6.C1.R4), andmevara taseme reeglid (MIM6.C1.R4)",
+    "MIM1 · R1.1": "Igal süsteemis oleval olemil on kordumatu identifikaator",
+    "MIM1 · R1.2": "Eksisteerib viis olemi kohta teabe hankimiseks identifikaatori otsingu kaudu süsteemis",
+    "MIM1 · R1.3": "kui kordumatu identifikaator viitab samale olemile mitmes süsteemis, on võimalik tuletada viis selle kohta teabe otsimiseks igas neist süsteemidest",
+    "MIM1 · R1.4": "kui mitu kordumatut identifikaatorit viitavad samale olemile, on neid võimalik vastendada",
+    "MIM1 · R1.5": "On võimalik luua identifikaatoreid, mis on ajas püsivad",
+    "MIM1 · R2.1": "Eksisteerib viis olemi semantika pärimiseks, kasutades ainult selle kordumatut identifikaatorit",
+    "MIM1 · R2.2": "Seda semantikat kirjeldatakse masinloetavas vormingus",
+    "MIM1 · R3.1": "Eksisteerib viis olemil määratletud seose lahendamiseks (dereference)",
+    "MIM1 · R3.2": "Eksisteerib viis olemasolevale ontoloogiale täiendava semantika rakendamiseks",
+    "MIM2 · R1.1": "Mis tahes andmeallika kõigi olemite jaoks kasutatavad andmemudelid peavad olema selgesõnalised. Need peavad olema hästi dokumenteeritud ja kirjeldavate metaandmetega, kus kasutatavad terminid peavad olema semantiliselt ühemõttelised. Mõõtühikute, ajavormingute jms atribuutide puhul peavad kasutatavad ühikud, vormingud jms olema selgelt esitatud. Andmemudelid peaksid olema kataloogitud, et need oleksid hõlpsasti leitavad.",
+    "MIM2 · R1.2a": "Kasutatavad andmemudelid peavad põhinema (igal võimalusel) üldtunnustatud standardiseeritud andmemudelitel, nagu allpool loetletud",
+    "MIM2 · R1.2b": "Kui olemasolevaid standardiseeritud andmemudeleid ei ole võimalik kasutada, tuleb teha jõupingutusi kõige lähedasemate olemasolevate standardiseeritud andmemudelite laiendamiseks või uute määratlemiseks, järgides andmemudeleid määratleva kogukonna või organisatsiooni parimaid tavasid ja konventsioone.",
+    "MIM2 · R1.3": "Kasutatavad andmemudelid peavad toetama andmevahetust, kasutades andmetele juurdepääsu ja andmete seostamise MIMide asjakohaseid nõudeid",
+    "MIM2 · R2.1": "Mis tahes andmeökosüsteemi iga võtmeolemi jaoks peaks välja töötama ühise andmemudeli. See ühine andmemudel peaks sisaldama kõiki välju, mis sisalduvad selle olemi erinevates andmemudelites, mida selles andmeökosüsteemis kasutatakse. Iga erinevat selles andmeökosüsteemis kasutatavat andmemudelit saaks seejärel teisendada ühiseks andmemudeliks.",
+    "MIM2 · R3.1": "Igal kasutataval andmemudelil peab olema vähemalt üks määratletud masinloetav andmeedastusvorming („serialiseering”), mis on avatud, avalikult kättesaadav ja teostusest sõltumatu.",
+    "MIM2 · R3.2": "Andmeedastusvormingu dokumentatsioon peaks olema piisav, et võimaldada mitteomandusliku rakenduse või interpretaatori loomist, mis suudab rekonstrueerida kõik sellises andmevormingus salvestatud andmed.",
+    "MIM2 · R3.3": "Kui sama andmemudeli puhul toetatakse mitut andmeedastusvormingut, peavad need esitama sama infosisu järjepidevalt ja ilma tähenduse kadumiseta.",
+    "MIM2 · R3.4": "Esitusviis peaks toetama valideerimist avalikult avaldatud skeemide, grammatikate või samaväärsete masinloetavate kitsenduste abil, kui valitud vormingu jaoks on sellised valideerimismehhanismid olemas.",
+    "MIM2 · R4.1": "Andmemudelit laiendavad rakendusprofiilid ei tohiks mõjutada juba olemasolevat mudelit ja selle kasutajaid",
+    "MIM2 · R4.2": "Mudeli rakendusprofiilis sisse viidud spetsialiseerumised või laiendused peaksid olema hästi dokumenteeritud, baasandmemudelist eraldi",
+    "MIM3 · RC1.1": "Andmeökosüsteemi koordineerija peaks saama määratleda haldusmudeli (nt reeglistiku), mis kirjeldab liikmelisuse reegleid, ökosüsteemis osalejate rolle, kohustusi ja vastutust ning nende vahelist andmevahetust reguleerivaid üldpõhimõtteid.",
+    "MIM3 · RC1.2": "Andmeökosüsteemis osalevad liikmed peaksid olema teadlikud selle haldusmudelist ja kõigist sellesse tehtud muudatustest.",
+    "MIM3 · RC1.3": "Haldusmudel peaks olema kõigile ökosüsteemis osalejatele hõlpsasti mõistetav.",
+    "MIM3 · RC2.1": "Andmepakkujad võivad vabalt määrata tingimused, mille alusel nad soovivad oma andmeid vahetada. (Märkus: enne andmevarade jagamist peaksid andmepakkujad veenduma, et neil on andmete omanikelt piisav luba.)",
+    "MIM3 · RC2.2": "Andmevahetuse tingimused peaksid olema kirjeldatud selgelt ja ühemõtteliselt, nii et need oleksid andmekasutajatele kergesti mõistetavad.",
+    "MIM3 · RC2.3": "Andmevahetuse tingimused peaksid olema väljendatud andmelitsentside või andmejagamislepingute kaudu, mis põhinevad hästi määratletud mallidel või standarditel.",
+    "MIM3 · RC2.4": "Tingimused peaksid olema kooskõlas andmeökosüsteemi üldise haldusmudeliga ega tohi olla sellega vastuolus. (Märkus: andmepakkuja võib otsustada andmeökosüsteemis mitte osaleda, kui aluseks olev haldusmudel on liiga piirav või liiga lubav.)",
+    "MIM3 · RC3.1": "Andmeökosüsteemi koordineerija peab suutma veenduda selles osalejate vastavuses aluseks olevale haldusmudelile.",
+    "MIM3 · RC3.2": "Andmepakkujad peaksid suutma veenduda, et andmekasutaja andmekasutus vastab eelnevalt kokkulepitud tingimustele.",
+    "MIM3 · RC3.3": "Andmekasutajad peaksid suutma veenduda, et andmepakkuja andmete edastamine järgib eelnevalt kokkulepitud tingimusi.",
+    "MIM3 · RC4.1": "Andmekasutajad peaksid saama ilma eelneva teadmiseta avastada, millised andmed on andmejagamise ökosüsteemis saadaval.",
+    "MIM3 · RC4.2": "Andmevarad peaksid olema piisavalt kirjeldatud metaandmetega, et andmekasutajad saaksid teha usaldusväärseid otsuseid nende edasise kavandatud kasutuse kohta.",
+    "MIM3 · RC4.3": "Andmevarade kirjeldamiseks kasutatavad metaandmed peaksid põhinema hästi määratletud, kergesti mõistetavatel kirjeldusvormingutel, mis on nii inimesele kui ka masinale loetavad.",
+    "MIM3 · RC5.1": "Ökosüsteemis osalejad (nt andmekasutajad ja -pakkujad) peaksid suutma andmejagamise ökosüsteemis üksteist leida.",
+    "MIM3 · RC5.2": "Iga ökosüsteemis osaleja kohta peaks olema kättesaadav piisavalt metaandmeid, et teha kindlaks nende andmevahetuseks vajalik usaldusväärsus.",
+    "MIM3 · RC5.3": "Andmepakkujad peaksid suutma usaldusväärselt tuvastada andmekasutajaid, kes soovivad nende andmevaradele ligi pääseda, ning kontrollida nende metaandmeid enne juurdepääsu andmist.",
+    "MIM3 · RC5.4": "Andmekasutajad peaksid suutma tuvastada andmepakkujaid, kes andmeökosüsteemis andmeid jagavad, enne nende andmete kasutamist või neile juurdepääsu.",
+    "MIM3 · RC5.5": "Ökosüsteemis osalejad võivad otsustada jääda ka anonüümseks, kui andmejagamise ökosüsteemi haldusmudel seda võimaldab. Sel juhul võib punkte RC5.1 kuni RC5.4 eirata.",
+    "MIM3 · RC6.1": "Andmekasutajad ja -pakkujad peaksid saama leppida kokku andmevahetuses ja sellega seotud tingimustes (nt tingimustega nõustumine, lepingu allkirjastamine või läbirääkimised).",
+    "MIM3 · RC6.2": "Andmekasutajad ja -pakkujad peaksid saama varem kokkulepitud andmevahetuse lõpetada vastavalt sellega seotud tingimustele.",
+    "MIM3 · RC6.3": "Võimaluse korral võib pakkuda elektroonilisi vahendeid andmevahetuse kokkuleppimiseks ja lõpetamiseks.",
+    "MIM3 · RC7.1": "Andmekasutajad peaksid saama väljendada huvi andmevarade vastu, mis pole andmejagamise ökosüsteemis hetkel saadaval.",
+    "MIM3 · RC7.2": "Andmepakkujad peaksid saama kätte andmekasutajate taotlusi uute andmevarade järele.",
+    "MIM6 · R1.1": "Teabele ja muudele seotud varadele füüsilise ning loogilise juurdepääsu kontrollimise reeglid PEAVAD olema kehtestatud ja rakendatud lähtuvalt äri- ja infoturbe nõuetest. (ISO 27001 5.15 Juurdepääsu kontroll)",
+    "MIM6 · R1.2": "Autentimisteabe määramine ja haldamine PEAB olema kontrollitud haldusprotsessiga, sealhulgas personali juhendamine autentimisteabe asjakohase käsitsemise kohta. (ISO 27001 5.17: Autentimisteave)",
+    "MIM6 · R1.3": "Teabe ja muude seotud varade juurdepääsuõigused PEAVAD olema antud, üle vaadatud, muudetud ja eemaldatud kooskõlas organisatsiooni valdkonnaspetsiifilise juurdepääsukontrolli poliitika ja reeglitega. (ISO 27001 5.18: Juurdepääsuõigused)",
+    "MIM6 · R2.1": "Krüptograafia tõhusa kasutamise reeglid, sealhulgas krüptovõtmete haldus, PEAVAD olema määratletud ja rakendatud. (ISO 27001 8.24 Krüptograafia kasutamine)",
+    "MIM6 · R3.1": "Turvalised autentimistehnoloogiad ja -protseduurid peavad olema rakendatud lähtuvalt teabele juurdepääsu piirangutest ja valdkonnaspetsiifilisest juurdepääsukontrolli poliitikast. (ISO 27001 8.5 Turvaline autentimine)",
+    "MIM6 · M1.1": "Transpordikihi turvalisuse (TLS) protokoll, versioon 1.3",
+    "MIM6 · M1.2": "OAuth 2.0 autoriseerimisraamistik",
+    "MIM6 · M1.3": "OpenID Connect 1.0, identiteedikiht autentimiseks OAuth 2.0 peal",
+    "MIM6 · M1.4": "OIDC4VCI / OIDC4VP, OpenID kontrollitavate volituste väljastamiseks ja esitamiseks",
+    "MIM7 · R1.1": "Ruumiandmed peavad olema kättesaadavaks tehtud standardipõhise veebiteenuse liidese kaudu.",
+    "MIM7 · R2.1": "Ruumiandmed peavad olema kodeeritud avatud standardeid kasutades. Soovitatav on kasutada OGC ja BuildingSMART Internationali asjakohaseid standardeid.",
+    "MIM7 · R3.1": "Kõik andmestikud, mida kasutatakse ruumiandmetega hõlmatud konteksti kohta lisateabe pakkumiseks, peavad vastama standarditele MIM1 ja MIM2.",
+    "MIM7 · R4.1": "Andmestikes kasutatavate mis tahes olemite konkreetsete eksemplaride tuvastamiseks peab kasutama kordumatuid ja püsivaid identifikaatoreid. (Vt MIM1: Andmete seostamine.)",
+    "MIM7 · R5.1": "Koordinaatsüsteemid (CRS) peavad vastama standarditele ning esitada tuleb teave selle kohta, millist standardit (nt EPSG:4326, EPSG:3857) kasutatakse. See hõlmab EPSG numbrit või WGS numbrit koos teabega mis tahes riiklikel süsteemidel põhinevate variatsioonide kohta, nagu Läti LKS-92, et andmeid saaks teisendada ühtsesse koordinaatsüsteemi. (Märkus: ELis on ruumiandmete puhul nõutav kasutada INSPIRE direktiivile vastavaid metaandmeid, sealhulgas metaandmeid, mida on vaja koordinaatsüsteemi teabe kirjeldamiseks.)",
+    "MIM8 · R1.1": "LDT peab pakkuma juurdepääsu simulatsioonide väljunditele ja arvutusmudelite sisenditele, kui neid vajatakse LDT töövoogude osana.",
+    "MIM8 · R1.2": "LDT peaks tegema selget vahet algallika toorandmete, teisendatud töövoovalmis andmete, mudeli sisendite ja mudeli väljundite vahel.",
+    "MIM8 · C2": "See võimekus tugineb andmevahetuses standardile MIM3 (Andmevahetus).",
+    "MIM8 · R3.1": "Mudel peaks pakkuma standardseid mudeli metaandmeid, sealhulgas oma meetodite ja parameetrite ning andmeparameetrite kirjeldust (kas väärtuse või viitena). Sel eesmärgil peaks kasutama ühiseid metaandmete standardeid.",
+    "MIM8 · R3.2": "Mudel peab pakkuma liidest või olema väljakutsutav dokumenteeritud liidese kaudu, eelistatavalt tuntud standardiseeritud API abil. Mudeli tulemuseks olevat andmestikku tuleb kirjeldada (andmete tasemel).",
+    "MIM8 · R3.3": "Uudsete meetodite (suured keelemudelid, autonoomne tehisintellekt jne) usaldusväärne ja eetiline kasutamine peaks olema tagatud. Eelarvamused ja kallutatus peaks vajaduse korral olema viidud miinimumini. Selle tagamiseks kasutatavaid meetodeid peaks kirjeldama.",
+    "MIM8 · R3.4": "Mudel peab suutma andmetele juurde pääseda lõppkasutaja või organisatsiooni nimel. Vt MIM3",
+    "MIM8 · R3.5": "Tehisintellekti mudelites kasutatavate andmete puhul peaks olema tagatud päritolu ja usaldusväärsus. Mõnel juhul peab olema märgitud ametlik allikas, näiteks valitsusasutus.",
+    "MIM8 · R4.1": "LDT toetab töövooge, mis ühendavad andmeallikaid, andmete teisendusi, mudeli käivitamist, simulatsiooniprotsesse ja väljundeid.",
+    "MIM8 · R4.2": "LDT aheldab töövoo samme, kus ühe sammu väljundit saab kasutada teise sammu sisendina.",
+    "MIM8 · R4.3": "LDT jälgib töövoo täitmise olekut, sealhulgas lõpuleviidud, ebaõnnestunud ja katkestatud protsesse.",
+    "MIM8 · R4.4": "LDT salvestab töövoo päritolu, sealhulgas kasutatud andmestikud (koos versiooni ja ajatempliga), käivitatud mudelid, valitud parameetrid ja loodud väljundid.",
+    "MIM8 · R5.1": "LDT pakub metaandmeid, mis selgitavad, mida visualiseeritakse, sealhulgas ajatemplit, ruumilist ulatust, andmeallikat ning vajadusel stsenaariumi- ja variandieeldusi.",
+    "MIM8 · R5.2": "LDT toetab erinevaid interaktiivse visualiseerimise tüüpe, nagu 2D-kaardid, 3D-stseenid, armatuurlauad, aruanded või avalikud vaated.",
+    "MIM8 · R6.1": "LDT peaks dokumenteerima lahendamata semantilised lüngad, eeldused või vastendused, mis võivad mõjutada tulemuste tõlgendamist, korduvkasutamist või võrdlemist.",
+    "MIM8 · M1": "API-põhine LDT ressursside juurdepääs",
+    "MIM8 · M2": "Standardiseeritud andme- ja väljundvormingud",
+    "MIM8 · M3": "Mudel teenusena (Model-as-a-Service)",
+    "MIM8 · M4": "LDT töövoogude orkestreerimine",
+    "MIM8 · M5": "Mitme vaatega väljund ja visualiseeringute juurdepääs",
+    "MIM1 · §3.1": "IRI-d käsitletakse kanoonilise identifikaatorina kõigis allsüsteemides; teostused EI TOHI genereerida IRI-sid, mis sisaldavad muutuvaid teostusdetaile, nagu andmebaasi reaindeksid või serverite hostinimed.",
+    "MIM6 · 8.15": "Logimine. Tuleb luua, talletada, kaitsta ja analüüsida logisid, mis salvestavad tegevusi, erandeid, tõrkeid ja muid asjakohaseid sündmusi."
+  },
+  "capability_translations": {
+    "MIM0 · C1": "Masinloetavad andmed on kättesaadavad veebi kaudu",
+    "MIM0 · C2": "Juurdepääs on struktureeritud ja päritav",
+    "MIM0 · C2 best practice": "Täiendav parim tava, mida kaaluda:",
+    "MIM0 · C3": "Andmemuudatusi saab tellida",
+    "MIM0 · C4": "Juurdepääsu teabele saab piirata",
+    "MIM1 · C1": "Olemeid identifitseeritakse kordumatute identifikaatorite abil",
+    "MIM1 · C2": "Olemeid saab tüüpida",
+    "MIM1 · C3": "Olemitele saab viidata ja viiteid lahendada",
+    "MIM2 · C1": "Kõiki andmeallikates sisalduvaid olemeid kirjeldatakse järjepidevate andmemudelite abil, et tagada rakenduste ja süsteemide koostalitlusvõime",
+    "MIM2 · C2": "Sama olemi erinevaid andmemudeleid, mida kasutatakse ühises andmejagamise ökosüsteemis, peaks saama hõlpsasti teisendada ühiseks andmemudeliks",
+    "MIM2 · C3": "Mis tahes andmeid ja nendega seotud metaandmeid saab jagada avatud standardiseeritud andmeedastusvormingutes, et andmeid saaks eri tööriistade ja teostuste vahel vahetada ja tõlgendada järjepidevalt",
+    "MIM2 · C4": "Kui see on kasulik, peaks olema võimalik luua andmemudelile „rakendusprofiile”, et lisada või täpsustada kasutusjuhupõhiseid atribuute ilma alusandmemudelit muutmata",
+    "MIM3 · C1": "Andmejagamise ökosüsteemi haldusreegleid saab määratleda",
+    "MIM3 · C2": "Andmejagamise tingimusi saab määratleda",
+    "MIM3 · C3": "Andmejagamise tingimustele vastavust saab kontrollida",
+    "MIM3 · C4": "Saadaolevaid andmevarasid saab avastada",
+    "MIM3 · C5": "Ökosüsteemis osalejaid saab avastada",
+    "MIM3 · C6": "Andmevahetuses saab kokku leppida",
+    "MIM3 · C7": "Saab taotleda uusi andmeid, mis pole hetkel kättesaadavad",
+    "MIM6 · C1": "Andmed on kättesaadavad ainult kasutajatele, kellel peaks olema neile juurdepääs",
+    "MIM6 · C2": "Kasutajate ligipääsetavaid andmeid ei ole muudetud",
+    "MIM6 · C3": "Kasutajate ligipääsetavad andmed pärinevad kontrollitud allikast",
+    "MIM6 · M1": "Mehhanismi kandidaat",
+    "MIM7 · C1": "Linnad ja kogukonnad saavad ruumiandmeid hõlpsasti edastada sisemiste ja väliste (sh asjade internetiga seotud) IT-süsteemide vahel",
+    "MIM7 · C2": "Linnad ja kogukonnad saavad integreerida eri allikatest (nt geoandmed ja ehitusinfo mudelid) pärinevaid 2D- ja 3D-ruumiandmeid ning jagada neid andmeid omavahel koostalitlusvõimeliselt",
+    "MIM7 · C3": "Linnad ja kogukonnad saavad integreerida ruumiandmeid muude andmetega, mis pakuvad konteksti kohta lisateavet",
+    "MIM7 · C4": "Linnadel ja kogukondadel on järjepidev ja püsiv viis ruumiandmeallikates sisalduvate kõigi objektide või olemite konkreetsete eksemplaride kirjeldamiseks",
+    "MIM7 · C5": "Andmejagamisel kasutatavad koordinaatsüsteemid (CRS) on hõlpsasti teisendatavad ühtsesse koordinaatsüsteemi",
+    "MIM8 · C1": "Pakkuda juurdepääsu LDT-s kasutatavatele andmestikele, sealhulgas staatilistele, reaalaja- ja simulatsiooniandmetele ning arvutusmudelitele",
+    "MIM8 · C2": "Vahetada andmeid välissüsteemide ja teiste LDT-dega, kasutades koostalitlusvõimelisi liideseid",
+    "MIM8 · C3": "Taaskasutada deterministlikke või tehisintellekti mudeleid eri valdkondades, kogukondades, kasutusjuhtudes ja/või LDT-des",
+    "MIM8 · C4": "Koordineerida ja hallata andmeid, mudeleid ja töötlemise töövooge LDT sees ja LDT-de vahel",
+    "MIM8 · C5": "Pakkuda ühistest alusandmetest ja -mudelitest andmete ja tulemuste mitut vaadet (nt 2D, 3D, armatuurlauad) suhtluseks ja võrdluseks",
+    "MIM8 · C6": "Tagada, et LDT-de sees ja vahel vahetatavaid andmeid (ja simulatsioonide väljundeid) saaks järjepidevalt tõlgendada jagatud või vastendatud semantika ja selge päritolu kaudu",
+    "MIM8 · M": "Mehhanismid (aktiivses arenduses)",
+    "MIM1 · M1": "Mehhanism 1, jaotis 3.1: Olemi identifitseerimine globaalselt unikaalsete IRI-dega",
+    "MIM6 · P": "Eel- ja järeltingimused (põhinevad ISO 27001 A-lisal): meede, millele käesolev teatmik viitab"
+  },
+  "spec_link_label": "Täielik spetsifikatsioon:"
+}

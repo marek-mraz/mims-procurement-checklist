@@ -1,0 +1,814 @@
+{
+  "cover": {
+    "title": "Lista de Verificação para a Contratação Pública · com base nos Mecanismos Mínimos · de Interoperabilidade (MIMs)",
+    "subtitle": "O que incluir no caderno de encargos para o município manter os seus dados",
+    "tagline": "Para os MIMs Plus 9.0 da OASC",
+    "footer": "Para técnicos de contratação pública, gestores de projeto e diretores de sistemas de informação dos municípios europeus"
+  },
+  "why": {
+    "title": "Porquê este guia",
+    "paras": [
+      "Todos os anos, os municípios adquirem software: sistemas de estacionamento, plataformas de sensores, portais cartográficos, gémeos digitais. Com demasiada frequência, os dados recolhidos por esses sistemas acabam bloqueados no seu interior. Quando o contrato termina, os dados — pagos com dinheiros públicos — partem com o fornecedor ou ficam retidos num formato que mais ninguém consegue ler.",
+      "Não tem de ser assim. Os Mecanismos Mínimos de Interoperabilidade (MIMs), mantidos pela Open & Agile Smart Cities (OASC) e apoiados pelo movimento europeu living-in.eu, descrevem os requisitos técnicos mínimos que mantêm os seus dados abertos, reutilizáveis e neutros em termos de fornecedor. São deliberadamente concisos: não constituem uma arquitetura complexa, apenas o conjunto estritamente necessário para que os sistemas possam comunicar entre si.",
+      "Não precisa de ser engenheiro para os utilizar. Cada lista de verificação traduz um MIM em itens redigidos em linguagem clara que pode copiar diretamente para as peças do procedimento, com a justificação de como cada um protege a entidade adjudicante. Imediatamente a seguir à lista de verificação, encontra todos os requisitos desse MIM, ipsis verbis, para que a sua equipa técnica e os concorrentes possam verificar os detalhes.",
+      "Os municípios que exigem os MIMs compram uma vez e reutilizam muitas vezes: os dados da qualidade do ar alimentam o painel de bordo das escolas, o inventário da iluminação pública alimenta o plano energético, e o fornecedor seguinte continua o trabalho a partir do ponto onde o anterior cessou. É isto que a interoperabilidade significa na prática — e é algo cada vez mais exigido em projetos financiados pela UE."
+    ],
+    "quote": {
+      "text": "Os mecanismos mínimos de interoperabilidade (MIMs) permitem alcançar um nível mínimo, mas suficiente, de interoperabilidade para dados, sistemas e serviços, especificamente no contexto de soluções para cidades inteligentes. · Os destinatários deste documento são: · 1. Fornecedores de soluções que pretendam assegurar a interoperabilidade das suas soluções com outras e permitir a partilha fluida de dados no contexto de Cidades e Comunidades Inteligentes. · 2. Entidades adjudicantes que pretendam adquirir soluções sustentáveis no futuro e que permitam uma integração economicamente eficiente numa arquitetura existente de Tecnologias de Informação e Comunicação (TIC) para Cidades e Comunidades Inteligentes."
+    },
+    "policy": {
+      "title": "Como os MIMs se articulam com o direito da UE",
+      "intro": "Os MIMs são especificações técnicas, não são uma lei. Apontam na mesma direção que as regras da UE já aplicáveis aos dados públicos e serviços digitais:",
+      "items": [
+        {
+          "name": "Diretiva dos Contratos Públicos",
+          "ref": "Diretiva 2014/24/UE, Artigo 42.º",
+          "text": "as especificações técnicas podem referir-se a normas, sempre acompanhadas da menção «ou equivalente»; por regra, não podem indicar marcas ou produtos específicos."
+        },
+        {
+          "name": "Regulamento dos Dados",
+          "ref": "Regulamento (UE) 2023/2854",
+          "text": "acesso a dados de produtos conectados e mudança entre prestadores de serviços de computação em nuvem sem dependência de fornecedor."
+        },
+        {
+          "name": "Regulamento Europa Interoperável",
+          "ref": "Regulamento (UE) 2024/903",
+          "text": "avaliações de interoperabilidade para serviços públicos digitais transfronteiriços e reutilização de soluções abertas."
+        },
+        {
+          "name": "Diretiva Dados Abertos",
+          "ref": "Diretiva (UE) 2019/1024",
+          "text": "conjuntos de dados de elevado valor disponibilizados gratuitamente, em formato legível por máquina, através de APIs."
+        },
+        {
+          "name": "Diretiva SRI 2",
+          "ref": "Diretiva (UE) 2022/2555",
+          "text": "requisitos de base em matéria de cibersegurança; o direito nacional determina em que medida é aplicável à administração local."
+        },
+        {
+          "name": "RGPD",
+          "ref": "Regulamento (UE) 2016/679",
+          "text": "dados pessoais nos sistemas municipais (estacionamento, câmaras, mobilidade)."
+        },
+        {
+          "name": "Regulamento da Inteligência Artificial",
+          "ref": "Regulamento (UE) 2024/1689",
+          "text": "regras para sistemas de inteligência artificial; relevante para modelos de IA em gémeos digitais."
+        }
+      ],
+      "note": "Apenas para orientação. Verifique a transposição de cada diploma para o direito nacional."
+    }
+  },
+  "howto": {
+    "title": "Como utilizar este guia",
+    "steps": [
+      {
+        "name": "Preparar",
+        "text": "Leia as sete listas de verificação. Assinale as que se aplicam ao objeto que vai adquirir. A maioria dos procedimentos exige os MIM0, MIM1, MIM2 e MIM6; adicione o MIM3 se partilhar dados com terceiros ou através de um portal de dados, o MIM7 para dados georreferenciados e o MIM8 para gémeos digitais."
+      },
+      {
+        "name": "Elaborar o caderno de encargos",
+        "text": "Copie os itens assinalados na lista de verificação para as suas especificações técnicas. Cada item está redigido como uma cláusula pronta a colar. Adicione as cláusulas transversais: têm um custo insignificante e evitam o aprisionamento tecnológico."
+      },
+      {
+        "name": "Avaliar",
+        "text": "Exija que os concorrentes demonstrem, em vez de prometerem (consulte a cláusula respetiva). Verifique a conformidade com base na tabela de conformidade preenchida pelo concorrente."
+      },
+      {
+        "name": "Rececionar",
+        "text": "Na receção da prestação, teste novamente todos os itens assinalados. Uma especificação técnica que não é testada na entrega nunca foi verdadeiramente um requisito."
+      }
+    ],
+    "legend_title": "Como interpretar o texto da especificação",
+    "legend": {
+      "SHALL / MUST": {
+        "term": "DEVE, TÊM DE (SHALL / MUST)",
+        "text": "obrigatório. O sistema não cumpre as especificações sem esta condição."
+      },
+      "MUST NOT": {
+        "term": "NÃO DEVE (MUST NOT)",
+        "text": "proibido. O sistema que o faça não cumpre as especificações."
+      },
+      "SHOULD": {
+        "term": "DEVERIA, CONVÉM QUE (SHOULD)",
+        "text": "fortemente recomendado. Quaisquer desvios exigem uma justificação formal fundamentada."
+      },
+      "MAY": {
+        "term": "PODE (MAY)",
+        "text": "opcional. Uma mais-valia facultativa, nunca exigida."
+      },
+      "CAN": {
+        "term": "É POSSÍVEL (CAN)",
+        "text": "uma possibilidade, não uma obrigação técnica. Indica o que é viável e não vincula ninguém."
+      }
+    },
+    "note": "Cada item da lista de verificação contém uma remissão sucinta, como → MIM0 R1.1. Trata-se do requisito dos MIMs Plus 9.0 de onde provém; imediatamente a seguir à lista de verificação encontra o texto integral de cada requisito desse MIM. Apenas o MIM0 define as palavras-chave normativas: são vinculativas quando grafadas em maiúsculas, segundo as convenções dos RFC 2119 e RFC 8174 do IETF (a menção CAN tem origem nas Diretivas ISO/IEC, Parte 2). Os restantes MIMs não apresentam essa definição: o MIM6 grafa DEVE maioritariamente em maiúsculas, enquanto os MIM2, MIM3, MIM7 e MIM8 grafam deve, deveria e têm de em minúsculas, e o MIM1 utiliza-as apenas na descrição do mecanismo (NÃO DEVE na secção 3.1). Este guia interpreta as expressões em minúsculas com o mesmo rigor normativo; um concorrente poderá interpretá-las de modo menos estrito.",
+    "legend_note": "Os itens da lista de verificação utilizam a fórmula «deve», mesmo quando a especificação original apenas recomenda (deveria) ou enumera um mecanismo candidato. Essa escolha cabe à entidade adjudicante."
+  },
+  "glance": {
+    "title": "Sete MIMs e três ferramentas",
+    "intro": "Sete mecanismos simples, um objetivo único: os seus dados permanecem seus e os seus sistemas conseguem interoperar.",
+    "items": {
+      "MIM0": {
+        "name": "Acesso aos Dados",
+        "q": "Conseguimos extrair os nossos dados?",
+        "d": "Os dados podem ser obtidos através de APIs web normalizadas, em formatos legíveis por máquina."
+      },
+      "MIM1": {
+        "name": "Interligação de Dados",
+        "q": "Cada entidade tem um identificador perene?",
+        "d": "Cada sensor, luminária ou edifício tem um identificador único e persistente."
+      },
+      "MIM2": {
+        "name": "Modelação de Dados",
+        "q": "Falamos uma linguagem comum?",
+        "d": "Os dados seguem modelos normalizados e documentados, com unidades de medida explícitas."
+      },
+      "MIM3": {
+        "name": "Partilha de Dados",
+        "q": "Podemos partilhar segundo regras claras?",
+        "d": "Os conjuntos de dados são catalogados e partilhados sob licenças-tipo e regras de governação claras."
+      },
+      "MIM6": {
+        "name": "Segurança dos Dados",
+        "q": "Os nossos dados estão seguros?",
+        "d": "Comunicação cifrada, autenticação normalizada, perfis de acesso e registos de auditoria."
+      },
+      "MIM7": {
+        "name": "Dados Geoespaciais",
+        "q": "Funciona num mapa?",
+        "d": "Os dados espaciais utilizam interfaces OGC, formatos abertos e sistemas de coordenadas declarados."
+      },
+      "MIM8": {
+        "name": "Gémeos Digitais Locais",
+        "q": "O nosso gémeo digital pode evoluir?",
+        "d": "Os dados, modelos e resultados do gémeo digital mantêm-se acessíveis, documentados e reutilizáveis."
+      }
+    },
+    "numbering_note": "Sobre a numeração: os MIMs Plus 9.0 especificam sete mecanismos, identificados como 0, 1, 2, 3, 6, 7 e 8. O MIM4 (dados pessoais) e o MIM5 (IA justa) constavam de versões anteriores da OASC e não integram a versão 9.0. O presente guia encontra-se integralmente completo.",
+    "tools_title": "Ferramentas para o seu procedimento",
+    "tools": {
+      "clauses": {
+        "name": "Cláusulas contratuais transversais",
+        "q": "O que deve constar de qualquer contrato?",
+        "d": "Reversão, direitos sobre os dados, estabilidade das APIs."
+      },
+      "example": {
+        "name": "Exemplo: sensores de qualidade do ar",
+        "q": "Como se concretiza na prática?",
+        "d": "O que colocar onde e exemplos de texto para colar."
+      },
+      "table": {
+        "name": "Tabela de conformidade",
+        "q": "Como comprova o concorrente a conformidade?",
+        "d": "Preenchida pelo concorrente, validada pelo júri e aposta em anexo ao contrato."
+      }
+    }
+  },
+  "nav": {
+    "overview": "Visão geral",
+    "clauses": "Cláusulas",
+    "example": "Exemplo",
+    "table": "Tabela de conformidade",
+    "glossary": "Glossário",
+    "list": "Lista de verificação",
+    "back": "voltar à lista de verificação",
+    "page": "pág."
+  },
+  "spec_title": "O que diz a especificação",
+  "spec_leadin": "Todos os requisitos deste MIM, transcritos integralmente dos MIMs Plus 9.0:",
+  "spec_translation_note": "A especificação existe apenas em inglês: a versão em português (Portugal) é uma tradução não oficial da responsabilidade do autor deste guia; o texto original inglês apresentado abaixo prevalece.",
+  "why_title": "Por que razão é relevante",
+  "flags_title": "Sinais de alerta",
+  "mims": {
+    "MIM0": {
+      "name": "Acesso aos Dados",
+      "question": "Conseguimos extrair os nossos dados?",
+      "intro": "Este mecanismo é o alicerce fundamental. Se os dados não puderem ser extraídos do sistema através de uma interface normalizada, todo o restante conteúdo deste guia torna-se inútil. O MIM0 faz uma exigência essencial a qualquer sistema adquirido: os dados devem estar acessíveis através da web comum, num formato legível por máquina.",
+      "items": [
+        {
+          "text": "Todos os dados recolhidos ou gerados pelo sistema podem ser extraídos em, pelo menos, um formato legível por máquina (por exemplo, JSON, CSV) através de uma API web normalizada.",
+          "why": "O próximo cocontratante — ou os próprios técnicos municipais — podem utilizar os dados sem necessidade de autorização do fornecedor."
+        },
+        {
+          "text": "A API está formalmente documentada num ficheiro aberto e legível por máquina (por exemplo, OpenAPI), publicado num endereço estável.",
+          "why": "Qualquer programador pode ligar-se sem «sessões de integração» pagas."
+        },
+        {
+          "text": "Os dados podem ser filtrados por tempo, localização e atributos diretamente através da API.",
+          "why": "Obtém apenas o necessário, não uma extração integral diária."
+        },
+        {
+          "text": "Sempre que o caso de uso requeira dados em tempo real, os clientes podem subscrever alterações (através de webhooks, MQTT ou protocolo equivalente) sem necessidade de consultas periódicas sucessivas.",
+          "why": "Painéis e alertas em tempo real tornam-se possíveis e económicos."
+        },
+        {
+          "text": "Erros, cache e limites de pedidos usam convenções HTTP padrão e estão documentados.",
+          "why": "As integrações falham de forma visível e corrigível, não silenciosamente."
+        }
+      ],
+      "why_panel": [
+        "Os dados financiados pelo erário público mantêm-se utilizáveis após o termo do contrato.",
+        "O desenvolvimento de novos serviços assenta nos dados existentes, em vez de recomeçar do zero.",
+        "Os custos de integração tecnológica reduzem-se em cada projeto subsequente."
+      ],
+      "red_flags": [
+        "«Exportação de dados mediante pedido à equipa de suporte.»",
+        "«A disponibilização da API constitui um módulo adicional pago.»",
+        "Cobrança por pedido no acesso aos dados do próprio município (consulte a cláusula «Sem custos por utilizador ou por pedido de dados»)."
+      ]
+    },
+    "MIM1": {
+      "name": "Interligação de Dados",
+      "question": "Cada entidade tem um identificador perene?",
+      "intro": "Uma cidade é composta por entidades físicas e lógicas: luminárias, condutas, edifícios, lugares de estacionamento. As aplicações mudam, mas as entidades reais permanecem. O MIM1 exige que cada entidade tenha um nome estável — um identificador — que perdure para além da aplicação que o registou pela primeira vez, garantindo a preservação do seu histórico e a ligação a outros dados ao longo de sucessivas migrações de sistemas.",
+      "items": [
+        {
+          "text": "Cada entidade (sensor, luminária, edifício, lugar de estacionamento, etc.) possui um identificador único e persistente que não se altera com a substituição do software.",
+          "why": "O histórico e as ligações entre sistemas sobrevivem ao fornecedor."
+        },
+        {
+          "text": "O identificador permite a consulta direta dos dados da entidade e a obtenção do seu significado (tipo) num formato legível por máquina.",
+          "why": "Outros sistemas podem seguir a ligação automaticamente."
+        },
+        {
+          "text": "Caso a mesma entidade física exista em vários sistemas, é possível mapear os seus identificadores entre si.",
+          "why": "É possível comprovar inequivocamente que o edifício constante do SIG e o edifício do sistema de energia são a mesma entidade."
+        },
+        {
+          "text": "Os identificadores não incluem dados internos do fornecedor (IDs de tabelas, nomes de servidores).",
+          "why": "Caso contrário, os IDs desaparecem com o fim do contrato."
+        }
+      ],
+      "why_panel": [
+        "Uma década de medições recolhidas mantém-se associada à respetiva coluna de iluminação pública.",
+        "Os diferentes departamentos municipais deixam de gerir cadastros contraditórios sobre os mesmos bens.",
+        "Cruzar conjuntos de dados torna-se uma consulta, não um projeto de consultoria."
+      ],
+      "red_flags": [
+        "«Os identificadores são internos à nossa plataforma.»",
+        "Os identificadores são gerados novamente a cada migração de dados."
+      ]
+    },
+    "MIM2": {
+      "name": "Modelação de Dados",
+      "question": "Falamos uma linguagem comum?",
+      "intro": "Dois sistemas podem exportar JSON e mesmo assim não se entenderem. O MIM2 trata do significado: utilizar modelos de dados partilhados e documentados — com unidades e formatos explícitos — para que «temperatura», «lugar de estacionamento» ou «qualidade do ar» signifiquem o mesmo em todos os seus sistemas.",
+      "items": [
+        {
+          "text": "Os dados observam modelos de dados normalizados de uso corrente sempre que estes existam (por exemplo, Smart Data Models, SAREF, ISO/IEC 5087); eventuais desvios têm de ser fundamentados por escrito.",
+          "why": "Dados de dois fornecedores combinam-se sem um projeto de conversão."
+        },
+        {
+          "text": "Todos os modelos de dados em utilização encontram-se expressamente documentados, indicando de forma clara as unidades de medida e os formatos de data e hora.",
+          "why": "«Temperatura: 23» é inútil se ninguém tiver definido °C ou °F."
+        },
+        {
+          "text": "Eventuais extensões aos modelos são fornecidas como perfis de aplicação ou adições devidamente documentadas sobre o modelo normalizado, nunca sob a forma de uma variante privativa modificada.",
+          "why": "Mantém-se compatível com a comunidade e com atualizações futuras."
+        },
+        {
+          "text": "Cada modelo dispõe de, pelo menos, uma serialização aberta com suporte a validação por esquema (por exemplo, JSON com JSON Schema).",
+          "why": "Os dados de entrada podem ser validados automaticamente à entrada."
+        }
+      ],
+      "why_panel": [
+        "Um único painel lê dados de vários fornecedores sem adaptadores.",
+        "Os dados municipais podem ser lidos pelas ferramentas de outros municípios — e vice-versa.",
+        "A validação automática deteta dados corrompidos antes de se propagarem."
+      ],
+      "red_flags": [
+        "«O nosso modelo de dados proprietário é mais avançado do que as normas abertas.»",
+        "Documentação disponível apenas sob acordo de confidencialidade (NDA)."
+      ]
+    },
+    "MIM3": {
+      "name": "Partilha de Dados",
+      "question": "Podemos partilhar segundo regras claras?",
+      "intro": "Nem todos os dados municipais podem ser disponibilizados publicamente: alguns contêm segredos comerciais, outros são legalmente reservados. O MIM3 define os termos para a partilha segura dos restantes dados: catálogos pesquisáveis, cláusulas e licenças baseadas em minutas-tipo em vez de textos jurídicos ad hoc, bem como regras claras de governação acessíveis a todos. A especificação formula a quase totalidade do MIM3 como uma recomendação técnica (ver pág. 3).",
+      "items": [
+        {
+          "text": "Cada conjunto de dados disponibilizado pelo sistema encontra-se catalogado com metadados normalizados (por exemplo, DCAT-AP), assegurando a sua fácil localização.",
+          "why": "Dados que ninguém encontra são dados que ninguém usa."
+        },
+        {
+          "text": "As licenças e as condições de utilização dos dados baseiam-se em minutas-tipo de referência (por exemplo, licenças abertas ou acordos-tipo de partilha de dados), excluindo termos jurídicos casuísticos por conjunto de dados.",
+          "why": "Os acordos tornam-se escaláveis; os juristas deixam de ser um entrave."
+        },
+        {
+          "text": "O município tem a capacidade de definir autonomamente as condições e os perfis de acesso a cada recurso de dados, podendo alterá-los sem intervenção do fornecedor.",
+          "why": "A governação permanece no município."
+        }
+      ],
+      "why_panel": [
+        "Empresas e investigadores locais desenvolvem soluções com base nos dados do município — o valor gerado permanece na região.",
+        "Dados sensíveis podem ser partilhados exatamente com os parceiros certos, não com todos nem com ninguém.",
+        "Um conjunto único de regras substitui muitos contratos individuais de partilha de dados."
+      ],
+      "red_flags": [
+        "O fornecedor reivindica direitos sobre os dados da cidade (consulte a cláusula «Titularidade dos dados»).",
+        "A partilha com terceiros exige autorização ou pagamento ao fornecedor."
+      ]
+    },
+    "MIM6": {
+      "name": "Segurança dos Dados",
+      "question": "Os nossos dados estão seguros em trânsito e em repouso?",
+      "intro": "As cidades inteligentes são alvos. O MIM6 foca-se de forma estrita e prática: cifrar os dados em trânsito, usar autenticações padrão em vez de proprietárias, controlar e registar quem acede ao quê. Nada disto é exótico — tudo tem de constar do contrato.",
+      "items": [
+        {
+          "text": "Toda a comunicação de dados é cifrada (TLS 1.3 ou norma técnica equivalente em vigor).",
+          "why": "Higiene básica; a SRI 2 também o exige onde for aplicável."
+        },
+        {
+          "text": "Os mecanismos de autenticação de utilizadores e acessos aplicacionais suportam normas abertas — OAuth 2.0 / OpenID Connect — e integram-se com o fornecedor de identidade existente no município.",
+          "why": "Garante uma credencial única por colaborador e revoga automaticamente todos os acessos na cessação de funções."
+        },
+        {
+          "text": "Os direitos de acesso são baseados em funções, revogáveis e auditáveis; os acessos e atos de administração são registados.",
+          "why": "Permite a realização de auditorias e a resposta a incidentes. A preservação de registos integra o controlo 8.15 do Anexo A da ISO/IEC 27001:2022, exigido pelo MIM6."
+        },
+        {
+          "label": "A incluir nos requisitos de capacidade técnica, não nas especificações técnicas",
+          "text": "O fornecedor deve demonstrar conformidade com a norma ISO/IEC 27001:2022 (ou equivalente) no âmbito do serviço prestado.",
+          "why": "A cibersegurança é um processo contínuo e não uma verificação pontual no momento da entrega. A especificação cita controlos da ISO/IEC 27001, não uma certificação formal."
+        }
+      ],
+      "why_panel": [
+        "Uma falha num sistema não abre as portas a todos os outros.",
+        "Nos casos abrangidos pela Diretiva SRI 2, a demonstração de conformidade com a legislação nacional de cibersegurança torna-se substancialmente mais simples.",
+        "Quando algo corre mal, os registos indicam o quê e quem."
+      ],
+      "red_flags": [
+        "Apenas autenticação proprietária.",
+        "«Registos disponíveis mediante pedido.»",
+        "Contas de administração partilhadas."
+      ]
+    },
+    "MIM7": {
+      "name": "Dados Geoespaciais",
+      "question": "Funciona num mapa?",
+      "intro": "Quase tudo o que uma cidade tem possui um lugar. O MIM7 garante que esse lugar não é uma captura de ecrã: os dados espaciais circulam por interfaces OGC padrão, em formatos abertos, sempre com o sistema de coordenadas indicado — para que cada camada adquirida alinhe com as camadas existentes.",
+      "items": [
+        {
+          "text": "A informação geográfica é disponibilizada através de interfaces normalizadas (OGC API Features, SensorThings; sendo a interface WFS admissível para a integração com sistemas preexistentes).",
+          "why": "Qualquer ferramenta de SIG no mercado lê os dados de imediato."
+        },
+        {
+          "text": "A informação geográfica é codificada em formatos abertos (GeoJSON, CityJSON; GML/CityGML nos casos tecnicamente exigíveis).",
+          "why": "Sem licenças de conversores, sem becos sem saída."
+        },
+        {
+          "text": "O sistema de referência de coordenadas encontra-se formalmente identificado (código EPSG) e os dados são passíveis de reprojeção para um SRC comum.",
+          "why": "Camadas de diferentes origens alinham-se efetivamente no mapa."
+        },
+        {
+          "text": "Os elementos espaciais mantêm os mesmos identificadores persistentes do MIM1.",
+          "why": "O ponto no mapa e o registo na base de dados são a mesma coisa."
+        }
+      ],
+      "why_panel": [
+        "Um único mapa municipal em vez de dez visualizadores de fornecedores.",
+        "As obrigações da INSPIRE e dos portais geográficos nacionais tornam-se mais fáceis, não mais difíceis.",
+        "Dados 3D e BIM podem integrar o mesmo contexto mais tarde."
+      ],
+      "red_flags": [
+        "Os dados cartográficos existem apenas no visualizador do fornecedor.",
+        "«Exportação em PDF/captura de ecrã.»"
+      ]
+    },
+    "MIM8": {
+      "name": "Gémeos Digitais Locais",
+      "question": "O nosso gémeo digital pode evoluir?",
+      "intro": "Um gémeo digital traduz um investimento a longo prazo: reúne dados operacionais, representações 3D, algoritmos de simulação e apoia a tomada de decisão. O MIM8 protege esse investimento — os dados e modelos do gémeo mantêm-se documentados e acessíveis, as simulações podem ser reproduzidas e os módulos desenvolvidos num projeto podem ser reutilizados em desenvolvimentos subsequentes. Aplique esta secção na aquisição de plataformas de gémeos digitais, modelos de simulação ou soluções 3D de âmbito urbano.",
+      "items": [
+        {
+          "text": "Conjuntos de dados, entradas de modelos e saídas de simulação são acessíveis por APIs (conforme o MIM0), não ficando retidos no gémeo.",
+          "why": "Os resultados gerados alimentam relatórios, painéis de gestão e projetos subsequentes."
+        },
+        {
+          "text": "Os modelos encontram-se documentados (método, parâmetros, dados de entrada e saída) e podem ser invocados através de uma interface documentada.",
+          "why": "Um modelo preditivo de cheias financiado pelo município pode ser reutilizado por vários serviços — ou por outras autarquias."
+        },
+        {
+          "text": "Os resultados são gerados em formatos normalizados (GeoJSON, CityJSON, 3D Tiles, NetCDF, etc.), compatíveis com aplicações independentes do fornecedor.",
+          "why": "Visualização e análise mantêm-se como mercados concorrenciais."
+        },
+        {
+          "text": "Os fluxos registam a proveniência: qual versão dos dados, qual modelo e quais parâmetros geraram o resultado.",
+          "why": "Decisões baseadas no gémeo podem ser explicadas e defendidas mais tarde."
+        }
+      ],
+      "why_panel": [
+        "O gémeo sobrevive a qualquer fornecedor individual ou orçamento de projeto.",
+        "As simulações computacionais podem ser auditadas, reproduzidas e formalmente comprovadas no processo de decisão municipal.",
+        "Modelos e componentes podem ser partilhados entre cidades."
+      ],
+      "red_flags": [
+        "Os relatórios e simulações apenas podem ser visualizados no portal do fornecedor.",
+        "Modelos como caixas negras fechadas, sem metadados."
+      ]
+    }
+  },
+  "cross": {
+    "title": "Cláusulas contratuais transversais",
+    "subtitle": "Garantias contra a dependência do fornecedor",
+    "intro": "Estas cláusulas devem constar de qualquer caderno de encargos, independentemente do que se adquire. Provêm da prática de contratação em torno dos MIMs e da living-in.eu. A maioria não depende de um único requisito de especificação, pelo que não inclui códigos de referência (a gestão de versões de APIs é também uma recomendação MIM0 C2). Custam pouco a incluir; deixá-las de fora pode custar tudo.",
+    "items": [
+      {
+        "name": "Cláusula de reversão",
+        "text": "No termo do contrato, todos os dados municipais (e configurações) são entregues em formatos abertos e documentados, sem custos adicionais."
+      },
+      {
+        "name": "Titularidade dos dados",
+        "text": "Todos os direitos sobre os dados recolhidos, produzidos ou derivados no âmbito da execução do contrato pertencem em exclusivo à entidade adjudicante."
+      },
+      {
+        "name": "Sem custos por utilizador ou por pedido de dados",
+        "text": "Sem encargos pelo acesso da cidade aos seus próprios dados."
+      },
+      {
+        "name": "Estabilidade e controlo de versões da API",
+        "text": "O cocontratante garante a compatibilidade retroativa da API durante todo o período de vigência do contrato. Quaisquer alterações que descontinuem funcionalidades são comunicadas com uma antecedência mínima de 6 meses e disponibilizadas sob uma nova versão, permanecendo a versão anterior em pleno funcionamento até à data de transição acordada."
+      },
+      {
+        "name": "Demonstração efetiva da conformidade",
+        "text": "Os concorrentes devem comprovar a conformidade técnica dos sistemas na fase de avaliação das propostas, não sendo aceites meras declarações de honra. No caso das APIs, a demonstração exige a apresentação de documentação interativa acessível (por exemplo, OpenAPI) e a execução de um pedido em tempo real que devolva dados válidos. Cada item assinalado é objeto de nova validação na fase de receção da prestação."
+      },
+      {
+        "name": "Identificação de normas abertas",
+        "text": "O caderno de encargos identifica expressamente as normas abertas aplicáveis; quaisquer menções a compatibilidade técnica devem especificar a interface e a respetiva versão exata. Toda a remissão para uma norma ou especificação técnica admite a apresentação de solução técnica equivalente, incumbindo ao concorrente o ónus da prova dessa equivalência."
+      },
+      {
+        "name": "Declaração de conformidade com os MIMs",
+        "text": "O concorrente preenche a tabela de conformidade (pág. 28), a qual passa a constituir anexo integrante do contrato a celebrar."
+      }
+    ]
+  },
+  "example": {
+    "title": "Exemplo: aquisição de uma rede de sensores de qualidade do ar",
+    "scenario": "Páginas assinaladas no caderno de encargos: MIM0, MIM1, MIM2, MIM6 e MIM7 (dados com expressão cartográfica). Do MIM3 aplica-se apenas o requisito 3.1 (os dados de qualidade do ar são públicos, pelo que devem ser catalogados); exclui-se o MIM8, por não se tratar de um gémeo digital.",
+    "table_title": "Enquadramento documental das exigências",
+    "table_headers": [
+      "Peça do procedimento",
+      "Conceito da Diretiva 2014/24/UE",
+      "Conteúdo a incluir"
+    ],
+    "table_rows": [
+      [
+        "Caderno de encargos",
+        "especificações técnicas (artigo 42.º)",
+        "os requisitos assinalados nos MIM0, MIM1, MIM2, MIM3 (apenas o 3.1), MIM6 (exceto o 6.4) e MIM7, transcritos integralmente com os respetivos códigos, acompanhados da cláusula de equivalência"
+      ],
+      [
+        "Programa do procedimento",
+        "critérios de seleção (artigos 58.º e 62.º)",
+        "demonstração de conformidade com a norma ISO/IEC 27001:2022 ou equivalente (requisito 6.4)"
+      ],
+      [
+        "Documentos da proposta",
+        "relatórios de ensaio, certificação e outros meios de prova (artigo 44.º)",
+        "a tabela de conformidade como documento obrigatório da proposta: assinalando C, E ou N para cada item, acompanhada dos respetivos meios de prova (endereço da documentação da API, credenciais de teste)"
+      ],
+      [
+        "Minuta do contrato",
+        "condições de execução do contrato (artigo 70.º)",
+        "Cláusula de reversão, Titularidade dos dados, Sem custos por utilizador ou por pedido de dados, Estabilidade e controlo de versões da API; a tabela de conformidade preenchida como anexo contratual"
+      ],
+      [
+        "Auto de receção",
+        "condições de execução do contrato (artigo 70.º)",
+        "a coluna «Validação» da tabela de conformidade utilizada como guião de testes de aceitação"
+      ]
+    ],
+    "sample_title": "Exemplo de redação para as especificações técnicas",
+    "sample": [
+      "4.3 Interoperabilidade e acesso aos dados",
+      "4.3.1 Todos os dados recolhidos ou gerados pelo sistema podem ser extraídos em, pelo menos, um formato legível por máquina (por exemplo, JSON, CSV) através de uma API web normalizada. (MIMs Plus 9.0, MIM0 R1.1, R1.2)",
+      "4.3.2 A API está formalmente documentada num ficheiro aberto e legível por máquina (por exemplo, OpenAPI), publicado num endereço estável. (MIM0 R1.3)",
+      "4.3.3 A API permite a filtragem de dados pelo período temporal e pelo local da medição. (MIM0 R2.1, R2.2)",
+      "… 4.3.4 a 4.3.21: restantes requisitos assinalados …",
+      "4.3.22 Todas as remissões para normas ou especificações técnicas admitem a apresentação de soluções equivalentes, incumbindo ao concorrente o ónus de demonstrar essa equivalência.",
+      "4.3.23 O concorrente deve preencher a tabela de conformidade (anexa às peças do procedimento) e identificar os meios de prova para cada um dos requisitos exigidos. O concorrente demonstra a conformidade dos pontos 4.3.1 a 4.3.21 mediante a execução em tempo real de pedidos à API durante a fase de avaliação das propostas; os mesmos são objeto de novo teste pela entidade adjudicante no momento da receção dos bens e serviços. A não conformidade dos mesmos constitui fundamento para a recusa de receção da prestação."
+    ],
+    "tip": "A redação da cláusula 4.3.3 evidencia a possibilidade de adaptar o requisito ao objeto contratual: tratando-se de sensores, justifica-se tecnicamente exigir a filtragem por tempo e local da medição.",
+    "note": "Adapte a redação ao direito nacional e peça a validação ao responsável pela contratação pública.",
+    "filled_title": "Exemplo de tabela de conformidade preenchida (extrato)",
+    "filled_rows": [
+      [
+        "0.1",
+        "Dados legíveis por máquina via API web normalizada",
+        "C",
+        "A API REST devolve dados em JSON e CSV; documentação acessível no endereço indicado na proposta, pág. 12; credenciais de teste indicadas no anexo 3",
+        "✓"
+      ],
+      [
+        "0.4",
+        "Subscrição de alterações quando aplicável",
+        "N",
+        "ainda não suportado; previsto para a próxima versão",
+        "—"
+      ],
+      [
+        "7.2",
+        "Formatos geoespaciais abertos",
+        "E",
+        "disponibiliza GeoPackage (norma aberta OGC) em alternativa a GeoJSON; demonstração de equivalência técnica detalhada na proposta, pág. 15",
+        "✓"
+      ]
+    ],
+    "filled_note": "Uma promessa para o futuro é N: o júri verifica apenas o que o concorrente consegue demonstrar."
+  },
+  "tearout": {
+    "title": "Tabela de conformidade",
+    "intro": "Uma linha por requisito. A entidade adjudicante assinala os requisitos aplicáveis ao objeto do contrato e junta a presente tabela às peças do procedimento como documento de apresentação obrigatória com a proposta. Para cada requisito exigido, o concorrente indica C (cumpre), E (cumpre por solução equivalente) ou N (não cumpre), descrevendo de forma sumária o modo de cumprimento e indicando onde se encontra a evidência correspondente: endereço da documentação técnica, credenciais de acesso para testes ou página da proposta. A mera declaração de honra desprovida de meios de prova determina a não consideração da resposta. O júri do procedimento valida cada item durante a avaliação das propostas e verifica-o novamente na receção da prestação (✓ validado, ✗ não validado, — não verificado).",
+    "intro2": "A tabela preenchida integra a proposta do adjudicatário e converte-se em anexo vinculativo ao contrato celebrado. Destina-se a verificar a conformidade da proposta com o caderno de encargos (cumpre ou não cumpre); não constitui um critério de adjudicação. Caso pretenda pontuar o nível de desempenho técnico, a entidade adjudicante deve prever expressamente essa ponderação no modelo de avaliação de propostas fixado nas peças do procedimento (Diretiva 2014/24/UE, Artigo 67.º).",
+    "headers": [
+      "N.º",
+      "Requisito (resumo)",
+      "Ref. MIM",
+      "Exigido?",
+      "C / E / N",
+      "Evidência: método e localização",
+      "Validação"
+    ],
+    "header_roles": [
+      "entidade adjudicante",
+      "concorrente",
+      "concorrente",
+      "júri"
+    ],
+    "note": "As designações abreviadas abaixo resumem o conteúdo integral dos requisitos constantes das secções dos MIMs — em caso de divergência ou dúvida, prevalece o texto integral do requisito.",
+    "download_label": "O modelo editável desta tabela pode ser descarregado em:",
+    "cross_note": "O concorrente declara a aceitação plena da respetiva condição contratual (C / N)."
+  },
+  "tearout_short": {
+    "MIM0": [
+      "Dados legíveis por máquina via API web normalizada",
+      "Descrição da API em formato aberto (OpenAPI) em URL estável",
+      "Filtragem por período temporal, localização e atributos",
+      "Subscrição de alterações quando aplicável",
+      "Erros, caching e controlo de tráfego HTTP normalizados"
+    ],
+    "MIM1": [
+      "Identificador único e persistente por entidade",
+      "Resolução do identificador devolve dados e tipo semântico",
+      "Mapeamento de identificadores entre sistemas",
+      "Identificadores sem elementos técnicos do fornecedor"
+    ],
+    "MIM2": [
+      "Modelos de dados normalizados sempre que existam",
+      "Modelos documentados e unidades explícitas",
+      "Extensões como perfis, nunca variantes isoladas",
+      "Serialização aberta com suporte a validação por esquema"
+    ],
+    "MIM3": [
+      "Conjuntos de dados descritos com metadados normalizados",
+      "Licenças e acordos-tipo de partilha de dados",
+      "Município define os termos de acesso"
+    ],
+    "MIM6": [
+      "Cifra de comunicações em trânsito (TLS 1.3)",
+      "Autenticação padrão (OAuth 2.0 / OIDC)",
+      "Acesso por funções e registos de auditoria",
+      "Demonstração de conformidade com ISO/IEC 27001:2022"
+    ],
+    "MIM7": [
+      "Interfaces segundo as normas OGC",
+      "Codificação em formatos geoespaciais abertos",
+      "Sistema de coordenadas formalmente declarado (código EPSG)",
+      "Elementos espaciais com identificadores persistentes (ver 1.1)"
+    ],
+    "MIM8": [
+      "Dados e saídas do gémeo via APIs",
+      "Modelos documentados e executáveis via interface",
+      "Formatos de saída padronizados",
+      "Registo de proveniência de dados e processos"
+    ],
+    "CROSS": [
+      "Cláusula de reversão: entrega em formatos abertos sem custos",
+      "Direitos sobre os dados pertencem à entidade adjudicante",
+      "Sem encargos no acesso aos dados próprios",
+      "Estabilidade da API com pré-aviso de 6 meses para alterações"
+    ]
+  },
+  "glossary": {
+    "title": "Glossário sucinto",
+    "terms": [
+      {
+        "t": "API",
+        "d": "Interface que permite a comunicação e a troca estruturada de dados entre diferentes aplicações informáticas através da web, sem intervenção humana direta."
+      },
+      {
+        "t": "Modelo de dados",
+        "d": "A estrutura padronizada da informação: define os campos existentes, o respetivo significado semântico e as unidades de medida aplicáveis."
+      },
+      {
+        "t": "DCAT-AP",
+        "d": "Perfil europeu de metadados para catálogos de dados; permite a indexação e pesquisa de conjuntos de dados em portais nacionais e da União Europeia."
+      },
+      {
+        "t": "EPSG",
+        "d": "Registo de códigos numéricos de sistemas de referência de coordenadas (ex.: EPSG:4326 para WGS 84)."
+      },
+      {
+        "t": "Identificador",
+        "d": "Código permanente e inequívoco atribuído a uma entidade específica (como uma luminária ou um edifício), comum a todos os sistemas informáticos."
+      },
+      {
+        "t": "Interoperabilidade",
+        "d": "Capacidade de sistemas de diferentes fornecedores trocarem dados e compreenderem o seu significado."
+      },
+      {
+        "t": "IRI",
+        "d": "Identificador de Recursos Internacionalizado (semelhante a um URL web, admitindo carateres não-ASCII). Utilizado no âmbito do MIM1 para a identificação perene de entidades."
+      },
+      {
+        "t": "LDT",
+        "d": "Gémeo Digital Local: modelo digital de uma cidade ou parte dela, ligado a dados e a simulações."
+      },
+      {
+        "t": "Legível por máquina",
+        "d": "Estruturado para processamento direto por programas (JSON, CSV) — o que exclui tabelas em PDF."
+      },
+      {
+        "t": "Metadados",
+        "d": "Dados sobre dados: o que um conjunto contém, quem o fornece, quão atual é e sob que licença."
+      },
+      {
+        "t": "OAuth 2.0 / OIDC",
+        "d": "Normas abertas de autenticação e delegação de autorizações de acesso. O OpenID Connect (OIDC) acrescenta a camada de verificação de identidade ao protocolo OAuth 2.0."
+      },
+      {
+        "t": "OGC",
+        "d": "Open Geospatial Consortium: consórcio internacional responsável pela publicação de normas abertas para dados e serviços georreferenciados (tais como OGC API, WFS, SensorThings)."
+      },
+      {
+        "t": "Norma aberta",
+        "d": "Regra técnica que qualquer pessoa pode consultar e aplicar sem custos nem pedidos de autorização."
+      },
+      {
+        "t": "OpenAPI",
+        "d": "Formato aberto para descrição legível por máquina de APIs web: endereços, parâmetros e respostas."
+      },
+      {
+        "t": "Serialização",
+        "d": "Registo de dados num formato concreto (ex.: JSON, XML) para que possam ser armazenados ou transmitidos."
+      },
+      {
+        "t": "TLS",
+        "d": "O protocolo que cifra os dados em trânsito numa rede (a base do HTTPS)."
+      },
+      {
+        "t": "Aprisionamento tecnológico (vendor lock-in)",
+        "d": "Quando abandonar um fornecedor custa tanto — em dados, formatos ou taxas — que se torna inviável."
+      },
+      {
+        "t": "Webhook / MQTT",
+        "d": "Duas formas de um sistema comunicar alterações: um webhook chama um endereço, o MQTT envia a subscritores."
+      }
+    ],
+    "more_title": "Onde obter mais informação",
+    "links": {
+      "mims.oascities.org": "A versão integral da especificação dos MIMs Plus, mantida pela OASC.",
+      "living-in.eu": "O movimento europeu para a transformação digital inteligente das cidades — declaração institucional e enquadramento dos MIMs Plus.",
+      "smartdatamodels.org": "Repositório público de modelos de dados normalizados e abertos (FIWARE, TM Forum, IUDX, OASC).",
+      "oascities.org/academy": "CITYxCITY Academy — cursos para equipas municipais, criados por cidades."
+    }
+  },
+  "back": {
+    "text": "Compilado a partir da Especificação MIMs Plus 9.0 pela Open & Agile Smart Cities (mims.oascities.org). Conteúdo original da especificação © OASC. O presente documento constitui um guia explicativo independente destinado à contratação pública municipal; em caso de dúvida, o texto da especificação internacional prevalece.",
+    "credits": "Criado com ferramentas abertas. Reutilize e adapte livremente para a sua cidade.",
+    "author": "Autor do guia: Marek Mráz"
+  },
+  "quote_translations": {
+    "MIM0 · R1.1": "Os sistemas DEVEM permitir a extração de dados em, pelo menos, um formato legível por máquina. Os formatos podem ser especificados através do mecanismo de Negociação de Conteúdo HTTP",
+    "MIM0 · R1.2": "Os dados DEVEM poder ser obtidos através de, pelo menos, um mecanismo normalizado baseado na web",
+    "MIM0 · R1.3": "O(s) mecanismo(s) de acesso DEVE(M) encontrar-se formalmente documentado(s)",
+    "MIM0 · R1.4": "Os modelos de dados utilizados pelas cargas úteis devem ser especificados (ver MIM2)",
+    "MIM0 · R2.1": "Os sistemas DEVEM disponibilizar os dados através de uma interface estruturada e consistente",
+    "MIM0 · R2.2": "Os sistemas DEVEM suportar operações básicas de consulta e/ou filtragem (por exemplo, por tempo, localização, atributos)",
+    "MIM0 · C2": "As APIs DEVERIAM suportar a obtenção de dados atuais · As APIs DEVERIAM suportar a obtenção de dados históricos quando aplicável · As APIs DEVERIAM suportar consultas geoespaciais quando aplicável (ver MIM7) · As APIs DEVERIAM suportar a subscrição de alterações de dados quando aplicável · As APIs DEVERIAM disponibilizar o marcador temporal da próxima atualização prevista · As APIs DEVERIAM suportar a gestão explícita de versões nos pontos de terminação (endpoints) · As APIs DEVERIAM disponibilizar exemplos de mensagens (payloads) ou consultas de teste · As APIs DEVERIAM suportar os cabeçalhos normais de controlo de memória intermédia (caching) de HTTP · As APIs DEVERIAM comunicar o estado do limite de pedidos através de cabeçalhos normais de HTTP · As APIs DEVERIAM devolver estruturas de erro padronizadas no corpo da mensagem · As APIs PODEM suportar a devolução parcial de respostas ou projeções de consultas · As APIs PODEM disponibilizar um ponto de terminação normalizado de verificação do estado operacional do serviço (health/status)",
+    "MIM0 · R3.1": "Os sistemas destinados a casos de uso que exijam notificações DEVEM disponibilizar, pelo menos, um mecanismo para a receção de atualizações sobre alterações nos dados",
+    "MIM0 · R3.2": "Os sistemas PODEM suportar múltiplos mecanismos de subscrição consoante os requisitos do caso de uso",
+    "MIM0 · C4": "Caso existam tais restrições, estas DEVEM observar as exigências definidas nos MIM3 e MIM6, em particular: a identificação do interveniente (MIM3.C5.R0), a autorização e perfis de intervenientes (MIM6.C1.R4) e as regras de política de acesso ao nível do recurso de dados (MIM6.C1.R4)",
+    "MIM1 · R1.1": "Cada entidade no sistema possui um identificador único",
+    "MIM1 · R1.2": "Existe uma forma de extrair informação sobre uma entidade através da consulta do seu identificador no sistema",
+    "MIM1 · R1.3": "Se um identificador único apontar para a mesma entidade em múltiplos sistemas, é possível determinar o método para consultar informação sobre ela em cada um desses sistemas",
+    "MIM1 · R1.4": "Se múltiplos identificadores únicos apontarem para a mesma entidade, é possível efetuar o respetivo mapeamento recíproco",
+    "MIM1 · R1.5": "É possível criar identificadores que sejam persistentes ao longo do tempo",
+    "MIM1 · R2.1": "Existe um método para obter a semântica de uma entidade, utilizando exclusivamente o seu identificador único",
+    "MIM1 · R2.2": "Esta semântica encontra-se descrita num formato legível por máquina",
+    "MIM1 · R3.1": "Existe um método para resolver (desreferenciar) uma relação associada a uma entidade",
+    "MIM1 · R3.2": "Existe uma forma de aplicar definições semânticas complementares a uma ontologia existente",
+    "MIM2 · R1.1": "Os modelos de dados utilizados para todas as entidades em qualquer fonte de dados devem ser explicitados. Devem encontrar-se devidamente documentados e dispor de metadados descritivos, nos quais os termos utilizados devem ser semanticamente inequívocos. No que respeita aos atributos relativos a unidades de medida, formatos temporais, etc., as unidades, formatos, etc. utilizados devem ser formalmente explicitados. Os modelos de dados deveriam estar catalogados por forma a assegurar a sua fácil localização.",
+    "MIM2 · R1.2a": "Os modelos de dados utilizados devem basear-se (sempre que viável) em modelos de dados normalizados de uso corrente, conforme identificados infra",
+    "MIM2 · R1.2b": "Nas situações em que não seja possível utilizar modelos de dados normalizados existentes, devem ser desenvolvidos esforços no sentido de alargar os modelos normalizados existentes que apresentem maior aproximação estrutural ou definir novos modelos, observando as melhores práticas e convenções da comunidade ou organismo responsável pela sua definição.",
+    "MIM2 · R1.3": "Os modelos de dados adotados devem suportar a troca de informação com base na aplicação dos requisitos pertinentes dos MIMs sobre Acesso aos Dados e Interligação de Dados",
+    "MIM2 · R2.1": "Deveria ser desenvolvido um modelo de dados comum para cada entidade estruturante em qualquer ecossistema de dados. Esse modelo de dados comum deveria contemplar a totalidade dos campos integrantes dos diversos modelos de dados dessa entidade em utilização no âmbito desse ecossistema. Cada modelo de dados distinto utilizado nesse ecossistema de dados poderia, assim, ser objeto de conversão para o modelo de dados comum.",
+    "MIM2 · R3.1": "Cada modelo de dados em utilização deve dispor de, pelo menos, um formato estruturado de transporte de dados («serialização») legível por máquina que seja aberto, de acesso público e independente de implementações técnicas proprietárias.",
+    "MIM2 · R3.2": "A documentação técnica do formato de transporte de dados deveria apresentar detalhe suficiente para permitir o desenvolvimento de aplicações ou módulos de interpretação não proprietários capazes de reconstituir integralmente os dados armazenados no referido formato.",
+    "MIM2 · R3.3": "Sempre que sejam suportados múltiplos formatos de transporte para o mesmo modelo de dados, estes devem traduzir com coerência o mesmo conteúdo informativo, sem degradação do respetivo significado.",
+    "MIM2 · R3.4": "A representação adotada deveria suportar a validação através de esquemas publicados de acesso livre, gramáticas ou regras restritivas equivalentes legíveis por máquina, sempre que tais mecanismos de validação existam para o formato adotado.",
+    "MIM2 · R4.1": "Os perfis de aplicação que estendam um modelo de dados não devem afetar o modelo já existente e os seus utilizadores",
+    "MIM2 · R4.2": "As especificações particulares ou extensões integradas no Perfil de Aplicação do modelo de dados deveriam encontrar-se integralmente documentadas, de forma autónoma em relação ao modelo de dados principal",
+    "MIM3 · RC1.1": "A entidade gestora de um ecossistema de dados deveria poder definir o respetivo modelo de governação (por exemplo, um regulamento técnico) que consagre as regras de adesão, os perfis funcionais, as responsabilidades e obrigações dos participantes, bem como os princípios gerais disciplinadores da partilha de dados entre si.",
+    "MIM3 · RC1.2": "As entidades integradas num ecossistema de dados deveriam ter pleno conhecimento do seu modelo de governação e de quaisquer revisões que lhe sejam introduzidas.",
+    "MIM3 · RC1.3": "O modelo de governação institucional deveria ser de fácil apreensão por todos os participantes do ecossistema.",
+    "MIM3 · RC2.1": "Os fornecedores de dados dispõem de plena liberdade para determinar os termos e as condições sob os quais autorizam a partilha dos seus dados. (Nota: Antes de disponibilizarem os recursos de dados, os fornecedores de dados deveriam certificar-se de que dispõem do consentimento e das autorizações necessárias dos respetivos titulares dos dados.)",
+    "MIM3 · RC2.2": "Os termos e as condições associados à partilha de dados deveriam encontrar-se enunciados de forma expressa e inequívoca, garantindo a sua fácil compreensão por parte dos utilizadores de dados.",
+    "MIM3 · RC2.3": "Os termos e condições de partilha de dados deveriam ser formalizados mediante licenças de dados ou acordos de partilha baseados em minutas-tipo padronizadas ou normas de referência reconhecidas.",
+    "MIM3 · RC2.4": "Os termos e condições de cedência deveriam observar as disposições globais do modelo de governação do ecossistema de dados, NÃO DEVENDO conter disposições que o contrariem. (Nota: Um fornecedor de dados pode optar por não participar no ecossistema de dados se o modelo de governação subjacente for excessivamente restritivo ou excessivamente permissivo.)",
+    "MIM3 · RC3.1": "A entidade gestora do ecossistema de dados tem de poder verificar o escrupuloso cumprimento do modelo de governação em vigor por parte dos seus participantes.",
+    "MIM3 · RC3.2": "Os fornecedores de dados deveriam poder aferir se a utilização concretizada pelo utilizador de dados observa rigorosamente os termos e condições previamente estabelecidos.",
+    "MIM3 · RC3.3": "Os utilizadores de dados deveriam poder confirmar se a disponibilização efetuada pelo fornecedor de dados observa pontualmente os termos e condições acordados.",
+    "MIM3 · RC4.1": "Os utilizadores de dados deveriam ter a capacidade de identificar os dados existentes no ecossistema de partilha de dados, sem necessidade de conhecimento prévio da sua existência.",
+    "MIM3 · RC4.2": "Os recursos de dados deveriam dispor de metadados descritivos com nível de detalhe suficiente para permitir aos utilizadores de dados tomarem decisões informadas quanto à sua adequação ao fim a que se destinam.",
+    "MIM3 · RC4.3": "Os metadados utilizados para descrever os recursos de dados deveriam adotar formatos normalizados estruturados e de fácil interpretação, que sejam simultaneamente inteligíveis por humanos e legíveis por máquina.",
+    "MIM3 · RC5.1": "Os participantes do ecossistema (designadamente utilizadores e fornecedores de dados) deveriam poder identificar-se mutuamente no âmbito do ecossistema de partilha de dados.",
+    "MIM3 · RC5.2": "Deveriam ser disponibilizados metadados suficientes sobre cada participante no ecossistema, por forma a permitir aferir o respetivo nível de idoneidade e fiabilidade no âmbito da partilha de dados.",
+    "MIM3 · RC5.3": "Os fornecedores de dados deveriam ter a capacidade de autenticar inequivocamente os utilizadores que pretendam aceder aos seus recursos de dados e validar os respetivos metadados antes de autorizar o acesso.",
+    "MIM3 · RC5.4": "Os utilizadores de dados deveriam ter a capacidade de identificar os fornecedores que partilham dados no ecossistema antes de acederem ou utilizarem essa informação.",
+    "MIM3 · RC5.5": "Os intervenientes no ecossistema podem igualmente salvaguardar o anonimato na sua participação caso as regras de governação do ecossistema de partilha de dados expressamente o admitam. Nessa eventualidade, as disposições constantes de RC5.1 a RC5.4 podem ser desconsideradas.",
+    "MIM3 · RC6.1": "Os utilizadores e fornecedores de dados deveriam poder celebrar o acordo de partilha e aceitar os respetivos termos e condições associados (designadamente por adesão eletrónica, assinatura formal do instrumento jurídico ou mediante negociação direta).",
+    "MIM3 · RC6.2": "Os utilizadores e fornecedores de dados deveriam dispor da faculdade de revogar um acordo de partilha de dados previamente outorgado, nos termos e nas condições contratuais aplicáveis.",
+    "MIM3 · RC6.3": "Sempre que possível, podem ser fornecidos meios eletrónicos para o acordo e cessação de uma partilha de dados.",
+    "MIM3 · RC7.1": "Os utilizadores de dados deveriam poder manifestar o interesse na disponibilização de recursos de dados que não se encontrem atualmente acessíveis no ecossistema de partilha de dados.",
+    "MIM3 · RC7.2": "Os fornecedores de dados devem poder obter os pedidos efetuados pelos utilizadores de dados para novos recursos de dados.",
+    "MIM6 · R1.1": "As regras de controlo de acesso físico e lógico à informação e a outros ativos conexos DEVEM ser fixadas e postas em prática de acordo com as exigências operacionais e de segurança da informação. (ISO 27001 5.15 Controlo de acessos)",
+    "MIM6 · R1.2": "A atribuição e a gestão dos dados de autenticação DEVEM ser fiscalizadas através de um procedimento de gestão, que compreenda a instrução formal dos colaboradores quanto ao tratamento seguro dos elementos de autenticação. (ISO 27001 5.17: Informação de autenticação)",
+    "MIM6 · R1.3": "Os direitos de acesso à informação e a outros ativos associados DEVEM ser atribuídos, revistos periodicamente, alterados e revogados de acordo com a política setorial e as regras institucionais de controlo de acessos da organização. (ISO 27001 5.18: Direitos de acesso)",
+    "MIM6 · R2.1": "DEVEM ser definidas e aplicadas regras para a utilização eficaz de métodos criptográficos, incluindo a gestão do ciclo de vida de chaves criptográficas. (ISO 27001 8.24 Utilização de criptografia)",
+    "MIM6 · R3.1": "Devem ser aplicadas tecnologias e procedimentos de autenticação segura, em função das restrições de acesso à informação e da política de segurança de controlo de acessos da entidade. (ISO 27001 8.5 Autenticação segura)",
+    "MIM6 · M1.1": "O Protocolo Transport Layer Security (TLS), Versão 1.3",
+    "MIM6 · M1.2": "O Modelo de Autorização OAuth 2.0 (Authorization Framework)",
+    "MIM6 · M1.3": "OpenID Connect 1.0, Camada de gestão de identidade para suporte de autenticação sobre OAuth 2.0",
+    "MIM6 · M1.4": "OIDC4VCI / OIDC4VP, Especificações OpenID para Emissão e Apresentação de Credenciais Verificáveis",
+    "MIM7 · R1.1": "A informação geográfica deve ser disponibilizada através de uma interface de serviço web baseada em normas abertas.",
+    "MIM7 · R2.1": "A informação geográfica deve ser codificada com recurso a normas abertas. Recomenda-se a adoção das normas técnicas de referência publicadas pelo OGC e pela BuildingSMART International.",
+    "MIM7 · R3.1": "Todos os conjuntos de dados que facultem informação complementar e enquadramento contextual aos dados geoespaciais devem observar o disposto nos MIM1 e MIM2.",
+    "MIM7 · R4.1": "Devem ser utilizados identificadores únicos e persistentes para a identificação inequívoca de quaisquer instâncias ou entidades constantes dos conjuntos de dados. (Consultar MIM1: Interligação de Dados.)",
+    "MIM7 · R5.1": "Os Sistemas de Referência de Coordenadas (SRC) devem estar conformes com as normas internacionais, devendo ser expressamente indicada a norma técnica adotada (por exemplo, EPSG:4326, EPSG:3857). Essa indicação deve contemplar o código EPSG ou identificador WGS, bem como eventuais variações com base em sistemas de projeção cartográfica nacionais como o LKS-92 da Letónia, de modo a viabilizar a transformação e reprojeção dos dados para um SRC comum. (Nota: No espaço da União Europeia, os dados geoespaciais devem dispor de metadados conformes com as orientações da Diretiva INSPIRE, incluindo a informação técnica indispensável à caracterização do respetivo SRC.)",
+    "MIM8 · R1.1": "O LDT deve assegurar o acesso às variáveis de saída de simulações e aos dados de entrada dos modelos de cálculo sempre que estes intervenham no âmbito dos fluxos de processamento do LDT.",
+    "MIM8 · R1.2": "O LDT deve distinguir com clareza entre dados brutos de origem, dados transformados prontos para fluxos de trabalho, entradas de modelos e saídas de modelos.",
+    "MIM8 · C2": "Esta capacidade baseia-se no MIM3 (Partilha de Dados) para o intercâmbio de dados.",
+    "MIM8 · R3.1": "O modelo deveria facultar metadados descritivos normalizados, englobando a documentação da metodologia aplicada, dos parâmetros computacionais e das variáveis de dados (fornecidas por valor ou por referência). Para este efeito, deveriam ser adotadas normas correntes de metadados.",
+    "MIM8 · R3.2": "O modelo deve apresentar uma interface documentada ou ser executável através desta, preferencialmente suportada numa API normalizada reconhecida. O conjunto de dados gerado como resultado do processamento do modelo deve encontrar-se integralmente caracterizado (ao nível da sua estrutura de dados).",
+    "MIM8 · R3.3": "A utilização fiável, segura e ética de métodos inovadores (LLMs, IA baseada em agentes, etc.) deve ser salvaguardada. O enviesamento deve ser minimizado onde aplicável. Os métodos utilizados para garantir isto devem ser descritos.",
+    "MIM8 · R3.4": "O modelo tem de ser capaz de aceder a dados em nome do utilizador final ou da organização. Ver MIM3",
+    "MIM8 · R3.5": "Para dados a utilizar em modelos de IA, a proveniência e a fiabilidade devem ser garantidas. Em alguns casos, tem de ser indicada uma fonte fidedigna, como uma entidade pública.",
+    "MIM8 · R4.1": "O LDT suporta fluxos de trabalho que interligam origens de dados, rotinas de transformação, execução de modelos, processos de simulação e geração de resultados.",
+    "MIM8 · R4.2": "O LDT encadeia etapas de fluxos de trabalho, onde a saída de uma etapa pode ser utilizada como entrada para outra.",
+    "MIM8 · R4.3": "O LDT monitoriza o estado de execução dos fluxos de processamento, registando processos concluídos com sucesso, execuções com erro e processos interrompidos.",
+    "MIM8 · R4.4": "O LDT regista a proveniência dos fluxos de trabalho, incluindo conjuntos de dados utilizados (com versão e carimbo temporal), modelos executados, parâmetros selecionados e saídas geradas.",
+    "MIM8 · R5.1": "O LDT disponibiliza metadados informativos sobre o conteúdo das representações visuais geradas, contemplando carimbo temporal, extensão espacial, fonte dos dados e pressupostos de cenários ou variantes formulados, nos casos aplicáveis.",
+    "MIM8 · R5.2": "O LDT suporta diferentes tipos de visualização interativa, tais como mapas 2D, cenas 3D, painéis, relatórios ou vistas públicas.",
+    "MIM8 · R6.1": "O LDT deve documentar lacunas semânticas por resolver, pressupostos ou correspondências que possam afetar a interpretação, reutilização ou comparação de resultados.",
+    "MIM8 · M1": "Acesso a Recursos do LDT com Base em APIs",
+    "MIM8 · M2": "Formatos Normalizados de Dados e de Resultados de Saída",
+    "MIM8 · M3": "Modelo de Execução como Serviço (Model-as-a-Service)",
+    "MIM8 · M4": "Orquestração de Fluxos de Trabalho no LDT",
+    "MIM8 · M5": "Acesso a Múltiplas Vistas de Saída e Visualização",
+    "MIM1 · §3.1": "O IRI é assumido como o identificador de referência em todos os sistemas derivados a jusante; os desenvolvimentos NÃO DEVEM gerar IRIs que incluam dados técnicos voláteis de implementação, tais como chaves de tabelas de bases de dados ou nomes de máquinas de servidores.",
+    "MIM6 · 8.15": "Registo de eventos. Registos que documentem atividades, exceções, falhas e outros eventos relevantes devem ser produzidos, armazenados, protegidos e analisados."
+  },
+  "capability_translations": {
+    "MIM0 · C1": "Os dados legíveis por máquina podem ser obtidos através da web",
+    "MIM0 · C2": "O acesso é estruturado e consultável",
+    "MIM0 · C2 best practice": "Boas práticas adicionais a considerar:",
+    "MIM0 · C3": "É possível subscrever alterações nos dados",
+    "MIM0 · C4": "O acesso à informação pode ser objeto de restrições",
+    "MIM1 · C1": "As entidades são identificadas mediante identificadores únicos",
+    "MIM1 · C2": "As entidades podem ser tipificadas",
+    "MIM1 · C3": "As entidades podem ser referenciadas e resolvidas",
+    "MIM2 · C1": "Todas as entidades constantes das fontes de dados são descritas mediante modelos de dados consistentes, de modo a assegurar a interoperabilidade entre sistemas e aplicações",
+    "MIM2 · C2": "Os diferentes modelos de dados associados a uma mesma entidade utilizados num ecossistema de partilha deveriam ser facilmente convertíveis para um modelo de dados comum",
+    "MIM2 · C3": "Quaisquer dados e respetivos metadados associados podem ser partilhados através de formatos de transporte normalizados e abertos, garantindo a sua troca e interpretação coerente entre ferramentas e implementações técnicas distintas",
+    "MIM2 · C4": "Sempre que conveniente, deveria ser possível definir «Perfis de Aplicação» para um modelo de dados, por forma a permitir a inclusão ou a especificação de atributos próprios de um caso de uso sem alterar o modelo de dados de base",
+    "MIM3 · C1": "Podem ser definidas regras de governação para o ecossistema de partilha de dados",
+    "MIM3 · C2": "Podem ser definidos os termos e condições para a partilha de dados",
+    "MIM3 · C3": "Pode ser fiscalizada a conformidade com as condições de partilha de dados estabelecidas",
+    "MIM3 · C4": "Os recursos de dados disponíveis podem ser descobertos",
+    "MIM3 · C5": "É possível identificar os participantes no ecossistema",
+    "MIM3 · C6": "A partilha de dados pode ser acordada",
+    "MIM3 · C7": "Podem ser solicitados novos dados que não se encontrem atualmente disponíveis",
+    "MIM6 · C1": "Os dados apenas se encontram acessíveis aos utilizadores que disponham de legitimidade de acesso",
+    "MIM6 · C2": "Os dados acedidos pelos utilizadores não foram alterados",
+    "MIM6 · C3": "Os dados acedidos pelos utilizadores têm proveniência numa fonte formalmente verificada",
+    "MIM6 · M1": "Mecanismo candidato",
+    "MIM7 · C1": "Os municípios e comunidades podem transferir com facilidade informação geográfica entre sistemas de informação internos e externos (incluindo sistemas IoT)",
+    "MIM7 · C2": "Os municípios e comunidades podem integrar dados espaciais 2D e 3D originários de diversas fontes, tais como informação geográfica e modelos BIM, e partilhá-los de forma interoperável",
+    "MIM7 · C3": "Os municípios e comunidades podem integrar dados geoespaciais com outras fontes de dados que forneçam contexto adicional",
+    "MIM7 · C4": "Os municípios e comunidades dispõem de um método coerente e persistente para identificar instâncias individuais de todos os elementos, objetos ou entidades presentes nas fontes de dados georreferenciados",
+    "MIM7 · C5": "Os Sistemas de Referência de Coordenadas (SRC) aplicados na partilha de dados podem ser facilmente convertidos para um SRC comum",
+    "MIM8 · C1": "Assegurar o acesso aos conjuntos de dados integrados no LDT, abrangendo dados estáticos, dados em tempo real, resultados de simulação e modelos computacionais",
+    "MIM8 · C2": "Partilhar dados com sistemas externos e outros gémeos digitais através de interfaces abertas e interoperáveis",
+    "MIM8 · C3": "Reutilizar modelos determinísticos ou de IA em diferentes domínios, comunidades, casos de uso e/ou LDTs",
+    "MIM8 · C4": "Coordenar e gerir o fluxo integrado de dados, modelos e processos de cálculo no seio de um LDT (intra-LDT) e entre diferentes plataformas de LDT (inter-LDT)",
+    "MIM8 · C5": "Disponibilizar múltiplos modos de representação visual de dados e resultados (por exemplo, vistas 2D, 3D ou painéis de controlo) assentes numa base de informação comum para permitir a interação e a análise comparativa",
+    "MIM8 · C6": "Garantir que a informação trocada (e os resultados de simulações) no seio de um LDT e entre múltiplos LDTs pode ser interpretada com coerência, através de mapeamentos semânticos partilhados e rastreio claro de proveniência",
+    "MIM8 · M": "Mecanismos (em desenvolvimento ativo)",
+    "MIM1 · M1": "Mecanismo 1, secção 3.1: Identificação de Entidades através de IRIs Globalmente Únicos",
+    "MIM6 · P": "Requisitos Prévios e Posteriores (baseados no Anexo A da ISO 27001): o controlo a que este guia se refere"
+  },
+  "spec_link_label": "Especificação integral:"
+}

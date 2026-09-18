@@ -1,0 +1,814 @@
+{
+  "cover": {
+    "title": "Tjekliste til udbud · med de minimale mekanismer · for interoperabilitet (MIMs)",
+    "subtitle": "Hvad udbuddet skal indeholde, så kommunen beholder sine data",
+    "tagline": "Til MIMs Plus 9.0 fra OASC",
+    "footer": "Til udbudskonsulenter, projektledere og it-chefer i europæiske kommuner"
+  },
+  "why": {
+    "title": "Hvorfor dette hæfte",
+    "paras": [
+      "Hvert år indkøber kommuner software: parkeringssystemer, sensorplatforme, kortportaler, digitale tvillinger. Alt for ofte ender de data, systemerne indsamler, låst inde i dem. Når kontrakten udløber, forsvinder dataene — betalt med offentlige midler — sammen med leverandøren, eller forbliver fanget i et format, som ingen andre kan læse.",
+      "Sådan behøver det ikke at være. De minimale interoperabilitetsmekanismer (MIMs), der vedligeholdes af Open & Agile Smart Cities (OASC) og støttes gennem den europæiske living-in.eu-bevægelse, beskriver de minimale tekniske krav, der holder dine data åbne, genanvendelige og leverandøruafhængige. De er bevidst enkle: ikke en forkromet arkitektur, blot de få krav der skal være opfyldt, for at systemer kan tale sammen.",
+      "Du behøver ikke at være ingeniør for at bruge dem. Hver tjekliste omsætter én MIM til letforståelige kravpunkter, som du kan kopiere ind i et udbud, ledsaget af en forklaring på, hvordan hvert punkt beskytter dig. Lige efter tjeklisten finder du hvert krav fra den pågældende MIM ordret, så dine tekniske kolleger og tilbudsgiverne kan kontrollere detaljerne.",
+      "Kommuner, der stiller krav om MIMs, køber ind én gang og genbruger mange gange: luftkvalitetsdata føder skolens instrumentbræt, gadebelysningsregistret føder energiplanen, og den næste leverandør kan bygge videre, hvor den forrige slap. Det er, hvad interoperabilitet betyder i praksis — og det forventes i stigende grad i EU-finansierede projekter."
+    ],
+    "quote": {
+      "text": "De minimale interoperabilitetsmekanismer (MIMs) muliggør et minimalt, men tilstrækkeligt niveau af interoperabilitet for data, systemer og tjenester, specifikt i sammenhæng med smart city-løsninger. · Målgruppen for dette dokument er: · 1. Løsningsleverandører, der ønsker at sikre, at deres løsninger er interoperable med andre og muliggør flydende dataudveksling inden for rammerne af Smart Cities and Communities. · 2. Ordregivere, der ønsker at indkøbe fremtidssikrede løsninger, der muliggør omkostningseffektiv integration i en eksisterende Smart Cities and Communities informations- og kommunikationsteknologi-arkitektur (IKT)."
+    },
+    "policy": {
+      "title": "Hvordan MIMs passer til EU-retten",
+      "intro": "MIMs er en teknisk specifikation, ikke en lov. De peger i samme retning som de EU-regler, der allerede gælder for offentlige data og digitale tjenester:",
+      "items": [
+        {
+          "name": "Udbudsdirektivet",
+          "ref": "Direktiv 2014/24/EU, artikel 42",
+          "text": "tekniske specifikationer kan henvise til standarder, altid ledsaget af udtrykket ”eller tilsvarende”; som udgangspunkt må de ikke henvise til et bestemt fabrikat eller produkt."
+        },
+        {
+          "name": "Dataforordningen (Data Act)",
+          "ref": "Forordning (EU) 2023/2854",
+          "text": "adgang til data fra opkoblede produkter samt skift mellem cloudtjenester uden leverandørindlåsning."
+        },
+        {
+          "name": "Interoperable Europe Act",
+          "ref": "Forordning (EU) 2024/903",
+          "text": "interoperabilitetsvurderinger for grænseoverskridende digitale offentlige tjenester og genbrug af åbne løsninger."
+        },
+        {
+          "name": "Åbne data-direktivet",
+          "ref": "Direktiv (EU) 2019/1024",
+          "text": "værdifulde datasæt skal stilles gratis til rådighed i maskinlæsbare formater via API'er."
+        },
+        {
+          "name": "NIS2-direktivet",
+          "ref": "Direktiv (EU) 2022/2555",
+          "text": "et cybersikkerhedsniveau; national lovgivning afgør, i hvilket omfang lokalforvaltningen er omfattet."
+        },
+        {
+          "name": "GDPR",
+          "ref": "Forordning (EU) 2016/679",
+          "text": "personoplysninger i kommunale systemer (parkering, kameraer, mobilitet)."
+        },
+        {
+          "name": "AI-forordningen (AI Act)",
+          "ref": "Forordning (EU) 2024/1689",
+          "text": "regler for systemer med kunstig intelligens; relevant for AI-modeller i digitale tvillinger."
+        }
+      ],
+      "note": "Kun til orientering. Undersøg, hvordan dit land har gennemført de enkelte retsakter."
+    }
+  },
+  "howto": {
+    "title": "Sådan bruges dette hæfte",
+    "steps": [
+      {
+        "name": "Forbered",
+        "text": "Læs de syv tjeklister. Vælg dem, der gælder for det, du indkøber. De fleste udbud har brug for MIM0, MIM1, MIM2 og MIM6; tilføj MIM3, når data deles med tredjeparter eller via en dataportal, MIM7 til alt med et kort, MIM8 til digitale tvillinger."
+      },
+      {
+        "name": "Udbyd",
+        "text": "Kopier de afkrydsede kravpunkter ind i dit udbudsmateriale. Hvert punkt er formuleret som en sætning, du kan indsætte direkte. Tilføj de tværgående kontraktvilkår: de koster lidt og forhindrer leverandørindlåsning."
+      },
+      {
+        "name": "Evaluer",
+        "text": "Bed tilbudsgiverne om at påvise frem for at love (se klausulen af samme navn). Efterprøv overensstemmelsen mod det overensstemmelsesskema, tilbudsgiveren har udfyldt."
+      },
+      {
+        "name": "Levér",
+        "text": "Ved overtagelse efterprøves hvert afkrydset punkt igen. Et krav, der ikke testes ved levering, har i virkeligheden aldrig været et krav."
+      }
+    ],
+    "legend_title": "Læsning af specifikationens ordlyd",
+    "legend": {
+      "SHALL / MUST": {
+        "term": "SKAL (SHALL / MUST)",
+        "text": "obligatorisk. Uden dette opfylder systemet ikke kravene."
+      },
+      "MUST NOT": {
+        "term": "MÅ IKKE (MUST NOT)",
+        "text": "forbudt. Et system, der gør dette, opfylder ikke kravene."
+      },
+      "SHOULD": {
+        "term": "BØR (SHOULD)",
+        "text": "anbefales kraftigt. Afvigelser kræver en god skriftlig begrundelse."
+      },
+      "MAY": {
+        "term": "KAN (VALGFRIT) (MAY)",
+        "text": "valgfrit. Godt at have, men aldrig et krav."
+      },
+      "CAN": {
+        "term": "KAN (MULIGHED) (CAN)",
+        "text": "en mulighed, ikke et krav. Angiver, hvad der er muligt, og forpligter ingen."
+      }
+    },
+    "note": "Hvert kravpunkt er forsynet med en kort reference som f.eks. → MIM0 R1.1. Det er kravet i MIMs Plus 9.0, som punktet stammer fra; lige efter tjeklisten finder du hvert krav i den pågældende MIM ordret. Kun MIM0 definerer nøgleordene: de er bindende, når de er skrevet med store bogstaver, i overensstemmelse med IETF RFC 2119 og RFC 8174 (CAN stammer fra ISO/IEC Directives, Part 2). De øvrige MIMs indeholder ingen definition: MIM6 skriver overvejende SHALL med store bogstaver, MIM2, MIM3, MIM7 og MIM8 skriver shall, should og must med små bogstaver, og MIM1 bruger dem kun i beskrivelsen af en mekanisme (MUST NOT i afsnit 3.1). Dette hæfte fortolker ordene med små bogstaver på samme måde; en tilbudsgiver kan læse dem mere lempeligt.",
+    "legend_note": "Tjeklistens punkter anvender ordet ”skal”, selv hvor specifikationen blot anbefaler (bør) eller opstiller en kandidatmekanisme. Det er ordregiverens beslutning."
+  },
+  "glance": {
+    "title": "Syv MIMs og tre værktøjer",
+    "intro": "Syv enkle mekanismer, ét formål: dine data forbliver dine, og dine systemer kan tale sammen.",
+    "items": {
+      "MIM0": {
+        "name": "Dataadgang",
+        "q": "Kan vi trække vores data ud?",
+        "d": "Data kan tilgås via standardiserede web-API'er i maskinlæsbare formater."
+      },
+      "MIM1": {
+        "name": "Sammenkædning af data",
+        "q": "Har alle entiteter et varigt navn?",
+        "d": "Hver sensor, lygtepæl og bygning har en entydig, vedvarende identifikator."
+      },
+      "MIM2": {
+        "name": "Datarepræsentation",
+        "q": "Taler vi et fælles sprog?",
+        "d": "Data følger standardiserede, dokumenterede datamodeller med eksplicitte enheder."
+      },
+      "MIM3": {
+        "name": "Dataudveksling",
+        "q": "Kan vi dele på klare vilkår?",
+        "d": "Datasæt katalogiseres og deles under standardlicenser og klar styring."
+      },
+      "MIM6": {
+        "name": "Datasikkerhed",
+        "q": "Er vores data sikre?",
+        "d": "Krypteret overførsel, standardiseret login, rollebaseret adgangskontrol, revisionslogning."
+      },
+      "MIM7": {
+        "name": "Geodata",
+        "q": "Fungerer det på et kort?",
+        "d": "Geodata anvender OGC-grænseflader, åbne formater og deklarerede koordinatsystemer."
+      },
+      "MIM8": {
+        "name": "Lokale digitale tvillinger",
+        "q": "Kan vores digitale tvilling vokse?",
+        "d": "Tvillingsdata, modeller og resultater forbliver tilgængelige, dokumenterede og genanvendelige."
+      }
+    },
+    "numbering_note": "Om nummereringen: MIMs Plus 9.0 specificerer syv mekanismer, nummereret 0, 1, 2, 3, 6, 7 og 8. MIM4 (persondata) og MIM5 (retfærdig AI) stammer fra tidligere OASC-versioner og indgår ikke i 9.0. Der mangler intet i dette hæfte.",
+    "tools_title": "Værktøjer til dit udbud",
+    "tools": {
+      "clauses": {
+        "name": "Tværgående udbudsvilkår",
+        "q": "Hvad hører til i enhver kontrakt?",
+        "d": "Ophør, rettigheder til data, API-stabilitet."
+      },
+      "example": {
+        "name": "Eksempel: sensorer til luftkvalitet",
+        "q": "Hvordan ser det ud i praksis?",
+        "d": "Hvad placeres hvor, og forslag til tekst, der kan indsættes."
+      },
+      "table": {
+        "name": "Overensstemmelsesskema",
+        "q": "Hvordan dokumenterer tilbudsgiveren det?",
+        "d": "Udfyldes af tilbudsgiveren, efterprøves af evalueringsudvalget, vedlægges kontrakten som bilag."
+      }
+    }
+  },
+  "nav": {
+    "overview": "Oversigt",
+    "clauses": "Vilkår",
+    "example": "Eksempel",
+    "table": "Overensstemmelse",
+    "glossary": "Ordliste",
+    "list": "Tjekliste",
+    "back": "tilbage til tjeklisten",
+    "page": "s."
+  },
+  "spec_title": "Hvad specifikationen fastsætter",
+  "spec_leadin": "Hvert krav i denne MIM, ordret fra MIMs Plus 9.0:",
+  "spec_translation_note": "Specifikationen findes kun på engelsk: den danske ordlyd er en uofficiel oversættelse foretaget af forfatteren til dette hæfte; den engelske originaltekst nedenunder er gældende.",
+  "why_title": "Hvorfor det er vigtigt",
+  "flags_title": "Advarselssignaler",
+  "mims": {
+    "MIM0": {
+      "name": "Adgang til data",
+      "question": "Kan vi trække vores data ud?",
+      "intro": "Dette er fundamentet. Hvis data ikke kan forlade systemet via en standardgrænseflade, er alt andet i dette hæfte ren teori. MIM0 stiller ét krav til ethvert system, I anskaffer: data skal være tilgængelige i et maskinlæsbart format via det almindelige internet.",
+      "items": [
+        {
+          "text": "Alle data, som systemet indsamler eller genererer, kan hentes i mindst ét maskinlæsbart format (f.eks. JSON, CSV) via et standard-web-API.",
+          "why": "Jeres næste leverandør — eller jeres egne medarbejdere — kan anvende data uden at spørge leverandøren om lov."
+        },
+        {
+          "text": "API'et er formelt beskrevet i et åbent, maskinlæsbart dokument (for eksempel OpenAPI), der er offentliggjort på en stabil adresse.",
+          "why": "Enhver udvikler kan etablere integration uden en betalt ”integrationsworkshop”."
+        },
+        {
+          "text": "Data kan filtreres efter tid, sted og attributter direkte i API'et.",
+          "why": "I henter præcis det, I har brug for, i stedet for et fuldt udtræk hver nat."
+        },
+        {
+          "text": "Hvor anvendelsessituationen kræver realtidsdata, kan forbrugere abonnere på ændringer (webhooks, MQTT eller tilsvarende) frem for konstant polling.",
+          "why": "Realtidsdashboards og alarmer bliver mulige og billige i drift."
+        },
+        {
+          "text": "Fejl, caching og hastighedsbegrænsninger følger standardiserede HTTP-konventioner og er dokumenterede.",
+          "why": "Integrationer fejler synligt og med mulighed for udbedring frem for i stilhed."
+        }
+      ],
+      "why_panel": [
+        "Data, I har betalt for, forbliver anvendelige efter kontraktens ophør.",
+        "Nye tjenester bygger videre på eksisterende data i stedet for at starte fra bunden.",
+        "Integrationsomkostningerne falder for hvert efterfølgende projekt."
+      ],
+      "red_flags": [
+        "”Eksport af data sker efter anmodning via vores supportteam.”",
+        "”API'et er tilgængeligt som et tilkøbsmodul.”",
+        "Afregning pr. forespørgsel for kommunens egne data (se klausulen ”Ingen bruger- eller forespørgselsbaserede gebyrer”)."
+      ]
+    },
+    "MIM1": {
+      "name": "Sammenkædning af data",
+      "question": "Har ethvert objekt et varigt navn?",
+      "intro": "En by er fuld af fysiske elementer: lamper, rør, bygninger, parkeringspladser. Systemer forgår, men elementerne består. MIM1 kræver, at ethvert objekt får et navn — en identifikator — der overlever den software, som oprindeligt registrerede det, så dets historik og relationer til andre data bevares ved enhver migrering.",
+      "items": [
+        {
+          "text": "Enhver entitet (sensor, lampe, bygning, parkeringsplads…) har en unik, vedvarende identifikator, som ikke ændrer sig, når softwaren udskiftes.",
+          "why": "Historik og relationer på tværs af systemer overlever leverandøren."
+        },
+        {
+          "text": "Identifikatoren kan fremsøges for at hente entitetens data og dens betydning (type) i et maskinlæsbart format.",
+          "why": "Andre systemer kan følge linket automatisk."
+        },
+        {
+          "text": "Hvor det samme fysiske objekt optræder i flere systemer, kan identifikatorerne matches til hinanden.",
+          "why": "Bygningen i GIS-systemet og bygningen i energistyringssystemet kan beviseligt identificeres som den samme bygning."
+        },
+        {
+          "text": "Identifikatorer indeholder ikke leverandørspecifikke interne referencer (database-række-id'er, servernavne).",
+          "why": "Ellers forsvinder id'erne sammen med kontrakten."
+        }
+      ],
+      "why_panel": [
+        "Ti års målinger forbliver knyttet til den korrekte lygtepæl.",
+        "Afdelinger slipper for at vedligeholde fem modstridende registre over de samme aktiver.",
+        "Sammenkobling af datasæt bliver en databaseforespørgsel i stedet for et konsulentprojekt."
+      ],
+      "red_flags": [
+        "”Id'er er interne for vores platform.”",
+        "Identifikatorer regenereres ved hver datamigrering."
+      ]
+    },
+    "MIM2": {
+      "name": "Datarepræsentation",
+      "question": "Taler vi et fælles sprog?",
+      "intro": "To systemer kan begge eksportere JSON og stadig være ude af stand til at forstå hinanden. MIM2 handler om betydning: anvendelse af fælles, dokumenterede datamodeller — med eksplicitte enheder og formater — så ”temperatur”, ”parkeringsplads” eller ”luftkvalitet” betyder det samme i ethvert system, I ejer.",
+      "items": [
+        {
+          "text": "Data følger almindeligt anerkendte standarddatamodeller, hvor sådanne findes (f.eks. Smart Data Models, SAREF, ISO/IEC 5087); afvigelser skal begrundes skriftligt.",
+          "why": "Data fra to leverandører kan samkøres uden et oversættelsesprojekt."
+        },
+        {
+          "text": "Alle anvendte datamodeller er eksplicit dokumenterede, med angivelse af måleenheder samt dato- og tidsformater.",
+          "why": "”Temperatur: 23” er ubrugeligt, hvis ingen har noteret, om det er °C eller °F."
+        },
+        {
+          "text": "Udvidelser leveres som dokumenterede profiler/tilføjelser oven på standardmodellen — aldrig som en modificeret, proprietær forgrening.",
+          "why": "I bevarer kompatibiliteten med fællesskabet og fremtidige opdateringer."
+        },
+        {
+          "text": "Enhver model har mindst én åben serialisering, der kan valideres mod et skema (f.eks. JSON med JSON Schema).",
+          "why": "Indgående data kan kontrolleres automatisk ved modtagelsen."
+        }
+      ],
+      "why_panel": [
+        "Ét dashboard kan indlæse data fra mange leverandører uden mellemliggende adaptere.",
+        "Jeres data forstås af værktøjer i andre kommuner — og deres af jeres.",
+        "Automatisk validering fanger defekte data, før de spreder sig."
+      ],
+      "red_flags": [
+        "”Vores proprietære datamodel er mere omfattende end standarden.”",
+        "Dokumentation er kun tilgængelig under NDA."
+      ]
+    },
+    "MIM3": {
+      "name": "Dataudveksling",
+      "question": "Kan vi dele på klare vilkår?",
+      "intro": "Ikke alle kommunale data kan uden videre offentliggøres: nogle har kommerciel værdi, andre er fortrolige. MIM3 handler om at dele de resterende data sikkert: et katalog, der kan søges i, standardiserede licensskabeloner i stedet for skræddersyet jurasprog, samt styringsregler, som alle kan læse. Specifikationen formulerer næsten hele MIM3 som en henstilling (se s. 3).",
+      "items": [
+        {
+          "text": "Ethvert datasæt, som systemet stiller til rådighed, er beskrevet med standardmetadata (for eksempel DCAT-AP) i et katalog, så andre kan finde det.",
+          "why": "Data, ingen kan finde, er data, ingen bruger."
+        },
+        {
+          "text": "Vilkår og licenser for anvendelse af data hidrører fra velkendte skabeloner (f.eks. åbne licenser, standardiserede datadelingsaftaler), ikke skræddersyet jurasprog pr. datasæt.",
+          "why": "Aftaler kan skaleres, så jurister ikke bliver en flaskehals."
+        },
+        {
+          "text": "Kommunen kan definere, hvem der må tilgå hvilke dataaktiver og under hvilke betingelser, samt ændre dette uden leverandørens medvirken.",
+          "why": "Datastyringen forbliver hos ordregiveren."
+        }
+      ],
+      "why_panel": [
+        "Lokale virksomheder og forskere kan bygge videre på kommunale data — værdien forbliver i lokalområdet.",
+        "Følsomme data kan deles med præcis de rette parter i stedet for med alle eller ingen.",
+        "Ét regelsæt erstatter mange individuelle datadelingsaftaler."
+      ],
+      "red_flags": [
+        "Leverandøren gør krav på rettigheder over kommunens data (se klausulen ”Ejerskab til data”).",
+        "Deling med tredjepart forudsætter leverandørens samtykke eller betaling af gebyrer."
+      ]
+    },
+    "MIM6": {
+      "name": "Datasikkerhed",
+      "question": "Er vores data sikre under overførsel og i brug?",
+      "intro": "Smart cities er attraktive mål for angreb. MIM6 fastholder et bevidst snævert og praktisk omfang: kryptering af data under overførsel, brug af åbne standarder til login frem for proprietære løsninger samt styring og logning af, hvem der tilgår hvad. Intet af det er eksotisk — det hele skal fremgå af kontrakten.",
+      "items": [
+        {
+          "text": "Al datatransmission er krypteret (TLS 1.3 eller gældende bedste praksis).",
+          "why": "Grundlæggende hygiejne; NIS2 forventer det også, hvor det gælder for jer."
+        },
+        {
+          "text": "Brugerlogin og maskinel adgang anvender åbne standarder — OAuth 2.0 / OpenID Connect — og kan integreres med kommunens eksisterende identitetsudbyder (IdP).",
+          "why": "Én konto pr. medarbejder i stedet for én pr. leverandørprodukt; fratrædende medarbejdere mister adgang overalt på én gang."
+        },
+        {
+          "text": "Adgangsrettigheder er rollebaserede, kan revideres og kan tilbagekaldes; brugeradgang og administrative handlinger logges.",
+          "why": "Revision og hændelseshåndtering bliver muligt. Logning udgør foranstaltning 8.15 i ISO/IEC 27001:2022, Anneks A, som MIM6 anfører blandt sine forudsætninger."
+        },
+        {
+          "label": "Hører til i udvælgelseskriterierne, ikke i den tekniske specifikation",
+          "text": "Tilbudsgiveren skal dokumentere overensstemmelse med ISO/IEC 27001:2022 (eller tilsvarende) for den leverede tjeneste.",
+          "why": "Sikkerhed er en proces, ikke et afkrydsningsfelt ved levering. Specifikationen henviser til sikkerhedsforanstaltninger i ISO/IEC 27001, ikke til et certifikat."
+        }
+      ],
+      "why_panel": [
+        "Et sikkerhedsbrud i ét system åbner ikke for adgang til alle systemer.",
+        "Hvor NIS2 finder anvendelse, bliver efterlevelse heraf og af nationale cybersikkerhedsregler mærkbart lettere.",
+        "Når noget går galt, viser logfilerne hvad og hvem."
+      ],
+      "red_flags": [
+        "Udelukkende proprietært login.",
+        "”Logfiler udleveres efter anmodning.”",
+        "Fælles administratorkonti."
+      ]
+    },
+    "MIM7": {
+      "name": "Geodata",
+      "question": "Fungerer det på et kort?",
+      "intro": "Næsten alt, hvad en kommune ejer, har en geografisk placering. MIM7 sikrer, at placeringen ikke blot optræder som et skærmbillede: geografiske data udveksles via standardiserede OGC-grænseflader i åbne formater, altid med angivelse af koordinatsystem — så ethvert kortlag, I anskaffer, passer præcist sammen med de lag, I allerede har.",
+      "items": [
+        {
+          "text": "Geodata stilles til rådighed via standardbaserede grænseflader (OGC API Features, SensorThings; WFS accepteres for ældre systemer).",
+          "why": "Ethvert GIS-værktøj på markedet kan indlæse data uden tilpasning."
+        },
+        {
+          "text": "Geodata kodes i åbne formater (GeoJSON, CityJSON; GML/CityGML hvor påkrævet).",
+          "why": "Ingen konverterlicenser, ingen blindgyder."
+        },
+        {
+          "text": "Koordinatreferencesystemet er altid angivet (EPSG-kode), og data kan transformeres til et fælles koordinatsystem.",
+          "why": "Kortlag fra forskellige kilder placerer sig korrekt oven på hinanden."
+        },
+        {
+          "text": "Geografiske objekter anvender de samme persistente identifikatorer som i MIM1.",
+          "why": "Prikken på kortet og registreringen i databasen er det samme objekt."
+        }
+      ],
+      "why_panel": [
+        "Ét samlet bykort i stedet for ti separate leverandørfremvisere.",
+        "Forpligtelser ifm. INSPIRE og den nationale geodataportal bliver lettere at opfylde.",
+        "3D- og BIM-data kan efterfølgende integreres i det samme overblik."
+      ],
+      "red_flags": [
+        "Kortdata findes udelukkende i leverandørens egen kortviser.",
+        "”Eksport som PDF/skærmbillede.”"
+      ]
+    },
+    "MIM8": {
+      "name": "Lokale digitale tvillinger",
+      "question": "Kan vores digitale tvilling udbygges?",
+      "intro": "En digital tvilling er en langsigtet investering: data, 3D-modeller, simuleringer, beslutningsstøtte. MIM8 beskytter denne investering — tvillingens data og modeller forbliver tilgængelige og dokumenterede, resultater kan reproduceres, og komponenter fra ét projekt kan genanvendes i det næste. Anvend denne side ved udbud af tvillingeplatforme, simuleringsmodeller eller værktøjer til 3D-byer.",
+      "items": [
+        {
+          "text": "Datasæt, modelinput og simuleringsoutput er tilgængelige via API'er (i overensstemmelse med MIM0) og ikke indkapslet i tvillingen.",
+          "why": "Resultater kan indgå i rapporter, dashboards og fremtidige projekter."
+        },
+        {
+          "text": "Modeller er dokumenterede (metode, parametre, input/output) og kan tilgås via en dokumenteret grænseflade.",
+          "why": "En oversvømmelsesmodel, der er indkøbt én gang, kan genbruges på tværs af forvaltninger — og af andre kommuner."
+        },
+        {
+          "text": "Outputdata anvender standardformater (GeoJSON, CityJSON, 3D Tiles, NetCDF…), som kan behandles af værktøjer, der ikke er leveret af samme leverandør.",
+          "why": "Visualisering og analyse forbliver konkurrenceudsatte markeder."
+        },
+        {
+          "text": "Arbejdsgange registrerer dataproveniens: hvilken dataversion, hvilken model og hvilke parametre der genererede et givent resultat.",
+          "why": "Beslutninger truffet på baggrund af tvillingen kan forklares og dokumenteres efterfølgende."
+        }
+      ],
+      "why_panel": [
+        "Tvillingen overlever enkelte leverandører og individuelle projektbudgetter.",
+        "Simuleringer kan efterprøves, gentages og lægges til grund for kommunal beslutningstagning.",
+        "Modeller og moduler kan udveksles og deles kommuner imellem."
+      ],
+      "red_flags": [
+        "Simuleringsresultater kan udelukkende ses i leverandørens portal.",
+        "Modeller leveres som lukkede ”black boxes” uden metadata."
+      ]
+    }
+  },
+  "cross": {
+    "title": "Tværgående udbudsvilkår",
+    "subtitle": "Værn mod leverandørindlåsning",
+    "intro": "Disse vilkår bør indgå i ethvert udbud, uanset hvad der indkøbes. De bygger på udbudspraksis omkring MIMs og living-in.eu. De fleste hviler ikke på et enkelt krav i specifikationen og har derfor ingen referencekoder (API-versionering er tillige en anbefaling under MIM0 C2). De koster meget lidt at medtage; at udelade dem kan koste alt.",
+    "items": [
+      {
+        "name": "Ophørsvilkår",
+        "text": "Ved kontraktens udløb overdrages samtlige kommunens data (og konfigurationer) i åbne, veldokumenterede formater uden ekstra omkostninger."
+      },
+      {
+        "name": "Rettigheder til data",
+        "text": "Alle rettigheder til data, der indsamles og udledes under kontrakten, tilhører ordregiveren."
+      },
+      {
+        "name": "Ingen bruger- eller forespørgselsgebyrer",
+        "text": "Ingen gebyrer for kommunens adgang til egne data."
+      },
+      {
+        "name": "API-stabilitet og -versionering",
+        "text": "Leverandøren bevarer API'ets bagudkompatibilitet i hele kontraktperioden. Ændringer, der bryder kompatibiliteten, varsles mindst 6 måneder forud og udgives som en ny version, mens den hidtidige version forbliver tilgængelig indtil den aftalte overgangsdato."
+      },
+      {
+        "name": "Vis det, lov det ikke",
+        "text": "Tilbudsgiverne påviser opfyldelse under tilbudsevalueringen frem for at indsende egenerklæringer. For et API indebærer dette offentliggjort, interaktiv dokumentation (f.eks. OpenAPI) og et aktivt kald, der returnerer gyldige data. Hvert afkrydset punkt efterprøves igen ved overtagelsen."
+      },
+      {
+        "name": "Angivelse af åbne standarder",
+        "text": "Udbuddet navngiver ovenstående standarder; udsagn om ”kompatibilitet med” skal angive den nøjagtige grænseflade og version. Enhver henvisning til en standard eller teknisk specifikation tillader en tilsvarende løsning; tilbudsgiveren godtgør ækvivalensen."
+      },
+      {
+        "name": "MIMs-overensstemmelseserklæring",
+        "text": "Tilbudsgiveren udfylder overensstemmelsesskemaet (s. 28); det indgår som et bilag til kontrakten."
+      }
+    ]
+  },
+  "example": {
+    "title": "Eksempel: en kommune indkøber et netværk af luftkvalitetssensorer",
+    "scenario": "Afkrydsede sider: MIM0, MIM1, MIM2, MIM6 og MIM7 (data vises på et kort). Fra MIM3 kun punkt 3.1 (luftkvalitetsdata offentliggøres som åbne data og hører derfor hjemme i et katalog); ikke MIM8: dette er ikke en digital tvilling.",
+    "table_title": "Hvad placeres hvor",
+    "table_headers": [
+      "Dokument",
+      "Begreb i direktiv 2014/24/EU",
+      "Hvad der skal anføres"
+    ],
+    "table_rows": [
+      [
+        "Tekniske specifikationer",
+        "tekniske specifikationer (art. 42)",
+        "de afkrydsede punkter fra MIM0, MIM1, MIM2, MIM3 (kun 3.1), MIM6 (undtagen 6.4) og MIM7, ordret med specifikationskode, samt sætningen om ækvivalens"
+      ],
+      [
+        "Betingelser for deltagelse",
+        "udvælgelseskriterier (art. 58 og 62)",
+        "dokumenteret overensstemmelse med ISO/IEC 27001:2022 eller tilsvarende (punkt 6.4)"
+      ],
+      [
+        "Dokumentation",
+        "prøvningsrapporter, certificering og andre dokumentationsmidler (art. 44)",
+        "overensstemmelsesskemaet som obligatorisk bilag til tilbuddet: O, T eller I for hvert punkt, med dokumentation (adresse på API-dokumentation, testadgang)"
+      ],
+      [
+        "Udkast til kontrakt",
+        "betingelser for kontraktens udførelse (art. 70)",
+        "Ophørsvilkår, Rettigheder til data, Ingen bruger- eller forespørgselsgebyrer, API-stabilitet og -versionering; det udfyldte overensstemmelsesskema som bilag"
+      ],
+      [
+        "Overtagelsesprotokol",
+        "betingelser for kontraktens udførelse (art. 70)",
+        "kolonnen ”Efterprøvet” i overensstemmelsesskemaet som testprotokol"
+      ]
+    ],
+    "sample_title": "Eksempel på formulering i de tekniske specifikationer",
+    "sample": [
+      "4.3 Interoperabilitet og dataadgang",
+      "4.3.1 Alle data, som systemet indsamler eller frembringer, kan tilgås i mindst ét maskinlæsbart format (f.eks. JSON, CSV) via et standardiseret web-API. (MIMs Plus 9.0, MIM0 R1.1, R1.2)",
+      "4.3.2 API'et er formelt beskrevet i et åbent, maskinlæsbart dokument (for eksempel OpenAPI), der er offentliggjort på en stabil adresse. (MIM0 R1.3)",
+      "4.3.3 API'et muliggør filtrering af data efter tidspunkt og målested. (MIM0 R2.1, R2.2)",
+      "… 4.3.4 til 4.3.21: yderligere afkrydsede punkter …",
+      "4.3.22 Enhver henvisning til en standard eller teknisk specifikation tillader en tilsvarende løsning; tilbudsgiveren godtgør ækvivalensen.",
+      "4.3.23 Tilbudsgiveren udfylder overensstemmelsesskemaet (bilag til udbudsmaterialet) og fremlægger dokumentation for hvert krævet punkt. Tilbudsgiveren påviser punkt 4.3.1 til 4.3.21 med et aktivt API-kald under tilbudsevalueringen; ordregiveren efterprøver dem igen ved overtagelsen. Manglende opfyldelse udgør en grund til at afvise overtagelse."
+    ],
+    "tip": "Punkt 4.3.3 viser, at du kan præcisere et punkt efter indkøbets art: for sensorer giver det mening at kræve filtrering efter tidspunkt og målested.",
+    "note": "Tilpas ordlyden til national lovgivning, og få den udbudsansvarlige til at kontrollere den.",
+    "filled_title": "Et udfyldt overensstemmelsesskema (uddrag)",
+    "filled_rows": [
+      [
+        "0.1",
+        "Maskinlæsbare data via standardiseret web-API",
+        "O",
+        "REST-API returnerer JSON og CSV; dokumentation på adressen angivet i tilbuddet, s. 12; testadgang i bilag 3",
+        "✓"
+      ],
+      [
+        "0.4",
+        "Abonnement på ændringer ved behov",
+        "I",
+        "understøttes endnu ikke; planlagt til næste version",
+        "—"
+      ],
+      [
+        "7.2",
+        "Åbne geoformater",
+        "T",
+        "leverer GeoPackage, en åben OGC-standard, i stedet for GeoJSON; ækvivalens redegjort for i tilbuddet, s. 15",
+        "✓"
+      ]
+    ],
+    "filled_note": "Et løfte om fremtiden er I: evalueringsudvalget efterprøver kun det, tilbudsgiveren kan påvise."
+  },
+  "tearout": {
+    "title": "Overensstemmelsesskema",
+    "intro": "Én række pr. punkt. Ordregiveren afkrydser, hvad kontrakten kræver, og vedlægger skemaet som et obligatorisk bilag til udbudsmaterialet. For hvert påkrævet punkt anfører tilbudsgiveren O (opfylder), T (opfylder med tilsvarende) eller I (opfylder ikke), en kort redegørelse for hvordan, og hvor dokumentationen findes: dokumentationsadresse, testadgang, side i tilbuddet. En erklæring uden dokumentation er utilstrækkelig. Evalueringsudvalget efterprøver hvert punkt under tilbudsevalueringen og igen ved overtagelsen (✓ bekræftet, ✗ ikke bekræftet, — ikke kontrolleret).",
+    "intro2": "Det udfyldte skema er en del af tilbuddet og bliver et bilag til kontrakten. Det verificerer, at kravene til kontraktens genstand er opfyldt (opfyldt eller ikke opfyldt); det er ikke et tildelingskriterium. Hvis overensstemmelse skal pointgives, skal dette fremgå af de tildelingskriterier, der er offentliggjort forud i udbudsmaterialet (direktiv 2014/24/EU, artikel 67).",
+    "headers": [
+      "#",
+      "Krav (kort)",
+      "Spec.-ref.",
+      "Påkrævet?",
+      "O / T / I",
+      "Dokumentation: hvordan og hvor",
+      "Efterprøvet"
+    ],
+    "header_roles": [
+      "ordregiver",
+      "tilbudsgiver",
+      "tilbudsgiver",
+      "evalueringsudvalg"
+    ],
+    "note": "De korte overskrifter nedenfor repræsenterer de fulde kravpunkter på MIM-siderne — i tvivlstilfælde gælder den fulde ordlyd.",
+    "download_label": "En redigerbar version af skemaet findes på:",
+    "cross_note": "Tilbudsgiveren bekræfter accept af kontraktvilkåret (O / I)."
+  },
+  "tearout_short": {
+    "MIM0": [
+      "Maskinlæsbare data via standardiseret web-API",
+      "Åben API-beskrivelse (OpenAPI) på stabil adresse",
+      "Filtrering efter tid, sted og attributter",
+      "Abonnement på ændringer ved behov",
+      "Standard HTTP-fejl, caching, grænser for kald"
+    ],
+    "MIM1": [
+      "Entydig, vedvarende identifikator pr. entitet",
+      "Opslag på identifikator returnerer data + type",
+      "Tværgående identifikatormapping mellem systemer",
+      "Ingen interne leverandørkoder i identifikatorer"
+    ],
+    "MIM2": [
+      "Standardiserede datamodeller hvor muligt",
+      "Dokumenterede modeller, eksplicitte enheder",
+      "Udvidelser som profiler, aldrig som forgreninger",
+      "Åben serialisering, der kan valideres mod skema"
+    ],
+    "MIM3": [
+      "Datasæt katalogiseret med standardmetadata",
+      "Standardskabeloner for licenser og aftaler",
+      "Kommunen styrer selv adgangsvilkår"
+    ],
+    "MIM6": [
+      "Krypteret overførsel (TLS 1.3)",
+      "Standardiseret login (OAuth 2.0 / OIDC)",
+      "Rollebaseret adgang + revisionslogning",
+      "Dokumenteret tilpasning til ISO/IEC 27001:2022"
+    ],
+    "MIM7": [
+      "OGC-standardgrænseflader",
+      "Åbne geoformater",
+      "Deklareret CRS (EPSG)",
+      "Vedvarende ID'er på geografiske objekter (jf. 1.1)"
+    ],
+    "MIM8": [
+      "Tvillingsdata og -output via API'er",
+      "Modeller dokumenterede og eksekverbare",
+      "Standardiserede outputformater",
+      "Arbejdsgangens dataoprindelse logget"
+    ],
+    "CROSS": [
+      "Ophørsvilkår: gratis overdragelse i åbne formater",
+      "Rettigheder til data tilhører ordregiveren",
+      "Ingen gebyrer for adgang til egne data",
+      "API-stabilitet: versioneret, 6 mdr. varsel ved brud"
+    ]
+  },
+  "glossary": {
+    "title": "Lille ordliste",
+    "terms": [
+      {
+        "t": "API",
+        "d": "En indgang, hvorigennem et program anmoder et andet om data — over nettet, uden at et menneske skal klikke."
+      },
+      {
+        "t": "Datamodel",
+        "d": "Den aftalte struktur for dataene: hvilke felter der findes, hvad de betyder, og hvilke enheder de anvender."
+      },
+      {
+        "t": "DCAT-AP",
+        "d": "Europæisk metadataprofil for datakataloger; gør det muligt også at finde datasæt på nationale og europæiske portaler."
+      },
+      {
+        "t": "EPSG",
+        "d": "Register over numeriske koder for koordinatreferencesystemer (f.eks. EPSG:4326 for WGS 84)."
+      },
+      {
+        "t": "Identifikator",
+        "d": "Et permanent navn for en given entitet (én lygtepæl, én bygning), som alle systemer bruger til at henvise til netop denne."
+      },
+      {
+        "t": "Interoperabilitet",
+        "d": "Evnen hos systemer fra forskellige leverandører til at udveksle data og forstå hinanden."
+      },
+      {
+        "t": "IRI",
+        "d": "International form af en webidentifikator (som en URL, men med tilladelse til ikke-ASCII-tegn). MIM1 navngiver entiteter med denne."
+      },
+      {
+        "t": "LDT",
+        "d": "Lokal digital tvilling: en digital model af en by eller en del af den, koblet til data og simuleringer."
+      },
+      {
+        "t": "Maskinlæsbar",
+        "d": "Struktureret således, at et program kan behandle dataene direkte (JSON, CSV) — en PDF-fil med en tabel er det ikke."
+      },
+      {
+        "t": "Metadata",
+        "d": "Data om data: hvad et datasæt indeholder, hvem der udbyder det, hvor opdateret det er, og under hvilken licens."
+      },
+      {
+        "t": "OAuth 2.0 / OIDC",
+        "d": "Åbne standarder for login og tildeling af adgang. OpenID Connect (OIDC) tilføjer identitetsbekræftelse til OAuth 2.0."
+      },
+      {
+        "t": "OGC",
+        "d": "Open Geospatial Consortium: organisationen, der udgiver standarder for geodata og geodatatjenester (OGC API, WFS, SensorThings)."
+      },
+      {
+        "t": "Åben standard",
+        "d": "En teknisk forskrift, som enhver frit kan læse og implementere uden betaling eller tilladelse."
+      },
+      {
+        "t": "OpenAPI",
+        "d": "Åbent format til maskinlæsbar beskrivelse af et web-API: adresser, parametre og svar."
+      },
+      {
+        "t": "Serialisering",
+        "d": "Konvertering af data til et konkret format (f.eks. JSON, XML), så de kan lagres eller transmitteres."
+      },
+      {
+        "t": "TLS",
+        "d": "Protokollen, der krypterer data under transit over et netværk (grundlaget for HTTPS)."
+      },
+      {
+        "t": "Leverandørindlåsning",
+        "d": "Når det er så bekosteligt at forlade en leverandør — i data, formater eller gebyrer — at man reelt ikke kan."
+      },
+      {
+        "t": "Webhook / MQTT",
+        "d": "To måder, hvorpå et system selv kan rapportere en ændring: en webhook kalder din adresse, MQTT leverer beskeder til abonnenter."
+      }
+    ],
+    "more_title": "Her kan du læse mere",
+    "links": {
+      "mims.oascities.org": "Den komplette MIMs Plus-specifikation, vedligeholdt af OASC.",
+      "living-in.eu": "Den europæiske bevægelse for digital omstilling af byer — erklæring og MIMs Plus-kontekst.",
+      "smartdatamodels.org": "Det åbne bibliotek over standardiserede datamodeller (FIWARE, TM Forum, IUDX, OASC).",
+      "oascities.org/academy": "CITYxCITY Academy — kurser for kommunale medarbejdere, af kommuner."
+    }
+  },
+  "back": {
+    "text": "Udarbejdet på grundlag af MIMs Plus-specifikationen 9.0 fra Open & Agile Smart Cities (mims.oascities.org). Specifikationens indhold © OASC. Dette hæfte er en uafhængig og letforståelig vejledning til kommunale udbud; i tvivlstilfælde gælder specifikationen.",
+    "credits": "Udarbejdet med åbne værktøjer. Kan frit genanvendes og tilpasses af din kommune.",
+    "author": "Forfatter til hæftet: Marek Mráz"
+  },
+  "quote_translations": {
+    "MIM0 · R1.1": "Systemer SKAL tillade hentning af data i mindst ét maskinlæsbart format. Formater KAN (MULIGHED) angives via HTTP-indholdsforhandling (Content-Negotiation)",
+    "MIM0 · R1.2": "Data SKAL kunne hentes via mindst én standard webbaseret mekanisme",
+    "MIM0 · R1.3": "Adgangsmekanisme(r) SKAL være formelt beskrevet",
+    "MIM0 · R1.4": "Datamodeller anvendt af nyttelaster BØR specificeres (se MIM2)",
+    "MIM0 · R2.1": "Systemer SKAL levere data gennem en struktureret og ensartet grænseflade",
+    "MIM0 · R2.2": "Systemer SKAL understøtte grundlæggende forespørgsler og/eller filtrering (f.eks. efter tid, sted, attributter)",
+    "MIM0 · C2": "API'er BØR understøtte hentning af aktuelle data · API'er BØR understøtte hentning af historiske data, når det er relevant · API'er BØR understøtte geospatiale forespørgsler, når det er relevant (se MIM7) · API'er BØR understøtte abonnement på ændringer, når det er relevant · API'er BØR udstille tidsstempel for næste forventede opdatering · API'er BØR understøtte eksplicit versionering af slutpunkter · API'er BØR stille eksempler på nyttelast eller testforespørgsler til rådighed · API'er BØR understøtte standardiserede HTTP-caching-headere · API'er BØR kommunikere status for hastighedsbegrænsning (rate limit) via standardiserede HTTP-headere · API'er BØR returnere strukturerede fejlmeddelelser · API'er KAN (VALGFRIT) understøtte delvise svar eller forespørgselsprojektioner · API'er KAN (VALGFRIT) udstille et standardiseret sundheds-/statusslutpunkt",
+    "MIM0 · R3.1": "Systemer til anvendelsestilfælde, der kræver notifikationer, SKAL levere mindst én mekanisme til at modtage opdateringer om dataændringer",
+    "MIM0 · R3.2": "Systemer KAN (VALGFRIT) understøtte flere abonnementsmekanismer afhængigt af anvendelsestilfældet",
+    "MIM0 · C4": "Hvis sådanne begrænsninger er indført, SKAL de følge de krav, der er defineret i MIM3 og MIM6, specifikt: aktøridentifikation (MIM3.C5.R0), autorisation og aktørroller (MIM6.C1.R4), politikker på dataintitetsniveau (MIM6.C1.R4)",
+    "MIM1 · R1.1": "Enhver entitet i systemet har en unik identifikator",
+    "MIM1 · R1.2": "Der findes en måde at hente oplysninger om en entitet på ved at slå identifikatoren op i et system",
+    "MIM1 · R1.3": "hvis en unik identifikator peger på den samme entitet i flere systemer, er det muligt at udlede måden at slå oplysninger op om den i hvert af disse systemer",
+    "MIM1 · R1.4": "hvis flere unikke identifikatorer peger på den samme entitet, er det muligt at kortlægge dem indbyrdes",
+    "MIM1 · R1.5": "Det er muligt at oprette identifikatorer, der er persistente over tid",
+    "MIM1 · R2.1": "Der er en måde at hente semantikken for en entitet på udelukkende ved brug af dens unikke identifikator",
+    "MIM1 · R2.2": "Denne semantik er beskrevet i et maskinlæsbart format",
+    "MIM1 · R3.1": "Der findes en måde at dereferere en relation defineret på en entitet",
+    "MIM1 · R3.2": "Der findes en måde at anvende yderligere semantik på en eksisterende ontologi",
+    "MIM2 · R1.1": "Datamodeller, der anvendes for alle entiteter i enhver datakilde, SKAL gøres eksplicitte. De SKAL være veldokumenterede og have beskrivende metadata, hvor de anvendte termer SKAL være semantisk entydige. For attributter relateret til måleenheder, tidsformater osv. SKAL de anvendte enheder, formater osv. gøres eksplicitte. Datamodellerne BØR katalogiseres, så de er lette at finde.",
+    "MIM2 · R1.2a": "Anvendte datamodeller SKAL (hvor det er muligt) baseres på almindeligt anerkendte standardiserede datamodeller som anført nedenfor",
+    "MIM2 · R1.2b": "Hvor det ikke er muligt at anvende eksisterende standardiserede datamodeller, SKAL der gøres en indsats for at udvide eksisterende standardiserede datamodeller, der ligger tættest op ad, eller definere nye i overensstemmelse med bedste praksis og konventioner i det fællesskab eller den organisation, der definerer datamodellerne.",
+    "MIM2 · R1.3": "Anvendte datamodeller SKAL understøtte udveksling af data ved at anvende de relevante krav i MIM'erne om adgang til data og sammenkædning af data",
+    "MIM2 · R2.1": "En fælles datamodel for hver nøgleentitet BØR udvikles for ethvert dataøkosystem. Den fælles datamodel BØR indeholde alle de felter, der indgår i de forskellige datamodeller for den entitet, som anvendes i det dataøkosystem. Hver forskellig datamodel, der anvendes i det dataøkosystem, KAN (MULIGHED) derefter transformeres til den fælles datamodel.",
+    "MIM2 · R3.1": "Hver anvendt datamodel SKAL have mindst ét defineret maskinlæsbart datatransportformat (\"serialisering\"), der er åbent, offentligt tilgængeligt og uafhængigt af implementering.",
+    "MIM2 · R3.2": "Dokumentationen af datatransportformatet BØR være tilstrækkelig til at tillade oprettelse af en ikke-proprietær applikation eller fortolker, der er i stand til at rekonstruere alle data gemt i et sådant dataformat.",
+    "MIM2 · R3.3": "Hvor flere datatransportformater understøttes for den samme datamodel, SKAL de repræsentere det samme informationsindhold ensartet og uden tab af betydning.",
+    "MIM2 · R3.4": "Repræsentationen BØR understøtte validering ved hjælp af offentligt publicerede skemaer, grammatikker eller tilsvarende maskinlæsbare begrænsninger, hvor sådanne valideringsmekanismer findes for det valgte format.",
+    "MIM2 · R4.1": "Applikationsprofiler, der udvider en datamodel, BØR IKKE påvirke den allerede eksisterende model og dens brugere",
+    "MIM2 · R4.2": "De specialiseringer eller udvidelser, der introduceres i modellens applikationsprofil, BØR være veldokumenterede, adskilt fra grunddatamodellen",
+    "MIM3 · RC1.1": "Orkestratoren af et dataøkosystem BØR kunne definere en styringsmodel (f.eks. et regelsæt), der skitserer medlemskabsregler, roller, ansvar og forpligtelser for økosystemets deltagere samt de overordnede principper, der styrer dataudvekslingen mellem dem.",
+    "MIM3 · RC1.2": "Medlemmer, der deltager i et dataøkosystem, BØR have kendskab til dets styringsmodel og eventuelle ændringer af den.",
+    "MIM3 · RC1.3": "Styringsmodellen BØR være let forståelig for alle deltagere i økosystemet.",
+    "MIM3 · RC2.1": "Dataleverandører er frie til at fastsætte vilkår og betingelser for udvekslingen af deres data. (Bemærk: Før dataaktiver deles, BØR dataleverandører sikre sig, at de har tilstrækkelig tilladelse fra dataejerne).",
+    "MIM3 · RC2.2": "Vilkår og betingelser for en dataudveksling BØR beskrives klart og utvetydigt, så de er letforståelige for databrugere.",
+    "MIM3 · RC2.3": "Vilkår og betingelser for en dataudveksling BØR udtrykkes gennem datalicenser eller datadelingsaftaler baseret på veldefinerede skabeloner eller standarder.",
+    "MIM3 · RC2.4": "Vilkår og betingelser BØR være i overensstemmelse med dataøkosystemets overordnede styringsmodel og MÅ IKKE være i strid med den. (Bemærk: En dataleverandør KAN (MULIGHED) beslutte ikke at deltage i et dataøkosystem, hvis den underliggende styringsmodel er for restriktiv eller for lempelig).",
+    "MIM3 · RC3.1": "Orkestratoren af et dataøkosystem SKAL kunne fastslå deltagernes overholdelse af den underliggende styringsmodel.",
+    "MIM3 · RC3.2": "Dataleverandører BØR kunne fastslå, at en databrugers anvendelse af data overholder tidligere aftalte vilkår og betingelser.",
+    "MIM3 · RC3.3": "Databrugere BØR kunne fastslå, at dataleverandørens levering af data følger tidligere aftalte vilkår og betingelser.",
+    "MIM3 · RC4.1": "Databrugere BØR kunne opdage, hvilke data der er tilgængelige i et datadelingsøkosystem uden forudgående kendskab til det.",
+    "MIM3 · RC4.2": "Dataaktiver BØR være fyldestgørende beskrevet med metadata, så databrugere kan træffe pålidelige beslutninger om deres videre tilsigtede anvendelse.",
+    "MIM3 · RC4.3": "Metadata, der anvendes til at beskrive dataaktiver, BØR baseres på veldefinerede, letforståelige beskrivelsesformater, der er både menneske- og maskinlæsbare.",
+    "MIM3 · RC5.1": "Deltagere i økosystemet (f.eks. databrugere og -leverandører) BØR kunne opdage hinanden inden for et datadelingsøkosystem.",
+    "MIM3 · RC5.2": "Tilstrækkelige metadata om hver deltager i økosystemet BØR være tilgængelige for at fastslå deres troværdighed relevant for dataudveksling.",
+    "MIM3 · RC5.3": "Dataleverandører BØR pålideligt kunne identificere databrugere, der ønsker adgang til deres dataaktiver, og verificere deres metadata, før der gives adgang.",
+    "MIM3 · RC5.4": "Databrugere BØR kunne identificere dataleverandører, der deler data i et dataøkosystem, før de tilgår eller anvender disse data.",
+    "MIM3 · RC5.5": "Deltagere i økosystemet KAN (VALGFRIT) også vælge at forblive anonyme, hvis styringsmodellen for datadelingsøkosystemet tillader det. I så fald KAN (MULIGHED) RC5.1 til RC5.4 ignoreres.",
+    "MIM3 · RC6.1": "Databrugere og -leverandører BØR kunne indgå aftale om en dataudveksling og de dertil knyttede vilkår og betingelser (f.eks. accept af vilkår, juridisk underskrift på en aftale eller forhandling).",
+    "MIM3 · RC6.2": "Databrugere og -leverandører BØR kunne opsige en tidligere aftalt dataudveksling i overensstemmelse med de dertil knyttede vilkår og betingelser.",
+    "MIM3 · RC6.3": "Hvor det er muligt, KAN (VALGFRIT) der stilles elektroniske midler til rådighed for aftaleindgåelse og opsigelse af en dataudveksling.",
+    "MIM3 · RC7.1": "Databrugere BØR kunne tilkendegive deres interesse for dataaktiver, der p.t. ikke er tilgængelige i datadelingsøkosystemet.",
+    "MIM3 · RC7.2": "Dataleverandører BØR kunne modtage anmodninger fremsat af databrugere om nye dataaktiver.",
+    "MIM6 · R1.1": "Regler til styring af fysisk og logisk adgang til information og andre tilknyttede aktiver SKAL etableres og implementeres på baggrund af forretningsmæssige og informationssikkerhedsmæssige krav. (ISO 27001 5.15 Adgangsstyring)",
+    "MIM6 · R1.2": "Tildeling og administration af autentifikationsoplysninger SKAL styres af en ledelsesproces, herunder rådgivning af personale om korrekt håndtering af autentifikationsoplysninger. (ISO 27001 5.17: Autentifikationsoplysninger)",
+    "MIM6 · R1.3": "Adgangsrettigheder til information og andre tilknyttede aktiver SKAL tildeles, revurderes, ændres og fjernes i overensstemmelse med organisationens emnespecifikke politik for og regler om adgangsstyring. (ISO 27001 5.18: Adgangsrettigheder)",
+    "MIM6 · R2.1": "Regler for effektiv brug af kryptografi, herunder administration af kryptografiske nøgler, SKAL defineres og implementeres. (ISO 27001 8.24 Brug af kryptografi)",
+    "MIM6 · R3.1": "Sikre autentifikationsteknologier og -procedurer SKAL implementeres på baggrund af begrænsninger for informationsadgang og den emnespecifikke politik for adgangsstyring. (ISO 27001 8.5 Sikker autentifikation)",
+    "MIM6 · M1.1": "Transport Layer Security (TLS)-protokollen, version 1.3",
+    "MIM6 · M1.2": "OAuth 2.0-autorisationsrammeværket",
+    "MIM6 · M1.3": "OpenID Connect 1.0, identitetslag til autentifikation på OAuth 2.0",
+    "MIM6 · M1.4": "OIDC4VCI / OIDC4VP, OpenID til udstedelse og præsentation af verificerbare akkreditiver",
+    "MIM7 · R1.1": "Geospatiale data SKAL udstilles gennem en standardbaseret webtjenestegrænseflade.",
+    "MIM7 · R2.1": "Geospatiale data SKAL kodes ved hjælp af åbne standarder. Det anbefales at anvende relevante standarder fra OGC og BuildingSMART International.",
+    "MIM7 · R3.1": "Alle datasæt, der anvendes til at give yderligere oplysninger om den kontekst, der dækkes af geospatiale data, SKAL overholde MIM1 og MIM2.",
+    "MIM7 · R4.1": "Unikke og persistente identifikatorer SKAL anvendes til at identificere konkrete forekomster af enhver entitet, der anvendes i datasæt. (Se MIM1: Sammenkædning af data).",
+    "MIM7 · R5.1": "Koordinatreferencesystemer (CRS) SKAL overholde standarder, og der SKAL gives oplysninger om, hvilken standard (f.eks. EPSG:4326, EPSG:3857) der anvendes. Dette omfatter EPSG-nummeret eller WGS-nummeret sammen med oplysninger om enhver variation baseret på nationale systemer såsom det lettiske LKS-92, således at data kan transformeres til et fælles CRS. (Bemærk: Inden for EU er det for geospatiale data påkrævet at anvende metadata i overensstemmelse med INSPIRE-direktivet, herunder de metadata, der er nødvendige for at beskrive CRS-oplysningerne).",
+    "MIM8 · R1.1": "Den LDT SKAL give adgang til simuleringsoutput og beregningsmodelinput, hvor disse er nødvendige som en del af LDT-arbejdsgange.",
+    "MIM8 · R1.2": "Den LDT BØR skelne tydeligt mellem rå kildedata, transformerede arbejdsgangklare data, modelinput og modeloutput.",
+    "MIM8 · C2": "Denne kapabilitet beror på MIM3 (Udveksling af data) vedrørende dataudveksling.",
+    "MIM8 · R3.1": "Modellen BØR levere standardmodelmetadata, herunder en beskrivelse af dens metoder og parametre samt dataparametre (enten efter værdi eller efter reference). Til dette formål BØR fælles metadatastandarder anvendes.",
+    "MIM8 · R3.2": "Modellen SKAL udstille eller kunne kaldes via en dokumenteret grænseflade, fortrinsvis ved hjælp af et kendt, standardiseret API. Datasættet, der udgør modellens resultat, SKAL beskrives (på dataniveau).",
+    "MIM8 · R3.3": "Troværdig, pålidelig og etisk anvendelse af innovative metoder (LLM'er, agentbaseret AI osv.) BØR sikres. Bias BØR minimeres, hvor det er relevant. De metoder, der anvendes til at garantere dette, BØR beskrives.",
+    "MIM8 · R3.4": "Modellen SKAL kunne tilgå data på vegne af slutbrugeren eller organisationen. Se MIM3",
+    "MIM8 · R3.5": "For data, der skal anvendes i AI-modeller, BØR proveniens og tillid garanteres. I visse tilfælde SKAL en autoritativ kilde, såsom en offentlig myndighed, anføres.",
+    "MIM8 · R4.1": "Den LDT understøtter arbejdsgange, der forbinder datakilder, datatransformationer, modeleksekvering, simuleringsprocesser og output.",
+    "MIM8 · R4.2": "Den LDT kæder arbejdsgangstrin sammen, hvor outputtet fra ét trin kan anvendes som input til et andet.",
+    "MIM8 · R4.3": "Den LDT overvåger status for afvikling af arbejdsgange, herunder fuldførte, mislykkede og afbrudte processer.",
+    "MIM8 · R4.4": "Den LDT registrerer arbejdsgangens proveniens, herunder anvendte datasæt (inklusive version, tidsstemplet), eksekverede modeller, valgte parametre og genererede output.",
+    "MIM8 · R5.1": "Den LDT leverer metadata, der forklarer, hvad der visualiseres, herunder tidsstempel, rumligt omfang, datakilde samt scenarie- og variantantagelser, hvor det er relevant.",
+    "MIM8 · R5.2": "Den LDT understøtter forskellige interaktive visualiseringstyper, såsom 2D-kort, 3D-scener, betjeningspaneler, rapporter eller offentligt tilgængelige visninger.",
+    "MIM8 · R6.1": "Den LDT BØR dokumentere uløste semantiske huller, antagelser eller kortlægninger, der kan påvirke fortolkningen, genanvendelsen eller sammenligningen af resultater.",
+    "MIM8 · M1": "API-baseret LDT-ressourceadgang",
+    "MIM8 · M2": "Standardiserede data- og outputformater",
+    "MIM8 · M3": "Model-som-en-service (Model-as-a-Service)",
+    "MIM8 · M4": "LDT-arbejdsgangsorkestrering",
+    "MIM8 · M5": "Flervisningsoutput og visualiseringsadgang",
+    "MIM1 · §3.1": "IRI'en behandles som den kanoniske identifikator i alle nedstrømssystemer; implementationer MÅ IKKE generere IRI'er, der indlejrer ustabile implementationsdetaljer såsom databaserække-id'er eller serverværtsnavne.",
+    "MIM6 · 8.15": "Logning. Logfiler, der registrerer aktiviteter, undtagelser, fejl og andre relevante hændelser, SKAL produceres, opbevares, beskyttes og analyseres."
+  },
+  "capability_translations": {
+    "MIM0 · C1": "Maskinlæsbare data kan hentes via nettet",
+    "MIM0 · C2": "Adgangen er struktureret og forespørgselsorienteret",
+    "MIM0 · C2 best practice": "Yderligere bedste praksis at overveje:",
+    "MIM0 · C3": "Der kan abonneres på ændringer i data",
+    "MIM0 · C4": "Adgang til information kan begrænses",
+    "MIM1 · C1": "Entiteter identificeres ved hjælp af unikke identifikatorer",
+    "MIM1 · C2": "Entiteter kan typespecifiseres",
+    "MIM1 · C3": "Entiteter kan (de)refereres",
+    "MIM2 · C1": "Alle entiteter inkluderet i datakilder beskrives ved hjælp af ensartede datamodeller for at muliggøre interoperabilitet for applikationer og systemer",
+    "MIM2 · C2": "Forskellige datamodeller for den samme entitet, der anvendes i et fælles datadelingsøkosystem, bør let kunne transformeres til en fælles datamodel",
+    "MIM2 · C3": "Alle data og tilhørende metadata kan deles i åbne, standardiserede datatransportformater, så data kan udveksles og fortolkes ensartet af forskellige værktøjer og implementationer",
+    "MIM2 · C4": "Når det er formålstjenligt, bør det være muligt at oprette \"applikationsprofiler\" for en datamodel, så anvendelsesspecifikke attributter kan tilføjes eller specificeres uden at ændre den underliggende datamodel",
+    "MIM3 · C1": "Styringsregler for datadelingsøkosystemet kan defineres",
+    "MIM3 · C2": "Vilkår og betingelser for datadeling kan defineres",
+    "MIM3 · C3": "Overholdelse af vilkår og betingelser for datadeling kan valideres",
+    "MIM3 · C4": "Tilgængelige dataaktiver kan opdages",
+    "MIM3 · C5": "Deltagere i økosystemet kan opdages",
+    "MIM3 · C6": "Dataudveksling kan aftales",
+    "MIM3 · C7": "Nye data, der p.t. ikke er tilgængelige, kan anmodes",
+    "MIM6 · C1": "Data er kun tilgængelige for brugere, der bør have adgang til dem",
+    "MIM6 · C2": "Data tilgået af brugere er ikke blevet ændret",
+    "MIM6 · C3": "Data tilgået af brugere stammer fra en verificeret kilde",
+    "MIM6 · M1": "Mekanismekandidat",
+    "MIM7 · C1": "Byer og lokalsamfund kan let overføre geospatiale data mellem interne og eksterne (herunder IoT-relaterede) it-systemer",
+    "MIM7 · C2": "Byer og lokalsamfund kan integrere 2D- og 3D-geodata fra en række forskellige kilder, f.eks. geodata og bygningsinformationsmodeller (BIM), og dele disse data internt og indbyrdes på en interoperabel måde",
+    "MIM7 · C3": "Byer og lokalsamfund kan integrere geospatiale data med andre data, der kan give yderligere oplysninger om konteksten",
+    "MIM7 · C4": "Byer og lokalsamfund har en ensartet og persistent måde at beskrive individuelle forekomster af alle elementer, ting eller entiteter i de geospatiale datakilder på",
+    "MIM7 · C5": "Koordinatreferencesystemer (CRS) anvendt i datadeling kan let transformeres til et fælles CRS",
+    "MIM8 · C1": "Give adgang til datasæt anvendt i den LDT, herunder statiske, realtids- og simuleringsdata samt beregningsmodeller",
+    "MIM8 · C2": "Udveksle data med eksterne systemer og andre LDT'er ved hjælp af interoperable grænseflader",
+    "MIM8 · C3": "Genanvende deterministiske eller AI-modeller på tværs af forskellige domæner, fællesskaber, anvendelsestilfælde og/eller LDT'er",
+    "MIM8 · C4": "Koordinere og administrere data, modeller og behandlingsarbejdsgange i en LDT (intra-LDT) og på tværs af LDT'er (inter-LDT)",
+    "MIM8 · C5": "Give flere visualiseringer af data og resultater (f.eks. 2D, 3D, betjeningspaneler) fra fælles underliggende data og modeller til interaktion og sammenligning",
+    "MIM8 · C6": "Sikre, at udvekslede data (og simuleringsoutput) i og mellem LDT'er kan fortolkes ensartet gennem fælles eller kortlagt semantik og tydelig proveniens",
+    "MIM8 · M": "Mekanismer (under aktiv udvikling)",
+    "MIM1 · M1": "Mekanisme 1, afsnit 3.1: Entitetsidentifikation med globalt unikke IRI'er",
+    "MIM6 · P": "Forudsætninger og efterfølgende krav (baseret på ISO 27001 Anneks A): den foranstaltning, dette hæfte henviser til"
+  },
+  "spec_link_label": "Komplet specifikation:"
+}

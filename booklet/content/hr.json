@@ -1,0 +1,814 @@
+{
+  "cover": {
+    "title": "Kontrolni popis za javnu nabavu · uz primjenu minimalnih · mehanizama interoperabilnosti (MIMs)",
+    "subtitle": "Što uvrstiti u nadmetanje kako bi grad zadržao svoje podatke",
+    "tagline": "Za MIMs Plus 9.0 organizacije OASC",
+    "footer": "Za stručnjake za javnu nabavu, voditelje projekata i direktore informatike europskih gradova"
+  },
+  "why": {
+    "title": "Čemu ova knjižica",
+    "paras": [
+      "Gradovi svake godine nabavljaju softver: sustave za naplatu parkiranja, senzorske platforme, kartografske portale, digitalne blizance. Prečesto podaci koje ti sustavi prikupljaju ostaju zaključani u njima. Po isteku ugovora podaci — plaćeni javnim novcem — odlaze s pružateljem usluga ili ostaju zarobljeni u formatu koji nitko drugi ne može pročitati.",
+      "Tako ne mora biti. Minimalni mehanizmi interoperabilnosti (MIMs), koje održava Open & Agile Smart Cities (OASC) i koji se podupiru kroz europski pokret living-in.eu, opisuju minimalne tehničke zahtjeve koji vaše podatke čine otvorenima, ponovno upotrijebljenima i neovisnima o pojedinom ponuditelju. Oni su namjerno sažeti: ne predstavljaju glomaznu arhitekturu, već samo nekoliko uvjeta koji moraju biti ispunjeni kako bi sustavi mogli međusobno komunicirati.",
+      "Ne morate biti inženjer da biste ih koristili. Svaki kontrolni popis pretvara jedan MIM u jednostavne stavke koje možete izravno kopirati u dokumentaciju o nabavi, uz obrazloženje kako vas svaka od njih štiti. Odmah nakon kontrolnog popisa nalazi se svaki zahtjev tog MIM-a, od riječi do riječi, kako bi vaši tehnički stručnjaci i ponuditelji mogli provjeriti pojedinosti.",
+      "Gradovi koji zahtijevaju MIM-ove kupuju jednom i ponovno koriste višestruko: podaci o kvaliteti zraka napajaju nadzornu ploču u školama, registar javne rasvjete koristi se za energetski plan, a sljedeći pružatelj nastavlja ondje gdje je prethodni stao. To je interoperabilnost u praksi — i ona se sve češće očekuje u projektima financiranima sredstvima EU-a."
+    ],
+    "quote": {
+      "text": "Minimalni mehanizmi interoperabilnosti (MIMs) omogućuju minimalnu, ali dostatnu razinu interoperabilnosti za podatke, sustave i usluge, posebice u kontekstu rješenja za pametne gradove. · Predviđena publika za ovaj dokument jesu: · 1. Pružatelji rješenja koji žele osigurati da su njihova rješenja interoperabilna s drugima te da omogućuju nesmetanu razmjenu podataka unutar konteksta pametnih gradova i zajednica. · 2. Javni naručitelji koji žele nabaviti rješenja spremna za budućnost koja omogućuju troškovno učinkovitu integraciju u postojeću informacijsko-komunikacijsku (IKT) arhitekturu pametnih gradova i zajednica."
+    },
+    "policy": {
+      "title": "Kako se MIM-ovi uklapaju u pravo EU-a",
+      "intro": "MIM-ovi su tehnička specifikacija, a ne zakon. Usmjereni su prema istim ciljevima kao i propisi EU-a koji se već primjenjuju na javne podatke i digitalne usluge:",
+      "items": [
+        {
+          "name": "Direktiva o javnoj nabavi",
+          "ref": "Direktiva 2014/24/EU, članak 42.",
+          "text": "tehničke specifikacije mogu upućivati na norme, uvijek uz dodatak „ili jednakovrijedno”; u pravilu ne smiju navoditi određenu marku ili proizvod."
+        },
+        {
+          "name": "Akt o podacima",
+          "ref": "Uredba (EU) 2023/2854",
+          "text": "pristup podacima iz povezanih proizvoda i promjena pružatelja usluga u oblaku bez vezivanja uz jednog ponuditelja."
+        },
+        {
+          "name": "Akt o interoperabilnoj Europi",
+          "ref": "Uredba (EU) 2024/903",
+          "text": "procjene interoperabilnosti za prekogranične digitalne javne usluge i ponovna uporaba otvorenih rješenja."
+        },
+        {
+          "name": "Direktiva o otvorenim podatcima",
+          "ref": "Direktiva (EU) 2019/1024",
+          "text": "skupovi podataka visoke vrijednosti objavljuju se besplatno, strojno čitljivo i putem API-ja."
+        },
+        {
+          "name": "Direktiva NIS2",
+          "ref": "Direktiva (EU) 2022/2555",
+          "text": "osnovna razina kibernetičke sigurnosti; nacionalno zakonodavstvo određuje u kojoj se mjeri primjenjuje na lokalnu upravu."
+        },
+        {
+          "name": "GDPR",
+          "ref": "Uredba (EU) 2016/679",
+          "text": "osobni podaci u gradskim sustavima (parkiranje, kamere, mobilnost)."
+        },
+        {
+          "name": "Akt o umjetnoj inteligenciji",
+          "ref": "Uredba (EU) 2024/1689",
+          "text": "pravila za sustave umjetne inteligencije; važno za modele umjetne inteligencije u digitalnim blizancima."
+        }
+      ],
+      "note": "Samo u informativne svrhe. Provjerite kako je vaša država prenijela pojedine propise."
+    }
+  },
+  "howto": {
+    "title": "Kako se koristiti ovom knjižicom",
+    "steps": [
+      {
+        "name": "Pripremite",
+        "text": "Pročitajte sedam kontrolnih popisa. Označite one koji se odnose na predmet nabave. Za većinu nabava potrebni su MIM0, MIM1, MIM2 i MIM6; dodajte MIM3 kada se podaci dijele s trećim stranama ili putem podatkovnog portala, MIM7 za sve što uključuje kartu, MIM8 za digitalne blizance."
+      },
+      {
+        "name": "Pripremite nabavu",
+        "text": "Kopirajte označene stavke u svoje tehničke specifikacije. Svaka je stavka sastavljena kao rečenica koju možete izravno zalijepiti. Uvrstite opće ugovorne odredbe: one malo koštaju, a sprječavaju ovisnost o ponuditelju."
+      },
+      {
+        "name": "Pregledajte i ocijenite",
+        "text": "Zatražite od ponuditelja dokaze u praksi, a ne samo obećanja (vidjeti istoimenu odredbu). Provjerite sukladnost na temelju tablice sukladnosti koju je ponuditelj ispunio."
+      },
+      {
+        "name": "Preuzmite",
+        "text": "Prilikom primopredaje ponovno testirajte svaku označenu stavku. Zahtjev koji se ne provjeri pri isporuci zapravo nikada nije ni bio stvarni zahtjev."
+      }
+    ],
+    "legend_title": "Tumačenje navoda iz specifikacije",
+    "legend": {
+      "SHALL / MUST": {
+        "term": "MORA / MORAJU (SHALL / MUST)",
+        "text": "obvezno. Sustav bez toga nije sukladan."
+      },
+      "MUST NOT": {
+        "term": "NE SMIJE / NE SMIJU (MUST NOT)",
+        "text": "zabranjeno. Sustav koji to čini nije sukladan."
+      },
+      "SHOULD": {
+        "term": "TREBA / TREBAJU (SHOULD)",
+        "text": "izričito se preporučuje. Odstupanja zahtijevaju valjano pisano obrazloženje."
+      },
+      "MAY": {
+        "term": "MOŽE / MOGU (MAY)",
+        "text": "neobvezno. Poželjno, ali se ne zahtijeva."
+      },
+      "CAN": {
+        "term": "MOŽE SE / MOGU SE (CAN)",
+        "text": "mogućnost, a ne zahtjev. Opisuje što je izvedivo i nikoga ne obvezuje."
+      }
+    },
+    "note": "Svaka stavka kontrolnog popisa nosi kratku oznaku poput → MIM0 R1.1. To je oznaka zahtjeva u MIMs Plus 9.0 iz kojeg potječe; odmah nakon kontrolnog popisa nalazi se svaki zahtjev tog MIM-a od riječi do riječi. Samo MIM0 definira ključne riječi: one imaju normativnu snagu kada su pisane velikim slovima, prema konvenciji IETF RFC 2119 i RFC 8174 (CAN potječe iz Direktiva ISO/IEC, 2. dio). Ostali MIM-ovi nemaju definiciju: MIM6 piše SHALL uglavnom velikim slovima, MIM2, MIM3, MIM7 i MIM8 pišu shall, should i must malim slovima, a MIM1 ih koristi samo u opisu mehanizma (MUST NOT u odjeljku 3.1). Ova knjižica tumači riječi pisane malim slovima na isti način; ponuditelj ih može tumačiti slobodnije.",
+    "legend_note": "Stavke kontrolnog popisa navode „mora” čak i ondje gdje specifikacija samo preporučuje (treba) ili navodi predloženi mehanizam. To je odluka javnog naručitelja."
+  },
+  "glance": {
+    "title": "Sedam MIM-ova i tri alata",
+    "intro": "Sedam jednostavnih mehanizama, jedan cilj: vaši podaci ostaju vaši, a vaši sustavi mogu međusobno komunicirati.",
+    "items": {
+      "MIM0": {
+        "name": "Pristup podacima",
+        "q": "Možemo li izvući svoje podatke?",
+        "d": "Podaci se mogu dohvatiti putem standardnih web API-ja, u strojno čitljivim formatima."
+      },
+      "MIM1": {
+        "name": "Povezivanje podataka",
+        "q": "Ima li svaki objekt trajni identifikator?",
+        "d": "Svaki senzor, svjetiljka i zgrada ima jedinstven i trajan identifikator."
+      },
+      "MIM2": {
+        "name": "Prikaz podataka",
+        "q": "Govorimo li zajedničkim jezikom?",
+        "d": "Podaci prate standardne, dokumentirane podatkovne modele s izričito navedenim mjernim jedinicama."
+      },
+      "MIM3": {
+        "name": "Razmjena podataka",
+        "q": "Možemo li dijeliti pod jasnim uvjetima?",
+        "d": "Skupovi podataka su katalogizirani i dijele se prema standardnim licencijama i uz jasno upravljanje."
+      },
+      "MIM6": {
+        "name": "Sigurnost podataka",
+        "q": "Jesu li naši podaci sigurni?",
+        "d": "Šifrirani prijenos, standardna prijava, pristup temeljen na ulogama, revizijski zapisi."
+      },
+      "MIM7": {
+        "name": "Geoprostorni podaci",
+        "q": "Funkcionira li na karti?",
+        "d": "Prostorni podaci koriste sučelja OGC-a, otvorene formate i deklarirane koordinatne sustave."
+      },
+      "MIM8": {
+        "name": "Lokalni digitalni blizanci",
+        "q": "Može li se naš digitalni blizanac razvijati?",
+        "d": "Podaci, modeli i rezultati blizanca ostaju dostupni, dokumentirani i ponovno upotrijebljeni."
+      }
+    },
+    "numbering_note": "O numeriranju: MIMs Plus 9.0 navodi sedam mehanizama, označenih brojevima 0, 1, 2, 3, 6, 7 i 8. MIM4 (osobni podaci) i MIM5 (pravedna umjetna inteligencija) pripadaju ranijim verzijama OASC-a i nisu dio verzije 9.0. U ovoj knjižici ništa ne nedostaje.",
+    "tools_title": "Alati za vaše nadmetanje",
+    "tools": {
+      "clauses": {
+        "name": "Opće ugovorne odredbe",
+        "q": "Što pripada svakom ugovoru?",
+        "d": "Izlazna strategija, prava na podatke, stabilnost API-ja."
+      },
+      "example": {
+        "name": "Primjer: senzori kvalitete zraka",
+        "q": "Kako to izgleda u praksi?",
+        "d": "Koji zahtjev kamo pripada i predložak teksta za uvrštavanje."
+      },
+      "table": {
+        "name": "Tablica sukladnosti",
+        "q": "Kako ponuditelj to dokazuje?",
+        "d": "Ispunjava ponuditelj, provjerava stručno povjerenstvo, prilaže se ugovoru."
+      }
+    }
+  },
+  "nav": {
+    "overview": "Pregled",
+    "clauses": "Odredbe",
+    "example": "Primjer",
+    "table": "Tablica sukladnosti",
+    "glossary": "Pojmovnik",
+    "list": "Popis",
+    "back": "natrag na popis",
+    "page": "str."
+  },
+  "spec_title": "Što propisuje specifikacija",
+  "spec_leadin": "Svaki zahtjev ovog MIM-a, doslovno iz specifikacije MIMs Plus 9.0:",
+  "spec_translation_note": "Specifikacija postoji samo na engleskom jeziku: tekst na hrvatskom jeziku neslužbeni je prijevod autora ove knjižice; engleski izvornik ispod njega je mjerodavan.",
+  "why_title": "Zašto je to važno",
+  "flags_title": "Znakovi upozorenja",
+  "mims": {
+    "MIM0": {
+      "name": "Pristup podacima",
+      "question": "Možemo li izvući svoje podatke?",
+      "intro": "Ovo je temelj. Ako podaci ne mogu napustiti sustav putem standardnog sučelja, sve ostalo u ovoj knjižici ostaje samo teorija. MIM0 traži jednu stvar od svakog sustava koji nabavljate: podaci moraju biti dostupni, u strojno čitljivom obliku, putem uobičajenog weba.",
+      "items": [
+        {
+          "text": "Svi podaci koje sustav prikuplja ili stvara mogu se dohvatiti u najmanje jednom strojno čitljivom formatu (npr. JSON, CSV) putem standardnog web API-ja.",
+          "why": "Vaš sljedeći ugovaratelj — ili vaši vlastiti djelatnici — mogu koristiti podatke bez traženja dopuštenja ponuditelja."
+        },
+        {
+          "text": "API je formalno opisan u otvorenom, strojno čitljivom dokumentu (primjerice OpenAPI) objavljenom na stabilnoj adresi.",
+          "why": "Bilo koji programer može se povezati bez plaćanja „radionice za integraciju”."
+        },
+        {
+          "text": "Podaci se mogu filtrirati prema vremenu, mjestu i atributima izravno u API-ju.",
+          "why": "Dohvaćate ono što vam je potrebno, a ne cjelokupni izvoz podataka svake noći."
+        },
+        {
+          "text": "Kada slučaj uporabe zahtijeva podatke u stvarnom vremenu, korisnici se mogu pretplatiti na promjene (webhooks, MQTT ili slično) umjesto stalnog slanja upita.",
+          "why": "Nadzorne ploče i upozorenja u stvarnom vremenu postaju izvedivi i povoljni."
+        },
+        {
+          "text": "Pogreške, predmemoriranje i ograničenja broja zahtjeva prate standardne HTTP konvencije te su dokumentirani.",
+          "why": "Integracije ne zakazuju tiho, nego uz jasno i otklonjivo javljanje pogreške."
+        }
+      ],
+      "why_panel": [
+        "Podaci koje ste platili ostaju upotrebljivi i nakon isteka ugovora.",
+        "Nove usluge grade se na postojećim podacima umjesto kretanja od nule.",
+        "Troškovi integracije smanjuju se za svaki budući projekt."
+      ],
+      "red_flags": [
+        "„Izvoz podataka na zahtjev putem našeg tima za podršku.”",
+        "„API je dostupan kao modul koji se dodatno naplaćuje.”",
+        "Naplata po pojedinačnom zahtjevu za vlastite podatke grada (vidjeti odredbu „Bez naknada po korisniku ili zahtjevu”)."
+      ]
+    },
+    "MIM1": {
+      "name": "Povezivanje podataka",
+      "question": "Ima li svaki objekt trajni identifikator?",
+      "intro": "Grad je pun objekata: rasvjetnih stupova, cijevi, zgrada, parkirnih mjesta. Sustavi dolaze i prolaze, ali objekti ostaju. MIM1 zahtijeva da svaki objekt dobije naziv — identifikator — koji traje duže od softvera u koji je prvi put unesen, tako da njegova povijest i veze s drugim podacima prežive svaku migraciju.",
+      "items": [
+        {
+          "text": "Svaki entitet (senzor, svjetiljka, zgrada, parkirno mjesto…) ima jedinstven, trajan identifikator koji se ne mijenja zamjenom softvera.",
+          "why": "Povijest i veze među sustavima nadživljuju pružatelja usluge."
+        },
+        {
+          "text": "Identifikator se može pretražiti radi strojnog dohvaćanja podataka o entitetu i njegova značenja (vrste).",
+          "why": "Drugi sustavi mogu automatski pratiti poveznicu."
+        },
+        {
+          "text": "Kada isti stvarni objekt postoji u više sustava, identifikatori se mogu međusobno preslikati.",
+          "why": "Zgrada u GIS-u i zgrada u energetskom sustavu dokazano su ista zgrada."
+        },
+        {
+          "text": "Identifikatori ne sadrže interne tehničke podatke ponuditelja (ID-ove redaka baze, nazive poslužitelja).",
+          "why": "U protivnom identifikatori nestaju prestankom ugovora."
+        }
+      ],
+      "why_panel": [
+        "Deset godina mjerenja ostaje vezano uz pravi rasvjetni stup.",
+        "Odjeli prestaju voditi pet proturječnih registara iste imovine.",
+        "Povezivanje skupova podataka postaje običan upit, a ne konzultantski projekt."
+      ],
+      "red_flags": [
+        "„Identifikatori su interni dio naše platforme.”",
+        "Identifikatori se ponovno generiraju pri svakoj migraciji podataka."
+      ]
+    },
+    "MIM2": {
+      "name": "Prikaz podataka",
+      "question": "Govorimo li zajedničkim jezikom?",
+      "intro": "Dva sustava mogu izvoziti JSON, a da se svejedno međusobno ne razumiju. MIM2 bavi se značenjem: upotrebom zajedničkih, dokumentiranih podatkovnih modela — s izričitim mjernim jedinicama i formatima — kako bi „temperatura”, „parkirno mjesto” ili „kvaliteta zraka” značili isto u svakom sustavu koji posjedujete.",
+      "items": [
+        {
+          "text": "Podaci koriste općeprihvaćene standardne podatkovne modele gdje god postoje (npr. Smart Data Models, SAREF, ISO/IEC 5087); odstupanja se moraju pisano obrazložiti.",
+          "why": "Podaci dvaju pružatelja spajaju se bez potrebe za projektom prilagodbe."
+        },
+        {
+          "text": "Svi podatkovni modeli u uporabi izričito su dokumentirani, s navedenim mjernim jedinicama i formatima datuma i vremena.",
+          "why": "„Temperatura: 23” ne znači ništa ako nitko nije naveo radi li se o °C ili °F."
+        },
+        {
+          "text": "Proširenja se isporučuju kao dokumentirani profili/dodaci na standardni model — nikada kao izmijenjena privatna verzija (fork).",
+          "why": "Zadržavate kompatibilnost sa zajednicom i budućim nadogradnjama."
+        },
+        {
+          "text": "Svaki model ima najmanje jednu otvorenu serijalizaciju s mogućnošću provjere valjanosti sheme (npr. JSON uz JSON Schema).",
+          "why": "Ulazni podaci mogu se automatski provjeriti na samom ulazu u sustav."
+        }
+      ],
+      "why_panel": [
+        "Jedna nadzorna ploča čita podatke više pružatelja bez posebnih adaptera.",
+        "Vaše podatke razumiju alati drugih gradova — a vi razumijete njihove.",
+        "Automatska provjera valjanosti otkriva neispravne podatke prije nego što se prošire."
+      ],
+      "red_flags": [
+        "„Naš vlasnički podatkovni model bogatiji je od standardnog.”",
+        "Dokumentacija je dostupna samo uz NDA."
+      ]
+    },
+    "MIM3": {
+      "name": "Razmjena podataka",
+      "question": "Možemo li dijeliti pod jasnim uvjetima?",
+      "intro": "Ne mogu se svi gradski podaci jednostavno javno objaviti: neki su poslovna tajna, neki osjetljivi. MIM3 omogućuje sigurno dijeljenje preostalih podataka: katalog koji se može pretraživati, licencije temeljene na predlošcima umjesto složenih pravnih ugovora i pravila upravljanja dostupna svima. Specifikacija gotovo cijeli MIM3 formulira kao preporuku (vidjeti str. 3).",
+      "items": [
+        {
+          "text": "Svaki skup podataka koji sustav nudi opisan je standardnim metapodacima (primjerice DCAT-AP) u katalogu, kako bi ga drugi mogli pronaći.",
+          "why": "Podatke koje nitko ne može pronaći nitko ne može ni koristiti."
+        },
+        {
+          "text": "Uvjeti i licencije za uporabu podataka temelje se na poznatim predlošcima (npr. otvorene licencije, standardni ugovori o razmjeni podataka), a ne na posebnim pravnim tekstovima za svaki skup podataka.",
+          "why": "Ugovori postaju primjenjivi u velikom opsegu; pravnici ne postaju usko grlo."
+        },
+        {
+          "text": "Grad može samostalno definirati tko smije pristupiti pojedinom podatkovnom resursu i pod kojim uvjetima, te to mijenjati bez posredovanja ponuditelja.",
+          "why": "Upravljanje ostaje u rukama grada."
+        }
+      ],
+      "why_panel": [
+        "Lokalne tvrtke i istraživači grade rješenja na gradskim podacima — vrijednost ostaje u regiji.",
+        "Osjetljivi podaci mogu se dijeliti s točno određenim partnerima, a ne sa svima ili ni sa kim.",
+        "Jedinstveni pravilnik zamjenjuje brojne pojedinačne ugovore o razmjeni podataka."
+      ],
+      "red_flags": [
+        "Pružatelj svojata prava nad podacima grada (vidjeti odredbu „Prava na podacima”).",
+        "Dijeljenje s trećom stranom zahtijeva suglasnost ponuditelja ili dodatno plaćanje."
+      ]
+    },
+    "MIM6": {
+      "name": "Sigurnost podataka",
+      "question": "Jesu li naši podaci sigurni u prijenosu i uporabi?",
+      "intro": "Pametni gradovi česta su meta napada. MIM6 zadržava namjerno uzak i praktičan opseg: šifriranje podataka u prijenosu, standardne prijave umjesto vlasničkih, kontrola i bilježenje tko čemu pristupa. Ništa od toga nije neobično — sve to mora biti dio ugovora.",
+      "items": [
+        {
+          "text": "Cjelokupan prijenos podataka je šifriran (TLS 1.3 ili važeća najbolja praksa).",
+          "why": "Temeljna higijena; NIS2 to također zahtijeva ako se primjenjuje na vas."
+        },
+        {
+          "text": "Prijava i strojni pristup koriste otvorene standarde — OAuth 2.0 / OpenID Connect — te se mogu povezati s postojećim sustavom upravljanja identitetima grada.",
+          "why": "Jedan račun po zaposleniku, a ne zaseban račun za svaki proizvod ponuditelja; odlaskom djelatnika pristup se ukida svugdje odjednom."
+        },
+        {
+          "text": "Prava pristupa temelje se na ulogama, mogu se nadzirati i ukinuti; pristupi i administratorske radnje se bilježe.",
+          "why": "Omogućuje se revizija i odgovor na incidente. Zapisivanje radnji propisano je kontrolom 8.15 iz Dodatka A norme ISO/IEC 27001:2022, koju MIM6 navodi među preduvjetima."
+        },
+        {
+          "label": "Pripada kriterijima za odabir gospodarskog subjekta, a ne tehničkim specifikacijama",
+          "text": "Ponuditelj mora dokazati usklađenost s normom ISO/IEC 27001:2022 (ili jednakovrijedno) za uslugu kojom upravlja.",
+          "why": "Sigurnost je proces, a ne kvačica pri primopredaji. Specifikacija navodi kontrole norme ISO/IEC 27001, a ne certifikat."
+        }
+      ],
+      "why_panel": [
+        "Sigurnosni propust u jednom sustavu ne otvara vrata svim ostalim sustavima.",
+        "Gdje se NIS2 primjenjuje na vas, usklađivanje s njim i nacionalnim propisima postaje znatno lakše.",
+        "Kada pođe po zlu, revizijski zapisi otkrivaju što se dogodilo i tko je to učinio."
+      ],
+      "red_flags": [
+        "Isključivo vlasnički sustav prijave.",
+        "„Revizijski zapisi dostupni su na zahtjev.”",
+        "Zajednički administratorski računi."
+      ]
+    },
+    "MIM7": {
+      "name": "Geoprostorni podaci",
+      "question": "Funkcionira li na karti?",
+      "intro": "Gotovo sve u vlasništvu grada ima svoju lokaciju. MIM7 osigurava da ta lokacija nije obična snimka zaslona: prostorni podaci razmjenjuju se putem standardnih sučelja OGC-a, u otvorenim formatima, uz obvezno navođenje koordinatnog sustava — kako bi se svaki kupljeni sloj karte savršeno uklopio sa slojevima koje već posjedujete.",
+      "items": [
+        {
+          "text": "Geoprostorni podaci dostupni su putem sučelja utemeljenih na normama (OGC API Features, SensorThings; WFS je prihvatljiv za starije sustave).",
+          "why": "Svaki GIS alat na tržištu može ih odmah učitati."
+        },
+        {
+          "text": "Geoprostorni podaci kodirani su u otvorenim formatima (GeoJSON, CityJSON; GML/CityGML gdje se zahtijeva).",
+          "why": "Bez licencija za pretvarače formata, bez slijepih ulica."
+        },
+        {
+          "text": "Koordinatni referentni sustav uvijek je deklariran (EPSG kod) i podaci se mogu transformirati u zajednički CRS.",
+          "why": "Slojevi iz različitih izvora doista se preklapaju na karti."
+        },
+        {
+          "text": "Prostorni objekti nose iste trajne identifikatore kao u MIM1.",
+          "why": "Točka na karti i zapis u registru predstavljaju isti objekt."
+        }
+      ],
+      "why_panel": [
+        "Jedna karta grada umjesto deset preglednika ponuditelja.",
+        "Obveze prema direktivi INSPIRE i nacionalnom geoportalu postaju lakše, a ne teže.",
+        "3D i BIM podaci mogu se kasnije pridružiti istom prikazu."
+      ],
+      "red_flags": [
+        "Kartografski podaci nalaze se isključivo unutar preglednika ponuditelja.",
+        "„Izvoz u obliku PDF-a ili snimke zaslona.”"
+      ]
+    },
+    "MIM8": {
+      "name": "Lokalni digitalni blizanci",
+      "question": "Može li se naš digitalni blizanac razvijati?",
+      "intro": "Digitalni blizanac dugoročno je ulaganje: podaci, 3D modeli, simulacije, odluke. MIM8 štiti to ulaganje — podaci i modeli blizanca ostaju dostupni i dokumentirani, rezultati se mogu ponoviti, a komponente iz jednog projekta mogu poslužiti za sljedeći. Ovu stranicu koristite pri nabavi platformi digitalnih blizanaca, simulacijskih modela ili alata za 3D prikaz gradova.",
+      "items": [
+        {
+          "text": "Skupovi podataka, ulazni parametri modela i rezultati simulacija dostupni su putem API-ja (sukladno MIM0), a ne zarobljeni u digitalnom blizancu.",
+          "why": "Rezultati se mogu koristiti za izvješća, nadzorne ploče i sljedeći projekt."
+        },
+        {
+          "text": "Modeli su dokumentirani (metoda, parametri, ulazi/izlazi) i mogu se pozivati putem dokumentiranog sučelja.",
+          "why": "Jednom nabavljen model poplava može se ponovno koristiti u drugim odjelima — i u drugim gradovima."
+        },
+        {
+          "text": "Rezultati koriste standardne formate (GeoJSON, CityJSON, 3D Tiles, NetCDF…) koje mogu učitati alati koje ne kupujete od tog ponuditelja.",
+          "why": "Tržište alata za vizualizaciju i analizu ostaje otvoreno i konkurentno."
+        },
+        {
+          "text": "Tijekovi rada bilježe podrijetlo podataka: koja verzija podataka, koji model i koji parametri su proizveli rezultat.",
+          "why": "Odluke donesene na temelju digitalnog blizanca mogu se kasnije objasniti i obraniti."
+        }
+      ],
+      "why_panel": [
+        "Blizanac nadživljava svakog pojedinačnog pružatelja usluga ili proračun projekta.",
+        "Simulacije se mogu provjeriti, ponoviti i opravdati u donošenju odluka na razini grada.",
+        "Modeli i komponente mogu se dijeliti među gradovima."
+      ],
+      "red_flags": [
+        "Rezultati simulacije mogu se vidjeti samo na portalu ponuditelja.",
+        "Modeli funkcioniraju kao zatvorene crne kutije bez metapodataka."
+      ]
+    }
+  },
+  "cross": {
+    "title": "Opće ugovorne odredbe",
+    "subtitle": "Zaštitne mjere protiv ovisnosti o ponuditelju",
+    "intro": "Ove odredbe pripadaju svakom postupku javne nabave, neovisno o tome što nabavljate. Proizašle su iz prakse nabave u okviru MIM-ova i inicijative living-in.eu. Većina njih ne temelji se na samo jednom zahtjevu specifikacije, pa nemaju referentne oznake (određivanje verzija API-ja također je preporuka iz MIM0 C2). Njihovo uvrštavanje malo košta, a njihovo izostavljanje može vas koštati svega.",
+    "items": [
+      {
+        "name": "Izlazna klauzula",
+        "text": "Po isteku ugovora svi podaci grada (i konfiguracija) predaju se u otvorenim, dokumentiranim formatima bez dodatnih troškova."
+      },
+      {
+        "name": "Prava na podacima",
+        "text": "Sva prava na podatke prikupljene i izvedene na temelju ugovora pripadaju javnom naručitelju."
+      },
+      {
+        "name": "Bez naknada po korisniku ili zahtjevu",
+        "text": "Nema naknada za pristup grada vlastitim podacima."
+      },
+      {
+        "name": "Stabilnost i određivanje verzija API-ja",
+        "text": "Ugovaratelj osigurava povratnu kompatibilnost API-ja tijekom cijelog trajanja ugovora. Prijelomne promjene najavljuju se najmanje 6 mjeseci unaprijed i objavljuju kao nova verzija, dok prethodna verzija ostaje dostupna do ugovorenog datuma prelaska."
+      },
+      {
+        "name": "Pokaži, a ne obećavaj",
+        "text": "Ponuditelji dokazuju sukladnost tijekom pregleda i ocjene ponuda umjesto podnošenja vlastitih izjava. Za API to znači objavljenu interaktivnu dokumentaciju (kao što je OpenAPI) i poziv uživo koji vraća valjane podatke. Svaka označena stavka ponovno se testira pri primopredaji."
+      },
+      {
+        "name": "Navođenje otvorenih normi",
+        "text": "U dokumentaciji o nabavi navode se prethodno navedene norme; tvrdnje o „kompatibilnosti s” moraju navesti točno sučelje i verziju. Svako upućivanje na normu ili tehničku specifikaciju dopušta jednakovrijedno rješenje; ponuditelj dokazuje jednakovrijednost."
+      },
+      {
+        "name": "Izjava o sukladnosti s MIM-ovima",
+        "text": "Ponuditelj ispunjava tablicu sukladnosti (str. 28); ona postaje sastavni dio ugovora."
+      }
+    ]
+  },
+  "example": {
+    "title": "Primjer: grad nabavlja mrežu senzora kvalitete zraka",
+    "scenario": "Označene stranice: MIM0, MIM1, MIM2, MIM6 i MIM7 (podaci se prikazuju na karti). Iz MIM3 samo stavka 3.1 (podaci o kvaliteti zraka objavljuju se kao otvoreni podaci, pa pripadaju katalogu); ne i MIM8: ovdje nije riječ o digitalnom blizancu.",
+    "table_title": "Koji zahtjev kamo pripada",
+    "table_headers": [
+      "Dokument",
+      "Pojam u Direktivi 2014/24/EU",
+      "Što uvrstiti u dokument"
+    ],
+    "table_rows": [
+      [
+        "Tehnička specifikacija",
+        "tehničke specifikacije (čl. 42.)",
+        "označene stavke iz MIM0, MIM1, MIM2, MIM3 (samo 3.1), MIM6 (osim 6.4) i MIM7, od riječi do riječi, s oznakom specifikacije, uz rečenicu o jednakovrijednosti"
+      ],
+      [
+        "Uvjeti sposobnosti",
+        "kriteriji za odabir (čl. 58. i 62.)",
+        "dokazana usklađenost s normom ISO/IEC 27001:2022 ili jednakovrijedno (stavka 6.4)"
+      ],
+      [
+        "Dokazna sredstva",
+        "izvješća o ispitivanju, potvrde i druga dokazna sredstva (čl. 44.)",
+        "tablica sukladnosti kao obvezan prilog ponudi: I, J ili N za svaku stavku, s dokazima (adresa dokumentacije API-ja, testni pristup)"
+      ],
+      [
+        "Nacrt ugovora",
+        "uvjeti za izvršenje ugovora (čl. 70.)",
+        "Izlazna klauzula, Prava na podacima, Bez naknada po korisniku ili zahtjevu, Stabilnost i određivanje verzija API-ja; ispunjena tablica sukladnosti kao prilog"
+      ],
+      [
+        "Primopredajni zapisnik",
+        "uvjeti za izvršenje ugovora (čl. 70.)",
+        "stupac „Provjereno” iz tablice sukladnosti kao zapisnik o ispitivanju"
+      ]
+    ],
+    "sample_title": "Predložak teksta za tehničke specifikacije",
+    "sample": [
+      "4.3 Interoperabilnost i pristup podacima",
+      "4.3.1 Svi podaci koje sustav prikuplja ili stvara mogu se dohvatiti u najmanje jednom strojno čitljivom formatu (npr. JSON, CSV) putem standardnog web API-ja. (MIMs Plus 9.0, MIM0 R1.1, R1.2)",
+      "4.3.2 API je formalno opisan u otvorenom, strojno čitljivom dokumentu (primjerice OpenAPI) objavljenom na stabilnoj adresi. (MIM0 R1.3)",
+      "4.3.3 API omogućuje filtriranje podataka prema vremenu i mjestu mjerenja. (MIM0 R2.1, R2.2)",
+      "… 4.3.4 do 4.3.21: ostale označene stavke …",
+      "4.3.22 Svako upućivanje na normu ili tehničku specifikaciju dopušta jednakovrijedno rješenje; ponuditelj dokazuje jednakovrijednost.",
+      "4.3.23 Ponuditelj ispunjava tablicu sukladnosti (prilog dokumentaciji o nabavi) i navodi dokaze za svaku traženu stavku. Ponuditelj dokazuje točke 4.3.1 do 4.3.21 pozivom API-ja uživo tijekom pregleda i ocjene ponuda; javni naručitelj ponovno ih ispituje pri primopredaji. Neispunjavanje navedenih točaka razlog je za odbijanje primopredaje."
+    ],
+    "tip": "Točka 4.3.3 pokazuje kako stavku možete precizirati za potrebe nabave: za senzore ima smisla tražiti filtriranje prema vremenu i mjestu mjerenja.",
+    "note": "Prilagodite tekst nacionalnom zakonodavstvu i dajte ga na provjeru osobi odgovornoj za javnu nabavu.",
+    "filled_title": "Ispunjena tablica sukladnosti (izvadak)",
+    "filled_rows": [
+      [
+        "0.1",
+        "Strojno čitljivi podaci putem standardnog web API-ja",
+        "I",
+        "REST API vraća JSON i CSV; dokumentacija na adresi navedenoj u ponudi, str. 12; testni pristup u prilogu 3",
+        "✓"
+      ],
+      [
+        "0.4",
+        "Pretplata na promjene gdje je potrebno",
+        "N",
+        "još nije podržano; planirano u sljedećoj verziji",
+        "—"
+      ],
+      [
+        "7.2",
+        "Otvoreni geoprostorni formati",
+        "J",
+        "isporučuje GeoPackage, otvorenu normu OGC-a, umjesto GeoJSON-a; jednakovrijednost obrazložena u ponudi, str. 15",
+        "✓"
+      ]
+    ],
+    "filled_note": "Obećanje za budućnost označava se s N: povjerenstvo provjerava samo ono što ponuditelj može dokazati."
+  },
+  "tearout": {
+    "title": "Tablica sukladnosti",
+    "intro": "Jedan redak po stavci. Javni naručitelj označava što se ugovorom zahtijeva i prilaže tablicu dokumentaciji o nabavi kao obvezan prilog ponudi. Za svaku traženu stavku ponuditelj unosi I (ispunjava), J (ispunjava jednakovrijednim rješenjem) ili N (ne ispunjava), ukratko navodi na koji način te gdje se nalazi dokaz: adresa dokumentacije, testni pristup, stranica ponude. Sama izjava bez dokaza nije dovoljna. Stručno povjerenstvo provjerava svaku stavku pri pregledu i ocjeni ponuda te ponovno pri primopredaji (✓ potvrđeno, ✗ nije potvrđeno, — nije provjeravano).",
+    "intro2": "Ispunjena tablica sastavni je dio ponude i prilaže se ugovoru. Njome se provjerava jesu li ispunjeni zahtjevi za predmet nabave (ispunjava ili ne ispunjava); ona ne predstavlja kriterij za odabir ponude. Ako želite bodovati razinu sukladnosti, to morate unaprijed navesti među kriterijima za odabir ponude u dokumentaciji o nabavi (Direktiva 2014/24/EU, članak 67.).",
+    "headers": [
+      "#",
+      "Zahtjev (kratko)",
+      "Oznaka spec.",
+      "Traženo?",
+      "I / J / N",
+      "Dokaz: kako i gdje",
+      "Provjereno"
+    ],
+    "header_roles": [
+      "naručitelj",
+      "ponuditelj",
+      "ponuditelj",
+      "povjerenstvo"
+    ],
+    "note": "Kratki nazivi u nastavku zamjenjuju cjelovite stavke kontrolnog popisa sa stranica MIM-ova — u slučaju dvojbe mjerodavan je cjeloviti tekst stavke.",
+    "download_label": "Verzija tablice za uređivanje dostupna je na:",
+    "cross_note": "Ponuditelj potvrđuje prihvaćanje ugovornog uvjeta (I / N)."
+  },
+  "tearout_short": {
+    "MIM0": [
+      "Strojno čitljivi podaci putem standardnog web API-ja",
+      "Opis otvorenog API-ja (OpenAPI) na stabilnoj adresi",
+      "Filtriranje prema vremenu, mjestu i atributima",
+      "Pretplata na promjene gdje je potrebno",
+      "Standardne HTTP pogreške, predmemoriranje, ograničenja"
+    ],
+    "MIM1": [
+      "Jedinstveni trajni identifikator po entitetu",
+      "Dohvat identifikatora vraća podatke i vrstu",
+      "Preslikavanje identifikatora među sustavima",
+      "Bez internih podataka ponuditelja u identifikatoru"
+    ],
+    "MIM2": [
+      "Standardni podatkovni modeli gdje god je moguće",
+      "Modeli dokumentirani, mjerne jedinice izričite",
+      "Proširenja kao profili, nikada odvojene grane",
+      "Otvorena serijalizacija s provjerom sheme"
+    ],
+    "MIM3": [
+      "Katalogizirani skupovi podataka uz metapodatke",
+      "Predlošci licencija i ugovora",
+      "Grad samostalno upravlja uvjetima pristupa"
+    ],
+    "MIM6": [
+      "Šifrirani prijenos (TLS 1.3)",
+      "Standardna prijava (OAuth 2.0 / OIDC)",
+      "Pristup temeljen na ulogama i revizijski zapisi",
+      "Dokazana usklađenost s ISO/IEC 27001:2022"
+    ],
+    "MIM7": [
+      "Standardna sučelja OGC-a",
+      "Otvoreni geoprostorni formati",
+      "Deklariran CRS (EPSG)",
+      "Trajni ID-ovi na prostornim objektima (vidi 1.1)"
+    ],
+    "MIM8": [
+      "Podaci i izlazi digitalnog blizanca putem API-ja",
+      "Modeli dokumentirani i pozivni",
+      "Standardni izlazni formati",
+      "Zabilježeno podrijetlo tijeka rada"
+    ],
+    "CROSS": [
+      "Izlazna klauzula: besplatna predaja u otv. formatima",
+      "Prava na podatke pripadaju javnom naručitelju",
+      "Bez naknada za pristup vlastitim podacima",
+      "Stabilnost API-ja: verzije, najava izmjena 6 mj."
+    ]
+  },
+  "glossary": {
+    "title": "Mali pojmovnik",
+    "terms": [
+      {
+        "t": "API",
+        "d": "Pristupna točka putem koje jedan program traži podatke od drugoga — putem weba, bez ljudskog klika."
+      },
+      {
+        "t": "Podatkovni model",
+        "d": "Dogovorena struktura podataka: koja polja postoje, što znače i koje mjerne jedinice koriste."
+      },
+      {
+        "t": "DCAT-AP",
+        "d": "Europski profil metapodataka za kataloge podataka; omogućuje pronalaženje skupova podataka i na nacionalnim i europskim portalima."
+      },
+      {
+        "t": "EPSG",
+        "d": "Registar brojčanih oznaka za koordinatne referentne sustave (npr. EPSG:4326 za WGS 84)."
+      },
+      {
+        "t": "Identifikator",
+        "d": "Trajni naziv za pojedinačni objekt (jednu svjetiljku, jednu zgradu) koji svi sustavi koriste za taj objekt."
+      },
+      {
+        "t": "Interoperabilnost",
+        "d": "Sposobnost sustava različitih ponuditelja da razmjenjuju podatke i međusobno ih razumiju."
+      },
+      {
+        "t": "IRI",
+        "d": "Međunarodni oblik web identifikatora (poput URL-a, uz dopuštene znakove izvan ASCII-ja). MIM1 njime imenuje entitete."
+      },
+      {
+        "t": "LDT",
+        "d": "Lokalni digitalni blizanac: digitalni model grada ili njegova dijela, povezan s podacima i simulacijama."
+      },
+      {
+        "t": "Strojno čitljivo",
+        "d": "Strukturirano tako da računalni program može izravno obraditi podatke (JSON, CSV) — PDF tablice to nije."
+      },
+      {
+        "t": "Metapodaci",
+        "d": "Podaci o podacima: što skup podataka sadrži, tko ga pruža, koliko je ažuran i pod kojom licencijom se dijeli."
+      },
+      {
+        "t": "OAuth 2.0 / OIDC",
+        "d": "Otvorene norme za prijavu i dodjelu prava pristupa. OpenID Connect (OIDC) dodaje provjeru identiteta na OAuth 2.0."
+      },
+      {
+        "t": "OGC",
+        "d": "Open Geospatial Consortium: organizacija koja objavljuje norme za geoprostorne podatke i usluge (OGC API, WFS, SensorThings)."
+      },
+      {
+        "t": "Otvorena norma",
+        "d": "Tehničko pravilo koje svatko može pročitati i primijeniti bez plaćanja naknade ili traženja dopuštenja."
+      },
+      {
+        "t": "OpenAPI",
+        "d": "Otvoreni format za strojno čitljiv opis web API-ja: adrese, parametri, odgovori."
+      },
+      {
+        "t": "Serijalizacija",
+        "d": "Zapisivanje podataka u konkretan format (npr. JSON, XML) kako bi se mogli pohraniti ili prenijeti."
+      },
+      {
+        "t": "TLS",
+        "d": "Protokol koji šifrira podatke u prijenosu mrežom (temelj za HTTPS)."
+      },
+      {
+        "t": "Vezivanje uz ponuditelja",
+        "d": "Situacija u kojoj napuštanje pružatelja usluga stvara tolike troškove — u podacima, formatima ili naknadama — da je praktički neizvedivo."
+      },
+      {
+        "t": "Webhook / MQTT",
+        "d": "Dva načina na koja sustav samostalno javlja promjenu: webhook poziva vašu adresu, a MQTT isporučuje poruke pretplatnicima."
+      }
+    ],
+    "more_title": "Gdje saznati više",
+    "links": {
+      "mims.oascities.org": "Puna specifikacija MIMs Plus koju održava OASC.",
+      "living-in.eu": "Europski pokret za digitalnu transformaciju gradova — deklaracija i kontekst za MIMs Plus.",
+      "smartdatamodels.org": "Otvorena zbirka standardnih podatkovnih modela (FIWARE, TM Forum, IUDX, OASC).",
+      "oascities.org/academy": "CITYxCITY Academy — tečajevi za djelatnike gradova koje vode gradovi."
+    }
+  },
+  "back": {
+    "text": "Sastavljeno na temelju specifikacije MIMs Plus 9.0 organizacije Open & Agile Smart Cities (mims.oascities.org). Sadržaj specifikacije © OASC. Ova je knjižica neovisan i jednostavan priručnik za javnu nabavu u gradovima; u slučaju dvojbe mjerodavna je specifikacija.",
+    "credits": "Izrađeno otvorenim alatima. Slobodno ponovno upotrijebite i prilagodite za svoj grad.",
+    "author": "Autor knjižice: Marek Mráz"
+  },
+  "quote_translations": {
+    "MIM0 · R1.1": "Sustavi MORAJU omogućiti dohvat podataka u najmanje jednom strojno čitljivom formatu. Formati se mogu specificirati putem HTTP pregovaranja o sadržaju (Content-Negotiation)",
+    "MIM0 · R1.2": "Podaci se MORAJU moći dohvatiti putem najmanje jednog standardnog web-mehanizma",
+    "MIM0 · R1.3": "Mehanizam ili mehanizmi pristupa MORAJU biti formalno opisani",
+    "MIM0 · R1.4": "Podatkovni modeli koje koristi koristan teret trebaju biti specificirani (vidjeti MIM2)",
+    "MIM0 · R2.1": "Sustavi MORAJU pružati podatke putem strukturiranog i dosljednog sučelja",
+    "MIM0 · R2.2": "Sustavi MORAJU podržavati osnovne upite i/ili filtriranje (npr. prema vremenu, lokaciji, atributima)",
+    "MIM0 · C2": "API-ji TREBAJU podržavati dohvat trenutačnih podataka · API-ji TREBAJU podržavati dohvat povijesnih podataka kada je to primjenjivo · API-ji TREBAJU podržavati geoprostorne upite kada je to primjenjivo (vidjeti MIM7) · API-ji TREBAJU podržavati pretplatu na promjene kada je to primjenjivo · API-ji TREBAJU prikazivati vremensku oznaku sljedećeg očekivanog ažuriranja · API-ji TREBAJU podržavati izričito određivanje verzija krajnjih točaka · API-ji TREBAJU pružati primjere korisnog tereta ili testne upite · API-ji TREBAJU podržavati standardna HTTP zaglavlja za predmemoriranje · API-ji TREBAJU komunicirati status ograničenja broja zahtjeva putem standardnih HTTP zaglavlja · API-ji TREBAJU vraćati strukturirana tijela pogrešaka · API-ji MOGU podržavati djelomične odgovore ili projekcije upita · API-ji MOGU izložiti standardnu krajnju točku za provjeru ispravnosti rada sustava (health/status)",
+    "MIM0 · R3.1": "Sustavi za slučajeve uporabe koji zahtijevaju obavijesti MORAJU pružiti najmanje jedan mehanizam za primanje ažuriranja o promjenama podataka",
+    "MIM0 · R3.2": "Sustavi MOGU podržavati višestruke mehanizme pretplate ovisno o slučaju uporabe",
+    "MIM0 · C4": "Ako su takva ograničenja uspostavljena, ona MORAJU pratiti zahtjeve definirane u MIM3 i MIM6, posebice: identifikaciju sudionika (MIM3.C5.R0), autorizaciju i uloge sudionika (MIM6.C1.R4), politike na razini podatkovnih resursa (MIM6.C1.R4)",
+    "MIM1 · R1.1": "Svaki entitet unutar sustava ima jedinstveni identifikator",
+    "MIM1 · R1.2": "Postoji način za dohvat informacija o entitetu pretraživanjem identifikatora unutar sustava",
+    "MIM1 · R1.3": "ako jedinstveni identifikator upućuje na isti entitet unutar više sustava, moguće je izvesti način za pronalaženje informacija o njemu u svakom od tih sustava",
+    "MIM1 · R1.4": "ako više jedinstvenih identifikatora upućuje na isti entitet, moguće ih je preslikati",
+    "MIM1 · R1.5": "Moguće je stvoriti identifikatore koji su trajni tijekom vremena",
+    "MIM1 · R2.1": "Postoji način za dohvat semantike entiteta, isključivo korištenjem njegova jedinstvenog identifikatora",
+    "MIM1 · R2.2": "Ta je semantika opisana u strojno čitljivom formatu",
+    "MIM1 · R3.1": "Postoji način za dereferenciranje relacije definirane na entitetu",
+    "MIM1 · R3.2": "Postoji način za primjenu dodatne semantike na postojeću ontologiju",
+    "MIM2 · R1.1": "Podatkovni modeli koji se koriste za sve entitete u bilo kojem izvoru podataka moraju biti izričito navedeni. Moraju biti dobro dokumentirani i imati opisne metapodatke, pri čemu korišteni pojmovi moraju biti semantički nedvosmisleni. Za atribute povezane s mjernim jedinicama, vremenskim formatima itd., korištene jedinice, formati itd. moraju biti izričito navedeni. Podatkovni modeli trebaju biti katalogizirani kako bi se mogli lako pronaći.",
+    "MIM2 · R1.2a": "Korišteni podatkovni modeli moraju se temeljiti (gdje god je moguće) na općeprihvaćenim normiranim podatkovnim modelima kako je navedeno u nastavku",
+    "MIM2 · R1.2b": "Ondje gdje nije moguće koristiti postojeće normirane podatkovne modele, moraju se uložiti napori da se prošire postojeći normirani podatkovni modeli koji su najuže usklađeni ili da se definiraju novi, prateći najbolju praksu i konvencije zajednice ili organizacije koja definira podatkovne modele.",
+    "MIM2 · R1.3": "Korišteni podatkovni modeli moraju podržavati razmjenu podataka primjenom relevantnih zahtjeva MIM-ova o Pristupu podacima i Povezivanju podataka",
+    "MIM2 · R2.1": "Zajednički podatkovni model za svaki ključni entitet treba razviti za svaki podatkovni ekosustav. Taj bi zajednički podatkovni model trebao sadržavati sva polja uključena u različite podatkovne modele za taj entitet koji se koriste unutar tog podatkovnog ekosustava. Svaki različiti podatkovni model koji se koristi unutar tog podatkovnog ekosustava mogao bi se potom transformirati u zajednički podatkovni model.",
+    "MIM2 · R3.1": "Svaki korišteni podatkovni model mora imati najmanje jedan definirani strojno čitljiv format prijenosa podataka („serijalizaciju”) koji je otvoren, javno dostupan i neovisan o implementaciji.",
+    "MIM2 · R3.2": "Dokumentacija formata prijenosa podataka trebala bi biti dostatna kako bi omogućila izradu nevlasničke aplikacije ili interpretatora koji može rekonstruirati sve podatke pohranjene u takvom podatkovnom formatu.",
+    "MIM2 · R3.3": "Kada je za isti podatkovni model podržano više formata prijenosa podataka, oni moraju predstavljati isti informacijski sadržaj dosljedno i bez gubitka značenja.",
+    "MIM2 · R3.4": "Prikaz bi trebao podržavati provjeru valjanosti korištenjem javno objavljenih shema, gramatika ili jednakovrijednih strojno čitljivih ograničenja, ondje gdje takvi mehanizmi provjere valjanosti postoje za odabrani format.",
+    "MIM2 · R4.1": "Aplikacijski profili koji proširuju podatkovni model ne bi trebali utjecati na već postojeći model i njegove korisnike",
+    "MIM2 · R4.2": "Specijalizacije ili proširenja uvedena u aplikacijskom profilu modela trebala bi biti dobro dokumentirana, odvojeno od osnovnog podatkovnog modela",
+    "MIM3 · RC1.1": "Orkestrator podatkovnog ekosustava trebao bi moći definirati model upravljanja (npr. pravilnik) koji ocrtava pravila članstva, uloge, odgovornosti i obveze sudionika ekosustava te opća načela koja uređuju razmjenu podataka među njima.",
+    "MIM3 · RC1.2": "Članovi koji sudjeluju u podatkovnom ekosustavu trebali bi biti upoznati s njegovim modelom upravljanja i svim izmjenama koje se u njemu unesu.",
+    "MIM3 · RC1.3": "Model upravljanja trebao bi biti lako razumljiv svim sudionicima ekosustava.",
+    "MIM3 · RC2.1": "Pružatelji podataka slobodni su definirati uvjete pod kojima žele razmjenjivati svoje podatke. (Napomena: Prije dijeljenja podatkovnih resursa pružatelji podataka trebali bi osigurati odgovarajuće dopuštenje vlasnika podataka.)",
+    "MIM3 · RC2.2": "Uvjeti za razmjenu podataka trebali bi biti opisani jasno i nedvosmisleno kako bi bili lako razumljivi korisnicima podataka.",
+    "MIM3 · RC2.3": "Uvjeti za razmjenu podataka trebali bi biti izraženi putem licencija za podatke ili ugovora o dijeljenju podataka temeljenih na dobro definiranim predlošcima ili normama.",
+    "MIM3 · RC2.4": "Uvjeti bi trebali biti usklađeni s cjelokupnim modelom upravljanja podatkovnog ekosustava i ne smiju biti u sukobu s njim. (Napomena: Pružatelj podataka može odlučiti da neće sudjelovati u podatkovnom ekosustavu ako je temeljni model upravljanja previše restriktivan ili previše popustljiv.)",
+    "MIM3 · RC3.1": "Orkestrator podatkovnog ekosustava mora moći utvrditi usklađenost svojih sudionika s temeljnim modelom upravljanja.",
+    "MIM3 · RC3.2": "Pružatelji podataka trebali bi moći utvrditi da je uporaba podataka od strane korisnika podataka u skladu s prethodno dogovorenim uvjetima.",
+    "MIM3 · RC3.3": "Korisnici podataka trebali bi moći utvrditi da isporuka podataka od strane pružatelja podataka prati prethodno dogovorene uvjete.",
+    "MIM3 · RC4.1": "Korisnici podataka trebali bi moći otkriti koji su podaci dostupni u ekosustavu dijeljenja podataka bez prethodnog saznanja o njima.",
+    "MIM3 · RC4.2": "Podatkovni resursi trebali bi biti prikladno opisani metapodacima kako bi korisnici podataka mogli donositi pouzdane odluke o njihovoj daljnjoj namjeravanoj uporabi.",
+    "MIM3 · RC4.3": "Metapodaci koji se koriste za opis podatkovnih resursa trebali bi se temeljiti na dobro definiranim, lako razumljivim formatima opisa koji su čitljivi i ljudima i strojevima.",
+    "MIM3 · RC5.1": "Sudionici ekosustava (npr. korisnici i pružatelji podataka) trebali bi moći otkriti jedni druge unutar ekosustava dijeljenja podataka.",
+    "MIM3 · RC5.2": "Dostatni metapodaci o svakom sudioniku ekosustava trebali bi biti dostupni kako bi se utvrdila njihova pouzdanost relevantna za razmjenu podataka.",
+    "MIM3 · RC5.3": "Pružatelji podataka trebali bi moći pouzdano identificirati korisnike podataka koji žele pristupiti njihovim podatkovnim resursima i provjeriti njihove metapodatke prije odobravanja pristupa.",
+    "MIM3 · RC5.4": "Korisnici podataka trebali bi moći identificirati pružatelje podataka koji dijele podatke u podatkovnom ekosustavu prije pristupanja tim podacima ili njihove uporabe.",
+    "MIM3 · RC5.5": "Sudionici ekosustava mogu također odlučiti ostati anonimni ako model upravljanja ekosustava dijeljenja podataka to dopušta. U tom slučaju RC5.1 do RC5.4 mogu se zanemariti.",
+    "MIM3 · RC6.1": "Korisnici i pružatelji podataka trebali bi se moći usuglasiti o razmjeni podataka i uvjetima povezanim s njom (npr. prihvaćanje uvjeta, pravni potpis ugovora ili pregovaranje).",
+    "MIM3 · RC6.2": "Korisnici i pružatelji podataka trebali bi moći raskinuti prethodno dogovorenu razmjenu podataka u skladu s uvjetima povezanim s njom.",
+    "MIM3 · RC6.3": "Gdje je moguće, mogu se pružiti elektronička sredstva za sklapanje sporazuma i prekid razmjene podataka.",
+    "MIM3 · RC7.1": "Korisnici podataka trebali bi moći izraziti interes za podatkovnim resursima koji trenutačno nisu dostupni u ekosustavu dijeljenja podataka.",
+    "MIM3 · RC7.2": "Pružatelji podataka trebali bi moći zaprimati zahtjeve koje su korisnici podataka podnijeli za novim podatkovnim resursima.",
+    "MIM6 · R1.1": "Pravila za kontrolu fizičkog i logičkog pristupa informacijama i drugoj povezanoj imovini MORAJU se uspostaviti i provoditi na temelju poslovnih zahtjeva i zahtjeva informacijske sigurnosti. (ISO 27001 5.15 Kontrola pristupa)",
+    "MIM6 · R1.2": "Dodjela i upravljanje autentifikacijskim podacima MORAJU se kontrolirati postupkom upravljanja, uključujući savjetovanje osoblja o primjerenom postupanju s autentifikacijskim podacima. (ISO 27001 5.17: Autentifikacijski podaci)",
+    "MIM6 · R1.3": "Prava pristupa informacijama i drugoj povezanoj imovini MORAJU se dodjeljivati, pregledavati, mijenjati i ukidati u skladu s politikom organizacije za specifične teme i pravilima za kontrolu pristupa. (ISO 27001 5.18: Prava pristupa)",
+    "MIM6 · R2.1": "Pravila za učinkovitu primjenu kriptografije, uključujući upravljanje kriptografskim ključevima, MORAJU se definirati i provoditi. (ISO 27001 8.24 Primjena kriptografije)",
+    "MIM6 · R3.1": "Sigurne autentifikacijske tehnologije i postupci moraju se provoditi na temelju ograničenja pristupa informacijama i politike kontrole pristupa za specifične teme. (ISO 27001 8.5 Sigurna autentifikacija)",
+    "MIM6 · M1.1": "Protokol sigurnosti transportnog sloja (TLS), verzija 1.3",
+    "MIM6 · M1.2": "Okvir za autorizaciju OAuth 2.0",
+    "MIM6 · M1.3": "OpenID Connect 1.0, identitetski sloj za autentifikaciju na protokolu OAuth 2.0",
+    "MIM6 · M1.4": "OIDC4VCI / OIDC4VP, OpenID za izdavanje i prezentaciju provjerljivih vjerodajnica",
+    "MIM7 · R1.1": "Geoprostorni podaci moraju biti dostupni putem sučelja web-usluga utemeljenih na normama.",
+    "MIM7 · R2.1": "Geoprostorni podaci moraju biti kodirani primjenom otvorenih normi. Preporučuje se korištenje relevantnih normi OGC-a i udruženja BuildingSMART International.",
+    "MIM7 · R3.1": "Svi skupovi podataka koji se koriste za pružanje dodatnih informacija o kontekstu obuhvaćenom geoprostornim podacima moraju biti u skladu s MIM1 i MIM2.",
+    "MIM7 · R4.1": "Jedinstveni i trajni identifikatori moraju se koristiti za identifikaciju pojedinačnih instanci bilo kojeg entiteta koji se koristi u skupovima podataka. (Vidjeti MIM1: Povezivanje podataka.)",
+    "MIM7 · R5.1": "Koordinatni referentni sustavi (CRS) moraju biti usklađeni s normama i moraju se pružiti informacije o tome koja se norma (npr. EPSG:4326, EPSG:3857) koristi. To uključuje EPSG broj ili WGS broj, zajedno s informacijama o bilo kojoj varijaciji temeljenoj na nacionalnim sustavima kao što je latvijski LKS-92, kako bi se podaci mogli transformirati u zajednički CRS. (Napomena: Unutar EU-a za geoprostorne podatke obvezno je koristiti metapodatke usklađene s Direktivom INSPIRE, uključujući metapodatke potrebne za opis informacija o CRS-u.)",
+    "MIM8 · R1.1": "LDT mora pružiti pristup rezultatima simulacija i ulaznim parametrima modela izračuna ondje gdje su oni potrebni kao dio radnih tijekova LDT-a.",
+    "MIM8 · R1.2": "LDT bi trebao jasno razlikovati sirove izvorne podatke, transformirane podatke spremne za radni tijek, ulazne parametre modela i izlazne rezultate modela.",
+    "MIM8 · C2": "Ova se sposobnost oslanja na MIM3 (Razmjena podataka) za razmjenu podataka.",
+    "MIM8 · R3.1": "Model bi trebao pružiti standardne metapodatke modela, uključujući opis svojih metoda i parametara, te podatkovne parametre (bilo po vrijednosti ili po referenci). U tu bi se svrhu trebale koristiti uobičajene norme za metapodatke.",
+    "MIM8 · R3.2": "Model mora biti dostupan ili pozivan putem dokumentiranog sučelja, poželjno korištenjem poznatog normiranog API-ja. Skup podataka koji čini ishod modela mora biti opisan (na razini podataka).",
+    "MIM8 · R3.3": "Pouzdana, sigurna i etična primjena inovativnih metoda (LLM-ovi, agentska umjetna inteligencija itd.) trebala bi biti osigurana. Pristranost bi trebala biti svedena na najmanju moguću mjeru gdje je primjenjivo. Metode koje se koriste za jamčenje toga trebale bi biti opisane.",
+    "MIM8 · R3.4": "Model mora biti sposoban pristupiti podacima u ime krajnjeg korisnika ili organizacije. Vidjeti MIM3",
+    "MIM8 · R3.5": "Za podatke koji se koriste u modelima umjetne inteligencije trebalo bi zajamčiti podrijetlo i pouzdanost. U nekim slučajevima mora biti naveden mjerodavan izvor, poput vladine agencije.",
+    "MIM8 · R4.1": "LDT podržava tijekove rada koji povezuju izvore podataka, transformacije podataka, izvršavanje modela, simulacijske procese i rezultate.",
+    "MIM8 · R4.2": "LDT povezuje korake radnog tijeka, pri čemu se izlaz jednog koraka može koristiti kao ulaz za drugi.",
+    "MIM8 · R4.3": "LDT prati status izvršavanja radnog tijeka, uključujući dovršene, neuspjele i prekinute procese.",
+    "MIM8 · R4.4": "LDT bilježi podrijetlo radnog tijeka, uključujući korištene skupove podataka (uključujući verziju, s vremenskom oznakom), izvršene modele, odabrane parametre i generirane izlazne rezultate.",
+    "MIM8 · R5.1": "LDT pruža metapodatke koji objašnjavaju što je vizualizirano, uključujući vremensku oznaku, prostorni obuhvat, izvor podataka te pretpostavke scenarija i varijanti gdje je to relevantno.",
+    "MIM8 · R5.2": "LDT podržava različite interaktivne vrste vizualizacije, poput 2D karata, 3D scena, nadzornih ploča, izvješća ili javnih prikaza.",
+    "MIM8 · R6.1": "LDT bi trebao dokumentirati neriješene semantičke razlike, pretpostavke ili preslikavanja koja mogu utjecati na tumačenje, ponovnu uporabu ili usporedbu rezultata.",
+    "MIM8 · M1": "Pristup resursima LDT-a temeljen na API-ju",
+    "MIM8 · M2": "Normirani formati podataka i rezultata",
+    "MIM8 · M3": "Model kao usluga (Model-as-a-Service)",
+    "MIM8 · M4": "Orkestracija radnog tijeka LDT-a",
+    "MIM8 · M5": "Višestruki prikaz rezultata i pristup vizualizaciji",
+    "MIM1 · §3.1": "IRI se tretira kao kanonski identifikator u svim nizvodnim sustavima; implementacije NE SMIJU generirati IRI-je koji sadrže promjenjive detalje implementacije kao što su ID-ovi redaka baze podataka ili nazivi poslužitelja.",
+    "MIM6 · 8.15": "Evidentiranje događaja. Zapisnici koji bilježe aktivnosti, iznimke, pogreške i druge relevantne događaje moraju se stvarati, pohranjivati, štititi i analizirati."
+  },
+  "capability_translations": {
+    "MIM0 · C1": "Strojno čitljivi podaci mogu se dohvatiti putem weba",
+    "MIM0 · C2": "Pristup je strukturiran i omogućuje upite",
+    "MIM0 · C2 best practice": "Dodatna najbolja praksa koju valja razmotriti:",
+    "MIM0 · C3": "Moguća je pretplata na promjene podataka",
+    "MIM0 · C4": "Pristup informacijama može se ograničiti",
+    "MIM1 · C1": "Entiteti se identificiraju jedinstvenim identifikatorima",
+    "MIM1 · C2": "Entiteti mogu biti tipizirani",
+    "MIM1 · C3": "Entiteti se mogu referencirati i dereferencirati",
+    "MIM2 · C1": "Svi entiteti uključeni u izvore podataka opisani su dosljednim podatkovnim modelima kako bi se omogućila interoperabilnost aplikacija i sustava",
+    "MIM2 · C2": "Različiti podatkovni modeli za isti entitet koji se koriste unutar zajedničkog ekosustava dijeljenja podataka trebali bi se lako transformirati u zajednički podatkovni model",
+    "MIM2 · C3": "Svi podaci i njihovi povezani metapodaci mogu se dijeliti u otvorenim, normiranim formatima prijenosa podataka kako bi se podaci mogli razmjenjivati i dosljedno tumačiti različitim alatima i implementacijama",
+    "MIM2 · C4": "Kada je to korisno, trebalo bi biti moguće stvoriti „aplikacijske profile” za podatkovni model, tako da se atributi specifični za pojedini slučaj uporabe mogu dodati ili specificirati bez promjene temeljnog podatkovnog modela",
+    "MIM3 · C1": "Mogu se definirati pravila upravljanja za ekosustav dijeljenja podataka",
+    "MIM3 · C2": "Mogu se definirati uvjeti za dijeljenje podataka",
+    "MIM3 · C3": "Može se provjeriti usklađenost s uvjetima dijeljenja podataka",
+    "MIM3 · C4": "Dostupni podatkovni resursi mogu se otkriti",
+    "MIM3 · C5": "Sudionici ekosustava mogu se otkriti",
+    "MIM3 · C6": "Razmjena podataka može se ugovoriti",
+    "MIM3 · C7": "Novi podaci koji trenutačno nisu dostupni mogu se zatražiti",
+    "MIM6 · C1": "Podaci su dostupni samo korisnicima koji bi trebali imati pristup",
+    "MIM6 · C2": "Podaci kojima korisnici pristupaju nisu mijenjani",
+    "MIM6 · C3": "Podaci kojima korisnici pristupaju potječu iz provjerenog izvora",
+    "MIM6 · M1": "Predloženi mehanizam",
+    "MIM7 · C1": "Gradovi i zajednice mogu lako prenositi geoprostorne podatke između internih i vanjskih IT sustava (uključujući sustave povezane s IoT-om)",
+    "MIM7 · C2": "Gradovi i zajednice mogu integrirati 2D i 3D geoprostorne podatke iz različitih izvora, primjerice geopodatke i modele informacija o zgradama (BIM), te dijeliti te podatke unutar i između sebe na interoperabilan način",
+    "MIM7 · C3": "Gradovi i zajednice mogu integrirati geoprostorne podatke s drugim podacima koji mogu pružiti dodatne informacije o kontekstu",
+    "MIM7 · C4": "Gradovi i zajednice imaju dosljedan i trajan način opisivanja pojedinačnih instanci svih obilježja, objekata ili entiteta uključenih u izvore geoprostornih podataka",
+    "MIM7 · C5": "Koordinatni referentni sustavi (CRS) koji se koriste pri dijeljenju podataka lako se transformiraju u zajednički CRS",
+    "MIM8 · C1": "Osigurati pristup skupovima podataka koji se koriste unutar LDT-a, uključujući statičke podatke, podatke u stvarnom vremenu, simulacijske podatke i modele izračuna",
+    "MIM8 · C2": "Razmjenjivati podatke s vanjskim sustavima i drugim LDT-ovima putem interoperabilnih sučelja",
+    "MIM8 · C3": "Ponovno koristiti determinističke modele ili modele umjetne inteligencije u različitim domenama, zajednicama, slučajevima uporabe i/ili LDT-ovima",
+    "MIM8 · C4": "Koordinirati i upravljati podacima, modelima i tijekovima obrade unutar LDT-a (intra-LDT) i među LDT-ovima (inter-LDT)",
+    "MIM8 · C5": "Pružiti višestruke vizualizacije podataka i rezultata (npr. 2D, 3D, nadzorne ploče) iz zajedničkih temeljnih podataka i modela radi interakcije i usporedbe",
+    "MIM8 · C6": "Osigurati da se razmijenjeni podaci (i rezultati simulacija) unutar i između LDT-ova mogu dosljedno tumačiti putem zajedničke ili preslikane semantike te jasnog podrijetla",
+    "MIM8 · M": "Mehanizmi (u aktivnom razvoju)",
+    "MIM1 · M1": "Mehanizam 1, odjeljak 3.1: Identifikacija entiteta globalno jedinstvenim IRI-jima",
+    "MIM6 · P": "Preduvjeti i naknadni uvjeti (temeljeni na Dodatku A norme ISO 27001): kontrola na koju se ova knjižica poziva"
+  },
+  "spec_link_label": "Cjelovita specifikacija:"
+}

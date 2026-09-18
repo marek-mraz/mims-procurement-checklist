@@ -45,6 +45,7 @@ echo "building edition $BOOKLET_VERSION ($BOOKLET_DATE)"
 # 1. validate every language: text against the English master, then page fit.
 #    Stops the build on an error; warnings (long strings, zoomed pages) do not.
 tools/venv/bin/python check_content.py
+python3 translate.py --selftest          # the machine-translation helper: split, merge, shape (offline)
 
 # 2. readable/booklet-<xx>.typ: the same booklet with its text inline
 tools/venv/bin/python gen_typ.py

@@ -161,9 +161,13 @@
 //
 // Every fit-page also leaves a record (page name, zoom, still overflowing?) that
 // check_content.py reads with `typst query … "<fit>"` to report tight pages.
+// A draft build prints the same finding on the page itself, in the top margin: how
+// much taller than the page the text is and what happened to it (red = it still
+// overflows, shorten the text). Editions never carry the label.
 #let fit-page(name, floor: 76, flow: false, body) = layout(size => {
   let pct = 100
   let h = measure(width: size.width, body).height
+  let excess = calc.round((h / size.height - 1) * 100)      // % taller than the page at full size
   while h * pct / 100 > size.height and pct > floor {
     pct -= 2
     h = measure(width: size.width * 100 / pct, body).height
@@ -175,6 +179,14 @@
       block(width: size.width * 100 / pct, body))
   }
   [#metadata((page: name, zoom: pct, overflow: over and not flow, flows: over and flow))<fit>]
+  if draft and excess > 0 {
+    let bad = over and not flow
+    place(top + right, dy: -15pt, box(fill: if bad { rgb("#c62828") } else { rgb("#8a6d00") }, inset: (x: 5pt, y: 2.5pt), radius: 2pt,
+      text(size: 7pt, fill: white, weight: "bold", lang: "en",
+        "“" + name + "” is " + str(excess) + " % taller than the page: " + if bad {
+          "OVERFLOWS even at " + str(pct) + " %, shorten the text"
+        } else if over { "runs on to a second page" } else { "zoomed out to " + str(pct) + " %" })))
+  }
 })
 
 // Quotation marks in the style of the document language: “…” „…“ «…» …

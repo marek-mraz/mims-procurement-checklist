@@ -1,0 +1,814 @@
+{
+  "cover": {
+    "title": "Lista ta' Verifika għall-Akkwist · bl-użu tal-Mekkaniżmi Minimi · għall-Interoperabbiltà (MIMs)",
+    "subtitle": "X'għandek tinkludi f'sejħa għall-offerti biex il-belt iżżomm id-data tagħha",
+    "tagline": "Għal MIMs Plus 9.0 minn OASC",
+    "footer": "Għall-uffiċjali tal-akkwist pubbliku, maniġers ta' proġetti u CIOs ta' muniċipalitajiet Ewropej"
+  },
+  "why": {
+    "title": "Għaliex dan il-ktejjeb",
+    "paras": [
+      "Kull sena, il-bliet jixtru software: sistemi ta' parkeġġ, pjattaformi ta' sensuri, portali ta' mapep, tewmin diġitali. Spiss wisq, id-data li jiġbru dawn is-sistemi tispiċċa msakkra ġo fihom. Meta jintemm il-kuntratt, id-data — imħallsa b'fondi pubbliċi — titlaq mal-fornitur, jew tibqa' maqbuda f'format li ħadd ieħor ma jista' jaqra.",
+      "M'hemmx għalfejn ikun hekk. Il-Mekkaniżmi Minimi għall-Interoperabbiltà (MIMs), miżmuma minn Open & Agile Smart Cities (OASC) u approvati permezz tal-moviment Ewropew living-in.eu, jiddeskrivu r-rekwiżiti tekniċi minimi li jżommu d-data tiegħek miftuħa, li tista' terġa' tintuża u newtrali mill-bejjiegħa. Huma deliberatament konċiżi: mhumiex arkitettura grandjuża, iżda biss il-ftit affarijiet li għandhom japplikaw sabiex is-sistemi jkunu jistgħu jikkomunikaw ma' xulxin.",
+      "M'għandekx bżonn tkun inġinier biex tużahom. Kull lista ta' verifika tibdel MIM wieħed f'punti b'lingwaġġ sempliċi li tista' tikkopja f'sejħa għall-offerti, bir-raġuni għalfejn kull wieħed jipproteġik. Eżatt wara l-lista ta' verifika ssib kull rekwiżit ta' dak il-MIM, kelma b'kelma, sabiex il-kollegi tekniċi u l-offerenti tiegħek ikunu jistgħu jivverifikaw id-dettalji.",
+      "Il-bliet li jirrikjedu l-MIMs jixtru darba u jerġgħu jużaw bosta drabi: id-data dwar il-kwalità tal-arja tmigħ id-dashboard tal-iskola, l-inventarju tad-dwal tat-toroq jitma' l-pjan tal-enerġija, u l-fornitur li jmiss ikompli fejn ħalla tal-aħħar. Dan huwa xi tfisser l-interoperabbiltà fil-prattika — u hija dejjem aktar mistennija fi proġetti ffinanzjati mill-UE."
+    ],
+    "quote": {
+      "text": "Il-mekkaniżmi minimi għall-interoperabbiltà (MIMs) jippermettu livell minimu iżda suffiċjenti ta' interoperabbiltà għad-data, is-sistemi, u s-servizzi speċifikament fil-kuntest ta' soluzzjonijiet għal bliet intelliġenti. · Il-pubbliku fil-mira għal dan id-dokument huma: · 1. Fornituri ta' soluzzjonijiet li jixtiequ jiżguraw li s-soluzzjonijiet tagħhom ikunu interoperabbli ma' oħrajn u jippermettu skambju fluwidu ta' data fi ħdan kuntest ta' Bliet u Komunitajiet Intelliġenti. · 2. Xerrejja pubbliċi li jixtiequ jakkwistaw soluzzjonijiet li jilqgħu għall-futur u jippermettu integrazzjoni kosteffettiva fi ħdan arkitettura eżistenti tat-Teknoloġija tal-Informazzjoni u l-Komunikazzjoni (ICT) għal Bliet u Komunitajiet Intelliġenti."
+    },
+    "policy": {
+      "title": "Kif il-MIMs jidħlu fil-liġi tal-UE",
+      "intro": "Il-MIMs huma speċifikazzjoni teknika, mhux liġi. Huma jippontaw fl-istess direzzjoni bħar-regoli tal-UE li diġà japplikaw għal data pubblika u servizzi diġitali:",
+      "items": [
+        {
+          "name": "Direttiva dwar l-Akkwist Pubbliku",
+          "ref": "Direttiva 2014/24/UE, Artikolu 42",
+          "text": "l-ispeċifikazzjonijiet tekniċi jistgħu jirreferu għal standards, dejjem b'“jew ekwivalenti”; bħala regola ma jistgħux isemmu marka jew prodott speċifiku."
+        },
+        {
+          "name": "L-Att dwar id-Data",
+          "ref": "Regolament (UE) 2023/2854",
+          "text": "aċċess għal data minn prodotti konnessi, u bdil bejn fornituri tal-cloud mingħajr intrappolament."
+        },
+        {
+          "name": "L-Att dwar Ewropa Interoperabbli",
+          "ref": "Regolament (UE) 2024/903",
+          "text": "valutazzjonijiet tal-interoperabbiltà għal servizzi pubbliċi diġitali transfruntiera, u l-użu mill-ġdid ta' soluzzjonijiet miftuħa."
+        },
+        {
+          "name": "Direttiva dwar id-Data Miftuħa",
+          "ref": "Direttiva (UE) 2019/1024",
+          "text": "settijiet ta' data ta' valur għoli ppubblikati mingħajr ħlas, li jinqraw mill-magni, permezz ta' APIs."
+        },
+        {
+          "name": "Direttiva NIS2",
+          "ref": "Direttiva (UE) 2022/2555",
+          "text": "linja bażi ta' ċibersigurtà; il-liġi nazzjonali tiddeċiedi safejn tkopri l-amministrazzjoni lokali."
+        },
+        {
+          "name": "GDPR",
+          "ref": "Regolament (UE) 2016/679",
+          "text": "data personali f'sistemi tal-belt (parkeġġ, kameras, mobbiltà)."
+        },
+        {
+          "name": "L-Att dwar l-IA",
+          "ref": "Regolament (UE) 2024/1689",
+          "text": "regoli għal sistemi ta' intelliġenza artifiċjali; rilevanti għal mudelli ta' IA fi tewmin diġitali."
+        }
+      ],
+      "note": "Għal skop ta' gwida biss. Iċċekkja kif pajjiżek ittraspona kull att."
+    }
+  },
+  "howto": {
+    "title": "Kif tuża dan il-ktejjeb",
+    "steps": [
+      {
+        "name": "Ipprepara",
+        "text": "Aqra s-seba' listi ta' verifika. Immarka dawk li japplikaw għal dak li qed tixtri. Il-biċċa l-kbira tas-sejħiet għall-offerti jeħtieġu MIM0, MIM1, MIM2 u MIM6; żid MIM3 meta d-data tkun kondiviża ma' partijiet terzi jew permezz ta' portal tad-data, MIM7 għal kwalunkwe ħaġa b'mappa, MIM8 għal tewmin diġitali."
+      },
+      {
+        "name": "Agħmel sejħa",
+        "text": "Ikkopja l-punti mmarkati tal-lista ta' verifika fir-rekwiżiti tiegħek. Kull punt huwa miktub bħala sentenza li tista' twaħħal. Żid il-klawsoli trasversali: dawn jiswew ftit u jipprevjenu l-intrappolament."
+      },
+      {
+        "name": "Evalwa",
+        "text": "Itlob lill-offerenti juru, mhux iwiegħdu (ara l-klawżola b'dak l-isem). Ivverifika l-konformità mat-tabella ta' konformità li mela l-offerent."
+      },
+      {
+        "name": "Ikkonsenja",
+        "text": "Malli ssir l-aċċettazzjoni, erġa' ttestja kull punt li mmarkajt. Rekwiżit li ma jiġix ittestjat mal-kunsinna qatt ma kien verament rekwiżit."
+      }
+    ],
+    "legend_title": "Kif taqra l-kwotazzjonijiet tal-ispeċifikazzjoni",
+    "legend": {
+      "SHALL / MUST": {
+        "term": "GĦANDU / GĦANDHOM (SHALL / MUST)",
+        "text": "obbligatorju. Is-sistema mhix konformi mingħajru."
+      },
+      "MUST NOT": {
+        "term": "M'GĦANDUX / M'GĦANDHOMX (MUST NOT)",
+        "text": "ipprojbit. Sistema li tagħmlu mhix konformi."
+      },
+      "SHOULD": {
+        "term": "GĦANDU JIKKUNSIDRA (SHOULD)",
+        "text": "rakkomandat bil-qawwa. Kwalunkwe devjazzjoni teħtieġ raġuni tajba bil-miktub."
+      },
+      "MAY": {
+        "term": "JISTA' / JISTGĦU (MAY)",
+        "text": "fakultattiv. Tajjeb li jkun hemm, qatt mhu meħtieġ."
+      },
+      "CAN": {
+        "term": "JISTA' / JISTGĦU (CAN)",
+        "text": "possibbiltà, mhux rekwiżit. Jgħid x'inhu possibbli u ma jobbliga lil ħadd."
+      }
+    },
+    "note": "Kull punt tal-lista ta' verifika jġorr referenza żgħira bħal → MIM0 R1.1. Dak huwa r-rekwiżit f'MIMs Plus 9.0 minn fejn ġej; eżatt wara l-lista ta' verifika ssib kull rekwiżit ta' dak il-MIM kelma b'kelma. MIM0 biss jiddefinixxi l-kliem prinċipali: jgħoddu meta jkunu miktuba b'ittri kbar, il-konvenzjoni ta' IETF RFC 2119 u RFC 8174 (CAN ġej mid-Direttivi ISO/IEC, Parti 2). Il-MIMs l-oħra m'għandhomx definizzjoni: MIM6 jikteb SHALL l-aktar b'ittri kbar, MIM2, MIM3, MIM7 u MIM8 jiktbu shall, should u must b'ittri żgħar, u MIM1 jużahom biss fid-deskrizzjoni ta' mekkaniżmu (MUST NOT fit-taqsima 3.1). Dan il-ktejjeb jaqra l-kliem b'ittri żgħar bl-istess mod; offerent jista' jaqrahom b'mod aktar laxk.",
+    "legend_note": "Il-punti tal-lista ta' verifika jgħidu “għandu” anki fejn l-ispeċifikazzjoni tirrakkomanda biss (għandu jikkunsidra) jew telenka mekkaniżmu kandidat. Dik hija d-deċiżjoni tal-awtorità kontraenti."
+  },
+  "glance": {
+    "title": "Seba' MIMs u tliet għodod",
+    "intro": "Seba' mekkaniżmi żgħar, għan wieħed: id-data tiegħek tibqa' tiegħek, u s-sistemi tiegħek ikunu jistgħu jikkomunikaw ma' xulxin.",
+    "items": {
+      "MIM0": {
+        "name": "Aċċess għad-Data",
+        "q": "Nistgħu noħorġu d-data tagħna?",
+        "d": "Id-data tista' tiġi rkuprata permezz ta' APIs standard tal-web, f'formati li jinqraw mill-magni."
+      },
+      "MIM1": {
+        "name": "Interkonnessjoni tad-Data",
+        "q": "Kull ħaġa għandha isem li jibqa' għaddej?",
+        "d": "Kull sensur, fanal u bini għandu identifikatur uniku u persistenti."
+      },
+      "MIM2": {
+        "name": "Rappreżentazzjoni tad-Data",
+        "q": "Nitkellmu lingwa komuni?",
+        "d": "Id-data ssegwi mudelli ta' data standard u ddokumentati b'unitajiet espliċiti."
+      },
+      "MIM3": {
+        "name": "Skambju ta' Data",
+        "q": "Nistgħu naqsmu b'termini ċari?",
+        "d": "Is-settijiet ta' data huma kkatalogati u kondiviżi taħt mudelli ta' liċenzji u governanza ċara."
+      },
+      "MIM6": {
+        "name": "Sigurtà tad-Data",
+        "q": "Id-data tagħna hija sigura?",
+        "d": "Trasferiment kriptat, logins standard, aċċess ibbażat fuq ir-rwoli, reġistri tal-verifika."
+      },
+      "MIM7": {
+        "name": "Data Ġeospazjali",
+        "q": "Taħdem fuq mappa?",
+        "d": "Id-data spazjali tuża interfaċċji tal-OGC, formati miftuħa u sistemi ta' koordinati ddikjarati."
+      },
+      "MIM8": {
+        "name": "Tewmin Diġitali Lokali",
+        "q": "It-tewmi diġitali tagħna jista' jikber?",
+        "d": "Id-data, il-mudelli u r-riżultati tat-tewmi jibqgħu aċċessibbli, iddokumentati u jistgħu jerġgħu jintużaw."
+      }
+    },
+    "numbering_note": "Dwar l-innumrar: MIMs Plus 9.0 jispeċifika seba' mekkaniżmi, innumerati 0, 1, 2, 3, 6, 7 u 8. MIM4 (data personali) u MIM5 (IA ġusta) jappartjenu għal verżjonijiet preċedenti tal-OASC u mhumiex parti minn 9.0. Xejn ma jonqos minn dan il-ktejjeb.",
+    "tools_title": "Għodod għas-sejħa għall-offerti tiegħek",
+    "tools": {
+      "clauses": {
+        "name": "Klawsoli trasversali tas-sejħa",
+        "q": "X'għandu jkun f'kull kuntratt?",
+        "d": "Ħruġ, drittijiet tad-data, stabbiltà tal-APIs."
+      },
+      "example": {
+        "name": "Eżempju: sensuri tal-kwalità tal-arja",
+        "q": "Kif jidher fil-prattika?",
+        "d": "X'imur fejn, u test kampjun x'twaħħal."
+      },
+      "table": {
+        "name": "Tabella ta' konformità",
+        "q": "Kif jipprovaha l-offerent?",
+        "d": "Mimlija mill-offerent, ivverifikata mill-kumitat, annessa mal-kuntratt."
+      }
+    }
+  },
+  "nav": {
+    "overview": "Ħarsa ġenerali",
+    "clauses": "Klawsoli",
+    "example": "Eżempju",
+    "table": "Tabella",
+    "glossary": "Glossarju",
+    "list": "Lista",
+    "back": "lura għal-lista",
+    "page": "p."
+  },
+  "spec_title": "X'tgħid l-ispeċifikazzjoni",
+  "spec_leadin": "Kull rekwiżit ta' dan il-MIM, kelma b'kelma minn MIMs Plus 9.0:",
+  "spec_translation_note": "L-ispeċifikazzjoni teżisti biss bl-Ingliż: il-kliem bil-Malti huwa traduzzjoni mhux uffiċjali mill-awtur ta' dan il-ktejjeb; l-oriġinal bl-Ingliż taħtu huwa vinkolanti.",
+  "why_title": "Għaliex huwa importanti",
+  "flags_title": "Sinjali ta' twissija",
+  "mims": {
+    "MIM0": {
+      "name": "Aċċess għad-Data",
+      "question": "Nistgħu noħorġu d-data tagħna?",
+      "intro": "Din hija l-bażi. Jekk id-data ma tistax toħroġ mis-sistema permezz ta' interfaċċja standard, kull ħaġa oħra f'dan il-ktejjeb hija teorija. MIM0 jitlob ħaġa waħda minn kull sistema li tixtri: id-data trid tkun aċċessibbli, f'forma li l-magni jistgħu jaqraw, permezz tal-web ordinarju.",
+      "items": [
+        {
+          "text": "Id-data kollha li s-sistema tiġbor jew tipproduċi tista' tiġi rkuprata f'mill-inqas format wieħed li jinqara mill-magni (eż. JSON, CSV) fuq API standard tal-web.",
+          "why": "Il-kuntrattur li jmiss tiegħek — jew il-persunal tiegħek stess — jista' juża d-data mingħajr ma jistaqsi lill-bejjiegħ."
+        },
+        {
+          "text": "L-API hija deskritta formalment f'dokument miftuħ li jinqara mill-magni (pereżempju OpenAPI) ippubblikat f'indirizz stabbli.",
+          "why": "Kwalunkwe żviluppatur jista' jikkonnettja mingħajr “sessjoni ta' integrazzjoni” bi ħlas."
+        },
+        {
+          "text": "Id-data tista' tiġi ffiltrata skont il-ħin, il-post u l-attributi direttament fl-API.",
+          "why": "Tiġbor dak li għandek bżonn, mhux dump sħiħ kull lejl."
+        },
+        {
+          "text": "Fejn il-każ ta' użu jeħtieġ data f'ħin reali, il-konsumaturi jistgħu jabbonaw għal bidliet (webhooks, MQTT jew simili) minflok stħarriġ kontinwu.",
+          "why": "Dashboards u twissijiet f'ħin reali jsiru possibbli u orħos."
+        },
+        {
+          "text": "L-iżbalji, il-caching u l-limiti ta' użu (rate limits) jużaw konvenzjonijiet standard tal-HTTP u huma ddokumentati.",
+          "why": "L-integrazzjonijiet ifallu b'mod ċar u li jista' jissewwa, mhux fis-skiet."
+        }
+      ],
+      "why_panel": [
+        "Data li ħallast għaliha tibqa' tista' tintuża wara li jintemm il-kuntratt.",
+        "Servizzi ġodda jibnu fuq data antika minflok jibdew minn żero.",
+        "L-ispejjeż tal-integrazzjoni jonqsu għal kull proġett li jsegwi."
+      ],
+      "red_flags": [
+        "“Esportazzjoni tad-data fuq talba permezz tat-tim ta' appoġġ tagħna.”",
+        "“L-API hija disponibbli bħala modulu addizzjonali bi ħlas.”",
+        "Ipprezzar għal kull talba għad-data tal-belt stess (ara l-klawżola “Ebda tariffi għal kull utent / għal kull talba”)."
+      ]
+    },
+    "MIM1": {
+      "name": "Interkonnessjoni tad-Data",
+      "question": "Kull ħaġa għandha isem li jibqa' għaddej?",
+      "intro": "Belt hija mimlija oġġetti: lampi, pajpijiet, binjiet, postijiet għall-parkeġġ. Is-sistemi jiġu u jmorru, iżda l-oġġetti jibqgħu. MIM1 jitlob li kull ħaġa jkollha isem — identifikatur — li jgħix aktar mis-software li rreġistrah l-ewwel, sabiex l-istorja tagħha u r-rabtiet tagħha ma' data oħra jibqgħu ħajjin wara kull migrazzjoni.",
+      "items": [
+        {
+          "text": "Kull entità (sensur, fanal, bini, post għall-parkeġġ…) għandha identifikatur uniku u persistenti li ma jinbidilx meta s-software jiġi sostitwit.",
+          "why": "L-istorja u r-rabtiet bejn is-sistemi jgħixu aktar mill-fornitur."
+        },
+        {
+          "text": "L-identifikatur jista' jiġi mfittex biex tiġi rkuprata d-data tal-entità u t-tifsira tagħha (tip) b'mod li jinqara mill-magni.",
+          "why": "Sistemi oħra jistgħu jsegwu l-link awtomatikament."
+        },
+        {
+          "text": "Fejn l-istess ħaġa fid-dinja reali teżisti f'diversi sistemi, l-identifikaturi jistgħu jiġu mmappjati ma' xulxin.",
+          "why": "Il-bini fil-GIS u l-bini fis-sistema tal-enerġija huma ppruvati li huma l-istess bini."
+        },
+        {
+          "text": "L-identifikaturi ma jinkorporawx dettalji interni tal-bejjiegħ (IDs ta' ringieli f'database, ismijiet ta' servers).",
+          "why": "Inkella l-IDs imutu flimkien mal-kuntratt."
+        }
+      ],
+      "why_panel": [
+        "Għaxar snin ta' kejl jibqgħu marbuta mal-arblu tad-dawl it-tajjeb.",
+        "Id-dipartimenti jieqfu jżommu ħames reġistri kontradittorji tal-istess assi.",
+        "Ir-rabta bejn settijiet ta' data ssir mistoqsija ta' tfittxija, mhux proġett ta' konsulenza."
+      ],
+      "red_flags": [
+        "“L-IDs huma interni għall-pjattaforma tagħna.”",
+        "L-identifikaturi jerġgħu jiġu ġġenerati f'kull migrazzjoni tad-data."
+      ]
+    },
+    "MIM2": {
+      "name": "Rappreżentazzjoni tad-Data",
+      "question": "Nitkellmu lingwa komuni?",
+      "intro": "Żewġ sistemi jistgħu t-tnejn jesportaw JSON u xorta ma jifhmux lil xulxin. MIM2 huwa dwar it-tifsira: l-użu ta' mudelli ta' data kondiviżi u ddokumentati — b'unitajiet u formati espliċiti — sabiex “temperatura”, “post għall-parkeġġ” jew “kwalità tal-arja” jfissru l-istess ħaġa f'kull sistema li għandek.",
+      "items": [
+        {
+          "text": "Id-data tuża mudelli ta' data standard rikonoxxuti b'mod komuni kull fejn jeżistu (eż. Smart Data Models, SAREF, ISO/IEC 5087); kwalunkwe devjazzjoni tkun iġġustifikata bil-miktub.",
+          "why": "Data minn żewġ fornituri tingħaqad mingħajr proġett ta' traduzzjoni."
+        },
+        {
+          "text": "Il-mudelli kollha tad-data li qed jintużaw huma ddokumentati b'mod espliċitu, b'unitajiet ta' kejl u formati ta' data/ħin iddikjarati.",
+          "why": "“Temperatura: 23” hija inutli jekk ħadd ma kiteb °C jew °F."
+        },
+        {
+          "text": "L-estensjonijiet huma kkonsenjati bħala profili/żidiet iddokumentati fuq il-mudell standard — qatt bħala fergħa privata modifikata.",
+          "why": "Tibqa' kompatibbli mal-komunità u ma' aġġornamenti futuri."
+        },
+        {
+          "text": "Kull mudell għandu mill-inqas serjalizzazzjoni miftuħa waħda li tista' tiġi vvalidata bi skema (eż. JSON b'JSON Schema).",
+          "why": "Data li dieħla tista' tiġi vverifikata awtomatikament mal-bieb."
+        }
+      ],
+      "why_panel": [
+        "Dashboard wieħed jaqra data minn bosta fornituri mingħajr adapters.",
+        "Id-data tiegħek tinftiehem mill-għodod ta' bliet oħra — u tagħhom minn tiegħek.",
+        "Il-validazzjoni awtomatika taqbad data difettuża qabel ma tinfirex."
+      ],
+      "red_flags": [
+        "“Il-mudell ta' data proprjetarju tagħna huwa aktar rikk mill-istandard.”",
+        "Dokumentazzjoni disponibbli biss taħt NDA."
+      ]
+    },
+    "MIM3": {
+      "name": "Skambju ta' Data",
+      "question": "Nistgħu naqsmu b'termini ċari?",
+      "intro": "Mhux id-data kollha tal-belt tista' tiġi sempliċement ippubblikata: xi wħud hija kummerċjali, xi wħud sensittiva. MIM3 jittratta l-kondiviżjoni tal-kumplament xorta waħda, b'mod sikur: katalgu li n-nies jistgħu jfittxu fih, liċenzji minn mudelli minflok kliem legali mfassal apposta, u regoli ta' governanza li kulħadd jista' jaqra. L-ispeċifikazzjoni tifformula kważi l-MIM3 kollu bħala rakkomandazzjoni (ara p. 3).",
+      "items": [
+        {
+          "text": "Kull sett ta' data li toffri s-sistema huwa deskritt b'metadata standard (pereżempju DCAT-AP) f'katalgu, sabiex oħrajn ikunu jistgħu jiskopruh.",
+          "why": "Data li ħadd ma jista' jsib hija data li ħadd ma juża."
+        },
+        {
+          "text": "It-termini u l-liċenzji għall-użu tad-data jiġu minn mudelli magħrufa sew (eż. liċenzji miftuħa, ftehimiet standard għall-kondiviżjoni tad-data), mhux lingwaġġ legali mfassal apposta għal kull sett ta' data.",
+          "why": "Il-ftehimiet jistgħu jespandu; l-avukati ma jsirux l-ostaklu."
+        },
+        {
+          "text": "Il-belt tista' tiddefinixxi min jista' jaċċessa liema assi ta' data u taħt liema kundizzjonijiet, u tbiddel dan mingħajr l-involviment tal-bejjiegħ.",
+          "why": "Il-governanza tibqa' f'idejn il-muniċipalità."
+        }
+      ],
+      "why_panel": [
+        "Kumpaniji lokali u riċerkaturi jibnu fuq data tal-belt — il-valur jibqa' fir-reġjun.",
+        "Data sensittiva tista' tiġi kondiviża eżattament mas-sħab it-tajba, mhux ma' kulħadd jew ma' ħadd.",
+        "Ktieb ta' regoli wieħed jissostitwixxi bosta kuntratti individwali ta' kondiviżjoni ta' data."
+      ],
+      "red_flags": [
+        "Il-bejjiegħ jippretendi drittijiet fuq id-data tal-belt (ara l-klawżola “Drittijiet fuq id-data”).",
+        "Il-kondiviżjoni ma' parti terza teħtieġ il-kunsens jew ħlasijiet lill-bejjiegħ."
+      ]
+    },
+    "MIM6": {
+      "name": "Sigurtà tad-Data",
+      "question": "Id-data tagħna hija sigura waqt it-trasferiment u waqt l-użu?",
+      "intro": "Il-bliet intelliġenti huma miri. MIM6 iżomm l-ambitu deliberatament ristrett u prattiku: ikkripta d-data waqt it-trasport, uża logins standard minflok dawk proprjetarji, ikkontrolla u rreġistra min jaċċessa xiex. Xejn minn dan mhu eżotiku — kollox irid ikun fil-kuntratt.",
+      "items": [
+        {
+          "text": "It-trasferiment kollu tad-data huwa kriptat (TLS 1.3 jew l-aħjar prattika attwali).",
+          "why": "Iġjene bażika; NIS2 tistennieha wkoll fejn tapplika għalik."
+        },
+        {
+          "text": "Il-login u l-aċċess tal-magni jużaw standards miftuħa — OAuth 2.0 / OpenID Connect — u jistgħu jikkonnettjaw mal-fornitur tal-identità eżistenti tal-belt.",
+          "why": "Kont wieħed għal kull impjegat, mhux wieħed għal kull prodott tal-bejjiegħ; dawk li jitilqu jitilfu l-aċċess kullimkien f'daqqa."
+        },
+        {
+          "text": "Id-drittijiet tal-aċċess huma bbażati fuq ir-rwoli, jistgħu jiġu rriveduti, u jistgħu jitneħħew; l-azzjonijiet ta' aċċess u ta' amministrazzjoni jiġu rreġistrati f'reġistru.",
+          "why": "Verifiki u reazzjonijiet għal inċidenti jsiru possibbli. Il-qtugħ ta' reġistri huwa ISO/IEC 27001:2022, Anness A, kontroll 8.15, li MIM6 jelenka fost il-prerekwiżiti tiegħu."
+        },
+        {
+          "label": "Tappartjeni fil-kundizzjonijiet ta' parteċipazzjoni, mhux fl-ispeċifikazzjoni teknika",
+          "text": "Il-fornitur għandu juri allinjament ma' ISO/IEC 27001:2022 (jew ekwivalenti) għas-servizz li jopera.",
+          "why": "Is-sigurtà hija proċess, mhux kaxxa li timmarka mal-kunsinna. L-ispeċifikazzjoni tikkwota kontrolli ta' ISO/IEC 27001, mhux ċertifikat."
+        }
+      ],
+      "why_panel": [
+        "Ksur f'sistema waħda ma jiftaħx kull sistema.",
+        "Fejn tapplika għalik NIS2, il-konformità magħha u ma' regoli ċibernetiċi nazzjonali ssir ferm aktar faċli.",
+        "Meta xi ħaġa tmur ħażin, ir-reġistri jgħidulek xiex u min."
+      ],
+      "red_flags": [
+        "Login proprjetarju biss.",
+        "“Reġistri disponibbli fuq talba.”",
+        "Kontijiet ta' amministratur kondiviżi."
+      ]
+    },
+    "MIM7": {
+      "name": "Data Ġeospazjali",
+      "question": "Taħdem fuq mappa?",
+      "intro": "Kważi kull ħaġa li belt tippossjedi għandha post. MIM7 jiżgura li l-post ma jkunx screenshot: id-data spazjali tgħaddi minn interfaċċji standard tal-OGC, f'formati miftuħa, bis-sistema tal-koordinati dejjem iddikjarata — sabiex kull saff ta' mappa li tixtri jallinja ma' kull saff li diġà għandek.",
+      "items": [
+        {
+          "text": "Id-data ġeospazjali hija esposta permezz ta' interfaċċji bbażati fuq standards (OGC API Features, SensorThings; WFS aċċettabbli għal sistemi eżistenti).",
+          "why": "Kull għodda GIS fis-suq tista' taqrah mill-ewwel."
+        },
+        {
+          "text": "Id-data ġeospazjali hija kkodifikata f'formati miftuħa (GeoJSON, CityJSON; GML/CityGML fejn meħtieġ).",
+          "why": "Ebda liċenzji għal konvertituri, ebda sqaqien mejta."
+        },
+        {
+          "text": "Is-sistema ta' referenza tal-koordinati hija dejjem iddikjarata (kodiċi EPSG) u d-data tista' tiġi ttrasformata f'CRS komuni.",
+          "why": "Saffi minn sorsi differenti fil-fatt jallinjaw fuq il-mappa."
+        },
+        {
+          "text": "L-elementi spazjali jġorru l-istess identifikaturi persistenti bħal f'MIM1.",
+          "why": "Il-punt fuq il-mappa u r-rekord fir-reġistru huma l-istess ħaġa."
+        }
+      ],
+      "why_panel": [
+        "Mappa waħda tal-belt minflok għaxar telespettaturi tal-bejjiegħa.",
+        "L-obbligi ta' INSPIRE u tal-ġeoportali nazzjonali jsiru eħfef, mhux itqal.",
+        "Data 3D u BIM tista' tingħaqad mal-istess stampa aktar 'il quddiem."
+      ],
+      "red_flags": [
+        "Id-data tal-mappa tgħix biss ġewwa t-telespettatur tal-bejjiegħ.",
+        "“Esportazzjoni bħala PDF/screenshot.”"
+      ]
+    },
+    "MIM8": {
+      "name": "Tewmin Diġitali Lokali",
+      "question": "It-tewmi diġitali tagħna jista' jikber?",
+      "intro": "Tewmi diġitali huwa investiment fit-tul: data, mudelli 3D, simulazzjonijiet, deċiżjonijiet. MIM8 jipproteġi dak l-investiment — id-data u l-mudelli tat-tewmi jibqgħu aċċessibbli u ddokumentati, ir-riżultati jistgħu jiġu riprodotti, u komponenti minn proġett wieħed jistgħu jservu għal dak li jmiss. Uża din il-paġna meta tixtri pjattaformi ta' tewmin, mudelli ta' simulazzjoni jew għodod 3D tal-belt.",
+      "items": [
+        {
+          "text": "Settijiet ta' data, inputs ta' mudelli u outputs ta' simulazzjoni huma aċċessibbli permezz ta' APIs (skont MIM0), mhux maqbuda fit-tewmi.",
+          "why": "Ir-riżultati jitimgħu rapporti, dashboards u l-proġett li jmiss."
+        },
+        {
+          "text": "Il-mudelli huma ddokumentati (metodu, parametri, inputs/outputs) u jistgħu jissejħu permezz ta' interfaċċja ddokumentata.",
+          "why": "Mudell ta' għargħar mixtri darba jista' jerġa' jintuża bejn id-dipartimenti — u minn bliet oħra."
+        },
+        {
+          "text": "L-outputs jużaw formati standard (GeoJSON, CityJSON, 3D Tiles, NetCDF…) li jistgħu jintużaw minn għodod li ma tixtrix mingħand dan il-bejjiegħ.",
+          "why": "Il-viżwalizzazzjoni u l-analiżi jibqgħu swieq kompetittivi."
+        },
+        {
+          "text": "Il-flussi tax-xogħol jirreġistraw il-provenjenza: liema verżjoni tad-data, liema mudell, liema parametri pproduċew riżultat.",
+          "why": "Deċiżjonijiet ibbażati fuq it-tewmi jistgħu jiġu spjegati u difiżi aktar tard."
+        }
+      ],
+      "why_panel": [
+        "It-tewmi jgħix aktar minn kwalunkwe fornitur uniku jew baġit ta' proġett.",
+        "Is-simulazzjonijiet jistgħu jiġu vverifikati, ripetuti u ġġustifikati fit-teħid ta' deċiżjonijiet muniċipali.",
+        "Mudelli u komponenti jistgħu jinqasmu bejn il-bliet."
+      ],
+      "red_flags": [
+        "Riżultati ta' simulazzjoni li jistgħu jidhru biss fil-portal tal-bejjiegħ.",
+        "Mudelli bħala kaxxi suwed issiġillati mingħajr metadata."
+      ]
+    }
+  },
+  "cross": {
+    "title": "Klawsoli trasversali tas-sejħa",
+    "subtitle": "Salvagwardji kontra l-intrappolament",
+    "intro": "Dawn il-klawsoli jappartjenu f'kull sejħa għall-offerti, tkun xi tkun qed tixtri. Huma ġejjin mill-prattika tal-akkwist madwar il-MIMs u living-in.eu. Il-biċċa l-kbira tagħhom ma tistrieħx fuq rekwiżit wieħed tal-ispeċifikazzjoni, għalhekk ma jġorru l-ebda kodiċi ta' referenza (il-verżjonar tal-APIs huwa wkoll rakkomandazzjoni MIM0 C2). Jiswew ftit biex jiġu inklużi; li tħallihom barra jista' jiswiek kollox.",
+    "items": [
+      {
+        "name": "Klawżola ta' ħruġ",
+        "text": "Fi tmiem il-kuntratt, id-data kollha tal-belt (u l-konfigurazzjoni) tiġi mgħoddija f'formati miftuħa u ddokumentati mingħajr ebda spiża addizzjonali."
+      },
+      {
+        "name": "Drittijiet fuq id-data",
+        "text": "Id-drittijiet kollha fuq id-data miġbura u derivata taħt il-kuntratt jappartjenu lill-awtorità kontraenti."
+      },
+      {
+        "name": "Ebda tariffi għal kull utent / għal kull talba",
+        "text": "Ebda tariffi biex il-belt taċċessa d-data tagħha stess."
+      },
+      {
+        "name": "Stabbiltà u verżjonar tal-API",
+        "text": "Il-fornitur iżomm l-API kompatibbli b'lura għat-tul kollu tal-kuntratt. Bidliet li jtellfu l-kompatibbiltà jitħabbru mill-inqas 6 xhur minn qabel u jinħarġu bħala verżjoni ġdida, filwaqt li l-verżjoni preċedenti tibqa' disponibbli sad-data miftiehma tal-bidla."
+      },
+      {
+        "name": "Uri, twiegħedx",
+        "text": "L-offerenti juru l-konformità matul l-evalwazzjoni tal-offerti minflok ma jissottomettu awtodikjarazzjonijiet. Għal API dan ifisser dokumentazzjoni interattiva ppubblikata (bħal OpenAPI) u sejħa diretta li tirritorna data valida. Kull punt immarkat jerġa' jiġi ttestjat mal-aċċettazzjoni."
+      },
+      {
+        "name": "Standards miftuħa msemmija",
+        "text": "Is-sejħa ssemmi l-istandards ta' hawn fuq; stqarrijiet ta' “kompatibbli ma'” għandhom jikkwotaw l-interfaċċja u l-verżjoni eżatta. Kull referenza għal standard jew speċifikazzjoni teknika taċċetta soluzzjoni ekwivalenti; l-offerent jipprova l-ekwivalenza."
+      },
+      {
+        "name": "Dikjarazzjoni ta' konformità mal-MIMs",
+        "text": "L-offerent jimla t-tabella ta' konformità (p. 28); din issir anness mal-kuntratt."
+      }
+    ]
+  },
+  "example": {
+    "title": "Eżempju: belt tixtri netwerk ta' sensuri tal-kwalità tal-arja",
+    "scenario": "Paġni mmarkati: MIM0, MIM1, MIM2, MIM6 u MIM7 (id-data tmur fuq mappa). Minn MIM3 punt 3.1 biss (id-data dwar il-kwalità tal-arja hija ppubblikata bħala data miftuħa, għalhekk tappartjeni f'katalgu); mhux MIM8: dan mhuwiex tewmi diġitali.",
+    "table_title": "X'imur fejn",
+    "table_headers": [
+      "Dokument",
+      "Terminu fid-Direttiva 2014/24/UE",
+      "X'għandek tinkludi fih"
+    ],
+    "table_rows": [
+      [
+        "Speċifikazzjoni teknika",
+        "speċifikazzjonijiet tekniċi (Art. 42)",
+        "il-punti mmarkati ta' MIM0, MIM1, MIM2, MIM3 (3.1 biss), MIM6 (ħlief 6.4) u MIM7, kelma b'kelma, bil-kodiċi tal-ispeċifikazzjoni, flimkien mas-sentenza dwar l-ekwivalenza"
+      ],
+      [
+        "Kundizzjonijiet ta' parteċipazzjoni",
+        "kriterji tal-għażla (Art. 58 u 62)",
+        "allinjament muri ma' ISO/IEC 27001:2022 jew ekwivalenti (punt 6.4)"
+      ],
+      [
+        "Mezzi ta' prova",
+        "rapporti tat-testijiet, ċertifikazzjoni u mezzi oħra ta' prova (Art. 44)",
+        "it-tabella ta' konformità bħala anness obbligatorju mal-offerta: K, E jew M għal kull punt, bl-evidenza (indirizz tad-dokumentazzjoni tal-API, aċċess għall-ittestjar)"
+      ],
+      [
+        "Abbozz ta' kuntratt",
+        "kundizzjonijiet għat-twettiq tal-kuntratti (Art. 70)",
+        "Klawżola ta' ħruġ, Drittijiet fuq id-data, Ebda tariffi għal kull utent / għal kull talba, Stabbiltà u verżjonar tal-API; it-tabella ta' konformità mimlija bħala anness"
+      ],
+      [
+        "Protokoll ta' aċċettazzjoni",
+        "kundizzjonijiet għat-twettiq tal-kuntratti (Art. 70)",
+        "il-kolonna “Ivverifikat” tat-tabella ta' konformità bħala l-protokoll tat-test"
+      ]
+    ],
+    "sample_title": "Formulazzjoni kampjun għall-ispeċifikazzjoni teknika",
+    "sample": [
+      "4.3 Interoperabbiltà u aċċess għad-data",
+      "4.3.1 Id-data kollha li s-sistema tiġbor jew tipproduċi tista' tiġi rkuprata f'mill-inqas format wieħed li jinqara mill-magni (eż. JSON, CSV) fuq API standard tal-web. (MIMs Plus 9.0, MIM0 R1.1, R1.2)",
+      "4.3.2 L-API hija deskritta formalment f'dokument miftuħ li jinqara mill-magni (pereżempju OpenAPI) ippubblikat f'indirizz stabbli. (MIM0 R1.3)",
+      "4.3.3 L-API tippermetti filtrazzjoni tad-data skont il-ħin u l-post tal-kejl. (MIM0 R2.1, R2.2)",
+      "… 4.3.4 sa 4.3.21: punti mmarkati oħra …",
+      "4.3.22 Kull referenza għal standard jew speċifikazzjoni teknika taċċetta soluzzjoni ekwivalenti; l-offerent jipprova l-ekwivalenza.",
+      "4.3.23 L-offerent jimla t-tabella ta' konformità (anness mad-dokumenti tal-akkwist) u jipprovdi l-evidenza għal kull punt meħtieġ. L-offerent juri l-punti 4.3.1 sa 4.3.21 b'sejħa diretta tal-API matul l-evalwazzjoni tal-offerti; l-awtorità kontraenti terġa' tittestjahom mal-aċċettazzjoni. Il-falliment tagħhom huwa raġuni biex tiġi miċħuda l-aċċettazzjoni."
+    ],
+    "tip": "Il-punt 4.3.3 juri li tista' tirfina punt biex jaqbel max-xiri: għas-sensuri jagħmel sens li titlob filtrazzjoni skont il-ħin u l-post tal-kejl.",
+    "note": "Adatta l-formulazzjoni għal-liġi nazzjonali u qabbad lill-persuna responsabbli mill-akkwist tivverifikaha.",
+    "filled_title": "Tabella ta' konformità mimlija (estratt)",
+    "filled_rows": [
+      [
+        "0.1",
+        "Data li tinqara mill-magni permezz ta' API standard tal-web",
+        "K",
+        "REST API tirritorna JSON u CSV; dokumentazzjoni fl-indirizz mogħti fl-offerta, p. 12; aċċess għall-ittestjar fl-anness 3",
+        "✓"
+      ],
+      [
+        "0.4",
+        "Abbonament għal bidliet fejn meħtieġ",
+        "M",
+        "għadha mhix appoġġata; ippjanata għall-verżjoni li jmiss",
+        "—"
+      ],
+      [
+        "7.2",
+        "Formati ġeo miftuħa",
+        "E",
+        "tikkonsenja GeoPackage, standard miftuħ tal-OGC, minflok GeoJSON; l-ekwivalenza hija spjegata fl-offerta, p. 15",
+        "✓"
+      ]
+    ],
+    "filled_note": "Wegħda għall-futur hija M: il-kumitat jivverifika biss dak li l-offerent jista' juri."
+  },
+  "tearout": {
+    "title": "Tabella ta' konformità",
+    "intro": "Ringiela waħda għal kull punt. L-awtorità kontraenti timmarka dak li jirrikjedi l-kuntratt u tehmeż it-tabella mad-dokumenti tal-akkwist bħala anness obbligatorju mal-offerta. Għal kull punt meħtieġ l-offerent idaħħal K (jikkonforma), E (jikkonforma permezz ta' ekwivalenti) jew M (ma jikkonformax), fil-qosor kif, u fejn tinsab l-evidenza: indirizz tad-dokumentazzjoni, aċċess għall-ittestjar, paġna tal-offerta. Dikjarazzjoni mingħajr evidenza mhix biżżejjed. Il-kumitat tal-evalwazzjoni jivverifika kull punt meta jevalwa l-offerti u jerġa' jivverifika mal-aċċettazzjoni (✓ ikkonfermat, ✗ mhux ikkonfermat, — mhux iċċekkjat).",
+    "intro2": "It-tabella mimlija hija parti mill-offerta u ssir anness mal-kuntratt. Hija tivverifika li r-rekwiżiti għas-suġġett tal-kuntratt huma milħuqa (milħuqa jew mhux milħuqa); mhijiex kriterju tal-għoti. Biex tagħti punteġġ lill-konformità, għid dan fost il-kriterji tal-għoti ppubblikati minn qabel fid-dokumenti tal-akkwist (Direttiva 2014/24/UE, Artikolu 67).",
+    "headers": [
+      "#",
+      "Rekwiżit (qosor)",
+      "Ref. tal-ispeċ.",
+      "Meħtieġ?",
+      "K / E / M",
+      "Evidenza: kif u fejn",
+      "Ivverifikat"
+    ],
+    "header_roles": [
+      "awtorità",
+      "offerent",
+      "offerent",
+      "kumitat"
+    ],
+    "note": "It-tikketti qosra hawn taħt jirrappreżentaw il-punti sħaħ tal-lista ta' verifika fuq il-paġni tal-MIM — f'każ ta' dubju, japplika t-test sħiħ tal-punt.",
+    "download_label": "Verżjoni editabbli tat-tabella tinsab fuq:",
+    "cross_note": "L-offerent jikkonferma l-aċċettazzjoni tal-kundizzjoni tal-kuntratt (K / M)."
+  },
+  "tearout_short": {
+    "MIM0": [
+      "Data li tinqara mill-magni permezz ta' API tal-web",
+      "Deskrizzjoni miftuħa tal-API f'indirizz stabbli",
+      "Filtrazzjoni skont il-ħin, il-post, l-attributi",
+      "Abbonament għal bidliet fejn meħtieġ",
+      "Żbalji, caching u limiti ta' użu standard HTTP"
+    ],
+    "MIM1": [
+      "Identifikatur persistenti uniku għal kull entità",
+      "Tiftix tal-ID jirritorna data u tip",
+      "Immappjar ta' identifikaturi bejn is-sistemi",
+      "Ebda dettalji interni tal-bejjiegħ f'identifikaturi"
+    ],
+    "MIM2": [
+      "Mudelli standard kull fejn ikun possibbli",
+      "Mudelli ddokumentati b'unitajiet espliċiti",
+      "Estensjonijiet bħala profili, qatt fergħat",
+      "Serjalizzazzjoni miftuħa b'validazzjoni ta' skema"
+    ],
+    "MIM3": [
+      "Settijiet ta' data kkatalogati b'metadata standard",
+      "Mudelli standard ta' liċenzji u ftehimiet",
+      "Il-belt tikkontrolla t-termini tal-aċċess hi stess"
+    ],
+    "MIM6": [
+      "Trasferiment kriptat (TLS 1.3)",
+      "Login standard (OAuth 2.0 / OIDC)",
+      "Aċċess skont ir-rwol u reġistri tal-verifika",
+      "Allinjament ma' ISO/IEC 27001:2022 muri"
+    ],
+    "MIM7": [
+      "Interfaċċji standard OGC",
+      "Formati ġeo miftuħa",
+      "CRS iddikjarat (EPSG)",
+      "IDs persistenti fuq elementi spazjali (ara 1.1)"
+    ],
+    "MIM8": [
+      "Data u outputs tat-tewmi permezz ta' APIs",
+      "Mudelli ddokumentati li jistgħu jissejħu",
+      "Formati standard ta' output",
+      "Provenjenza tal-fluss tax-xogħol irreġistrata"
+    ],
+    "CROSS": [
+      "Klawżola ta' ħruġ: konsenja b'xejn f'formati miftuħa",
+      "Id-drittijiet fid-data huma tal-awtorità kontraenti",
+      "Ebda tariffi għall-aċċess għad-data proprja",
+      "Stabbiltà tal-API: verżjonata, avviż ta' 6 xhur"
+    ]
+  },
+  "glossary": {
+    "title": "Glossarju żgħir",
+    "terms": [
+      {
+        "t": "API",
+        "d": "Bieb li minnu programm wieħed jitlob data lil ieħor — fuq il-web, mingħajr ma bniedem jagħfas xejn."
+      },
+      {
+        "t": "Mudell ta' data",
+        "d": "L-istruttura miftiehma tad-data: liema oqsma jeżistu, xi jfissru, u liema unitajiet jużaw."
+      },
+      {
+        "t": "DCAT-AP",
+        "d": "Profil Ewropew ta' metadata għal katalgi ta' data; jippermetti li s-settijiet ta' data jinstabu wkoll fuq portali nazzjonali u Ewropej."
+      },
+      {
+        "t": "EPSG",
+        "d": "Reġistru ta' kodiċijiet numeriċi għal sistemi ta' referenza tal-koordinati (eż. EPSG:4326 għal WGS 84)."
+      },
+      {
+        "t": "Identifikatur",
+        "d": "Isem permanenti għal ħaġa waħda (fanal wieħed, bini wieħed) li s-sistemi kollha jużaw biex ifissru dik il-ħaġa."
+      },
+      {
+        "t": "Interoperabbiltà",
+        "d": "Il-kapaċità ta' sistemi minn fornituri differenti li jiskambjaw id-data u jifhmuha."
+      },
+      {
+        "t": "IRI",
+        "d": "Forma internazzjonali ta' identifikatur tal-web (bħal URL, b'karattri mhux ASCII permessi). MIM1 issemmi l-entitajiet bih."
+      },
+      {
+        "t": "LDT",
+        "d": "Tewmi Diġitali Lokali (Local Digital Twin): mudell diġitali ta' belt jew parti minnha, konness ma' data u simulazzjonijiet."
+      },
+      {
+        "t": "Li jinqara mill-magni",
+        "d": "Strutturat b'tali mod li programm jista' jipproċessah direttament (JSON, CSV) — PDF ta' tabella mhuwiex."
+      },
+      {
+        "t": "Metadata",
+        "d": "Data dwar id-data: x'fih sett ta' data, min jipprovdih, kemm hu kurrenti, u taħt liema liċenzja."
+      },
+      {
+        "t": "OAuth 2.0 / OIDC",
+        "d": "Standards miftuħa għal-login u għall-għoti ta' aċċess. OpenID Connect (OIDC) iżid il-verifika tal-identità ma' OAuth 2.0."
+      },
+      {
+        "t": "OGC",
+        "d": "Open Geospatial Consortium: il-korp li jippubblika standards għal data u servizzi ġeospazjali (OGC API, WFS, SensorThings)."
+      },
+      {
+        "t": "Standard miftuħ",
+        "d": "Regola teknika li kulħadd jista' jaqra u jimplimenta mingħajr ma jħallas jew jitlob permess."
+      },
+      {
+        "t": "OpenAPI",
+        "d": "Format miftuħ għal deskrizzjoni li tinqara mill-magni ta' API tal-web: indirizzi, parametri, tweġibiet."
+      },
+      {
+        "t": "Serjalizzazzjoni",
+        "d": "Il-kitba ta' data f'format konkret (eż. JSON, XML) sabiex tkun tista' tinħażen jew tintbagħat."
+      },
+      {
+        "t": "TLS",
+        "d": "Il-protokoll li jikkripta d-data waqt it-trasferiment fuq netwerk (il-bażi ta' HTTPS)."
+      },
+      {
+        "t": "Intrappolament tal-bejjiegħ",
+        "d": "Meta t-tluq minn ma' fornitur jiswa tant — f'data, formati jew tariffi — li effettivament ma tkunx tista'."
+      },
+      {
+        "t": "Webhook / MQTT",
+        "d": "Żewġ modi kif sistema tirrapporta bidla hi stess: webhook isejjaħ l-indirizz tiegħek, MQTT jagħti messaġġi lill-abbonati."
+      }
+    ],
+    "more_title": "Fejn titgħallem aktar",
+    "links": {
+      "mims.oascities.org": "L-ispeċifikazzjoni sħiħa ta' MIMs Plus, miżmuma minn OASC.",
+      "living-in.eu": "Il-moviment Ewropew għat-trasformazzjoni diġitali tal-bliet — dikjarazzjoni u kuntest ta' MIMs Plus.",
+      "smartdatamodels.org": "Il-librerija miftuħa ta' mudelli ta' data standard (FIWARE, TM Forum, IUDX, OASC).",
+      "oascities.org/academy": "CITYxCITY Academy — korsijiet għall-persunal tal-bliet, mill-bliet."
+    }
+  },
+  "back": {
+    "text": "Miġbur mill-Ispeċifikazzjoni MIMs Plus 9.0 minn Open & Agile Smart Cities (mims.oascities.org). Kontenut tal-ispeċifikazzjoni © OASC. Dan il-ktejjeb huwa gwida indipendenti b'lingwaġġ sempliċi għall-akkwist muniċipali; f'każ ta' dubju, tirbaħ l-ispeċifikazzjoni.",
+    "credits": "Magħmul b'għodod miftuħa. Uża mill-ġdid u adatta b'mod liberu għall-belt tiegħek.",
+    "author": "Awtur tal-ktejjeb: Marek Mráz"
+  },
+  "quote_translations": {
+    "MIM0 · R1.1": "Is-sistemi GĦANDHOM jippermettu l-irkupru ta' data f'mill-inqas format wieħed li jinqara mill-magni. Il-formati jistgħu jiġu speċifikati permezz ta' Negozjar tal-Kontenut permezz tal-HTTP",
+    "MIM0 · R1.2": "Id-data GĦANDHA tkun tista' tiġi rkuprata permezz ta' mill-inqas mekkaniżmu standard wieħed ibbażat fuq il-web",
+    "MIM0 · R1.3": "Il-mekkaniżmu/i ta' aċċess GĦANDHOM jiġu deskritti formalment",
+    "MIM0 · R1.4": "Il-Mudelli tad-Data użati mill-payloads għandhom jikkunsidraw li jiġu speċifikati (ara MIM2)",
+    "MIM0 · R2.1": "Is-sistemi GĦANDHOM jipprovdu data permezz ta' interfaċċja strutturata u konsistenti",
+    "MIM0 · R2.2": "Is-sistemi GĦANDHOM jappoġġaw mistoqsijiet bażiċi u/jew filtrazzjoni (eż. skont il-ħin, il-post, l-attributi)",
+    "MIM0 · C2": "L-APIs GĦANDHOM JIKKUNSIDRAW li jappoġġaw l-irkupru ta' data kurrenti · L-APIs GĦANDHOM JIKKUNSIDRAW li jappoġġaw l-irkupru ta' data storika meta applikabbli · L-APIs GĦANDHOM JIKKUNSIDRAW li jappoġġaw mistoqsijiet ġeospazjali meta applikabbli (ara MIM7) · L-APIs GĦANDHOM JIKKUNSIDRAW li jappoġġaw abbonament għal bidliet meta applikabbli · L-APIs GĦANDHOM JIKKUNSIDRAW li jesponu t-timbru tal-ħin tal-aġġornament mistenni li jmiss · L-APIs GĦANDHOM JIKKUNSIDRAW li jappoġġaw verżjonar espliċitu tal-endpoints · L-APIs GĦANDHOM JIKKUNSIDRAW li jipprovdu eżempji ta' payloads jew mistoqsijiet tat-test · L-APIs GĦANDHOM JIKKUNSIDRAW li jappoġġaw headers standard tal-caching tal-HTTP · L-APIs GĦANDHOM JIKKUNSIDRAW li jikkomunikaw l-istatus tal-limitu ta' użu (rate limit) permezz ta' headers standard tal-HTTP · L-APIs GĦANDHOM JIKKUNSIDRAW li jirritornaw korpi strutturati ta' żball · L-APIs JISTGĦU jappoġġaw tweġibiet parzjali jew projezzjonijiet ta' mistoqsijiet · L-APIs JISTGĦU jesponu endpoint standard ta' saħħa/status",
+    "MIM0 · R3.1": "Is-sistemi għal każijiet ta' użu li jeħtieġu notifiki GĦANDHOM jipprovdu mill-inqas mekkaniżmu wieħed biex jiġu riċevuti aġġornamenti dwar bidliet fid-data",
+    "MIM0 · R3.2": "Is-sistemi JISTGĦU jappoġġaw mekkaniżmi multipli ta' abbonament skont il-każ ta' użu",
+    "MIM0 · C4": "Jekk tali restrizzjonijiet ikunu stabbiliti, dawn GĦANDHOM isegwu r-rekwiżiti definiti f'MIM3 u MIM6, speċifikament: identifikazzjoni tal-atturi (MIM3.C5.R0), awtorizzazzjoni u rwoli tal-atturi (MIM6.C1.R4), politiki fil-livell tal-assi tad-data (MIM6.C1.R4)",
+    "MIM1 · R1.1": "Kull entità fi ħdan is-sistema għandha identifikatur uniku",
+    "MIM1 · R1.2": "Jeżisti mod kif tiġi rkuprata informazzjoni dwar entità billi jiġi mfittex l-identifikatur fi ħdan sistema",
+    "MIM1 · R1.3": "jekk identifikatur uniku jipponta lejn l-istess entità fi ħdan sistemi multipli, huwa possibbli li jiġi derivat il-mod kif tiġi mfittxija informazzjoni dwarha f'kull waħda minn dawn is-sistemi",
+    "MIM1 · R1.4": "jekk identifikaturi uniċi multipli jippontaw lejn l-istess entità, huwa possibbli li jiġu mmappjati",
+    "MIM1 · R1.5": "Huwa possibbli li jinħolqu identifikaturi li jkunu persistenti matul iż-żmien",
+    "MIM1 · R2.1": "Jeżisti mod kif tiġi rkuprata s-semantika ta' entità, bl-użu tal-identifikatur uniku tagħha biss",
+    "MIM1 · R2.2": "Dawn is-semantiċi huma deskritti f'format li jinqara mill-magni",
+    "MIM1 · R3.1": "Jeżisti mod kif tiġi dereferenzjata relazzjoni definita fuq entità",
+    "MIM1 · R3.2": "Jeżisti mod kif jiġu applikati semantiċi addizzjonali għal ontoloġija eżistenti",
+    "MIM2 · R1.1": "Il-mudelli tad-data użati għall-entitajiet kollha fi kwalunkwe sors ta' data għandhom isiru espliċiti. Għandhom ikunu ddokumentati sew u jkollhom metadata deskrittiva, fejn it-termini użati għandhom ikunu semantikament mhux ambigwi. Għal attributi relatati ma' unitajiet ta' kejl, formati ta' ħin eċċ, l-unitajiet, il-formati eċċ, użati għandhom isiru espliċiti. Il-mudelli tad-data għandhom jikkunsidraw li jiġu kkatalogati sabiex ikunu jistgħu jinstabu faċilment.",
+    "MIM2 · R1.2a": "Il-mudelli tad-data użati għandhom ikunu bbażati (kull fejn ikun possibbli) fuq mudelli ta' data standardizzati u rikonoxxuti b'mod komuni kif elenkat hawn taħt",
+    "MIM2 · R1.2b": "Fejn ma jkunx possibbli li jintużaw mudelli ta' data standardizzati eżistenti, għandhom isiru sforzi biex jiġu estiżi mudelli ta' data standardizzati eżistenti li huma l-aktar allinjati mill-qrib jew biex jiġu definiti oħrajn ġodda, wara l-aħjar prattika u konvenzjonijiet tal-komunità jew tal-organizzazzjoni li tiddefinixxi l-mudelli tad-data.",
+    "MIM2 · R1.3": "Il-mudelli tad-data użati għandhom jappoġġaw l-iskambju ta' data billi jużaw ir-rekwiżiti rilevanti tal-MIMs dwar l-Aċċess għad-data u l-Interkonnessjoni tad-data",
+    "MIM2 · R2.1": "Mudell ta' data komuni għal kull entità ewlenija għandu jikkunsidra li jiġi żviluppat għal kwalunkwe ekosistema ta' data. Dak il-mudell ta' data komuni għandu jikkunsidra li jkun fih l-oqsma kollha inklużi fi ħdan il-mudelli differenti ta' data għal dik l-entità li jintużaw fi ħdan dik l-ekosistema ta' data. Kull mudell ta' data differenti użat fi ħdan dik l-ekosistema ta' data jkun jista' mbagħad jiġi ttrasformat fil-mudell ta' data komuni.",
+    "MIM2 · R3.1": "Kull mudell ta' data użat għandu jkollu mill-inqas format wieħed definit ta' trasport ta' data li jinqara mill-magni (“serjalizzazzjoni”) li jkun miftuħ, disponibbli pubblikament u indipendenti mill-implimentazzjoni.",
+    "MIM2 · R3.2": "Id-dokumentazzjoni tal-format tat-trasport tad-data għandha tikkunsidra li tkun suffiċjenti biex tippermetti l-ħolqien ta' applikazzjoni jew interpretatur mhux proprjetarju li jkun kapaċi jirrikostruwixxi d-data kollha maħżuna f'tali format ta' data.",
+    "MIM2 · R3.3": "Fejn formati multipli ta' trasport ta' data huma appoġġati għall-istess mudell ta' data, dawn għandhom jirrappreżentaw l-istess kontenut ta' informazzjoni b'mod konsistenti u mingħajr telf ta' tifsira.",
+    "MIM2 · R3.4": "Ir-rappreżentazzjoni għandha tikkunsidra li tappoġġa validazzjoni permezz ta' skemi ppubblikati b'mod miftuħ, grammatiki, jew restrizzjonijiet ekwivalenti li jinqraw mill-magni, fejn tali mekkaniżmi ta' validazzjoni jeżistu għall-format magħżul.",
+    "MIM2 · R4.1": "Profili tal-Applikazzjoni li jestendu mudell ta' data ma għandhomx jikkunsidraw li jkollhom impatt fuq il-mudell diġà eżistenti u l-utenti tiegħu",
+    "MIM2 · R4.2": "L-ispeċjalizzazzjonijiet jew l-estensjonijiet introdotti fil-Profil tal-Applikazzjoni tal-mudell għandhom jikkunsidraw li jkunu ddokumentati sew, separati mill-mudell ta' data bażi",
+    "MIM3 · RC1.1": "L-orkestratur ta' ekosistema ta' data għandu jikkunsidra li jkun kapaċi jiddefinixxi mudell ta' governanza (eż. ktieb tar-regoli) li jiddeskrivi r-regoli tas-sħubija, ir-rwoli, ir-responsabbiltajiet u l-obbligi tal-parteċipanti fl-ekosistema, u l-prinċipji ġenerali li jirregolaw l-iskambju ta' data bejniethom.",
+    "MIM3 · RC1.2": "Il-membri li jipparteċipaw f'ekosistema ta' data għandhom jikkunsidraw li jkunu konxji tal-mudell ta' governanza tagħha u ta' kwalunkwe bidla li ssir fih.",
+    "MIM3 · RC1.3": "Il-mudell ta' governanza għandu jikkunsidra li jkun jinftiehem faċilment mill-parteċipanti kollha tal-ekosistema.",
+    "MIM3 · RC2.1": "Il-fornituri tad-data huma liberi li jiddefinixxu termini u kundizzjonijiet li taħthom iridu li d-data tagħhom tiġi skambjata. (Nota: Qabel ma jaqsmu assi ta' data, il-fornituri tad-data għandhom jikkunsidraw li jiżguraw li għandhom permess adegwat mis-sidien tad-data.)",
+    "MIM3 · RC2.2": "It-termini u l-kundizzjonijiet għal skambju ta' data għandhom jikkunsidraw li jkunu deskritti b'mod ċar u mhux ambigwu sabiex jinftiehmu faċilment mill-utenti tad-data.",
+    "MIM3 · RC2.3": "It-termini u l-kundizzjonijiet għal skambju ta' data għandhom jikkunsidraw li jiġu espressi permezz ta' liċenzji ta' data jew ftehimiet ta' kondiviżjoni ta' data bbażati fuq mudelli jew standards definiti sew.",
+    "MIM3 · RC2.4": "It-termini u l-kundizzjonijiet għandhom jikkunsidraw li jkunu konformi mal-mudell ġenerali ta' governanza tal-ekosistema tad-data u M'GĦANDHOMX jikkonfliġġu miegħu. (Nota: Fornitur ta' data jista' jiddeċiedi li ma jipparteċipax f'ekosistema ta' data jekk il-mudell ta' governanza sottostanti jkun restrittiv wisq jew permissiv wisq.)",
+    "MIM3 · RC3.1": "L-orkestratur ta' ekosistema ta' data GĦANDU jkun kapaċi jaċċerta l-konformità tal-parteċipanti tagħha mal-mudell ta' governanza sottostanti.",
+    "MIM3 · RC3.2": "Il-fornituri tad-data għandhom jikkunsidraw li jkunu kapaċi jaċċertaw li l-użu tad-data minn utent tad-data jikkonforma ma' termini u kundizzjonijiet miftiehma minn qabel.",
+    "MIM3 · RC3.3": "L-utenti tad-data għandhom jikkunsidraw li jkunu kapaċi jaċċertaw li l-provvista tad-data mill-fornitur tad-data ssegwi termini u kundizzjonijiet miftiehma minn qabel.",
+    "MIM3 · RC4.1": "L-utenti tad-data għandhom jikkunsidraw li jkunu kapaċi jiskopru liema data hija disponibbli f'ekosistema ta' kondiviżjoni ta' data mingħajr ma jkollhom għarfien minn qabel tagħha.",
+    "MIM3 · RC4.2": "L-assi tad-data għandhom jikkunsidraw li jiġu deskritti b'mod adegwat b'metadata sabiex l-utenti tad-data jkunu jistgħu jieħdu deċiżjonijiet affidabbli dwar l-użu maħsub tagħhom fil-futur.",
+    "MIM3 · RC4.3": "Il-metadata użata biex tiddeskrivi l-assi tad-data għandha tikkunsidra li tkun ibbażata fuq formati ta' deskrizzjoni definiti sew u faċli biex jinftiehmu li jinqraw kemm mill-bniedem kif ukoll mill-magni.",
+    "MIM3 · RC5.1": "Il-parteċipanti fl-ekosistema (eż. utenti u fornituri ta' data) għandhom jikkunsidraw li jkunu kapaċi jiskopru lil xulxin fi ħdan ekosistema ta' kondiviżjoni ta' data.",
+    "MIM3 · RC5.2": "Metadata suffiċjenti dwar kull parteċipant fl-ekosistema għandha tikkunsidra li tkun disponibbli biex tiġi aċċertata l-affidabbiltà tagħhom rilevanti għall-iskambju ta' data.",
+    "MIM3 · RC5.3": "Il-fornituri tad-data għandhom jikkunsidraw li jkunu kapaċi jidentifikaw b'mod affidabbli l-utenti tad-data li jixtiequ jaċċessaw l-assi tad-data tagħhom u jivverifikaw il-metadata tagħhom qabel ma jagħtu l-aċċess.",
+    "MIM3 · RC5.4": "L-utenti tad-data għandhom jikkunsidraw li jkunu kapaċi jidentifikaw il-fornituri tad-data li jaqsmu d-data f'ekosistema ta' data qabel ma jaċċessaw jew jużaw dik id-data.",
+    "MIM3 · RC5.5": "Il-parteċipanti fl-ekosistema JISTGĦU jagħżlu wkoll li jibqgħu anonimi jekk il-mudell ta' governanza tal-ekosistema tal-kondiviżjoni tad-data jippermetti dan. F'dan il-każ, RC5.1 sa RC5.4 jistgħu jiġu injorati.",
+    "MIM3 · RC6.1": "L-utenti u l-fornituri tad-data għandhom jikkunsidraw li jkunu kapaċi jaqblu dwar skambju ta' data u t-termini u l-kundizzjonijiet assoċjati miegħu (eż. aċċettazzjoni tat-termini, firma legali ta' ftehim, jew negozjar).",
+    "MIM3 · RC6.2": "L-utenti u l-fornituri tad-data għandhom jikkunsidraw li jkunu kapaċi jitterminaw skambju ta' data miftiehem minn qabel skont it-termini u l-kundizzjonijiet assoċjati miegħu.",
+    "MIM3 · RC6.3": "Fejn possibbli, mezzi elettroniċi għall-ftehim u t-terminazzjoni ta' skambju ta' data JISTGĦU jiġu pprovduti.",
+    "MIM3 · RC7.1": "L-utenti tad-data għandhom jikkunsidraw li jkunu kapaċi jesprimu l-interess tagħhom f'assi ta' data li bħalissa mhumiex disponibbli fl-ekosistema ta' kondiviżjoni ta' data.",
+    "MIM3 · RC7.2": "Il-fornituri tad-data għandhom jikkunsidraw li jkunu kapaċi jiksbu talbiet magħmula minn utenti tad-data għal assi ta' data ġodda.",
+    "MIM6 · R1.1": "Regoli għall-kontroll tal-aċċess fiżiku u loġiku għall-informazzjoni u assi assoċjati oħra GĦANDHOM jiġu stabbiliti u implimentati abbażi ta' rekwiżiti tan-negozju u tas-sigurtà tal-informazzjoni. (ISO 27001 5.15 Kontroll tal-aċċess)",
+    "MIM6 · R1.2": "L-allokazzjoni u l-immaniġġjar ta' informazzjoni dwar l-awtentikazzjoni GĦANDHOM ikunu kkontrollati minn proċess ta' ġestjoni, inkluż l-għoti ta' pariri lill-persunal dwar it-trattament xieraq ta' informazzjoni dwar l-awtentikazzjoni. (ISO 27001 5.17: Informazzjoni dwar l-awtentikazzjoni)",
+    "MIM6 · R1.3": "Id-drittijiet ta' aċċess għal informazzjoni u assi assoċjati oħra GĦANDHOM jiġu pprovduti, irreveduti, modifikati u mneħħija skont il-politika tal-organizzazzjoni speċifika għas-suġġett dwar u r-regoli għall-kontroll tal-aċċess. (ISO 27001 5.18: Drittijiet ta' aċċess)",
+    "MIM6 · R2.1": "Regoli għall-użu effettiv tal-kriptografija, inkluż il-ġestjoni ta' ċwievet kriptografiċi, GĦANDHOM jiġu definiti u implimentati. (ISO 27001 8.24 Użu tal-kriptografija)",
+    "MIM6 · R3.1": "Teknoloġiji u proċeduri ta' awtentikazzjoni sigura għandhom jiġu implimentati abbażi ta' restrizzjonijiet fuq l-aċċess għall-informazzjoni u l-politika speċifika għas-suġġett dwar il-kontroll tal-aċċess. (ISO 27001 8.5 Awtentikazzjoni sigura)",
+    "MIM6 · M1.1": "Il-Protokoll tas-Sigurtà tas-Saff tat-Trasport (TLS), Verżjoni 1.3",
+    "MIM6 · M1.2": "Il-Qafas ta' Awtorizzazzjoni OAuth 2.0",
+    "MIM6 · M1.3": "OpenID Connect 1.0, Saff ta' identità għall-awtentikazzjoni fuq OAuth 2.0",
+    "MIM6 · M1.4": "OIDC4VCI / OIDC4VP, OpenID għall-Ħruġ u l-Preżentazzjoni ta' Kredenzjali Verifikabbli",
+    "MIM7 · R1.1": "Id-data ġeospazjali għandha tiġi esposta permezz ta' interfaċċja ta' servizz tal-web ibbażata fuq standards.",
+    "MIM7 · R2.1": "Id-data ġeospazjali għandha tiġi kkodifikata bl-użu ta' standards miftuħa. Huwa rrakkomandat li jintużaw standards rilevanti mill-OGC u BuildingSMART International.",
+    "MIM7 · R3.1": "Is-settijiet kollha ta' data użati biex jipprovdu aktar informazzjoni dwar il-kuntest kopert minn data ġeospazjali għandhom jikkonformaw ma' MIM1 u MIM2.",
+    "MIM7 · R4.1": "Identifikaturi uniċi u persistenti għandhom jintużaw biex jidentifikaw każijiet partikolari ta' kwalunkwe entità użata f'settijiet ta' data. (Ara MIM1: Interkonnessjoni tad-Data.)",
+    "MIM7 · R5.1": "Is-Sistemi ta' Referenza tal-Koordinati (CRS) għandhom jikkonformaw mal-istandards, u għandha tiġi pprovduta informazzjoni dwar liema standard (eż. EPSG:4326, EPSG:3857) qed jintuża. Dan jinkludi n-numru EPSG jew in-numru WGS, flimkien ma' informazzjoni dwar kwalunkwe varjazzjoni bbażata fuq sistemi nazzjonali bħall-LKS-92 tal-Latvja, sabiex id-data tkun tista' tiġi ttrasformata f'CRS komuni. (Nota: Fi ħdan l-UE, għal data ġeospazjali huwa meħtieġ li tintuża metadata konformi mad-Direttiva INSPIRE, inkluża l-metadata meħtieġa biex tiddeskrivi l-informazzjoni tas-CRS.)",
+    "MIM8 · R1.1": "L-LDT għandu jipprovdi aċċess għal outputs ta' simulazzjoni u inputs ta' mudelli ta' kalkolu fejn dawn huma meħtieġa bħala parti mill-flussi tax-xogħol tal-LDT.",
+    "MIM8 · R1.2": "L-LDT għandu jikkunsidra li jiddistingwi b'mod ċar bejn data ta' sors mhux ipproċessata, data trasformata lesta għall-fluss tax-xogħol, inputs ta' mudelli, u outputs ta' mudelli.",
+    "MIM8 · C2": "Din il-kapaċità tiddependi fuq MIM3 (Skambju ta' Data) għall-iskambju ta' data.",
+    "MIM8 · R3.1": "Il-mudell għandu jikkunsidra li jipprovdi metadata standard tal-mudell, inkluża deskrizzjoni tal-metodi u l-parametri tiegħu, u parametri tad-data (jew b'valur jew b'referenza). Għal dan il-għan għandhom jikkunsidraw li jintużaw standards komuni ta' metadata.",
+    "MIM8 · R3.2": "Il-mudell għandu jesponi jew ikun jista' jissejjaħ permezz ta' interfaċċja ddokumentata, preferibbilment bl-użu ta' API standardizzata magħrufa. Is-sett ta' data li jifforma r-riżultat tal-mudell għandu jiġi deskritt (fil-livell tad-data).",
+    "MIM8 · R3.3": "Użu affidabbli, sikur u etiku ta' metodi innovattivi (LLMs, IA aġentika, eċċ.) għandu jikkunsidra li jkun issalvagwardjat. Il-preġudizzju għandu jikkunsidra li jiġi minimizzat fejn applikabbli. Il-metodi użati biex jiggarantixxu dan, għandhom jikkunsidraw li jiġu deskritti.",
+    "MIM8 · R3.4": "Il-mudell GĦANDU jkun kapaċi jaċċessa d-data f'isem l-utent aħħari jew l-organizzazzjoni. Ara MIM3",
+    "MIM8 · R3.5": "Biex id-data tintuża f'mudelli ta' IA, il-provenjenza u l-fiduċja għandhom jikkunsidraw li jkunu garantiti. F'xi każijiet, sors awtorevoli, bħal aġenzija tal-gvern GĦANDU jiġi elenkat.",
+    "MIM8 · R4.1": "L-LDT jappoġġa flussi tax-xogħol li jgħaqqdu sorsi ta' data, trasformazzjonijiet ta' data, eżekuzzjoni ta' mudelli, proċessi ta' simulazzjoni, u outputs.",
+    "MIM8 · R4.2": "L-LDT jorbot il-passi tal-fluss tax-xogħol, fejn l-output ta' pass wieħed jista' jintuża bħala l-input għal ieħor.",
+    "MIM8 · R4.3": "L-LDT jimmonitorja l-istatus tal-eżekuzzjoni tal-fluss tax-xogħol, inklużi proċessi mitmuma, falluti, u mfixkla.",
+    "MIM8 · R4.4": "L-LDT jirreġistra l-provenjenza tal-fluss tax-xogħol, inklużi s-settijiet ta' data użati (inkluża l-verżjoni, b'timbru tal-ħin), mudelli eżegwiti, parametri magħżula, u outputs iġġenerati.",
+    "MIM8 · R5.1": "L-LDT jipprovdi metadata li tispjega x'inhu viżwalizzat, inkluż timbru tal-ħin, ambitu spazjali, sors tad-data, u suppożizzjonijiet ta' xenarji u varjanti fejn rilevanti.",
+    "MIM8 · R5.2": "L-LDT jappoġġa tipi differenti ta' viżwalizzazzjoni interattiva, bħal mapep 2D, xeni 3D, dashboards, rapporti, jew fehmiet li jħarsu lejn il-pubbliku.",
+    "MIM8 · R6.1": "L-LDT għandu jikkunsidra li jiddokumenta lakuni semantiċi mhux solvuti, suppożizzjonijiet, jew immappjar li jistgħu jaffettwaw l-interpretazzjoni, l-użu mill-ġdid, jew it-tqabbil tar-riżultati.",
+    "MIM8 · M1": "Aċċess għar-Riżorsi tal-LDT Ibbażat fuq API",
+    "MIM8 · M2": "Formati Standardizzati ta' Data u Output",
+    "MIM8 · M3": "Mudell-bħala-Servizz (Model-as-a-Service)",
+    "MIM8 · M4": "Orkestrazzjoni tal-Fluss tax-Xogħol tal-LDT",
+    "MIM8 · M5": "Aċċess għal Output u Viżwalizzazzjoni b'Diversi Fehmiet",
+    "MIM1 · §3.1": "L-IRI huwa ttrattat bħala l-identifikatur kanoniku fis-sistemi kollha downstream; l-implimentazzjonijiet M'GĦANDHOMX jiġġeneraw IRIs li jinkorporaw dettalji volatili tal-implimentazzjoni bħal IDs ta' ringieli f'database jew hostnames ta' servers.",
+    "MIM6 · 8.15": "Qtugħ ta' reġistri. Reġistri li jirreġistraw attivitajiet, eċċezzjonijiet, difetti u avvenimenti rilevanti oħra għandhom jiġu prodotti, maħżuna, protetti u analizzati."
+  },
+  "capability_translations": {
+    "MIM0 · C1": "Data li tinqara mill-magni tista' tiġi rkuprata permezz tal-web",
+    "MIM0 · C2": "L-aċċess huwa strutturat u jippermetti mistoqsijiet",
+    "MIM0 · C2 best practice": "L-aħjar prattika addizzjonali li għandha titqies:",
+    "MIM0 · C3": "Bidliet fid-data jistgħu jiġu abbonati għalihom",
+    "MIM0 · C4": "L-aċċess għall-informazzjoni jista' jiġi ristrett",
+    "MIM1 · C1": "L-entitajiet huma identifikati bl-użu ta' identifikaturi uniċi",
+    "MIM1 · C2": "L-entitajiet jista' jkollhom tip",
+    "MIM1 · C3": "L-entitajiet jistgħu jiġu (de)referenzjati",
+    "MIM2 · C1": "L-entitajiet kollha inklużi fis-sorsi tad-data huma deskritti bl-użu ta' mudelli ta' data konsistenti biex jippermettu l-interoperabbiltà għal applikazzjonijiet u sistemi",
+    "MIM2 · C2": "Mudelli differenti ta' data għall-istess entità li jintużaw fi ħdan ekosistema komuni ta' kondiviżjoni ta' data għandhom jikkunsidraw li jkunu jistgħu jiġu ttrasformati faċilment f'mudell ta' data komuni",
+    "MIM2 · C3": "Kwalunkwe data u l-metadata assoċjata tagħha jistgħu jiġu kondiviżi f'formati miftuħa u standardizzati ta' trasport ta' data sabiex id-data tkun tista' tiġi skambjata u interpretata b'mod konsistenti minn għodod u implimentazzjonijiet differenti",
+    "MIM2 · C4": "Meta jkun utli, għandu jikkunsidra li jkun possibbli li jinħolqu \"Profili tal-Applikazzjoni\" għal mudell ta' data, sabiex attributi speċifiċi għal każ ta' użu jkunu jistgħu jiżdiedu jew jiġu speċifikati mingħajr ma jinbidel il-mudell ta' data sottostanti",
+    "MIM3 · C1": "Regoli ta' governanza għall-ekosistema ta' kondiviżjoni ta' data jistgħu jiġu definiti",
+    "MIM3 · C2": "Termini u kundizzjonijiet għall-kondiviżjoni tad-data jistgħu jiġu definiti",
+    "MIM3 · C3": "Il-konformità mat-termini u l-kundizzjonijiet tal-kondiviżjoni tad-data tista' tiġi vvalidata",
+    "MIM3 · C4": "Assi ta' data disponibbli jistgħu jiġu skoperti",
+    "MIM3 · C5": "Parteċipanti fl-ekosistema jistgħu jiġu skoperti",
+    "MIM3 · C6": "Skambju ta' data jista' jintlaħaq qbil dwaru",
+    "MIM3 · C7": "Data ġdida li bħalissa mhix disponibbli tista' tintalab",
+    "MIM6 · C1": "Id-data hija aċċessibbli biss għal utenti li għandu jkollhom aċċess għaliha",
+    "MIM6 · C2": "Id-data aċċessata mill-utenti ma ġietx mibdula",
+    "MIM6 · C3": "Id-data aċċessata mill-utenti toriġina minn sors ivverifikat",
+    "MIM6 · M1": "Mekkaniżmu kandidat",
+    "MIM7 · C1": "Il-bliet u l-komunitajiet jistgħu faċilment jittrasferixxu data ġeospazjali bejn sistemi tal-IT interni u esterni (inkluż relatati mal-IoT)",
+    "MIM7 · C2": "Il-bliet u l-komunitajiet jistgħu jintegraw data ġeospazjali 2D u 3D li ġejja minn varjetà ta' sorsi, pereżempju ġeodata u mudelli ta' informazzjoni tal-bini, u jaqsmu dik id-data fi ħdanhom u bejniethom b'mod interoperabbli",
+    "MIM7 · C3": "Il-bliet u l-komunitajiet jistgħu jintegraw data ġeospazjali ma' data oħra li tista' tipprovdi aktar informazzjoni dwar il-kuntest",
+    "MIM7 · C4": "Il-bliet u l-komunitajiet għandhom mod konsistenti u persistenti kif jiddeskrivu każijiet individwali tal-karatteristiċi, oġġetti jew entitajiet kollha inklużi fis-sorsi tad-data ġeospazjali",
+    "MIM7 · C5": "Is-Sistemi ta' Referenza tal-Koordinati (CRS) użati fil-kondiviżjoni tad-data jistgħu jiġu ttrasformati faċilment f'CRS komuni",
+    "MIM8 · C1": "Jipprovdi aċċess għal settijiet ta' data użati fi ħdan l-LDT, inkluż data statika, f'ħin reali, u ta' simulazzjoni u mudelli ta' kalkolu",
+    "MIM8 · C2": "Jiskambja data ma' sistemi esterni u LDTs oħra bl-użu ta' interfaċċji interoperabbli",
+    "MIM8 · C3": "Jerġa' juża mudelli deterministiċi jew ta' IA f'oqsma, komunitajiet, każijiet ta' użu, u/jew LDTs differenti",
+    "MIM8 · C4": "Jikkoordina u jimmaniġġja data, mudelli, u flussi tax-xogħol tal-ipproċessar fi ħdan LDT (intra-LDT) u bejn l-LDTs (inter-LDT)",
+    "MIM8 · C5": "Jipprovdi viżwalizzazzjonijiet multipli ta' data u riżultati (eż. 2D, 3D, dashboards) minn data u mudelli sottostanti komuni għal interazzjoni u tqabbil",
+    "MIM8 · C6": "Jiżgura li d-data skambjata (u outputs ta' simulazzjoni) fi ħdan u bejn l-LDTs tkun tista' tiġi interpretata b'mod konsistenti permezz ta' semantika kondiviża jew immappjata u provenjenza ċara",
+    "MIM8 · M": "Mekkaniżmi (taħt żvilupp attiv)",
+    "MIM1 · M1": "Mekkaniżmu 1, taqsima 3.1: Identifikazzjoni tal-Entitajiet b'IRIs Globalment Uniċi",
+    "MIM6 · P": "Pre- u Post-rekwiżiti (ibbażati fuq ISO 27001 Anness A): il-kontroll li jirreferi għalih dan il-ktejjeb"
+  },
+  "spec_link_label": "Speċifikazzjoni sħiħa:"
+}

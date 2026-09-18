@@ -42,33 +42,34 @@ part of the PDF name (`MIMs-latest-de.pdf`). Inter draws all three scripts.
 
 | Code | Language | Own name | Script | File | State |
 |---|---|---|---|---|---|
-| `bg` | Bulgarian | български | Cyrillic | `content/bg.json` | open |
+| `bg` | Bulgarian | български | Cyrillic | `content/bg.json` | machine draft |
 | `cs` | Czech | čeština | Latin | `content/cs.json` | published |
-| `da` | Danish | dansk | Latin | `content/da.json` | open |
-| `de` | German | Deutsch | Latin | `content/de.json` | open |
-| `el` | Greek | ελληνικά | Greek | `content/el.json` | open |
+| `da` | Danish | dansk | Latin | `content/da.json` | machine draft |
+| `de` | German | Deutsch | Latin | `content/de.json` | machine draft |
+| `el` | Greek | ελληνικά | Greek | `content/el.json` | machine draft |
 | `en` | English | English | Latin | `content/en.json` | master |
-| `es` | Spanish | español | Latin | `content/es.json` | open |
-| `et` | Estonian | eesti | Latin | `content/et.json` | open |
-| `fi` | Finnish | suomi | Latin | `content/fi.json` | open |
-| `fr` | French | français | Latin | `content/fr.json` | open |
-| `ga` | Irish | Gaeilge | Latin | `content/ga.json` | open |
-| `hr` | Croatian | hrvatski | Latin | `content/hr.json` | open |
-| `hu` | Hungarian | magyar | Latin | `content/hu.json` | open |
-| `it` | Italian | italiano | Latin | `content/it.json` | open |
-| `lt` | Lithuanian | lietuvių | Latin | `content/lt.json` | open |
-| `lv` | Latvian | latviešu | Latin | `content/lv.json` | open |
-| `mt` | Maltese | Malti | Latin | `content/mt.json` | open |
-| `nl` | Dutch | Nederlands | Latin | `content/nl.json` | open |
-| `pl` | Polish | polski | Latin | `content/pl.json` | open |
-| `pt` | Portuguese (pt-PT) | português | Latin | `content/pt.json` | open |
-| `ro` | Romanian | română | Latin | `content/ro.json` | open |
+| `es` | Spanish | español | Latin | `content/es.json` | machine draft |
+| `et` | Estonian | eesti | Latin | `content/et.json` | machine draft |
+| `fi` | Finnish | suomi | Latin | `content/fi.json` | machine draft |
+| `fr` | French | français | Latin | `content/fr.json` | machine draft |
+| `ga` | Irish | Gaeilge | Latin | `content/ga.json` | machine draft |
+| `hr` | Croatian | hrvatski | Latin | `content/hr.json` | machine draft |
+| `hu` | Hungarian | magyar | Latin | `content/hu.json` | machine draft |
+| `it` | Italian | italiano | Latin | `content/it.json` | machine draft |
+| `lt` | Lithuanian | lietuvių | Latin | `content/lt.json` | machine draft |
+| `lv` | Latvian | latviešu | Latin | `content/lv.json` | machine draft |
+| `mt` | Maltese | Malti | Latin | `content/mt.json` | machine draft |
+| `nl` | Dutch | Nederlands | Latin | `content/nl.json` | machine draft |
+| `pl` | Polish | polski | Latin | `content/pl.json` | machine draft |
+| `pt` | Portuguese (pt-PT) | português | Latin | `content/pt.json` | machine draft |
+| `ro` | Romanian | română | Latin | `content/ro.json` | machine draft |
 | `sk` | Slovak | slovenčina | Latin | `content/sk.json` | published |
-| `sl` | Slovenian | slovenščina | Latin | `content/sl.json` | open |
-| `sv` | Swedish | svenska | Latin | `content/sv.json` | open |
+| `sl` | Slovenian | slovenščina | Latin | `content/sl.json` | machine draft |
+| `sv` | Swedish | svenska | Latin | `content/sv.json` | machine draft |
 
 A language outside this list works the same way as long as its two-letter code is free
-and the font draws its script. Set "State" to "published" when the file lands in `dev`.
+and the font draws its script. "machine draft" is the output of `translate.py`, not yet read by
+a person who knows the procurement vocabulary of the country; set "published" after that reading.
 
 ## Rules for translators
 
@@ -87,7 +88,8 @@ and the font draws its script. Set "State" to "published" when the file lands in
   "M / E / N": meets, meets by an equivalent, does not meet). Pick the letters of
   your language and use the same ones in `tearout/intro` and `example/filled_rows`.
 - The clause that sends the bidder to the compliance table names its page
-  (`cross/items[6]/text`, "(p. 23)"). Check the number in your built PDF.
+  (`cross/items[6]/text`, "(p. 23)"). Translated editions are longer, so the number
+  differs; the validator names the right one.
 - `quote_translations` are the specification requirements (all of them, every
   MIM) and `capability_translations` the capability headings above them.
   Translate them closely; the English original is printed under them.
@@ -122,6 +124,7 @@ about 90 %.
 | `MIM0`…`MIM8` or a symbol `✓ ~ ✗ →` lost | error |
 | A character the font cannot draw | error |
 | A page overflows even at 76 % zoom | error |
+| The clause names another page than the one the compliance table is on | error |
 | A page had to be zoomed out | warning |
 | A string is more than 1.6 times the English length | warning |
 | A one-line spot is over its character budget | warning |
@@ -133,3 +136,6 @@ about 90 %.
 
 Copy `en.json` to `<xx>.json`, translate, run `./build.sh`. Nothing else to
 register: the build picks up every two-letter file in `content/`.
+
+For a first draft from a language model, use the prompt in
+[TRANSLATE_PROMPT.md](TRANSLATE_PROMPT.md).

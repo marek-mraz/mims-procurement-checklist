@@ -1,0 +1,814 @@
+{
+  "cover": {
+    "title": "Listă de verificare pentru achiziții · utilizând Mecanismele Minime · de Interoperabilitate (MIM)",
+    "subtitle": "Ce să includeți într-o achiziție pentru ca datele să rămână ale orașului",
+    "tagline": "Pentru MIMs Plus 9.0 de la OASC",
+    "footer": "Pentru responsabili de achiziții, manageri de proiect și directori IT din primăriile europene"
+  },
+  "why": {
+    "title": "De ce acest ghid",
+    "paras": [
+      "În fiecare an, orașele achiziționează software: sisteme de parcare, platforme de senzori, portaluri cartografice, gemeni digitali. Prea des, datele colectate de aceste sisteme rămân blocate în interiorul lor. La finalul contractului, datele — plătite din bani publici — pleacă odată cu furnizorul sau rămân captive într-un format pe care nimeni altcineva nu îl poate citi.",
+      "Lucrurile nu trebuie să stea așa. Mecanismele Minime de Interoperabilitate (MIM), gestionate de Open & Agile Smart Cities (OASC) și susținute prin mișcarea europeană living-in.eu, descriu cerințele tehnice minime care vă păstrează datele deschise, reutilizabile și independente de furnizor. Acestea sunt deliberat concise: nu o arhitectură masivă, ci doar acele câteva condiții necesare pentru ca sistemele să poată comunica între ele.",
+      "Nu trebuie să fiți inginer pentru a le folosi. Fiecare listă de verificare transformă un MIM în cerințe clare pe care le puteți prelua într-o documentație de atribuire, alături de justificarea modului în care fiecare vă protejează. Imediat după lista de verificare găsiți fiecare cerință a acelui MIM, cuvânt cu cuvânt, astfel încât colegii tehnici și ofertanții să poată verifica detaliile.",
+      "Orașele care solicită MIM cumpără o singură dată și reutilizează de mai multe ori: datele privind calitatea aerului alimentează panoul de bord al școlii, inventarul iluminatului public alimentează planul energetic, iar următorul furnizor continuă de unde a rămas precedentul. Aceasta înseamnă interoperabilitatea în practică — și este tot mai des cerută în proiectele finanțate de UE."
+    ],
+    "quote": {
+      "text": "Mecanismele minime de interoperabilitate (MIM) permit un nivel minim, dar suficient, de interoperabilitate pentru date, sisteme și servicii, în mod specific în contextul soluțiilor pentru orașe inteligente. · Publicul-țintă pentru acest document este format din: · 1. Furnizori de soluții care doresc să se asigure că soluțiile lor sunt interoperabile cu altele și permit schimbul fluid de date în contextul orașelor și comunităților inteligente. · 2. Autorități contractante care doresc să achiziționeze soluții adaptate exigențelor viitoare și care permit integrarea eficientă din punctul de vedere al costurilor într-o arhitectură existentă a tehnologiei informației și comunicațiilor (TIC) pentru orașe și comunități inteligente."
+    },
+    "policy": {
+      "title": "Cum se aliniază MIM-urile cu legislația UE",
+      "intro": "MIM-urile reprezintă o specificație tehnică, nu o lege. Ele converg în aceeași direcție cu normele UE aplicabile deja datelor publice și serviciilor digitale:",
+      "items": [
+        {
+          "name": "Directiva privind achizițiile publice",
+          "ref": "Directiva 2014/24/UE, articolul 42",
+          "text": "specificațiile tehnice pot face trimitere la standarde, întotdeauna însoțite de mențiunea „sau echivalent”; ca regulă, nu pot indica o anumită marcă sau un produs specific."
+        },
+        {
+          "name": "Regulamentul privind datele (Data Act)",
+          "ref": "Regulamentul (UE) 2023/2854",
+          "text": "accesul la datele provenite de la produsele conectate și schimbarea furnizorilor de servicii cloud fără blocare tehnologică."
+        },
+        {
+          "name": "Regulamentul privind o Europă interoperabilă",
+          "ref": "Regulamentul (UE) 2024/903",
+          "text": "evaluări ale interoperabilității pentru serviciile publice digitale transfrontaliere și reutilizarea soluțiilor deschise."
+        },
+        {
+          "name": "Directiva privind datele deschise",
+          "ref": "Directiva (UE) 2019/1024",
+          "text": "seturi de date cu valoare ridicată publicate gratuit, prelucrabile automat, prin intermediul API-urilor."
+        },
+        {
+          "name": "Directiva NIS2",
+          "ref": "Directiva (UE) 2022/2555",
+          "text": "un nivel de bază de securitate cibernetică; legislația națională stabilește măsura în care vizează administrația locală."
+        },
+        {
+          "name": "GDPR",
+          "ref": "Regulamentul (UE) 2016/679",
+          "text": "date cu caracter personal în sistemele orașului (parcări, camere video, mobilitate)."
+        },
+        {
+          "name": "Regulamentul privind IA",
+          "ref": "Regulamentul (UE) 2024/1689",
+          "text": "norme pentru sistemele de inteligență artificială; relevant pentru modelele de IA din gemenii digitali."
+        }
+      ],
+      "note": "Exclusiv cu titlu orientativ. Verificați modul în care țara dumneavoastră a transpus fiecare act normativ."
+    }
+  },
+  "howto": {
+    "title": "Cum să utilizați acest ghid",
+    "steps": [
+      {
+        "name": "Pregătiți",
+        "text": "Citiți cele șapte liste de verificare. Bifați-le pe cele aplicabile achiziției dumneavoastră. Majoritatea achizițiilor au nevoie de MIM0, MIM1, MIM2 și MIM6; adăugați MIM3 când datele sunt partajate cu terți sau printr-un portal de date, MIM7 pentru orice element cartografic, MIM8 pentru gemeni digitali."
+      },
+      {
+        "name": "Lansați procedura",
+        "text": "Copiați cerințele bifate în specificațiile tehnice. Fiecare punct este redactat ca o formulare gata de preluat. Adăugați clauzele contractuale orizontale: implică costuri minime și previn dependența de furnizor."
+      },
+      {
+        "name": "Evaluați",
+        "text": "Cereți ofertanților să demonstreze, nu doar să promită (a se vedea clauza cu acest titlu). Verificați conformitatea pe baza tabelului de conformitate completat de ofertant."
+      },
+      {
+        "name": "Recepționați",
+        "text": "La recepție, retestați fiecare cerință bifată. O cerință care nu este testată la livrare nu a fost niciodată o cerință reală."
+      }
+    ],
+    "legend_title": "Interpretarea citatelor din specificație",
+    "legend": {
+      "SHALL / MUST": {
+        "term": "TREBUIE (SHALL / MUST)",
+        "text": "obligatoriu. Fără aceasta, sistemul nu este conform."
+      },
+      "MUST NOT": {
+        "term": "NU TREBUIE (MUST NOT)",
+        "text": "interzis. Un sistem care face acest lucru nu este conform."
+      },
+      "SHOULD": {
+        "term": "AR TREBUI (SHOULD)",
+        "text": "recomandat insistent. Abaterile necesită o justificare temeinică în scris."
+      },
+      "MAY": {
+        "term": "POATE (MAY)",
+        "text": "opțional. Util, dar niciodată obligatoriu."
+      },
+      "CAN": {
+        "term": "POATE (CAN)",
+        "text": "o posibilitate, nu o cerință. Indică ceea ce este posibil și nu obligă pe nimeni."
+      }
+    },
+    "note": "Fiecare cerință poartă o scurtă trimitere de tipul → MIM0 R1.1. Aceasta indică cerința corespondentă din MIMs Plus 9.0; imediat după listă găsiți fiecare cerință a acelui MIM, cuvânt cu cuvânt. Doar MIM0 definește cuvintele-cheie: acestea au valoare normativă când sunt scrise cu majuscule, conform convenției IETF RFC 2119 și RFC 8174 (CAN provine din Directivele ISO/IEC, Partea 2). Celelalte MIM-uri nu includ o definiție: MIM6 scrie SHALL predominant cu majuscule, MIM2, MIM3, MIM7 și MIM8 scriu shall, should și must cu litere mici, iar MIM1 le folosește doar în descrierea unui mecanism (MUST NOT în secțiunea 3.1). Acest ghid interpretează termenii cu litere mici în același mod; un ofertant îi poate interpreta mai flexibil.",
+    "legend_note": "Cerințele din listă folosesc „trebuie” chiar și acolo unde specificația doar recomandă (ar trebui) sau indică o soluție tehnică potențială. Aceasta este decizia autorității contractante."
+  },
+  "glance": {
+    "title": "Șapte MIM-uri și trei instrumente",
+    "intro": "Șapte mecanisme concise, un singur obiectiv: datele rămân ale dumneavoastră, iar sistemele pot comunica între ele.",
+    "items": {
+      "MIM0": {
+        "name": "Accesarea datelor",
+        "q": "Ne putem extrage datele?",
+        "d": "Datele sunt accesibile prin API-uri web standardizate, în formate prelucrabile automat."
+      },
+      "MIM1": {
+        "name": "Interconectarea datelor",
+        "q": "Fiecare element are o denumire durabilă?",
+        "d": "Fiecare senzor, stâlp și clădire are un identificator unic și persistent."
+      },
+      "MIM2": {
+        "name": "Reprezentarea datelor",
+        "q": "Vorbim un limbaj comun?",
+        "d": "Datele respectă modele de date standard, documentate, cu unități de măsură explicite."
+      },
+      "MIM3": {
+        "name": "Schimbul de date",
+        "q": "Putem partaja date în condiții clare?",
+        "d": "Seturile de date sunt catalogate și partajate pe baza unor licențe-tip și a unei guvernanțe clare."
+      },
+      "MIM6": {
+        "name": "Securizarea datelor",
+        "q": "Sunt datele noastre în siguranță?",
+        "d": "Transfer criptat, autentificare standardizată, acces pe bază de roluri, jurnale de audit."
+      },
+      "MIM7": {
+        "name": "Date geospațiale",
+        "q": "Funcționează pe o hartă?",
+        "d": "Datele spațiale utilizează interfețe OGC, formate deschise și sisteme de coordonate declarate."
+      },
+      "MIM8": {
+        "name": "Gemeni digitali locali",
+        "q": "Se poate dezvolta geamănul nostru digital?",
+        "d": "Datele, modelele și rezultatele rămân accesibile, documentate și reutilizabile."
+      }
+    },
+    "numbering_note": "Privind numerotarea: MIMs Plus 9.0 specifică șapte mecanisme, numerotate 0, 1, 2, 3, 6, 7 și 8. MIM4 (date cu caracter personal) și MIM5 (IA etică) aparțin versiunilor anterioare OASC și nu fac parte din 9.0. Nimic nu lipsește din acest ghid.",
+    "tools_title": "Instrumente pentru achiziția dumneavoastră",
+    "tools": {
+      "clauses": {
+        "name": "Clauze contractuale orizontale",
+        "q": "Ce trebuie inclus în fiecare contract?",
+        "d": "Strategia de ieșire, drepturile asupra datelor, stabilitatea API-urilor."
+      },
+      "example": {
+        "name": "Exemplu: senzori pentru calitatea aerului",
+        "q": "Cum arată în practică?",
+        "d": "Ce și unde se include, precum și modele de text gata de preluat."
+      },
+      "table": {
+        "name": "Tabel de conformitate",
+        "q": "Cum dovedește ofertantul?",
+        "d": "Completat de ofertant, verificat de comisie, anexat la contract."
+      }
+    }
+  },
+  "nav": {
+    "overview": "Prezentare",
+    "clauses": "Clauze",
+    "example": "Exemplu",
+    "table": "Tabel conformitate",
+    "glossary": "Glosar",
+    "list": "Listă verificare",
+    "back": "înapoi la listă",
+    "page": "p."
+  },
+  "spec_title": "Ce prevede specificația",
+  "spec_leadin": "Fiecare cerință a acestui MIM, reprodusă fidel din MIMs Plus 9.0:",
+  "spec_translation_note": "Specificația există doar în limba engleză: versiunea în limba română este o traducere neoficială realizată de autorul acestui ghid; textul original în limba engleză de sub aceasta este cel autentic.",
+  "why_title": "De ce contează",
+  "flags_title": "Semnale de alarmă",
+  "mims": {
+    "MIM0": {
+      "name": "Accesarea datelor",
+      "question": "Ne putem extrage datele?",
+      "intro": "Aceasta este baza. Dacă datele nu pot fi extrase din sistem printr-o interfață standardizată, restul ghidului rămâne teorie. MIM0 impune o singură condiție fiecărui sistem achiziționat: datele trebuie să fie accesibile, într-un format prelucrabil automat, prin tehnologii web obișnuite.",
+      "items": [
+        {
+          "text": "Toate datele colectate sau generate de sistem pot fi descărcate în cel puțin un format prelucrabil automat (de ex. JSON, CSV) prin intermediul unui API web standard.",
+          "why": "Următorul contractant — sau propriul personal — poate folosi datele fără a depinde de furnizor."
+        },
+        {
+          "text": "API-ul este descris formal într-un document deschis, prelucrabil automat (de exemplu OpenAPI), publicat la o adresă stabilă.",
+          "why": "Orice dezvoltator se poate conecta fără a plăti consultanță de integrare."
+        },
+        {
+          "text": "Datele pot fi filtrate direct din API în funcție de timp, locație și atribute.",
+          "why": "Extrageți strict ce aveți nevoie, nu o copie completă în fiecare noapte."
+        },
+        {
+          "text": "Când scenariul de utilizare cere date în timp real, consumatorii se pot abona la modificări (webhook-uri, MQTT sau similar) în locul interogării continue.",
+          "why": "Alertele și panourile de bord în timp real devin posibile cu costuri reduse."
+        },
+        {
+          "text": "Erorile, mecanismele de stocare temporară și limitele de rată respectă standardele HTTP și sunt documentate.",
+          "why": "Problemele de integrare sunt semnalate clar și pot fi remediate rapid."
+        }
+      ],
+      "why_panel": [
+        "Datele plătite rămân utilizabile și după expirarea contractului.",
+        "Serviciile noi se construiesc pe datele existente, fără a porni de la zero.",
+        "Costurile de integrare scad pentru fiecare proiect viitor."
+      ],
+      "red_flags": [
+        "„Exportul de date se face la cerere, prin echipa de asistență.”",
+        "„API-ul este disponibil ca modul opțional contra cost.”",
+        "Tarifarea per interogare pentru accesul la datele proprii ale orașului (a se vedea clauza „Fără costuri per utilizator / per interogare”)."
+      ]
+    },
+    "MIM1": {
+      "name": "Interconectarea datelor",
+      "question": "Fiecare element are o denumire durabilă?",
+      "intro": "Un oraș este plin de active: stâlpi, conducte, clădiri, locuri de parcare. Aplicațiile software se schimbă, dar activele fizice rămân. MIM1 impune ca fiecare element să primească un identificator care supraviețuiește aplicației inițiale, păstrând istoricul și legăturile cu alte date la fiecare migrare.",
+      "items": [
+        {
+          "text": "Fiecare entitate (senzor, stâlp, clădire, loc de parcare…) are un identificator unic și persistent, care nu se schimbă la înlocuirea software-ului.",
+          "why": "Istoricul și conexiunile dintre sisteme supraviețuiesc schimbării furnizorului."
+        },
+        {
+          "text": "Identificatorul poate fi interogat pentru a returna datele entității și semnificația sa (tipul) într-un mod prelucrabil automat.",
+          "why": "Alte sisteme pot urmări legătura în mod automat."
+        },
+        {
+          "text": "Când același activ fizic există în mai multe sisteme, identificatorii pot fi corelați între ei.",
+          "why": "Clădirea din GIS și clădirea din sistemul energetic sunt demonstrabil aceeași clădire."
+        },
+        {
+          "text": "Identificatorii nu conțin detalii interne ale furnizorului (ID-uri de baze de date, nume de servere).",
+          "why": "Altfel, identificatorii devin inutilizabili la finalul contractului."
+        }
+      ],
+      "why_panel": [
+        "Măsurătorile pe zece ani rămân asociate aceluiași stâlp de iluminat.",
+        "Departamentele nu mai țin evidențe paralele și contradictorii ale acelorași active.",
+        "Corelarea seturilor de date devine o simplă interogare, nu un proiect amplu de consultanță."
+      ],
+      "red_flags": [
+        "„Identificatorii sunt interni platformei noastre.”",
+        "Identificatorii sunt regenerați la fiecare migrare a datelor."
+      ]
+    },
+    "MIM2": {
+      "name": "Reprezentarea datelor",
+      "question": "Vorbim un limbaj comun?",
+      "intro": "Două sisteme pot genera ambele fișiere JSON fără a se înțelege între ele. MIM2 vizează semantica: utilizarea unor modele de date comune și documentate — cu unități de măsură și formate clare — astfel încât „temperatura”, „locul de parcare” sau „calitatea aerului” să aibă exact același sens în toate sistemele deținute.",
+      "items": [
+        {
+          "text": "Datele utilizează modele de date standard, recunoscute, acolo unde există (de ex. Smart Data Models, SAREF, ISO/IEC 5087); abaterile sunt justificate în scris.",
+          "why": "Datele de la doi furnizori diferiți se unifică fără proiecte de conversie."
+        },
+        {
+          "text": "Toate modelele de date utilizate sunt documentate explicit, cu precizarea clară a unităților de măsură și a formatelor de dată/oră.",
+          "why": "„Temperatură: 23” este inutil dacă nu se specifică dacă sunt °C sau °F."
+        },
+        {
+          "text": "Extensiile sunt livrate ca profiluri documentate peste modelul standard — niciodată ca versiuni private modificate.",
+          "why": "Rămâneți compatibili cu comunitatea și cu actualizările viitoare."
+        },
+        {
+          "text": "Fiecare model are cel puțin o serializare deschisă, validabilă prin schemă (de exemplu JSON cu JSON Schema).",
+          "why": "Datele primite pot fi validate automat încă de la intrare."
+        }
+      ],
+      "why_panel": [
+        "Un singur panou de bord citește date de la mulți furnizori, fără adaptoare dedicate.",
+        "Datele dumneavoastră sunt înțelese de aplicațiile altor orașe — și invers.",
+        "Validarea automată identifică datele eronate înainte ca acestea să se propage."
+      ],
+      "red_flags": [
+        "„Modelul nostru proprietar de date este mai detaliat decât standardul.”",
+        "Documentația este disponibilă numai sub acord de confidențialitate (NDA)."
+      ]
+    },
+    "MIM3": {
+      "name": "Schimbul de date",
+      "question": "Putem partaja date în condiții clare?",
+      "intro": "Nu toate datele unui oraș pot fi pur și simplu publicate: unele sunt comerciale, altele confidențiale. MIM3 reglementează partajarea sigură a acestora: un catalog accesibil, licențe-tip în locul unor clauze juridice concepute de la zero și reguli clare de guvernanță. Specificația formulează aproape întregul MIM3 sub formă de recomandare (a se vedea p. 3).",
+      "items": [
+        {
+          "text": "Fiecare set de date oferit de sistem este descris cu metadate standard (de exemplu DCAT-AP) într-un catalog, pentru a fi ușor de identificat.",
+          "why": "Datele pe care nu le găsește nimeni sunt date pe care nu le folosește nimeni."
+        },
+        {
+          "text": "Termenii și licențele de utilizare a datelor provin din modele standardizate (de ex. licențe deschise, acorduri-cadru de partajare), nu din texte juridice create ad-hoc.",
+          "why": "Acordurile se scalează facil; aspectele juridice nu mai blochează procesul."
+        },
+        {
+          "text": "Orașul poate stabili cine accesează fiecare resursă de date și în ce condiții, putând modifica aceste reguli fără asistența furnizorului.",
+          "why": "Guvernanța datelor rămâne exclusiv la nivelul autorității contractante."
+        }
+      ],
+      "why_panel": [
+        "Companiile locale și cercetătorii inovează pe baza datelor orașului — valoarea rămâne în regiune.",
+        "Datele sensibile pot fi partajate controlat cu partenerii potriviți, nu cu toată lumea sau cu nimeni.",
+        "Un set unitar de reguli înlocuiește zeci de contracte individuale de partajare a datelor."
+      ],
+      "red_flags": [
+        "Furnizorul revendică drepturi asupra datelor orașului (a se vedea clauza „Drepturile asupra datelor”).",
+        "Partajarea cu terți necesită acordul furnizorului sau plata unor taxe suplimentare."
+      ]
+    },
+    "MIM6": {
+      "name": "Securizarea datelor",
+      "question": "Sunt datele noastre în siguranță în tranzit și în utilizare?",
+      "intro": "Orașele inteligente sunt ținte frecvente ale atacurilor. MIM6 menține cerințele la un nivel strict și pragmatic: criptarea datelor în mișcare, autentificare prin standarde deschise, controlul și jurnalizarea accesului. Nu este nimic ieșit din comun — însă toate trebuie stipulate în contract.",
+      "items": [
+        {
+          "text": "Toate transferurile de date sunt criptate (TLS 1.3 sau bunele practici actuale).",
+          "why": "Cerință de igienă digitală de bază; prevăzută și de NIS2 acolo unde vă este aplicabilă."
+        },
+        {
+          "text": "Autentificarea utilizatorilor și a aplicațiilor folosește standarde deschise — OAuth 2.0 / OpenID Connect — și se integrează cu furnizorul de identitate al orașului.",
+          "why": "Un singur cont per angajat, nu câte un cont pentru fiecare aplicație; la plecarea din instituție, accesul este revocat instantaneu peste tot."
+        },
+        {
+          "text": "Drepturile de acces sunt bazate pe roluri, pot fi revizuite și revocate; acțiunile de acces și administrare sunt jurnalizate.",
+          "why": "Permite auditul și gestionarea incidentelor. Jurnalizarea corespunde controlului 8.15 din Anexa A a ISO/IEC 27001:2022, inclus de MIM6 la cerințe prealabile."
+        },
+        {
+          "label": "Se include în cerințele de calificare, nu în specificațiile tehnice",
+          "text": "Furnizorul trebuie să demonstreze alinierea la ISO/IEC 27001:2022 (sau echivalent) pentru serviciul operat.",
+          "why": "Securitatea este un proces continuu, nu o simplă bifă la recepție. Specificația menționează controalele ISO/IEC 27001, nu o certificare obligatorie."
+        }
+      ],
+      "why_panel": [
+        "O breșă apărută într-un sistem nu compromite automat întreaga rețea.",
+        "Acolo unde se aplică NIS2, conformarea cu aceasta și cu normele naționale devine considerabil mai simplă.",
+        "În cazul unui incident, jurnalele indică cu exactitate ce s-a întâmplat și cine a fost implicat."
+      ],
+      "red_flags": [
+        "Doar autentificare prin metode proprietare.",
+        "„Jurnalele de sistem sunt disponibile la cerere.”",
+        "Conturi de administrator utilizate în comun."
+      ]
+    },
+    "MIM7": {
+      "name": "Date geospațiale",
+      "question": "Funcționează pe o hartă?",
+      "intro": "Aproape orice activ al unui oraș are o amplasare fizică. MIM7 garantează că poziția nu este doar o imagine statică: datele spațiale circulă prin interfețe OGC standardizate, în formate deschise, cu sistemul de coordonate specificat — astfel încât fiecare strat achiziționat să se suprapună peste cele existente.",
+      "items": [
+        {
+          "text": "Datele geospațiale sunt expuse prin interfețe standardizate (OGC API Features, SensorThings; WFS acceptat pentru sisteme existente).",
+          "why": "Orice aplicație GIS de pe piață le poate utiliza direct, fără conversii."
+        },
+        {
+          "text": "Datele geospațiale sunt codificate în formate deschise (GeoJSON, CityJSON; GML/CityGML unde este necesar).",
+          "why": "Fără costuri de licențiere pentru convertoare, fără formate blocate."
+        },
+        {
+          "text": "Sistemul de coordonate de referință este întotdeauna specificat (cod EPSG), iar datele pot fi transformate într-un sistem comun.",
+          "why": "Straturile din surse diferite se suprapun corect pe hartă."
+        },
+        {
+          "text": "Elementele spațiale folosesc aceiași identificatori persistenți ca în MIM1.",
+          "why": "Punctul de pe hartă și înregistrarea din registrul de date reprezintă același element."
+        }
+      ],
+      "why_panel": [
+        "O hartă unică a orașului în locul a zece vizualizatoare diferite de la furnizori.",
+        "Obligațiile privind directiva INSPIRE și portalul național devin mai ușor de îndeplinit.",
+        "Datele 3D și BIM pot fi integrate ulterior în aceeași perspectivă comună."
+      ],
+      "red_flags": [
+        "Datele cartografice sunt vizibile doar în portalul furnizorului.",
+        "„Export disponibil doar ca PDF/captură de ecran.”"
+      ]
+    },
+    "MIM8": {
+      "name": "Gemeni digitali locali",
+      "question": "Se poate dezvolta geamănul nostru digital?",
+      "intro": "Un geamăn digital este o investiție pe termen lung: date, modele 3D, simulări, decizii. MIM8 protejează această investiție — datele și modelele rămân accesibile și documentate, rezultatele pot fi reproduse, iar componentele dintr-un proiect pot fi refolosite în următorul. Folosiți această secțiune la achiziția de platforme, modele sau soluții 3D.",
+      "items": [
+        {
+          "text": "Seturile de date, intrările modelelor și rezultatele simulărilor sunt accesibile prin API-uri (conform MIM0), nefiind captive în aplicație.",
+          "why": "Rezultatele pot fi preluate în rapoarte, panouri de control și proiecte viitoare."
+        },
+        {
+          "text": "Modelele sunt documentate (metodologie, parametri, intrări/ieșiri) și pot fi apelate printr-o interfață documentată.",
+          "why": "Un model hidrologic achiziționat poate fi reutilizat de mai multe departamente — și de alte orașe."
+        },
+        {
+          "text": "Rezultatele sunt generate în formate standard (GeoJSON, CityJSON, 3D Tiles, NetCDF…), compatibile cu aplicații independente de furnizor.",
+          "why": "Vizualizarea și analiza datelor rămân deschise concurenței pe piață."
+        },
+        {
+          "text": "Fluxurile de lucru rețin proveniența: ce versiune a datelor, ce model și ce parametri au generat un anumit rezultat.",
+          "why": "Deciziile administrative fundamentate pe geamănul digital pot fi explicate și justificate ulterior."
+        }
+      ],
+      "why_panel": [
+        "Geamănul digital funcționează dincolo de ciclul de viață al unui contract sau al unui buget.",
+        "Simulările pot fi verificate, replicate și justificate în procesul decizional local.",
+        "Modelele și componentele pot fi partajate ușor între orașe."
+      ],
+      "red_flags": [
+        "Rezultatele simulărilor pot fi vizualizate exclusiv în portalul furnizorului.",
+        "Modelele sunt livrate ca soluții opace, complet lipsite de metadate."
+      ]
+    }
+  },
+  "cross": {
+    "title": "Clauze contractuale orizontale",
+    "subtitle": "Măsuri de protecție împotriva dependenței de furnizor",
+    "intro": "Aceste clauze trebuie incluse în orice achiziție, indiferent de obiectul acesteia. Ele reflectă bunele practici de achiziții dezvoltate în jurul MIM-urilor și al inițiativei living-in.eu. Majoritatea nu se bazează pe o singură cerință din specificație, motiv pentru care nu poartă coduri de referință (gestionarea versiunilor API este și o recomandare în MIM0 C2). Introducerea lor implică costuri neglijabile; omiterea lor poate genera costuri majore.",
+    "items": [
+      {
+        "name": "Clauza de ieșire din contract",
+        "text": "La încetarea contractului, toate datele orașului (și configurațiile) sunt predate în formate deschise și documentate, fără costuri suplimentare."
+      },
+      {
+        "name": "Drepturile asupra datelor",
+        "text": "Toate drepturile asupra datelor colectate și derivate în baza contractului aparțin autorității contractante."
+      },
+      {
+        "name": "Fără costuri per utilizator / per interogare",
+        "text": "Nu se percep tarife suplimentare pentru accesul autorității contractante la propriile sale date."
+      },
+      {
+        "name": "Stabilitatea și gestionarea versiunilor API",
+        "text": "Furnizorul asigură compatibilitatea retroactivă a API-ului pe întreaga durată a contractului. Modificările care întrerup compatibilitatea sunt notificate cu cel puțin 6 luni în avans și lansate ca o versiune nouă, în timp ce versiunea anterioară rămâne activă până la data agreată pentru tranziție."
+      },
+      {
+        "name": "Demonstrați, nu doar promiteți",
+        "text": "Ofertanții demonstrează conformitatea în timpul evaluării ofertelor, fără a se limita la declarații pe propria răspundere. Pentru un API, aceasta presupune publicarea documentației interactive (de exemplu OpenAPI) și efectuarea unui apel în timp real care returnează date valide. Fiecare cerință bifată este testată din nou la recepție."
+      },
+      {
+        "name": "Nominalizarea standardelor deschise",
+        "text": "Documentația de atribuire precizează standardele menționate; mențiunile de conformitate trebuie să indice interfața și versiunea exactă. Fiecare trimitere la un standard sau o specificație tehnică acceptă soluții echivalente; ofertantul are sarcina de a dovedi echivalența."
+      },
+      {
+        "name": "Declarația de conformitate cu MIM-urile",
+        "text": "Ofertantul completează tabelul de conformitate (p. 28); acesta devine anexă la contract."
+      }
+    ]
+  },
+  "example": {
+    "title": "Exemplu: un oraș achiziționează o rețea de senzori pentru calitatea aerului",
+    "scenario": "Secțiuni selectate: MIM0, MIM1, MIM2, MIM6 și MIM7 (datele sunt afișate pe o hartă). Din MIM3 doar cerința 3.1 (datele privind calitatea aerului sunt date deschise și trebuie catalogate); MIM8 nu se aplică: nu este vorba de un geamăn digital.",
+    "table_title": "Ce documente utilizăm",
+    "table_headers": [
+      "Document",
+      "Termen în Directiva 2014/24/UE",
+      "Conținutul de inclus"
+    ],
+    "table_rows": [
+      [
+        "Caiet de sarcini",
+        "specificații tehnice (art. 42)",
+        "cerințele selectate din MIM0, MIM1, MIM2, MIM3 (doar 3.1), MIM6 (fără 6.4) și MIM7, reproduse exact, cu codul din specificație, plus mențiunea privind echivalența"
+      ],
+      [
+        "Condiții de participare",
+        "criterii de calificare și selecție (art. 58 și 62)",
+        "alinierea demonstrată la ISO/IEC 27001:2022 sau echivalent (cerința 6.4)"
+      ],
+      [
+        "Mijloace de probă",
+        "rapoarte de încercare, certificare și alte mijloace de probă (art. 44)",
+        "tabelul de conformitate ca anexă obligatorie la ofertă: I, E sau N pentru fiecare cerință, însoțit de mijloacele de probă (adresa documentației API, date de acces pentru testare)"
+      ],
+      [
+        "Proiect de contract",
+        "condiții de executare a contractului (art. 70)",
+        "Clauza de ieșire, Drepturile asupra datelor, Fără costuri per utilizator / per interogare, Stabilitatea și gestionarea versiunilor API; tabelul de conformitate completat ca anexă"
+      ],
+      [
+        "Proces-verbal de recepție",
+        "condiții de executare a contractului (art. 70)",
+        "coloana „Verificat” din tabelul de conformitate, utilizată ca protocol de testare la recepție"
+      ]
+    ],
+    "sample_title": "Exemplu de formulare pentru caietul de sarcini",
+    "sample": [
+      "4.3 Interoperabilitate și accesul la date",
+      "4.3.1 Toate datele colectate sau generate de sistem pot fi descărcate în cel puțin un format prelucrabil automat (de ex. JSON, CSV) prin intermediul unui API web standard. (MIMs Plus 9.0, MIM0 R1.1, R1.2)",
+      "4.3.2 API-ul este descris formal într-un document deschis, prelucrabil automat (de exemplu OpenAPI), publicat la o adresă stabilă. (MIM0 R1.3)",
+      "4.3.3 API-ul permite filtrarea datelor în funcție de momentul și locul măsurătorii. (MIM0 R2.1, R2.2)",
+      "… 4.3.4 până la 4.3.21: alte cerințe selectate …",
+      "4.3.22 Fiecare trimitere la un standard sau o specificație tehnică permite o soluție echivalentă; ofertantul are obligația de a dovedi echivalența.",
+      "4.3.23 Ofertantul completează tabelul de conformitate (anexă la documentația de atribuire) și indică dovezile pentru fiecare cerință solicitată. Ofertantul demonstrează punctele 4.3.1 - 4.3.21 printr-un apel API în direct în etapa de evaluare a ofertelor; autoritatea contractantă le va testa din nou la recepție. Neîndeplinirea acestora constituie motiv de refuz al recepției."
+    ],
+    "tip": "Punctul 4.3.3 arată cum puteți adapta o cerință la specificul achiziției: pentru senzori este oportun să solicitați filtrarea în funcție de momentul și locul măsurătorii.",
+    "note": "Adaptați formulările la legislația națională și consultați responsabilul de achiziții publice.",
+    "filled_title": "Exemplu de tabel de conformitate completat (extras)",
+    "filled_rows": [
+      [
+        "0.1",
+        "Date prelucrabile automat via API web standard",
+        "I",
+        "API REST returnează JSON și CSV; documentație disponibilă la adresa indicată în ofertă, p. 12; cont de test în anexa 3",
+        "✓"
+      ],
+      [
+        "0.4",
+        "Abonare la modificări acolo unde este necesar",
+        "N",
+        "funcționalitatea nu este suportată în prezent; planificată pentru versiunea viitoare",
+        "—"
+      ],
+      [
+        "7.2",
+        "Formate geospațiale deschise",
+        "E",
+        "furnizează GeoPackage, standard deschis OGC, în loc de GeoJSON; echivalența este detaliată în cuprinsul ofertei, p. 15",
+        "✓"
+      ]
+    ],
+    "filled_note": "O promisiune privind dezvoltări viitoare se marchează cu N: comisia evaluează strict funcționalitățile pe care ofertantul le poate demonstra."
+  },
+  "tearout": {
+    "title": "Tabel de conformitate",
+    "intro": "Un rând pentru fiecare cerință. Autoritatea contractantă bifează cerințele aplicabile contractului și include tabelul ca anexă obligatorie în documentația de atribuire. Pentru fiecare cerință bifată, ofertantul completează cu I (îndeplinește), E (îndeplinește prin echivalență) sau N (nu îndeplinește), menționând succint modalitatea și trimiterea la mijloacele de probă: adresa documentației, cont de test, pagina din ofertă. O simplă declarație pe propria răspundere nu este suficientă. Comisia de evaluare verifică fiecare cerință la evaluarea ofertelor și din nou la recepție (✓ confirmat, ✗ neconfirmat, — neverificat).",
+    "intro2": "Tabelul completat este parte integrantă din ofertă și devine anexă la contract. Acesta atestă conformitatea cu cerințele tehnice ale obiectului contractului (îndeplinit sau neîndeplinit); nu reprezintă un criteriu de atribuire. Pentru a puncta un grad superior de conformitate, includeți cerința printre criteriile de atribuire publicate inițial în documentația de atribuire (Directiva 2014/24/UE, articolul 67).",
+    "headers": [
+      "#",
+      "Cerință (pe scurt)",
+      "Ref. spec.",
+      "Solicitat?",
+      "I / E / N",
+      "Mijloace de probă: modalitate și trimitere",
+      "Verificat"
+    ],
+    "header_roles": [
+      "autoritate",
+      "ofertant",
+      "ofertant",
+      "comisie"
+    ],
+    "note": "Denumirile succinte de mai jos sintetizează cerințele complete din secțiunile MIM — în caz de dubiu, prevalează textul integral al cerinței.",
+    "download_label": "Formatul editabil al tabelului este disponibil la:",
+    "cross_note": "Ofertantul confirmă acceptarea clauzei contractuale (I / N)."
+  },
+  "tearout_short": {
+    "MIM0": [
+      "Date prelucrabile automat prin API web standard",
+      "Descriere deschisă a API (OpenAPI) la adresă stabilă",
+      "Filtrare după timp, locație, atribute",
+      "Abonare la modificări acolo unde este necesar",
+      "Erori HTTP standard, stocare temporară, limite rată"
+    ],
+    "MIM1": [
+      "Identificator unic și persistent per entitate",
+      "Interogarea ID-ului returnează datele + tipul",
+      "Maparea identificatorilor între sisteme diferite",
+      "Fără detalii interne ale furnizorului în ID-uri"
+    ],
+    "MIM2": [
+      "Modele de date standardizate oriunde este posibil",
+      "Modele documentate, unități de măsură explicite",
+      "Extensii ca profiluri, niciodată versiuni paralele",
+      "Serializare deschisă, validabilă prin schemă"
+    ],
+    "MIM3": [
+      "Seturi de date catalogate cu metadate standard",
+      "Licențe-tip și acorduri standardizate",
+      "Orașul controlează direct condițiile de acces"
+    ],
+    "MIM6": [
+      "Transfer criptat al datelor (TLS 1.3)",
+      "Autentificare standardizată (OAuth 2.0 / OIDC)",
+      "Acces pe bază de roluri + jurnale de audit",
+      "Aliniere dovedită la ISO/IEC 27001:2022"
+    ],
+    "MIM7": [
+      "Interfețe standardizate OGC",
+      "Formate geospațiale deschise",
+      "Sistem de coordonate specificat (EPSG)",
+      "ID-uri persistente pe elementele spațiale (vezi 1.1)"
+    ],
+    "MIM8": [
+      "Date și rezultate din geamăn accesibile prin API-uri",
+      "Modele documentate și apelabile prin interfețe",
+      "Formate standardizate de ieșire",
+      "Proveniența fluxurilor de lucru înregistrată"
+    ],
+    "CROSS": [
+      "Clauză ieșire: predare gratuită în formate deschise",
+      "Drepturile asupra datelor revin autorității",
+      "Fără costuri pentru accesul la datele proprii",
+      "Stabilitate API: versionat, preaviz 6 luni"
+    ]
+  },
+  "glossary": {
+    "title": "Mic glosar",
+    "terms": [
+      {
+        "t": "API",
+        "d": "O cale de comunicare prin care un program solicită date de la alt program — prin web, fără intervenție umană."
+      },
+      {
+        "t": "Model de date",
+        "d": "Structura convenită a datelor: ce câmpuri există, ce reprezintă și ce unități de măsură utilizează."
+      },
+      {
+        "t": "DCAT-AP",
+        "d": "Profil european de metadate pentru cataloage de date; asigură indexarea seturilor de date pe portalurile naționale și europene."
+      },
+      {
+        "t": "EPSG",
+        "d": "Registru de coduri numerice pentru sisteme de coordonate de referință (de ex. EPSG:4326 pentru WGS 84)."
+      },
+      {
+        "t": "Identificator",
+        "d": "O denumire permanentă atribuită unui activ (un stâlp, o clădire), utilizată unitar de toate sistemele."
+      },
+      {
+        "t": "Interoperabilitate",
+        "d": "Capacitatea sistemelor de la furnizori diferiți de a face schimb de date și de a le interpreta corect."
+      },
+      {
+        "t": "IRI",
+        "d": "Forma internațională a unui identificator web (similar unui URL, acceptând caractere non-ASCII). Folosit în MIM1 pentru entități."
+      },
+      {
+        "t": "LDT",
+        "d": "Local Digital Twin (Geamăn Digital Local): reprezentare digitală a unui oraș sau a unei părți din acesta, corelată cu date și simulări."
+      },
+      {
+        "t": "Prelucrabil automat",
+        "d": "Date structurate astfel încât un program să le poată procesa direct (JSON, CSV) — un tabel inclus într-un PDF nu îndeplinește cerința."
+      },
+      {
+        "t": "Metadate",
+        "d": "Date despre date: conținutul unui set de date, cine îl furnizează, frecvența actualizării și licența aplicabilă."
+      },
+      {
+        "t": "OAuth 2.0 / OIDC",
+        "d": "Standarde deschise pentru autentificare și acordarea accesului. OpenID Connect (OIDC) adaugă verificarea identității la OAuth 2.0."
+      },
+      {
+        "t": "OGC",
+        "d": "Open Geospatial Consortium: organizația care elaborează standarde pentru date și servicii spațiale (OGC API, WFS, SensorThings)."
+      },
+      {
+        "t": "Standard deschis",
+        "d": "O specificație tehnică accesibilă public, care poate fi implementată fără costuri de licențiere sau aprobări prealabile."
+      },
+      {
+        "t": "OpenAPI",
+        "d": "Format deschis pentru descrierea prelucrabilă automat a unui API web: adrese, parametri, răspunsuri."
+      },
+      {
+        "t": "Serializare",
+        "d": "Transpunerea datelor într-un format concret (de ex. JSON, XML) pentru a putea fi stocate sau transmise prin rețea."
+      },
+      {
+        "t": "TLS",
+        "d": "Protocolul care criptează datele în tranzit pe o rețea (stă la baza conexiunilor HTTPS)."
+      },
+      {
+        "t": "Dependență de furnizor",
+        "d": "Situația în care renunțarea la un furnizor implică costuri prohibitive — legate de date, formate sau penalități — făcând tranziția imposibilă."
+      },
+      {
+        "t": "Webhook / MQTT",
+        "d": "Două mecanisme prin care un sistem notifică direct modificările: un webhook apelează o adresă prestabilită, iar MQTT transmite mesaje abonaților."
+      }
+    ],
+    "more_title": "Unde puteți afla mai multe",
+    "links": {
+      "mims.oascities.org": "Specificația completă MIMs Plus, gestionată de OASC.",
+      "living-in.eu": "Mișcarea europeană pentru transformarea digitală a orașelor — declarația și contextul MIMs Plus.",
+      "smartdatamodels.org": "Colecția deschisă de modele de date standard (FIWARE, TM Forum, IUDX, OASC).",
+      "oascities.org/academy": "CITYxCITY Academy — cursuri create de orașe, dedicate personalului din administrația publică."
+    }
+  },
+  "back": {
+    "text": "Elaborat pe baza Specificației MIMs Plus 9.0 de către Open & Agile Smart Cities (mims.oascities.org). Conținutul specificației © OASC. Acest document este un ghid practic independent pentru achiziții municipale; în caz de discrepanțe, prevalează textul specificației oficiale.",
+    "credits": "Realizat cu instrumente deschise. Poate fi reutilizat și adaptat liber de către orașul dumneavoastră.",
+    "author": "Autorul ghidului: Marek Mráz"
+  },
+  "quote_translations": {
+    "MIM0 · R1.1": "Sistemele TREBUIE să permită extragerea datelor în cel puțin un format prelucrabil automat. Formatele pot fi specificate prin negocierea de conținut HTTP",
+    "MIM0 · R1.2": "Datele TREBUIE să poată fi extrase prin cel puțin un mecanism web standard",
+    "MIM0 · R1.3": "Mecanismul (mecanismele) de acces TREBUIE să fie descris(e) formal",
+    "MIM0 · R1.4": "Modelele de date utilizate de încărcături ar trebui să fie specificate (a se vedea MIM2)",
+    "MIM0 · R2.1": "Sistemele TREBUIE să furnizeze date printr-o interfață structurată și consecventă",
+    "MIM0 · R2.2": "Sistemele TREBUIE să suporte interogarea și/sau filtrarea de bază (de exemplu după timp, locație, atribute)",
+    "MIM0 · C2": "API-urile AR TREBUI să suporte extragerea datelor curente · API-urile AR TREBUI să suporte extragerea datelor istorice atunci când este cazul · API-urile AR TREBUI să suporte interogarea geospațială atunci când este cazul (a se vedea MIM7) · API-urile AR TREBUI să suporte abonarea la modificări atunci când este cazul · API-urile AR TREBUI să indice marca temporală a următoarei actualizări preconizate · API-urile AR TREBUI să suporte gestionarea explicită a versiunilor pentru punctele terminale · API-urile AR TREBUI să ofere exemple de încărcături sau interogări de test · API-urile AR TREBUI să suporte antete HTTP standard de stocare temporară · API-urile AR TREBUI să comunice starea limitelor de rată prin antete HTTP standard · API-urile AR TREBUI să returneze corpuri de eroare structurate · API-urile POT suporta răspunsuri parțiale sau proiecții ale interogărilor · API-urile POT expune un punct terminal standard de sănătate/stare a sistemului",
+    "MIM0 · R3.1": "Sistemele destinate cazurilor de utilizare care necesită notificări TREBUIE să ofere cel puțin un mecanism pentru a primi actualizări privind modificările de date",
+    "MIM0 · R3.2": "Sistemele POT suporta mecanisme multiple de abonare, în funcție de cazul de utilizare",
+    "MIM0 · C4": "Dacă sunt instituite astfel de restricții, acestea TREBUIE să respecte cerințele definite în MIM3 și MIM6, în mod specific: identificarea actorilor (MIM3.C5.R0), autorizarea și rolurile actorilor (MIM6.C1.R4), politicile la nivel de resursă de date (MIM6.C1.R4)",
+    "MIM1 · R1.1": "Fiecare entitate din cadrul sistemului are un identificator unic",
+    "MIM1 · R1.2": "Există o modalitate de a extrage informații despre o entitate prin căutarea identificatorului în cadrul unui sistem",
+    "MIM1 · R1.3": "dacă un identificator unic indică aceeași entitate în mai multe sisteme, este posibil să se deducă modalitatea de a căuta informații despre aceasta în fiecare dintre aceste sisteme",
+    "MIM1 · R1.4": "dacă mai mulți identificatori unici indică aceeași entitate, este posibilă maparea acestora",
+    "MIM1 · R1.5": "Este posibil să se creeze identificatori care sunt persistenți în timp",
+    "MIM1 · R2.1": "Există o modalitate de a extrage semantica unei entități, utilizând exclusiv identificatorul său unic",
+    "MIM1 · R2.2": "Această semantică este descrisă într-un format prelucrabil automat",
+    "MIM1 · R3.1": "Există o modalitate de a dereferenția o relație definită pe o entitate",
+    "MIM1 · R3.2": "Există o modalitate de a aplica o semantică suplimentară unei ontologii existente",
+    "MIM2 · R1.1": "Modelele de date utilizate pentru toate entitățile din orice sursă de date trebuie specificate explicit. Acestea trebuie să fie bine documentate și să aibă metadate descriptive, în care termenii utilizați trebuie să fie lipsiți de ambiguitate semantică. Pentru atributele referitoare la unități de măsură, formate de timp etc., unitățile, formatele etc. utilizate trebuie specificate explicit. Modelele de date ar trebui să fie catalogate astfel încât să poată fi ușor de găsit.",
+    "MIM2 · R1.2a": "Modelele de date utilizate trebuie să se bazeze (oriunde este posibil) pe modele de date standardizate recunoscute în mod obișnuit, astfel cum sunt enumerate mai jos",
+    "MIM2 · R1.2b": "Acolo unde nu este posibil să se utilizeze modele de date standardizate existente, se vor depune eforturi pentru a extinde modelele de date standardizate existente care sunt cel mai strâns aliniate sau pentru a defini altele noi, respectând cele mai bune practici și convențiile comunității sau ale organizației care definește modelele de date.",
+    "MIM2 · R1.3": "Modelele de date utilizate trebuie să suporte schimbul de date prin aplicarea cerințelor relevante din MIM-urile privind Accesarea datelor și Interconectarea datelor",
+    "MIM2 · R2.1": "Un model comun de date pentru fiecare entitate-cheie ar trebui dezvoltat pentru orice ecosistem de date. Acel model comun de date ar trebui să conțină toate câmpurile incluse în diferitele modele de date pentru acea entitate care sunt utilizate în cadrul acelui ecosistem de date. Fiecare model de date diferit utilizat în cadrul acelui ecosistem de date ar putea fi apoi transformat în modelul comun de date.",
+    "MIM2 · R3.1": "Fiecare model de date utilizat trebuie să aibă cel puțin un format definit de transport al datelor („serializare”) prelucrabil automat, care este deschis, disponibil public și independent de implementare.",
+    "MIM2 · R3.2": "Documentația formatului de transport al datelor ar trebui să fie suficientă pentru a permite crearea unei aplicații sau a unui interpretor neproprietar capabil să reconstruiască toate datele stocate într-un astfel de format de date.",
+    "MIM2 · R3.3": "Acolo unde sunt suportate formate multiple de transport al datelor pentru același model de date, acestea trebuie să reprezinte același conținut informațional în mod consecvent și fără pierderi de semnificație.",
+    "MIM2 · R3.4": "Reprezentarea ar trebui să suporte validarea folosind scheme publicate deschis, gramatici sau constrângeri echivalente prelucrabile automat, acolo unde există astfel de mecanisme de validare pentru formatul ales.",
+    "MIM2 · R4.1": "Profilurile de Aplicație care extind un model de date nu ar trebui să aibă impact asupra modelului deja existent și asupra utilizatorilor săi",
+    "MIM2 · R4.2": "Specializările sau extensiile introduse în Profilul de Aplicație al modelului ar trebui să fie bine documentate, separat de modelul de date de bază",
+    "MIM3 · RC1.1": "Orchestratorul unui ecosistem de date ar trebui să poată defini un model de guvernanță (de exemplu un regulament) care conturează regulile de membru, rolurile, responsabilitățile și obligațiile participanților la ecosistem, precum și principiile generale care guvernează schimbul de date între aceștia.",
+    "MIM3 · RC1.2": "Membrii care participă la un ecosistem de date ar trebui să cunoască modelul de guvernanță al acestuia și orice modificări aduse acestuia.",
+    "MIM3 · RC1.3": "Modelul de guvernanță ar trebui să fie ușor de înțeles de către toți participanții la ecosistem.",
+    "MIM3 · RC2.1": "Furnizorii de date sunt liberi să definească termenii și condițiile în care doresc să fie realizat schimbul datelor lor. (Notă: Înainte de a partaja resurse de date, furnizorii de date ar trebui să se asigure că dețin permisiunea adecvată din partea proprietarilor de date.)",
+    "MIM3 · RC2.2": "Termenii și condițiile pentru un schimb de date ar trebui să fie descrise clar și fără ambiguitate, astfel încât să fie ușor de înțeles pentru utilizatorii de date.",
+    "MIM3 · RC2.3": "Termenii și condițiile pentru un schimb de date ar trebui exprimate prin licențe de date sau acorduri de partajare a datelor bazate pe modele sau standarde bine definite.",
+    "MIM3 · RC2.4": "Termenii și condițiile ar trebui să fie în conformitate cu modelul general de guvernanță al ecosistemului de date și nu trebuie să intre în conflict cu acesta. (Notă: Un furnizor de date poate decide să nu participe la un ecosistem de date dacă modelul de guvernanță subiacent este prea restrictiv sau prea permisiv.)",
+    "MIM3 · RC3.1": "Orchestratorul unui ecosistem de date trebuie să poată verifica conformitatea participanților săi cu modelul de guvernanță subiacent.",
+    "MIM3 · RC3.2": "Furnizorii de date ar trebui să poată verifica dacă utilizarea datelor de către un utilizator de date respectă termenii și condițiile convenite anterior.",
+    "MIM3 · RC3.3": "Utilizatorii de date ar trebui să poată verifica dacă furnizarea datelor de către furnizorul de date respectă termenii și condițiile convenite anterior.",
+    "MIM3 · RC4.1": "Utilizatorii de date ar trebui să poată descoperi ce date sunt disponibile într-un ecosistem de partajare a datelor fără a avea cunoștințe prealabile despre acesta.",
+    "MIM3 · RC4.2": "Resursele de date ar trebui să fie descrise adecvat cu metadate, astfel încât utilizatorii de date să poată lua decizii fiabile cu privire la utilizarea lor preconizată ulterioară.",
+    "MIM3 · RC4.3": "Metadatele utilizate pentru a descrie resursele de date ar trebui să se bazeze pe formate de descriere bine definite și ușor de înțeles, care sunt atât lizibile pentru om, cât și prelucrabile automat.",
+    "MIM3 · RC5.1": "Participanții la ecosistem (de exemplu utilizatorii și furnizorii de date) ar trebui să se poată descoperi reciproc în cadrul unui ecosistem de partajare a datelor.",
+    "MIM3 · RC5.2": "Ar trebui să fie disponibile metadate suficiente despre fiecare participant la ecosistem pentru a constata nivelul de încredere relevant pentru schimbul de date.",
+    "MIM3 · RC5.3": "Furnizorii de date ar trebui să poată identifica în mod fiabil utilizatorii de date care doresc să le acceseze resursele de date și să le verifice metadatele înainte de a acorda accesul.",
+    "MIM3 · RC5.4": "Utilizatorii de date ar trebui să poată identifica furnizorii de date care partajează date într-un ecosistem de date înainte de a accesa sau utiliza acele date.",
+    "MIM3 · RC5.5": "Participanții la ecosistem pot de asemenea să aleagă să rămână anonimi dacă modelul de guvernanță al ecosistemului de partajare a datelor permite acest lucru. În acest caz, RC5.1 până la RC5.4 pot fi ignorate.",
+    "MIM3 · RC6.1": "Utilizatorii și furnizorii de date ar trebui să poată conveni asupra unui schimb de date și a termenilor și condițiilor asociate acestuia (de exemplu acceptarea termenilor, semnarea juridică a unui acord sau negocierea).",
+    "MIM3 · RC6.2": "Utilizatorii și furnizorii de date ar trebui să poată înceta un schimb de date convenit anterior, în conformitate cu termenii și condițiile asociate acestuia.",
+    "MIM3 · RC6.3": "Acolo unde este posibil, pot fi furnizate mijloace electronice pentru agrearea și încetarea unui schimb de date.",
+    "MIM3 · RC7.1": "Utilizatorii de date ar trebui să își poată exprima interesul pentru resurse de date indisponibile în prezent în ecosistemul de partajare a datelor.",
+    "MIM3 · RC7.2": "Furnizorii de date ar trebui să poată primi cererile formulate de utilizatorii de date pentru noi resurse de date.",
+    "MIM6 · R1.1": "TREBUIE să fie stabilite și implementate reguli pentru a controla accesul fizic și logic la informații și la alte active asociate, pe baza cerințelor de afaceri și de securitate a informației. (ISO 27001 5.15 Controlul accesului)",
+    "MIM6 · R1.2": "Alocarea și gestionarea informațiilor de autentificare TREBUIE să fie controlate printr-un proces de management, inclusiv consilierea personalului privind manipularea corespunzătoare a informațiilor de autentificare. (ISO 27001 5.17: Informații de autentificare)",
+    "MIM6 · R1.3": "Drepturile de acces la informații și la alte active asociate TREBUIE să fie acordate, revizuite, modificate și revocate în conformitate cu politica specifică a organizației și cu regulile privind controlul accesului. (ISO 27001 5.18: Drepturi de acces)",
+    "MIM6 · R2.1": "Regulile pentru utilizarea eficientă a criptografiei, inclusiv gestionarea cheilor criptografice, TREBUIE să fie definite și implementate. (ISO 27001 8.24 Utilizarea criptografiei)",
+    "MIM6 · R3.1": "Tehnologiile și procedurile de autentificare securizată trebuie implementate pe baza restricțiilor de acces la informații și a politicii specifice privind controlul accesului. (ISO 27001 8.5 Autentificare securizată)",
+    "MIM6 · M1.1": "Protocolul Transport Layer Security (TLS), versiunea 1.3",
+    "MIM6 · M1.2": "Cadrul de autorizare OAuth 2.0",
+    "MIM6 · M1.3": "OpenID Connect 1.0, nivel de identitate pentru autentificare peste OAuth 2.0",
+    "MIM6 · M1.4": "OIDC4VCI / OIDC4VP, OpenID pentru emiterea și prezentarea de credențiale verificabile",
+    "MIM7 · R1.1": "Datele geospațiale trebuie expuse printr-o interfață de servicii web bazată pe standarde.",
+    "MIM7 · R2.1": "Datele geospațiale trebuie codificate utilizând standarde deschise. Se recomandă utilizarea standardelor relevante de la OGC și BuildingSMART International.",
+    "MIM7 · R3.1": "Toate seturile de date utilizate pentru a oferi informații suplimentare despre contextul acoperit de datele geospațiale trebuie să respecte MIM1 și MIM2.",
+    "MIM7 · R4.1": "Identificatori unici și persistenți trebuie utilizați pentru a identifica instanțe particulare ale oricărei entități utilizate în seturile de date. (A se vedea MIM1: Interconectarea datelor.)",
+    "MIM7 · R5.1": "Sistemele de Coordonate de Referință (CRS) trebuie să respecte standardele și trebuie furnizate informații cu privire la standardul utilizat (de exemplu EPSG:4326, EPSG:3857). Aceasta include numărul EPSG sau numărul WGS, împreună cu informații despre orice variație bazată pe sisteme naționale precum LKS-92 din Letonia, astfel încât datele să poată fi transformate într-un CRS comun. (Notă: În cadrul UE, pentru datele geospațiale este obligatoriu să se utilizeze metadate conforme cu Directiva INSPIRE, inclusiv metadatele necesare pentru a descrie informațiile CRS.)",
+    "MIM8 · R1.1": "LDT trebuie să asigure accesul la rezultatele simulărilor și la intrările modelelor de calcul acolo unde acestea sunt necesare ca parte a fluxurilor de lucru LDT.",
+    "MIM8 · R1.2": "LDT ar trebui să facă o distincție clară între datele sursă brute, datele transformate pregătite pentru fluxul de lucru, intrările modelelor și rezultatele modelelor.",
+    "MIM8 · C2": "Această capabilitate se bazează pe MIM3 (Schimbul de date) pentru schimbul de date.",
+    "MIM8 · R3.1": "Modelul ar trebui să ofere metadate standard de model, inclusiv o descriere a metodelor și a parametrilor săi, precum și a parametrilor de date (fie prin valoare, fie prin referință). În acest scop ar trebui utilizate standarde comune de metadate.",
+    "MIM8 · R3.2": "Modelul trebuie să expună sau să poată fi apelat printr-o interfață documentată, de preferință utilizând un API standardizat cunoscut. Setul de date care formează rezultatul modelului trebuie descris (la nivel de date).",
+    "MIM8 · R3.3": "Utilizarea fiabilă, de încredere și etică a metodelor inovatoare (LLM, IA agentică etc.) ar trebui să fie garantată. Părtinirea ar trebui minimizată acolo unde este cazul. Metodele utilizate pentru a garanta acest lucru ar trebui descrise.",
+    "MIM8 · R3.4": "Modelul trebuie să poată accesa date în numele utilizatorului final sau al organizației. A se vedea MIM3",
+    "MIM8 · R3.5": "Pentru ca datele să fie utilizate în modele de IA, proveniența și încrederea ar trebui să fie garantate. În unele cazuri, o sursă autorizată, cum ar fi o agenție guvernamentală, trebuie să fie indicată.",
+    "MIM8 · R4.1": "LDT suportă fluxuri de lucru care conectează sursele de date, transformările de date, execuția modelelor, procesele de simulare și rezultatele.",
+    "MIM8 · R4.2": "LDT înlănțuie pașii fluxului de lucru, unde rezultatul unui pas poate fi utilizat ca intrare pentru un altul.",
+    "MIM8 · R4.3": "LDT monitorizează starea execuției fluxurilor de lucru, inclusiv procesele finalizate, eșuate și întrerupte.",
+    "MIM8 · R4.4": "LDT înregistrează proveniența fluxurilor de lucru, inclusiv seturile de date utilizate (inclusiv versiunea, cu marcaj temporal), modelele executate, parametrii selectați și rezultatele generate.",
+    "MIM8 · R5.1": "LDT furnizează metadate care explică ce anume este vizualizat, inclusiv marca temporală, acoperirea spațială, sursa datelor și ipotezele privind scenariile și variantele, acolo unde este relevant.",
+    "MIM8 · R5.2": "LDT suportă diferite tipuri de vizualizare interactivă, cum ar fi hărți 2D, scene 3D, panouri de control, rapoarte sau vizualizări destinate publicului.",
+    "MIM8 · R6.1": "LDT ar trebui să documenteze discrepanțele semantice nerezolvate, ipotezele sau mapările care pot afecta interpretarea, reutilizarea sau compararea rezultatelor.",
+    "MIM8 · M1": "Accesul la resursele LDT bazat pe API",
+    "MIM8 · M2": "Formate standardizate de date și de rezultate",
+    "MIM8 · M3": "Model-as-a-Service",
+    "MIM8 · M4": "Orchestrarea fluxurilor de lucru LDT",
+    "MIM8 · M5": "Acces la rezultate și vizualizări multiple",
+    "MIM1 · §3.1": "IRI este tratat drept identificatorul canonic în toate sistemele din aval; implementările NU TREBUIE să genereze IRI-uri care includ detalii volatile de implementare, cum ar fi ID-uri de rânduri din baze de date sau nume de gazdă ale serverelor.",
+    "MIM6 · 8.15": "Jurnalizarea. Jurnalele care înregistrează activitățile, excepțiile, erorile și alte evenimente relevante trebuie generate, stocate, protejate și analizate."
+  },
+  "capability_translations": {
+    "MIM0 · C1": "Datele prelucrabile automat pot fi extrase prin intermediul web-ului",
+    "MIM0 · C2": "Accesul este structurat și interogabil",
+    "MIM0 · C2 best practice": "Bune practici suplimentare de luat în considerare:",
+    "MIM0 · C3": "Modificările din date pot fi recepționate prin abonare",
+    "MIM0 · C4": "Accesul la informații poate fi restricționat",
+    "MIM1 · C1": "Entitățile sunt identificate utilizând identificatori unici",
+    "MIM1 · C2": "Entitățile pot fi tipizate",
+    "MIM1 · C3": "Entitățile pot fi (de)referențiate",
+    "MIM2 · C1": "Toate entitățile incluse în sursele de date sunt descrise utilizând modele de date consecvente pentru a permite interoperabilitatea pentru aplicații și sisteme",
+    "MIM2 · C2": "Diferitele modele de date pentru aceeași entitate care sunt utilizate în cadrul unui ecosistem comun de partajare a datelor ar trebui să poată fi transformate cu ușurință într-un model comun de date",
+    "MIM2 · C3": "Orice date și metadatele asociate acestora pot fi partajate în formate deschise, standardizate, de transport al datelor, astfel încât datele să poată fi schimbate și interpretate consecvent de diferite instrumente și implementări",
+    "MIM2 · C4": "Când este util, ar trebui să fie posibilă crearea de „Profiluri de Aplicație” pentru un model de date, astfel încât atributele specifice unui caz de utilizare să poată fi adăugate sau specificate fără a modifica modelul de date subiacent",
+    "MIM3 · C1": "Regulile de guvernanță pentru ecosistemul de partajare a datelor pot fi definite",
+    "MIM3 · C2": "Termenii și condițiile pentru partajarea datelor pot fi definiți",
+    "MIM3 · C3": "Conformitatea cu termenii și condițiile de partajare a datelor poate fi validată",
+    "MIM3 · C4": "Resursele de date disponibile pot fi descoperite",
+    "MIM3 · C5": "Participanții la ecosistem pot fi descoperiți",
+    "MIM3 · C6": "Schimbul de date poate fi convenit",
+    "MIM3 · C7": "Pot fi solicitate date noi, indisponibile în prezent",
+    "MIM6 · C1": "Datele sunt accesibile doar utilizatorilor care ar trebui să aibă acces la ele",
+    "MIM6 · C2": "Datele accesate de utilizatori nu au fost modificate",
+    "MIM6 · C3": "Datele accesate de utilizatori provin dintr-o sursă verificată",
+    "MIM6 · M1": "Mecanism candidat",
+    "MIM7 · C1": "Orașele și comunitățile pot transfera ușor date geospațiale între sisteme IT interne și externe (inclusiv legate de IoT)",
+    "MIM7 · C2": "Orașele și comunitățile pot integra date geospațiale 2D și 3D provenite dintr-o varietate de surse, de exemplu geodate și modele de informații despre clădiri (BIM), și pot partaja acele date în interiorul și între ele într-un mod interoperabil",
+    "MIM7 · C3": "Orașele și comunitățile pot integra date geospațiale cu alte date care pot oferi informații suplimentare despre context",
+    "MIM7 · C4": "Orașele și comunitățile au o modalitate consecventă și persistentă de a descrie instanțe individuale ale tuturor elementelor, lucrurilor sau entităților incluse în sursele de date geospațiale",
+    "MIM7 · C5": "Sistemele de Coordonate de Referință (CRS) utilizate în partajarea datelor sunt ușor transformabile într-un CRS comun",
+    "MIM8 · C1": "Asigurarea accesului la seturile de date utilizate în cadrul LDT, inclusiv date statice, în timp real și de simulare, precum și modele de calcul",
+    "MIM8 · C2": "Schimbul de date cu sisteme externe și alte LDT-uri utilizând interfețe interoperabile",
+    "MIM8 · C3": "Reutilizarea modelelor deterministe sau de IA în diferite domenii, comunități, cazuri de utilizare și/sau LDT-uri",
+    "MIM8 · C4": "Coordonarea și gestionarea datelor, a modelelor și a fluxurilor de procesare în cadrul unui LDT (intra-LDT) și între LDT-uri (inter-LDT)",
+    "MIM8 · C5": "Furnizarea de vizualizări multiple ale datelor și rezultatelor (de exemplu 2D, 3D, panouri de bord) pornind de la date și modele subiacente comune, pentru interacțiune și comparare",
+    "MIM8 · C6": "Asigurarea faptului că datele schimbate (și rezultatele simulărilor) în cadrul și între LDT-uri pot fi interpretate consecvent prin semantică partajată sau mapată și proveniență clară",
+    "MIM8 · M": "Mecanisme (în curs de dezvoltare activă)",
+    "MIM1 · M1": "Mecanismul 1, secțiunea 3.1: Identificarea entităților cu IRI-uri unice la nivel global",
+    "MIM6 · P": "Condiții prealabile și ulterioare (bazate pe ISO 27001 Anexa A): controlul la care face referire acest ghid"
+  },
+  "spec_link_label": "Specificația completă:"
+}

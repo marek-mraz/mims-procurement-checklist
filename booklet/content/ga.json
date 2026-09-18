@@ -1,0 +1,814 @@
+{
+  "cover": {
+    "title": "Seicliosta Soláthair · a úsáideann na Meicníochtaí · Idir-inoibritheachta Íosta (MIMs)",
+    "subtitle": "Cad le cur i dtairiscint ionas go gcoimeádfaidh do chathair a cuid sonraí",
+    "tagline": "Do MIMs Plus 9.0 le OASC",
+    "footer": "D'oifigigh soláthair, do bhainisteoirí tionscadail agus do Phríomhoifigigh Faisnéise de chuid bardais Eorpacha"
+  },
+  "why": {
+    "title": "Cén fáth an leabhrán seo",
+    "paras": [
+      "Gach bliain, ceannaíonn cathracha bogearraí: córais pháirceála, ardáin braiteoirí, tairseacha léarscáile, cúplaí digiteacha. Go rómhinic, bíonn na sonraí a bhailíonn na córais sin faoi ghlas iontu féin. Nuair a thagann deireadh leis an gconradh, imíonn na sonraí — ar íocadh as le hairgead poiblí — leis an soláthraí, nó fágtar i bhformáid nach féidir le haon duine eile a léamh.",
+      "Ní gá go mbeadh sé mar seo. Déanann na Meicníochtaí Idir-inoibritheachta Íosta (MIMs), atá á gcothabháil ag Open & Agile Smart Cities (OASC) agus formhuinithe tríd an ngluaiseacht Eorpach living-in.eu, cur síos ar na híoscheanglais theicniúla a choimeádann do chuid sonraí oscailte, ath-inúsáidte agus neodrach ó thaobh díoltóra de. Tá siad d'aon ghnó beag: ní ailtireacht mhór atá iontu, ach na fíorbheagán rudaí nach mór a bheith fíor ionas gur féidir le córais caint le chéile.",
+      "Ní gá duit a bheith i d'innealtóir chun iad a úsáid. Déanann gach seicliosta míreanna seicliosta i ngnáthfhocail de cheann amháin de na MIMs ar féidir leat a chóipeáil isteach i dtairiscint, mar aon leis an gcúis a gcosnaíonn gach ceann díobh thú. Díreach i ndiaidh an tseicliosta aimsíonn tú gach ceanglas de chuid an MIM sin, focal ar fhocal, ionas gur féidir le do chomhghleacaithe teicniúla agus le do thairgeoirí na sonraí a sheiceáil.",
+      "Cathracha a éilíonn na MIMs, ceannaíonn siad uair amháin agus athúsáideann siad go minic: cothaíonn sonraí cháilíocht an aeir deais na scoile, cothaíonn fardal na soilse sráide an plean fuinnimh, agus tosaíonn an chéad soláthraí eile san áit ar fhág an soláthraí deiridh as. Sin a chiallaíonn idir-inoibritheacht go praiticiúil — agus táthar ag súil leis níos mó ná riamh i dtionscadail arna maoiniú ag an AE."
+    ],
+    "quote": {
+      "text": "Cumasaíonn na meicníochtaí idir-inoibritheachta íosta (MIMs) leibhéal íosta ach leordhóthanach idir-inoibritheachta do shonraí, do chórais agus do sheirbhísí go sonrach i gcomhthéacs réiteach cathrach cliste. · Is iad an lucht féachana beartaithe don doiciméad seo: · 1. Soláthraithe réiteach ar mian leo a chinntiú go bhfuil a gcuid réiteach idir-inoibritheach le réitigh eile agus go gceadaíonn siad malartú sreabhach sonraí laistigh de chomhthéacs Cathracha agus Pobail Chliste. · 2. Soláthróirí ar mian leo réitigh a sholáthar a bheidh oiriúnach don todhchaí agus a cheadaíonn comhtháthú cost-éifeachtach laistigh d'ailtireacht Theicneolaíocht na Faisnéise agus na Cumarsáide (TFC) atá ann cheana do Chathracha agus Pobail Chliste."
+    },
+    "policy": {
+      "title": "Conas a luíonn na MIMs le dlí an AE",
+      "intro": "Is sonraíocht theicniúil iad na MIMs, ní dlí. Díríonn siad sa treo céanna le rialacha an AE a bhaineann cheana féin le sonraí poiblí agus seirbhísí digiteacha:",
+      "items": [
+        {
+          "name": "Treoir maidir le Soláthar Poiblí",
+          "ref": "Treoir 2014/24/AE, Airteagal 42",
+          "text": "féadfaidh sonraíochtaí teicniúla tagairt do chaighdeáin, i gcónaí le “nó a chomhionann”; mar riail ghinearálta ní fhéadfaidh siad déanamh ná táirge ar leith a ainmniú."
+        },
+        {
+          "name": "An Gníomh Sonraí",
+          "ref": "Rialachán (AE) 2023/2854",
+          "text": "rochtain ar shonraí ó tháirgí nasctha, agus aistriú idir soláthraithe néil gan glasáil isteach."
+        },
+        {
+          "name": "An Gníomh um Eoraip Idir-inoibritheach",
+          "ref": "Rialachán (AE) 2024/903",
+          "text": "measúnuithe idir-inoibritheachta do sheirbhísí poiblí digiteacha trasteorann, agus athúsáid réiteach oscailte."
+        },
+        {
+          "name": "An Treoir maidir le Sonraí Oscailte",
+          "ref": "Treoir (AE) 2019/1024",
+          "text": "tacair shonraí ardluacha arna bhfoilsiú saor in aisce, meaisín-inléite, trí APIanna."
+        },
+        {
+          "name": "Treoir NIS2",
+          "ref": "Treoir (AE) 2022/2555",
+          "text": "buntreoir chibearshlándála; cinneann an dlí náisiúnta cé chomh fada a chlúdaíonn sí an riarachán áitiúil."
+        },
+        {
+          "name": "RGCS",
+          "ref": "Rialachán (AE) 2016/679",
+          "text": "sonraí pearsanta i gcórais chathrach (páirceáil, ceamaraí, soghluaisteacht)."
+        },
+        {
+          "name": "An Gníomh um Intleacht Shaorga",
+          "ref": "Rialachán (AE) 2024/1689",
+          "text": "rialacha do chórais intleachta saorga; ábhartha do mhúnlaí IS i gcúplaí digiteacha."
+        }
+      ],
+      "note": "Mar threoir amháin. Seiceáil conas a thrasuíodh gach gníomh i do thír féin."
+    }
+  },
+  "howto": {
+    "title": "Conas an leabhrán seo a úsáid",
+    "steps": [
+      {
+        "name": "Ullmhaigh",
+        "text": "Léigh na seacht seicliosta. Cuir tic leis na cinn a bhaineann leis an méid atá á cheannach agat. Teastaíonn MIM0, MIM1, MIM2 agus MIM6 ó fhormhór na dtairiscintí; cuir MIM3 leis nuair a roinntear sonraí le tríú páirtithe nó trí thairseach sonraí, MIM7 d'aon rud a bhfuil léarscáil aige, MIM8 do chúplaí digiteacha."
+      },
+      {
+        "name": "Tairg",
+        "text": "Cóipeáil na míreanna seicliosta a bhfuil tic curtha leo isteach i do cheanglais. Tá gach mír scríofa mar abairt is féidir leat a ghreamú. Cuir na clásail thrasghearrtha leis: is beag a chosnaíonn siad agus seachnaíonn siad glasáil isteach."
+      },
+      {
+        "name": "Déan meastóireacht",
+        "text": "Iarr ar thairgeoirí a léiriú, seachas a ghealladh (féach an clásal faoin ainm sin). Fíoraigh comhlíonadh i gcoinne an tábla comhlíonta a líon an tairgeoir."
+      },
+      {
+        "name": "Seachad",
+        "text": "Ag am an ghlactha, atástáil gach mír a chuir tú tic léi. Ceanglas nach ndéantar a thástáil ag am an tseachadta, ní raibh sé ina cheanglas riamh i ndáiríre."
+      }
+    ],
+    "legend_title": "Na luachana sonraíochta a léamh",
+    "legend": {
+      "SHALL / MUST": {
+        "term": "NÍ MÓR (SHALL / MUST)",
+        "text": "éigeantach. Ní chomhlíonann an córas gan é."
+      },
+      "MUST NOT": {
+        "term": "NÍ CEADMHACH (MUST NOT)",
+        "text": "toirmiscthe. Córas a dhéanann é, ní chomhlíonann sé."
+      },
+      "SHOULD": {
+        "term": "BA CHÓIR (SHOULD)",
+        "text": "molta go láidir. Teastaíonn cúis mhaith scríofa le diallais."
+      },
+      "MAY": {
+        "term": "FÉADFAIDH (MAY)",
+        "text": "roghnach. Deas a bheith ann, ní theastaíonn sé riamh."
+      },
+      "CAN": {
+        "term": "IS FÉIDIR (CAN)",
+        "text": "féidearthacht, ní ceanglas. Deir sé cad is féidir agus ní chuireann sé d'oibleagáid ar dhuine ar bith."
+      }
+    },
+    "note": "Tá tagairt bheag ar gach mír seicliosta ar nós → MIM0 R1.1. Sin an ceanglas i MIMs Plus 9.0 óna dtagann sé; díreach i ndiaidh an tseicliosta aimsíonn tú gach ceanglas de chuid an MIM sin focal ar fhocal. Ní shainíonn ach MIM0 na heochairfhocail: tá tábhacht leo nuair a scríobhtar i litreacha móra iad, coinbhinsiún IETF RFC 2119 agus RFC 8174 (tagann IS FÉIDIR (CAN) ó Threoracha ISO/IEC, Cuid 2). Níl aon sainmhíniú ag na MIMs eile: scríobhann MIM6 SHALL i litreacha móra den chuid is mó, scríobhann MIM2, MIM3, MIM7 agus MIM8 shall, should agus must i gcás íochtair, agus ní úsáideann MIM1 iad ach i gcur síos ar mheicníocht (MUST NOT i rannán 3.1). Léann an leabhrán seo na focail cháis íochtair ar an mbealach céanna; féadfaidh tairgeoir iad a léamh ar bhealach níos scaoilte.",
+    "legend_note": "Deir na míreanna seicliosta “ní mór” fiú nuair nach ndéanann an tsonraíocht ach moladh (ba chóir) nó nuair a liostaíonn sí meicníocht is iarrthóir. Sin cinneadh an údaráis chonarthaigh."
+  },
+  "glance": {
+    "title": "Seacht MIM agus trí uirlis",
+    "intro": "Seacht meicníocht bheaga, sprioc amháin: fanann do chuid sonraí agat féin, agus is féidir le do chórais caint le chéile.",
+    "items": {
+      "MIM0": {
+        "name": "Rochtain ar Shonraí",
+        "q": "An féidir linn ár gcuid sonraí a fháil amach?",
+        "d": "Is féidir sonraí a aisghabháil trí APIanna caighdeánacha gréasáin, i bhformáidí meaisín-inléite."
+      },
+      "MIM1": {
+        "name": "Idirnascadh Sonraí",
+        "q": "An bhfuil ainm buan ar gach rud?",
+        "d": "Tá aitheantóir uathúil buan ag gach braiteoir, lampa agus foirgneamh."
+      },
+      "MIM2": {
+        "name": "Léiriú Sonraí",
+        "q": "An labhraímid teanga choiteann?",
+        "d": "Leanann sonraí samhlacha sonraí caighdeánacha doiciméadaithe le haonaid shainráite."
+      },
+      "MIM3": {
+        "name": "Malartú Sonraí",
+        "q": "An féidir linn comhroinnt faoi théarmaí soiléire?",
+        "d": "Déantar tacair shonraí a chatalógú agus a roinnt faoi theimpléid ceadúnais agus faoi rialachas soiléir."
+      },
+      "MIM6": {
+        "name": "Slánú Sonraí",
+        "q": "An bhfuil ár gcuid sonraí sábháilte?",
+        "d": "Aistriú criptithe, logálacha isteach caighdeánacha, rochtain rólbhunaithe, logaí iniúchta."
+      },
+      "MIM7": {
+        "name": "Sonraí Geospásúla",
+        "q": "An oibríonn sé ar léarscáil?",
+        "d": "Úsáideann sonraí spásúla comhéadain OGC, formáidí oscailte agus córais chomhordanáidí dearbhaithe."
+      },
+      "MIM8": {
+        "name": "Cúplaí Digiteacha Áitiúla",
+        "q": "An féidir lenár gcúpla digiteach fás?",
+        "d": "Fanann sonraí, samhlacha agus torthaí an chúpla inrochtana, doiciméadaithe agus ath-inúsáidte."
+      }
+    },
+    "numbering_note": "Maidir leis an uimhriú: sonraíonn MIMs Plus 9.0 seacht meicníocht, uimhrithe 0, 1, 2, 3, 6, 7 agus 8. Baineann MIM4 (sonraí pearsanta) agus MIM5 (IS chóir) le leaganacha níos luaithe de chuid OASC agus ní cuid de 9.0 iad. Níl aon rud ar iarraidh ón leabhrán seo.",
+    "tools_title": "Uirlisí do do thairiscint",
+    "tools": {
+      "clauses": {
+        "name": "Clásail thrasghearrtha tairisceana",
+        "q": "Cad a bhaineann le gach conradh?",
+        "d": "Scoir, cearta sonraí, cobhsaíocht API."
+      },
+      "example": {
+        "name": "Sampla: braiteoirí cháilíocht an aeir",
+        "q": "Cén chuma atá air go praiticiúil?",
+        "d": "Cad a théann cén áit, agus téacs samplach le greamú."
+      },
+      "table": {
+        "name": "Tábla comhlíonta",
+        "q": "Conas a chruthaíonn an tairgeoir é?",
+        "d": "Líonta ag an tairgeoir, fíoraithe ag an gcoiste, i gceangal leis an gconradh."
+      }
+    }
+  },
+  "nav": {
+    "overview": "Forbhreathnú",
+    "clauses": "Clásail",
+    "example": "Sampla",
+    "table": "Tábla comhlíonta",
+    "glossary": "Gluais",
+    "list": "Seicliosta",
+    "back": "ar ais go dtí an seicliosta",
+    "page": "lch."
+  },
+  "spec_title": "Cad a deir an tsonraíocht",
+  "spec_leadin": "Gach ceanglas de chuid an MIM seo, focal ar fhocal ó MIMs Plus 9.0:",
+  "spec_translation_note": "Níl an tsonraíocht ar fáil ach i mBéarla: is aistriúchán neamhoifigiúil é an téacs Gaeilge le húdar an leabhráin seo; tá an bunleagan Béarla faoi ina cheangal dlí.",
+  "why_title": "Cén fáth a bhfuil tábhacht leis",
+  "flags_title": "Bratacha dearga",
+  "mims": {
+    "MIM0": {
+      "name": "Rochtain ar Shonraí",
+      "question": "An féidir linn ár gcuid sonraí a fháil amach?",
+      "intro": "Seo an bhunchloch. Mura féidir le sonraí an córas a fhágáil trí chomhéadan caighdeánach, níl i ngach rud eile sa leabhrán seo ach teoiric. Iarrann MIM0 rud amháin ar gach córas a cheannaíonn tú: ní mór na sonraí a bheith inrochtana, i bhfoirm is féidir le meaisíní a léamh, tríd an ngnáthghréasán.",
+      "items": [
+        {
+          "text": "Is féidir na sonraí go léir a bhailíonn nó a tháirgeann an córas a aisghabháil i bhformáid mheaisín-inléite amháin ar a laghad (m.sh. JSON, CSV) thar API caighdeánach gréasáin.",
+          "why": "Féadfaidh do chéad chonraitheoir eile — nó d'fhoireann féin — na sonraí a úsáid gan cead a iarraidh ar an díoltóir."
+        },
+        {
+          "text": "Déantar cur síos foirmiúil ar an API i ndoiciméad oscailte meaisín-inléite (mar shampla OpenAPI) a fhoilsítear ag seoladh cobhsaí.",
+          "why": "Is féidir le haon fhorbróir ceangal a dhéanamh gan “ceardlann chomhtháthaithe” le pá a íoc as."
+        },
+        {
+          "text": "Is féidir sonraí a scagadh de réir ama, suímh agus tréithe go díreach san API.",
+          "why": "Faigheann tú a bhfuil uait, ní dumpáil iomlán gach oíche."
+        },
+        {
+          "text": "Nuair a bhíonn gá le sonraí beo don chás úsáide, féadfaidh tomhaltóirí liostáil d'athruithe (crúcaí gréasáin, MQTT nó a leithéid) in ionad vótaíochta leanúnaí.",
+          "why": "Bíonn deaisanna agus foláirimh fíor-ama indéanta agus saor."
+        },
+        {
+          "text": "Úsáideann earráidí, taisceadh agus teorainneacha ráta gnáthchoinbhinsiúin HTTP agus tá siad doiciméadaithe.",
+          "why": "Teipeann ar chomhtháthuithe go feiceálach agus go h-inréitithe, ní go ciúin."
+        }
+      ],
+      "why_panel": [
+        "Fanann sonraí ar íoc tú astu inúsáidte tar éis don chonradh dul in éag.",
+        "Tógann seirbhísí nua ar shean-sonraí in ionad tosú ón tús.",
+        "Titeann costais chomhtháthaithe do gach tionscadal a leanann."
+      ],
+      "red_flags": [
+        "“Easpórtáil sonraí ar iarraidh tríár bhfoireann tacaíochta.”",
+        "“Tá an API ar fáil mar mhodúl breiseán ar leith le híoc as.”",
+        "Praghsáil in aghaidh an iarratais ar shonraí na cathrach féin (féach an clásal “Gan aon táillí in aghaidh an tsuíocháin / an iarratais”)."
+      ]
+    },
+    "MIM1": {
+      "name": "Idirnascadh Sonraí",
+      "question": "An bhfuil ainm buan ar gach rud?",
+      "intro": "Tá cathair lán de rudaí: lampaí, píopaí, foirgnimh, spásanna páirceála. Tagann córais agus imíonn siad, ach fanann na rudaí. Éilíonn MIM1 go bhfaigheann gach rud ainm — aitheantóir — a mhaireann níos faide ná na bogearraí a thaifead ar dtús é, ionas go maireann a stair agus a naisc le sonraí eile tar éis gach imirce.",
+      "items": [
+        {
+          "text": "Tá aitheantóir uathúil buan ag gach eintiteas (braiteoir, lampa, foirgneamh, spás páirceála…) nach n-athraíonn nuair a chuirtear bogearraí nua ina n-áit.",
+          "why": "Maireann an stair agus naisc thar chórais tar éis an tsoláthraí."
+        },
+        {
+          "text": "Is féidir an t-aitheantóir a chuardach chun sonraí an eintitis agus a bhrí (cineál) a aisghabháil ar bhealach meaisín-inléite.",
+          "why": "Féadfaidh córais eile an nasc a leanúint go huathoibríoch."
+        },
+        {
+          "text": "Nuair a bhíonn an rud fíorsaoil céanna i láthair i roinnt córas, is féidir aitheantóirí a mhapáil ar a chéile.",
+          "why": "Is féidir a chruthú gurb é foirgneamh an GIS agus foirgneamh an chórais fuinnimh an foirgneamh céanna go díreach."
+        },
+        {
+          "text": "Ní chuimsíonn aitheantóirí mionsonraí inmheánacha an díoltóra (IDanna sraithe bunachair sonraí, ainmneacha freastalaí).",
+          "why": "Seachas sin faigheann na hIDanna bás leis an gconradh."
+        }
+      ],
+      "why_panel": [
+        "Fanann deich mbliana de thomhais ceangailte leis an bpost soilse ceart.",
+        "Stopann ranna de chúig chlár contrártha den tsócmhainn chéanna a choinneáil.",
+        "Bíonn nascadh tacar sonraí ina fhiosrúchán, ní ina thionscadal comhairleoireachta."
+      ],
+      "red_flags": [
+        "“Tá IDanna inmheánach dár n-ardán.”",
+        "Déantar aitheantóirí a athghiniúint ar gach imirce sonraí."
+      ]
+    },
+    "MIM2": {
+      "name": "Léiriú Sonraí",
+      "question": "An labhraímid teanga choiteann?",
+      "intro": "Is féidir le dhá chóras JSON a easpórtáil agus gan tuiscint a bheith acu ar a chéile fós. Baineann MIM2 le brí: úsáid a bhaint as samhlacha sonraí comhroinnte doiciméadaithe — le haonaid agus formáidí sainráite — ionas go gciallaíonn “teocht”, “spás páirceála” nó “cáilíocht an aeir” an rud céanna i ngach córas atá agat.",
+      "items": [
+        {
+          "text": "Úsáideann sonraí samhlacha sonraí caighdeánacha a aithnítear go coitianta cibé áit a bhfuil siad ann (m.sh. Smart Data Models, SAREF, ISO/IEC 5087); tá údar scríofa le diallais.",
+          "why": "Cumascann sonraí ó dhá sholáthraí gan tionscadal aistriúcháin."
+        },
+        {
+          "text": "Déantar gach samhail sonraí atá in úsáid a dhoiciméadú go sainráite, agus aonaid tomhais agus formáidí dáta/ama luaite.",
+          "why": "Níl aon mhaith le “Teocht: 23” mura scríobh aon duine síos °C i gcoinne °F."
+        },
+        {
+          "text": "Seachadtar síntí mar phróifílí/breiseanna doiciméadaithe ar bharr an tsamhail chaighdeánaigh — riamh mar ghabhal príobháideach modhnaithe.",
+          "why": "Fanann tú comhoiriúnach leis an bpobal agus le nuashonruithe amach anseo."
+        },
+        {
+          "text": "Tá srathú oscailte amháin ar a laghad ag gach samhail is féidir a bhailíochtú de réir scéime (m.sh. JSON le JSON Schema).",
+          "why": "Is féidir sonraí atá ag teacht isteach a sheiceáil go huathoibríoch ag an doras."
+        }
+      ],
+      "why_panel": [
+        "Léann deais amháin sonraí ó go leor soláthraithe gan oiriúnóirí.",
+        "Tuigeann uirlisí cathracha eile do chuid sonraí — agus tuigeann do chuid uirlisí a gcuid sonraí siúd.",
+        "Gabhann bailíochtú uathoibríoch sonraí briste sula leathnaíonn siad."
+      ],
+      "red_flags": [
+        "“Tá ár samhail sonraí dílseánaigh níos saibhre ná an caighdeán.”",
+        "Doiciméadú ar fáil faoi chomhaontú neamhnochtana (NDA) amháin."
+      ]
+    },
+    "MIM3": {
+      "name": "Malartú Sonraí",
+      "question": "An féidir linn comhroinnt faoi théarmaí soiléire?",
+      "intro": "Ní féidir sonraí uile na cathrach a fhoilsiú go simplí: tá cuid acu tráchtála, cuid acu íogair. Baineann MIM3 leis an gcuid eile a roinnt ar aon nós, go sábháilte: catalóg ar féidir le daoine a chuardach, ceadúnais ó theimpléid in ionad téarmaíocht dhlíthiúil shaincheaptha, agus rialacha rialachais ar féidir le gach duine a léamh. Deir an tsonraíocht beagnach gach cuid de MIM3 mar mholadh (féach lch. 3).",
+      "items": [
+        {
+          "text": "Déantar cur síos ar gach tacar sonraí a thairgeann an córas le meiteashonraí caighdeánacha (mar shampla DCAT-AP) i gcatalóg, ionas gur féidir le daoine eile é a aimsiú.",
+          "why": "Sonraí nach féidir le haon duine a aimsiú, ní úsáideann aon duine iad."
+        },
+        {
+          "text": "Tagann téarmaí agus ceadúnais d'úsáid sonraí ó theimpléid aitheanta (m.sh. ceadúnais oscailte, gnáth-chomhaontuithe comhroinnte sonraí), ní ó théarmaíocht dhlíthiúil shaincheaptha in aghaidh an tacair sonraí.",
+          "why": "Bíonn comhaontuithe inscálaithe; ní bhíonn dlíodóirí ina mbacainn."
+        },
+        {
+          "text": "Féadfaidh an chathair a shainiú cé a fhéadfaidh teacht ar cén tsócmhainn sonraí agus faoi cad iad na coinníollacha, agus é sin a athrú gan rannpháirtíocht an díoltóra.",
+          "why": "Fanann an rialachas ag an mbardas."
+        }
+      ],
+      "why_panel": [
+        "Tógann cuideachtaí áitiúla agus taighdeoirí ar shonraí cathrach — fanann luach sa réigiún.",
+        "Is féidir sonraí íogaire a roinnt go díreach leis na comhpháirtithe cearta, ní le gach duine ná le héinne.",
+        "Tagann leabhar rialacha amháin in ionad go leor conarthaí aonair comhroinnte sonraí."
+      ],
+      "red_flags": [
+        "Maíonn an díoltóir cearta ar shonraí na cathrach (féach an clásal “Úinéireacht sonraí”).",
+        "Teastaíonn toiliú an díoltóra nó táillí chun roinnt le tríú páirtí."
+      ]
+    },
+    "MIM6": {
+      "name": "Slánú Sonraí",
+      "question": "An bhfuil ár gcuid sonraí sábháilte faoi bhealach agus in úsáid?",
+      "intro": "Is spriocanna iad cathracha cliste. Coimeádann MIM6 an scóip cúng agus praiticiúil d'aon ghnó: criptigh sonraí atá ag gluaiseacht, úsáid logálacha isteach caighdeánacha in ionad cinn dhílseánaigh, rialaigh agus logáil cé a dhéanann rochtain ar cad é. Níl aon chuid de aitheanta mar rud coimhthíoch — ní mór dó ar fad a bheith sa chonradh.",
+      "items": [
+        {
+          "text": "Déantar gach aistriú sonraí a chriptiú (TLS 1.3 nó an dea-chleachtas reatha).",
+          "why": "Bunchoinníoll sláinteachais; tá súil ag NIS2 leis freisin san áit a mbaineann sé leat."
+        },
+        {
+          "text": "Úsáideann logáil isteach agus rochtain meaisín caighdeáin oscailte — OAuth 2.0 / OpenID Connect — agus is féidir iad a phlocáil isteach i soláthraí aitheantais reatha na cathrach.",
+          "why": "Cuntas amháin in aghaidh an fhostaí, ní ceann amháin in aghaidh tháirge an díoltóra; cailleann daoine a fhágann rochtain i ngach áit ag an am céanna."
+        },
+        {
+          "text": "Tá cearta rochtana rólbhunaithe, in-athbhreithnithe, agus inbhainte; déantar gníomhartha rochtana agus riaracháin a logáil.",
+          "why": "Bíonn iniúchtaí agus freagairt ar theagmhais indéanta. Is é logáil rialú 8.15 de ISO/IEC 27001:2022, Iarscríbhinn A, a liostaíonn MIM6 i measc a réamhriachtanas."
+        },
+        {
+          "label": "Baineann sé leis na coinníollacha rannpháirtíochta, ní leis an tsonraíocht theicniúil",
+          "text": "Ní mór don soláthraí ailíniú le ISO/IEC 27001:2022 (nó a chomhionann) a léiriú don tseirbhís a oibríonn siad.",
+          "why": "Próiseas is ea an tslándáil, ní ticbhosca ag an seachadadh. Luann an tsonraíocht rialuithe ISO/IEC 27001, ní teastas."
+        }
+      ],
+      "why_panel": [
+        "Ní osclaíonn sárú i gcóras amháin gach córas.",
+        "San áit a mbaineann NIS2 leat, éiríonn sé i bhfad níos éasca é a chomhlíonadh mar aon le rialacha cibearshlándála náisiúnta.",
+        "Nuair a théann rud éigin mícheart, insíonn na logaí duit cad é agus cé hé."
+      ],
+      "red_flags": [
+        "Logáil isteach dílseánach amháin.",
+        "“Logaí ar fáil ar iarraidh.”",
+        "Cuntais riarthóra chomhroinnte."
+      ]
+    },
+    "MIM7": {
+      "name": "Sonraí Geospásúla",
+      "question": "An oibríonn sé ar léarscáil?",
+      "intro": "Tá áit ag beagnach gach rud atá ag cathair. Cinntíonn MIM7 nach gabháil scáileáin atá san áit sin: sreabhann sonraí spásúla trí chomhéadain chaighdeánacha OGC, i bhformáidí oscailte, agus an córas comhordanáidí fógartha i gcónaí — ionas go n-ailíníonn gach sraith léarscáile a cheannaíonn tú le gach sraith atá agat cheana féin.",
+      "items": [
+        {
+          "text": "Nochtar sonraí geospásúla trí chomhéadain bunaithe ar chaighdeáin (OGC API Features, SensorThings; tá WFS inghlactha do chórais leagáide).",
+          "why": "Is féidir le gach uirlis GIS ar an margadh é a léamh láithreach."
+        },
+        {
+          "text": "Ionchódaítear sonraí geospásúla i bhformáidí oscailte (GeoJSON, CityJSON; GML/CityGML nuair is gá).",
+          "why": "Gan ceadúnais tiontaire, gan aon chaochbhóithre."
+        },
+        {
+          "text": "Dearbhaítear an córas tagartha comhordanáidí i gcónaí (cód EPSG) agus is féidir sonraí a athrú go CRS coiteann.",
+          "why": "Ailíníonn sraitheanna ó fhoinsí éagsúla ar an léarscáil i ndáiríre."
+        },
+        {
+          "text": "Iompraíonn gnéithe spásúla na haitheantóirí buana céanna agus atá i MIM1.",
+          "why": "Is é an ponc ar an léarscáil agus an taifead sa chlár an rud céanna go díreach."
+        }
+      ],
+      "why_panel": [
+        "Léarscáil chathrach amháin in ionad deich bhféachantóir díoltóra.",
+        "Éiríonn oibleagáidí INSPIRE agus tairsí geo náisiúnta níos éasca, ní níos deacra.",
+        "Féadfaidh sonraí 3D agus BIM dul isteach sa phictiúr céanna níos déanaí."
+      ],
+      "red_flags": [
+        "Níl sonraí léarscáile beo ach taobh istigh d'fhéachantóir an díoltóra.",
+        "“Easpórtáil mar PDF/gabháil scáileáin.”"
+      ]
+    },
+    "MIM8": {
+      "name": "Cúplaí Digiteacha Áitiúla",
+      "question": "An féidir lenár gcúpla digiteach fás?",
+      "intro": "Infheistíocht fhadtéarmach is ea cúpla digiteach: sonraí, samhlacha 3D, ionsamhlúcháin, cinntí. Cosnaíonn MIM8 an infheistíocht sin — fanann sonraí agus samhlacha an chúpla inrochtana agus doiciméadaithe, is féidir torthaí a atáirgeadh, agus féadfaidh comhpháirteanna ó thionscadal amháin fónamh don chéad cheann eile. Úsáid an leathanach seo agus ardáin cúpla, samhlacha ionsamhlúcháin nó uirlisí cathrach 3D á gceannach agat.",
+      "items": [
+        {
+          "text": "Tá tacair shonraí, ionchuir mhúnla agus aschuir ionsamhlúcháin inrochtana trí APIanna (de réir MIM0), ní gafa sa chúpla.",
+          "why": "Cothaíonn torthaí tuarascálacha, deaisanna agus an chéad tionscadal eile."
+        },
+        {
+          "text": "Tá samhlacha doiciméadaithe (modh, paraiméadair, ionchuir/aschuir) agus inghlaoite trí chomhéadan doiciméadaithe.",
+          "why": "Múnla tuilte a cheannaítear uair amháin, is féidir é a athúsáid thar ranna — agus ag cathracha eile."
+        },
+        {
+          "text": "Úsáideann aschuir formáidí caighdeánacha (GeoJSON, CityJSON, 3D Tiles, NetCDF…) ar féidir le huirlisí nach gceannaíonn tú ón díoltóir seo iad a thomhailt.",
+          "why": "Fanann léirshamhlú agus anailís ina margaí iomaíocha."
+        },
+        {
+          "text": "Taifeadann sreafaí oibre bunús: cén leagan sonraí, cén samhail, cad iad na paraiméadair a tháirg toradh.",
+          "why": "Is féidir cinntí bunaithe ar an gcúpla a mhíniú agus a chosaint níos déanaí."
+        }
+      ],
+      "why_panel": [
+        "Maireann an cúpla níos faide ná aon soláthraí aonair nó buiséad tionscadail.",
+        "Is féidir ionsamhlúcháin a sheiceáil, a athdhéanamh agus a chosaint i gcinnteoireacht bhardasach.",
+        "Is féidir samhlacha agus comhpháirteanna a roinnt idir cathracha."
+      ],
+      "red_flags": [
+        "Torthaí ionsamhlúcháin le feiceáil i dtairseach an díoltóra amháin.",
+        "Samhlacha mar bhoscaí dubha séalaithe gan aon mheiteashonraí."
+      ]
+    }
+  },
+  "cross": {
+    "title": "Clásail thrasghearrtha tairisceana",
+    "subtitle": "Cosaintí ar ghlasáil isteach",
+    "intro": "Baineann na clásail seo le gach tairiscint, is cuma cad atá á cheannach agat. Eascraíonn siad as cleachtas soláthair timpeall ar na MIMs agus living-in.eu. Ní bhraitheann formhór acu ar cheanglas sonraíochta aonair, mar sin ní iompraíonn siad aon chóid tagartha (is moladh MIM0 C2 é leaganú API freisin). Is beag a chosnaíonn sé iad a chur san áireamh; féadfaidh gach rud a bheith caillte má fhágtar ar lár iad.",
+    "items": [
+      {
+        "name": "Clásal scoir",
+        "text": "Ag deireadh an chonartha, déantar sonraí uile na cathrach (agus cumraíocht) a thabhairt ar láimh i bhformáidí oscailte doiciméadaithe gan aon chostas breise."
+      },
+      {
+        "name": "Cearta sna sonraí",
+        "text": "Baineann gach ceart sna sonraí a bhailítear agus a dhíorthaítear faoin gconradh leis an údarás conarthach."
+      },
+      {
+        "name": "Gan táillí in aghaidh an tsuíocháin / an iarratais",
+        "text": "Gan táillí ar an gcathair as rochtain a fháil ar a sonraí féin."
+      },
+      {
+        "name": "Cobhsaíocht agus leaganú API",
+        "text": "Coinníonn an soláthraí an API comhoiriúnach siar ar feadh théarma iomlán an chonartha. Fógraítear athruithe a bhriseann comhoiriúnacht 6 mhí ar a laghad roimh ré agus eiseofar iad mar leagan nua, agus fanann an leagan roimhe sin ar fáil go dtí an dáta aistrithe comhaontaithe."
+      },
+      {
+        "name": "Léirigh, ná geall",
+        "text": "Léiríonn tairgeoirí comhlíonadh le linn mheastóireacht na dtairiscintí in ionad féindhearbhuithe a chur isteach. Maidir le API ciallaíonn sé seo doiciméadú idirghníomhach foilsithe (mar shampla OpenAPI) agus glao beo a thugann sonraí bailí ar ais. Déantar gach mír a bhfuil tic léi a thástáil arís ag am an ghlactha."
+      },
+      {
+        "name": "Caighdeáin oscailte ainmnithe",
+        "text": "Ainmníonn an tairiscint na caighdeáin thuas; ní mór do mhaíomh “comhoiriúnach le” an comhéadan agus an leagan cruinn a lua. Glacann gach tagairt do chaighdeán nó do shonraíocht theicniúil le réiteach coibhéiseach; cruthaíonn an tairgeoir an choibhéis."
+      },
+      {
+        "name": "Ráiteas comhlíonta MIMs",
+        "text": "Líonann an tairgeoir an tábla comhlíonta (lch. 28); tagann sé chun bheith ina iarscríbhinn a ghabhann leis an gconradh."
+      }
+    ]
+  },
+  "example": {
+    "title": "Sampla: ceannaíonn cathair líonra de bhraiteoirí cháilíocht an aeir",
+    "scenario": "Leathanaigh mharcáilte: MIM0, MIM1, MIM2, MIM6 agus MIM7 (téann na sonraí ar léarscáil). Ó MIM3 mír 3.1 amháin (foilsítear sonraí cháilíocht an aeir mar shonraí oscailte, mar sin baineann sé le catalóg); ní MIM8: ní cúpla digiteach é seo.",
+    "table_title": "Cad a théann cén áit",
+    "table_headers": [
+      "Doiciméad",
+      "Téarma i dTreoir 2014/24/AE",
+      "Cad le cur ann"
+    ],
+    "table_rows": [
+      [
+        "Sonraíocht theicniúil",
+        "sonraíochtaí teicniúla (Airt. 42)",
+        "na míreanna marcáilte de MIM0, MIM1, MIM2, MIM3 (3.1 amháin), MIM6 (seachas 6.4) agus MIM7, focal ar fhocal, leis an gcód sonraíochta, móide an abairt ar choibhéis"
+      ],
+      [
+        "Coinníollacha rannpháirtíochta",
+        "critéir roghnúcháin (Airt. 58 agus 62)",
+        "ailíniú léirithe le ISO/IEC 27001:2022 nó a chomhionann (mír 6.4)"
+      ],
+      [
+        "Modhanna cruthúnais",
+        "tuarascálacha tástála, deimhniú agus modhanna eile cruthúnais (Airt. 44)",
+        "an tábla comhlíonta mar iarscríbhinn éigeantach a ghabhann leis an tairiscint: C, E nó N do gach mír, leis an bhfianaise (seoladh doiciméadaithe API, rochtain tástála)"
+      ],
+      [
+        "Dréachtchonradh",
+        "coinníollacha maidir le feidhmíocht conarthaí (Airt. 70)",
+        "Clásal scoir, Úinéireacht sonraí, Gan aon táillí in aghaidh an tsuíocháin / an iarratais, Cobhsaíocht agus leaganú API; an tábla comhlíonta comhlánaithe mar iarscríbhinn"
+      ],
+      [
+        "Prótacal glactha",
+        "coinníollacha maidir le feidhmíocht conarthaí (Airt. 70)",
+        "an colún “Fíoraithe” den tábla comhlíonta mar an bprótacal tástála"
+      ]
+    ],
+    "sample_title": "Téacs samplach don sonraíocht theicniúil",
+    "sample": [
+      "4.3 Idir-inoibritheacht agus rochtain ar shonraí",
+      "4.3.1 Is féidir na sonraí go léir a bhailíonn nó a tháirgeann an córas a aisghabháil i bhformáid mheaisín-inléite amháin ar a laghad (m.sh. JSON, CSV) thar API caighdeánach gréasáin. (MIMs Plus 9.0, MIM0 R1.1, R1.2)",
+      "4.3.2 Déantar cur síos foirmiúil ar an API i ndoiciméad oscailte meaisín-inléite (mar shampla OpenAPI) a fhoilsítear ag seoladh cobhsaí. (MIM0 R1.3)",
+      "4.3.3 Ligeann an API sonraí a scagadh de réir am agus áit an tomhais. (MIM0 R2.1, R2.2)",
+      "… 4.3.4 go 4.3.21: míreanna marcáilte breise …",
+      "4.3.22 Glacann gach tagairt do chaighdeán nó do shonraíocht theicniúil le réiteach coibhéiseach; cruthaíonn an tairgeoir an choibhéis.",
+      "4.3.23 Líonann an tairgeoir an tábla comhlíonta (iarscríbhinn a ghabhann leis na doiciméid soláthair) agus tugann sé an fhianaise do gach mír riachtanach. Léiríonn an tairgeoir pointí 4.3.1 go 4.3.21 le glao beo API le linn mheastóireacht na dtairiscintí; déanann an t-údarás conarthach iad a thástáil arís ag am an ghlactha. Is cúis é gan iad a chomhlíonadh le diúltú do ghlacadh."
+    ],
+    "tip": "Léiríonn pointe 4.3.3 go bhféadfaidh tú mír a ghéarú chun freastal ar an gceannachán: i gcás braiteoirí tá ciall leis scagadh de réir ama agus áit an tomhais a iarraidh.",
+    "note": "Cuir an leagan cainte in oiriúint don dlí náisiúnta agus iarr ar an duine atá freagrach as soláthar é a sheiceáil.",
+    "filled_title": "Tábla comhlíonta comhlánaithe (sliocht)",
+    "filled_rows": [
+      [
+        "0.1",
+        "Sonraí meaisín-inléite trí API caighdeánach gréasáin",
+        "C",
+        "Tugann REST API JSON agus CSV ar ais; doiciméadú ag an seoladh a tugadh sa tairiscint, lch. 12; rochtain tástála in iarscríbhinn 3",
+        "✓"
+      ],
+      [
+        "0.4",
+        "Síntiús d'athruithe nuair is gá",
+        "N",
+        "ní thacaítear leis go fóill; beartaithe don chéad leagan eile",
+        "—"
+      ],
+      [
+        "7.2",
+        "Formáidí geo oscailte",
+        "E",
+        "seachadann GeoPackage, gnáthchaighdeán OGC, in ionad GeoJSON; mínítear an choibhéis sa tairiscint, lch. 15",
+        "✓"
+      ]
+    ],
+    "filled_note": "Is é N gealltanas don todhchaí: ní fhíoraíonn an coiste ach an méid is féidir leis an tairgeoir a thaispeáint."
+  },
+  "tearout": {
+    "title": "Tábla comhlíonta",
+    "intro": "Sraith amháin in aghaidh na míre. Cuireann an t-údarás conarthach tic leis an méid a éilíonn an conradh agus ceanglaíonn sé an tábla leis na doiciméid soláthair mar iarscríbhinn éigeantach a ghabhann leis an tairiscint. I gcás gach míre riachtanaí cuireann an tairgeoir C (comhlíonann), E (comhlíonann le réiteach coibhéiseach) nó N (ní chomhlíonann) isteach, go hachomair conas, agus cá bhfuil an fhianaise: seoladh doiciméadaithe, rochtain tástála, leathanach den tairiscint. Ní leor dearbhú gan fhianaise. Fíoraíonn an coiste meastóireachta gach mír agus tairiscintí á measúnú agus arís ag am an ghlactha (✓ deimhnithe, ✗ gan deimhniú, — gan seiceáil).",
+    "intro2": "Tá an tábla comhlánaithe mar chuid den tairiscint agus tagann sé chun bheith ina iarscríbhinn a ghabhann leis an gconradh. Fíoraíonn sé go gcomhlíontar na ceanglais maidir le hábhar an chonartha (comhlíonta nó gan comhlíonadh); ní critéar dámhachtana é. Chun scór a thabhairt do chomhlíonadh, luaigh é sin i measc na gcritéar dámhachtana a fhoilsítear roimh ré sna doiciméid soláthair (Treoir 2014/24/AE, Airteagal 67).",
+    "headers": [
+      "#",
+      "Ceanglas (gearr)",
+      "Tag. sonraíochta",
+      "Riachtanach?",
+      "C / E / N",
+      "Fianaise: conas agus cá háit",
+      "Fíoraithe"
+    ],
+    "header_roles": [
+      "údarás",
+      "tairgeoir",
+      "tairgeoir",
+      "coiste"
+    ],
+    "note": "Seasann lipéid ghearra thíos do na míreanna iomlána seicliosta ar leathanaigh na MIMs — i gcás amhrais, is é téacs iomlán na míre a bheidh i réim.",
+    "download_label": "Tá leagan ineagarthóireachta den tábla ag:",
+    "cross_note": "Deimhníonn an tairgeoir go nglacann sé le coinníoll an chonartha (C / N)."
+  },
+  "tearout_short": {
+    "MIM0": [
+      "Sonraí meaisín-inléite trí API caighdeánach gréasáin",
+      "Cur síos oscailte API (OpenAPI) ag seoladh cobhsaí",
+      "Scagadh de réir ama, suímh, tréithe",
+      "Síntiús d'athruithe nuair is gá",
+      "Earráidí caighdeánacha HTTP, taisceadh, teorainneacha ráta"
+    ],
+    "MIM1": [
+      "Aitheantóir uathúil buan in aghaidh an eintitis",
+      "Aisghabhann cuardach aitheantóra sonraí + cineál",
+      "Mapáil aitheantóirí thar chórais",
+      "Gan mionsonraí inmheánacha díoltóra in aitheantóirí"
+    ],
+    "MIM2": [
+      "Samhlacha sonraí caighdeánacha nuair is féidir",
+      "Samhlacha doiciméadaithe, aonaid shainráite",
+      "Síntí mar phróifílí, gan a bheith ina ngabhail riamh",
+      "Srathú oscailte inbhailíochtaithe de réir scéime"
+    ],
+    "MIM3": [
+      "Tacair shonraí catalógaithe le meiteashonraí caighdeánacha",
+      "Teimpléid ceadúnais agus comhaontuithe",
+      "Rialaíonn an chathair féin téarmaí rochtana"
+    ],
+    "MIM6": [
+      "Aistriú criptithe (TLS 1.3)",
+      "Logáil isteach chaighdeánach (OAuth 2.0 / OIDC)",
+      "Rochtain rólbhunaithe + logaí iniúchta",
+      "Ailíniú le ISO/IEC 27001:2022 léirithe"
+    ],
+    "MIM7": [
+      "Comhéadain chaighdeánacha OGC",
+      "Formáidí geo oscailte",
+      "CRS dearbhaithe (EPSG)",
+      "IDanna buana ar ghnéithe spásúla (féach 1.1)"
+    ],
+    "MIM8": [
+      "Sonraí cúpla agus aschuir trí APIanna",
+      "Samhlacha doiciméadaithe agus inghlaoite",
+      "Formáidí caighdeánacha aschuir",
+      "Bunús an tsreafa oibre taifeadta"
+    ],
+    "CROSS": [
+      "Clásal scoir: tabhairt ar láimh saor in aisce i bhformáidí oscailte",
+      "Baineann cearta sna sonraí leis an údarás conarthach",
+      "Gan aon táillí ar rochtain ar shonraí féin",
+      "Cobhsaíocht API: leaganaithe, fógra 6 mhí faoi athruithe"
+    ]
+  },
+  "glossary": {
+    "title": "Gluais bheag",
+    "terms": [
+      {
+        "t": "API",
+        "d": "Bealach trína n-iarrann clár amháin sonraí ar chlár eile — thar an ngréasán, gan duine ag cliceáil."
+      },
+      {
+        "t": "Samhail sonraí",
+        "d": "Cruth comhaontaithe na sonraí: cad iad na réimsí atá ann, cad a chiallaíonn siad, cad iad na haonaid a úsáideann siad."
+      },
+      {
+        "t": "DCAT-AP",
+        "d": "Próifíl mheiteashonraí Eorpach do chatalóga sonraí; ligeann sí do thacair shonraí a bheith aimsithe ar thairseacha náisiúnta agus Eorpacha freisin."
+      },
+      {
+        "t": "EPSG",
+        "d": "Clárlann de chóid uimhriúla do chórais tagartha comhordanáidí (m.sh. EPSG:4326 do WGS 84)."
+      },
+      {
+        "t": "Aitheantóir",
+        "d": "Ainm buan ar rud amháin (lampa amháin, foirgneamh amháin) a úsáideann gach córas chun an rud sin a chur in iúl."
+      },
+      {
+        "t": "Idir-inoibritheacht",
+        "d": "Cumas córas ó dhíoltóirí éagsúla sonraí a mhalartú agus a thuiscint."
+      },
+      {
+        "t": "IRI",
+        "d": "Foirm idirnáisiúnta d'aitheantóir gréasáin (cosúil le URL, le carachtair neamh-ASCII ceadaithe). Ainmníonn MIM1 eintitis leis."
+      },
+      {
+        "t": "LDT",
+        "d": "Cúpla Digiteach Áitiúil: múnla digiteach de chathair nó de chuid di, ceangailte le sonraí agus ionsamhlúcháin."
+      },
+      {
+        "t": "Meaisín-inléite",
+        "d": "Struchtúrtha ionas gur féidir le clár é a phróiseáil go díreach (JSON, CSV) — níl PDF de thábla meaisín-inléite."
+      },
+      {
+        "t": "Meiteashonraí",
+        "d": "Sonraí faoi shonraí: cad atá i dtacar sonraí, cé a sholáthraíonn é, cé chomh reatha agus atá sé, faoi cén ceadúnas."
+      },
+      {
+        "t": "OAuth 2.0 / OIDC",
+        "d": "Caighdeáin oscailte do logáil isteach agus do dheonú rochtana. Cuireann OpenID Connect (OIDC) fíorú aitheantais le OAuth 2.0."
+      },
+      {
+        "t": "OGC",
+        "d": "Open Geospatial Consortium: an comhlacht a fhoilsíonn caighdeáin do shonraí agus do sheirbhísí geospásúla (OGC API, WFS, SensorThings)."
+      },
+      {
+        "t": "Caighdeán oscailte",
+        "d": "Riail theicniúil a fhéadfaidh aon duine a léamh agus a chur i bhfeidhm gan íoc as ná cead a iarraidh."
+      },
+      {
+        "t": "OpenAPI",
+        "d": "Formáid oscailte do chur síos meaisín-inléite ar API gréasáin: seoltaí, paraiméadair, freagraí."
+      },
+      {
+        "t": "Srathú",
+        "d": "Sonraí a scríobh i bhformáid nithiúil (m.sh. JSON, XML) ionas gur féidir iad a stóráil nó a sheoladh."
+      },
+      {
+        "t": "TLS",
+        "d": "An prótacal a chriptíonn sonraí faoi bhealach thar líonra (bunús HTTPS)."
+      },
+      {
+        "t": "Glasáil isteach ag díoltóir",
+        "d": "Nuair a chosnaíonn sé an oiread sin soláthraí a fhágáil — i sonraí, i bhformáidí nó i dtáillí — nach féidir leat é a dhéanamh go praiticiúil."
+      },
+      {
+        "t": "Crúca gréasáin / MQTT",
+        "d": "Dhá bhealach do chóras athrú a thuairisciú é féin: glaonn crúca gréasáin ar do sheoladh, seachadann MQTT teachtaireachtaí do rannpháirtithe."
+      }
+    ],
+    "more_title": "Cá bhfaighfear tuilleadh eolais",
+    "links": {
+      "mims.oascities.org": "Sonraíocht iomlán MIMs Plus, á cothabháil ag OASC.",
+      "living-in.eu": "An ghluaiseacht Eorpach um chlaochlú digiteach cathracha — dearbhú agus comhthéacs MIMs Plus.",
+      "smartdatamodels.org": "An leabharlann oscailte de shamhlacha sonraí caighdeánacha (FIWARE, TM Forum, IUDX, OASC).",
+      "oascities.org/academy": "CITYxCITY Academy — cúrsaí d'fhoireann na cathrach, arna gcur ar fáil ag cathracha."
+    }
+  },
+  "back": {
+    "text": "Tiomsaithe ó Shonraíocht MIMs Plus 9.0 le Open & Agile Smart Cities (mims.oascities.org). Ábhar na sonraíochta © OASC. Is compánach neamhspleách i ngnáth-theanga é an leabhrán seo do sholáthar bardasach; i gcás amhrais, is í an tsonraíocht a bheidh i réim.",
+    "credits": "Déanta le huirlisí oscailte. Athúsáid agus cuir in oiriúint go saor do do chathair.",
+    "author": "Údar an leabhráin: Marek Mráz"
+  },
+  "quote_translations": {
+    "MIM0 · R1.1": "NÍ MÓR do chórais aisghabháil sonraí a cheadú i bhformáid mheaisín-inléite amháin ar a laghad. Is féidir formáidí a shonrú trí Idirbheartaíocht Ábhair HTTP",
+    "MIM0 · R1.2": "NÍ MÓR sonraí a bheith in-aisghabhála trí mheicníocht ghréasánbhunaithe chaighdeánach amháin ar a laghad",
+    "MIM0 · R1.3": "NÍ MÓR cur síos foirmiúil a dhéanamh ar mheicníocht(aí) rochtana",
+    "MIM0 · R1.4": "Ba chóir na Samhlacha Sonraí a úsáideann pálastaí a shonrú (féach MIM2)",
+    "MIM0 · R2.1": "NÍ MÓR do chórais sonraí a sholáthar trí chomhéadan struchtúrtha comhsheasmhach",
+    "MIM0 · R2.2": "NÍ MÓR do chórais tacú le buncheistiú agus/nó le bunscagadh (m.sh. de réir ama, suímh, tréithe)",
+    "MIM0 · C2": "BA CHÓIR do APIanna tacú le haisghabháil sonraí reatha · BA CHÓIR do APIanna tacú le haisghabháil sonraí stairiúla nuair is infheidhme · BA CHÓIR do APIanna tacú le ceistiú geospásúil nuair is infheidhme (féach MIM7) · BA CHÓIR do APIanna tacú le síntiús d'athruithe nuair is infheidhme · BA CHÓIR do APIanna an chéad stampa ama nuashonraithe eile a bhfuiltear ag súil leis a nochtadh · BA CHÓIR do APIanna tacú le leaganú sainráite ar phointí foirceanta · BA CHÓIR do APIanna samplaí de phálastaí nó de cheisteanna tástála a sholáthar · BA CHÓIR do APIanna tacú le ceanntásca taisceála caighdeánacha HTTP · BA CHÓIR do APIanna stádas teorann ráta a chur in iúl trí cheanntásca caighdeánacha HTTP · BA CHÓIR do APIanna comhlachtaí struchtúrtha earráide a thabhairt ar ais · FÉADFAIDH APIanna tacú le freagraí páirteacha nó le réamh-mheastacháin cheisteanna · FÉADFAIDH APIanna pointe foirceanta sláinte/stádais caighdeánach a nochtadh",
+    "MIM0 · R3.1": "NÍ MÓR do chórais do chásanna úsáide a dteastaíonn fógraí uathu meicníocht amháin ar a laghad a sholáthar chun nuashonruithe a fháil ar athruithe sonraí",
+    "MIM0 · R3.2": "FÉADFAIDH córais tacú le meicníochtaí iolracha síntiúis ag brath ar an gcás úsáide",
+    "MIM0 · C4": "Má tá srianta den sórt sin i bhfeidhm, NÍ MÓR dóibh na ceanglais a shainítear i MIM3 agus MIM6 a leanúint, go sonrach: sainaithint gníomhaí (MIM3.C5.R0), údarú agus róil ghníomhaithe (MIM6.C1.R4), beartais ar leibhéal sócmhainní sonraí (MIM6.C1.R4)",
+    "MIM1 · R1.1": "Tá aitheantóir uathúil ag gach eintiteas laistigh den chóras",
+    "MIM1 · R1.2": "Tá bealach ann chun faisnéis faoi eintiteas a aisghabháil tríd an aitheantóir a chuardach laistigh de chóras",
+    "MIM1 · R1.3": "má thagraíonn aitheantóir uathúil don eintiteas céanna laistigh de chórais iolracha, is féidir an bealach a dhíorthú chun faisnéis faoi a chuardach i ngach ceann de na córais sin",
+    "MIM1 · R1.4": "má thagraíonn aitheantóirí uathúla iolracha don eintiteas céanna, is féidir iad a mhapáil",
+    "MIM1 · R1.5": "Is féidir aitheantóirí atá buan le himeacht ama a chruthú",
+    "MIM1 · R2.1": "Tá bealach ann chun shéimeantaic eintitis a aisghabháil, ag baint úsáide as a aitheantóir uathúil amháin",
+    "MIM1 · R2.2": "Déantar cur síos ar an séimeantaic seo i bhformáid mheaisín-inléite",
+    "MIM1 · R3.1": "Tá bealach ann chun díthagairt a dhéanamh do ghaol atá sainithe ar eintiteas",
+    "MIM1 · R3.2": "Tá bealach ann chun séimeantaic bhreise a chur i bhfeidhm ar oineolaíocht atá ann cheana",
+    "MIM2 · R1.1": "déanfar samhlacha sonraí a úsáidtear do gach eintiteas in aon fhoinse sonraí a chur in iúl go sainráite. Beidh siad doiciméadaithe go maith agus beidh meiteashonraí tuairisciúla acu, áit a mbeidh na téarmaí a úsáidtear neamh-dhébhríoch ó thaobh séimeantaice de. Maidir le tréithe a bhaineann le haonaid tomhais, formáidí ama srl., déanfar na haonaid, na formáidí srl., a úsáidtear a chur in iúl go sainráite. Ba chóir na samhlacha sonraí a chatalógú ionas gur féidir iad a fháil go héasca.",
+    "MIM2 · R1.2a": "beidh samhlacha sonraí a úsáidtear bunaithe (nuair is féidir) ar shamhlacha sonraí caighdeánaithe a aithnítear go coitianta mar a liostaítear thíos",
+    "MIM2 · R1.2b": "Nuair nach féidir samhlacha sonraí caighdeánaithe atá ann cheana a úsáid, déanfar iarrachtaí chun samhlacha sonraí caighdeánaithe atá ann cheana agus is dlúithe atá ailínithe a leathnú nó cinn nua a shainiú, de réir an dea-chleachtais agus choinbhinsiúin an phobail nó na heagraíochta a shainíonn na samhlacha sonraí.",
+    "MIM2 · R1.3": "tacóidh samhlacha sonraí a úsáidtear le malartú sonraí trí úsáid a bhaint as ceanglais ábhartha na MIMs maidir le Rochtain ar shonraí agus Idirnascadh sonraí",
+    "MIM2 · R2.1": "Ba chóir samhail choiteann sonraí do gach príomh-eintiteas a fhorbairt d'aon éiceachóras sonraí. Ba chóir go mbeadh na réimsí uile a áirítear laistigh de na samhlacha sonraí éagsúla don eintiteas sin a úsáidtear laistigh den éiceachóras sonraí sin sa tsamhail sonraí choiteann sin. D'fhéadfaí gach samhail sonraí éagsúil a úsáidtear laistigh den éiceachóras sonraí sin a chlaochlú ansin go dtí an tsamhail sonraí choiteann.",
+    "MIM2 · R3.1": "beidh formáid iompair sonraí mheaisín-inléite shainithe amháin ar a laghad (“srathú”) ag gach samhail sonraí a úsáidtear atá oscailte, ar fáil go poiblí agus neamhspleách ar chur i bhfeidhm.",
+    "MIM2 · R3.2": "Ba chóir go mbeadh doiciméadú na formáide iompair sonraí leordhóthanach chun go bhféadfaí feidhmchlár nó ateangaire neamhdhílseánach a chruthú atá in ann na sonraí go léir atá stóráilte i bhformáid sonraí den sórt sin a athchruthú.",
+    "MIM2 · R3.3": "Nuair a thacaítear le formáidí iompair sonraí iolracha don tsamhail sonraí chéanna, léireoidh siad an t-ábhar faisnéise céanna go comhsheasmhach agus gan cailleadh brí.",
+    "MIM2 · R3.4": "Ba chóir go dtacódh an léiriú le bailíochtú ag baint úsáide as scéimeanna, gramadaí, nó srianta coibhéiseacha meaisín-inléite a fhoilsítear go hoscailte, nuair atá meicníochtaí bailíochtaithe den sórt sin ann don fhormáid roghnaithe.",
+    "MIM2 · R4.1": "Níor cheart go ndéanfadh Próifílí Feidhmchláir a leathnaíonn samhail sonraí difear don tsamhail atá ann cheana féin agus dá húsáideoirí",
+    "MIM2 · R4.2": "Ba chóir na speisialtachtaí nó na síntí a thugtar isteach i bPróifíl Feidhmchláir na samhla a dhoiciméadú go maith, ar leithligh ón mbunshamhail sonraí",
+    "MIM3 · RC1.1": "Ba chóir go mbeadh stiúrthóir éiceachórais sonraí in ann samhail rialachais a shainiú (m.sh. leabhar rialacha) a leagann amach rialacha ballraíochta, róil, freagrachtaí agus oibleagáidí rannpháirtithe an éiceachórais, agus na prionsabail fhoriomlána a rialaíonn malartú sonraí eatarthu.",
+    "MIM3 · RC1.2": "Ba chóir do bhaill a ghlacann páirt in éiceachóras sonraí a bheith ar an eolas faoina shamhail rialachais agus faoi aon athruithe a dhéantar uirthi.",
+    "MIM3 · RC1.3": "Ba chóir go mbeadh an tsamhail rialachais intuigthe go héasca ag gach rannpháirtí san éiceachóras.",
+    "MIM3 · RC2.1": "Bíonn soláthraithe sonraí saor chun téarmaí agus coinníollacha a shainiú faoinar mian leo a gcuid sonraí a mhalartú. (Nóta: Sula roinneann siad sócmhainní sonraí, ba chóir do sholáthraithe sonraí a chinntiú go bhfuil cead leordhóthanach acu ó úinéirí sonraí.)",
+    "MIM3 · RC2.2": "Ba chóir cur síos soiléir agus neamh-dhébhríoch a dhéanamh ar théarmaí agus ar choinníollacha do mhalartú sonraí ionas go mbeidh siad intuigthe go héasca d'úsáideoirí sonraí.",
+    "MIM3 · RC2.3": "Ba chóir téarmaí agus coinníollacha do mhalartú sonraí a chur in iúl trí cheadúnais sonraí nó trí chomhaontuithe comhroinnte sonraí bunaithe ar theimpléid nó ar chaighdeáin atá sainithe go maith.",
+    "MIM3 · RC2.4": "Ba chóir do théarmaí agus do choinníollacha a bheith i gcomhréir le samhail rialachais fhoriomlán an éiceachórais sonraí agus ní cead dóibh teacht salach uirthi. (Nóta: Is féidir le soláthraí sonraí cinneadh a dhéanamh gan páirt a ghlacadh in éiceachóras sonraí má tá an tsamhail rialachais bhunúsach ró-shriantach nó ró-cheadúil.)",
+    "MIM3 · RC3.1": "Ní mór do stiúrthóir éiceachórais sonraí a bheith in ann comhlíonadh a rannpháirtithe leis an tsamhail rialachais bhunúsach a fháil amach.",
+    "MIM3 · RC3.2": "Ba chóir do sholáthraithe sonraí a bheith in ann a fháil amach go gcomhlíonann úsáid sonraí ag úsáideoir sonraí téarmaí agus coinníollacha a comhaontaíodh roimhe sin.",
+    "MIM3 · RC3.3": "Ba chóir d'úsáideoirí sonraí a bheith in ann a fháil amach go leanann soláthar sonraí an tsoláthraí sonraí téarmaí agus coinníollacha a comhaontaíodh roimhe sin.",
+    "MIM3 · RC4.1": "Ba chóir d'úsáideoirí sonraí a bheith in ann a fháil amach cad iad na sonraí atá ar fáil in éiceachóras comhroinnte sonraí gan eolas a bheith acu orthu roimh ré.",
+    "MIM3 · RC4.2": "Ba chóir cur síos leordhóthanach a dhéanamh ar shócmhainní sonraí le meiteashonraí ionas gur féidir le húsáideoirí sonraí cinntí iontaofa a dhéanamh faoin úsáid bheartaithe bhreise a bhainfear astu.",
+    "MIM3 · RC4.3": "Ba chóir go mbeadh meiteashonraí a úsáidtear chun cur síos a dhéanamh ar shócmhainní sonraí bunaithe ar fhormáidí tuairiscithe dea-shainithe atá éasca le tuiscint agus atá inléite ag daoine agus ag meaisíní araon.",
+    "MIM3 · RC5.1": "Ba chóir do rannpháirtithe an éiceachórais (m.sh. úsáideoirí agus soláthraithe sonraí) a bheith in ann a chéile a fháil amach laistigh d'éiceachóras comhroinnte sonraí.",
+    "MIM3 · RC5.2": "Ba chóir go mbeadh dóthain meiteashonraí faoi gach rannpháirtí san éiceachóras ar fáil chun a n-iontaoibh atá ábhartha do mhalartú sonraí a fháil amach.",
+    "MIM3 · RC5.3": "Ba chóir do sholáthraithe sonraí a bheith in ann úsáideoirí sonraí ar mian leo teacht ar a gcuid sócmhainní sonraí a shainaithint go hiontaofa agus a meiteashonraí a fhíorú sula dtugtar rochtain.",
+    "MIM3 · RC5.4": "Ba chóir d'úsáideoirí sonraí a bheith in ann soláthraithe sonraí a roinneann sonraí in éiceachóras sonraí a shainaithint sula ndéanann siad rochtain ar na sonraí sin nó sula n-úsáideann siad iad.",
+    "MIM3 · RC5.5": "Féadfaidh rannpháirtithe an éiceachórais a roghnú freisin fanacht gan ainm má cheadaíonn samhail rialachais an éiceachórais comhroinnte sonraí é sin. Sa chás seo, is féidir neamhaird a dhéanamh de RC5.1 go RC5.4.",
+    "MIM3 · RC6.1": "Ba chóir d'úsáideoirí agus do sholáthraithe sonraí a bheith in ann aontú le malartú sonraí agus leis na téarmaí agus na coinníollacha a bhaineann leis (m.sh. glacadh le téarmaí, síniú dlíthiúil comhaontaithe, nó caibidlíocht).",
+    "MIM3 · RC6.2": "Ba chóir d'úsáideoirí agus do sholáthraithe sonraí a bheith in ann deireadh a chur le malartú sonraí a comhaontaíodh roimhe sin i gcomhréir leis na téarmaí agus na coinníollacha a bhaineann leis.",
+    "MIM3 · RC6.3": "Nuair is féidir, féadfar modhanna leictreonacha a sholáthar maidir le comhaontú agus foirceannadh malartaithe sonraí.",
+    "MIM3 · RC7.1": "Ba chóir d'úsáideoirí sonraí a bheith in ann a spéis i sócmhainní sonraí nach bhfuil ar fáil faoi láthair san éiceachóras comhroinnte sonraí a chur in iúl.",
+    "MIM3 · RC7.2": "Ba chóir do sholáthraithe sonraí a bheith in ann iarratais a dhéanann úsáideoirí sonraí ar shócmhainní sonraí nua a fháil.",
+    "MIM6 · R1.1": "NÍ MÓR rialacha chun rochtain fhisiciúil agus loighciúil ar fhaisnéis agus ar shócmhainní gaolmhara eile a rialú a bhunú agus a chur i bhfeidhm bunaithe ar cheanglais ghnó agus slándála faisnéise. (ISO 27001 5.15 Rialú rochtana)",
+    "MIM6 · R1.2": "NÍ MÓR leithdháileadh agus bainistiú faisnéise fíordheimhnithe a rialú trí phróiseas bainistíochta, lena n-áirítear comhairle a thabhairt do phearsanra maidir le láimhseáil chuí faisnéise fíordheimhnithe. (ISO 27001 5.17: Faisnéis fhíordheimhnithe)",
+    "MIM6 · R1.3": "NÍ MÓR cearta rochtana ar fhaisnéis agus ar shócmhainní gaolmhara eile a sholáthar, a athbhreithniú, a mhodhnú agus a bhaint i gcomhréir le beartas agus rialacha sonracha an eagraigh maidir le rialú rochtana. (ISO 27001 5.18: Cearta rochtana)",
+    "MIM6 · R2.1": "NÍ MÓR rialacha d'úsáid éifeachtach na cripteagrafaíochta, lena n-áirítear bainistíocht eochracha cripteagrafacha, a shainiú agus a chur i bhfeidhm. (ISO 27001 8.24 Úsáid cripteagrafaíochta)",
+    "MIM6 · R3.1": "cuirfear teicneolaíochtaí agus nósanna imeachta slána fíordheimhnithe i bhfeidhm bunaithe ar shrianta rochtana faisnéise agus ar an mbeartas a bhaineann go sonrach leis an ábhar maidir le rialú rochtana. (ISO 27001 8.5 Fíordheimhniú slán)",
+    "MIM6 · M1.1": "Prótacal Slándála an Chiseáil Iompair (TLS), Leagan 1.3",
+    "MIM6 · M1.2": "Creat Údaraithe OAuth 2.0",
+    "MIM6 · M1.3": "OpenID Connect 1.0, Ciseal aitheantais d'fhíordheimhniú ar OAuth 2.0",
+    "MIM6 · M1.4": "OIDC4VCI / OIDC4VP, OpenID le haghaidh Eisiúint agus Léiriú Dintiúir Infhíoraithe",
+    "MIM7 · R1.1": "nochtfar sonraí geospásúla trí chomhéadan seirbhíse gréasáin bunaithe ar chaighdeáin.",
+    "MIM7 · R2.1": "ionchódófar sonraí geospásúla ag baint úsáide as caighdeáin oscailte. Moltar caighdeáin ábhartha ó OGC agus BuildingSMART International a úsáid.",
+    "MIM7 · R3.1": "Déanfaidh gach tacar sonraí a úsáidtear chun tuilleadh faisnéise a sholáthar faoin gcomhthéacs a chlúdaíonn sonraí geospásúla MIM1 agus MIM2 a chomhlíonadh.",
+    "MIM7 · R4.1": "Úsáidfear aitheantóirí uathúla agus buana chun cásanna ar leith d'aon eintiteas a úsáidtear i dtacair shonraí a shainaithint. (Féach MIM1: Idirnascadh Sonraí.)",
+    "MIM7 · R5.1": "Comhlíonfaidh Córais Tagartha Comhordanáidí (CRS) caighdeáin, agus cuirfear faisnéis ar fáil maidir le cén caighdeán (m.sh. EPSG:4326, EPSG:3857) atá á úsáid. Áirítear leis seo an uimhir EPSG nó an uimhir WGS, mar aon le faisnéis faoi aon athrú bunaithe ar chórais náisiúnta amhail LKS-92 na Laitvia, ionas gur féidir sonraí a athrú go CRS coiteann. (Nóta: Laistigh den AE, maidir le sonraí geospásúla éilítear meiteashonraí a úsáid atá i gcomhréir leis an Treoir INSPIRE, lena n-áirítear na meiteashonraí is gá chun cur síos a dhéanamh ar fhaisnéis CRS.)",
+    "MIM8 · R1.1": "Soláthróidh an LDT rochtain ar aschuir ionsamhlúcháin agus ar ionchuir mhúnla ríofa nuair a theastaíonn siad mar chuid de shreafaí oibre LDT.",
+    "MIM8 · R1.2": "Ba chóir don LDT idirdhealú soiléir a dhéanamh idir bunshonraí amha, sonraí atá réidh le haghaidh sreafa oibre claochlaithe, ionchuir mhúnla, agus aschuir mhúnla.",
+    "MIM8 · C2": "Braitheann an cumas seo ar MIM3 (Malartú Sonraí) le haghaidh malartú sonraí.",
+    "MIM8 · R3.1": "Ba chóir don mhúnla meiteashonraí caighdeánacha múnla a sholáthar, lena n-áirítear cur síos ar a mhodhanna agus a pharaiméadair, agus sonraí-pharaiméadair (trí luach nó trí thagairt). Chuige sin ba chóir úsáid a bhaint as caighdeáin choiteanna meiteashonraí.",
+    "MIM8 · R3.2": "Nochtfaidh an múnla comhéadan doiciméadaithe nó beidh sé inghlaoite trí chomhéadan doiciméadaithe, de rogha ag baint úsáide as API caighdeánaithe aitheanta. Déanfar cur síos ar an tacar sonraí arb é toradh an mhúnla é (ar leibhéal na sonraí).",
+    "MIM8 · R3.3": "Ba chóir úsáid iontaofa, fhónta agus eiticiúil modhanna nuálacha (LLManna, IS ghníomhaireach, etc.) a chosaint. Ba chóir claonadh a íoslaghdú nuair is infheidhme. Ba chóir cur síos a dhéanamh ar na modhanna a úsáidtear chun é seo a ráthú.",
+    "MIM8 · R3.4": "Ní mór don mhúnla a bheith in ann rochtain a fháil ar shonraí thar ceann an úsáideora deiridh nó na heagraíochta. Féach MIM3",
+    "MIM8 · R3.5": "Chun go n-úsáidfear sonraí i múnlaí IS, ba chóir bunús agus iontaoibh a ráthú. I gcásanna áirithe, ní mór foinse údarásach, amhail gníomhaireacht rialtais, a liostú.",
+    "MIM8 · R4.1": "Tacaíonn an LDT le sreafaí oibre a nascann foinsí sonraí, claochluithe sonraí, forghníomhú samhlacha, próisis ionsamhlúcháin, agus aschuir.",
+    "MIM8 · R4.2": "Slabhraíonn an LDT céimeanna sreafa oibre, áit ar féidir aschur céime amháin a úsáid mar ionchur do chéim eile.",
+    "MIM8 · R4.3": "Déanann an LDT monatóireacht ar stádas forghníomhaithe an tsreafa oibre, lena n-áirítear próisis chríochnaithe, theipthe agus bhriste.",
+    "MIM8 · R4.4": "Taifeadann an LDT bunús an tsreafa oibre, lena n-áirítear tacair shonraí a úsáideadh (lena n-áirítear leagan, stampáilte le ham), samhlacha a forghníomhaíodh, paraiméadair a roghnaíodh, agus aschuir a gineadh.",
+    "MIM8 · R5.1": "Soláthraíonn an LDT meiteashonraí a mhíníonn cad atá á léirshamhlú, lena n-áirítear stampa ama, raon feidhme spásúil, foinse sonraí, agus toimhdí cásanna agus leaganacha nuair is ábhartha.",
+    "MIM8 · R5.2": "Tacaíonn an LDT le cineálacha éagsúla léirshamhlaithe idirghníomhacha, amhail léarscáileanna 2D, radhairc 3D, deaisanna, tuarascálacha, nó radhairc phoiblí.",
+    "MIM8 · R6.1": "Ba chóir don LDT bearnaí séimeantacha neamhréitithe, toimhdí, nó mapálacha a dhoiciméadú a d'fhéadfadh dul i bhfeidhm ar léirmhíniú, athúsáid nó comparáid torthaí.",
+    "MIM8 · M1": "Rochtain ar Acmhainní LDT Bunaithe ar API",
+    "MIM8 · M2": "Formáidí Sonraí agus Aschuir Chaighdeánaithe",
+    "MIM8 · M3": "Múnla-mar-Sheirbhís",
+    "MIM8 · M4": "Stiúradh Sreafa Oibre LDT",
+    "MIM8 · M5": "Rochtain ar Aschur Il-radhairc agus ar Léirshamhlú",
+    "MIM1 · §3.1": "Caitear leis an IRI mar an t-aitheantóir canónta i ngach córas iartheachtach; NÍ CEADMHACH do chur i bhfeidhm IRIanna a ghiniúint a chuimsíonn sonraí cur i bhfeidhm luaineacha amhail IDanna sraithe bunachair sonraí nó óstainmneacha freastalaí.",
+    "MIM6 · 8.15": "Logáil. Déanfar logaí a thaifeadann gníomhaíochtaí, eisceachtaí, lochtanna agus imeachtaí ábhartha eile a tháirgeadh, a stóráil, a chosaint agus a anailísiú."
+  },
+  "capability_translations": {
+    "MIM0 · C1": "Tá sonraí meaisín-inléite in-aisghabhála tríd an ngréasán",
+    "MIM0 · C2": "Tá rochtain struchtúrtha agus incheistithe",
+    "MIM0 · C2 best practice": "Dea-chleachtas breise le breithniú:",
+    "MIM0 · C3": "Is féidir liostáil d'athruithe ar shonraí",
+    "MIM0 · C4": "Is féidir srian a chur le rochtain ar fhaisnéis",
+    "MIM1 · C1": "Sainaithnítear eintitis ag baint úsáide as aitheantóirí uathúla",
+    "MIM1 · C2": "Is féidir eintitis a chineálú",
+    "MIM1 · C3": "Is féidir eintitis a (dhí)thagairt",
+    "MIM2 · C1": "Déantar cur síos ar gach eintiteas a áirítear i bhfoinsí sonraí ag baint úsáide as samhlacha comhsheasmhacha sonraí chun idir-inoibritheacht a chumasú d'fheidhmchláir agus do chórais",
+    "MIM2 · C2": "Ba chóir go mbeadh samhlacha sonraí éagsúla don eintiteas céanna a úsáidtear laistigh d'éiceachóras coiteann comhroinnte sonraí in-chlaochlaithe go héasca go samhail choiteann sonraí",
+    "MIM2 · C3": "Is féidir aon sonraí agus a meiteashonraí gaolmhara a roinnt i bhformáidí oscailte, caighdeánaithe, iompair sonraí ionas gur féidir sonraí a mhalartú agus a léirmhíniú go comhsheasmhach ag uirlisí agus feidhmithe éagsúla",
+    "MIM2 · C4": "Nuair is úsáideach, ba chóir go mbeadh sé indéanta \"Próifílí Feidhmchláir\" a chruthú do shamhail sonraí, ionas gur féidir tréithe a bhaineann go sonrach le cás úsáide a chur leis nó a shonrú gan an bhunshamhail sonraí a athrú",
+    "MIM3 · C1": "Is féidir rialacha rialachais don éiceachóras comhroinnte sonraí a shainiú",
+    "MIM3 · C2": "Is féidir téarmaí agus coinníollacha maidir le comhroinnt sonraí a shainiú",
+    "MIM3 · C3": "Is féidir comhlíonadh théarmaí agus choinníollacha comhroinnte sonraí a bhailíochtú",
+    "MIM3 · C4": "Is féidir sócmhainní sonraí atá ar fáil a aimsiú",
+    "MIM3 · C5": "Is féidir rannpháirtithe san éiceachóras a aimsiú",
+    "MIM3 · C6": "Is féidir comhaontú a dhéanamh ar mhalartú sonraí",
+    "MIM3 · C7": "Is féidir sonraí nua nach bhfuil ar fáil faoi láthair a iarraidh",
+    "MIM6 · C1": "Níl sonraí inrochtana ach d'úsáideoirí ar chóir go mbeadh rochtain acu orthu",
+    "MIM6 · C2": "Níor athraíodh sonraí a ndearna úsáideoirí rochtain orthu",
+    "MIM6 · C3": "Tagann sonraí a ndéanann úsáideoirí rochtain orthu ó fhoinse fhíoraithe",
+    "MIM6 · M1": "Meicníocht is iarrthóir",
+    "MIM7 · C1": "Is féidir le cathracha agus pobail sonraí geospásúla a aistriú go héasca idir córais TF inmheánacha agus sheachtracha (lena n-áirítear córais a bhaineann le IoT)",
+    "MIM7 · C2": "Is féidir le cathracha agus pobail sonraí geospásúla 2D agus 3D a chomhtháthú a thagann ó fhoinsí éagsúla, mar shampla geoshonraí agus samhlacha faisnéise foirgnimh, agus na sonraí sin a roinnt laistigh díobh agus eatarthu ar bhealach idir-inoibritheach",
+    "MIM7 · C3": "Is féidir le cathracha agus pobail sonraí geospásúla a chomhtháthú le sonraí eile ar féidir leo tuilleadh faisnéise a sholáthar faoin gcomhthéacs",
+    "MIM7 · C4": "Tá bealach comhsheasmhach agus buan ag cathracha agus ag pobail chun cur síos a dhéanamh ar chásanna aonair de na gnéithe, na rudaí nó na heintitis go léir a áirítear sna foinsí sonraí geospásúla",
+    "MIM7 · C5": "Is féidir Córais Tagartha Comhordanáidí (CRS) a úsáidtear i gcomhroinnt sonraí a athrú go héasca go CRS coiteann",
+    "MIM8 · C1": "Rochtain a sholáthar ar thacair shonraí a úsáidtear laistigh den LDT, lena n-áirítear sonraí statacha, fíor-ama agus ionsamhlúcháin agus samhlacha ríofa",
+    "MIM8 · C2": "Sonraí a mhalartú le córais sheachtracha agus le LDTanna eile ag baint úsáide as comhéadain idir-inoibritheacha",
+    "MIM8 · C3": "Samhlacha cinnteacha nó IS a athúsáid thar réimsí, pobail, cásanna úsáide, agus/nó LDTanna éagsúla",
+    "MIM8 · C4": "Sonraí, samhlacha, agus sreafaí oibre próiseála a chomhordú agus a bhainistiú laistigh de LDT (laistigh de LDT) agus trasna LDTanna (idir-LDT)",
+    "MIM8 · C5": "Léirshamhluithe iolracha ar shonraí agus ar thorthaí (m.sh. 2D, 3D, deaisanna) a sholáthar ó shonraí agus ó shamhlacha bunúsacha coiteanna le haghaidh idirghníomhaíochta agus comparáide",
+    "MIM8 · C6": "A chinntiú gur féidir sonraí a mhalartaítear (agus aschuir ionsamhlúcháin) laistigh de LDTanna agus eatarthu a léirmhíniú go comhsheasmhach trí shéimeantaic chomhroinnte nó mhapáilte agus trí bhunús soiléir",
+    "MIM8 · M": "Meicníochtaí (faoi fhorbairt ghníomhach)",
+    "MIM1 · M1": "Meicníocht 1, rannán 3.1: Sainaithint Eintitis le hIRIanna atá Uathúil go Domhanda",
+    "MIM6 · P": "Réamh- agus Iar-riachtanais (bunaithe ar ISO 27001 Iarscríbhinn A): an rialú a dtagraíonn an leabhrán seo dó"
+  },
+  "spec_link_label": "Sonraíocht iomlán:"
+}

@@ -141,12 +141,19 @@ def check_layout(lang):
     err, warn = [], []
     if not os.access(TYPST, os.X_OK):
         return err, ["layout not checked: tools/typst missing (run build.sh once)"]
-    r = subprocess.run([TYPST, "eval", "query(<fit>).map(it => it.value)", "--in", "main.typ",
+    expr = '(fit: query(<fit>).map(it => it.value), table: counter(page).at(<table>).first())'
+    r = subprocess.run([TYPST, "eval", expr, "--in", "main.typ",
                         "--font-path", FONTS, "--input", f"lang={lang}"],
                        cwd=HERE, capture_output=True, text=True)
     if r.returncode:
         return [f"typst cannot compile this language:\n{r.stderr.strip()}"], warn
-    for page in json.loads(r.stdout):
+    out = json.loads(r.stdout)
+    # the clause that sends the bidder to the compliance table prints its page number
+    clause = jload(f"{lang}.json")["cross"]["items"][-1]["text"]
+    if str(out["table"]) not in re.findall(r"\d+", clause):
+        err.append(f"cross/items[-1]/text names page {' '.join(re.findall(r'[0-9]+', clause)) or '?'}, "
+                   f"the compliance table is on page {out['table']}")
+    for page in out["fit"]:
         if page["overflow"]:
             err.append(f"page '{page['page']}' overflows even at {page['zoom']} % zoom: shorten its text")
         elif page.get("flows"):
