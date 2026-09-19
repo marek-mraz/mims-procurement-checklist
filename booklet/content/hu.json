@@ -1,16 +1,16 @@
 {
   "cover": {
-    "title": "Közbeszerzési ellenőrző lista · a minimális interoperabilitási · mechanizmusok (MIM-ek) alkalmazásához",
-    "subtitle": "Mit írjon a felhívásba, hogy a város adatai a városnál maradjanak",
-    "tagline": "Az OASC MIMs Plus 9.0 verziójához",
+    "title": "Közbeszerzési ellenőrző lista · a minimális interoperabilitási · mechanizmusok (MIM-ek) alapján",
+    "subtitle": "Mit írjon elő a közbeszerzési dokumentumokban, hogy a város kezében maradjon az adatai feletti ellenőrzés",
+    "tagline": "Specifikáció: OASC MIMs Plus 9.0",
     "footer": "Európai önkormányzatok közbeszerzési szakemberei, projektmenedzserei és informatikai vezetői számára"
   },
   "why": {
-    "title": "Miért készült ez az útmutató",
+    "title": "E füzet célja",
     "paras": [
       "A városok minden évben szoftvereket vásárolnak: parkolási rendszereket, szenzorplatformokat, térképportálokat, digitális ikreket. Az ezek által gyűjtött adatok túl gyakran zártak maradnak a rendszerekben. A szerződés lejártakor a közpénzből fizetett adatok vagy távoznak a szállítóval, vagy olyan formátumban rekednek benn, amelyet senki más nem tud olvasni.",
-      "Ennek nem kell így lennie. Az Open & Agile Smart Cities (OASC) által gondozott és az európai living-in.eu mozgalom által támogatott minimális interoperabilitási mechanizmusok (MIM-ek) azokat a minimális műszaki követelményeket írják le, amelyek biztosítják az adatok nyíltságát, újrafelhasználhatóságát és szállítófüggetlenségét. Szándékosan tömörek: nem bonyolult architektúrát jelentenek, csupán azt a néhány alapfeltételt, amelyek a rendszerek egymás közötti kommunikációjához elengedhetetlenek.",
-      "Használatukhoz nem szükséges mérnöknek lennie. Minden ellenőrző lista közérthető pontokká alakít egy-egy MIM-et, amelyeket közvetlenül átmásolhat a közbeszerzési dokumentumokba, megjelölve azt is, hogy az egyes pontok miért védik az önkormányzatot. Az ellenőrző lista után szó szerint megtalálható az adott MIM minden követelménye, így a műszaki munkatársak és az ajánlattevők is ellenőrizhetik a részleteket.",
+      "Ennek nem kell így lennie. Az Open & Agile Smart Cities (OASC) által gondozott és az európai living-in.eu mozgalom által támogatott minimális interoperabilitási mechanizmusok (MIM-ek) azokat a minimális műszaki követelményeket írják le, amelyek biztosítják az adatok nyíltságát, újrafelhasználhatóságát és szállítófüggetlenségét. Szándékosan tömörek: nem egy kiterjedt architektúrát jelentenek, csupán azt a néhány feltételt, amelynek teljesülnie kell a rendszerek közötti adatcseréhez.",
+      "E füzet használatához nincs szükség műszaki háttérre. Minden ellenőrző lista közérthető pontokká alakít egy-egy MIM-et, amelyeket átmásolhat a felhívásba, megjelölve azt is, hogy az egyes pontok miért védik Önt. Közvetlenül az ellenőrző lista után szó szerint megtalálható az adott MIM minden követelménye, így a műszaki kollégák és az ajánlattevők is ellenőrizhetik a részleteket.",
       "Azok a városok, amelyek megkövetelik a MIM-eket, egyszer vásárolnak, és sokszor használnak fel: a levegőminőségi adatok táplálják az iskolai információs táblát, a közvilágítási kataszter az energiatervet, a következő szállító pedig zökkenőmentesen folytatja az előző munkáját. Ezt jelenti az interoperabilitás a gyakorlatban — és az uniós forrásból finanszírozott projekteknél ez egyre inkább elvárás."
     ],
     "quote": {
@@ -103,11 +103,11 @@
       }
     },
     "note": "Minden ellenőrző listás tételhez tartozik egy rövid hivatkozás, például → MIM0 R1.1. Ez azt a MIMs Plus 9.0 követelményt jelöli, amelyből származik; a lista után közvetlenül megtalálható az adott MIM minden követelménye szó szerint. Csak a MIM0 definiálja a kulcsszavakat: ezek akkor bírnak kötőerővel, ha nagybetűvel írják őket, az IETF RFC 2119 és RFC 8174 konvenciója szerint (a CAN az ISO/IEC Directives, Part 2 dokumentumból származik). A többi MIM nem tartalmaz fogalommeghatározást: a MIM6 a SHALL szót többnyire nagybetűvel írja, a MIM2, MIM3, MIM7 és MIM8 a shall, should és must szavakat kisbetűvel használja, a MIM1 pedig csak a mechanizmus leírásában alkalmazza őket (MUST NOT a 3.1 pontban). Ez a füzet a kisbetűs kifejezéseket azonos módon értelmezi; az ajánlattevők ettől megengedőbben értelmezhetik őket.",
-    "legend_note": "Az ellenőrző lista pontjai akkor is a „kell” kifejezést használják, ha a specifikáció csupán ajánlást fogalmaz meg (ajánlott), vagy lehetséges mechanizmusként hivatkozik rá. Ez az ajánlatkérő döntése."
+    "legend_note": "Az ellenőrző lista pontjai minden tételt követelményként fogalmaznak meg, még akkor is, ha a specifikáció csupán ajánlást tesz (ajánlott), vagy lehetséges mechanizmusként sorolja fel. Ez az ajánlatkérő döntése."
   },
   "glance": {
     "title": "Hét MIM és három eszköz",
-    "intro": "Hét rövid mechanizmus, egyetlen cél: az adatok az önkormányzatnál maradjanak, a rendszerek pedig képesek legyenek kommunikálni egymással.",
+    "intro": "Hét rövid mechanizmus, egyetlen cél: az adatok a város ellenőrzése alatt maradnak, a rendszerek pedig együttműködnek.",
     "items": {
       "MIM0": {
         "name": "Adathozzáférés",
@@ -141,12 +141,12 @@
       },
       "MIM8": {
         "name": "Helyi digitális ikrek",
-        "q": "Képes növekedni a digitális ikerpárunk?",
+        "q": "Képes növekedni a digitális ikrünk?",
         "d": "A digitális iker adatai, modelljei és eredményei hozzáférhetők, dokumentáltak és újrafelhasználhatók maradnak."
       }
     },
     "numbering_note": "A számozásról: a MIMs Plus 9.0 hét mechanizmust határoz meg, a 0, 1, 2, 3, 6, 7 és 8 számozással. A MIM4 (személyes adatok) és a MIM5 (méltányos MI) korábbi OASC verziókhoz tartoznak, és nem képezik a 9.0 részét. A füzetből semmi sem hiányzik.",
-    "tools_title": "Eszközök az ajánlattételhez",
+    "tools_title": "Eszközök a közbeszerzési eljáráshoz",
     "tools": {
       "clauses": {
         "name": "Átfogó szerződéses feltételek",
@@ -204,7 +204,7 @@
         },
         {
           "text": "A hibák kezelése, a gyorsítótárazás és a lekérdezési korlátok a szabványos HTTP-konvenciókat követik és dokumentáltak.",
-          "why": "Az integrációk hangosan és javíthatóan buknak el, nem némán."
+          "why": "Az integrációs hibák egyértelmű, javítható hibaüzenettel jelentkeznek, nem észrevétlenül."
         }
       ],
       "why_panel": [
@@ -215,7 +215,7 @@
       "red_flags": [
         "„Adatok exportálása kérésre, az ügyfélszolgálatunkon keresztül.”",
         "„Az API fizetős kiegészítő modulként érhető el.”",
-        "Lekérdezésenkénti díjszabás a város saját adataihoz (lásd a „Nincsenek felhasználónkénti vagy lekérdezésenkénti díjak” feltételt)."
+        "Lekérdezésenkénti díjszabás a város saját adataihoz (lásd a „Nincs díj a saját adatokért” pontot)."
       ]
     },
     "MIM1": {
@@ -236,7 +236,7 @@
           "why": "A térinformatikai épület és az energetikai rendszer épülete igazolhatóan ugyanaz az épület."
         },
         {
-          "text": "Az azonosítók nem tartalmaznak a szállító belső működésére utaló adatokat (adatbázis sorszámok, szervernevek).",
+          "text": "Az azonosítók nem tartalmaznak a szállító belső működésére utaló adatokat (adatbázissor-azonosítók, szervernevek).",
           "why": "Különben az azonosítók a szerződéssel együtt elvesznek."
         }
       ],
@@ -264,7 +264,7 @@
           "why": "A „Hőmérséklet: 23” használhatatlan, ha senki sem rögzítette, hogy az °C vagy °F."
         },
         {
-          "text": "A kiterjesztéseket a szabványos modellre épülő, dokumentált profilokként vagy kiegészítésekként kell átadni — sohasem módosított, zárt változatként.",
+          "text": "A kiterjesztéseket a szabványos modellre épülő, dokumentált profilokként vagy kiegészítésekként kell átadni — sohasem módosított, privát fork-ként.",
           "why": "Megmarad a kompatibilitás a közösséggel és a jövőbeli frissítésekkel."
         },
         {
@@ -285,19 +285,19 @@
     "MIM3": {
       "name": "Adatcsere",
       "question": "Tudunk egyértelmű feltételekkel megosztani?",
-      "intro": "Nem minden városi adat tehető egyszerűen közzé: egyes adatok üzleti titkot képeznek, mások érzékenyek. A MIM3 arról gondoskodik, hogy a többi adatot is biztonságosan meg lehessen osztani: kereshető katalógus, egyedi jogi szövegek helyett mintalicencek és mindenki számára hozzáférhető adatkezelési szabályzat révén. A specifikáció a MIM3 szinte minden elemét ajánlásként fogalmazza meg (lásd a 3. oldalt).",
+      "intro": "Nem minden városi adat tehető egyszerűen közzé: egyes adatok üzleti célúak, mások érzékenyek. A MIM3 arról gondoskodik, hogy a többi adatot mindenesetre biztonságosan meg lehessen osztani: kereshető katalógus, egyedi jogi szövegek helyett mintalicencek és mindenki számára olvasható adatirányítási szabályok révén. A specifikáció a MIM3 szinte minden elemét ajánlásként fogalmazza meg (lásd a 3. oldalt).",
       "items": [
         {
           "text": "A rendszer által kínált minden adatkészlet szabványos metaadatokkal (például DCAT-AP) le van írva egy katalógusban, így mások is megtalálhatják.",
           "why": "Amit senki sem talál meg, azt senki sem használja."
         },
         {
-          "text": "Az adatfelhasználási feltételek és licencek ismert mintákból származnak (pl. nyílt licencek, szabványos adatmegosztási megállapodások), nem adatkészletenkénti egyedi jogi szövegezések.",
-          "why": "A megállapodások skálázhatók; nem a jogászok jelentik majd a szűk keresztmetszetet."
+          "text": "Az adatfelhasználási feltételek és licencek jól ismert mintákból származnak (pl. nyílt licencek, szabványos adatmegosztási megállapodások), nem adatkészletenkénti egyedi jogi szövegek.",
+          "why": "A megállapodások eseti jogi felülvizsgálat nélkül is skálázhatók."
         },
         {
           "text": "A város maga határozhatja meg, hogy melyik adateszközhöz ki és milyen feltételekkel férhet hozzá, és ezen a szállító bevonása nélkül változtathat.",
-          "why": "Az adatkezelési felügyelet az önkormányzat kezében marad."
+          "why": "Az adatok feletti irányítás (adatirányítás) az önkormányzat kezében marad."
         }
       ],
       "why_panel": [
@@ -306,13 +306,13 @@
         "Egyetlen szabályrendszer váltja fel a sok egyedi adatmegosztási szerződést."
       ],
       "red_flags": [
-        "A szállító tulajdonjogot vagy egyéb jogokat formál a város adataira (lásd az „Adatok feletti jogok” feltételt).",
+        "A szállító jogokat formál a város adataira (lásd az „Adatok feletti jogok” pontot).",
         "A harmadik féllel történő megosztás a szállító hozzájárulását vagy különdíj fizetését igényli."
       ]
     },
     "MIM6": {
       "name": "Adatbiztonság",
-      "question": "Biztonságban vannak az adataink átvitel és használat során?",
+      "question": "Biztonságban vannak az adataink?",
       "intro": "Az okosvárosok kiemelt célpontok. A MIM6 a fókuszt szándékosan szűken és gyakorlatiasan tartja: titkosított adatmozgás, szabványos bejelentkezések a saját fejlesztésűek helyett, valamint annak ellenőrzése és naplózása, hogy ki mihez fér hozzá. Egyik sem kirívó elvárás — és mindegyiknek szerepelnie kell a szerződésben.",
       "items": [
         {
@@ -329,17 +329,17 @@
         },
         {
           "label": "A részvételi feltételek közé tartozik, nem a műszaki leírásba",
-          "text": "A szállítónak igazolnia kell az általa üzemeltetett szolgáltatás ISO/IEC 27001:2022 szabványnak (vagy azzal egyenértékűnek) való megfelelését.",
+          "text": "Az ajánlattevő igazolja az általa üzemeltetett szolgáltatás ISO/IEC 27001:2022 szabványnak (vagy azzal egyenértékűnek) való megfelelését.",
           "why": "A biztonság folyamat, nem pedig egy átadáskori pipa. A specifikáció az ISO/IEC 27001 kontrolljait idézi, nem tanúsítványt ír elő."
         }
       ],
       "why_panel": [
         "Egy rendszer feltörése nem nyitja meg az összes többit.",
         "Ahol a NIS 2 alkalmazandó, a jogszabályoknak és a nemzeti kiberbiztonsági szabályoknak való megfelelés mérhetően egyszerűbbé válik.",
-        "Ha hiba történik, a naplók megmondják, mit és ki tett."
+        "Egy incidenst követően a naplók megmutatják, mi történt és ki járt el."
       ],
       "red_flags": [
-        "Csak saját fejlesztésű bejelentkezés.",
+        "Kizárólag zárt, védett bejelentkezés.",
         "„Naplófájlok külön kérésre igényelhetők.”",
         "Közös adminisztrátori fiókok."
       ]
@@ -358,7 +358,7 @@
           "why": "Nincsenek konverterlicencek, nincsenek zsákutcák."
         },
         {
-          "text": "A vetületi koordináta-rendszer minden esetben fel van tüntetve (EPSG kód), és az adatok átalakíthatók közös koordináta-rendszerbe.",
+          "text": "A koordináta-rendszer (CRS) minden esetben fel van tüntetve (EPSG-kód), és az adatok átalakíthatók közös koordináta-rendszerbe.",
           "why": "A különböző forrásokból származó rétegek pontosan fedik egymást a térképen."
         },
         {
@@ -378,7 +378,7 @@
     },
     "MIM8": {
       "name": "Helyi digitális ikrek",
-      "question": "Képes növekedni a digitális ikerpárunk?",
+      "question": "Képes növekedni a digitális ikrünk?",
       "intro": "A digitális iker hosszú távú beruházás: adatok, 3D modellek, szimulációk, döntések. A MIM8 ezt a befektetést védi — a digitális iker adatai és modelljei hozzáférhetők és dokumentáltak maradnak, az eredmények megismételhetők, és az egyik projekt komponensei felhasználhatók a következőben. Alkalmazza ezt az oldalt digitális iker platformok, szimulációs modellek vagy 3D városi eszközök beszerzésekor.",
       "items": [
         {
@@ -390,7 +390,7 @@
           "why": "Egy egyszer megvásárolt árvízmodell újrahasznosítható a különböző főosztályokon — és akár más városok által is."
         },
         {
-          "text": "A kimenetek szabványos formátumokat használnak (GeoJSON, CityJSON, 3D Tiles, NetCDF…), amelyeket olyan eszközök is feldolgozhatnak, amelyeket nem ettől a szállítótól vásároltak.",
+          "text": "A kimenetek szabványos formátumokat használnak (GeoJSON, CityJSON, 3D Tiles, NetCDF…), amelyeket harmadik féltől származó eszközök is képesek beolvasni.",
           "why": "A vizualizációs és elemzési megoldások piaca nyílt és versenyképes marad."
         },
         {
@@ -423,8 +423,8 @@
         "text": "A szerződés keretében gyűjtött és előállított adatokhoz fűződő valamennyi jog az ajánlatkérőt illeti meg."
       },
       {
-        "name": "Nincsenek felhasználónkénti / kérésenkénti díjak",
-        "text": "Nincsenek díjak a város saját adataihoz való hozzáféréséért."
+        "name": "Nincs díj a saját adatokért",
+        "text": "Az ajánlatkérő nem fizet díjat a saját adataihoz való hozzáférésért, sem felhasználónként, sem lekérdezésenként."
       },
       {
         "name": "API-stabilitás és verziókezelés",
@@ -432,11 +432,11 @@
       },
       {
         "name": "Bemutatás, nem puszta ígéret",
-        "text": "Az ajánlattevők a bírálat során önkéntes nyilatkozatok helyett működés közben mutatják be a megfelelést. API esetén ez nyilvánosan közzétett, interaktív dokumentációt (például OpenAPI) és érvényes adatokat visszaadó élő felülethívást jelent. Minden bejelölt pontot újra tesztelnek az átadás-átvételkor."
+        "text": "Az ajánlattevők az ajánlatok bírálata során puszta önnyilatkozatok benyújtása helyett működés közben mutatják be a megfelelést. API esetén ez nyilvánosan közzétett, interaktív dokumentációt (például OpenAPI) és érvényes adatokat visszaadó élő felülethívást jelent. Minden bejelölt pontot újra tesztelnek az átadás-átvételkor."
       },
       {
         "name": "Nyílt szabványok megnevezése",
-        "text": "A felhívás a fenti szabványokat nevesíti; a „kompatibilis” állításoknak pontosan meg kell jelölniük a felületet és annak verzióját. Szabványra vagy műszaki leírásra történő minden hivatkozás esetén elfogadható az egyenértékű megoldás; az egyenértékűséget az ajánlattevő igazolja."
+        "text": "A felhívás konkrét szabványokat nevesít; a „kompatibilis ezzel” állításoknak pontosan meg kell jelölniük a felületet és a verziót. Szabványra vagy műszaki leírásra történő minden hivatkozás esetén elfogadható az egyenértékű megoldás; az egyenértékűséget az ajánlattevő igazolja."
       },
       {
         "name": "MIM-ek megfelelőségi nyilatkozat",
@@ -446,7 +446,7 @@
   },
   "example": {
     "title": "Példa: levegőminőség-érzékelő hálózat beszerzése",
-    "scenario": "Megjelölt oldalak: MIM0, MIM1, MIM2, MIM6 és MIM7 (az adatok térképen jelennek meg). A MIM3-ból kizárólag a 3.1 tétel (a levegőminőségi adatok nyílt adatként jelennek meg, így katalógusba tartoznak); a MIM8 nem alkalmazandó: ez nem digitális iker.",
+    "scenario": "Megjelölt oldalak: MIM0, MIM1, MIM2, MIM6 és MIM7 (az adatok térképre kerülnek). A MIM3-ból kizárólag a 3.1 tétel (a levegőminőségi adatok nyílt adatként jelennek meg, így katalógusba valók); a MIM8 nem alkalmazandó: a rendszer nem digitális iker.",
     "table_title": "Mi hova kerül",
     "table_headers": [
       "Dokumentum",
@@ -472,7 +472,7 @@
       [
         "Szerződéstervezet",
         "szerződés teljesítésének feltételei (70. cikk)",
-        "Kilépési feltétel, Adatok feletti jogok, Nincsenek felhasználónkénti vagy lekérdezésenkénti díjak, API-stabilitás és verziókezelés; a kitöltött megfelelőségi táblázat mint melléklet"
+        "Kilépési feltétel, Adatok feletti jogok, Nincs díj a saját adatokért, API-stabilitás és verziókezelés; a kitöltött megfelelőségi táblázat mint melléklet"
       ],
       [
         "Átadás-átvételi jegyzőkönyv",
@@ -488,7 +488,7 @@
       "4.3.3 Az API lehetővé teszi az adatok mérés ideje és helye szerinti szűrését. (MIM0 R2.1, R2.2)",
       "… 4.3.4 – 4.3.21: további megjelölt pontok …",
       "4.3.22 Szabványra vagy műszaki leírásra történő minden hivatkozás esetén elfogadható az egyenértékű megoldás; az egyenértékűséget az ajánlattevő igazolja.",
-      "4.3.23 Az ajánlattevő kitölti a megfelelőségi táblázatot (a közbeszerzési dokumentumok melléklete), és minden előírt tételnél megjelöli az igazolást. Az ajánlattevő a bírálat során élő API-hívással bemutatja a 4.3.1–4.3.21. pontoknak való megfelelést; az ajánlatkérő az átadás-átvételkor ezeket ismételten ellenőrzi. Ezek nem teljesülése az átadás-átvétel megtagadásának indoka."
+      "4.3.23 Az ajánlattevő kitölti a megfelelőségi táblázatot (a közbeszerzési dokumentumok melléklete), és minden előírt tételnél megadja az igazolást. Az ajánlatok bírálata során az ajánlattevő bemutatja a 4.3.1–4.3.21. pontoknak való megfelelést (például élő API-hívással); az az ajánlat, amely nem teljesít egy előírt pontot, nem felel meg a szerződés tárgyára vonatkozó követelményeknek. Az ajánlatkérő az átadás-átvételkor ismét teszteli a pontokat; ezek sikertelensége az átadás-átvétel megtagadásának indoka."
     ],
     "tip": "A 4.3.3 pont mutatja, hogy az előírás pontosítható a beszerzéshez: érzékelőknél indokolt a mérési idő és hely szerinti szűrést kérni.",
     "note": "Igazítsa a megfogalmazást a nemzeti jogszabályokhoz, és ellenőriztesse a közbeszerzési felelőssel.",
@@ -516,7 +516,7 @@
         "✓"
       ]
     ],
-    "filled_note": "A jövőbeli ígéret N besorolású: a bírálóbizottság kizárólag azt vizsgálja, amit az ajánlattevő be tud mutatni."
+    "filled_note": "A jövőbeli funkcionalitásra vonatkozó ígéret N-nek minősül: a bírálóbizottság kizárólag azt ellenőrzi, amit az ajánlattevő be tud mutatni. Előírt tétel esetén az N azt jelenti, hogy az ajánlat nem felel meg a szerződés tárgyára vonatkozó követelményeknek."
   },
   "tearout": {
     "title": "Megfelelőségi táblázat",
@@ -553,17 +553,17 @@
       "Egyedi állandó azonosító entitásonként",
       "Azonosító lekérése adatot és típust ad",
       "Rendszerek közti azonosító-hozzárendelés",
-      "Nincsenek belső szállítói adatok a kódokban"
+      "Nincsenek belső szállítói adatok az azonosítókban"
     ],
     "MIM2": [
       "Szabványos adatmodellek, ahol lehetséges",
       "Dokumentált modellek, egyértelmű egységek",
-      "Kiterjesztések csak profilként, nem ágként",
+      "Kiterjesztések csak profilként, sosem saját fork-ként",
       "Nyílt, sémával ellenőrizhető szerializáció"
     ],
     "MIM3": [
       "Adatkészletek leírása szabvány metaadatokkal",
-      "Mitalicencek és -megállapodások",
+      "Mintalicencek és mintamegállapodások",
       "A hozzáférést maga a város szabályozza"
     ],
     "MIM6": [
@@ -579,7 +579,7 @@
       "Állandó azonosítók a téradatokhoz (lásd 1.1)"
     ],
     "MIM8": [
-      "Ikeradatok és kimenetek API-kon keresztül",
+      "A digitális iker adatai és kimenetei API-kon keresztül",
       "Dokumentált és hívható modellek",
       "Szabványos kimeneti formátumok",
       "Munkafolyamat-eredet rögzítése"
@@ -588,7 +588,7 @@
       "Kilépés: ingyenes átadás nyílt formátumban",
       "Az adatok feletti jogok az ajánlatkérőt illetik",
       "Nincs díj a saját adatok eléréséért",
-      "API-stabilitás: verziózott, 6 hó értesítés"
+      "API-stabilitás: verziókezelés, 6 hónapos előzetes értesítés"
     ]
   },
   "glossary": {
@@ -644,7 +644,7 @@
       },
       {
         "t": "Nyílt szabvány",
-        "d": "Olyan műszaki előírás, amelyet bárki díjfizetés vagy külön engedély nélkül megismerhet és megvalósíthat."
+        "d": "Olyan műszaki szabály, amelyet bárki díjmentesen és külön engedély nélkül megismerhet és megvalósíthat."
       },
       {
         "t": "OpenAPI",
@@ -660,7 +660,7 @@
       },
       {
         "t": "Szállítói függőség (vendor lock-in)",
-        "d": "Az a helyzet, amikor a szállítóváltás az adatok, a formátumok vagy a költségek miatt olyan nehéz, hogy gyakorlatilag ellehetetlenül."
+        "d": "Olyan állapot, amelyben az adatok, a formátumok vagy a díjak költségei miatt a szállítóváltás gyakorlatilag lehetetlen."
       },
       {
         "t": "Webhook / MQTT",
@@ -681,10 +681,10 @@
     "author": "A füzet szerzője: Marek Mráz"
   },
   "quote_translations": {
-    "MIM0 · R1.1": "A rendszerek KÖTELESEK lehetővé tenni az adatok visszanyerését legalább egy géppel olvasható formátumban. A formátumok HTTP tartalom-egyeztetéssel (Content-Negotiation) határozhatók meg",
+    "MIM0 · R1.1": "A rendszerek KÖTELESEK lehetővé tenni az adatok lekérését legalább egy géppel olvasható formátumban. A formátumok HTTP tartalom-egyeztetéssel (Content-Negotiation) határozhatók meg",
     "MIM0 · R1.2": "Az adatoknak KÖTELEZŐEN visszanyerhetőnek KELL lenniük legalább egy szabványos webalapú mechanizmuson keresztül",
     "MIM0 · R1.3": "A hozzáférési mechanizmus(oka)t KÖTELEZŐ formálisan leírni",
-    "MIM0 · R1.4": "A hasznos teher által használt adatmodelleket ajánlott meghatározni (lásd MIM2)",
+    "MIM0 · R1.4": "Az adattartalom (payload) által használt adatmodelleket ajánlott meghatározni (lásd MIM2)",
     "MIM0 · R2.1": "A rendszerek KÖTELESEK az adatokat strukturált és konzisztens felületen keresztül biztosítani",
     "MIM0 · R2.2": "A rendszerek KÖTELESEK támogatni az alapvető lekérdezést és/vagy szűrést (pl. idő, hely, attribútumok alapján)",
     "MIM0 · C2": "Az API-knak AJÁNLOTT támogatniuk az aktuális adatok visszanyerését · Az API-knak AJÁNLOTT támogatniuk a korábbi adatok visszanyerését, ahol releváns · Az API-knak AJÁNLOTT támogatniuk a térbeli lekérdezést, ahol releváns (lásd MIM7) · Az API-knak AJÁNLOTT támogatniuk a változásokra való feliratkozást, ahol releváns · Az API-knak AJÁNLOTT közzétenniük a következő várható frissítés időbélyegét · Az API-knak AJÁNLOTT támogatniuk a végpontok kifejezett verziókezelését · Az API-knak AJÁNLOTT példa hasznos terheket vagy tesztlekérdezéseket biztosítaniuk · Az API-knak AJÁNLOTT támogatniuk a szabványos HTTP gyorsítótárazási fejléceket · Az API-knak AJÁNLOTT a lekérdezési korlát állapotát szabványos HTTP fejléceken keresztül közölniük · Az API-knak AJÁNLOTT strukturált hibatörzset visszaadniuk · Az API-k LEHET, hogy támogatják a részleges válaszokat vagy lekérdezési projekciókat · Az API-k LEHET, hogy közzétesznek egy szabványos állapot/egészség (health) végpontot",
@@ -706,7 +706,7 @@
     "MIM2 · R1.3": "A használt adatmodelleknek támogatniuk kell az adatcserét az adathozzáférésről és az adatok összekapcsolásáról szóló MIM-ek releváns követelményeinek alkalmazásával",
     "MIM2 · R2.1": "Minden adat-ökoszisztéma számára ajánlott egy közös adatmodellt kidolgozni az egyes kulcsfontosságú entitásokhoz. Ennek a közös adatmodellnek ajánlott tartalmaznia mindazokat a mezőket, amelyek az adott adat-ökoszisztémán belül az adott entitáshoz használt különböző adatmodellekben szerepelnek. Az adott adat-ökoszisztémán belül használt minden egyes eltérő adatmodell ezután átalakítható a közös adatmodellre.",
     "MIM2 · R3.1": "Minden használt adatmodellnek rendelkeznie kell legalább egy meghatározott, géppel olvasható adattovábbítási formátummal („szerializációval”), amely nyílt, nyilvánosan elérhető és megvalósítás-független.",
-    "MIM2 · R3.2": "Az adattovábbítási formátum dokumentációjának elégségesnek kell lennie ahhoz, hogy lehetővé tegye egy olyan nem zárt forráskódú alkalmazás vagy értelmező létrehozását, amely képes az ilyen adatformátumban tárolt összes adat rekonstruálására.",
+    "MIM2 · R3.2": "Az adattovábbítási formátum dokumentációjának ajánlott elegendőnek lennie ahhoz, hogy lehetővé tegye olyan nem védett alkalmazás vagy értelmező létrehozását, amely képes az ilyen adatformátumban tárolt összes adat rekonstruálására.",
     "MIM2 · R3.3": "Ahol ugyanazon adatmodellhez több adattovábbítási formátum támogatott, azoknak ugyanazt az információtartalmat kell képviselniük, következetesen és jelentésvesztés nélkül.",
     "MIM2 · R3.4": "A reprezentációnak ajánlott támogatnia a nyíltan közzétett sémák, nyelvtanok vagy egyenértékű, géppel olvasható megkötések használatával történő érvényesítést, amennyiben léteznek ilyen érvényesítési mechanizmusok a választott formátumhoz.",
     "MIM2 · R4.1": "Az adatmodellt kiterjesztő alkalmazásprofiloknak ajánlott nem érinteniük a már meglévő modellt és annak felhasználóit",
@@ -717,7 +717,7 @@
     "MIM3 · RC2.1": "Az adatszolgáltatók szabadon határozhatják meg azokat a feltételeket, amelyek mellett adataikat cserélni kívánják. (Megjegyzés: Az adateszközök megosztása előtt az adatszolgáltatóknak ajánlott megbizonyosodniuk arról, hogy rendelkeznek a megfelelő engedéllyel az adattulajdonosoktól.)",
     "MIM3 · RC2.2": "Az adatcsere feltételeit ajánlott világosan és egyértelműen leírni, hogy azok az adatfelhasználók számára könnyen érthetők legyenek.",
     "MIM3 · RC2.3": "Az adatcsere feltételeit ajánlott pontosan meghatározott sablonokon vagy szabványokon alapuló adatlicencek vagy adatmegosztási megállapodások útján kifejezni.",
-    "MIM3 · RC2.4": "A feltételeknek ajánlott összhangban lenniük az adat-ökoszisztéma átfogó irányítási modelljével, és TILOS azzal ellentétesnek lenniük. (Megjegyzés: Az adatszolgáltató dönthet úgy, hogy nem vesz részt egy adat-ökoszisztémában, ha az alapul szolgáló irányítási modell túl korlátozó vagy túl megengedő.)",
+    "MIM3 · RC2.4": "A feltételeknek ajánlott összhangban lenniük az adat-ökoszisztéma átfogó irányítási modelljével, és tilos azzal ellentétesnek lenniük. (Megjegyzés: Az adatszolgáltató dönthet úgy, hogy nem vesz részt egy adat-ökoszisztémában, ha az alapul szolgáló irányítási modell túl korlátozó vagy túl megengedő.)",
     "MIM3 · RC3.1": "Az adat-ökoszisztéma koordinátorának képesnek kell lennie meggyőződni arról, hogy a résztvevők megfelelnek az alapul szolgáló irányítási modellnek.",
     "MIM3 · RC3.2": "Az adatszolgáltatóknak ajánlott képesnek lenniük meggyőződni arról, hogy az adatfelhasználó általi adathasználat megfelel a korábban elfogadott feltételeknek.",
     "MIM3 · RC3.3": "Az adatfelhasználóknak ajánlott képesnek lenniük meggyőződni arról, hogy az adatszolgáltató általi adatbiztosítás követi a korábban elfogadott feltételeket.",
@@ -736,11 +736,11 @@
     "MIM3 · RC7.2": "Az adatszolgáltatóknak ajánlott képesnek lenniük fogadni az adatfelhasználók által új adateszközökre benyújtott kéréseket.",
     "MIM6 · R1.1": "Az információkhoz és más kapcsolódó eszközökhöz való fizikai és logikai hozzáférés szabályozására vonatkozó szabályokat az üzleti és információbiztonsági követelmények alapján KÖTELEZŐ meghatározni és végrehajtani. (ISO 27001 5.15 Hozzáférés-szabályozás)",
     "MIM6 · R1.2": "A hitelesítési információk kiosztását és kezelését egy irányítási folyamatnak KÖTELEZŐ szabályoznia, beleértve a személyzet tájékoztatását a hitelesítési információk megfelelő kezeléséről. (ISO 27001 5.17: Hitelesítési információk)",
-    "MIM6 · R1.3": "Az információkhoz és más kapcsolódó eszközökhöz való hozzáférési jogokat a szervezet témaspecifikus hozzáférés-szabályozási politikájával és szabályaival összhangban KÖTELEZŐ kiosztani, felülvizsgálni, módosítani és megszüntetni. (ISO 27001 5.18: Hozzáférési jogok)",
+    "MIM6 · R1.3": "Az információkhoz és más kapcsolódó eszközökhöz való hozzáférési jogokat a szervezet témaspecifikus hozzáférés-szabályozási szabályzatával és szabályaival összhangban KÖTELEZŐ kiosztani, felülvizsgálni, módosítani és megszüntetni. (ISO 27001 5.18: Hozzáférési jogok)",
     "MIM6 · R2.1": "A kriptográfia hatékony alkalmazására vonatkozó szabályokat, beleértve a kriptográfiai kulcskezelést, KÖTELEZŐ meghatározni és végrehajtani. (ISO 27001 8.24 Kriptográfia alkalmazása)",
     "MIM6 · R3.1": "Biztonságos hitelesítési technológiákat és eljárásokat kell bevezetni az információ-hozzáférési korlátozások és a témaspecifikus hozzáférés-szabályozási politika alapján. (ISO 27001 8.5 Biztonságos hitelesítés)",
     "MIM6 · M1.1": "A Transport Layer Security (TLS) protokoll, 1.3 verzió",
-    "MIM6 · M1.2": "Az OAuth 2.0 felhatalmazási keretrendszer",
+    "MIM6 · M1.2": "Az OAuth 2.0 engedélyezési keretrendszer",
     "MIM6 · M1.3": "OpenID Connect 1.0, identitásréteg az OAuth 2.0 feletti hitelesítéshez",
     "MIM6 · M1.4": "OIDC4VCI / OIDC4VP, OpenID igazolható hitelesítő adatok kibocsátásához és bemutatásához",
     "MIM7 · R1.1": "A térinformatikai adatokat szabványokon alapuló webszolgáltatás-felületen keresztül kell közzétenni.",
@@ -778,7 +778,7 @@
     "MIM0 · C3": "Az adatok változásaira fel lehet iratkozni",
     "MIM0 · C4": "Az információkhoz való hozzáférés korlátozható",
     "MIM1 · C1": "Az entitások azonosítása egyedi azonosítókkal történik",
-    "MIM1 · C2": "Az entitások típusosíthatók",
+    "MIM1 · C2": "Az entitások típussal láthatók el",
     "MIM1 · C3": "Az entitások (feloldhatóan) hivatkozhatók",
     "MIM2 · C1": "Az adatforrásokban szereplő összes entitás konzisztens adatmodellekkel van leírva az alkalmazások és rendszerek együttműködésének lehetővé tétele érdekében",
     "MIM2 · C2": "Ugyanazon entitásnak a közös adatmegosztási ökoszisztémában használt különböző adatmodelljei ajánlott, hogy könnyen átalakíthatók legyenek egy közös adatmodellre",
@@ -798,7 +798,7 @@
     "MIM7 · C1": "A városok és közösségek könnyen továbbíthatnak térinformatikai adatokat a belső és külső (beleértve a dolgok internetéhez kapcsolódó) informatikai rendszerek között",
     "MIM7 · C2": "A városok és közösségek integrálhatják a különböző forrásokból származó 2D és 3D térinformatikai adatokat – például a geoadatokat és az épületinformációs modelleket –, és ezeket az adatokat interoperábilis módon oszthatják meg egymáson belül és egymás között",
     "MIM7 · C3": "A városok és közösségek integrálhatják a térinformatikai adatokat más adatokkal, amelyek további információkat nyújthatnak a kontextusról",
-    "MIM7 · C4": "A városok és közösségek következetes és állandó módon írják le a téradat-forrásokban szereplő összes funkció, dolog vagy entitás egyedi előfordulásait",
+    "MIM7 · C4": "A városok és közösségek következetes és állandó módon írják le a téradat-forrásokban szereplő összes térbeli elem, dolog vagy entitás egyedi előfordulásait",
     "MIM7 · C5": "Az adatmegosztás során használt koordináta-referenciarendszerek (CRS) könnyen átalakíthatók egy közös koordináta-rendszerre",
     "MIM8 · C1": "Hozzáférés biztosítása az LDT-n belül használt adatkészletekhez, beleértve a statikus, valós idejű és szimulációs adatokat, valamint a számítási modelleket",
     "MIM8 · C2": "Adatcsere külső rendszerekkel és más LDT-kkel interoperábilis felületeken keresztül",

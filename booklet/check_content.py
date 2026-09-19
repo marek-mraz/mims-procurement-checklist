@@ -21,7 +21,8 @@ TYPST = os.path.join(HERE, "tools", "typst")
 FONTS = os.path.join(HERE, "tools", "fonts")
 MIMS = ["MIM0", "MIM1", "MIM2", "MIM3", "MIM6", "MIM7", "MIM8"]   # MIMs Plus 9.0
 PROTECTED = re.compile(r"MIM\d|[✓✗~→]")     # must survive translation unchanged
-LONG = 1.6                                    # translation / English length, above = warn
+KEYWORD = re.compile(r"\b(SHALL|MUST|SHOULD|MAY|CAN)\b")   # a normative keyword of the English spec text
+LONG = 1.6                                  # translation / English length, above = warn
 ONE_LINE = {"tearout_short": 75, "tearout/headers": 24, "cover/title": 110}
 
 
@@ -106,6 +107,21 @@ def check_text(lang, en, shared, quotes, has):
         src.update({c["cap"]: c["title"] for m in MIMS for c in quotes.get(m, [])})
         both = {**L.get("quote_translations", {}), **L.get("capability_translations", {})}
         err += [f"en.json differs from quotes.json (the verbatim spec text): {i}" for i, t in src.items() if both.get(i) != t]
+
+    # capitals carry the meaning of a keyword (see howto/note): a requirement that writes
+    # "should" in lower case must not get the capital keyword of the legend, and the reverse
+    if lang != "en":
+        kw = {w for v in L.get("howto", {}).get("legend", {}).values()
+              for w in re.findall(r"[^\W\d_]{2,}", v.get("term", "").split("(")[0]) if w.isupper()}
+        has_kw = lambda t: any(re.search(rf"(?<!\w){re.escape(w)}(?!\w)", t) for w in kw)
+        EQ, LQ = en.get("quote_translations", {}), L.get("quote_translations", {})
+        up = [i for i, t in LQ.items() if i in EQ and has_kw(t) and not KEYWORD.search(EQ[i])]
+        caps = lambda t: {w for w in re.findall(r"[^\W\d_]{3,}", t) if w.isupper()}      # an inflected keyword counts too
+        low = [i for i, t in LQ.items() if i in EQ and KEYWORD.search(EQ[i]) and not has_kw(t) and not caps(t) - caps(EQ[i])]
+        if up:
+            warn.append(f"keyword in capitals where the English has lower case: {', '.join(up[:6])}{' …' if len(up) > 6 else ''}")
+        if low:
+            warn.append(f"no capital keyword where the English has one: {', '.join(low[:6])}{' …' if len(low) > 6 else ''}")
 
     same, tofu = 0, {}
     for p, t in T.items():

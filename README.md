@@ -1,4 +1,4 @@
-# Procurement Checklist using the Minimal Interoperability Mechanisms (MIMs)
+# Procurement Checklist based on the Minimal Interoperability Mechanisms (MIMs)
 
 What to put in a tender so your city keeps its data: a plain-language checklist
 for public procurement, built on MIMs Plus 9.0, the Minimal Interoperability
@@ -7,9 +7,9 @@ All 24 official languages of the European Union.
 
 | Language | Title |
 |---|---|
-| English | Procurement Checklist using the Minimal Interoperability Mechanisms (MIMs) |
-| Slovak | Kontrolný zoznam pre verejné obstarávanie pomocou minimálnych mechanizmov interoperability (MIMs) |
-| Czech | Kontrolní seznam pro veřejné zakázky pomocí minimálních mechanismů interoperability (MIMs) |
+| English | Procurement Checklist based on the Minimal Interoperability Mechanisms (MIMs) |
+| Slovak | Kontrolný zoznam pre verejné obstarávanie podľa minimálnych mechanizmov interoperability (MIMs) |
+| Czech | Kontrolní seznam pro veřejné zakázky podle minimálních mechanismů interoperability (MIMs) |
 
 ## Download
 
@@ -96,7 +96,7 @@ Name: `mims-procurement-checklist`
 
 About, description:
 
-    Procurement Checklist using the Minimal Interoperability Mechanisms (MIMs): what to put in a tender so your city keeps its data. Built on OASC MIMs Plus 9.0. PDF and DOCX in the 24 official EU languages.
+    Procurement Checklist based on the Minimal Interoperability Mechanisms (MIMs): what to specify in tender documents so the city retains control of its data. Built on OASC MIMs Plus 9.0. PDF and DOCX in the 24 official EU languages.
 
 About, website: `https://marek-mraz.github.io/mims-procurement-checklist/`
 

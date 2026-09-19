@@ -15,7 +15,7 @@
 // ════════════════════════════════════════════════════════════════════════════
 #import "../style.typ": *
 
-#show: booklet.with(title: "Hankekontroll-leht · vähimate koostalitlus- · mehhanismide (MIMide) abil", lang: "et",
+#show: booklet.with(title: "Hankekontroll-leht · vähimate koostalitlus- · mehhanismide (MIMide) põhjal", lang: "et",
   nav: (overview: "Ülevaade", clauses: "Tingimused", example: "Näide", table: "Vastavustabel", glossary: "Sõnastik", list: "Kontroll-leht", back: "tagasi kontroll-lehele", page: "lk"),
   mims: ("MIM0", "MIM1", "MIM2", "MIM3", "MIM6", "MIM7", "MIM8",))
 
@@ -24,9 +24,9 @@
 //  COVER
 // ════════════════════════════════════════════════════════════════════════════
 #cover(
-  title:    "Hankekontroll-leht · vähimate koostalitlus- · mehhanismide (MIMide) abil",
-  subtitle: "Mida panna hankesse, et andmed jääksid linnale",
-  tagline:  "OASC-i MIMs Plus 9.0 jaoks",
+  title:    "Hankekontroll-leht · vähimate koostalitlus- · mehhanismide (MIMide) põhjal",
+  subtitle: "Mida määratleda hankedokumentides, et andmed jääksid linna kontrolli alla",
+  tagline:  "Spetsifikatsioon: OASC-i MIMs Plus 9.0",
   footer:   "Euroopa omavalitsuste hankeametnikele, projektijuhtidele ja IT-juhtidele",
   author:   "Teatmiku autor: Marek Mráz",
 )
@@ -36,13 +36,13 @@
 //  WHY THIS BOOKLET
 // ════════════════════════════════════════════════════════════════════════════
 #fit-page("why")[
-  #band("Miks see teatmik")
+  #band("Selle teatmiku eesmärk")
 
   #lead("Igal aastal ostavad linnad tarkvara: parkimissüsteeme, sensorplatvorme, kaardiportaale, digitaalseid kaksikuid. Liiga sageli jäävad süsteemide kogutud andmed nendesse lõksu. Lepingu lõppedes lahkuvad maksumaksja raha eest hangitud andmed koos tarnijaga või jäävad vormingusse, mida keegi teine ei suuda lugeda.")
 
-  #lead("See ei pea nii olema. Vähimad koostalitlusmehhanismid (MIMid), mida haldab Open & Agile Smart Cities (OASC) ja toetab Euroopa liikumine living-in.eu, kirjeldavad tehnilisi miinimumnõudeid, mis hoiavad teie andmed avatuna, korduvkasutatavana ja tarnijaneutraalsena. Need on teadlikult kompaktsed: mitte hiiglaslik arhitektuur, vaid üksikud vältimatud tingimused süsteemide omavaheliseks suhtluseks.")
+  #lead("See ei pea nii olema. Vähimad koostalitlusmehhanismid (MIMid), mida haldab Open & Agile Smart Cities (OASC) ja toetab Euroopa liikumine living-in.eu, kirjeldavad tehnilisi miinimumnõudeid, mis hoiavad teie andmed avatuna, korduvkasutatavana ja tarnijaneutraalsena. Need on teadlikult väikesed: mitte mahukas arhitektuur, vaid üksikud tingimused, mis peavad süsteemide andmevahetuseks täidetud olema.")
 
-  #lead("Nende kasutamiseks ei pea olema insener. Iga kontroll-leht teisendab ühe MIMi selgesõnalisteks hanketingimusteks, mida saate kopeerida riigihankesse, selgitades ühtlasi, kuidas iga nõue teid kaitseb. Vahetult kontroll-lehe järel leiate selle MIMi nõuded sõna-sõnalt, et teie tehnilised spetsialistid ja pakkujad saaksid detaile kontrollida.")
+  #lead("Selle teatmiku kasutamiseks ei ole vaja tehnilist tausta. Iga kontroll-leht teisendab ühe MIMi selgesõnalisteks kontroll-lehe punktideks, mida saate hankesse kopeerida, lisades põhjenduse, miks igaüks neist teid kaitseb. Vahetult pärast kontroll-lehte leiate selle MIMi kõik nõuded sõna-sõnalt, et teie tehnilised kolleegid ja pakkujad saaksid detaile kontrollida.")
 
   #lead("Linnad, kes nõuavad MIMe, ostavad korra ja taaskasutavad mitu korda: õhukvaliteedi andmed toidavad kooli armatuurlauda, tänavavalgustuse register energiaplaani ja järgmine tarnija jätkab sealt, kus eelmine pooleli jäi. See ongi koostalitlusvõime praktikas — ning seda oodatakse üha enam ka ELi rahastatud projektides.")
 
@@ -56,12 +56,12 @@
       "tehnilised kirjeldused võivad viidata standarditele, alati märkega „või sellega samaväärne”; reeglina ei tohi nimetada kindlat marki ega toodet."),
     law("Andmemäärus", "Määrus (EL) 2023/2854",
       "juurdepääs ühendatud toodete andmetele ja pilveteenuse pakkujate vahetamine ilma lukustatuseta."),
-    law("Koostalitlusvõimelise Euroopa määrus", "Määrus (EL) 2024/903",
+    law("Euroopa koostalitlusvõime määrus", "Määrus (EL) 2024/903",
       "piiriüleste digitaalsete avalike teenuste koostalitlusvõime hindamine ja avatud lahenduste korduvkasutamine."),
     law("Avaandmete direktiiv", "Direktiiv (EL) 2019/1024",
-      "väärtuslikud andmestikud avaldatakse tasuta, masinloetavalt ja API-de kaudu."),
+      "suure väärtusega andmestikud avaldatakse tasuta, masinloetavalt ja API-de kaudu."),
     law("NIS2 direktiiv", "Direktiiv (EL) 2022/2555",
-      "küberturvalisuse baasnõuded; siseriiklik õigus määrab, kui kaugele see kohaliku omavalitsuse puhul ulatub."),
+      "küberturvalisuse baasnõuded; siseriiklik õigus määrab selle kohaldamisala kohalikele omavalitsustele."),
     law("IKÜM (GDPR)", "Määrus (EL) 2016/679",
       "isikuandmed linnasüsteemides (parkimine, kaamerad, mobiilsus)."),
     law("Tehisintellekti määrus", "Määrus (EL) 2024/1689",
@@ -93,7 +93,7 @@
   )
 
   #legend("Spetsifikatsiooni tsitaatide lugemine",
-    note: "Kontroll-lehe punktides on kirjas „peab” ka seal, kus spetsifikatsioon ainult soovitab (peaks) või loetleb võimaliku mehhanismi. See on hankija otsus.",
+    note: "Kontroll-lehe punktides esitatakse iga punkt nõudena ka seal, kus spetsifikatsioon ainult soovitab (peaks) või loetleb võimaliku mehhanismi. See on hankija otsus.",
     entry("PEAB, PEAVAD (SHALL / MUST)", "kohustuslik. Süsteem ei vasta nõuetele ilma selleta."),
     entry("EI TOHI (MUST NOT)", "keelatud. Seda tegev süsteem ei vasta nõuetele."),
     entry("PEAKS, PEAKSID (SHOULD)", "tungivalt soovitatav. Kõrvalekalleteks on vaja mõjuvat kirjalikku põhjendust."),
@@ -112,7 +112,7 @@
 #fit-page("glance")[
   #band("Seitse MIMi ja kolm tööriista", id: "glance")
 
-  #intro("Seitse väikest mehhanismi, üks eesmärk: teie andmed jäävad teile ja teie süsteemid suudavad omavahel suhelda.")
+  #intro("Seitse väikest mehhanismi, üks eesmärk: andmed jäävad linna kontrolli alla ja süsteemid töötavad koos.")
 
   #glance(
     note: "Nummerdusest: MIMs Plus 9.0 määratleb seitse mehhanismi numbritega 0, 1, 2, 3, 6, 7 ja 8. MIM4 (isikuandmed) ja MIM5 (õiglane tehisintellekt) kuuluvad varasemate OASC-i versioonide juurde ega ole osa versioonist 9.0. Sellest teatmikust pole midagi puudu.",
@@ -130,7 +130,7 @@
       "https://mims.oascities.org/representing-data"),
     card("MIM3", "Andmevahetus",
       "Kas saame jagada selgetel tingimustel?",
-      "Andmestikud on kataloogitud ning neid jagatakse tüüptingimuste ja selge halduse alusel.",
+      "Andmestikud on kataloogitud ning neid jagatakse tüüplitsentside ja selge juhtimismudeli alusel.",
       "https://mims.oascities.org/exchanging-data"),
     card("MIM6", "Andmete turvamine",
       "Kas meie andmed on kaitstud?",
@@ -176,7 +176,7 @@
     list:     "Kontroll-leht",
   )
 
-  #item("Kõik andmed, mida süsteem kogub või toodab, on standardsel veebi-API-l kättesaadavad vähemalt ühes masinloetavas vormingus (nt JSON, CSV).",
+  #item("Kõik andmed, mida süsteem kogub või toodab, on standardse veebi-API kaudu kättesaadavad vähemalt ühes masinloetavas vormingus (nt JSON, CSV).",
     why:  "Teie järgmine lepingupartner — või teie oma töötajad — saavad andmeid kasutada ilma tarnijalt luba küsimata.",
     refs: "MIM0 R1.1, R1.2",
     num:  "0.1")
@@ -187,11 +187,11 @@
     num:  "0.2")
 
   #item("Andmeid saab filtreerida aja, asukoha ja atribuutide järgi otse API kaudu.",
-    why:  "Pärite seda, mida vajate, mitte igal ööl terveid andmemassiive.",
+    why:  "Pärite seda, mida vajate, mitte igal ööl täielikku andmetõmmist.",
     refs: "MIM0 R2.1, R2.2",
     num:  "0.3")
 
-  #item("Kui kasutusjuht vajab reaalajas andmeid, saavad tarbijad pideva pärimise asemel tellida teavitusi muudatuste kohta (veebihaagid, MQTT vms).",
+  #item("Kui kasutusjuht vajab reaalajas andmeid, saavad tarbijad pideva pärimise asemel tellida teavitusi muudatuste kohta (webhook'id, MQTT vms).",
     why:  "Reaalajas armatuurlauad ja häireteavitused muutuvad võimalikuks ja odavaks.",
     refs: "MIM0 R3.1",
     num:  "0.4")
@@ -210,7 +210,7 @@
     flags: ("Ohumärgid", (
       "„Andmete eksport taotluse alusel meie kasutajatoe kaudu.”",
       "„API on saadaval tasulise lisamoodulina.”",
-      "Päringupõhine tasu linna enda andmete eest (vt tingimust „Kasutaja- ja päringutasude puudumine”).",
+      "Päringupõhine tasu linna enda andmete eest (vt tingimust „Oma andmete tasuta kättesaadavus”).",
     )),
   )
 ]
@@ -241,12 +241,12 @@
       tr: "Juurdepääsumehhanism(id) PEAVAD olema ametlikult kirjeldatud",
       en: "Access mechanism(s) SHALL be formally described"),
     req("R1.4",
-      tr: "Andmesisu kasutatavad andmemudelid peaksid olema määratud (vt MIM2)",
+      tr: "Andmesisus (payload) kasutatavad andmemudelid peaksid olema määratud (vt MIM2)",
       en: "Data Models used by payloads should be specified (see MIM2)"),
     capability("C2", "Access is structured and queryable",
       tr: "Juurdepääs on struktureeritud ja päritav"),
     req("R2.1",
-      tr: "Süsteemid PEAVAD pakkuma andmeid struktureeritud ja järjepideva liidese kaudu",
+      tr: "Süsteemid PEAVAD pakkuma andmeid struktureeritud ja ühtse liidese kaudu",
       en: "Systems SHALL provide data through a structured and consistent interface"),
     req("R2.2",
       tr: "Süsteemid PEAVAD toetama põhilisi päringuid ja/või filtreerimist (nt aja, asukoha, atribuutide järgi)",
@@ -254,7 +254,7 @@
     capability("C2 best practice", "Additional best practice to consider:",
       tr: "Täiendav parim tava, mida kaaluda:", sub: true),
     req("C2",
-      tr: "API-d PEAKSID toetama kehtivate andmete pärimist · API-d PEAKSID toetama ajalooliste andmete pärimist, kui see on kohaldatav · API-d PEAKSID toetama ruumilisi päringuid, kui see on kohaldatav (vt MIM7) · API-d PEAKSID toetama muudatuste tellimist, kui see on kohaldatav · API-d PEAKSID näitama järgmise eeldatava uuenduse ajatemplit · API-d PEAKSID toetama otspunktide selget versioonihaldust · API-d PEAKSID pakkuma näidisandmeid või testpäringuid · API-d PEAKSID toetama standardseid HTTP vahemällu salvestamise päiseid · API-d PEAKSID edastama päringulimiidi staatust standardsete HTTP päiste kaudu · API-d PEAKSID tagastama struktureeritud veateateid · API-d VÕIVAD toetada osalisi vastuseid või päringu projektsioone · API-d VÕIVAD pakkuda standardset tervise-/olekukontrolli otspunkti",
+      tr: "API-d PEAKSID toetama kehtivate andmete pärimist · API-d PEAKSID toetama ajalooliste andmete pärimist, kui see on kohaldatav · API-d PEAKSID toetama ruumilisi päringuid, kui see on kohaldatav (vt MIM7) · API-d PEAKSID toetama muudatuste tellimist, kui see on kohaldatav · API-d PEAKSID näitama järgmise eeldatava uuenduse ajatemplit · API-d PEAKSID toetama endpoint'ide selget versioonihaldust · API-d PEAKSID pakkuma näidisandmeid või testpäringuid · API-d PEAKSID toetama standardseid HTTP vahemällu salvestamise päiseid · API-d PEAKSID edastama päringulimiidi olekut standardsete HTTP päiste kaudu · API-d PEAKSID tagastama struktureeritud veateateid · API-d VÕIVAD toetada osalisi vastuseid või päringu projektsioone · API-d VÕIVAD pakkuda standardset tervise-/olekukontrolli endpoint'i",
       en: "APIs SHOULD support retrieval of current data · APIs SHOULD support retrieval of historical data when applicable · APIs SHOULD support geospatial querying when applicable (see MIM7) · APIs SHOULD support subscription to changes when applicable · APIs SHOULD expose next expected update timestamp · APIs SHOULD support explicit versioning of endpoints · APIs SHOULD provide example payloads or test queries · APIs SHOULD support standard HTTP caching headers · APIs SHOULD communicate rate limit status via standard HTTP headers · APIs SHOULD return structured error bodies · APIs MAY support partial responses or query projections · APIs MAY expose a standard health/status endpoint"),
     capability("C3", "Changes in data can be subscribed to",
       tr: "Andmemuudatusi saab tellida"),
@@ -294,7 +294,7 @@
     refs: "MIM1 R1.1, R1.5",
     num:  "1.1")
 
-  #item("Identifikaatori järgi saab teha päringu olemi andmete ja selle tähenduse (tüübi) masinloetavaks allalaadimiseks.",
+  #item("Identifikaatori alusel saab teha päringu olemi andmete ja selle tähenduse (tüübi) masinloetavaks pärimiseks.",
     why:  "Teised süsteemid saavad linki automaatselt järgida.",
     refs: "MIM1 R1.2, R2.1, R2.2",
     num:  "1.2")
@@ -304,7 +304,7 @@
     refs: "MIM1 R1.3, R1.4",
     num:  "1.3")
 
-  #item("Identifikaatorid ei sisalda tarnija sisemisi tunnuseid (andmebaasi reaindeksid, serverinimed).",
+  #item("Identifikaatorid ei sisalda tarnija sisemisi tunnuseid (andmebaasi rea ID-d, serverinimed).",
     why:  "Vastasel juhul kaovad identifikaatorid koos lepinguga.",
     refs: "MIM1 M1 §3.1",
     num:  "1.4")
@@ -404,7 +404,7 @@
     refs: "MIM2 R1.1",
     num:  "2.2")
 
-  #item("Laiendused tarnitakse dokumenteeritud profiilidena/täiendustena standardmudeli peal — mitte kunagi muudetud eraharu kujul.",
+  #item("Laiendused tarnitakse dokumenteeritud profiilidena/täiendustena standardmudeli peal — mitte kunagi muudetud privaatse fork'ina.",
     why:  "Säilib ühilduvus kogukonna ja tulevaste uuendustega.",
     refs: "MIM2 R1.2b, R4.1, R4.2",
     num:  "2.3")
@@ -422,7 +422,7 @@
     )),
     flags: ("Ohumärgid", (
       "„Meie suletud andmemudel on standardist rikkalikum.”",
-      "Dokumentatsioon on kättesaadav ainult konfidentsiaalsuslepingu alusel.",
+      "Dokumentatsioon on kättesaadav ainult NDA alusel.",
     )),
   )
 ]
@@ -466,8 +466,8 @@
       tr: "Igal kasutataval andmemudelil peab olema vähemalt üks määratletud masinloetav andmeedastusvorming („serialiseering”), mis on avatud, avalikult kättesaadav ja teostusest sõltumatu.",
       en: "Each data model used shall have at least one defined machine-readable data transport format (“serialisation”) that is open, publicly available and implementation-independent."),
     req("R3.2",
-      tr: "Andmeedastusvormingu dokumentatsioon peaks olema piisav, et võimaldada mitteomandusliku rakenduse või interpretaatori loomist, mis suudab rekonstrueerida kõik sellises andmevormingus salvestatud andmed.",
-      en: "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor that is able to reconstruct all the data stored in such a data format."),
+      tr: "Andmeedastusvormingu dokumentatsioon peaks olema piisav, et võimaldada mitteomandusliku rakenduse või interpretaatori loomist, mis suudab taastada kõik sellises andmevormingus salvestatud andmed.",
+      en: "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor [sic] that is able to reconstruct all the data stored in such a data format."),
     req("R3.3",
       tr: "Kui sama andmemudeli puhul toetatakse mitut andmeedastusvormingut, peavad need esitama sama infosisu järjepidevalt ja ilma tähenduse kadumiseta.",
       en: "Where multiple data transport formats are supported for the same data model, they shall represent the same information content consistently and without loss of meaning."),
@@ -498,7 +498,7 @@
     name:     "Andmevahetus",
     question: "Kas saame jagada selgetel tingimustel?",
     url:      "https://mims.oascities.org/exchanging-data",
-    intro:    "Kõiki linna andmeid ei saa lihtsalt avalikustada: osa on ärilised, osa tundlikud. MIM3 võimaldab ka neid turvaliselt jagada: otsitav kataloog, lepingupõhjad erilahenduste asemel ja kõigile loetavad haldusreeglid. Spetsifikatsioonis on peaaegu kogu MIM3 sõnastatud soovitusena (vt lk 3).",
+    intro:    "Kõiki linna andmeid ei saa lihtsalt avalikustada: osa on ärilised, osa tundlikud. MIM3 eesmärk on jagada ülejäänut sellegipoolest turvaliselt: otsitav kataloog, mallidel põhinevad litsentsid eraldi koostatud juriidilise teksti asemel ning kõigile loetavad haldusreeglid. Spetsifikatsioonis on peaaegu kogu MIM3 sõnastatud soovitusena (vt lk 3).",
     list:     "Kontroll-leht",
   )
 
@@ -507,13 +507,13 @@
     refs: "MIM3 RC4.1–RC4.3",
     num:  "3.1")
 
-  #item("Andmete kasutamise tingimused ja litsentsid põhinevad tuntud mallidel (nt avatud litsentsid, standardsed andmejagamislepingud), mitte iga andmestiku jaoks eraldi koostatud juriidikal.",
-    why:  "Kokkulepped on skaleeritavad; juristidest ei saa kitsaskohta.",
+  #item("Andmete kasutamise tingimused ja litsentsid põhinevad tuntud mallidel (nt avatud litsentsid, standardsed andmejagamislepingud), mitte iga andmestiku jaoks eraldi koostatud juriidilisel tekstil.",
+    why:  "Lepingute sõlmimine on hõlpsalt laiendatav ilma iga juhtumi eraldi õigusliku analüüsita.",
     refs: "MIM3 RC2.2, RC2.3",
     num:  "3.2")
 
   #item("Linn saab määrata, kes millisele andmevarale ja millistel tingimustel ligi pääseb, ning seda tarnija kaasamiseta muuta.",
-    why:  "Haldusõigus jääb omavalitsusele.",
+    why:  "Andmehalduse juhtimine jääb omavalitsusele.",
     refs: "MIM3 RC1.1, RC2.1",
     num:  "3.3")
 
@@ -606,7 +606,7 @@
       tr: "Andmekasutajad peaksid suutma tuvastada andmepakkujaid, kes andmeökosüsteemis andmeid jagavad, enne nende andmete kasutamist või neile juurdepääsu.",
       en: "Data users should be able to identify data providers who share data in a data ecosystem before accessing or using that data."),
     req("RC5.5",
-      tr: "Ökosüsteemis osalejad võivad otsustada jääda ka anonüümseks, kui andmejagamise ökosüsteemi haldusmudel seda võimaldab. Sel juhul võib punkte RC5.1 kuni RC5.4 eirata.",
+      tr: "Ökosüsteemis osalejad võivad otsustada jääda ka anonüümseks, kui andmejagamise ökosüsteemi haldusmudel seda võimaldab. Sel juhul punkte RC5.1 kuni RC5.4 ei kohaldata.",
       en: "Ecosystem participants may also choose to remain anonymous if the governance model of the data-sharing ecosystem allows for it. In this case, RC5.1 to RC5.4 can be ignored."),
     capability("C6", "Data exchange can be agreed upon",
       tr: "Andmevahetuses saab kokku leppida"),
@@ -641,19 +641,19 @@
   #mim-page(
     id:       "MIM6",
     name:     "Andmete turvamine",
-    question: "Kas meie andmed on edastamisel ja kasutamisel kaitstud?",
+    question: "Kas meie andmed on kaitstud?",
     url:      "https://mims.oascities.org/securing-data",
     intro:    "Targad linnad on rünnakute sihtmärgid. MIM6 hoiab fookuse teadlikult kitsana ja praktilisena: andmete krüpteerimine liikumisel, standardsed sisselogimised omanduslike asemel, kontroll ja logimine selle üle, kes millele ligi pääseb. Siin pole midagi eriskummalist — kõik see peab olema lepingus.",
     list:     "Kontroll-leht",
   )
 
   #item("Kogu andmeedastus on krüpteeritud (TLS 1.3 või kehtiv parim tava).",
-    why:  "Baashügieen; ka NIS2 eeldab seda, kui see teile kohaldub.",
+    why:  "Põhiline turvanõue; seda eeldab ka NIS2 direktiiv, kui see teile kohaldub.",
     refs: "MIM6 R2.1, M1.1",
     num:  "6.1")
 
   #item("Sisselogimine ja masinjuurdepääs kasutavad avatud standardeid — OAuth 2.0 / OpenID Connect — ning ühilduvad linna olemasoleva identiteedipakkujaga.",
-    why:  "Üks konto töötaja kohta, mitte eraldi konto iga tarnija tootes; lahkujad kaotavad juurdepääsu igal pool korraga.",
+    why:  "Üks konto töötaja kohta, mitte eraldi konto iga tarnija tootes; töötaja lahkumisel tühistatakse juurdepääs kõigis süsteemides korraga.",
     refs: "MIM6 R3.1, M1.2, M1.3",
     num:  "6.2")
 
@@ -662,7 +662,7 @@
     refs: "MIM6 R1.1, R1.3, 8.15",
     num:  "6.3")
 
-  #item("Tarnija peab tõendama vastavust standardile ISO/IEC 27001:2022 (või samaväärsele) tema hallatava teenuse osas.",
+  #item("Pakkuja tõendab vastavust standardile ISO/IEC 27001:2022 (või samaväärsele) tema hallatava teenuse osas.",
     why:  "Turvalisus on protsess, mitte vastuvõtmisel tehtav linnuke. Spetsifikatsioon viitab ISO/IEC 27001 meetmetele, mitte sertifikaadile.",
     refs: "MIM6 C1–C3 (ISO/IEC 27001)",
     num:  "6.4",
@@ -672,7 +672,7 @@
     why:   ("Miks see on oluline", (
       "Ühe süsteemi turvarike ei ava ust kõigisse süsteemidesse.",
       "Kui NIS2 teile kohaldub, muutub selle ja riiklike kübereeskirjade järgimine märgatavalt lihtsamaks.",
-      "Kui midagi läheb valesti, näitavad logid täpselt, mis ja kelle poolt toimus.",
+      "Pärast intsidenti näitavad logid, mis toimus ja kes tegutses.",
     )),
     flags: ("Ohumärgid", (
       "Ainult tootjapõhine sisselogimine.",
@@ -705,10 +705,10 @@
       tr: "Autentimisteabe määramine ja haldamine PEAB olema kontrollitud haldusprotsessiga, sealhulgas personali juhendamine autentimisteabe asjakohase käsitsemise kohta. (ISO 27001 5.17: Autentimisteave)",
       en: "Allocation and management of authentication information SHALL be controlled by a management process, including advising personnel on appropriate handling of authentication information. (ISO 27001 5.17: Authentication information)"),
     req("R1.3",
-      tr: "Teabe ja muude seotud varade juurdepääsuõigused PEAVAD olema antud, üle vaadatud, muudetud ja eemaldatud kooskõlas organisatsiooni valdkonnaspetsiifilise juurdepääsukontrolli poliitika ja reeglitega. (ISO 27001 5.18: Juurdepääsuõigused)",
+      tr: "Teabe ja muude seotud varade juurdepääsuõigused PEAVAD olema määratud, üle vaadatud, muudetud ja tühistatud kooskõlas organisatsiooni valdkonnaspetsiifilise juurdepääsukontrolli poliitika ja reeglitega. (ISO 27001 5.18: Juurdepääsuõigused)",
       en: "Access rights to information and other associated assets SHALL be provisioned, reviewed, modified and removed in accordance with the organization’s topic-specific policy on and rules for access control. (ISO 27001 5.18: Access rights)"),
     capability("C2", "Data accessed by users has not been altered",
-      tr: "Kasutajate ligipääsetavaid andmeid ei ole muudetud"),
+      tr: "Kasutajate päritud andmeid ei ole muudetud"),
     req("R2.1",
       tr: "Krüptograafia tõhusa kasutamise reeglid, sealhulgas krüptovõtmete haldus, PEAVAD olema määratletud ja rakendatud. (ISO 27001 8.24 Krüptograafia kasutamine)",
       en: "Rules for the effective use of cryptography, including cryptographic key management, SHALL be defined and implemented. (ISO 27001 8.24 Use of cryptography)"),
@@ -819,7 +819,7 @@
       tr: "Kõik andmestikud, mida kasutatakse ruumiandmetega hõlmatud konteksti kohta lisateabe pakkumiseks, peavad vastama standarditele MIM1 ja MIM2.",
       en: "All data sets used to provide further information about the context covered by geospatial data shall comply with MIM1 and MIM2."),
     capability("C4", "Cities and communities have a consistent and persistent way of describing individual instances of all features, things or entities included in the geospatial data sources",
-      tr: "Linnadel ja kogukondadel on järjepidev ja püsiv viis ruumiandmeallikates sisalduvate kõigi objektide või olemite konkreetsete eksemplaride kirjeldamiseks"),
+      tr: "Linnadel ja kogukondadel on järjepidev ja püsiv viis ruumiandmeallikates sisalduvate kõigi ruumiobjektide, asjade või olemite konkreetsete eksemplaride kirjeldamiseks"),
     req("R4.1",
       tr: "Andmestikes kasutatavate mis tahes olemite konkreetsete eksemplaride tuvastamiseks peab kasutama kordumatuid ja püsivaid identifikaatoreid. (Vt MIM1: Andmete seostamine.)",
       en: "Unique and persistent identifiers shall be used to identify particular instances of any entity used in data sets. (See MIM1: Interlinking Data.)"),
@@ -858,7 +858,7 @@
     refs: "MIM8 R3.1, R3.2",
     num:  "8.2")
 
-  #item("Väljundid kasutavad standardvorminguid (GeoJSON, CityJSON, 3D Tiles, NetCDF…), mida saab kasutada ilma selle tarnija lisatööriistadeta.",
+  #item("Väljundid kasutavad standardvorminguid (GeoJSON, CityJSON, 3D Tiles, NetCDF…), mis on loetavad kolmandate osapoolte tööriistadega.",
     why:  "Visualiseerimine ja analüüs jäävad avatud konkurentsiga turgudeks.",
     refs: "MIM8 M2",
     num:  "8.3")
@@ -917,7 +917,7 @@
       tr: "Mudel peab pakkuma liidest või olema väljakutsutav dokumenteeritud liidese kaudu, eelistatavalt tuntud standardiseeritud API abil. Mudeli tulemuseks olevat andmestikku tuleb kirjeldada (andmete tasemel).",
       en: "The model shall expose or be callable through a documented interface, preferably using a known standardised API. The dataset that forms the outcome of the model shall be described (at data-level)."),
     req("R3.3",
-      tr: "Uudsete meetodite (suured keelemudelid, autonoomne tehisintellekt jne) usaldusväärne ja eetiline kasutamine peaks olema tagatud. Eelarvamused ja kallutatus peaks vajaduse korral olema viidud miinimumini. Selle tagamiseks kasutatavaid meetodeid peaks kirjeldama.",
+      tr: "Uudsete meetodite (suured keelemudelid, agendipõhine tehisintellekt jne) usaldusväärne, töökindel ja eetiline kasutamine peaks olema tagatud. Kallutatus peaks vajaduse korral olema viidud miinimumini. Selle tagamiseks kasutatavaid meetodeid peaks kirjeldama.",
       en: "Trustworthy, reliable, and ethical use of innovative methods (LLMs, agentic AI, etc.) should be safeguarded. Bias should minimised [sic] where applicable. The methods used to guarantee this, should be described."),
     req("R3.4",
       tr: "Mudel peab suutma andmetele juurde pääseda lõppkasutaja või organisatsiooni nimel. Vt MIM3",
@@ -940,7 +940,7 @@
       tr: "LDT salvestab töövoo päritolu, sealhulgas kasutatud andmestikud (koos versiooni ja ajatempliga), käivitatud mudelid, valitud parameetrid ja loodud väljundid.",
       en: "The LDT records workflow provenance, including datasets used (including version, timestamped), models executed, parameters selected, and outputs generated."),
     capability("C5", "Provide multiple visualisations of data and results (e.g. 2D, 3D, dashboards) from common underlying data and models for interaction and comparison",
-      tr: "Pakkuda ühistest alusandmetest ja -mudelitest andmete ja tulemuste mitut vaadet (nt 2D, 3D, armatuurlauad) suhtluseks ja võrdluseks"),
+      tr: "Pakkuda ühistest alusandmetest ja -mudelitest andmete ja tulemuste mitut vaadet (nt 2D, 3D, töölauad) interaktsiooniks ja võrdluseks"),
     req("R5.1",
       tr: "LDT pakub metaandmeid, mis selgitavad, mida visualiseeritakse, sealhulgas ajatemplit, ruumilist ulatust, andmeallikat ning vajadusel stsenaariumi- ja variandieeldusi.",
       en: "The LDT provides metadata explaining what is visualised, including timestamp, spatial scope, data source, and scenario- and variant-assumptions where relevant."),
@@ -967,7 +967,7 @@
       tr: "LDT töövoogude orkestreerimine",
       en: "LDT Workflow Orchestration"),
     req("M5",
-      tr: "Mitme vaatega väljund ja visualiseeringute juurdepääs",
+      tr: "Juurdepääs mitme vaatega väljunditele ja visualiseeringutele",
       en: "Multi-view Output and Visualisation Access"),
   )
 
@@ -980,7 +980,7 @@
 //  CROSS-CUTTING CONTRACT CLAUSES
 // ════════════════════════════════════════════════════════════════════════════
 #fit-page("clauses")[
-  #band("Läbivad hanketingimused", sub: "Kaitsemeetmed lukustatuse vastu", id: "clauses")
+  #band("Läbivad hanketingimused", sub: "Kaitsemeetmed tarnijalukustuse vastu", id: "clauses")
 
   #intro(size: 9.8pt, "Need klauslid kuuluvad igasse hankesse, mida iganes te ka ei ostaks. Need pärinevad MIMide ja liikumise living-in.eu hankepraktikast. Enamik neist ei toetu ühele kindlale spetsifikatsiooni nõudele, mistõttu puuduvad neil viitekoodid (API versioonihaldus on ühtlasi MIM0 C2 soovitus). Nende lisamine maksab vähe; nende välja jätmine võib maksta kõik.")
 
@@ -989,16 +989,16 @@
       "Lepingu lõppemisel antakse kõik linna andmed (ja seadistused) tasuta üle avatud dokumenteeritud vormingutes."),
     clause("Õigused andmetele",
       "Kõik õigused lepingu alusel kogutud ja tuletatud andmetele kuuluvad hankijale."),
-    clause("Kasutaja- ja päringutasude puudumine",
-      "Linnale ei kohaldata tasusid omaenda andmetele juurdepääsu eest."),
+    clause("Oma andmete tasuta kättesaadavus",
+      "Hankija ei maksa oma andmetele juurdepääsu eest tasu ei kasutaja ega päringu kohta."),
     clause("API stabiilsus ja versioonihaldus",
       "Tarnija tagab API tagasiühilduvuse kogu lepingu kehtivuse ajal. Ühildumatutest muudatustest teavitatakse vähemalt 6 kuud ette ja need avaldatakse uue versioonina, samal ajal kui eelmine versioon jääb kättesaadavaks kuni kokkulepitud üleminekukuupäevani."),
     clause("Näidata, mitte lubada",
       "Pakkujad tõendavad nõuetele vastavust pakkumuste hindamise käigus, mitte ei esita pelgalt kinnitusi. API puhul tähendab see avaldatud interaktiivset dokumentatsiooni (nt OpenAPI) ja reaalset päringut, mis tagastab kehtivad andmed. Iga märgitud punkti testitakse üleandmisel uuesti."),
     clause("Avatud standardite nimetamine",
-      "Hankes nimetatakse eespool toodud standardid; väited ühilduvuse kohta peavad viitama täpsele liidesele ja versioonile. Iga viide standardile või tehnilisele kirjeldusele lubab samaväärset lahendust; pakkuja tõendab samaväärsust."),
+      "Hankes nimetatakse konkreetsed standardid; väited ühilduvuse kohta peavad viitama täpsele liidesele ja versioonile. Iga viide standardile või tehnilisele kirjeldusele lubab samaväärset lahendust; pakkuja tõendab samaväärsust."),
     clause("MIMide vastavusdeklaratsioon",
-      "Pakkuja täidab vastavustabeli (lk 23); sellest saab lepingu lisa."),
+      "Pakkuja täidab vastavustabeli (lk 28); sellest saab lepingu lisa."),
   )
 ]
 #pagebreak()
@@ -1010,7 +1010,7 @@
 #fit-page("example")[
   #band("Näide: linn ostab õhukvaliteedi sensorite võrgustiku", id: "example")
 
-  #intro(size: 9.8pt, "Märgitud lehed: MIM0, MIM1, MIM2, MIM6 ja MIM7 (andmed lähevad kaardile). MIM3-st ainult punkt 3.1 (õhukvaliteedi andmed avaldatakse avaandmetena, seega kuuluvad need kataloogi); mitte MIM8: tegemist pole digitaalse kaksikuga.")
+  #intro(size: 9.8pt, "Märgitud lehed: MIM0, MIM1, MIM2, MIM6 ja MIM7 (andmed lähevad kaardile). MIM3-st ainult punkt 3.1 (õhukvaliteedi andmed avaldatakse avaandmetena, seega kuuluvad need kataloogi); MIM8 ei kohaldu: süsteem ei ole digitaalne kaksik.")
 
   #text(size: 10pt, weight: "bold", fill: eu-blue, "Mis kuhu läheb")
   #v(4pt)
@@ -1029,7 +1029,7 @@
        "vastavustabel pakkumuse kohustusliku lisana: iga punkti kohta T, S või E koos tõenditega (API dokumentatsiooni aadress, testligipääs)"),
       ("Lepingu projekt",
        "lepingu täitmise tingimused (artikkel 70)",
-       "Lepingu lõppemise klausel, Õigused andmetele, Kasutaja- ja päringutasude puudumine, API stabiilsus ja versioonihaldus; täidetud vastavustabel lisana"),
+       "Lepingu lõppemise klausel, Õigused andmetele, Oma andmete tasuta kättesaadavus, API stabiilsus ja versioonihaldus; täidetud vastavustabel lisana"),
       ("Vastuvõtuakt",
        "lepingu täitmise tingimused (artikkel 70)",
        "vastavustabeli veerg „Kontrollitud” testimisprotokollina"),
@@ -1038,12 +1038,12 @@
 
   #sample-text("Tehnilise kirjelduse näidissõnastus", (
     "4.3 Koostalitlusvõime ja juurdepääs andmetele",
-    "4.3.1 Kõik andmed, mida süsteem kogub või toodab, on standardsel veebi-API-l kättesaadavad vähemalt ühes masinloetavas vormingus (nt JSON, CSV). (MIMs Plus 9.0, MIM0 R1.1, R1.2)",
+    "4.3.1 Kõik andmed, mida süsteem kogub või toodab, on standardse veebi-API kaudu kättesaadavad vähemalt ühes masinloetavas vormingus (nt JSON, CSV). (MIMs Plus 9.0, MIM0 R1.1, R1.2)",
     "4.3.2 API on ametlikult kirjeldatud avatud masinloetavas dokumendis (näiteks OpenAPI), mis on avaldatud püsival aadressil. (MIM0 R1.3)",
     "4.3.3 API võimaldab andmete filtreerimist mõõtmise aja ja koha järgi. (MIM0 R2.1, R2.2)",
     "… 4.3.4 kuni 4.3.21: muud märgitud punktid …",
     "4.3.22 Iga viide standardile või tehnilisele kirjeldusele lubab samaväärset lahendust; pakkuja tõendab samaväärsust.",
-    "4.3.23 Pakkuja täidab vastavustabeli (hankedokumentide lisa) ja esitab tõendid iga nõutud punkti kohta. Pakkuja demonstreerib punkte 4.3.1 kuni 4.3.21 pakkumuste hindamise ajal reaalajas API-päringuga; hankija testib neid uuesti vastuvõtmisel. Nende mittetäitmine on alus vastuvõtmisest keeldumiseks.",
+    "4.3.23 Pakkuja täidab vastavustabeli (hankedokumentide lisa) ja esitab tõendid iga nõutud punkti kohta. Pakkumuste hindamise ajal demonstreerib pakkuja punkte 4.3.1 kuni 4.3.21 (näiteks reaalajas API-päringuga); pakkumus, mis ei vasta nõutud punktile, ei vasta hankelepingu eseme nõuetele. Hankija kontrollib punkte uuesti vastuvõtmisel; nõuete mittetäitmine sel ajal on alus vastuvõtmisest keeldumiseks.",
   ))
 
   #note(size: 9pt, "Punkt 4.3.3 näitab, et punkti võib ostu vajadustele vastavalt täpsustada: sensorite puhul on mõistlik nõuda filtreerimist mõõtmise aja ja koha järgi.")
@@ -1061,7 +1061,7 @@
     ),
   )
 
-  #note(size: 9pt, gap: 5pt, "Tulevikulubadus on E: komisjon kontrollib ainult seda, mida pakkuja saab näidata.")
+  #note(size: 9pt, gap: 5pt, "Tulevikufunktsionaalsuse lubadus loetakse väärtuseks E: komisjon kontrollib ainult seda, mida pakkuja suudab näidata. Nõutud punkti puhul tähendab E, et pakkumus ei vasta hankelepingu eseme nõuetele.")
 
   #note(size: 9pt, gap: 5pt, "Kohandage sõnastust siseriikliku õigusega ja laske see hanke eest vastutaval isikul üle vaadata.")
 ]
@@ -1073,7 +1073,7 @@
 // ════════════════════════════════════════════════════════════════════════════
 #band("Vastavustabel", id: "table")
 
-#intro(size: 9.4pt, gap: 5pt, "Üks rida iga punkti kohta. Hankija märgib ära hankelepingus nõutavad punktid ja lisab tabeli hankedokumentidele pakkumuse kohustusliku lisana. Iga nõutud punkti kohta märgib pakkuja T (täidab), S (täidab samaväärsega) või E (ei täida), lühidalt kuidas ja kus asuvad tõendid: dokumentatsiooni aadress, testjuurdepääs, pakkumuse lehekülg. Pelgast kinnitusest ilma tõendita ei piisa. Hindamiskomisjon kontrollib iga punkti pakkumuste hindamisel ja uuesti üleandmisel (✓ kinnitatud, ✗ kinnitamata, — kontrollimata).")
+#intro(size: 9.4pt, gap: 5pt, "Üks rida iga punkti kohta. Hankija märgib ära hankelepingus nõutavad punktid ja lisab tabeli riigihanke alusdokumentidele pakkumuse kohustusliku lisana. Iga nõutud punkti kohta märgib pakkuja T (täidab), S (täidab samaväärsega) või E (ei täida), lühidalt kuidas ja kus asuvad tõendid: dokumentatsiooni aadress, testjuurdepääs, pakkumuse lehekülg. Pelgast kinnitusest ilma tõendita ei piisa. Hindamiskomisjon kontrollib iga punkti pakkumuste hindamisel ja uuesti üleandmisel (✓ kinnitatud, ✗ kinnitamata, — kontrollimata).")
 
 #intro(size: 9.4pt, gap: 8pt, "Täidetud tabel on pakkumuse osa ja saab lepingu lisaks. See tõendab hankelepingu esemele esitatud nõuete täitmist (vastab või ei vasta); see ei ole pakkumuste hindamiskriteerium. Nõuetele vastavuse hindamiseks punktidega sätestage see eelnevalt hankedokumentides avaldatud hindamiskriteeriumide hulgas (direktiiv 2014/24/EL, artikkel 67).")
 
@@ -1100,11 +1100,11 @@
     ("2.4", "Avatud, skeemiga kontrollitav serialiseering", "MIM2 R3.1, R3.4"),
   ),
   section("MIM3 · Kas saame jagada selgetel tingimustel?",
-    ("3.1", "Andmestikud kataloogitud standardandmetega", "MIM3 RC4.1–RC4.3"),
+    ("3.1", "Andmestikud kataloogitud standardsete metaandmetega", "MIM3 RC4.1–RC4.3"),
     ("3.2", "Malli alusel litsentsid ja lepingud", "MIM3 RC2.2, RC2.3"),
     ("3.3", "Linn kontrollib juurdepääsutingimusi ise", "MIM3 RC1.1, RC2.1"),
   ),
-  section("MIM6 · Kas meie andmed on edastamisel ja kasutamisel kaitstud?",
+  section("MIM6 · Kas meie andmed on kaitstud?",
     ("6.1", "Krüpteeritud andmeedastus (TLS 1.3)", "MIM6 R2.1, M1.1"),
     ("6.2", "Standardne sisselogimine (OAuth 2.0 / OIDC)", "MIM6 R3.1, M1.2, M1.3"),
     ("6.3", "Rollipõhine ligipääs ja auditi logid", "MIM6 R1.1, R1.3, 8.15"),
@@ -1123,10 +1123,10 @@
     ("8.4", "Töövoo päritolu salvestatud", "MIM8 R4.4"),
   ),
   section("Läbivad hanketingimused", accent: magenta, note: "Pakkuja kinnitab lepingutingimuse aktsepteerimist (T / E).",
-    ("X.1", "Väljumisklausel: tasuta üleandmine avatud kujul", "—"),
+    ("X.1", "Lepingu lõppemine: tasuta üleandmine avatud kujul", "—"),
     ("X.2", "Õigused andmetele kuuluvad hankijale", "—"),
-    ("X.3", "Oma andmetele ligipääs tasuta", "—"),
-    ("X.4", "API stabiilsus: versioonitud, etteteade 6 kuud", "—"),
+    ("X.3", "Oma andmete tasuta kättesaadavus", "—"),
+    ("X.4", "API stabiilsus: versioonitud, ühildumatutest muudatustest etteteade 6 kuud", "—"),
   ),
 )
 
@@ -1167,7 +1167,7 @@
     term("OGC",
       "Open Geospatial Consortium: organisatsioon, mis avaldab ruumiandmete ja -teenuste standardeid (OGC API, WFS, SensorThings)."),
     term("Avatud standard",
-      "Tehniline reegel, mida igaüks võib tasuta ja luba küsimata lugeda ning rakendada."),
+      "Tehniline reegel, mida igaüks võib tasuta ja ilma eriloata lugeda ning rakendada."),
     term("OpenAPI",
       "Avatud vorming veebi-API masinloetavaks kirjeldamiseks: aadressid, parameetrid, vastused."),
     term("Serialiseering",
@@ -1175,7 +1175,7 @@
     term("TLS",
       "Protokoll, mis krüpteerib võrgus liikuvaid andmeid (HTTPS-i alus)."),
     term("Tarnijalukustus",
-      "Olukord, kus tarnija vahetamine on andmete, vormingute või tasude tõttu nii kulukas, et see on praktiliselt võimatu."),
+      "Olukord, kus andmete, vormingute või tasude maksumus teeb tarnija vahetamise praktiliselt võimatuks."),
     term("Veebihaak / MQTT",
       "Kaks viisi, kuidas süsteem annab muutusest ise teada: veebihaak pöördub teie aadressi poole, MQTT edastab sõnumeid tellijatele."),
   )

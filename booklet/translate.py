@@ -4,6 +4,7 @@
   OPENROUTER_API_KEY=… python3 translate.py de fr     # these languages
   OPENROUTER_API_KEY=… python3 translate.py --all     # every EU language without a file
   python3 translate.py --all --dry-run                # estimate only, nothing sent
+  OPENROUTER_API_KEY=… python3 translate.py --changed de fr   # only the strings whose English changed
   python3 translate.py --selftest                     # split / merge / shape, offline
 
 en.json goes out in one request: the answer of a Latin-script language is about 20,000
@@ -12,6 +13,11 @@ are wrong, the language is sent again in three parts (PARTS) and the answers are
 in the key order of en.json. check_content.py then validates the language. The prompt is the ```text block of
 TRANSLATE_PROMPT.md. A language that already has a file is skipped unless --force:
 a reviewed translation is never overwritten by a machine draft.
+
+--changed compares en.json with its version at the git ref --since (default HEAD) and sends
+only the strings that differ, each with its current translation, so the rest of an existing
+file stays as it is. It needs the same structure in both versions; with --all it takes
+every language that has a file, so name the languages to leave reviewed ones out.
 
 The result is a draft. A person who knows the procurement vocabulary of the country
 reads the PDF before the file reaches dev (see TRANSLATING.md); the page number in
@@ -97,6 +103,50 @@ def repair(lang, en, result, key, effort):
             c[k] = fixed[p]
     print(f"  {lang} repaired {len(bad)} string(s), still suspect: {len(list(suspects(en, result)))}")
     return usage.get("cost") or 0
+
+
+def leaves(node, path=()):
+    """(path, string) of every string in the tree."""
+    items = node.items() if isinstance(node, dict) else enumerate(node) if isinstance(node, list) else ()
+    for k, v in items:
+        if isinstance(v, str):
+            yield path + (k,), v
+        else:
+            yield from leaves(v, path + (k,))
+
+
+def at(node, path):
+    for k in path:
+        node = node[k]
+    return node
+
+
+def update(lang, en, old, key, effort):
+    """Translate again only the strings whose English differs from the old en.json."""
+    before = dict(leaves(old))
+    todo = [(p, e) for p, e in leaves(en) if before.get(p) != e]
+    result = json.load(open(os.path.join(HERE, "content", f"{lang}.json"), encoding="utf-8"))
+    if errors := shape_errors(en, result):
+        print(f"  {lang}: structure differs from en.json, use --force: {'; '.join(errors[:4])}", file=sys.stderr)
+        return lang, None, 0.0
+    ask_for = {"/".join(map(str, p)): {"english": e, "previous_english": before.get(p, ""), "previous_translation": at(result, p)}
+               for p, e in todo}
+    prompt = (prompt_for(lang) + "\nThe English of these strings changed. Translate each new English text completely, "
+              "with nothing added. Keep the wording and the terms of the previous translation wherever the English "
+              "kept them. Return one JSON object: the same keys, each value the new translation as a string.\n"
+              + json.dumps(ask_for, ensure_ascii=False, indent=1))
+    try:
+        fixed, usage = ask(prompt, key, effort)
+    except Exception as e:                       # noqa: BLE001  (the file stays as it was)
+        print(f"  {lang} failed: {e}", file=sys.stderr)
+        return lang, None, 0.0
+    missing = [k for k in ask_for if not (isinstance(fixed.get(k), str) and fixed[k].strip())]
+    if missing:
+        print(f"  {lang}: no translation for {'; '.join(missing[:4])}", file=sys.stderr)
+        return lang, None, usage.get("cost") or 0
+    for p, _ in todo:
+        at(result, p[:-1])[p[-1]] = fixed["/".join(map(str, p))]
+    return lang, result, (usage.get("cost") or 0) + repair(lang, en, result, key, effort)
 
 
 def prompt_for(lang):
@@ -197,6 +247,8 @@ def selftest():
     e = {"a": ["MIM6 lists it among its prerequisites", "No fees for the city at all."], "b": "ok → fine"}
     t = {"a": ["listet es", "Keine Gebühren für die Stadt, weder nutzer- noch volumen- noch abfragebasiert."], "b": "gut → so"}
     assert [p for p, *_ in suspects(e, t)] == ["/a[0]", "/a[1]"]
+    assert list(leaves(e)) == [(("a", 0), e["a"][0]), (("a", 1), e["a"][1]), (("b",), "ok → fine")]
+    assert at(e, ("a", 1)) == e["a"][1]
     assert with_page("the table (p. 23); an annex", "28") == "the table (p. 28); an annex"
     assert with_page("táblázatot (23. o.); ez", "28") == "táblázatot (28. o.); ez"
     print("selftest ok")
@@ -207,6 +259,8 @@ def main():
     ap.add_argument("langs", nargs="*")
     ap.add_argument("--all", action="store_true", help="every EU language that has no file yet")
     ap.add_argument("--force", action="store_true", help="overwrite an existing language file")
+    ap.add_argument("--changed", action="store_true", help="only the strings whose English differs from en.json at --since")
+    ap.add_argument("--since", default="HEAD", metavar="REF", help="git ref that --changed compares with (default HEAD)")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--selftest", action="store_true")
     ap.add_argument("--jobs", type=int, default=4, help="languages in parallel")
@@ -221,16 +275,29 @@ def main():
     langs = list(LANGS) if a.all else a.langs
     if bad := [l for l in langs if l not in LANGS]:
         sys.exit(f"unknown language code: {' '.join(bad)} (known: {' '.join(LANGS)})")
-    skipped = [l for l in langs if os.path.exists(path(l)) and not a.force]
+    old = None
+    if a.changed:
+        show = subprocess.run(["git", "show", f"{a.since}:./content/en.json"], cwd=HERE, capture_output=True, text=True)
+        if show.returncode:
+            sys.exit(f"cannot read en.json at {a.since}: {show.stderr.strip()}")
+        old = json.loads(show.stdout)
+    skipped = [l for l in langs if os.path.exists(path(l)) != bool(a.changed) and not (a.force and not a.changed)]
     langs = [l for l in langs if l not in skipped]
     if skipped:
-        print("skipped, file exists (use --force):", " ".join(skipped))
+        print("skipped, no file yet:" if a.changed else "skipped, file exists (use --force):", " ".join(skipped))
     if not langs:
         sys.exit("nothing to translate")
 
     # estimate: ~3.7 characters per token of English JSON; the answer about 1.4 times the
     # input (2.6 times in Greek and Cyrillic) plus a third for reasoning tokens
-    tok_in = (len(json.dumps(en, ensure_ascii=False)) + len(prompt_for(langs[0]))) / 3.7
+    text = dict(leaves(en))
+    if old is not None:
+        before = dict(leaves(old))
+        text = {p: e for p, e in text.items() if before.get(p) != e}
+        print(f"{len(text)} changed string(s) since {a.since}")
+        if not text:
+            return
+    tok_in = (len(json.dumps(en if old is None else list(text.values()) * 3, ensure_ascii=False)) + len(prompt_for(langs[0]))) / 3.7
     est = sum(tok_in * USD_IN + tok_in * (2.6 if l in ("bg", "el") else 1.4) * 1.33 * USD_OUT for l in langs)
     print(f"{len(langs)} language(s), one request each, model {MODEL}: about {est:.2f} USD")
     if a.dry_run:
@@ -242,7 +309,7 @@ def main():
         def one(lang):
             if spent >= a.max_usd:
                 return lang, None, 0.0
-            return translate(lang, en, key, a.effort)
+            return translate(lang, en, key, a.effort) if old is None else update(lang, en, old, key, a.effort)
         for lang, result, cost in pool.map(one, langs):
             spent += cost
             if result is None:

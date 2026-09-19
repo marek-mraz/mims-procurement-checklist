@@ -1,16 +1,16 @@
 {
   "cover": {
-    "title": "Procurement Checklist · using the Minimal · Interoperability Mechanisms (MIMs)",
-    "subtitle": "What to put in a tender so your city keeps its data",
-    "tagline": "For MIMs Plus 9.0 by OASC",
-    "footer": "For procurement officers, project managers and CIOs of European municipalities"
+    "title": "Procurement Checklist · based on the Minimal · Interoperability Mechanisms (MIMs)",
+    "subtitle": "What to specify in tender documents so the city retains control of its data",
+    "tagline": "Specification: MIMs Plus 9.0 by OASC",
+    "footer": "For procurement officers, project managers and IT managers of European municipalities"
   },
   "why": {
-    "title": "Why this booklet",
+    "title": "Purpose of this booklet",
     "paras": [
       "Every year, cities buy software: parking systems, sensor platforms, map portals, digital twins. Too often, the data those systems collect ends up locked inside them. When the contract ends, the data — paid for with public money — leaves with the supplier, or stays trapped in a format nobody else can read.",
-      "It does not have to be this way. The Minimal Interoperability Mechanisms (MIMs), maintained by Open & Agile Smart Cities (OASC) and endorsed through the European living-in.eu movement, describe the minimal technical requirements that keep your data open, reusable and vendor-neutral. They are deliberately small: not a grand architecture, just the few things that must be true so that systems can talk to each other.",
-      "You do not need to be an engineer to use them. Each checklist turns one MIM into plain-words checklist items you can copy into a tender, with the reason why each one protects you. Right after the checklist you find every requirement of that MIM, word for word, so your technical colleagues and your bidders can check the details.",
+      "It does not have to be this way. The Minimal Interoperability Mechanisms (MIMs), maintained by Open & Agile Smart Cities (OASC) and endorsed through the European living-in.eu movement, describe the minimal technical requirements that keep your data open, reusable and vendor-neutral. They are deliberately small: not a large architecture, only the few conditions that must hold for systems to exchange data.",
+      "No technical background is needed to use this booklet. Each checklist turns one MIM into plain-words checklist items you can copy into a tender, with the reason why each one protects you. Right after the checklist you find every requirement of that MIM, word for word, so your technical colleagues and your bidders can check the details.",
       "Cities that require the MIMs buy once and reuse many times: the air-quality data feeds the school dashboard, the streetlight inventory feeds the energy plan, and the next supplier picks up where the last one left off. That is what interoperability means in practice — and it is increasingly expected in EU-funded projects."
     ],
     "quote": {
@@ -103,11 +103,11 @@
       }
     },
     "note": "Every checklist item carries a small reference like → MIM0 R1.1. That is the requirement in MIMs Plus 9.0 it comes from; right after the checklist you find every requirement of that MIM word for word. Only MIM0 defines the keywords: they count when written in capitals, the convention of IETF RFC 2119 and RFC 8174 (CAN comes from the ISO/IEC Directives, Part 2). The other MIMs have no definition: MIM6 writes SHALL mostly in capitals, MIM2, MIM3, MIM7 and MIM8 write shall, should and must in lower case, and MIM1 uses them only in the description of a mechanism (MUST NOT in section 3.1). This booklet reads the lower-case words the same way; a bidder may read them more loosely.",
-    "legend_note": "The checklist items say “must” even where the specification only recommends (should) or lists a candidate mechanism. That is the contracting authority’s decision."
+    "legend_note": "The checklist items state each point as a requirement even where the specification only recommends (should) or lists a candidate mechanism. That is the contracting authority’s decision."
   },
   "glance": {
     "title": "Seven MIMs and three tools",
-    "intro": "Seven small mechanisms, one goal: your data stays yours, and your systems can talk to each other.",
+    "intro": "Seven small mechanisms, one goal: the data stays under the city’s control and the systems work together.",
     "items": {
       "MIM0": {
         "name": "Accessing Data",
@@ -215,7 +215,7 @@
       "red_flags": [
         "“Data export on request via our support team.”",
         "“The API is available as a paid add-on module.”",
-        "Per-request pricing for the city’s own data (see the clause “No per-seat / per-request fees”)."
+        "Per-request pricing for the city’s own data (see the clause “No fees for own data”)."
       ]
     },
     "MIM1": {
@@ -285,15 +285,15 @@
     "MIM3": {
       "name": "Exchanging Data",
       "question": "Can we share on clear terms?",
-      "intro": "Not all city data can be simply published: some is commercial, some sensitive. MIM3 is about sharing the rest anyway, safely: a catalogue people can search, licences from templates instead of bespoke legalese, and governance rules everyone can read. The specification words almost all of MIM3 as a recommendation (see p. 3).",
+      "intro": "Not all city data can be simply published: some is commercial, some sensitive. MIM3 is about sharing the rest anyway, safely: a catalogue people can search, licences from templates instead of bespoke legal text, and governance rules everyone can read. The specification words almost all of MIM3 as a recommendation (see p. 3).",
       "items": [
         {
           "text": "Every dataset the system offers is described with standard metadata (for example DCAT-AP) in a catalogue, so others can discover it.",
           "why": "Data nobody can find is data nobody uses."
         },
         {
-          "text": "Terms and licences for data use come from well-known templates (e.g. open licences, standard data-sharing agreements), not bespoke legalese per dataset.",
-          "why": "Agreements scale; lawyers don’t become the bottleneck."
+          "text": "Terms and licences for data use come from well-known templates (e.g. open licences, standard data-sharing agreements), not bespoke legal text per dataset.",
+          "why": "Agreements scale without case-by-case legal review."
         },
         {
           "text": "The city can define who may access which data asset and under which conditions, and change this without vendor involvement.",
@@ -306,13 +306,13 @@
         "One rulebook replaces many individual data-sharing contracts."
       ],
       "red_flags": [
-        "The vendor claims rights over the city’s data (see the clause “Data ownership”).",
+        "The vendor claims rights over the city’s data (see the clause “Rights in the data”).",
         "Sharing with a third party requires vendor consent or fees."
       ]
     },
     "MIM6": {
       "name": "Securing Data",
-      "question": "Is our data safe in transit and in use?",
+      "question": "Is our data safe?",
       "intro": "Smart cities are targets. MIM6 keeps the scope deliberately narrow and practical: encrypt data on the move, use standard logins instead of proprietary ones, control and log who accesses what. None of it is exotic — all of it must be in the contract.",
       "items": [
         {
@@ -329,14 +329,14 @@
         },
         {
           "label": "Belongs in the conditions of participation, not in the technical specification",
-          "text": "The supplier must show alignment with ISO/IEC 27001:2022 (or equivalent) for the service they operate.",
+          "text": "The bidder demonstrates alignment with ISO/IEC 27001:2022 (or equivalent) for the service they operate.",
           "why": "Security is a process, not a checkbox at delivery. The specification cites ISO/IEC 27001 controls, not a certificate."
         }
       ],
       "why_panel": [
         "A breach in one system does not open every system.",
         "Where NIS2 applies to you, complying with it and with national cyber rules gets measurably easier.",
-        "When something goes wrong, the logs tell you what and who."
+        "After an incident, the logs show what happened and who acted."
       ],
       "red_flags": [
         "Proprietary login only.",
@@ -390,7 +390,7 @@
           "why": "A flood model bought once can be reused across departments — and by other cities."
         },
         {
-          "text": "Outputs use standard formats (GeoJSON, CityJSON, 3D Tiles, NetCDF…) consumable by tools you don’t buy from this vendor.",
+          "text": "Outputs use standard formats (GeoJSON, CityJSON, 3D Tiles, NetCDF…) readable by third-party tools.",
           "why": "Visualisation and analysis stay competitive markets."
         },
         {
@@ -423,8 +423,8 @@
         "text": "All rights in the data collected and derived under the contract belong to the contracting authority."
       },
       {
-        "name": "No per-seat / per-request fees",
-        "text": "No fees for the city accessing its own data."
+        "name": "No fees for own data",
+        "text": "The contracting authority pays no fee for access to its own data, neither per user nor per request."
       },
       {
         "name": "API stability and versioning",
@@ -436,7 +436,7 @@
       },
       {
         "name": "Open standards named",
-        "text": "The tender names the standards above; “compatible with” claims must cite the exact interface and version. Every reference to a standard or technical specification accepts an equivalent solution; the bidder proves the equivalence."
+        "text": "The tender names specific standards; “compatible with” claims must cite the exact interface and version. Every reference to a standard or technical specification accepts an equivalent solution; the bidder proves the equivalence."
       },
       {
         "name": "MIMs compliance statement",
@@ -446,7 +446,7 @@
   },
   "example": {
     "title": "Example: a city buys a network of air-quality sensors",
-    "scenario": "Marked pages: MIM0, MIM1, MIM2, MIM6 and MIM7 (the data goes on a map). From MIM3 only item 3.1 (air-quality data is published as open data, so it belongs in a catalogue); not MIM8: this is no digital twin.",
+    "scenario": "Marked pages: MIM0, MIM1, MIM2, MIM6 and MIM7 (the data goes on a map). From MIM3 only item 3.1 (air-quality data is published as open data, so it belongs in a catalogue); MIM8 does not apply: the system is not a digital twin.",
     "table_title": "What goes where",
     "table_headers": [
       "Document",
@@ -472,7 +472,7 @@
       [
         "Draft contract",
         "conditions for performance of contracts (Art. 70)",
-        "Exit clause, Data ownership, No per-seat / per-request fees, API stability and versioning; the completed compliance table as an annex"
+        "Exit clause, Rights in the data, No fees for own data, API stability and versioning; the completed compliance table as an annex"
       ],
       [
         "Acceptance protocol",
@@ -488,7 +488,7 @@
       "4.3.3 The API allows filtering of data by time and place of measurement. (MIM0 R2.1, R2.2)",
       "… 4.3.4 to 4.3.21: further marked items …",
       "4.3.22 Every reference to a standard or technical specification accepts an equivalent solution; the bidder proves the equivalence.",
-      "4.3.23 The bidder completes the compliance table (annex to the procurement documents) and gives the evidence for each required item. The bidder demonstrates points 4.3.1 to 4.3.21 with a live API call during the evaluation of tenders; the contracting authority tests them again at acceptance. Failing them is a reason to refuse acceptance."
+      "4.3.23 The bidder completes the compliance table (annex to the procurement documents) and gives the evidence for each required item. During the evaluation of tenders the bidder demonstrates points 4.3.1 to 4.3.21 (for example with a live API call); a tender that fails a required point does not meet the requirements for the subject of the contract. The contracting authority tests the points again at acceptance; a failure then is a reason to refuse acceptance."
     ],
     "tip": "Point 4.3.3 shows that you may sharpen an item to fit the purchase: for sensors it makes sense to ask for filtering by time and place of measurement.",
     "note": "Adapt the wording to national law and have the person responsible for procurement check it.",
@@ -516,7 +516,7 @@
         "✓"
       ]
     ],
-    "filled_note": "A promise for the future is N: the committee verifies only what the bidder can show."
+    "filled_note": "A promise of future functionality counts as N: the committee verifies only what the bidder can show. For a required item, N means the tender does not meet the requirements for the subject of the contract."
   },
   "tearout": {
     "title": "Compliance table",
@@ -644,7 +644,7 @@
       },
       {
         "t": "Open standard",
-        "d": "A technical rule anyone may read and implement without paying or asking permission."
+        "d": "A technical rule anyone may read and implement free of charge and without special permission."
       },
       {
         "t": "OpenAPI",
@@ -660,7 +660,7 @@
       },
       {
         "t": "Vendor lock-in",
-        "d": "When leaving a supplier costs so much — in data, formats or fees — that you effectively cannot."
+        "d": "A state in which the cost of data, formats or fees makes a change of supplier practically impossible."
       },
       {
         "t": "Webhook / MQTT",
@@ -706,7 +706,7 @@
     "MIM2 · R1.3": "Data models used shall support the exchange of data by using the relevant requirements of the MIMs on Accessing data and Interlinking data",
     "MIM2 · R2.1": "A common data model for each key entity should be developed for any data ecosystem. That common data model should contain all the fields included within the different data models for that entity that are used within that data ecosystem. Each different data model used within that data ecosystem could then be transformed into the common data model.",
     "MIM2 · R3.1": "Each data model used shall have at least one defined machine-readable data transport format (“serialisation”) that is open, publicly available and implementation-independent.",
-    "MIM2 · R3.2": "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor that is able to reconstruct all the data stored in such a data format.",
+    "MIM2 · R3.2": "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor [sic] that is able to reconstruct all the data stored in such a data format.",
     "MIM2 · R3.3": "Where multiple data transport formats are supported for the same data model, they shall represent the same information content consistently and without loss of meaning.",
     "MIM2 · R3.4": "The representation should support validation using openly published schemas, grammars, or equivalent machine-readable constraints, where such validation mechanisms exist for the chosen format.",
     "MIM2 · R4.1": "Application Profiles that extend a data model should not impact the already existing model and its users",

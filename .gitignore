@@ -21,3 +21,6 @@ sprava-kolegom.md
 # editor and OS leftovers
 ~$*
 .DS_Store
+
+# model review of the translations (booklet/review_translation.py): working output
+review/

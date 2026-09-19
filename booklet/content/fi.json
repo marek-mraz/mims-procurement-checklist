@@ -1,16 +1,16 @@
 {
   "cover": {
-    "title": "Hankintojen tarkistuslista · vähimmäistason · yhteentoimivuusmekanismeilla (MIMs)",
-    "subtitle": "Mitä tarjouspyyntöön tulee sisällyttää, jotta kaupunki säilyttää datansa",
-    "tagline": "OASC:n MIMs Plus 9.0 -määritykselle",
-    "footer": "Eurooppalaisten kuntien hankinta-asiantuntijoille, projektipäälliköille ja tietohallintojohtajille"
+    "title": "Hankintojen tarkistuslista · perustuu vähimmäistason · yhteentoimivuusmekanismeihin (MIMs)",
+    "subtitle": "Mitä tarjouspyyntöasiakirjoihin tulee määrittää, jotta kaupunki säilyttää datansa hallinnan",
+    "tagline": "Määritys: MIMs Plus 9.0 (OASC)",
+    "footer": "Eurooppalaisten kuntien hankinta-asiantuntijoille, projektipäälliköille ja IT-päälliköille"
   },
   "why": {
-    "title": "Miksi tämä opas on tehty",
+    "title": "Tämän oppaan tarkoitus",
     "paras": [
-      "Kunnat ja kaupungit hankkivat vuosittain ohjelmistoja: pysäköintijärjestelmiä, anturialustoja, karttapalveluita ja digitaalisia kaksosia. Liian usein näiden järjestelmien keräämä data päätyy lukituksi niiden sisään. Kun sopimus päättyy, julkisilla varoilla maksettu data siirtyy toimittajan mukana tai jää jumiin muotoon, jota kukaan muu ei pysty lukemaan.",
-      "Näin ei tarvitse olla. Open & Agile Smart Cities (OASC) -verkoston ylläpitämät ja eurooppalaisen Living-in.EU-liikkeen puoltamat vähimmäistason yhteentoimivuusmekanismit (MIMs) kuvaavat ne vähimmäistason tekniset vaatimukset, jotka pitävät datanne avoimena, uudelleenkäytettävänä ja toimittajariippumattomana. Ne ovat tarkoituksella suppeita: kyse ei ole raskaasta arkkitehtuurista, vaan niistä harvoista välttämättömyyksistä, joiden ansiosta järjestelmät voivat keskustella keskenään.",
-      "Niiden käyttö ei edellytä insinööritaustaa. Kukin tarkistuslista muuntaa yhden MIM-mekanismin selkokielisiksi vaatimuskohdiksi, jotka voi kopioida tarjouspyyntöön, perusteluineen sille, miten kukin kohta suojaa teitä. Heti tarkistuslistan jälkeen esitetään kyseisen MIM-mekanismin jokainen vaatimus sanatarkasti, jotta tekniset asiantuntijanne ja tarjoajat voivat tarkistaa yksityiskohdat.",
+      "Kunnat ja kaupungit hankkivat vuosittain ohjelmistoja: pysäköintijärjestelmiä, anturialustoja, karttapalveluita ja digitaalisia kaksosia. Liian usein näiden järjestelmien keräämä data päätyy lukituksi niiden sisään. Kun sopimus päättyy, julkisilla varoilla maksettu data siirtyy toimittajan mukana tai jää muotoon, jota kukaan muu ei pysty lukemaan.",
+      "Näin ei tarvitse olla. Open & Agile Smart Cities (OASC) -verkoston ylläpitämät ja eurooppalaisen living-in.eu-liikkeen vahvistamat vähimmäistason yhteentoimivuusmekanismit (MIMs) kuvaavat ne vähimmäistason tekniset vaatimukset, jotka pitävät datanne avoimena, uudelleenkäytettävänä ja toimittajariippumattomana. Ne ovat tarkoituksella suppeita: kyse ei ole laajasta arkkitehtuurista, vaan niistä harvoista ehdoista, joiden on toteuduttava, jotta järjestelmät voivat vaihtaa dataa keskenään.",
+      "Tämän oppaan käyttöön ei tarvita teknistä taustaa. Kukin tarkistuslista muuntaa yhden MIM-mekanismin selkokielisiksi tarkistuskohdiksi, jotka voi kopioida tarjouspyyntöön, perusteluineen sille, miksi kukin kohta suojaa teitä. Heti tarkistuslistan jälkeen esitetään kyseisen MIM-mekanismin jokainen vaatimus sanatarkasti, jotta tekniset kolleganne ja tarjoajat voivat tarkistaa yksityiskohdat.",
       "MIM-mekanismeja edellyttävät kaupungit ostavat kerran ja käyttävät uudelleen moneen kertaan: ilmanlaatutiedot siirtyvät koulujen näytöille, katuvalojen inventointi palvelee energiasuunnitelmaa ja seuraava toimittaja voi jatkaa suoraan edellisen työtä. Tätä yhteentoimivuus tarkoittaa käytännössä — ja sitä odotetaan yhä useammin EU-rahoitteisissa hankkeissa."
     ],
     "quote": {
@@ -71,8 +71,8 @@
         "text": "Kopioi valitut tarkistuslistan kohdat vaatimuksiisi. Jokainen kohta on kirjoitettu suoraan liitettäväksi virkkeeksi. Lisää läpileikkaavat ehdot: ne maksavat vähän ja estävät toimittajaloukun."
       },
       {
-        "name": "Vertaa",
-        "text": "Pyydä tarjoajia osoittamaan, älä vain lupaamaan (katso saman niminen ehto). Varmista vaatimustenmukaisuus tarjoajan täyttämän vaatimustenmukaisuustaulukon perusteella."
+        "name": "Arvioi",
+        "text": "Pyydä tarjoajia osoittamaan, älä vain lupaamaan (katso samanniminen ehto). Varmista vaatimustenmukaisuus tarjoajan täyttämän vaatimustenmukaisuustaulukon perusteella."
       },
       {
         "name": "Vastaanota",
@@ -103,11 +103,11 @@
       }
     },
     "note": "Jokaisessa tarkistuslistan kohdassa on pieni viite, kuten → MIM0 R1.1. Se osoittaa MIMs Plus 9.0 -määrityksen vaatimuksen, josta se on peräisin; heti tarkistuslistan jälkeen löydät kyseisen MIM-mekanismin jokaisen vaatimuksen sanatarkasti. Vain MIM0 määrittelee avainsanat: ne ovat sitovia suuraakkosin kirjoitettuina standardien IETF RFC 2119 ja RFC 8174 käytännön mukaisesti (CAN tulee ISO/IEC Directives, Part 2 -ohjeesta). Muissa MIM-määrityksissä ei ole määritelmää: MIM6 kirjoittaa sanan SHALL enimmäkseen suuraakkosin, MIM2, MIM3, MIM7 ja MIM8 käyttävät sanoja shall, should ja must pienaakkosin, ja MIM1 käyttää niitä vain mekanismin kuvauksessa (MUST NOT kohdassa 3.1). Tämä opas tulkitsee pienaakkosin kirjoitetut sanat samalla tavalla; tarjoaja saattaa tulkita niitä vapaammin.",
-    "legend_note": "Tarkistuslistan kohdissa käytetään sanaa ”on”, vaikka määritys vain suosittelee (tulisi) tai luettelee ehdokasmekanismeja. Tämä on hankintayksikön päätös."
+    "legend_note": "Tarkistuslistan kohdat esittävät kunkin kohdan vaatimuksena silloinkin, kun määritys ainoastaan suosittelee (tulisi) tai luettelee ehdokasmekanismeja. Tämä on hankintayksikön päätös."
   },
   "glance": {
     "title": "Seitsemän MIM-mekanismia ja kolme työkalua",
-    "intro": "Seitsemän suppeaa mekanismia, yksi tavoite: datanne pysyy teidän hallussanne, ja järjestelmänne pystyvät keskustelemaan keskenään.",
+    "intro": "Seitsemän suppeaa mekanismia, yksi tavoite: data pysyy kaupungin hallinnassa ja järjestelmät toimivat yhdessä.",
     "items": {
       "MIM0": {
         "name": "Datan saatavuus",
@@ -183,11 +183,11 @@
   "mims": {
     "MIM0": {
       "name": "Datan saatavuus",
-      "question": "Saammeko datamme ulos järjestelmästä?",
+      "question": "Saammeko datamme ulos?",
       "intro": "Tämä on perusta. Jos data ei voi poistua järjestelmästä standardoidun rajapinnan kautta, kaikki muu tässä oppaassa on pelkkää teoriaa. MIM0 edellyttää yhtä asiaa jokaiselta hankittavalta järjestelmältä: datan on oltava saavutettavissa koneellisesti luettavassa muodossa tavallisen verkon kautta.",
       "items": [
         {
-          "text": "Kaikki järjestelmän keräämä tai tuottama data on noudettavissa vähintään yhdessä koneellisesti luettavassa muodossa (esim. JSON, CSV) standardin web-rajapinnan kautta.",
+          "text": "Kaikki järjestelmän keräämä tai tuottama data on noudettavissa vähintään yhdessä koneluettavassa muodossa (esim. JSON, CSV) standardin web-rajapinnan kautta.",
           "why": "Seuraava toimittajasi — tai oma henkilöstösi — voi käyttää dataa pyytämättä lupaa toimittajalta."
         },
         {
@@ -215,7 +215,7 @@
       "red_flags": [
         "”Datan vienti pyynnöstä tukitiimimme kautta.”",
         "”Rajapinta on saatavilla maksullisena lisämoduulina.”",
-        "Pyyntökohtainen hinnoittelu kaupungin omalle datalle (katso ehto ”Ei käyttäjä- tai pyyntökohtaisia maksuja”)."
+        "Pyyntökohtainen hinnoittelu kaupungin omalle datalle (katso ehto ”Ei maksuja omasta datasta”)."
       ]
     },
     "MIM1": {
@@ -264,7 +264,7 @@
           "why": "”Lämpötila: 23” on hyödytön, jos kukaan ei kirjannut °C vai °F."
         },
         {
-          "text": "Laajennukset toimitetaan dokumentoituina profiileina tai lisäyksinä standardimallin päälle — ei koskaan muokattuna suljettuna haarana.",
+          "text": "Laajennukset toimitetaan dokumentoituina profiileina tai lisäyksinä standardimallin päälle — ei koskaan muokattuna suljettuna forkina.",
           "why": "Pysyt yhteensopivana yhteisön ja tulevien päivitysten kanssa."
         },
         {
@@ -285,15 +285,15 @@
     "MIM3": {
       "name": "Datan vaihtaminen",
       "question": "Voimmeko jakaa dataa selkein ehdoin?",
-      "intro": "Kaikkea kaupungin dataa ei voida suoraan julkaista: osa on kaupallista, osa arkaluonteista. MIM3 käsittelee muun datan turvallista jakamista: luetteloa, josta voi hakea, mallipohjaisia lisenssejä räätälöidyn lakikielen sijaan ja hallintasääntöjä, jotka jokainen voi lukea. Spesifikaatiossa lähes koko MIM3 on muotoiltu suositukseksi (katso s. 3).",
+      "intro": "Kaikkea kaupungin dataa ei voida suoraan julkaista: osa on kaupallista, osa arkaluonteista. MIM3 käsittelee muun datan jakamista siitä huolimatta ja turvallisesti: luettelo, josta ihmiset voivat hakea, lisenssit mallipohjista räätälöidyn lakitekstin sijaan ja hallintasäännöt, jotka jokainen voi lukea. Määritys muotoilee lähes koko MIM3-mekanismin suositukseksi (katso s. 3).",
       "items": [
         {
           "text": "Jokainen järjestelmän tarjoama tietoaineisto kuvataan metatietojen standardeilla (esimerkiksi DCAT-AP) luettelossa, jotta muut voivat löytää sen.",
           "why": "Data, jota kukaan ei löydä, on dataa, jota kukaan ei käytä."
         },
         {
-          "text": "Datan käyttöehdot ja lisenssit perustuvat tunnettuihin mallipohjiin (esim. avoimet lisenssit, vakioidut datanjakosopimukset), ei tietoaineistokohtaiseen räätälöityyn lakikieleen.",
-          "why": "Sopimukset skaalautuvat eivätkä juristit muodostu pullonkaulaksi."
+          "text": "Datan käyttöehdot ja lisenssit perustuvat tunnettuihin mallipohjiin (esim. avoimet lisenssit, vakioidut datanjakosopimukset), ei tietoaineistokohtaiseen räätälöityyn lakitekstiin.",
+          "why": "Sopimukset skaalautuvat ilman tapauskohtaista oikeudellista tarkastelua."
         },
         {
           "text": "Kaupunki voi määritellä, kuka saa pääsyn mihinkin tietovarantoon ja millä ehdoin, sekä muuttaa tätä ilman toimittajan osallistumista.",
@@ -306,13 +306,13 @@
         "Yksi sääntökirja korvaa lukuisat yksittäiset datanjakosopimukset."
       ],
       "red_flags": [
-        "Toimittaja vaatii oikeuksia kaupungin dataan (katso ehto ”Datan omistusoikeus”).",
+        "Toimittaja vaatii oikeuksia kaupungin dataan (katso ehto ”Oikeudet dataan”).",
         "Jakaminen kolmannelle osapuolelle vaatii toimittajan suostumuksen tai maksuja."
       ]
     },
     "MIM6": {
       "name": "Datan suojaaminen",
-      "question": "Onko datamme turvassa siirron ja käytön aikana?",
+      "question": "Onko datamme turvassa?",
       "intro": "Älykaupungit ovat hyökkäyskohteita. MIM6 pitää soveltamisalan tietoisesti suppeana ja käytännöllisenä: salaa data siirron aikana, käytä standardia kirjautumista suljettujen ratkaisujen sijaan, hallitse ja kirjaa kuka pääsee mihinkin tietoon. Mikään tästä ei ole poikkeuksellista — kaiken on oltava sopimuksessa.",
       "items": [
         {
@@ -320,7 +320,7 @@
           "why": "Tietoturvan perustaso; myös NIS2 edellyttää sitä silloin, kun sitä sovelletaan organisaatioosi."
         },
         {
-          "text": "Käyttäjien ja koneiden pääsynhallinta käyttää avoimia standardeja — OAuth 2.0 / OpenID Connect — ja se voidaan liittää kaupungin olemassa olevaan identiteetinhallintaan.",
+          "text": "Käyttäjien ja koneiden pääsynhallinta käyttää avoimia standardeja — OAuth 2.0 / OpenID Connect — ja se voidaan liittää kaupungin olemassa olevaan identiteetintarjoajaan (IdP).",
           "why": "Yksi tili työntekijää kohti, ei tiliä jokaista toimittajan tuotetta kohti; lähtevien työntekijöiden pääsy katkeaa kaikkialta kerralla."
         },
         {
@@ -329,14 +329,14 @@
         },
         {
           "label": "Kuuluu soveltuvuusvaatimuksiin, ei tekniseen eritelmään",
-          "text": "Toimittajan on osoitettava yhdenmukaisuus standardin ISO/IEC 27001:2022 (tai vastaavan) kanssa tuottamansa palvelun osalta.",
+          "text": "Tarjoaja osoittaa yhdenmukaisuuden ISO/IEC 27001:2022 -standardin (tai vastaavan) kanssa tuottamansa palvelun osalta.",
           "why": "Tietoturva on jatkuva prosessi, ei toimitushetken tarkistusruutu. Spesifikaatio viittaa ISO/IEC 27001 -hallintakeinoihin, ei sertifikaattiin."
         }
       ],
       "why_panel": [
         "Tietomurto yhdessä järjestelmässä ei avaa pääsyä kaikkiin järjestelmiin.",
         "Kun NIS2 koskee sinua, sen ja kansallisten kyberturvasääntöjen noudattaminen helpottuu huomattavasti.",
-        "Kun jokin menee vikaan, lokit kertovat mitä tapahtui ja kuka sen teki."
+        "Poikkeaman jälkeen lokit osoittavat, mitä tapahtui ja kuka toimi."
       ],
       "red_flags": [
         "Vain valmistajakohtainen kirjautuminen.",
@@ -382,7 +382,7 @@
       "intro": "Digitaalinen kaksonen on pitkän aikavälin investointi: dataa, 3D-malleja, simulaatioita, päätöksiä. MIM8 suojaa tätä investointia — kaksosen data ja mallit pysyvät saatavilla ja dokumentoituina, tulokset voidaan toistaa ja yhden hankkeen komponentteja voidaan hyödyntää seuraavassa. Käytä tätä sivua, kun hankit kaksoisalustoja, simulaatiomalleja tai kaupungin 3D-työkaluja.",
       "items": [
         {
-          "text": "Tietoaineistot, mallien syötteet ja simulaatioiden tulokset ovat saatavilla rajapintojen kautta (MIM0 mukaisesti), eivätkä ne jää loukkuun kaksoseen.",
+          "text": "Tietoaineistot, mallien syötteet ja simulaatioiden tulokset ovat saatavilla rajapintojen kautta (MIM0:n mukaisesti) sen sijaan, että ne jäisivät lukituiksi kaksoisjärjestelmään.",
           "why": "Tulokset siirtyvät raportteihin, tilannekuviin ja seuraavaan hankkeeseen."
         },
         {
@@ -390,8 +390,8 @@
           "why": "Kerran hankittua tulvamallia voidaan käyttää uudelleen eri hallintokunnissa — ja muissa kaupungeissa."
         },
         {
-          "text": "Tulosteet käyttävät standardimuotoja (GeoJSON, CityJSON, 3D Tiles, NetCDF…), joita voidaan käyttää työkaluilla, joita ei ole ostettu tältä toimittajalta.",
-          "why": "Visualisointi ja analyysi säilyvät kilpailtuina markkinoina."
+          "text": "Tulosteet käyttävät standardimuotoja (GeoJSON, CityJSON, 3D Tiles, NetCDF…), joita kolmansien osapuolten työkalut voivat lukea.",
+          "why": "Visualisoinnin ja analyysin markkinat säilyvät kilpailullisina."
         },
         {
           "text": "Työnkulut tallentavat alkuperätiedot: mikä dataversio, mikä malli ja mitkä parametrit tuottivat tuloksen.",
@@ -415,7 +415,7 @@
     "intro": "Nämä ehdot kuuluvat jokaiseen tarjouspyyntöön riippumatta siitä, mitä olette hankkimassa. Ne pohjautuvat MIM-mekanismien ja Living-in.EU-yhteistyön hankintakäytäntöihin. Useimmat niistä eivät perustu vain yhteen määrityksen vaatimukseen, joten niillä ei ole viitekoodeja (rajapintojen versiointi on myös MIM0 C2 -suositus). Niiden sisällyttäminen maksaa vähän; niiden pois jättäminen voi maksaa kaiken.",
     "items": [
       {
-        "name": "Irtautumisehto (Exit clause)",
+        "name": "Irtautumisehto",
         "text": "Sopimuskauden päättyessä kaikki kaupungin data (ja konfiguraatiot) luovutetaan avoimissa, dokumentoiduissa muodoissa ilman lisäkustannuksia."
       },
       {
@@ -423,20 +423,20 @@
         "text": "Kaikki oikeudet sopimuksen perusteella kerättyyn ja johdettuun dataan kuuluvat hankintayksikölle."
       },
       {
-        "name": "Ei käyttäjä- tai kyselykohtaisia maksuja",
-        "text": "Kaupungilta ei veloiteta maksuja sen omaan dataan pääsystä."
+        "name": "Ei maksuja omasta datasta",
+        "text": "Hankintayksikkö ei maksa pääsystä omaan dataansa mitään maksua, ei käyttäjä- eikä pyyntökohtaisesti."
       },
       {
         "name": "Rajapintojen vakaus ja versiointi",
-        "text": "Toimittaja ylläpitää rajapinnan taaksepäin yhteensopivana koko sopimuskauden ajan. Rikkoutuvista muutoksista ilmoitetaan vähintään 6 kuukautta etukäteen ja ne julkaistaan uutena versiona siten, että edellinen versio pysyy käytettävissä sovittuun siirtymäpäivään saakka."
+        "text": "Toimittaja ylläpitää rajapinnan taaksepäin yhteensopivana koko sopimuskauden ajan. Yhteensopivuuden rikkovista muutoksista ilmoitetaan vähintään 6 kuukautta etukäteen ja ne julkaistaan uutena versiona siten, että edellinen versio pysyy käytettävissä sovittuun siirtymäpäivään saakka."
       },
       {
         "name": "Osoita, älä lupaa",
-        "text": "Tarjoajat osoittavat vaatimustenmukaisuuden tarjousten vertailun aikana omien vakuutusten antamisen sijaan. Rajapinnan osalta tämä tarkoittaa julkaistua interaktiivista dokumentaatiota (kuten OpenAPI) ja toimivaa rajapintakutsua, joka palauttaa kelvollista dataa. Jokainen valittu kohta testataan uudelleen vastaanottotarkastuksessa."
+        "text": "Tarjoajat osoittavat vaatimustenmukaisuuden tarjousten arvioinnin aikana pelkkien omien vakuutusten sijaan. Rajapinnan osalta tämä tarkoittaa julkaistua interaktiivista dokumentaatiota (kuten OpenAPI) ja toimivaa rajapintakutsua, joka palauttaa kelvollista dataa. Jokainen valittu kohta testataan uudelleen vastaanottotarkastuksessa."
       },
       {
         "name": "Avoimet standardit nimetty",
-        "text": "Tarjouspyynnössä nimetään edellä mainitut standardit; väitteissä ”yhteensopiva standardin kanssa” on mainittava tarkka rajapinta ja versio. Jokainen viittaus standardiin tai tekniseen eritelmään hyväksyy vastaavan ratkaisun; tarjoaja osoittaa vastaavuuden."
+        "text": "Tarjouspyynnössä nimetään tietyt standardit; väitteissä ”yhteensopiva standardin kanssa” on mainittava tarkka rajapinta ja versio. Jokainen viittaus standardiin tai tekniseen eritelmään hyväksyy vastaavan ratkaisun; tarjoaja osoittaa vastaavuuden."
       },
       {
         "name": "MIM-vaatimustenmukaisuusvakuutus",
@@ -446,7 +446,7 @@
   },
   "example": {
     "title": "Esimerkki: kaupunki hankkii ilmanlaatuanturiverkoston",
-    "scenario": "Valitut sivut: MIM0, MIM1, MIM2, MIM6 ja MIM7 (data esitetään kartalla). Mekanismista MIM3 vain kohta 3.1 (ilmanlaatutieto julkaistaan avoimena datana, joten se kuuluu tietoluetteloon); ei mekanismia MIM8: kyseessä ei ole digitaalinen kaksonen.",
+    "scenario": "Merkityt sivut: MIM0, MIM1, MIM2, MIM6 ja MIM7 (data esitetään kartalla). Mekanismista MIM3 vain kohta 3.1 (ilmanlaatutieto julkaistaan avoimena datana, joten se kuuluu luetteloon); MIM8 ei sovellu: järjestelmä ei ole digitaalinen kaksonen.",
     "table_title": "Mitä minnekin sijoitetaan",
     "table_headers": [
       "Asiakirja",
@@ -460,7 +460,7 @@
         "valitut kohdat mekanismeista MIM0, MIM1, MIM2, MIM3 (vain 3.1), MIM6 (paitsi 6.4) ja MIM7, sanatarkasti määrityskoodeineen sekä virke vastaavuudesta"
       ],
       [
-        "Osallistumisen ehdot",
+        "Tarjoajan soveltuvuusvaatimukset",
         "valintaperusteet (58 ja 62 art.)",
         "osoitettu vastaavuus standardin ISO/IEC 27001:2022 kanssa tai vastaava (kohta 6.4)"
       ],
@@ -472,7 +472,7 @@
       [
         "Sopimusluonnos",
         "sopimuksen toteuttamisen ehdot (70 art.)",
-        "Irtautumisehto, Datan omistajuus, Ei käyttäjä- tai kyselykohtaisia maksuja, Rajapintojen vakaus ja versiointi; täytetty vaatimustenmukaisuustaulukko liitteenä"
+        "Irtautumisehto, Oikeudet dataan, Ei maksuja omasta datasta, Rajapintojen vakaus ja versiointi; täytetty vaatimustenmukaisuustaulukko liitteenä"
       ],
       [
         "Vastaanottopöytäkirja",
@@ -488,7 +488,7 @@
       "4.3.3 Rajapinta mahdollistaa datan suodattamisen mittausajan ja -paikan perusteella. (MIM0 R2.1, R2.2)",
       "… 4.3.4–4.3.21: muut valitut kohdat …",
       "4.3.22 Jokainen viittaus standardiin tai tekniseen eritelmään hyväksyy vastaavan ratkaisun; tarjoaja osoittaa vastaavuuden.",
-      "4.3.23 Tarjoaja täyttää vaatimustenmukaisuustaulukon (hankinta-asiakirjojen liite) ja antaa näytön jokaisesta vaaditusta kohdasta. Tarjoaja osoittaa kohdat 4.3.1–4.3.21 toimivalla rajapintakutsulla tarjousten vertailun aikana; hankintayksikkö testaa ne uudelleen vastaanottotarkastuksessa. Niiden läpäisemättä jättäminen on peruste kieltäytyä hyväksymästä toimitusta."
+      "4.3.23 Tarjoaja täyttää vaatimustenmukaisuustaulukon (hankinta-asiakirjojen liite) ja antaa näytön jokaisesta vaaditusta kohdasta. Tarjousten tarkastamisen aikana tarjoaja osoittaa kohdat 4.3.1–4.3.21 (esimerkiksi toimivalla rajapintakutsulla); tarjous, joka ei täytä vaadittua kohtaa, ei ole hankinnan kohteen vaatimusten mukainen. Hankintayksikkö testaa kohdat uudelleen vastaanottotarkastuksessa; hylkääminen tällöin on peruste kieltäytyä hyväksymästä toimitusta."
     ],
     "tip": "Kohta 4.3.3 osoittaa, että vaatimusta voi tarkentaa hankinnan mukaan: antureiden osalta on järkevää edellyttää suodatusta mittausajan ja -paikan perusteella.",
     "note": "Mukauta sanamuoto kansalliseen lainsäädäntöön ja tarkistuta se hankinnoista vastaavalla henkilöllä.",
@@ -516,11 +516,11 @@
         "✓"
       ]
     ],
-    "filled_note": "Lupaus tulevasta merkitään tunnuksella E: arviointiryhmä tarkistaa vain sen, mitä tarjoaja voi osoittaa."
+    "filled_note": "Lupaus tulevasta toiminnallisuudesta luetaan merkinnäksi E: arviointiryhmä tarkistaa vain sen, mitä tarjoaja voi osoittaa. Vaaditun kohdan osalta E tarkoittaa, että tarjous ei ole hankinnan kohteen vaatimusten mukainen."
   },
   "tearout": {
     "title": "Vaatimustenmukaisuustaulukko",
-    "intro": "Yksi rivi kutakin kohtaa kohden. Hankintayksikkö valitsee sopimuksen edellyttämät kohdat ja liittää taulukon hankinta-asiakirjoihin tarjouksen pakolliseksi liitteeksi. Tarjoaja merkitsee jokaiseen vaadittuun kohtaan T (täyttyy), V (täyttyy vastaavalla tavalla) tai E (ei täyty), lyhyen kuvauksen toteutustavasta sekä tiedon näytöstä: dokumentaation osoite, testitunnukset, tarjouksen sivunumero. Pelkkä vakuutus ilman näyttöä ei riitä. Arviointiryhmä tarkistaa jokaisen kohdan tarjousten vertailussa ja uudelleen vastaanottotarkastuksessa (✓ vahvistettu, ✗ ei vahvistettu, — ei tarkistettu).",
+    "intro": "Yksi rivi kutakin kohtaa kohden. Hankintayksikkö valitsee sopimuksen edellyttämät kohdat ja liittää taulukon hankinta-asiakirjoihin tarjouksen pakolliseksi liitteeksi. Tarjoaja merkitsee jokaiseen vaadittuun kohtaan T (täyttyy), V (täyttyy vastaavalla tavalla) tai E (ei täyty), lyhyen kuvauksen toteutustavasta sekä tiedon näytöstä: dokumentaation osoite, testitunnukset, tarjouksen sivunumero. Pelkkä vakuutus ilman näyttöä ei riitä. Arviointiryhmä tarkistaa jokaisen kohdan tarjousten arvioinnissa ja uudelleen vastaanottotarkastuksessa (✓ vahvistettu, ✗ ei vahvistettu, — ei tarkistettu).",
     "intro2": "Täytetty taulukko on osa tarjousta ja siitä tulee sopimuksen liite. Sillä varmistetaan hankinnan kohteen vaatimusten täyttyminen (täyttyy tai ei täyty); se ei ole vertailuperuste. Jos vaatimustenmukaisuudesta halutaan antaa pisteitä, siitä on ilmoitettava ennalta hankinta-asiakirjoissa julkaistuissa vertailuperusteissa (direktiivi 2014/24/EU, 67 artikla).",
     "headers": [
       "#",
@@ -552,13 +552,13 @@
     "MIM1": [
       "Yksilöllinen pysyvä tunniste entiteettiä kohden",
       "Tunnistehaku palauttaa datan ja tyypin",
-      "Järjestelmien välinen tunnistemappaus",
+      "Järjestelmien välinen tunnisteiden kohdistaminen",
       "Ei toimittajan sisäisiä rakenteita tunnisteissa"
     ],
     "MIM2": [
       "Standardit tietomallit aina kun mahdollista",
       "Mallit dokumentoitu, yksiköt selkeitä",
-      "Laajennukset profiileina, ei rinnakkaisversioina",
+      "Laajennukset profiileina, ei forkeina",
       "Avoin, skeeman mukaan validoitava sarjallistus"
     ],
     "MIM3": [
@@ -582,13 +582,13 @@
       "Kaksosen data ja tuotokset rajapinnoista",
       "Mallit dokumentoitu ja kutsuttavissa",
       "Standardit tulostusmuodot",
-      "Työnkulun alkuperäketju tallennettu"
+      "Työnkulkujen alkuperätiedot tallennettu"
     ],
     "CROSS": [
       "Irtautumisehto: maksuton luovutus avoimissa muodoissa",
       "Oikeudet dataan kuuluvat hankintayksikölle",
-      "Ei maksuja omaan dataan pääsystä",
-      "Rajapinnan vakaus: versiointi, 6 kk varoitusaika muutoksista"
+      "Ei maksuja omasta datasta",
+      "Rajapinnan vakaus: versiointi, 6 kk varoitusaika rikkovista muutoksista"
     ]
   },
   "glossary": {
@@ -596,7 +596,7 @@
     "terms": [
       {
         "t": "API",
-        "d": "Ohjelmointirajapinta, jonka kautta ohjelma pyytää toiselta dataa verkossa ilman ihmisen tekemiä klikkauksia."
+        "d": "Ohjelmointirajapinta, jonka kautta ohjelma pyytää toiselta dataa verkossa ilman käyttäjän toimenpiteitä."
       },
       {
         "t": "Tietomalli",
@@ -644,7 +644,7 @@
       },
       {
         "t": "Avoin standardi",
-        "d": "Tekninen määritys, jonka kuka tahansa voi lukea ja ottaa käyttöön maksutta ja lupaa pyytämättä."
+        "d": "Tekninen sääntö, jonka kuka tahansa saa lukea ja ottaa käyttöön maksutta ja ilman erityistä lupaa."
       },
       {
         "t": "OpenAPI",
@@ -660,7 +660,7 @@
       },
       {
         "t": "Toimittajaloukku",
-        "d": "Tilanne, jossa toimittajan vaihtaminen maksaa datan, muotojen tai maksujen vuoksi niin paljon, että se on käytännössä mahdotonta."
+        "d": "Tila, jossa datan kustannukset, muodot tai maksut tekevät toimittajan vaihtamisesta käytännössä mahdotonta."
       },
       {
         "t": "Webhook / MQTT",
@@ -687,7 +687,7 @@
     "MIM0 · R1.4": "Hyötykuormien käyttämät tietomallit tulisi määritellä (katso MIM2)",
     "MIM0 · R2.1": "Järjestelmien ON tarjottava dataa rakenteisen ja johdonmukaisen rajapinnan kautta",
     "MIM0 · R2.2": "Järjestelmien ON tuettava peruskyselyjä ja/tai -suodatusta (esim. ajan, sijainnin, attribuuttien mukaan)",
-    "MIM0 · C2": "Rajapintojen TULISI tukea nykyisen datan noutamista · Rajapintojen TULISI tukea historiatiedon noutamista soveltuvin osin · Rajapintojen TULISI tukea paikkatietokyselyjä soveltuvin osin (katso MIM7) · Rajapintojen TULISI tukea muutosten tilaamista soveltuvin osin · Rajapintojen TULISI ilmoittaa seuraavan odotetun päivityksen aikaleima · Rajapintojen TULISI tukea päätepisteiden nimenomaista versiointia · Rajapintojen TULISI tarjota esimerkkihyötykuormia tai testikyselyjä · Rajapintojen TULISI tukea standardeja HTTP-välimuistiotsakkeita · Rajapintojen TULISI viestiä pyyntörajojen tilasta standardien HTTP-otsakkeiden kautta · Rajapintojen TULISI palauttaa rakenteisia virheilmoituksia · Rajapinnat VOIVAT tukea osittaisia vastauksia tai kyselyprojektioita · Rajapinnat VOIVAT tarjota standardin toimintakunto-/tilapäätepisteen",
+    "MIM0 · C2": "Rajapintojen TULISI tukea nykyisen datan noutamista · Rajapintojen TULISI tukea historiatiedon noutamista soveltuvin osin · Rajapintojen TULISI tukea paikkatietokyselyjä soveltuvin osin (katso MIM7) · Rajapintojen TULISI tukea muutosten tilaamista soveltuvin osin · Rajapintojen TULISI ilmoittaa seuraavan odotetun päivityksen aikaleima · Rajapintojen TULISI tukea endpointien nimenomaista versiointia · Rajapintojen TULISI tarjota esimerkkihyötykuormia tai testikyselyjä · Rajapintojen TULISI tukea standardeja HTTP-välimuistiotsakkeita · Rajapintojen TULISI viestiä pyyntörajojen tilasta standardien HTTP-otsakkeiden kautta · Rajapintojen TULISI palauttaa rakenteisia virheilmoituksia · Rajapinnat VOIVAT tukea osittaisia vastauksia tai kyselyprojektioita · Rajapinnat VOIVAT tarjota standardin health/status-endpointin",
     "MIM0 · R3.1": "Ilmoituksia vaativien käyttötapausten järjestelmien ON tarjottava vähintään yksi mekanismi päivitysten vastaanottamiseksi datan muutoksista",
     "MIM0 · R3.2": "Järjestelmät VOIVAT tukea useita tilausmekanismeja käyttötapauksesta riippuen",
     "MIM0 · C4": "Jos tällaisia rajoituksia on käytössä, niiden ON noudatettava määrittelyissä MIM3 ja MIM6 asetettuja vaatimuksia, erityisesti: toimijan tunnistaminen (MIM3.C5.R0), valtuutus ja toimijaroolit (MIM6.C1.R4), data-aineistotason käytännöt (MIM6.C1.R4)",
@@ -700,16 +700,16 @@
     "MIM1 · R2.2": "Tämä semantiikka kuvataan koneluettavassa muodossa",
     "MIM1 · R3.1": "On olemassa tapa purkaa entiteetille määritetyn relaation viittaus",
     "MIM1 · R3.2": "On olemassa tapa soveltaa lisäsemantiikkaa olemassa olevaan ontologiaan",
-    "MIM2 · R1.1": "Kaikissa datalähteissä kaikkien entiteettien osalta käytetyt tietomallit on tehtävä eksplisiittisiksi. Niiden on oltava hyvin dokumentoituja ja niillä on oltava kuvailevat metatiedot, joissa käytetyt termit ovat semanttisesti yksiselitteisiä. Mittayksiköihin, aikamuotoihin jne. liittyvien attribuuttien osalta käytetyt yksiköt, muodot jne. on tehtävä eksplisiittisiksi. Tietomallit tulisi luetteloida, jotta ne ovat helposti löydettävissä.",
+    "MIM2 · R1.1": "Kaikissa datalähteissä kaikkien entiteettien osalta käytetyt tietomallit on ilmoitettava nimenomaisesti. Niiden on oltava hyvin dokumentoituja ja niillä on oltava kuvailevat metatiedot, joissa käytetyt termit ovat semanttisesti yksiselitteisiä. Mittayksiköihin, aikamuotoihin jne. liittyvien attribuuttien osalta käytetyt yksiköt, muodot jne. on tehtävä eksplisiittisiksi. Tietomallit tulisi luetteloida, jotta ne ovat helposti löydettävissä.",
     "MIM2 · R1.2a": "Käytettyjen tietomallien on perustuttava (aina kun mahdollista) yleisesti tunnustettuihin standardoituihin tietomalleihin alla luetellun mukaisesti",
     "MIM2 · R1.2b": "Jos olemassa olevien standardoitujen tietomallien käyttö ei ole mahdollista, on pyrittävä laajentamaan olemassa olevia standardoituja tietomalleja, jotka vastaavat parhaiten tarpeita, tai määrittelemään uusia noudattaen tietomalleja määrittelevän yhteisön tai organisaation parhaita käytäntöjä ja käytänteitä.",
     "MIM2 · R1.3": "Käytettyjen tietomallien on tuettava datanvaihtoa hyödyntäen datan saatavuutta ja datan linkittämistä koskevien MIM-määrittelyjen asiaankuuluvia vaatimuksia",
     "MIM2 · R2.1": "Jokaiselle keskeiselle entiteetille tulisi kehittää yhteinen tietomalli mitä tahansa dataekosysteemiä varten. Tämän yhteisen tietomallin tulisi sisältää kaikki kentät, jotka sisältyvät kyseisen dataekosysteemin sisällä kyseiselle entiteetille käytettyihin eri tietomalleihin. Kukin kyseisessä dataekosysteemissä käytetty eri tietomalli voitaisiin sitten muuntaa yhteiseksi tietomalliksi.",
     "MIM2 · R3.1": "Jokaisella käytetyllä tietomallilla on oltava vähintään yksi määritelty koneluettava tiedonsiirtomuoto (”serialisointi”), joka on avoin, julkisesti saatavilla ja toteutuksesta riippumaton.",
-    "MIM2 · R3.2": "Tiedonsiirtomuodon dokumentaation tulisi olla riittävä mahdollistamaan sellaisen ei-suljetun sovelluksen tai tulkin luominen, joka kykenee muodostamaan uudelleen kaiken tällaiseen datamuotoon tallennetun datan.",
+    "MIM2 · R3.2": "Tiedonsiirtomuodon dokumentaation tulisi olla riittävä mahdollistamaan sellaisen avoimen sovelluksen tai tulkin luominen, joka kykenee muodostamaan uudelleen kaiken tällaiseen datamuotoon tallennetun datan.",
     "MIM2 · R3.3": "Kun samalle tietomallille tuetaan useita tiedonsiirtomuotoja, niiden on esitettävä sama tietosisältö johdonmukaisesti ja merkitystä menettämättä.",
     "MIM2 · R3.4": "Esitysmuodon tulisi tukea validointia avoimesti julkaistujen skeemojen, kielioppien tai vastaavien koneluettavien rajoitteiden avulla, mikäli tällaisia validointimekanismeja on olemassa valitulle muodolle.",
-    "MIM2 · R4.1": "Tietomallia laajentavat soveltamisprofiilit (Application Profiles) eivät tulisi vaikuttaa jo olemassa olevaan malliin ja sen käyttäjiin",
+    "MIM2 · R4.1": "Tietomallia laajentavat soveltamisprofiilit (Application Profiles) eivät saisi vaikuttaa jo olemassa olevaan malliin ja sen käyttäjiin",
     "MIM2 · R4.2": "Mallin soveltamisprofiilissa käyttöönotetut erikoistumiset tai laajennukset tulisi dokumentoida hyvin, erillään perustietomallista",
     "MIM3 · RC1.1": "Dataekosysteemin orkestroijan tulisi kyetä määrittelemään hallintamalli (esim. sääntökirja), jossa esitetään jäsenyyssäännöt, ekosysteemin osallistujien roolit, vastuut ja velvoitteet sekä yleiset periaatteet, jotka ohjaavat heidän välistään datanvaihtoa.",
     "MIM3 · RC1.2": "Dataekosysteemiin osallistuvien jäsenten tulisi olla tietoisia sen hallintamallista ja siihen tehdyistä muutoksista.",
@@ -717,8 +717,8 @@
     "MIM3 · RC2.1": "Datan tarjoajat voivat vapaasti määritellä ehdot, joiden mukaisesti ne haluavat dataansa vaihdettavan. (Huomautus: Ennen data-aineistojen jakamista datan tarjoajien tulisi varmistaa, että niillä on asianmukainen lupa datan omistajilta.)",
     "MIM3 · RC2.2": "Datanvaihdon ehdot tulisi kuvata selkeästi ja yksiselitteisesti, jotta ne ovat helposti ymmärrettävissä datan käyttäjille.",
     "MIM3 · RC2.3": "Datanvaihdon ehdot tulisi ilmaista datalisensseillä tai datanjakosopimuksilla, jotka perustuvat selkeästi määriteltyihin malleihin tai standardeihin.",
-    "MIM3 · RC2.4": "Ehtojen tulisi olla linjassa dataekosysteemin yleisen hallintamallin kanssa eivätkä ne EI SAA olla ristiriidassa sen kanssa. (Huomautus: Datan tarjoaja voi päättää olla osallistumatta dataekosysteemiin, jos taustalla oleva hallintamalli on liian rajoittava tai liian salliva.)",
-    "MIM3 · RC3.1": "Dataekosysteemin orkestroijan ON kyettävä varmistamaan osallistujiensa vaatimustenmukaisuus suhteessa taustalla olevaan hallintamalliin.",
+    "MIM3 · RC2.4": "Ehtojen tulisi olla linjassa dataekosysteemin yleisen hallintamallin kanssa eivätkä ne saa olla ristiriidassa sen kanssa. (Huomautus: Datan tarjoaja voi päättää olla osallistumatta dataekosysteemiin, jos taustalla oleva hallintamalli on liian rajoittava tai liian salliva.)",
+    "MIM3 · RC3.1": "Dataekosysteemin orkestroijan on kyettävä varmistamaan osallistujiensa vaatimustenmukaisuus suhteessa taustalla olevaan hallintamalliin.",
     "MIM3 · RC3.2": "Datan tarjoajien tulisi kyetä varmistamaan, että datan käyttäjän suorittama datan käyttö noudattaa aiemmin sovittuja ehtoja.",
     "MIM3 · RC3.3": "Datan käyttäjien tulisi kyetä varmistamaan, että datan tarjoajan suorittama datan toimitus noudattaa aiemmin sovittuja ehtoja.",
     "MIM3 · RC4.1": "Datan käyttäjien tulisi kyetä löytämään, mitä dataa datanjakoekosysteemissä on saatavilla, ilman ennakkotietoa siitä.",
@@ -728,10 +728,10 @@
     "MIM3 · RC5.2": "Kustakin ekosysteemin osallistujasta tulisi olla saatavilla riittävät metatiedot datanvaihdon kannalta merkityksellisen luotettavuuden varmistamiseksi.",
     "MIM3 · RC5.3": "Datan tarjoajien tulisi kyetä tunnistamaan luotettavasti datan käyttäjät, jotka haluavat päästä käsiksi niiden data-aineistoihin, ja tarkistamaan heidän metatietonsa ennen pääsyn myöntämistä.",
     "MIM3 · RC5.4": "Datan käyttäjien tulisi kyetä tunnistamaan dataekosysteemissä dataa jakavat datan tarjoajat ennen kyseisen datan käyttämistä tai siihen käsiksi pääsemistä.",
-    "MIM3 · RC5.5": "Ekosysteemin osallistujat VOIVAT myös päättää pysyä nimettöminä, jos datanjakoekosysteemin hallintamalli sallii sen. Tässä tapauksessa vaatimukset RC5.1–RC5.4 voidaan jättää huomiotta.",
+    "MIM3 · RC5.5": "Ekosysteemin osallistujat voivat myös päättää pysyä nimettöminä, jos datanjakoekosysteemin hallintamalli sallii sen. Tässä tapauksessa vaatimukset RC5.1–RC5.4 voidaan jättää huomiotta.",
     "MIM3 · RC6.1": "Datan käyttäjien ja tarjoajien tulisi kyetä sopimaan datanvaihdosta ja siihen liittyvistä ehdoista (esim. ehtojen hyväksyminen, sopimuksen oikeudellinen allekirjoittaminen tai neuvottelu).",
     "MIM3 · RC6.2": "Datan käyttäjien ja tarjoajien tulisi kyetä päättämään aiemmin sovittu datanvaihto siihen liittyvien ehtojen mukaisesti.",
-    "MIM3 · RC6.3": "Aina kun mahdollista, sähköisiä keinoja datanvaihdon sopimiseen ja päättämiseen VOIDAAN tarjota.",
+    "MIM3 · RC6.3": "Aina kun mahdollista, sähköisiä keinoja datanvaihdon sopimiseen ja päättämiseen voidaan tarjota.",
     "MIM3 · RC7.1": "Datan käyttäjien tulisi kyetä ilmaisemaan kiinnostuksensa data-aineistoihin, joita ei tällä hetkellä ole saatavilla datanjakoekosysteemissä.",
     "MIM3 · RC7.2": "Datan tarjoajien tulisi kyetä vastaanottamaan datan käyttäjien tekemiä pyyntöjä uusista data-aineistoista.",
     "MIM6 · R1.1": "Tietoihin ja muihin niihin liittyviin omaisuuseriin pääsyn fyysistä ja loogista hallintaa koskevat säännöt ON laadittava ja otettava käyttöön liiketoiminta- ja tietoturvavaatimusten perusteella. (ISO 27001 5.15 Pääsynhallinta)",
@@ -749,20 +749,20 @@
     "MIM7 · R4.1": "Yksilöllisiä ja pysyviä tunnisteita on käytettävä data-aineistoissa käytettyjen minkä tahansa entiteettien yksittäisten ilmentymien tunnistamiseen. (Katso MIM1: Datan linkittäminen.)",
     "MIM7 · R5.1": "Koordinaattijärjestelmien (CRS) on oltava standardien mukaisia, ja käytetystä standardista (esim. EPSG:4326, EPSG:3857) on annettava tieto. Tämä sisältää EPSG-numeron tai WGS-numeron sekä tiedon kansallisiin järjestelmiin, kuten Latvian LKS-92:een, perustuvista variaatioista, jotta data voidaan muuntaa yhteiseen koordinaattijärjestelmään. (Huomautus: EU:n sisällä paikkatiedoissa vaaditaan INSPIRE-direktiivin mukaisten metatietojen käyttöä, mukaan lukien CRS-tietojen kuvaamiseen tarvittavat metatiedot.)",
     "MIM8 · R1.1": "Paikallisen digitaalisen kaksosen (LDT) on tarjottava pääsy simulaatiotuloksiin ja laskentamallien syötteisiin silloin, kun niitä tarvitaan osana LDT:n työnkulkuja.",
-    "MIM8 · R1.2": "LDT:n TULISI erottaa selkeästi toisistaan raaka lähdedata, muunnettu työnkulkuvalmis data, mallin syötteet ja mallin tulosteet.",
-    "MIM8 · C2": "Tämä kyvykkyys tukeutuu MIM3-määrittelyyn (Datanvaihto) datanvaihdon osalta.",
-    "MIM8 · R3.1": "Mallin TULISI tarjota vakiomuotoiset mallin metatiedot, mukaan lukien kuvaus sen menetelmistä ja parametreista sekä dataparametrit (joko arvoina tai viittauksina). Tätä varten TULISI käyttää yleisiä metatietostandardeja.",
+    "MIM8 · R1.2": "LDT:n tulisi erottaa selkeästi toisistaan raaka lähdedata, muunnettu työnkulkuvalmis data, mallin syötteet ja mallin tulosteet.",
+    "MIM8 · C2": "Tämä kyvykkyys tukeutuu MIM3-määritykseen (Datan vaihtaminen) datanvaihdon osalta.",
+    "MIM8 · R3.1": "Mallin tulisi tarjota vakiomuotoiset mallin metatiedot, mukaan lukien kuvaus sen menetelmistä ja parametreista sekä dataparametrit (joko arvoina tai viittauksina). Tätä varten tulisi käyttää yleisiä metatietostandardeja.",
     "MIM8 · R3.2": "Mallin on tarjottava dokumentoitu rajapinta tai oltava kutsuttavissa sen kautta, mieluiten tunnettua standardoitua rajapintaa käyttäen. Mallin tuloksena syntyvä tietoaineisto on kuvattava (datatason tarkkuudella).",
-    "MIM8 · R3.3": "Innovatiivisten menetelmien (kielimallit, agentti-tekoäly jne.) luotettava, varma ja eettinen käyttö TULISI varmistaa. Vinoumat TULISI minimoida soveltuvin osin. Menetelmät, joilla tämä taataan, TULISI kuvata.",
-    "MIM8 · R3.4": "Mallin ON kyettävä käyttämään dataa loppukäyttäjän tai organisaation puolesta. Katso MIM3",
-    "MIM8 · R3.5": "Jotta dataa voidaan käyttää tekoälymalleissa, alkuperä ja luotettavuus TULISI taata. Joissakin tapauksissa luotettava lähde, kuten viranomainen, ON ilmoitettava.",
+    "MIM8 · R3.3": "Innovatiivisten menetelmien (kielimallit, agentti-tekoäly jne.) luotettava, varma ja eettinen käyttö tulisi varmistaa. Vinoumat tulisi minimoida soveltuvin osin. Menetelmät, joilla tämä taataan, tulisi kuvata.",
+    "MIM8 · R3.4": "Mallin on kyettävä käyttämään dataa loppukäyttäjän tai organisaation puolesta. Katso MIM3",
+    "MIM8 · R3.5": "Jotta dataa voidaan käyttää tekoälymalleissa, alkuperä ja luotettavuus tulisi taata. Joissakin tapauksissa luotettava lähde, kuten viranomainen, on ilmoitettava.",
     "MIM8 · R4.1": "LDT tukee työnkulkuja, jotka yhdistävät datalähteitä, datamuunnoksia, mallien suoritusta, simulaatioprosesseja ja tulosteita.",
     "MIM8 · R4.2": "LDT ketjuttaa työnkulun vaiheita siten, että yhden vaiheen tulostetta voidaan käyttää toisen syötteenä.",
     "MIM8 · R4.3": "LDT valvoo työnkulun suorituksen tilaa, mukaan lukien valmistuneet, epäonnistuneet ja keskeytyneet prosessit.",
     "MIM8 · R4.4": "LDT tallentaa työnkulun alkuperätiedot, mukaan lukien käytetyt tietoaineistot (versioineen ja aikaleimoineen), suoritetut mallit, valitut parametrit ja tuotetut tulosteet.",
     "MIM8 · R5.1": "LDT tarjoaa metatiedot, jotka selittävät mitä visualisoidaan, mukaan lukien aikaleima, alueellinen laajuus, datalähde sekä skenaario- ja varianttioletukset soveltuvin osin.",
     "MIM8 · R5.2": "LDT tukee erilaisia vuorovaikutteisia visualisointityyppejä, kuten 2D-karttoja, 3D-näkymiä, tilannekuvanäyttöjä, raportteja tai yleisölle suunnattuja näkymiä.",
-    "MIM8 · R6.1": "LDT:n TULISI dokumentoida ratkaisemattomat semanttiset kuilut, oletukset tai vastaavuudet, jotka voivat vaikuttaa tulosten tulkintaan, uudelleenkäyttöön tai vertailuun.",
+    "MIM8 · R6.1": "LDT:n tulisi dokumentoida ratkaisemattomat semanttiset kuilut, oletukset tai vastaavuudet, jotka voivat vaikuttaa tulosten tulkintaan, uudelleenkäyttöön tai vertailuun.",
     "MIM8 · M1": "Rajapintapohjainen pääsy LDT-resursseihin",
     "MIM8 · M2": "Standardoidut data- ja tulostemuodot",
     "MIM8 · M3": "Malli palveluna (Model-as-a-Service)",
@@ -779,7 +779,7 @@
     "MIM0 · C4": "Tietoihin pääsyä voidaan rajoittaa",
     "MIM1 · C1": "Entiteetit tunnistetaan yksilöllisillä tunnisteilla",
     "MIM1 · C2": "Entiteetit voidaan tyypittää",
-    "MIM1 · C3": "Entiteetteihin voidaan viitata ja viittaus purkaa",
+    "MIM1 · C3": "Entiteetteihin voidaan viitata ja niiden viittaus voidaan purkaa",
     "MIM2 · C1": "Kaikki datalähteisiin sisältyvät entiteetit kuvataan johdonmukaisilla tietomalleilla sovellusten ja järjestelmien yhteentoimivuuden mahdollistamiseksi",
     "MIM2 · C2": "Saman entiteetin eri tietomallit, joita käytetään yhteisessä datanjakoekosysteemissä, tulisi olla helposti muunnettavissa yhteiseen tietomalliin",
     "MIM2 · C3": "Kaikki data ja siihen liittyvät metatiedot voidaan jakaa avoimissa, standardoiduissa tiedonsiirtomuodoissa, jotta eri työkalut ja toteutukset voivat vaihtaa ja tulkita dataa johdonmukaisesti",

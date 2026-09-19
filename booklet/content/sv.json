@@ -1,20 +1,20 @@
 {
   "cover": {
-    "title": "Checklista för upphandling · med hjälp av Minimal · Interoperability Mechanisms (MIMs)",
-    "subtitle": "Vad du ska ställa krav på i en upphandling så att kommunen behåller sin data",
-    "tagline": "För MIMs Plus 9.0 från OASC",
+    "title": "Checklista för upphandling · baserad på Minimal · Interoperability Mechanisms (MIMs)",
+    "subtitle": "Vad som ska anges i upphandlingsdokumenten så att kommunen behåller kontrollen över sina data",
+    "tagline": "Specifikation: MIMs Plus 9.0 från OASC",
     "footer": "För upphandlare, projektledare och IT-chefer i europeiska kommuner"
   },
   "why": {
-    "title": "Varför denna skrift behövs",
+    "title": "Syftet med denna skrift",
     "paras": [
       "Varje år köper kommuner in programvara: parkeringssystem, sensorplattformar, kartportaler och digitala tvillingar. Alltför ofta blir den insamlade datan inlåst i systemen. När avtalet löper ut försvinner datan – betald med offentliga medel – med leverantören, eller blir fast i format som ingen annan kan läsa.",
-      "Det behöver inte vara så. Minimal Interoperability Mechanisms (MIMs), som förvaltas av Open & Agile Smart Cities (OASC) och stöds genom det europeiska initiativet living-in.eu, beskriver de grundläggande tekniska krav som håller er data öppen, återanvändbar och leverantörsneutral. De är medvetet avgränsade: inte en storslagen arkitektur, utan bara de få faktorer som måste vara uppfyllda för att system ska kunna kommunicera med varandra.",
-      "Du behöver inte vara ingenjör för att använda dem. Varje checklista översätter en MIM till konkreta kravpunkter som du kan kopiera rakt in i en upphandling, tillsammans med motiveringen till hur punkten skyddar er. Direkt efter checklistan återfinns varje krav från den aktuella MIM-specifikationen ordagrant, så att tekniska kollegor och anbudsgivare kan granska detaljerna.",
+      "Det behöver inte vara så. Minimal Interoperability Mechanisms (MIMs), som förvaltas av Open & Agile Smart Cities (OASC) och stöds genom det europeiska initiativet living-in.eu, beskriver de grundläggande tekniska krav som håller era data öppna, återanvändbara och leverantörsneutrala. De är medvetet avgränsade: inte en storslagen arkitektur, utan bara de få villkor som måste vara uppfyllda för att system ska kunna utbyta data.",
+      "Ingen teknisk bakgrund krävs för att använda denna skrift. Varje checklista översätter en MIM till konkreta kravpunkter i klarspråk som du kan kopiera rakt in i en upphandling, tillsammans med motiveringen till varför varje punkt skyddar er. Direkt efter checklistan återfinns varje krav från den aktuella MIM-specifikationen ordagrant, så att tekniska kollegor och anbudsgivare kan granska detaljerna.",
       "Kommuner som ställer krav på MIMs köper en gång och återanvänder många gånger: luftkvalitetsdata matar skolornas översiktsvyer, belysningsregistret matar energiplanen, och nästa leverantör tar vid där den förra slutade. Det är vad interoperabilitet innebär i praktiken – och det förväntas i allt högre grad i EU-finansierade projekt."
     ],
     "quote": {
-      "text": "Minimal interoperability mechanisms (MIMs) möjliggör en minimal men tillräcklig nivå av interoperabilitet för data, system och tjänster, specifikt inom ramen för smarta stadslösningar. · Den avsedda målgruppen för detta dokument är: · 1. Lösningsleverantörer som vill säkerställa att deras lösningar är interoperabla med andra och tillåter ett smidigt datautbyte inom ramen för smarta städer och samhällen. · 2. Upphandlare som vill upphandla framtidssäkra lösningar som möjliggör kostnadseffektiv integration inom en befintlig IKT-arkitektur för smarta städer och samhällen."
+      "text": "Minimal interoperability mechanisms (MIMs) möjliggör en minimal men tillräcklig nivå av interoperabilitet för data, system och tjänster, specifikt inom ramen för smarta stadslösningar. · Den avsedda målgruppen för detta dokument är: · 1. Lösningsleverantörer som vill säkerställa att deras lösningar är interoperabla med andra lösningar och möjliggör ett smidigt datautbyte inom ramen för smarta städer och samhällen. · 2. Upphandlare som vill upphandla framtidssäkra lösningar som möjliggör kostnadseffektiv integration inom en befintlig IKT-arkitektur för smarta städer och samhällen."
     },
     "policy": {
       "title": "Hur MIMs passar ihop med EU-rätten",
@@ -68,7 +68,7 @@
       },
       {
         "name": "Upphandla",
-        "text": "Kopiera de markerade kraven till ert förfrågningsunderlag. Varje punkt är formulerad som en färdig mening som kan klistras in. Lägg till de övergripande avtalsklausulerna: de kostar lite och förhindrar inlåsning."
+        "text": "Kopiera de markerade kraven till era upphandlingsdokument. Varje punkt är formulerad som en färdig mening som kan klistras in. Lägg till de övergripande avtalsklausulerna: de kostar lite och förhindrar inlåsning."
       },
       {
         "name": "Utvärdera",
@@ -103,11 +103,11 @@
       }
     },
     "note": "Varje punkt i checklistan bär en liten hänvisning som → MIM0 R1.1. Det är kravet i MIMs Plus 9.0 som den härrör från; direkt efter checklistan finns varje krav i den aktuella MIM ordagrant återgivet. Endast MIM0 definierar nyckelorden: de gäller när de skrivs med versaler, enligt konventionen i IETF RFC 2119 och RFC 8174 (CAN härrör från ISO/IEC Directives, Part 2). De övriga MIM-mekanismerna saknar definition: MIM6 skriver SHALL mestadels med versaler, MIM2, MIM3, MIM7 och MIM8 skriver shall, should och must med gemener, och MIM1 använder dem endast i beskrivningen av en mekanism (MUST NOT i avsnitt 3.1). Denna skrift tolkar de gemena orden på samma sätt; en anbudsgivare kan tolka dem mer flexibelt.",
-    "legend_note": "Punkterna i checklistan använder ”ska/måste” även där specifikationen enbart rekommenderar (bör) eller listar en tänkbar mekanism. Det är den upphandlande myndighetens beslut."
+    "legend_note": "Punkterna i checklistan formulerar varje punkt som ett krav även där specifikationen enbart rekommenderar (bör) eller listar en tänkbar mekanism. Det är den upphandlande myndighetens beslut."
   },
   "glance": {
     "title": "Sju MIMs och tre verktyg",
-    "intro": "Sju små mekanismer, ett mål: er data förblir er, och era system kan prata med varandra.",
+    "intro": "Sju små mekanismer, ett mål: data förblir under kommunens kontroll och systemen fungerar tillsammans.",
     "items": {
       "MIM0": {
         "name": "Dataåtkomst",
@@ -161,7 +161,7 @@
       "table": {
         "name": "Svarsmall för kravuppfyllnad",
         "q": "Hur bevisar anbudsgivaren det?",
-        "d": "Fylls i av anbudsgivaren, granskas av nämnden, bifogas avtalet."
+        "d": "Fylls i av anbudsgivaren, granskas av utvärderingsgruppen, bifogas avtalet."
       }
     }
   },
@@ -215,7 +215,7 @@
       "red_flags": [
         "”Dataexport sker på begäran via vår support.”",
         "”API:et är tillgängligt som en avgiftsbelagd tilläggsmodul.”",
-        "Avgift per anrop för kommunens egen data (se klausulen ”Inga licens- eller transaktionsavgifter för egen data”)."
+        "Avgift per anrop för kommunens egna data (se klausulen ”Inga avgifter för egna data”)."
       ]
     },
     "MIM1": {
@@ -233,7 +233,7 @@
         },
         {
           "text": "Där samma verkliga objekt finns i flera system kan identifierarna mappas mot varandra.",
-          "why": "GIS-byggnaden och fastighetssystemets byggnad är bevisligen samma byggnad."
+          "why": "GIS-byggnaden och energisystemets byggnad är bevisligen samma byggnad."
         },
         {
           "text": "Identifierare innehåller inte leverantörsspecifik intern information (databasrad-ID, servernamn).",
@@ -243,7 +243,7 @@
       "why_panel": [
         "Tio års mätvärden förblir kopplade till rätt belysningsstolpe.",
         "Förvaltningar slutar föra fem motstridiga register över samma tillgångar.",
-        "Att koppla ihop datamängder blir en fråga, inte ett helt konsultprojekt."
+        "Att koppla ihop datamängder blir en enkel databasfråga, inte ett helt konsultprojekt."
       ],
       "red_flags": [
         "”Identifierarna är interna för vår plattform.”",
@@ -264,7 +264,7 @@
           "why": "”Temperatur: 23” är oanvändbart om ingen dokumenterat huruvida det avser °C eller °F."
         },
         {
-          "text": "Utökningar levereras som dokumenterade profiler/tillägg ovanpå standardmodellen – aldrig som en modifierad, proprietär förgrening.",
+          "text": "Utökningar levereras som dokumenterade profiler/tillägg ovanpå standardmodellen – aldrig som en modifierad, proprietär fork.",
           "why": "Ni behåller kompatibiliteten med omvärlden och framtida uppdateringar."
         },
         {
@@ -273,7 +273,7 @@
         }
       ],
       "why_panel": [
-        "Ett och samma gränssnitt läser data från många leverantörer utan anpassningar.",
+        "En och samma översiktsvy läser data från många leverantörer utan anpassningar.",
         "Er data förstås av andra kommuners verktyg – och deras av era.",
         "Automatisk validering fångar felaktig data innan den sprids."
       ],
@@ -285,15 +285,15 @@
     "MIM3": {
       "name": "Datautbyte",
       "question": "Kan vi dela på tydliga villkor?",
-      "intro": "All kommunal data kan inte publiceras fritt: viss data är kommersiell, viss är känslig. MIM3 handlar om att ändå kunna dela data på ett säkert sätt: en katalog som går att söka i, licenser baserade på mallar i stället för skräddarsydd juridik, och styrningsregler som alla kan läsa. Specifikationen formulerar nästan hela MIM3 som en rekommendation (se s. 3).",
+      "intro": "Alla kommunala data kan inte helt enkelt publiceras: viss data är kommersiell, viss är känslig. MIM3 handlar om att ändå dela resten på ett säkert sätt: en katalog som går att söka i, licenser från mallar i stället för skräddarsydd juridisk text, och styrningsregler som alla kan läsa. Specifikationen formulerar nästan hela MIM3 som en rekommendation (se s. 3).",
       "items": [
         {
           "text": "Varje datamängd som systemet erbjuder beskrivs med standardiserade metadata (till exempel DCAT-AP) i en katalog, så att andra kan hitta den.",
           "why": "Data som ingen hittar är data som ingen använder."
         },
         {
-          "text": "Villkor och licenser för dataanvändning utgår från etablerade mallar (t.ex. öppna licenser, standardiserade datautbytesavtal), inte skräddarsydda avtalstexter per datamängd.",
-          "why": "Avtalen blir skalbara; jurister blir inte en flaskhals."
+          "text": "Villkor och licenser för dataanvändning utgår från etablerade mallar (t.ex. öppna licenser, standardiserade datautbytesavtal), inte skräddarsydd juridisk text per datamängd.",
+          "why": "Avtalen blir skalbara utan juridisk granskning från fall till fall."
         },
         {
           "text": "Kommunen kan själv definiera vem som får åtkomst till vilken datatillgång och under vilka villkor, samt ändra detta utan leverantörens medverkan.",
@@ -312,7 +312,7 @@
     },
     "MIM6": {
       "name": "Datasäkerhet",
-      "question": "Är vår data säker under överföring och vid användning?",
+      "question": "Är vår data säker?",
       "intro": "Smarta städer är måltavlor för IT-angrepp. MIM6 håller räckvidden medvetet snäv och praktisk: kryptera data i rörelse, använd standardiserade inloggningar i stället för proprietära, samt styr och logga vem som har åtkomst till vad. Inget av detta är exotiskt – allt måste finnas i avtalet.",
       "items": [
         {
@@ -329,14 +329,14 @@
         },
         {
           "label": "Hör hemma i kvalificeringskraven, inte i den tekniska specifikationen",
-          "text": "Leverantören ska visa anpassning till ISO/IEC 27001:2022 (eller likvärdigt) för den tjänst som driftas.",
+          "text": "Anbudsgivaren visar anpassning till ISO/IEC 27001:2022 (eller likvärdigt) för den tjänst som driftas.",
           "why": "Säkerhet är en process, inte en kryssruta vid leverans. Specifikationen hänvisar till åtgärderna i ISO/IEC 27001, inte ett formellt certifikat."
         }
       ],
       "why_panel": [
         "Ett intrång i ett system öppnar inte dörren till alla andra system.",
         "Där NIS2 är tillämpligt blir det mätbart enklare att efterleva direktivet och nationella cybersäkerhetsregler.",
-        "När något går fel visar loggarna vad som hände och vem som gjorde det."
+        "Efter en incident visar loggarna vad som hände och vem som agerade."
       ],
       "red_flags": [
         "Endast proprietär inloggning.",
@@ -390,7 +390,7 @@
           "why": "En översvämningsmodell som köpts in en gång kan återanvändas av andra förvaltningar – och av andra kommuner."
         },
         {
-          "text": "Resultat använder standardformat (GeoJSON, CityJSON, 3D Tiles, NetCDF…) som kan läsas av verktyg som inte köpts från denna leverantör.",
+          "text": "Utdata använder standardformat (GeoJSON, CityJSON, 3D Tiles, NetCDF…) som kan läsas av verktyg från tredje part.",
           "why": "Visualisering och analys förblir konkurrensutsatta marknader."
         },
         {
@@ -416,15 +416,15 @@
     "items": [
       {
         "name": "Avvecklingsklausul",
-        "text": "Vid avtalets upphörande ska all kommunens data (och konfiguration) överlämnas i öppna, dokumenterade format utan extra kostnad."
+        "text": "Vid avtalets upphörande ska alla kommunens data (och konfigurationer) överlämnas i öppna, dokumenterade format utan extra kostnad."
       },
       {
         "name": "Rättigheter till data",
         "text": "Samtliga rättigheter till data som samlas in och genereras under avtalet tillkommer den upphandlande myndigheten."
       },
       {
-        "name": "Inga avgifter per användare eller per anrop",
-        "text": "Inga avgifter för att staden har åtkomst till sina egna data."
+        "name": "Inga avgifter för egna data",
+        "text": "Den upphandlande myndigheten betalar ingen avgift för åtkomst till sina egna data, varken per användare eller per anrop."
       },
       {
         "name": "API-stabilitet och versionshantering",
@@ -432,11 +432,11 @@
       },
       {
         "name": "Visa, inte lova",
-        "text": "Anbudsgivare ska påvisa uppfyllande under anbudsutvärderingen i stället för att enbart lämna självdeklarationer. För ett API innebär detta publicerad interaktiv dokumentation (såsom OpenAPI) samt ett fungerande anrop som returnerar giltig data. Varje markerad punkt testas på nytt vid leveransgodkännande."
+        "text": "Anbudsgivare ska påvisa uppfyllande under anbudsutvärderingen i stället för att enbart lämna självdeklarationer. För ett API innebär detta publicerad interaktiv dokumentation (såsom OpenAPI) samt ett live-anrop som returnerar giltiga data. Varje markerad punkt testas på nytt vid leveransgodkännande."
       },
       {
         "name": "Öppna standarder angivna",
-        "text": "Upphandlingen anger standarderna ovan; påståenden om ”kompatibilitet med” ska ange exakt gränssnitt och version. Varje hänvisning till en standard eller teknisk specifikation tillåter en likvärdig lösning; anbudsgivaren ska bevisa likvärdigheten."
+        "text": "Upphandlingen anger specifika standarder; påståenden om ”kompatibilitet med” måste ange det exakta gränssnittet och versionen. Varje hänvisning till en standard eller teknisk specifikation tillåter en likvärdig lösning; anbudsgivaren bevisar likvärdigheten."
       },
       {
         "name": "Försäkran om MIM-kravuppfyllnad",
@@ -446,7 +446,7 @@
   },
   "example": {
     "title": "Exempel: en kommun upphandlar ett sensornätverk för luftkvalitet",
-    "scenario": "Valda sidor: MIM0, MIM1, MIM2, MIM6 och MIM7 (datan ska visas på en karta). Från MIM3 endast punkt 3.1 (luftkvalitetsdata publiceras som öppna data, så den hör hemma i en katalog); inte MIM8: detta är ingen digital tvilling.",
+    "scenario": "Markerade sidor: MIM0, MIM1, MIM2, MIM6 och MIM7 (datan ska visas på en karta). Från MIM3 endast punkt 3.1 (luftkvalitetsdata publiceras som öppna data, så den hör hemma i en katalog); MIM8 är inte tillämplig: systemet är inte en digital tvilling.",
     "table_title": "Vad som ska placeras var",
     "table_headers": [
       "Dokument",
@@ -472,10 +472,10 @@
       [
         "Avtalsutkast",
         "villkor för fullgörande av kontrakt (art. 70)",
-        "Avvecklingsklausul, Rättigheter till data, Inga licens- eller transaktionsavgifter för egen data, API-stabilitet och versionshantering; den ifyllda svarsmallen som bilaga"
+        "Avvecklingsklausul, Rättigheter till data, Inga avgifter för egna data, API-stabilitet och versionshantering; den ifyllda svarsmallen som bilaga"
       ],
       [
-        "Leveransgodkännande",
+        "Leveransgodkännandeprotokoll",
         "villkor för fullgörande av kontrakt (art. 70)",
         "kolumnen ”Verifierad” i svarsmallen som testprotokoll"
       ]
@@ -488,7 +488,7 @@
       "4.3.3 API:et ska stödja filtrering av data utifrån mättidpunkt och mätplats. (MIM0 R2.1, R2.2)",
       "… 4.3.4 till 4.3.21: ytterligare markerade kravpunkter …",
       "4.3.22 Varje hänvisning till en standard eller teknisk specifikation tillåter en likvärdig lösning; anbudsgivaren ska bevisa likvärdigheten.",
-      "4.3.23 Anbudsgivaren ska fylla i svarsmallen för kravuppfyllnad (bilaga till upphandlingsdokumenten) och ange bevisning för varje obligatoriskt krav. Anbudsgivaren ska demonstrera punkterna 4.3.1 till 4.3.21 med ett fungerande anrop mot API:et under anbudsutvärderingen; den upphandlande myndigheten testar dem på nytt vid leveransgodkännande. Bristande uppfyllande utgör grund för att neka godkännande."
+      "4.3.23 Anbudsgivaren fyller i svarsmallen för kravuppfyllnad (bilaga till upphandlingsdokumenten) och anger bevisning för varje obligatoriskt krav. Under anbudsutvärderingen demonstrerar anbudsgivaren punkterna 4.3.1 till 4.3.21 (till exempel med ett live-anrop mot API:et); ett anbud som inte uppfyller en obligatorisk punkt uppfyller inte kraven på föremålet för upphandlingen. Den upphandlande myndigheten testar punkterna igen vid leveransgodkännande; ett fel då utgör grund för att neka godkännande."
     ],
     "tip": "Punkt 4.3.3 visar hur du kan precisera ett krav så att det passar upphandlingen: för sensorer är det naturligt att kräva filtrering utifrån mättidpunkt och mätplats.",
     "note": "Anpassa formuleringarna till nationell upphandlingslagstiftning och låt upphandlingsansvarig granska texten.",
@@ -498,7 +498,7 @@
         "0.1",
         "Maskinläsbar data via standardiserat webb-API",
         "U",
-        "REST-API returnerar JSON och CSV; dokumentation finns på adressen angiven i anbudet, s. 12; testinloggning i bilaga 3",
+        "REST-API returnerar JSON och CSV; dokumentation finns på adressen angiven i anbudet, s. 12; teståtkomst i bilaga 3",
         "✓"
       ],
       [
@@ -516,12 +516,12 @@
         "✓"
       ]
     ],
-    "filled_note": "Ett framtida löfte bedöms som N: utvärderingsgruppen bedömer endast det som anbudsgivaren kan visa här och nu."
+    "filled_note": "Ett löfte om framtida funktionalitet räknas som N: utvärderingsgruppen verifierar endast det anbudsgivaren kan visa. För ett obligatoriskt krav innebär N att anbudet inte uppfyller kraven på föremålet för upphandlingen."
   },
   "tearout": {
     "title": "Svarsmall för kravuppfyllnad",
     "intro": "En rad per kravpunkt. Den upphandlande myndigheten kryssar för vad kontraktet kräver och bifogar tabellen till upphandlingsdokumenten som en obligatorisk anbudsbilaga. För varje obligatoriskt krav fyller anbudsgivaren i U (uppfyller), L (uppfyller genom likvärdig lösning) eller N (uppfyller inte), en kort förklaring av hur, samt var bevisningen finns: adress till dokumentation, testinloggning, sida i anbudet. En ren självdeklaration utan bevisning är inte tillräcklig. Utvärderingsgruppen verifierar varje punkt vid anbudsutvärderingen och på nytt vid leveransgodkännande (✓ bekräftad, ✗ inte bekräftad, — ej kontrollerad).",
-    "intro2": "Den ifyllda tabellen utgör en del av anbudet och blir en bilaga till avtalet. Den verifierar att obligatoriska krav på kontraktsföremålet är uppfyllda (uppfyllt eller ej); den är inte ett tilldelningskriterium. Om kravuppfyllnaden ska poängsättas måste detta framgå i förväg bland tilldelningskriterierna i upphandlingsdokumenten (direktiv 2014/24/EU, artikel 67).",
+    "intro2": "Den ifyllda tabellen utgör en del av anbudet och blir en bilaga till avtalet. Den verifierar att obligatoriska krav på föremålet för upphandlingen är uppfyllda (uppfyllt eller ej); den är inte ett tilldelningskriterium. Om kravuppfyllnaden ska poängsättas måste detta framgå i förväg bland tilldelningskriterierna i upphandlingsdokumenten (direktiv 2014/24/EU, artikel 67).",
     "headers": [
       "#",
       "Krav (kort)",
@@ -532,10 +532,10 @@
       "Verifierad"
     ],
     "header_roles": [
-      "authority",
-      "bidder",
-      "bidder",
-      "committee"
+      "myndighet",
+      "anbudsgivare",
+      "anbudsgivare",
+      "utvärderingsgrupp"
     ],
     "note": "De korta beteckningarna nedan motsvarar de fullständiga kraven på MIM-sidorna – vid tveksamhet gäller kravets fullständiga ordalydelse.",
     "download_label": "En redigerbar version av tabellen finns på:",
@@ -558,7 +558,7 @@
     "MIM2": [
       "Standardiserade datamodeller där sådana finns",
       "Modeller dokumenterade, måttenheter angivna",
-      "Utökningar som profiler, aldrig förgreningar",
+      "Utökningar som profiler, aldrig forks",
       "Öppen, schemavaliderbar serialisering"
     ],
     "MIM3": [
@@ -587,8 +587,8 @@
     "CROSS": [
       "Avvecklingsklausul: kostnadsfri överlämning i öppna format",
       "Rättigheter till data tillkommer den upphandlande myndigheten",
-      "Inga avgifter för åtkomst till egen data",
-      "API-stabilitet: versionerat, 6 mån varsel vid brytande ändring"
+      "Inga avgifter för egna data",
+      "API-stabilitet: versionshanterat, 6 mån. varsel vid inkompatibla ändringar"
     ]
   },
   "glossary": {
@@ -644,7 +644,7 @@
       },
       {
         "t": "Öppen standard",
-        "d": "En teknisk specifikation som vem som helst får läsa och implementera utan licensavgifter eller krav på tillstånd."
+        "d": "En teknisk specifikation som vem som helst får läsa och implementera kostnadsfritt och utan särskilt tillstånd."
       },
       {
         "t": "OpenAPI",
@@ -660,7 +660,7 @@
       },
       {
         "t": "Leverantörsinlåsning",
-        "d": "När byte av leverantör medför så stora kostnader – i dataförlust, formatkonvertering eller avgifter – att det i praktiken blir omöjligt."
+        "d": "Ett tillstånd där kostnaden för data, format eller avgifter gör ett byte av leverantör i praktiken omöjligt."
       },
       {
         "t": "Webhook / MQTT",
@@ -684,10 +684,10 @@
     "MIM0 · R1.1": "System SKALL tillåta hämtning av data i minst ett maskinläsbart format. Format KAN anges via HTTP-innehållsförhandling (Content-Negotiation)",
     "MIM0 · R1.2": "Data SKALL kunna hämtas via minst en standardiserad webbaserad mekanism",
     "MIM0 · R1.3": "Åtkomstmekanism(er) SKALL vara formellt beskrivna",
-    "MIM0 · R1.4": "Datamodeller som används av datalaster BÖR specificeras (se MIM2)",
+    "MIM0 · R1.4": "Datamodeller som används av datalaster bör specificeras (se MIM2)",
     "MIM0 · R2.1": "System SKALL tillhandahålla data genom ett strukturerat och enhetligt gränssnitt",
     "MIM0 · R2.2": "System SKALL stödja grundläggande frågor och/eller filtrering (t.ex. på tid, plats, attribut)",
-    "MIM0 · C2": "API:er BÖR stödja hämtning av aktuella data · API:er BÖR stödja hämtning av historiska data när så är tillämpligt · API:er BÖR stödja geografiska frågor när så är tillämpligt (se MIM7) · API:er BÖR stödja prenumeration på ändringar när så är tillämpligt · API:er BÖR exponera tidsstämpel för nästa förväntade uppdatering · API:er BÖR stödja uttrycklig versionshantering av slutpunkter · API:er BÖR tillhandahålla exempel på datalaster eller testfrågor · API:er BÖR stödja standardiserade HTTP-cachehuvuden · API:er BÖR förmedla status för anropsbegränsningar (rate limit) via standardiserade HTTP-huvuden · API:er BÖR returnera strukturerade felmeddelanden i meddelandekroppen · API:er FÅR stödja partiella svar eller frågeprojektioner · API:er FÅR exponera en standardiserad hälso-/statusslutpunkt",
+    "MIM0 · C2": "API:er BÖR stödja hämtning av aktuella data · API:er BÖR stödja hämtning av historiska data när så är tillämpligt · API:er BÖR stödja geografiska frågor när så är tillämpligt (se MIM7) · API:er BÖR stödja prenumeration på ändringar när så är tillämpligt · API:er BÖR exponera tidsstämpel för nästa förväntade uppdatering · API:er BÖR stödja uttrycklig versionshantering av slutpunkter · API:er BÖR tillhandahålla exempel på datalaster eller testfrågor · API:er BÖR stödja standardiserade HTTP-cachehuvuden · API:er BÖR förmedla status för anropsbegränsningar (rate limit) via standardiserade HTTP-huvuden · API:er BÖR returnera strukturerade felmeddelanden i svarskroppen · API:er FÅR stödja partiella svar eller frågeprojektioner · API:er FÅR exponera en standardiserad hälso-/statusslutpunkt",
     "MIM0 · R3.1": "System för användningsfall som kräver aviseringar SKALL tillhandahålla minst en mekanism för att ta emot uppdateringar om dataändringar",
     "MIM0 · R3.2": "System FÅR stödja flera prenumerationsmekanismer beroende på användningsfall",
     "MIM0 · C4": "Om sådana begränsningar finns, SKALL de följa kraven som definieras i MIM3 och MIM6, specifikt: aktörsidentifiering (MIM3.C5.R0), auktorisation och aktörsroller (MIM6.C1.R4), policyer på datatillgångsnivå (MIM6.C1.R4)",
@@ -706,7 +706,7 @@
     "MIM2 · R1.3": "Datamodeller som används ska stödja datautbyte genom att använda de relevanta kraven i MIM-mekanismerna för Dataåtkomst och Datalänkning",
     "MIM2 · R2.1": "En gemensam datamodell för varje nyckelentitet bör utvecklas för varje dataekosystem. Den gemensamma datamodellen bör innehålla alla fält som ingår i de olika datamodellerna för den entiteten som används inom det dataekosystemet. Varje enskild datamodell som används inom det dataekosystemet skulle sedan kunna transformeras till den gemensamma datamodellen.",
     "MIM2 · R3.1": "Varje datamodell som används ska ha minst ett definierat maskinläsbart datatransportformat (”serialisering”) som är öppet, allmänt tillgängligt och oberoende av implementation.",
-    "MIM2 · R3.2": "Dokumentationen av datatransportformatet bör vara tillräcklig för att möjliggöra skapandet av en icke-proprietär tillämpning eller tolk som kan återskapa all data som lagras i ett sådant dataformat.",
+    "MIM2 · R3.2": "Dokumentationen av datatransportformatet bör vara tillräcklig för att möjliggöra utveckling av en icke-proprietär applikation eller ett tolkningsprogram som kan återskapa alla data som lagras i ett sådant dataformat.",
     "MIM2 · R3.3": "Där flera datatransportformat stöds för samma datamodell ska de representera samma informationsinnehåll enhetligt och utan förlust av betydelse.",
     "MIM2 · R3.4": "Representationen bör stödja validering med hjälp av öppet publicerade scheman, grammatiker eller likvärdiga maskinläsbara restriktioner, där sådana valideringsmekanismer finns för det valda formatet.",
     "MIM2 · R4.1": "Applikationsprofiler som utökar en datamodell bör inte påverka den redan befintliga modellen och dess användare",
@@ -749,17 +749,17 @@
     "MIM7 · R4.1": "Unika och beständiga identifierare ska användas för att identifiera specifika instanser av varje entitet som används i datamängder. (Se MIM1: Datalänkning.)",
     "MIM7 · R5.1": "Koordinatreferenssystem (CRS) ska uppfylla standarder, och information ska ges om vilken standard (t.ex. EPSG:4326, EPSG:3857) som används. Detta innefattar EPSG-nummer eller WGS-nummer, tillsammans med information om eventuella variationer baserade på nationella system såsom det lettiska LKS-92, så att data kan transformeras till ett gemensamt referenssystem. (Obs: Inom EU krävs det för geodata att metadata uppfyller INSPIRE-direktivet, inklusive de metadata som behövs för att beskriva CRS-informationen.)",
     "MIM8 · R1.1": "Den lokala digitala tvillingen ska ge tillgång till simuleringsresultat och indata för beräkningsmodeller där dessa behövs som en del av arbetsflöden i den lokala digitala tvillingen.",
-    "MIM8 · R1.2": "Den lokala digitala tvillingen bör skilja tydligt mellan rå källdata, transformerad arbetsflödesredo data, modellindata och modellutdata.",
+    "MIM8 · R1.2": "Den lokala digitala tvillingen bör skilja tydligt mellan rå källdata, transformerade data förberedda för arbetsflöden, modellindata och modellutdata.",
     "MIM8 · C2": "Denna förmåga förlitar sig på MIM3 (Datautbyte) för datautbyte.",
     "MIM8 · R3.1": "Modellen bör tillhandahålla standardiserade modellmetadata, inklusive en beskrivning av dess metoder och parametrar samt dataparametrar (antingen genom värde eller genom referens). För detta ändamål bör gemensamma metadatastandarder användas.",
     "MIM8 · R3.2": "Modellen ska exponera eller vara anropsbar via ett dokumenterat gränssnitt, företrädesvis med ett känt standardiserat API. Datamängden som utgör resultatet av modellen ska beskrivas (på datanivå).",
-    "MIM8 · R3.3": "Tillförlitlig, pålitlig och etisk användning av innovativa metoder (stora språkmodeller, agentisk AI osv.) bör säkerställas. Skevhet (bias) bör minimeras där det är tillämpligt. De metoder som används för att garantera detta bör beskrivas.",
+    "MIM8 · R3.3": "Tillförlitlig, pålitlig och etisk användning av innovativa metoder (stora språkmodeller, agentbaserad AI osv.) bör säkerställas. Snedvridning (bias) bör minimeras där det är tillämpligt. De metoder som används för att garantera detta bör beskrivas.",
     "MIM8 · R3.4": "Modellen måste kunna få åtkomst till data för slutanvändarens eller organisationens räkning. Se MIM3",
     "MIM8 · R3.5": "För data som ska användas i AI-modeller bör proveniens och tillförlitlighet garanteras. I vissa fall måste en auktoritativ källa, såsom en statlig myndighet, anges.",
     "MIM8 · R4.1": "Den lokala digitala tvillingen stödjer arbetsflöden som kopplar samman datakällor, datatransformeringar, modellexekvering, simuleringsprocesser och resultat.",
     "MIM8 · R4.2": "Den lokala digitala tvillingen länkar samman arbetsflödessteg, där utdata från ett steg kan användas som indata för ett annat.",
     "MIM8 · R4.3": "Den lokala digitala tvillingen övervakar status för exekvering av arbetsflöden, inklusive slutförda, misslyckade och avbrutna processer.",
-    "MIM8 · R4.4": "Den lokala digitala tvillingen registrerar arbetsflödets proveniens, inklusive använda datamängder (inklusive version, tidsstämplade), exekverade modeller, valda parametrar och genererade resultat.",
+    "MIM8 · R4.4": "Den lokala digitala tvillingen registrerar arbetsflödets proveniens, inklusive använda datamängder (inklusive version och tidsstämpel), exekverade modeller, valda parametrar och genererade resultat.",
     "MIM8 · R5.1": "Den lokala digitala tvillingen tillhandahåller metadata som förklarar vad som visualiseras, inklusive tidsstämpel, geografisk omfattning, datakälla samt scenario- och variantantaganden där det är relevant.",
     "MIM8 · R5.2": "Den lokala digitala tvillingen stödjer olika interaktiva visualiseringstyper, såsom 2D-kartor, 3D-scener, instrumentpaneler, rapporter eller offentliga vyer.",
     "MIM8 · R6.1": "Den lokala digitala tvillingen bör dokumentera olösta semantiska glapp, antaganden eller mappningar som kan påverka tolkningen, återanvändningen eller jämförelsen av resultat.",
@@ -767,7 +767,7 @@
     "MIM8 · M2": "Standardiserade data- och utdataformat",
     "MIM8 · M3": "Modell som tjänst (Model-as-a-Service)",
     "MIM8 · M4": "LDT-arbetsflödesorkestrering",
-    "MIM8 · M5": "Åtkomst till visualisering och vyer från flera perspektiv",
+    "MIM8 · M5": "Åtkomst till visualisering och flervyutdata",
     "MIM1 · §3.1": "IRI:n behandlas som den kanoniska identifieraren i alla efterföljande system; implementeringar FÅR INTE generera IRI:er som bäddar in föränderliga implementeringsdetaljer såsom rader i databaser eller servervärdnamn.",
     "MIM6 · 8.15": "Loggning. Loggar som registrerar aktiviteter, undantag, fel och andra relevanta händelser ska produceras, lagras, skyddas och analyseras."
   },

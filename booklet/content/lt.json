@@ -1,17 +1,17 @@
 {
   "cover": {
-    "title": "Pirkimų kontrolinis sąrašas · taikant minimalius · sąveikumo mechanizmus (MIMs)",
-    "subtitle": "Ką įrašyti į pirkimo sąlygas, kad savivaldybė neprarastų savo duomenų",
-    "tagline": "Skirta OASC MIMs Plus 9.0",
+    "title": "Pirkimų kontrolinis sąrašas · pagal minimalius · sąveikumo mechanizmus (MIMs)",
+    "subtitle": "Ką nurodyti pirkimo dokumentuose, kad miestas išlaikytų savo duomenų kontrolę",
+    "tagline": "Specifikacija: OASC MIMs Plus 9.0",
     "footer": "Europos savivaldybių pirkimų specialistams, projektų vadovams ir IT vadovams"
   },
   "why": {
-    "title": "Kam reikalingas šis leidinys",
+    "title": "Šio leidinio paskirtis",
     "paras": [
       "Kiekvienais metais miestai perka programinę įrangą: parkavimo sistemas, jutiklių platformas, žemėlapių portalus, skaitmeninius dvynius. Per dažnai šių sistemų renkami duomenys lieka jose užrakinti. Pasibaigus sutarčiai, už viešuosius pinigus apmokėti duomenys iškeliauja kartu su tiekėju arba lieka įstrigę formatu, kurio niekas kitas negali perskaityti.",
-      "Taip neturi būti. Minimalūs sąveikumo mechanizmai (MIMs), kuriuos kuruoja „Open & Agile Smart Cities“ (OASC) ir palaiko Europos judėjimas „living-in.eu“, aprašo minimalius techninius reikalavimus, užtikrinančius, kad jūsų duomenys išliktų atviri, pakartotinai naudojami ir nepriklausomi nuo tiekėjo. Jie sąmoningai glausti: tai ne didžiulė architektūra, o vos keli esminiai principai, būtini sistemų tarpusavio bendravimui.",
-      "Norint juos taikyti, nebūtina būti inžinieriumi. Kiekvienas kontrolinis sąrašas paverčia vieną MIM paprastais punktais, kuriuos galite nukopijuoti į pirkimo dokumentus, kartu paaiškinant, kaip kiekvienas jų jus apsaugo. Iškart po kontrolinio sąrašo pažodžiui pateikiamas kiekvienas to MIM reikalavimas, kad jūsų techniniai darbuotojai ir tiekėjai galėtų patikrinti detales.",
-      "Miestai, reikalaujantys MIMs, perka kartą ir naudoja daug kartų: oro kokybės duomenys maitina mokyklų švieslentes, gatvių apšvietimo registras – energetikos planą, o kitas tiekėjas tęsia darbą ten, kur baigė ankstesnysis. Tai praktiškai reiškia sąveikumą – ir to vis labiau tikimasi ES lėšomis finansuojamuose projektuose."
+      "Taip neturi būti. Minimalūs sąveikumo mechanizmai (MIMs), kuriuos kuruoja „Open & Agile Smart Cities“ (OASC) ir palaiko Europos judėjimas „living-in.eu“, aprašo minimalius techninius reikalavimus, užtikrinančius, kad jūsų duomenys išliktų atviri, pakartotinai naudojami ir nepriklausomi nuo tiekėjo. Jie sąmoningai nedidelės apimties: tai ne didelė architektūra, o tik kelios sąlygos, kurios privalo galioti, kad sistemos galėtų keistis duomenimis.",
+      "Norint naudotis šiuo leidiniu, techninių žinių nereikia. Kiekvienas kontrolinis sąrašas paverčia vieną MIM paprastais kontrolinio sąrašo punktais, kuriuos galite nukopijuoti į pirkimo dokumentus, kartu nurodant priežastį, kodėl kiekvienas jų jus apsaugo. Iškart po kontrolinio sąrašo pažodžiui pateikiamas kiekvienas to MIM reikalavimas, kad jūsų techniniai kolegos ir tiekėjai galėtų patikrinti detales.",
+      "Miestai, reikalaujantys MIMs, perka kartą ir naudoja daug kartų: oro kokybės duomenys teikiami mokyklų stebėsenos suvestinėms, gatvių apšvietimo registras – energetikos planą, o kitas tiekėjas tęsia darbą ten, kur baigė ankstesnysis. Tai praktiškai reiškia sąveikumą – ir to vis labiau tikimasi ES lėšomis finansuojamuose projektuose."
     ],
     "quote": {
       "text": "Minimalūs sąveikumo mechanizmai (MIMs) užtikrina minimalų, tačiau pakankamą duomenų, sistemų ir paslaugų sąveikumo lygį, ypač išmaniųjų miestų sprendimų kontekste. · Šis dokumentas skirtas: · 1. Sprendimų teikėjams, norintiems užtikrinti, kad jų sprendimai būtų sąveikūs su kitais ir leistų sklandžiai keistis duomenimis išmaniųjų miestų ir bendruomenių kontekste. · 2. Pirkimų vykdytojams, norintiems įsigyti ateičiai pritaikytus sprendimus, leidžiančius ekonomiškai efektyviai integruotis į esamą išmaniųjų miestų ir bendruomenių informacinių ir ryšių technologijų (IRT) architektūrą."
@@ -103,11 +103,11 @@
       }
     },
     "note": "Kiekvienas kontrolinio sąrašo punktas turi trumpą nuorodą, pvz., → MIM0 R1.1. Tai reikalavimas iš MIMs Plus 9.0, iš kurio jis kyla; iškart po kontrolinio sąrašo pažodžiui pateikiamas kiekvienas to MIM reikalavimas. Tik MIM0 apibrėžia normatyvinius žodžius: jie galioja, kai parašyti didžiosiomis raidėmis pagal IETF RFC 2119 ir RFC 8174 konvenciją (CAN kyla iš ISO/IEC direktyvų 2 dalies). Kiti MIM apibrėžimų neturi: MIM6 žodį SHALL dažniausiai rašo didžiosiomis raidėmis, MIM2, MIM3, MIM7 ir MIM8 žodžius shall, should ir must rašo mažosiomis, o MIM1 juos naudoja tik mechanizmo aprašyme (MUST NOT 3.1 skirsnyje). Šiame leidinyje mažosiomis raidėmis parašyti žodžiai suprantami taip pat; tiekėjas gali juos aiškinti laisviau.",
-    "legend_note": "Kontrolinio sąrašo punktuose rašoma „privalo“, net jei specifikacijoje tik rekomenduojama (turėtų) arba nurodomas kandidatinis mechanizmas. Tai yra perkančiosios organizacijos sprendimas."
+    "legend_note": "Kontrolinio sąrašo punktuose kiekvienas aspektas formuluojamas kaip reikalavimas net ir tais atvejais, kai specifikacijoje tik rekomenduojama (turėtų) arba nurodomas kandidatinis mechanizmas. Tai yra perkančiosios organizacijos sprendimas."
   },
   "glance": {
     "title": "Septyni MIM ir trys įrankiai",
-    "intro": "Septyni nedideli mechanizmai, vienas tikslas: jūsų duomenys lieka jūsų, o jūsų sistemos gali bendrauti tarpusavyje.",
+    "intro": "Septyni nedideli mechanizmai, vienas tikslas: duomenys lieka miesto žinioje, o sistemos veikia kartu.",
     "items": {
       "MIM0": {
         "name": "Prieiga prie duomenų",
@@ -135,7 +135,7 @@
         "d": "Šifruotas perdavimas, standartiniai prisijungimai, prieiga pagal vaidmenis, audito žurnalai."
       },
       "MIM7": {
-        "name": "Geoprietrykiniai duomenys",
+        "name": "Geoerdviniai duomenys",
         "q": "Ar tai veikia žemėlapyje?",
         "d": "Erdviniai duomenys naudoja OGC sąsajas, atvirus formatus ir deklaruotas koordinačių sistemas."
       },
@@ -199,7 +199,7 @@
           "why": "Gaunate tai, ko reikia, o ne naktinį visos duomenų bazės išrašą."
         },
         {
-          "text": "Kai naudojimo atvejui reikalingi tiesioginiai duomenys, vartotojai gali užsiprenumeruoti pakeitimus („webhooks“, MQTT ar panašiai) vietoje nuolatinio užklausų siuntimo.",
+          "text": "Kai naudojimo atvejui reikalingi tiesioginiai duomenys, naudotojai gali užsiprenumeruoti pakeitimus („webhooks“, MQTT ar panašiai) vietoje nuolatinio užklausų siuntimo.",
           "why": "Realaus laiko švieslentės ir perspėjimai tampa įmanomi ir nebrangūs."
         },
         {
@@ -215,7 +215,7 @@
       "red_flags": [
         "„Duomenų eksportas pagal pageidavimą per mūsų pagalbos tarnybą.“",
         "„API prieinama kaip mokamas papildomas modulis.“",
-        "Mokestis už kiekvieną užklausą prie paties miesto duomenų (žr. sąlygą „Jokių mokesčių už darbo vietą ar užklausas“)."
+        "Mokestis už kiekvieną užklausą prie paties miesto duomenų (žr. sąlygą „Jokių mokesčių už savo duomenis“)."
       ]
     },
     "MIM1": {
@@ -264,11 +264,11 @@
           "why": "„Temperatūra: 23“ yra bevertė, jei niekas neparašė °C ar °F."
         },
         {
-          "text": "Plėtiniai pateikiami kaip dokumentuoti profiliai ar papildymai virš standartinio modelio – niekada kaip modifikuota privati atšaka.",
+          "text": "Plėtiniai pateikiami kaip dokumentuoti profiliai ar papildymai virš standartinio modelio – niekada kaip modifikuotas privatus „fork“.",
           "why": "Išlaikote suderinamumą su bendruomene ir būsimais atnaujinimais."
         },
         {
-          "text": "Kiekvienas modelis turi bent vieną atvirą, pagal schemą patvirtinamą serializaciją (pvz., JSON su JSON Schema).",
+          "text": "Kiekvienas modelis turi bent vieną atvirą, pagal schemą validuojamą serializaciją (pvz., JSON su JSON Schema).",
           "why": "Gaunamus duomenis galima automatiškai patikrinti vos jiems patekus į sistemą."
         }
       ],
@@ -285,15 +285,15 @@
     "MIM3": {
       "name": "Duomenų mainai",
       "question": "Ar galime dalytis aiškiomis sąlygomis?",
-      "intro": "Ne visus miesto duomenis galima tiesiog viešinti: vieni yra komerciniai, kiti jautrūs. MIM3 skirtas saugiam likusių duomenų dalijimuisi: paieškai pritaikytas katalogas, licencijos pagal šablonus vietoje individualių teisinių formuluočių ir visiems suprantamos valdymo taisyklės. Specifikacijoje beveik visas MIM3 suformuluotas kaip rekomendacija (žr. p. 3).",
+      "intro": "Ne visus miesto duomenis galima tiesiog viešinti: vieni yra komerciniai, kiti jautrūs. MIM3 skirtas saugiam likusių duomenų dalijimuisi: paieškai pritaikytas katalogas, licencijos pagal šablonus vietoje individualių teisinių formuluočių ir visiems prieinamos valdymo taisyklės. Specifikacijoje beveik visas MIM3 suformuluotas kaip rekomendacija (žr. 3 p.).",
       "items": [
         {
           "text": "Kiekvienas sistemos teikiamas duomenų rinkinys yra aprašytas standartiniais metaduomenimis (pavyzdžiui, DCAT-AP) kataloge, kad kiti galėtų jį rasti.",
           "why": "Duomenys, kurių niekas negali rasti, yra duomenys, kurių niekas nenaudoja."
         },
         {
-          "text": "Duomenų naudojimo sąlygos ir licencijos remiasi žinomais šablonais (pvz., atvirosiomis licencijomis, standartinėmis duomenų dalijimosi sutartimis), o ne individualiais teisiniais tekstais kiekvienam rinkiniui.",
-          "why": "Susitarimai lengvai plečiami; teisininkai netampa stabdžiu."
+          "text": "Duomenų naudojimo sąlygos ir licencijos rengiamos pagal gerai žinomus šablonus (pvz., atvirąsias licencijas, standartines duomenų dalijimosi sutartis), o ne pagal individualius teisinius tekstus kiekvienam duomenų rinkiniui.",
+          "why": "Susitarimai lengvai plečiami be teisinio vertinimo kiekvienu atskiru atveju."
         },
         {
           "text": "Savivaldybė gali nustatyti, kas, kokius duomenų išteklius ir kokiomis sąlygomis gali pasiekti, bei tai keisti be tiekėjo įsikišimo.",
@@ -312,8 +312,8 @@
     },
     "MIM6": {
       "name": "Duomenų saugumas",
-      "question": "Ar mūsų duomenys saugūs juos perduodant ir naudojant?",
-      "intro": "Išmanieji miestai yra taikiniai. MIM6 apimtis sąmoningai siaura ir praktiška: šifruoti perduodamus duomenis, naudoti standartinius prisijungimus vietoje patentuotų, kontroliuoti ir fiksuoti žurnaluose, kas prie ko jungiasi. Čia nėra nieko egzotiško – visa tai privalo būti sutartyje.",
+      "question": "Ar mūsų duomenys saugūs?",
+      "intro": "Išmanieji miestai yra taikiniai. MIM6 apimtis sąmoningai siaura ir praktiška: šifruoti perduodamus duomenis, naudoti standartinius prisijungimus vietoje nuosavybinių, kontroliuoti ir fiksuoti žurnaluose, kas prie ko jungiasi. Čia nėra nieko egzotiško – visa tai privalo būti sutartyje.",
       "items": [
         {
           "text": "Visas duomenų perdavimas yra šifruojamas (TLS 1.3 arba dabartinė geriausia praktika).",
@@ -329,14 +329,14 @@
         },
         {
           "label": "Turi būti pirkimo sąlygų kvalifikacijos reikalavimuose, o ne techninėje specifikacijoje",
-          "text": "Tiekėjas privalo įrodyti teikiamos paslaugos atitiktį ISO/IEC 27001:2022 (arba lygiaverčiam standartui).",
+          "text": "Tiekėjas įrodo teikiamos paslaugos atitiktį ISO/IEC 27001:2022 (arba lygiaverčiam standartui).",
           "why": "Saugumas yra procesas, o ne varnelė priimant paslaugas. Specifikacija nurodo ISO/IEC 27001 kontrolės priemones, o ne patį sertifikatą."
         }
       ],
       "why_panel": [
         "Saugumo pažeidimas vienoje sistemoje neatveria visų likusių sistemų.",
         "Jei jums taikoma TIS 2, jos ir nacionalinių kibernetinio saugumo taisyklių laikymasis tampa pastebimai paprastesnis.",
-        "Kilus nesklandumams, žurnalai tiksliai parodo, kas ir ką padarė."
+        "Įvykus incidentui, žurnalai parodo, kas atsitiko ir kas atliko veiksmus."
       ],
       "red_flags": [
         "Tik patentuotas prisijungimo būdas.",
@@ -345,16 +345,16 @@
       ]
     },
     "MIM7": {
-      "name": "Geoprietrykiniai duomenys",
+      "name": "Geoerdviniai duomenys",
       "question": "Ar tai veikia žemėlapyje?",
       "intro": "Beveik viskas, ką turi miestas, turi savo vietą. MIM7 užtikrina, kad ta vieta nebūtų tik ekrano kopija: erdviniai duomenys teikiami per standartines OGC sąsajas, atvirais formatais, visada nurodant koordinačių sistemą – kad kiekvienas perkamas žemėlapio sluoksnis idealiai sutaptų su jau turimais.",
       "items": [
         {
-          "text": "Geoprietrykiniai duomenys teikiami per standartizuotas sąsajas (OGC API Features, SensorThings; WFS priimtina senosioms sistemoms).",
+          "text": "Geoerdviniai duomenys teikiami per standartizuotas sąsajas (OGC API Features, SensorThings; WFS priimtina senosioms sistemoms).",
           "why": "Bet kuris rinkoje esantis GIS įrankis gali juos iškart perskaityti."
         },
         {
-          "text": "Geoprietrykiniai duomenys koduojami atvirais formatais (GeoJSON, CityJSON; prireikus – GML/CityGML).",
+          "text": "Geoerdviniai duomenys koduojami atvirais formatais (GeoJSON, CityJSON; prireikus – GML/CityGML).",
           "why": "Jokių keitiklių licencijų, jokių aklaviečių."
         },
         {
@@ -367,7 +367,7 @@
         }
       ],
       "why_panel": [
-        "Vienas miesto žemėlapis vietoje dešimties tiekėjų peržiūros priemonių.",
+        "Vienas miesto žemėlapis vietoj dešimties tiekėjų peržiūros priemonių.",
         "INSPIRE ir nacionalinio geoportalo reikalavimų vykdymas tampa paprastesnis.",
         "Vėliau į tą patį vaizdą galima įtraukti 3D ir BIM duomenis."
       ],
@@ -390,7 +390,7 @@
           "why": "Kartą įsigytą potvynių modelį gali pakartotinai naudoti kiti padaliniai ir kiti miestai."
         },
         {
-          "text": "Rezultatai teikiami standartiniais formatais (GeoJSON, CityJSON, 3D Tiles, NetCDF…), kuriuos palaiko ne tik šio tiekėjo įrankiai.",
+          "text": "Rezultatai teikiami standartiniais formatais (GeoJSON, CityJSON, 3D Tiles, NetCDF…), kuriuos gali nuskaityti trečiųjų šalių įrankiai.",
           "why": "Vizualizavimo ir analizės rinka išlieka konkurencinga."
         },
         {
@@ -423,8 +423,8 @@
         "text": "Visos teisės į duomenis, surinktus ir gautus vykdant sutartį, priklauso perkančiajai organizacijai."
       },
       {
-        "name": "Jokių mokesčių už darbo vietą ar užklausas",
-        "text": "Jokių mokesčių už savivaldybės prieigą prie savo pačios duomenų."
+        "name": "Jokių mokesčių už savo duomenis",
+        "text": "Perkančioji organizacija nemoka jokio mokesčio už prieigą prie savo pačios duomenų – nei už naudotoją, nei už užklausą."
       },
       {
         "name": "API stabilumas ir versijavimas",
@@ -436,7 +436,7 @@
       },
       {
         "name": "Nurodyti atviri standartai",
-        "text": "Pirkimo dokumentuose nurodomi pirmiau minėti standartai; teiginiai „suderinama su“ privalo nurodyti tikslią sąsają ir versiją. Kiekviena nuoroda į standartą ar techninę specifikaciją leidžia pateikti lygiavertį sprendimą; lygiavertiškumą įrodo tiekėjas."
+        "text": "Pirkimo dokumentuose nurodomi konkretūs standartai; teiginiuose „suderinama su“ privaloma nurodyti tikslią sąsają ir versiją. Kiekviena nuoroda į standartą ar techninę specifikaciją leidžia pateikti lygiavertį sprendimą; lygiavertiškumą įrodo tiekėjas."
       },
       {
         "name": "MIMs atitikties pareiškimas",
@@ -446,7 +446,7 @@
   },
   "example": {
     "title": "Pavyzdys: miestas perka oro kokybės jutiklių tinklą",
-    "scenario": "Pažymėti puslapiai: MIM0, MIM1, MIM2, MIM6 ir MIM7 (duomenys rodomi žemėlapyje). Iš MIM3 – tik 3.1 punktas (oro kokybės duomenys skelbiami kaip atvirieji duomenys, todėl jie turi būti kataloge); be MIM8: tai nėra skaitmeninis dvynys.",
+    "scenario": "Pažymėti puslapiai: MIM0, MIM1, MIM2, MIM6 ir MIM7 (duomenys pateikiami žemėlapyje). Iš MIM3 – tik 3.1 punktas (oro kokybės duomenys skelbiami kaip atvirieji duomenys, todėl jie turi būti kataloge); MIM8 netaikomas: sistema nėra skaitmeninis dvynys.",
     "table_title": "Kas kur įrašoma",
     "table_headers": [
       "Dokumentas",
@@ -472,7 +472,7 @@
       [
         "Sutarties projektas",
         "sutarčių vykdymo sąlygos (70 str.)",
-        "Sutarties pabaigos sąlyga, Teisės į duomenis, Jokių mokesčių už darbo vietą ar užklausas, API stabilumas ir versijavimas; užpildyta atitikties lentelė kaip priedas"
+        "Sutarties pabaigos sąlyga, Teisės į duomenis, Jokių mokesčių už savo duomenis, API stabilumas ir versijavimas; užpildyta atitikties lentelė kaip priedas"
       ],
       [
         "Priėmimo–perdavimo aktas",
@@ -488,7 +488,7 @@
       "4.3.3 API leidžia filtruoti duomenis pagal matavimo laiką ir vietą. (MIM0 R2.1, R2.2)",
       "… nuo 4.3.4 iki 4.3.21: kiti pažymėti punktai …",
       "4.3.22 Kiekviena nuoroda į standartą ar techninę specifikaciją leidžia pateikti lygiavertį sprendimą; lygiavertiškumą įrodo tiekėjas.",
-      "4.3.23 Tiekėjas užpildo atitikties lentelę (pirkimo dokumentų priedas) ir pateikia įrodymus kiekvienam reikalaujamam punktui. Tiekėjas pademonstruoja 4.3.1–4.3.21 punktų atitiktį realia veikiančia API užklausa pasiūlymų vertinimo metu; perkančioji organizacija juos vėl patikrina priėmimo metu. Jų neatitikimas yra pagrindas atsisakyti priimti rezultatą."
+      "4.3.23 Tiekėjas užpildo atitikties lentelę (pirkimo dokumentų priedas) ir pateikia įrodymus kiekvienam reikalaujamam punktui. Pasiūlymų vertinimo metu tiekėjas pademonstruoja 4.3.1–4.3.21 punktų atitiktį (pavyzdžiui, realiu laiku veikiančia API užklausa); reikalaujamo punkto neatitinkantis pasiūlymas neatitinka pirkimo objekto reikalavimų. Perkančioji organizacija šiuos punktus vėl patikrina priėmimo metu; nustatytas neatitikimas yra pagrindas atsisakyti priimti rezultatą."
     ],
     "tip": "4.3.3 punktas rodo, kad galite patikslinti reikalavimą pagal pirkimo objektą: jutikliams prasminga reikalauti filtravimo pagal matavimo laiką ir vietą.",
     "note": "Pritaikykite formuluotę prie nacionalinės teisės aktų ir suderinkite su pirkimų specialistu.",
@@ -516,7 +516,7 @@
         "✓"
       ]
     ],
-    "filled_note": "Pažadas ateičiai žymimas N: komisija tikrina tik tai, ką tiekėjas gali parodyti dabar."
+    "filled_note": "Pažadas dėl būsimo funkcionalumo žymimas N: komisija tikrina tik tai, ką tiekėjas gali parodyti. Reikalaujamam punktui žyma N reiškia, kad pasiūlymas neatitinka pirkimo objekto reikalavimų."
   },
   "tearout": {
     "title": "Atitikties lentelė",
@@ -644,7 +644,7 @@
       },
       {
         "t": "Atvirasis standartas",
-        "d": "Techninė taisyklė, kurią kiekvienas gali perskaityti ir įgyvendinti nemokėdamas ir neprašydamas leidimo."
+        "d": "Techninė taisyklė, kurią kiekvienas gali perskaityti ir įgyvendinti nemokamai bei be specialaus leidimo."
       },
       {
         "t": "OpenAPI",
@@ -660,7 +660,7 @@
       },
       {
         "t": "Pririšimas prie tiekėjo",
-        "d": "Situacija, kai pasitraukimas nuo tiekėjo kainuoja tiek daug – duomenų, formatų ar mokesčių prasme, – kad tampa faktiškai neįmanomas."
+        "d": "Būsena, kai dėl duomenų, formatų ar mokesčių sąnaudų tiekėjo pakeitimas tampa praktiškai neįmanomas."
       },
       {
         "t": "„Webhook“ / MQTT",
@@ -681,10 +681,10 @@
     "author": "Leidinio autorius: Marek Mráz"
   },
   "quote_translations": {
-    "MIM0 · R1.1": "Sistemos PRIVALO leisti gauti duomenis bent vienu mašininio skaitymo formatu. Formatus GALI nurodyti per HTTP turinio derinimą",
+    "MIM0 · R1.1": "Sistemos PRIVALO leisti gauti duomenis bent vienu mašininio skaitymo formatu. Formatus galima nurodyti per HTTP turinio derinimą",
     "MIM0 · R1.2": "Duomenys PRIVALO būti gaunami bent vienu standartiniu saityno mechanizmu",
     "MIM0 · R1.3": "Prieigos mechanizmas (-ai) PRIVALO būti oficialiai aprašyti",
-    "MIM0 · R1.4": "Naudingojo krovinio naudojami duomenų modeliai turėtų būti nurodyti (žr. MIM2)",
+    "MIM0 · R1.4": "Perduodamų duomenų (payload) naudojami duomenų modeliai turėtų būti nurodyti (žr. MIM2)",
     "MIM0 · R2.1": "Sistemos PRIVALO teikti duomenis per struktūrizuotą ir nuoseklią sąsają",
     "MIM0 · R2.2": "Sistemos PRIVALO palaikyti bazines užklausas ir (arba) filtravimą (pvz., pagal laiką, vietą, požymius)",
     "MIM0 · C2": "API TURĖTŲ palaikyti esamų duomenų gavimą · API TURĖTŲ palaikyti istorinių duomenų gavimą, kai taikoma · API TURĖTŲ palaikyti geopririštas užklausas, kai taikoma (žr. MIM7) · API TURĖTŲ palaikyti pakeitimų prenumeratą, kai taikoma · API TURĖTŲ pateikti kito numatomo atnaujinimo laiko žymą · API TURĖTŲ palaikyti aiškų prieigos taškų versijavimą · API TURĖTŲ pateikti pavyzdinius naudingus krovinius arba bandomąsias užklausas · API TURĖTŲ palaikyti standartines HTTP podėliavimo antraštes · API TURĖTŲ pranešti apie užklausų ribojimo būseną standartinėmis HTTP antraštėmis · API TURĖTŲ grąžinti struktūrizuotus klaidų pranešimus · API GALI palaikyti dalinius atsakus arba užklausų projekcijas · API GALI pateikti standartinį būsenos (health/status) prieigos tašką",
@@ -698,7 +698,7 @@
     "MIM1 · R1.5": "Galima sukurti identifikatorius, kurie yra pastovūs bėgant laikui",
     "MIM1 · R2.1": "Egzistuoja būdas gauti objekto semantiką naudojant tik jo unikalų identifikatorių",
     "MIM1 · R2.2": "Ši semantika aprašoma mašininio skaitymo formatu",
-    "MIM1 · R3.1": "Egzistuoja būdas panaikinti nuorodą į objekte apibrėžtą ryšį",
+    "MIM1 · R3.1": "Egzistuoja būdas gauti duomenis pagal nuorodą į objekte apibrėžtą ryšį",
     "MIM1 · R3.2": "Egzistuoja būdas esamai ontologijai pritaikyti papildomą semantiką",
     "MIM2 · R1.1": "Duomenų modeliai, naudojami visiems bet kurio duomenų šaltinio objektams, turi būti aiškiai nurodyti. Jie turi būti gerai dokumentuoti ir turėti aprašomuosius metaduomenis, kur vartojami terminai turi būti semantiškai vienareikšmiai. Su matavimo vienetais, laiko formatais ir kt. susijusiems požymiams naudojami vienetai, formatai ir kt. turi būti aiškiai nurodyti. Duomenų modeliai turėtų būti kataloguojami, kad juos būtų galima lengvai rasti.",
     "MIM2 · R1.2a": "Naudojami duomenų modeliai turi būti pagrįsti (kur įmanoma) visuotinai pripažintais standartizuotais duomenų modeliais, nurodytais toliau",
@@ -743,17 +743,17 @@
     "MIM6 · M1.2": "OAuth 2.0 autorizavimo sistema",
     "MIM6 · M1.3": "OpenID Connect 1.0, tapatybės lygmuo autentiškumo patvirtinimui virš OAuth 2.0",
     "MIM6 · M1.4": "OIDC4VCI / OIDC4VP, „OpenID“ patvirtinamų kredencialų išdavimui ir pateikimui",
-    "MIM7 · R1.1": "Geoprietrykiniai duomenys turi būti teikiami per standartizuotą saityno paslaugų sąsają.",
-    "MIM7 · R2.1": "Geoprietrykiniai duomenys turi būti koduojami naudojant atvirus standartus. Rekomenduojama naudoti atitinkamus OGC ir „BuildingSMART International“ standartus.",
+    "MIM7 · R1.1": "Geoerdviniai duomenys turi būti teikiami per standartizuotą saityno paslaugų sąsają.",
+    "MIM7 · R2.1": "Geoerdviniai duomenys turi būti koduojami naudojant atvirus standartus. Rekomenduojama naudoti atitinkamus OGC ir „BuildingSMART International“ standartus.",
     "MIM7 · R3.1": "Visi duomenų rinkiniai, naudojami papildomai informacijai apie geopririštų duomenų apimamą kontekstą teikti, turi atitikti MIM1 ir MIM2.",
     "MIM7 · R4.1": "Konkretiems bet kurio objekto, naudojamo duomenų rinkiniuose, egzemplioriams identifikuoti turi būti naudojami unikalūs ir pastovūs identifikatoriai. (Žr. MIM1: Duomenų susiejimas.)",
-    "MIM7 · R5.1": "Koordinačių atskaitos sistemos (CRS) turi atitikti standartus ir turi būti pateikta informacija apie tai, koks standartas (pvz., EPSG:4326, EPSG:3857) yra naudojamas. Tai apima EPSG numerį arba WGS numerį kartu su informacija apie bet kokius variantus, pagrįstus nacionalinėmis sistemomis, tokiomis kaip Latvijos LKS-92, kad duomenis būtų galima transformuoti į bendrą CRS. (Pastaba: Europos Sąjungoje geoprietrykiniams duomenims privaloma naudoti metaduomenis, atitinkančius INSPIRE direktyvą, įskaitant metaduomenis, reikalingus CRS informacijai aprašyti.)",
+    "MIM7 · R5.1": "Koordinačių atskaitos sistemos (CRS) turi atitikti standartus ir turi būti pateikta informacija apie tai, koks standartas (pvz., EPSG:4326, EPSG:3857) yra naudojamas. Tai apima EPSG numerį arba WGS numerį kartu su informacija apie bet kokius variantus, pagrįstus nacionalinėmis sistemomis, tokiomis kaip Latvijos LKS-92, kad duomenis būtų galima transformuoti į bendrą CRS. (Pastaba: Europos Sąjungoje geoerdviniams duomenims privaloma naudoti metaduomenis, atitinkančius INSPIRE direktyvą, įskaitant metaduomenis, reikalingus CRS informacijai aprašyti.)",
     "MIM8 · R1.1": "LDT turi suteikti prieigą prie modeliavimo išvesties ir skaičiavimo modelių įvesties duomenų, kai jų reikia kaip LDT darbo eigų dalies.",
     "MIM8 · R1.2": "LDT turėtų aiškiai atskirti pirminius šaltinio duomenis, transformuotus darbo eigai paruoštus duomenis, modelio įvestis ir modelio išvestis.",
     "MIM8 · C2": "Šis gebėjimas remiasi MIM3 (Duomenų mainai) duomenų mainams atlikti.",
     "MIM8 · R3.1": "Modelis turėtų pateikti standartinius modelio metaduomenis, įskaitant jo metodų bei parametrų aprašymą ir duomenų parametrus (pagal reikšmę arba pagal nuorodą). Šiuo tikslu turėtų būti naudojami bendri metaduomenų standartai.",
     "MIM8 · R3.2": "Modelis turi atverti arba būti iškviečiamas per dokumentuotą sąsają, pageidautina naudojant žinomą standartizuotą API. Duomenų rinkinys, kuris sudaro modelio rezultatą, turi būti aprašytas (duomenų lygmeniu).",
-    "MIM8 · R3.3": "Patikimas, saugus ir etiškas novatoriškų metodų (LLM, agentinio DI ir kt.) naudojimas turėtų būti užtikrintas. Šališkumas turėtų būti sumažintas, kur taikoma. Metodai, naudojami tam garantuoti, turėtų būti aprašyti.",
+    "MIM8 · R3.3": "Patikimas, atsparus ir etiškas novatoriškų metodų (LLM, agentinio DI ir kt.) naudojimas turėtų būti užtikrintas. Šališkumas turėtų būti sumažintas, kur taikoma. Metodai, naudojami tam garantuoti, turėtų būti aprašyti.",
     "MIM8 · R3.4": "Modelis privalo gebėti pasiekti duomenis galutinio vartotojo ar organizacijos vardu. Žr. MIM3",
     "MIM8 · R3.5": "Duomenims, naudojamiems DI modeliuose, turėtų būti garantuota kilmė ir patikimumas. Kai kuriais atvejais privalo būti nurodytas oficialus šaltinis, pavyzdžiui, valdžios institucija.",
     "MIM8 · R4.1": "LDT palaiko darbo eigas, jungiančias duomenų šaltinius, duomenų transformacijas, modelio vykdymą, modeliavimo procesus ir išvestis.",
@@ -768,7 +768,7 @@
     "MIM8 · M3": "Modelis kaip paslauga (Model-as-a-Service)",
     "MIM8 · M4": "LDT darbo eigos orkestravimas",
     "MIM8 · M5": "Kelių rodinių išvesties ir vizualizacijos prieiga",
-    "MIM1 · §3.1": "IRI visose tolesnėse sistemose laikomas kanoniniu identifikatoriumi; realizacijose NETURI būti generuojami IRI, kuriuose įterpiamos nepastovios diegimo detalės, tokios kaip duomenų bazės eilučių ID ar serverių prieglobos pavadinimai.",
+    "MIM1 · §3.1": "IRI visose tolesnėse sistemose laikomas kanoniniu identifikatoriumi; realizacijose NETURI būti generuojami IRI, kuriuose įterpiamos nepastovios diegimo detalės, tokios kaip duomenų bazės eilučių ID ar serverių vardai.",
     "MIM6 · 8.15": "Žurnalų vedimas. Žurnalai, kuriuose fiksuojama veikla, išimtys, gedimai ir kiti aktualūs įvykiai, turi būti kuriami, saugomi, apsaugomi ir analizuojami."
   },
   "capability_translations": {
@@ -779,7 +779,7 @@
     "MIM0 · C4": "Prieiga prie informacijos gali būti apribota",
     "MIM1 · C1": "Objektai identifikuojami naudojant unikalius identifikatorius",
     "MIM1 · C2": "Objektai gali turėti tipus",
-    "MIM1 · C3": "Objektai gali turėti nuorodas arba būti pasiekiami per jas",
+    "MIM1 · C3": "Objektams gali būti pateikiamos nuorodos ir jie gali būti pasiekiami pagal nuorodas",
     "MIM2 · C1": "Visi duomenų šaltiniuose esantys objektai aprašomi naudojant nuoseklius duomenų modelius, kad būtų užtikrintas programų ir sistemų sąveikumas",
     "MIM2 · C2": "Skirtingi to paties objekto duomenų modeliai, naudojami bendroje duomenų dalijimosi ekosistemoje, turėtų būti lengvai transformuojami į bendrą duomenų modelį",
     "MIM2 · C3": "Bet kokiais duomenimis ir su jais susijusiais metaduomenimis galima dalytis atvirais, standartizuotais duomenų perdavimo formatais, kad skirtingi įrankiai ir diegimai galėtų nuosekliai keistis duomenimis ir juos interpretuoti",
@@ -795,10 +795,10 @@
     "MIM6 · C2": "Naudotojų pasiekti duomenys nebuvo pakeisti",
     "MIM6 · C3": "Naudotojų pasiekti duomenys gauti iš patvirtinto šaltinio",
     "MIM6 · M1": "Kandidatinis mechanizmas",
-    "MIM7 · C1": "Miestai ir bendruomenės gali lengvai perduoti geoprietrykinius duomenis tarp vidinių ir išorinių (įskaitant susijusias su IoT) IT sistemų",
-    "MIM7 · C2": "Miestai ir bendruomenės gali integruoti 2D ir 3D geoprietrykinius duomenis iš įvairių šaltinių, pavyzdžiui, geoduomenis ir statinio informacinio modeliavimo (BIM) modelius, ir sąveikiai dalytis šiais duomenimis tarpusavyje bei viduje",
-    "MIM7 · C3": "Miestai ir bendruomenės gali integruoti geoprietrykinius duomenis su kitais duomenimis, galinčiais suteikti papildomos informacijos apie kontekstą",
-    "MIM7 · C4": "Miestai ir bendruomenės turi nuoseklų ir pastovų būdą aprašyti atskirus visų elementų, daiktų ar objektų, esančių geoprietrykinių duomenų šaltiniuose, egzempliorius",
+    "MIM7 · C1": "Miestai ir bendruomenės gali lengvai perduoti geoerdvinius duomenis tarp vidinių ir išorinių (įskaitant susijusias su IoT) IT sistemų",
+    "MIM7 · C2": "Miestai ir bendruomenės gali integruoti 2D ir 3D geoerdvinius duomenis iš įvairių šaltinių, pavyzdžiui, geoduomenis ir statinio informacinio modeliavimo (BIM) modelius, ir sąveikiai dalytis šiais duomenimis tarpusavyje bei viduje",
+    "MIM7 · C3": "Miestai ir bendruomenės gali integruoti geoerdvinius duomenis su kitais duomenimis, galinčiais suteikti papildomos informacijos apie kontekstą",
+    "MIM7 · C4": "Miestai ir bendruomenės turi nuoseklų ir pastovų būdą aprašyti atskirus visų elementų, daiktų ar objektų, esančių geoerdvinių duomenų šaltiniuose, egzempliorius",
     "MIM7 · C5": "Koordinačių atskaitos sistemos (CRS), naudojamos dalijantis duomenimis, yra lengvai transformuojamos į bendrą CRS",
     "MIM8 · C1": "Suteikti prieigą prie LDT naudojamų duomenų rinkinių, įskaitant statinius, realaus laiko ir modeliavimo duomenis bei skaičiavimo modelius",
     "MIM8 · C2": "Keistis duomenimis su išorinėmis sistemomis ir kitais LDT naudojant sąveikias sąsajas",

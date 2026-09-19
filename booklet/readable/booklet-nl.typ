@@ -15,7 +15,7 @@
 // ════════════════════════════════════════════════════════════════════════════
 #import "../style.typ": *
 
-#show: booklet.with(title: "Checklist voor aanbestedingen · met behulp van de Minimale · Interoperabiliteitsmechanismen (MIM's)", lang: "nl",
+#show: booklet.with(title: "Checklist voor aanbestedingen · gebaseerd op de Minimale · Interoperabiliteitsmechanismen (MIM's)", lang: "nl",
   nav: (overview: "Overzicht", clauses: "Bepalingen", example: "Voorbeeld", table: "Conformiteitstabel", glossary: "Begrippenlijst", list: "Checklist", back: "terug naar de checklist", page: "blz."),
   mims: ("MIM0", "MIM1", "MIM2", "MIM3", "MIM6", "MIM7", "MIM8",))
 
@@ -24,10 +24,10 @@
 //  COVER
 // ════════════════════════════════════════════════════════════════════════════
 #cover(
-  title:    "Checklist voor aanbestedingen · met behulp van de Minimale · Interoperabiliteitsmechanismen (MIM's)",
-  subtitle: "Wat u opneemt in een aanbesteding zodat uw stad eigenaar blijft van haar data",
-  tagline:  "Voor MIMs Plus 9.0 door OASC",
-  footer:   "Voor inkopers, projectleiders en CIO's van Europese gemeenten",
+  title:    "Checklist voor aanbestedingen · gebaseerd op de Minimale · Interoperabiliteitsmechanismen (MIM's)",
+  subtitle: "Wat u opneemt in de aanbestedingsstukken zodat de stad de controle over haar data behoudt",
+  tagline:  "Specificatie: MIMs Plus 9.0 door OASC",
+  footer:   "Voor inkopers, projectleiders en IT-managers van Europese gemeenten",
   author:   "Auteur van deze uitgave: Marek Mráz",
 )
 
@@ -36,13 +36,13 @@
 //  WHY THIS BOOKLET
 // ════════════════════════════════════════════════════════════════════════════
 #fit-page("why")[
-  #band("Waarom deze gids")
+  #band("Doel van deze gids")
 
   #lead("Elk jaar kopen steden software aan: parkeersystemen, sensorplatforms, kaartportalen, digitale tweelingen. Maar al te vaak raakt de data die deze systemen verzamelen erin opgesloten. Wanneer de overeenkomst afloopt, vertrekt de data — betaald met publiek geld — met de leverancier, of blijft deze achter in een formaat dat niemand anders kan lezen.")
 
-  #lead("Dat kan anders. De Minimale Interoperabiliteitsmechanismen (MIM's), beheerd door Open & Agile Smart Cities (OASC) en ondersteund door de Europese living-in.eu-beweging, beschrijven de minimale technische eisen die uw data open, herbruikbaar en leveranciersonafhankelijk houden. Ze zijn bewust compact gehouden: geen omvangrijke architectuur, maar precies de weinige randvoorwaarden die nodig zijn om systemen met elkaar te laten communiceren.")
+  #lead("Dat kan anders. De Minimale Interoperabiliteitsmechanismen (MIM's), beheerd door Open & Agile Smart Cities (OASC) en ondersteund door de Europese living-in.eu-beweging, beschrijven de minimale technische eisen die uw data open, herbruikbaar en leveranciersonafhankelijk houden. Ze zijn bewust compact gehouden: geen omvangrijke architectuur, maar precies de weinige randvoorwaarden die nodig zijn om systemen gegevens te laten uitwisselen.")
 
-  #lead("U hoeft geen ingenieur te zijn om ze te gebruiken. Elke checklist vertaalt één MIM naar heldere checklistpunten die u rechtstreeks in een aanbesteding kunt overnemen, inclusief de toelichting waarom elk punt u beschermt. Direct na de checklist vindt u elke eis van die MIM, woord voor woord, zodat uw technische collega's en uw inschrijvers de details kunnen verifiëren.")
+  #lead("Er is geen technische achtergrond nodig om deze gids te gebruiken. Elke checklist vertaalt één MIM naar heldere checklistpunten die u kunt overnemen in een aanbesteding, inclusief de toelichting waarom elk punt u beschermt. Direct na de checklist vindt u elke eis van die MIM, woord voor woord, zodat uw technische collega's en uw inschrijvers de details kunnen controleren.")
 
   #lead("Steden die de MIM's voorschrijven, schaffen eenmalig aan en hergebruiken meervoudig: de luchtkwaliteitsdata voedt het schooldashboard, de lantaarnpaleninventaris voedt het energieplan, en de volgende leverancier bouwt voort op het werk van de vorige. Dat is wat interoperabiliteit in de praktijk betekent — en het wordt in toenemende mate geëist in door de EU gefinancierde projecten.")
 
@@ -93,7 +93,7 @@
   )
 
   #legend("Het lezen van de citaten uit de specificatie",
-    note: "De checklistpunten hanteren de formulering \"moet\", ook waar de specificatie slechts een aanbeveling doet (zou moeten) of een kandidaat-mechanisme noemt. Dat is een beleidsmatige keuze van de aanbestedende dienst.",
+    note: "De checklistpunten formuleren elk punt als een eis, ook waar de specificatie slechts een aanbeveling doet (zou moeten) of een kandidaat-mechanisme noemt. Dat is de beslissing van de aanbestedende dienst.",
     entry("MOET, MOETEN (SHALL / MUST)", "verplicht. Zonder dit voldoet het systeem niet."),
     entry("MAG NIET, MOGEN NIET (MUST NOT)", "verboden. Een systeem dat dit wel doet, voldoet niet."),
     entry("ZOU MOETEN, ZOUDEN MOETEN (SHOULD)", "dringend aanbevolen. Afwijkingen vereisen een deugdelijke schriftelijke motivering."),
@@ -112,7 +112,7 @@
 #fit-page("glance")[
   #band("Zeven MIM's en drie instrumenten", id: "glance")
 
-  #intro("Zeven compacte mechanismen, één doel: uw data blijft van u, en uw systemen kunnen met elkaar communiceren.")
+  #intro("Zeven compacte mechanismen, één doel: de data blijft onder controle van de stad en de systemen werken samen.")
 
   #glance(
     note: "Over de nummering: MIMs Plus 9.0 specificeert zeven mechanismen, genummerd 0, 1, 2, 3, 6, 7 en 8. MIM4 (persoonsgegevens) en MIM5 (ethische AI) maakten deel uit van eerdere OASC-versies en ontbreken in versie 9.0. Er ontbreekt niets in deze gids.",
@@ -210,7 +210,7 @@
     flags: ("Alarmsignalen", (
       "\"Data-export uitsluitend op verzoek via onze helpdesk.\"",
       "\"De API is beschikbaar als betaalde uitbreidingsmodule.\"",
-      "Kosten per verzoek voor de eigen data van de stad (zie het beding “Geen kosten per werkplek / per verzoek”).",
+      "Kosten per verzoek voor de eigen data van de stad (zie het beding „Geen kosten voor eigen data”).",
     )),
   )
 ]
@@ -254,7 +254,7 @@
     capability("C2 best practice", "Additional best practice to consider:",
       tr: "Aanvullende beste praktijken om te overwegen:", sub: true),
     req("C2",
-      tr: "API's ZOUDEN MOETEN ondersteuning bieden voor het opvragen van actuele data · API's ZOUDEN MOETEN ondersteuning bieden voor het opvragen van historische data waar van toepassing · API's ZOUDEN MOETEN ondersteuning bieden voor georuimtelijke bevragingen waar van toepassing (zie MIM7) · API's ZOUDEN MOETEN ondersteuning bieden voor het abonneren op wijzigingen waar van toepassing · API's ZOUDEN MOETEN het tijdstempel van de eerstvolgende verwachte update tonen · API's ZOUDEN MOETEN expliciet versiebeheer van eindpunten ondersteunen · API's ZOUDEN MOETEN voorbeeld-payloads of testbevragingen aanbieden · API's ZOUDEN MOETEN standaard HTTP-cachingheaders ondersteunen · API's ZOUDEN MOETEN de status van rate limits communiceren via standaard HTTP-headers · API's ZOUDEN MOETEN gestructureerde foutmeldingen retourneren · API's MOGEN partiële antwoorden of query-projecties ondersteunen · API's MOGEN een standaard health/status-eindpunt beschikbaar stellen",
+      tr: "API's ZOUDEN MOETEN ondersteuning bieden voor het opvragen van actuele data · API's ZOUDEN MOETEN ondersteuning bieden voor het opvragen van historische data waar van toepassing · API's ZOUDEN MOETEN ondersteuning bieden voor georuimtelijke bevragingen waar van toepassing (zie MIM7) · API's ZOUDEN MOETEN ondersteuning bieden voor het abonneren op wijzigingen waar van toepassing · API's ZOUDEN het tijdstempel van de eerstvolgende verwachte update MOETEN tonen · API's ZOUDEN MOETEN expliciet versiebeheer van eindpunten ondersteunen · API's ZOUDEN MOETEN voorbeeld-payloads of testbevragingen aanbieden · API's ZOUDEN MOETEN standaard HTTP-cachingheaders ondersteunen · API's ZOUDEN MOETEN de status van rate limits communiceren via standaard HTTP-headers · API's ZOUDEN MOETEN gestructureerde foutmeldingen retourneren · API's MOGEN partiële antwoorden of query-projecties ondersteunen · API's MOGEN een standaard health/status-eindpunt beschikbaar stellen",
       en: "APIs SHOULD support retrieval of current data · APIs SHOULD support retrieval of historical data when applicable · APIs SHOULD support geospatial querying when applicable (see MIM7) · APIs SHOULD support subscription to changes when applicable · APIs SHOULD expose next expected update timestamp · APIs SHOULD support explicit versioning of endpoints · APIs SHOULD provide example payloads or test queries · APIs SHOULD support standard HTTP caching headers · APIs SHOULD communicate rate limit status via standard HTTP headers · APIs SHOULD return structured error bodies · APIs MAY support partial responses or query projections · APIs MAY expose a standard health/status endpoint"),
     capability("C3", "Changes in data can be subscribed to",
       tr: "Er kan worden geabonneerd op wijzigingen in data"),
@@ -304,7 +304,7 @@
     refs: "MIM1 R1.3, R1.4",
     num:  "1.3")
 
-  #item("Identificatiecodes bevatten geen interne leveranciersgegevens (zoals interne database-sleutels of servernamen).",
+  #item("Identificatiecodes bevatten geen interne leveranciersgegevens (zoals database-rij-ID's of serverhostnamen).",
     why:  "Anders vervallen de ID's met het contract.",
     refs: "MIM1 M1 §3.1",
     num:  "1.4")
@@ -362,7 +362,7 @@
       tr: "Deze semantiek is beschreven in een machineleesbaar formaat",
       en: "These semantics are described in a machine-readable format"),
     capability("C3", "Entities can be (de)referenced",
-      tr: "Entiteiten kunnen worden (ge)derefereerd"),
+      tr: "Entiteiten kunnen worden gerefereerd en gederefereerd"),
     req("R3.1",
       tr: "Er bestaat een methode om een relatie die op een entiteit is gedefinieerd te derefereren",
       en: "There exists a way to dereference a relation defined on an entity"),
@@ -404,7 +404,7 @@
     refs: "MIM2 R1.1",
     num:  "2.2")
 
-  #item("Uitbreidingen worden geleverd als gedocumenteerde profielen/toevoegingen bovenop het standaardmodel — nooit als een gewijzigde, afgesplitste versie.",
+  #item("Uitbreidingen worden geleverd als gedocumenteerde profielen/toevoegingen bovenop het standaardmodel — nooit als een gewijzigde private fork.",
     why:  "U behoudt compatibiliteit met de gebruikersgemeenschap en toekomstige updates.",
     refs: "MIM2 R1.2b, R4.1, R4.2",
     num:  "2.3")
@@ -416,7 +416,7 @@
 
   #panels(
     why:   ("Waarom dit van belang is", (
-      "Eén dashboard kan data van meerdere leveranciers inlezen zonder tussenkomst van koppelvlakken.",
+      "Eén dashboard kan data van meerdere leveranciers inlezen zonder tussenkomst van adapters.",
       "Uw data wordt direct begrepen door de applicaties van andere steden — en die van hen door de uwe.",
       "Geautomatiseerde validatie onderschept corrupte data voordat deze zich verspreidt.",
     )),
@@ -466,8 +466,8 @@
       tr: "Elk gebruikt datamodel moet ten minste één gedefinieerd machineleesbaar datatransportformaat (\"serialisatie\") hebben dat open, publiek beschikbaar en implementatie-onafhankelijk is.",
       en: "Each data model used shall have at least one defined machine-readable data transport format (“serialisation”) that is open, publicly available and implementation-independent."),
     req("R3.2",
-      tr: "De documentatie van het datatransportformaat zou voldoende moeten zijn om het bouwen van een niet-merkgebonden applicatie of interpreter mogelijk te maken die in staat is om alle data die in een dergelijk dataformaat is opgeslagen te reconstrueren.",
-      en: "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor that is able to reconstruct all the data stored in such a data format."),
+      tr: "De documentatie van het datatransportformaat zou voldoende moeten zijn om het bouwen van een leveranciersonafhankelijke applicatie of interpreter mogelijk te maken die in staat is alle data die in een dergelijk dataformaat is opgeslagen te reconstrueren.",
+      en: "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor [sic] that is able to reconstruct all the data stored in such a data format."),
     req("R3.3",
       tr: "Waar meerdere datatransportformaten worden ondersteund voor hetzelfde datamodel, moeten zij dezelfde informatie-inhoud consistent en zonder verlies van betekenis weergeven.",
       en: "Where multiple data transport formats are supported for the same data model, they shall represent the same information content consistently and without loss of meaning."),
@@ -480,7 +480,7 @@
       tr: "Toepassingsprofielen die een datamodel uitbreiden, zouden geen invloed moeten hebben op het reeds bestaande model en de gebruikers ervan",
       en: "Application Profiles that extend a data model should not impact the already existing model and its users"),
     req("R4.2",
-      tr: "De verbijzonderingen of uitbreidingen die in het toepassingsprofiel van het model worden geïntroduceerd, zouden goed moeten worden gedocumenteerd, los van het basisdatamodel",
+      tr: "De specialisaties of uitbreidingen die in het toepassingsprofiel van het model worden geïntroduceerd, zouden goed moeten worden gedocumenteerd, los van het basisdatamodel",
       en: "The specialisations or extensions introduced in the Application Profile of the model should be well documented, separate from the base data model"),
   )
 
@@ -498,7 +498,7 @@
     name:     "Uitwisselen van data",
     question: "Kunnen we delen onder heldere voorwaarden?",
     url:      "https://mims.oascities.org/exchanging-data",
-    intro:    "Niet alle gemeentelijke data kan openbaar worden gepubliceerd: sommige data is commercieel vertrouwelijk, andere privacygevoelig. MIM3 borgt dat ook deze data veilig kan worden gedeeld: via een doorzoekbare datacatalogus, standaardlicenties in plaats van maatwerkcontracten, en heldere governanceregels die voor iedereen toegankelijk zijn. De specificatie formuleert vrijwel de gehele MIM3 als een aanbeveling (zie blz. 3).",
+    intro:    "Niet alle gemeentelijke data kan eenvoudig worden gepubliceerd: sommige is commercieel, andere privacygevoelig. MIM3 borgt dat de rest alsnog veilig kan worden gedeeld: via een catalogus die men kan doorzoeken, licenties op basis van standaarden in plaats van juridisch maatwerk, en governanceregels die iedereen kan lezen. De specificatie formuleert vrijwel de gehele MIM3 als een aanbeveling (zie blz. 3).",
     list:     "Checklist",
   )
 
@@ -507,13 +507,13 @@
     refs: "MIM3 RC4.1–RC4.3",
     num:  "3.1")
 
-  #item("Voorwaarden en licenties voor datagebruik zijn gebaseerd op gangbare standaarden (bijv. open licenties, standaardovereenkomsten voor gegevensuitwisseling), niet op afzonderlijk opgesteld juridisch maatwerk per dataset.",
-    why:  "Afspraken zijn schaalbaar; juridische afdelingen vormen geen knelpunt.",
+  #item("Voorwaarden en licenties voor datagebruik zijn gebaseerd op algemeen bekende standaardsjablonen (bijv. open licenties, modelovereenkomsten voor gegevensuitwisseling), niet op afzonderlijk juridisch maatwerk per dataset.",
+    why:  "Afspraken schalen zonder juridische beoordeling per geval.",
     refs: "MIM3 RC2.2, RC2.3",
     num:  "3.2")
 
   #item("De gemeente kan zelfstandig bepalen wie onder welke voorwaarden toegang krijgt tot welke data, en kan dit wijzigen zonder tussenkomst van de leverancier.",
-    why:  "Het bestuur blijft bij de gemeente.",
+    why:  "De regie en data-governance blijven bij de gemeente.",
     refs: "MIM3 RC1.1, RC2.1",
     num:  "3.3")
 
@@ -524,7 +524,7 @@
       "Eén governancekader vervangt talloze afzonderlijke overeenkomsten voor gegevensuitwisseling.",
     )),
     flags: ("Alarmsignalen", (
-      "De leverancier claimt rechten op de data van de stad (zie het beding “Data-eigenaarschap”).",
+      "De leverancier claimt rechten op de data van de stad (zie het beding „Rechten op de data”).",
       "Delen met een derde vereist toestemming van of kosten aan de leverancier.",
     )),
   )
@@ -564,7 +564,7 @@
       tr: "Voorwaarden voor een gegevensuitwisseling zouden duidelijk en ondubbelzinnig moeten worden beschreven, zodat ze gemakkelijk begrijpelijk zijn voor datagebruikers.",
       en: "Terms and conditions for a data exchange should be described clearly and unambiguously so that they are easily understandable for data users."),
     req("RC2.3",
-      tr: "Voorwaarden voor een gegevensuitwisseling zouden moeten worden uitgedrukt via datalicenties of overeenkomsten voor gegevensuitwisseling gebaseerd op duidelijk gedefinieerde formats of standaarden.",
+      tr: "Voorwaarden voor een gegevensuitwisseling zouden moeten worden uitgedrukt via datalicenties of overeenkomsten voor gegevensuitwisseling gebaseerd op duidelijk gedefinieerde standaardsjablonen of standaarden.",
       en: "Terms and conditions for a data exchange should be expressed through data licences or data sharing agreements based on well-defined templates or standards."),
     req("RC2.4",
       tr: "Voorwaarden zouden in overeenstemming moeten zijn met het overkoepelende governancemodel van het data-ecosysteem en mogen er niet mee in strijd zijn. (Opmerking: Een dataleverancier kan besluiten niet deel te nemen aan een data-ecosysteem als het onderliggende governancemodel te restrictief of te permissief is.)",
@@ -641,7 +641,7 @@
   #mim-page(
     id:       "MIM6",
     name:     "Beveiligen van data",
-    question: "Is onze data veilig tijdens overdracht en gebruik?",
+    question: "Is onze data veilig?",
     url:      "https://mims.oascities.org/securing-data",
     intro:    "Slimme steden zijn aantrekkelijke doelwitten voor cyberaanvallen. MIM6 houdt de reikwijdte bewust scherp en praktisch: versleutel data tijdens transport, hanteer open standaarden voor authenticatie in plaats van eigen inlogsystemen, en beheer en log wie toegang heeft. Geen van deze eisen is bijzonder — alle moeten dwingend in de overeenkomst worden opgenomen.",
     list:     "Checklist",
@@ -662,7 +662,7 @@
     refs: "MIM6 R1.1, R1.3, 8.15",
     num:  "6.3")
 
-  #item("De leverancier moet aantonen te handelen conform ISO/IEC 27001:2022 (of gelijkwaardig) voor de geleverde dienstverlening.",
+  #item("De inschrijver toont aantoonbare aansluiting bij ISO/IEC 27001:2022 (of gelijkwaardig) aan voor de dienst die hij levert.",
     why:  "Informatiebeveiliging is een continu proces, geen eenmalige controle bij oplevering. De specificatie verwijst naar ISO/IEC 27001-beheersmaatregelen, niet specifiek naar een certificaat.",
     refs: "MIM6 C1–C3 (ISO/IEC 27001)",
     num:  "6.4",
@@ -672,7 +672,7 @@
     why:   ("Waarom dit van belang is", (
       "Een inbreuk in één systeem opent niet elk systeem.",
       "Voor zover NIS2 op u van toepassing is, wordt het aanzienlijk eenvoudiger om aan de Europese en nationale cyberbeveiligingsregels te voldoen.",
-      "Bij incidenten tonen de logs direct aan wat er is gebeurd en door wie.",
+      "Na een incident tonen de logs wat er is gebeurd en wie heeft gehandeld.",
     )),
     flags: ("Alarmsignalen", (
       "Alleen leveranciersspecifieke login.",
@@ -705,7 +705,7 @@
       tr: "De toewijzing en het beheer van authenticatie-informatie MOET worden beheerst door een beheerproces, inclusief het instrueren van personeel over de juiste omgang met authenticatie-informatie. (ISO 27001 5.17: Authenticatie-informatie)",
       en: "Allocation and management of authentication information SHALL be controlled by a management process, including advising personnel on appropriate handling of authentication information. (ISO 27001 5.17: Authentication information)"),
     req("R1.3",
-      tr: "Toegangsrechten tot informatie en andere bijbehorende bedrijfsmiddelen MOETEN worden verleend, beoordeeld, gewijzigd en ingetrokken in overeenstemming met het beleid van de organisatie inzake toegangsbeveiliging. (ISO 27001 5.18: Toegangsrechten)",
+      tr: "Toegangsrechten tot informatie en andere bijbehorende bedrijfsmiddelen MOETEN worden verleend, beoordeeld, gewijzigd en ingetrokken in overeenstemming met het beleid en de regels van de organisatie inzake toegangsbeheer. (ISO 27001 5.18: Toegangsrechten)",
       en: "Access rights to information and other associated assets SHALL be provisioned, reviewed, modified and removed in accordance with the organization’s topic-specific policy on and rules for access control. (ISO 27001 5.18: Access rights)"),
     capability("C2", "Data accessed by users has not been altered",
       tr: "Data die door gebruikers wordt geraadpleegd is niet gewijzigd"),
@@ -761,7 +761,7 @@
     refs: "MIM7 R1.1",
     num:  "7.1")
 
-  #item("Georuimtelijke data is gecodeerd in open standaarden (GeoJSON, CityJSON; GML/CityGML waar vereist).",
+  #item("Georuimtelijke data is gecodeerd in open formaten (GeoJSON, CityJSON; GML/CityGML waar vereist).",
     why:  "Geen conversielicenties, geen doodlopende wegen.",
     refs: "MIM7 R2.1",
     num:  "7.2")
@@ -806,7 +806,7 @@
     capability("C1", "Cities and communities can easily transfer geospatial data between internal and external (including IoT-related) IT systems",
       tr: "Steden en gemeenschappen kunnen georuimtelijke data eenvoudig uitwisselen tussen interne en externe (inclusief IoT-gerelateerde) IT-systemen"),
     req("R1.1",
-      tr: "Georuimtelijke data moet worden ontsloten via een op standaarden gebaseerde webservicestructuur.",
+      tr: "Georuimtelijke data moet worden ontsloten via een op standaarden gebaseerde webservice-interface.",
       en: "Geospatial data shall be exposed through a standards-based web service interface."),
     capability("C2", "Cities and communities can integrate 2D and 3D geospatial data coming from a variety of sources, for example geodata and building information models, and share that data within and between them in an interoperable way",
       tr: "Steden en gemeenschappen kunnen 2D- en 3D-georuimtelijke data uit uiteenlopende bronnen integreren, zoals geodata en bouwwerkinformatiemodellen, en die data op interoperabele wijze binnen en tussen organisaties delen"),
@@ -848,7 +848,7 @@
     list:     "Checklist",
   )
 
-  #item("Datasets, invoergegevens van rekenmodellen en simulatieresultaten zijn toegankelijk via API's (conform MIM0) en zitten niet opgesloten in de digitale tweeling.",
+  #item("Datasets, invoergegevens voor modellen en simulatieresultaten zijn toegankelijk via API's (conform MIM0) en zitten niet opgesloten in de digitale tweeling.",
     why:  "Resultaten voeden rapporten, dashboards en het volgende project.",
     refs: "MIM8 R1.1",
     num:  "8.1")
@@ -858,7 +858,7 @@
     refs: "MIM8 R3.1, R3.2",
     num:  "8.2")
 
-  #item("Uitvoerbestanden maken gebruik van open formaten (GeoJSON, CityJSON, 3D Tiles, NetCDF…) die kunnen worden verwerkt door software van derden.",
+  #item("Uitvoergegevens maken gebruik van standaardformaten (GeoJSON, CityJSON, 3D Tiles, NetCDF…) die leesbaar zijn voor tools van derden.",
     why:  "Visualisatie en data-analyse blijven een open en concurrerende markt.",
     refs: "MIM8 M2",
     num:  "8.3")
@@ -906,12 +906,12 @@
     capability("C2", "Exchange data with external systems and other LDTs using interoperable interfaces",
       tr: "Wissel data uit met externe systemen en andere LDT's met behulp van interoperabele interfaces"),
     req("C2",
-      tr: "Deze bekwaamheid steunt op MIM3 (Uitwisselen van data) voor gegevensuitwisseling.",
+      tr: "Deze functionaliteit steunt op MIM3 (Uitwisselen van data) voor gegevensuitwisseling.",
       en: "This capability relies on MIM3 (Exchanging Data) for data exchange."),
     capability("C3", "Reuse deterministic or AI models across different domains, communities, use cases, and/or LDTs",
       tr: "Hergebruik deterministische of AI-modellen over verschillende domeinen, gemeenschappen, use cases en/of LDT's heen"),
     req("R3.1",
-      tr: "Het model zou standaard modelmetadata moeten verstrekken, met inbegrip van een beschrijving van de methoden en parameters, en dataparameters (hetzij op waarde, hetzij op referentie). Hiertoe zouden gangbare metadatastandaarden moeten worden gebruikt.",
+      tr: "Het model zou standaard modelmetadata moeten verstrekken, met inbegrip van een beschrijving van de methoden en parameters, en dataparameters (op basis van waarde of referentie). Hiertoe zouden gangbare metadatastandaarden moeten worden gebruikt.",
       en: "The model should provide standard model metadata, including a description of its methods and parameters, and data-parameters (either by value or by reference). To this end common metadata standards should be used."),
     req("R3.2",
       tr: "Het model moet beschikbaar worden gesteld of aanroepbaar zijn via een gedocumenteerde interface, bij voorkeur met gebruik van een bekende gestandaardiseerde API. De dataset die het resultaat vormt van het model moet worden beschreven (op dataniveau).",
@@ -926,7 +926,7 @@
       tr: "Voor data die in AI-modellen wordt gebruikt, zouden herkomst en betrouwbaarheid moeten worden gegarandeerd. In sommige gevallen moet een gezaghebbende bron, zoals een overheidsinstantie, worden vermeld.",
       en: "For data to be used in AI models, provenance and trust should be guaranteed. In some cases, an authoratitive sourc [sic], such as a government agency must be listed."),
     capability("C4", "Coordinate and manage data, models, and processing workflows within an LDT (intra-LDT) and across LDTs (inter-LDT)",
-      tr: "Coördineer en beheer data, modellen en verwerkingswerkprocessen binnen een LDT (intra-LDT) en tussen LDT's (inter-LDT)"),
+      tr: "Coördineer en beheer data, modellen en verwerkingsworkflows binnen een LDT (intra-LDT) en tussen LDT's (inter-LDT)"),
     req("R4.1",
       tr: "De LDT ondersteunt werkprocessen die databronnen, datatransformaties, modeluitvoering, simulatieprocessen en resultaten met elkaar verbinden.",
       en: "The LDT supports workflows that connect data sources, data transformations, model execution, simulation processes, and outputs."),
@@ -986,19 +986,19 @@
 
   #clauses(
     clause("Exitregeling",
-      "Bij beëindiging van de overeenkomst wordt alle data van de gemeente (inclusief configuratiebestanden) zonder meerkosten overgedragen in open, gedocumenteerde formaten."),
+      "Bij beëindiging van de overeenkomst wordt alle data van de gemeente (inclusief configuratie) zonder meerkosten overgedragen in open, gedocumenteerde formaten."),
     clause("Rechten op de data",
       "Alle rechten op de gegevens die in het kader van de overeenkomst worden verzameld of daaruit worden afgeleid, berusten bij de aanbestedende dienst."),
-    clause("Geen kosten per gebruiker of per gegevensopvraag",
-      "Geen kosten voor de stad om toegang te krijgen tot haar eigen data."),
+    clause("Geen kosten voor eigen data",
+      "De aanbestedende dienst betaalt geen kosten voor toegang tot haar eigen data, noch per gebruiker noch per verzoek."),
     clause("API-stabiliteit en versiebeheer",
       "De leverancier garandeert achterwaartse compatibiliteit van de API gedurende de gehele looptijd van de overeenkomst. Wijzigingen die niet achterwaarts compatibel zijn, worden minimaal 6 maanden vooraf aangekondigd en als nieuwe versie uitgebracht, waarbij de voorgaande versie beschikbaar blijft tot de overeengekomen overstapdatum."),
     clause("Aantonen, niet beloven",
-      "Inschrijvers tonen de conformiteit aan tijdens de inschrijvingsbeoordeling in plaats van te volstaan met eigen verklaringen. Voor een API omvat dit gepubliceerde interactieve documentatie (zoals OpenAPI) en een werkende live-aanroep die geldige data retourneert. Elk aangevinkt punt wordt bij oplevering opnieuw getoetst."),
+      "Inschrijvers tonen de conformiteit aan tijdens de inschrijvingsbeoordeling in plaats van louter vormvrije verklaringen. Voor een API omvat dit gepubliceerde interactieve documentatie (zoals OpenAPI) en een werkende live-aanroep die geldige data retourneert. Elk aangevinkt punt wordt bij oplevering opnieuw getoetst."),
     clause("Vermelding van open normen",
-      "De aanbesteding vermeldt de bovenstaande normen; bij claims van compatibiliteit moeten de exacte interface en versie worden gespecificeerd. Elke verwijzing naar een norm of technische specificatie staat open voor een gelijkwaardige oplossing; de inschrijver toont de gelijkwaardigheid aan."),
+      "De aanbesteding noemt specifieke normen; claims van „compatibel met” moeten de exacte interface en versie vermelden. Elke verwijzing naar een norm of technische specificatie staat open voor een gelijkwaardige oplossing; de inschrijver toont de gelijkwaardigheid aan."),
     clause("Conformiteitsverklaring MIM's",
-      "De inschrijver vult de conformiteitstabel (blz. 23) in; deze vormt een integraal onderdeel van de overeenkomst."),
+      "De inschrijver vult de conformiteitstabel (blz. 28) in; deze wordt als bijlage aan de overeenkomst gehecht."),
   )
 ]
 #pagebreak()
@@ -1010,7 +1010,7 @@
 #fit-page("example")[
   #band("Voorbeeld: een gemeente koopt een netwerk van sensoren voor luchtkwaliteit in", id: "example")
 
-  #intro(size: 9.8pt, "Aangevinkte pagina's: MIM0, MIM1, MIM2, MIM6 en MIM7 (de data wordt op een kaart getoond). Van MIM3 uitsluitend punt 3.1 (luchtkwaliteitsdata wordt gepubliceerd als open data, dus opname in een catalogus is vereist); MIM8 is niet aangevinkt: er is hier geen sprake van een digitale tweeling.")
+  #intro(size: 9.8pt, "Aangevinkte pagina's: MIM0, MIM1, MIM2, MIM6 en MIM7 (de data wordt op een kaart getoond). Van MIM3 uitsluitend punt 3.1 (luchtkwaliteitsdata wordt gepubliceerd als open data, dus hoort thuis in een catalogus); MIM8 is niet van toepassing: het systeem is geen digitale tweeling.")
 
   #text(size: 10pt, weight: "bold", fill: eu-blue, "Wat hoort waar")
   #v(4pt)
@@ -1029,7 +1029,7 @@
        "de conformiteitstabel als verplichte bijlage bij de inschrijving: V, G of N voor elk punt, voorzien van bewijsvoering (URL naar API-documentatie, testtoegang)"),
       ("Conceptovereenkomst",
        "voorwaarden inzake de uitvoering van de opdracht (art. 70)",
-       "Exitregeling, Rechten op de data, Geen kosten per gebruiker of opvraag, API-stabiliteit en versiebeheer; de ingevulde conformiteitstabel als bijlage"),
+       "Exitregeling, Rechten op de data, Geen kosten voor eigen data, API-stabiliteit en versiebeheer; de ingevulde conformiteitstabel als bijlage"),
       ("Acceptatieprotocol",
        "voorwaarden inzake de uitvoering van de opdracht (art. 70)",
        "de kolom \"Geverifieerd\" van de conformiteitstabel als formeel testprotocol bij oplevering"),
@@ -1043,7 +1043,7 @@
     "4.3.3 De API biedt functionaliteit om data direct te filteren op tijdstip en locatie van de meting. (MIM0 R2.1, R2.2)",
     "… 4.3.4 tot en met 4.3.21: overige aangevinkte punten …",
     "4.3.22 Bij elke verwijzing naar een norm of technische specificatie is een gelijkwaardige oplossing toegestaan; de inschrijver toont de gelijkwaardigheid aan.",
-    "4.3.23 De inschrijver vult de conformiteitstabel (bijlage bij de aanbestedingsstukken) volledig in en levert het bewijs voor elk vereist onderdeel. De inschrijver toont de punten 4.3.1 tot en met 4.3.21 aan middels een live API-aanroep tijdens de beoordeling van de inschrijvingen; de aanbestedende dienst toetst deze opnieuw bij de oplevering en acceptatie. Het niet voldoen hieraan leidt tot weigering van acceptatie.",
+    "4.3.23 De inschrijver vult de conformiteitstabel (bijlage bij de aanbestedingsstukken) in en levert het bewijs voor elk vereist punt. Tijdens de beoordeling van de inschrijvingen toont de inschrijver de punten 4.3.1 tot en met 4.3.21 aan (bijvoorbeeld met een live API-aanroep); een inschrijving die niet voldoet aan een vereist punt, voldoet niet aan de minimumeisen van de opdracht. De aanbestedende dienst toetst de punten opnieuw bij acceptatie; een tekortkoming is dan een reden om acceptatie te weigeren.",
   ))
 
   #note(size: 9pt, "Punt 4.3.3 toont aan dat u een eis kunt toespitsen op de specifieke inkoopbehoefte: voor sensoren is filteren op tijd en meetlocatie functioneel zeer relevant.")
@@ -1061,7 +1061,7 @@
     ),
   )
 
-  #note(size: 9pt, gap: 5pt, "Een belofte voor de toekomst is N: de commissie controleert alleen wat de inschrijver kan aantonen.")
+  #note(size: 9pt, gap: 5pt, "Een belofte voor toekomstige functionaliteit geldt als N: de commissie controleert alleen wat de inschrijver kan aantonen. Voor een vereist punt betekent N dat de inschrijving niet voldoet aan de eisen voor het voorwerp van de opdracht.")
 
   #note(size: 9pt, gap: 5pt, "Pas de formuleringen aan op uw nationale aanbestedingswetgeving en laat de tekst toetsen door uw inkoopadviseur of jurist.")
 ]
@@ -1090,7 +1090,7 @@
   section("MIM1 · Heeft elk object een blijvende naam?",
     ("1.1", "Unieke persistente identificatiecode per entiteit", "MIM1 R1.1, R1.5"),
     ("1.2", "Opvragen van identificatiecode geeft data + type", "MIM1 R1.2, R2.1, R2.2"),
-    ("1.3", "Systeemoverschrijdende mapping van identificaties", "MIM1 R1.3, R1.4"),
+    ("1.3", "Systeemoverschrijdende mapping van identificatiecodes", "MIM1 R1.3, R1.4"),
     ("1.4", "Geen interne leveranciersgegevens in identificaties", "MIM1 M1 §3.1"),
   ),
   section("MIM2 · Spreken we een gemeenschappelijke taal?",
@@ -1104,7 +1104,7 @@
     ("3.2", "Standaardlicenties en modelovereenkomsten", "MIM3 RC2.2, RC2.3"),
     ("3.3", "Gemeente beheert toegangsregels zelfstandig", "MIM3 RC1.1, RC2.1"),
   ),
-  section("MIM6 · Is onze data veilig tijdens overdracht en gebruik?",
+  section("MIM6 · Is onze data veilig?",
     ("6.1", "Versleutelde overdracht (TLS 1.3)", "MIM6 R2.1, M1.1"),
     ("6.2", "Standaard inloggen (OAuth 2.0 / OIDC)", "MIM6 R3.1, M1.2, M1.3"),
     ("6.3", "Rolgebaseerde toegang en auditlogs", "MIM6 R1.1, R1.3, 8.15"),
@@ -1120,7 +1120,7 @@
     ("8.1", "Data en resultaten van tweeling via API's", "MIM8 R1.1"),
     ("8.2", "Modellen gedocumenteerd en aanroepbaar", "MIM8 R3.1, R3.2"),
     ("8.3", "Standaard uitvoerformaten", "MIM8 M2"),
-    ("8.4", "Herkomst van werkprocessen vastgelegd", "MIM8 R4.4"),
+    ("8.4", "Herkomst van data en resultaten in werkprocessen vastgelegd", "MIM8 R4.4"),
   ),
   section("Algemene contractbepalingen", accent: magenta, note: "De inschrijver verklaart zich akkoord met de contractvoorwaarde (V / N).",
     ("X.1", "Exitregeling: kosteloze overdracht in open formaten", "—"),
@@ -1149,7 +1149,7 @@
     term("DCAT-AP",
       "Europees metadataprofiel voor datacatalogi; zorgt dat datasets ook vindbaar zijn op nationale en Europese dataportalen."),
     term("EPSG",
-      "Register van numerieke codes voor coördinatenreferentiesystemen (bijv. EPSG:4326 voor WGS 84, of EPSG:28992 voor Amersfoort/RD Nieuw)."),
+      "Register van numerieke codes voor coördinatenreferentiesystemen (bijv. EPSG:4326 voor WGS 84)."),
     term("Identificatiecode",
       "Een blijvende, unieke aanduiding voor één object (één lantaarnpaal, één gebouw) die in alle systemen naar hetzelfde object verwijst."),
     term("Interoperabiliteit",
@@ -1167,7 +1167,7 @@
     term("OGC",
       "Open Geospatial Consortium: de internationale standaardisatieorganisatie voor georuimtelijke data en webservices (OGC API, WFS, SensorThings)."),
     term("Open standaard",
-      "Een technische regel die iedereen mag lezen en implementeren zonder te betalen of toestemming te vragen."),
+      "Een technische regel die iedereen kosteloos en zonder speciale toestemming mag lezen en implementeren."),
     term("OpenAPI",
       "Open formaat voor het machineleesbaar beschrijven van een web-API: eindpunten, parameters en antwoordformaten."),
     term("Serialisatie",
@@ -1175,7 +1175,7 @@
     term("TLS",
       "Het beveiligingsprotocol dat netwerkverkeer versleutelt (de technische basis onder HTTPS)."),
     term("Vendor lock-in",
-      "Wanneer het verlaten van een leverancier zoveel kost — in data, formaten of kosten — dat u feitelijk niet weg kunt."),
+      "Een situatie waarin de kosten van data, formaten of vergoedingen een verandering van leverancier praktisch onmogelijk maken."),
     term("Webhook / MQTT",
       "Twee methoden waarmee een systeem zelfstandig wijzigingen meldt: een webhook stuurt data direct naar uw URL, MQTT levert berichten af bij geabonneerde afnemers."),
   )

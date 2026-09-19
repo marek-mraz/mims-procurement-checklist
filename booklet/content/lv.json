@@ -1,16 +1,16 @@
 {
   "cover": {
-    "title": "Iepirkumu kontrolsaraksts · izmantojot minimālos · savietojamības mehānismus (MIMs)",
-    "subtitle": "Ko iekļaut iepirkumā, lai pilsēta saglabātu kontroli pār saviem datiem",
-    "tagline": "Paredzēts OASC MIMs Plus 9.0",
+    "title": "Iepirkumu kontrolsaraksts · balstīts uz minimālajiem · savietojamības mehānismiem (MIMs)",
+    "subtitle": "Ko norādīt iepirkuma dokumentācijā, lai pilsēta saglabātu kontroli pār saviem datiem",
+    "tagline": "Specifikācija: OASC MIMs Plus 9.0",
     "footer": "Eiropas pašvaldību iepirkumu speciālistiem, projektu vadītājiem un IT vadītājiem"
   },
   "why": {
-    "title": "Kāpēc šī brošūra ir nepieciešama",
+    "title": "Šīs brošūras mērķis",
     "paras": [
       "Katru gadu pilsētas iegādājas programmatūru: stāvvietu sistēmas, sensoru platformas, karšu portālus, digitālos dvīņus. Pārāk bieži šo sistēmu savāktie dati paliek tajās ieslēgti. Kad līgums beidzas, dati — par kuriem samaksāts ar publiskajiem līdzekļiem — aiziet kopā ar piegādātāju vai paliek iesprostoti formātā, ko neviens cits nespēj nolasīt.",
-      "Tā tam nav jābūt. Minimālie savietojamības mehānismi (MIMs), ko uztur organizācija Open & Agile Smart Cities (OASC) un atbalsta Eiropas kustība living-in.eu, apraksta minimālās tehniskās prasības, kas nodrošina datu atvērtību, atkārtotu izmantojamību un neatkarību no piegādātāja. Tie apzināti veidoti vienkārši: tā nav sarežģīta arhitektūra, bet tikai daži priekšnoteikumi, lai sistēmas spētu savstarpēji sazināties.",
-      "Lai tos izmantotu, nav jābūt inženierim. Katrs kontrolsaraksts pārvērš vienu MIM saprotamos kontrolsaraksta punktos, kurus varat iekļaut iepirkumā, vienlaikus paskaidrojot, kā katrs punkts aizsargā jūsu intereses. Tūlīt pēc kontrolsaraksta atrodama katra konkrētā MIM prasība vārdu pa vārdam, lai tehniskie kolēģi un pretendenti varētu iepazīties ar detaļām.",
+      "Tā tam nav jābūt. Minimālie savietojamības mehānismi (MIMs), ko uztur organizācija Open & Agile Smart Cities (OASC) un atbalsta Eiropas kustība living-in.eu, apraksta minimālās tehniskās prasības, kas nodrošina datu atvērtību, atkārtotu izmantojamību un neatkarību no piegādātāja. Tie apzināti veidoti nelieli: tā nav liela arhitektūra, bet tikai daži nosacījumi, kuriem jāizpildās, lai sistēmas spētu apmainīties ar datiem.",
+      "Lai izmantotu šo brošūru, nav nepieciešamas tehniskas priekšzināšanas. Katrs kontrolsaraksts pārvērš vienu MIM vienkāršos kontrolsaraksta punktos, kurus varat pārkopēt iepirkumā, paskaidrojot, kāpēc katrs no tiem jūs aizsargā. Tūlīt pēc kontrolsaraksta vārdu pa vārdam atrodama katra konkrētā MIM prasība, lai tehniskie kolēģi un pretendenti varētu iepazīties ar detaļām.",
       "Pilsētas, kas prasa MIMs ievērošanu, iepērk vienreiz un izmanto daudzkārt: gaisa kvalitātes dati papildina skolu informācijas paneļus, ielu apgaismojuma reģistrs kalpo enerģētikas plānam, un nākamais piegādātājs var turpināt darbu no vietas, kur iepriekšējais apstājās. Lūk, ko savietojamība nozīmē praksē — un tas arvien biežāk tiek prasīts ES finansētajos projektos."
     ],
     "quote": {
@@ -28,7 +28,7 @@
         {
           "name": "Datu akts",
           "ref": "Regula (ES) 2023/2854",
-          "text": "piekļuve savienoto izstrādājumu datiem un mākoņpakalpojumu sniedzēju maiņa bez piesaistes riskam."
+          "text": "piekļuve savienoto izstrādājumu datiem un mākoņpakalpojumu sniedzēju maiņa bez piesaistes riska piegādātājam."
         },
         {
           "name": "Savietojamas Eiropas akts",
@@ -72,7 +72,7 @@
       },
       {
         "name": "Vērtējiet",
-        "text": "Pieprasiet, lai pretendenti demonstrē, nevis tikai sola (sk. attiecīgo noteikumu). Pārbaudiet atbilstību, izmantojot pretendenta aizpildīto atbilstības tabulu."
+        "text": "Pieprasiet, lai pretendenti demonstrē, nevis tikai sola (sk. noteikumu „Demonstrēt, nevis solīt”). Pārbaudiet atbilstību, izmantojot pretendenta aizpildīto atbilstības tabulu."
       },
       {
         "name": "Pieņemiet",
@@ -99,15 +99,15 @@
       },
       "CAN": {
         "term": "VAR (CAN)",
-        "text": "iespējamība, nevis prasība. Norāda uz iespēju un nevienu neuzliek par pienākumu."
+        "text": "iespējamība, nevis prasība. Norāda uz iespēju un nevienam neuzliek pienākumu."
       }
     },
     "note": "Katram kontrolsaraksta punktam ir neliela atsauce, piemēram, → MIM0 R1.1. Tā apzīmē MIMs Plus 9.0 prasību, no kuras tas izriet; tūlīt pēc kontrolsaraksta atrodama katra konkrētā MIM prasība vārdu pa vārdam. Tikai MIM0 definē normatīvos atslēgvārdus: tiem ir saistošs spēks, ja tie rakstīti ar lielajiem burtiem saskaņā ar IETF RFC 2119 un RFC 8174 vienošanos (CAN izriet no ISO/IEC direktīvu 2. daļas). Pārējos MIM šādu definīciju nav: MIM6 lielākoties raksta SHALL ar lielajiem burtiem, MIM2, MIM3, MIM7 un MIM8 raksta shall, should un must ar mazajiem burtiem, bet MIM1 tos lieto tikai mehānisma aprakstā (MUST NOT 3.1. sadaļā). Šajā brošūrā vārdi ar mazajiem burtiem tiek traktēti tāpat; pretendents tos var interpretēt brīvāk.",
-    "legend_note": "Kontrolsaraksta punktos lietots vārds “jābūt” pat tad, ja specifikācijā ir tikai ieteikums (vajadzētu) vai minēts kandidātmehānisms. Tā ir līgumslēdzējas iestādes izvēle."
+    "legend_note": "Kontrolsaraksta punktos katrs punkts formulēts kā prasība pat tad, ja specifikācijā ir tikai ieteikums (vajadzētu) vai minēts kandidātmehānisms. Tā ir līgumslēdzējas iestādes izvēle."
   },
   "glance": {
     "title": "Septiņi MIM un trīs rīki",
-    "intro": "Septiņi nelieli mehānismi, viens mērķis: jūsu dati paliek jūsu rīcībā, un sistēmas spēj savstarpēji sazināties.",
+    "intro": "Septiņi nelieli mehānismi, viens mērķis: dati paliek pilsētas kontrolē un sistēmas spēj sadarboties.",
     "items": {
       "MIM0": {
         "name": "Piekļuve datiem",
@@ -192,18 +192,18 @@
         },
         {
           "text": "API ir formāli aprakstīts atvērtā, mašīnlasāmā dokumentā (piemēram, OpenAPI), kas publicēts nemainīgā adresē.",
-          "why": "Jebkurš izstrādātājs var izveidot savienojumu bez maksas “integrācijas semināriem”."
+          "why": "Jebkurš izstrādātājs var izveidot savienojumu bez maksas par „integrācijas semināriem”."
         },
         {
           "text": "Datus var filtrēt pēc laika, vietas un atribūtiem tieši API.",
-          "why": "Jūs saņemat to, kas nepieciešams, nevis pilnu datu izgūšanu katru nakti."
+          "why": "Jūs saņemat to, kas nepieciešams, nevis pilnu datu izvilkumu (dump) katru nakti."
         },
         {
-          "text": "Ja lietojuma gadījumā nepieciešami reāllaika dati, lietotāji var abonēt izmaiņas (tīmekļa āķi, MQTT vai līdzīgi), nevis nepārtraukti veikt pieprasījumus.",
+          "text": "Ja lietojuma gadījumā nepieciešami reāllaika dati, lietotāji var abonēt izmaiņas (webhook, MQTT vai līdzīgi), nevis nepārtraukti veikt pieprasījumus.",
           "why": "Reāllaika paneļi un brīdinājumi kļūst iespējami un lēti."
         },
         {
-          "text": "Kļūdas, kešatmiņa un pieprasījumu ierobežojumi izmanto standarta HTTP metodes un ir dokumentēti.",
+          "text": "Kļūdu paziņojumi, cache un pieprasījumu ierobežojumi izmanto standarta HTTP konvencijas un ir dokumentēti.",
           "why": "Integrācijas kļūmes tiek skaidri pamanītas un novērstas, nevis paliek apslēptas."
         }
       ],
@@ -215,7 +215,7 @@
       "red_flags": [
         "“Datu eksports pēc pieprasījuma, sazinoties ar mūsu atbalsta dienestu.”",
         "“API ir pieejams kā maksas papildmodulis.”",
-        "Maksa par katru pieprasījumu pilsētas pašas datiem (sk. noteikumu “Bez maksas par lietotāju vai pieprasījumu”)."
+        "Maksa par katru pieprasījumu pilsētas pašas datiem (sk. noteikumu „Bez maksas par saviem datiem”)."
       ]
     },
     "MIM1": {
@@ -261,10 +261,10 @@
         },
         {
           "text": "Visi izmantotie datu modeļi ir skaidri dokumentēti, norādot mērvienības un datuma/laika formātus.",
-          "why": "“Temperatūra: 23” ir bezjēdzīga, ja neviens nav piefiksējis, vai tie ir °C vai °F."
+          "why": "“Temperatūra: 23” ir bezjēdzīga, ja neviens nav norādījis, vai tie ir °C vai °F."
         },
         {
-          "text": "Paplašinājumi tiek piegādāti kā dokumentēti profili/papildinājumi standarta modelim — nekad kā modificēts privāts atzars.",
+          "text": "Paplašinājumi tiek piegādāti kā dokumentēti profili/papildinājumi standarta modelim — nekad kā modificēts privāts fork.",
           "why": "Jūs saglabājat saderību ar kopienu un turpmākajiem atjauninājumiem."
         },
         {
@@ -278,22 +278,22 @@
         "Automātiska validācija atklāj kļūdainus datus, pirms tie izplatās."
       ],
       "red_flags": [
-        "“Mūsu patentētais datu modelis ir bagātāks par standartu.”",
+        "“Mūsu slēgtais datu modelis ir bagātāks par standartu.”",
         "Dokumentācija pieejama tikai ar NDA."
       ]
     },
     "MIM3": {
       "name": "Datu apmaiņa",
       "question": "Vai varam kopīgot datus ar skaidriem nosacījumiem?",
-      "intro": "Ne visus pilsētas datus var vienkārši publicēt: daži ir komerciāli, daži sensitīvi. MIM3 paredz pārējo datu drošu kopīgošanu: meklējamu katalogu, licences uz paraugu bāzes, nevis pielāgotus juridiskus tekstus, un pārvaldības noteikumus, ko var izlasīt ikviens. Specifikācijā gandrīz viss MIM3 formulēts kā ieteikums (sk. 3. lpp.).",
+      "intro": "Ne visus pilsētas datus var vienkārši publicēt: daži ir komerciāli, daži sensitīvi. MIM3 paredz pārējo datu drošu kopīgošanu: meklējamu katalogu, licences uz paraugu bāzes, nevis pielāgotu juridisko tekstu, un pārvaldības noteikumus, ko var izlasīt ikviens. Specifikācijā gandrīz viss MIM3 formulēts kā ieteikums (sk. 3. lpp.).",
       "items": [
         {
           "text": "Katra sistēmas piedāvātā datu kopa tiek aprakstīta ar standarta metadatiem (piemēram, DCAT-AP) katalogā, lai citi to varētu atrast.",
           "why": "Dati, kurus neviens nevar atrast, ir dati, kurus neviens neizmanto."
         },
         {
-          "text": "Datu izmantošanas noteikumi un licences ir balstītas uz plaši zināmiem paraugiem (piem., atvērtām licencēm, standarta datu kopīgošanas līgumiem), nevis pielāgotiem juridiskiem tekstiem katrai datu kopai.",
-          "why": "Vienošanās ir mērogojamas; juristi nekļūst par šķērsli procesam."
+          "text": "Datu izmantošanas noteikumi un licences ir balstīti uz plaši zināmiem paraugiem (piem., atvērtām licencēm, standarta datu kopīgošanas līgumiem), nevis uz pielāgotu juridisku tekstu katrai datu kopai.",
+          "why": "Vienošanās ir mērogojamas bez atsevišķas juridiskās izvērtēšanas katrā gadījumā."
         },
         {
           "text": "Pilsēta var noteikt, kurš drīkst piekļūt konkrētiem datu aktīviem un ar kādiem nosacījumiem, un mainīt to bez piegādātāja iesaistes.",
@@ -306,13 +306,13 @@
         "Viens noteikumu kopums aizstāj daudzus individuālus datu kopīgošanas līgumus."
       ],
       "red_flags": [
-        "Piegādātājs piesaka tiesības uz pilsētas datiem (sk. noteikumu “Datu īpašumtiesības”).",
+        "Piegādātājs piesaka tiesības uz pilsētas datiem (sk. noteikumu „Tiesības uz datiem”).",
         "Datu kopīgošanai ar trešo pusi nepieciešama piegādātāja piekrišana vai papildu maksa."
       ]
     },
     "MIM6": {
       "name": "Datu drošība",
-      "question": "Vai mūsu dati ir drošībā pārraidē un lietošanā?",
+      "question": "Vai mūsu dati ir drošībā?",
       "intro": "Viedās pilsētas ir mērķis uzbrukumiem. MIM6 saglabā apzināti šauru un praktisku tvērumu: šifrēt datus kustībā, izmantot standarta pieteikšanos, nevis patentētus risinājumus, kontrolēt un reģistrēt, kurš kam piekļūst. Nekas no tā nav eksotisks — visam jābūt iekļautam līgumā.",
       "items": [
         {
@@ -329,14 +329,14 @@
         },
         {
           "label": "Jāiekļauj dalības nosacījumos, nevis tehniskajā specifikācijā",
-          "text": "Piegādātājam jāapliecina atbilstība ISO/IEC 27001:2022 (vai ekvivalentam) pakalpojumam, ko tas nodrošina.",
+          "text": "Pretendents apliecina atbilstību standartam ISO/IEC 27001:2022 (vai ekvivalentam) pakalpojumam, ko tas nodrošina.",
           "why": "Drošība ir process, nevis tikai atzīme pieņemšanas brīdī. Specifikācijā ir minētas ISO/IEC 27001 kontroles, nevis pats sertifikāts."
         }
       ],
       "why_panel": [
         "Drošības pārkāpums vienā sistēmā neatver piekļuvi visām sistēmām.",
         "Ja uz jums attiecas NIS2, atbilstības nodrošināšana tai un valsts kiberdrošības noteikumiem kļūst ievērojami vienkāršāka.",
-        "Ja kaut kas noiet greizi, žurnāli parāda, kas un ko tieši izdarīja."
+        "Pēc incidenta žurnāli parāda, kas notika un kurš rīkojās."
       ],
       "red_flags": [
         "Tikai patentēta pieteikšanās.",
@@ -390,7 +390,7 @@
           "why": "Vienreiz iegādātu plūdu modeli var atkārtoti izmantot dažādās nodaļās — un arī citās pilsētās."
         },
         {
-          "text": "Izvaddatos tiek izmantoti standarta formāti (GeoJSON, CityJSON, 3D Tiles, NetCDF…), ko var izmantot rīki, kurus neiepērkat no šī piegādātāja.",
+          "text": "Izvaddatos tiek izmantoti standarta formāti (GeoJSON, CityJSON, 3D Tiles, NetCDF…), ko var nolasīt trešo pušu rīki.",
           "why": "Vizualizācija un analīze paliek konkurētspējīgs tirgus."
         },
         {
@@ -423,8 +423,8 @@
         "text": "Visas tiesības uz līguma ietvaros savāktajiem un atvasinātajiem datiem pieder līgumslēdzējai iestādei."
       },
       {
-        "name": "Bez maksas par lietotāju vai pieprasījumu",
-        "text": "Netiek piemērota maksa par pilsētas piekļuvi tās pašas datiem."
+        "name": "Bez maksas par saviem datiem",
+        "text": "Līgumslēdzēja iestāde nemaksā par piekļuvi saviem datiem nedz par lietotāju, nedz par pieprasījumu."
       },
       {
         "name": "API stabilitāte un versiju pārvaldība",
@@ -432,11 +432,11 @@
       },
       {
         "name": "Demonstrēt, nevis solīt",
-        "text": "Pretendenti piedāvājumu vērtēšanas laikā demonstrē atbilstību, nevis iesniedz pašdeklarācijas. API gadījumā tas nozīmē publicētu interaktīvu dokumentāciju (piemēram, OpenAPI) un reāllaika izsaukumu, kas atgriež derīgus datus. Katrs atzīmētais punkts tiek atkārtoti pārbaudīts pieņemšanas laikā."
+        "text": "Pretendenti piedāvājumu vērtēšanas laikā demonstrē atbilstību, nevis iesniedz pašapliecinājumus. API gadījumā tas nozīmē publicētu interaktīvu dokumentāciju (piemēram, OpenAPI) un reāllaika izsaukumu, kas atgriež derīgus datus. Katrs atzīmētais punkts tiek atkārtoti pārbaudīts pieņemšanas laikā."
       },
       {
         "name": "Norādīti atvērtie standarti",
-        "text": "Iepirkumā tiek norādīti iepriekš minētie standarti; apgalvojumos par saderību jānorāda precīza saskarne un versija. Katra atsauce uz standartu vai tehnisko specifikāciju pieļauj ekvivalentu risinājumu; pretendents pierāda ekvivalenci."
+        "text": "Iepirkumā tiek norādīti konkrēti standarti; apgalvojumos par saderību jānorāda precīza saskarne un versija. Katra atsauce uz standartu vai tehnisko specifikāciju pieļauj ekvivalentu risinājumu; pretendents pierāda ekvivalenci."
       },
       {
         "name": "Apliecinājums par atbilstību MIMs",
@@ -446,7 +446,7 @@
   },
   "example": {
     "title": "Piemērs: pilsēta iepērk gaisa kvalitātes sensoru tīklu",
-    "scenario": "Atzīmētās lapas: MIM0, MIM1, MIM2, MIM6 un MIM7 (dati tiek parādīti kartē). No MIM3 tikai 3.1. punkts (gaisa kvalitātes dati tiek publicēti kā atvērtie dati, tādēļ tie iekļaujami katalogā); MIM8 netiek iekļauts: tas nav digitālais dvīnis.",
+    "scenario": "Atzīmētās lapas: MIM0, MIM1, MIM2, MIM6 un MIM7 (dati tiek parādīti kartē). No MIM3 tikai 3.1. punkts (gaisa kvalitātes dati tiek publicēti kā atvērtie dati, tādēļ tie pieder katalogam); MIM8 nav piemērojams: sistēma nav digitālais dvīnis.",
     "table_title": "Kas kurā vietā jāiekļauj",
     "table_headers": [
       "Dokuments",
@@ -471,12 +471,12 @@
       ],
       [
         "Līguma projekts",
-        "līguma izpildes noteikumi (70. pants)",
-        "Līguma izbeigšanas noteikums, Datu īpašumtiesības, Bez maksas par lietotāju vai pieprasījumu, API stabilitāte un versiju pārvaldība; aizpildītā atbilstības tabula kā pielikums"
+        "līguma izpildes nosacījumi (70. pants)",
+        "Līguma izbeigšanas noteikums, Tiesības uz datiem, Bez maksas par saviem datiem, API stabilitāte un versiju pārvaldība; aizpildītā atbilstības tabula kā pielikums"
       ],
       [
         "Pieņemšanas akts",
-        "līguma izpildes noteikumi (70. pants)",
+        "līguma izpildes nosacījumi (70. pants)",
         "atbilstības tabulas kolonna “Pārbaudīts” kā pārbaudes protokols"
       ]
     ],
@@ -488,7 +488,7 @@
       "4.3.3 API nodrošina datu filtrēšanu pēc mērījuma laika un vietas. (MIM0 R2.1, R2.2)",
       "… no 4.3.4 līdz 4.3.21: pārējie atzīmētie punkti …",
       "4.3.22 Katra atsauce uz standartu vai tehnisko specifikāciju pieļauj ekvivalentu risinājumu; pretendents pierāda ekvivalenci.",
-      "4.3.23 Pretendents aizpilda atbilstības tabulu (iepirkuma dokumentu pielikums) un sniedz pierādījumus par katru prasīto punktu. Pretendents demonstrē punktus no 4.3.1 līdz 4.3.21 ar reāllaika API izsaukumu piedāvājumu vērtēšanas laikā; līgumslēdzēja iestāde tos atkārtoti pārbauda pieņemšanas laikā. Prasību neizpilde ir pamats atteikt pieņemšanu."
+      "4.3.23 Pretendents aizpilda atbilstības tabulu (iepirkuma dokumentācijas pielikums) un iesniedz pierādījumus par katru prasīto punktu. Piedāvājumu vērtēšanas laikā pretendents demonstrē punktus no 4.3.1 līdz 4.3.21 (piemēram, ar reāllaika API izsaukumu); piedāvājums, kas neatbilst prasītajam punktam, neatbilst tehniskās specifikācijas prasībām. Līgumslēdzēja iestāde pārbauda punktus vēlreiz pieņemšanas laikā; prasību neizpilde šajā posmā ir pamats atteikt pieņemšanu."
     ],
     "tip": "Punkts 4.3.3 parāda, ka prasību var precizēt atbilstoši iepirkuma priekšmetam: sensoriem ir pamatoti pieprasīt filtrēšanu pēc mērījuma laika un vietas.",
     "note": "Pielāgojiet formulējumu nacionālajiem tiesību aktiem un nododiet to pārbaudei par iepirkumu atbildīgajai personai.",
@@ -516,12 +516,12 @@
         "✓"
       ]
     ],
-    "filled_note": "Solījums par nākotni ir N: komisija pārbauda tikai to, ko pretendents var demonstrēt."
+    "filled_note": "Nākotnes funkcionalitātes solījums tiek uzskatīts par N: komisija pārbauda tikai to, ko pretendents var uzrādīt. Obligātajam punktam vērtējums N nozīmē, ka piedāvājums neatbilst iepirkuma priekšmeta prasībām."
   },
   "tearout": {
     "title": "Atbilstības tabula",
     "intro": "Viena rinda katram punktam. Līgumslēdzēja iestāde atzīmē līgumam nepieciešamo un pievieno tabulu iepirkuma dokumentiem kā obligātu piedāvājuma pielikumu. Par katru prasīto punktu pretendents norāda A (atbilst), E (atbilst ar ekvivalentu) vai N (neatbilst), īsi paskaidro, kā tas tiek nodrošināts, un norāda pierādījumu atrašanās vietu: dokumentācijas adresi, testa piekļuvi, piedāvājuma lappusi. Ar vienkāršu deklarāciju bez pierādījumiem nepietiek. Vērtēšanas komisija pārbauda katru punktu, vērtējot piedāvājumus, un atkārtoti pieņemšanas laikā (✓ apstiprināts, ✗ nav apstiprināts, — nav pārbaudīts).",
-    "intro2": "Aizpildītā tabula ir piedāvājuma sastāvdaļa un kļūst par līguma pielikumu. Tā pārbauda, vai ir izpildītas iepirkuma priekšmeta prasības (atbilst vai neatbilst); tas nav piedāvājuma izvērtēšanas kritērijs. Lai vērtētu atbilstības pakāpi ar punktiem, tas jānorāda iepirkuma dokumentos iepriekš publicētajos piedāvājuma izvērtēšanas kritērijos (Direktīva 2014/24/ES, 67. pants).",
+    "intro2": "Aizpildītā tabula ir piedāvājuma sastāvdaļa un kļūst par līguma pielikumu. Tā pārbauda, vai ir izpildītas iepirkuma priekšmeta prasības (atbilst vai neatbilst); tas nav līguma slēgšanas tiesību piešķiršanas kritērijs. Lai vērtētu atbilstības pakāpi ar punktiem, tas jānorāda iepirkuma dokumentos iepriekš publicētajos līguma slēgšanas tiesību piešķiršanas kritērijos (Direktīva 2014/24/ES, 67. pants).",
     "headers": [
       "#",
       "Prasība (saīsināti)",
@@ -588,7 +588,7 @@
       "Izbeigšana: bezmaksas nodošana atvērtos formātos",
       "Tiesības uz datiem pieder līgumslēdzējai iestādei",
       "Bez maksas par piekļuvi saviem datiem",
-      "API stabilitāte: versijas, 6 mēn. brīdinājums"
+      "API stabilitāte: versijas, 6 mēn. brīdinājums par nesavietojamām izmaiņām"
     ]
   },
   "glossary": {
@@ -644,7 +644,7 @@
       },
       {
         "t": "Atvērts standarts",
-        "d": "Tehnisks noteikums, ko ikviens var lasīt un ieviest bez maksas vai atļaujas prasīšanas."
+        "d": "Tehnisks noteikums, kuru ikviens var lasīt un ieviest bez maksas un bez īpašas atļaujas."
       },
       {
         "t": "OpenAPI",
@@ -660,7 +660,7 @@
       },
       {
         "t": "Piesaiste piegādātājam",
-        "d": "Situācija, kad piegādātāja maiņa prasa tik daudz līdzekļu — datu, formātu vai maksājumu dēļ —, ka to faktiski nav iespējams izdarīt."
+        "d": "Stāvoklis, kurā datu, formātu vai maksājumu izmaksas padara piegādātāja maiņu praktiski neiespējamu."
       },
       {
         "t": "Tīmekļa āķis / MQTT",
@@ -681,13 +681,13 @@
     "author": "Brošūras autors: Marek Mráz"
   },
   "quote_translations": {
-    "MIM0 · R1.1": "Sistēmām JĀBŪT tādām, kas ļauj izgūt datus vismaz vienā mašīnlasāmā formātā. Formātus var norādīt, izmantojot HTTP satura saskaņošanu",
+    "MIM0 · R1.1": "Sistēmām JĀĻAUJ izgūt datus vismaz vienā mašīnlasāmā formātā. Formātus var norādīt, izmantojot HTTP satura saskaņošanu",
     "MIM0 · R1.2": "Datiem JĀBŪT izgūstamiem, izmantojot vismaz vienu standarta tīmekļa mehānismu",
     "MIM0 · R1.3": "Piekļuves mehānismam(-iem) JĀBŪT formāli aprakstītam(-iem)",
-    "MIM0 · R1.4": "Datu modeļiem, ko izmanto datu derīgajā kravā, vajadzētu būt norādītiem (sk. MIM2)",
+    "MIM0 · R1.4": "Datu modeļiem, ko izmanto datu saturā (payload), vajadzētu būt norādītiem (sk. MIM2)",
     "MIM0 · R2.1": "Sistēmām JĀBŪT tādām, kas nodrošina datus, izmantojot strukturētu un konsekventu saskarni",
     "MIM0 · R2.2": "Sistēmām JĀBŪT tādām, kas atbalsta pamata vaicājumus un/vai filtrēšanu (piem., pēc laika, atrašanās vietas, atribūtiem)",
-    "MIM0 · C2": "API VAJADZĒTU atbalstīt pašreizējo datu izgūšanu · API VAJADZĒTU atbalstīt vēsturisko datu izgūšanu, ja piemērojams · API VAJADZĒTU atbalstīt ģeotelpiskos vaicājumus, ja piemērojams (sk. MIM7) · API VAJADZĒTU atbalstīt izmaiņu abonēšanu, ja piemērojams · API VAJADZĒTU uzrādīt nākamā paredzamā atjauninājuma laika zīmogu · API VAJADZĒTU atbalstīt skaidru galapunktu versiju pārvaldību · API VAJADZĒTU nodrošināt derīgās kravas piemērus vai testa vaicājumus · API VAJADZĒTU atbalstīt standarta HTTP kešatmiņas galvenes · API VAJADZĒTU paziņot par pieprasījumu limita statusu, izmantojot standarta HTTP galvenes · API VAJADZĒTU atgriezt strukturētu kļūdas pamattekstu · API DRĪKST atbalstīt daļējas atbildes vai vaicājumu projekcijas · API DRĪKST nodrošināt standarta darbspējas/statusa galapunktu",
+    "MIM0 · C2": "API VAJADZĒTU atbalstīt pašreizējo datu izgūšanu · API VAJADZĒTU atbalstīt vēsturisko datu izgūšanu, ja piemērojams · API VAJADZĒTU atbalstīt ģeotelpiskos vaicājumus, ja piemērojams (sk. MIM7) · API VAJADZĒTU atbalstīt izmaiņu abonēšanu, ja piemērojams · API VAJADZĒTU uzrādīt nākamā paredzamā atjauninājuma laika zīmogu · API VAJADZĒTU atbalstīt skaidru endpoint versiju pārvaldību · API VAJADZĒTU nodrošināt derīgās kravas piemērus vai testa vaicājumus · API VAJADZĒTU atbalstīt standarta HTTP kešatmiņas galvenes · API VAJADZĒTU paziņot par pieprasījumu limita statusu, izmantojot standarta HTTP galvenes · API VAJADZĒTU atgriezt strukturētu kļūdas pamattekstu · API DRĪKST atbalstīt daļējas atbildes vai vaicājumu projekcijas · API DRĪKST nodrošināt standarta darbspējas/statusa endpoint",
     "MIM0 · R3.1": "Sistēmām lietojuma gadījumos, kuros nepieciešami paziņojumi, JĀBŪT nodrošinātam vismaz vienam mehānismam atjauninājumu saņemšanai par datu izmaiņām",
     "MIM0 · R3.2": "Sistēmas DRĪKST atbalstīt vairākus abonēšanas mehānismus atkarībā no lietojuma gadījuma",
     "MIM0 · C4": "Ja šādi ierobežojumi ir noteikti, tiem JĀBŪT saskaņā ar MIM3 un MIM6 noteiktajām prasībām, konkrēti: dalībnieku identifikācija (MIM3.C5.R0), autorizācija un dalībnieku lomas (MIM6.C1.R4), datu aktīvu līmeņa politikas (MIM6.C1.R4)",
@@ -698,7 +698,7 @@
     "MIM1 · R1.5": "Ir iespējams izveidot identifikatorus, kas ir noturīgi laikā",
     "MIM1 · R2.1": "Pastāv veids, kā iegūt objekta semantiku, izmantojot tikai tā unikālo identifikatoru",
     "MIM1 · R2.2": "Šī semantika ir aprakstīta mašīnlasāmā formātā",
-    "MIM1 · R3.1": "Pastāv veids, kā atsaukties uz objektam definētu relāciju",
+    "MIM1 · R3.1": "Pastāv veids, kā dereferencēt objektam definētu relāciju",
     "MIM1 · R3.2": "Pastāv veids, kā piemērot papildu semantiku esošai ontoloģijai",
     "MIM2 · R1.1": "Datu modeļiem, ko izmanto visiem objektiem jebkurā datu avotā, jābūt skaidri norādītiem. Tiem jābūt labi dokumentētiem un ar aprakstošiem metadatiem, kur izmantotie termini ir semantiski viennozīmīgi. Atribūtiem, kas saistīti ar mērvienībām, laika formātiem utt., izmantotajām mērvienībām, formātiem utt. jābūt skaidri norādītiem. Datu modeļus vajadzētu iekļaut katalogā, lai tie būtu viegli atrodami.",
     "MIM2 · R1.2a": "Izmantotajiem datu modeļiem (kur vien iespējams) jābalstās uz vispāratzītiem standartizētiem datu modeļiem, kā norādīts tālāk",
@@ -711,13 +711,13 @@
     "MIM2 · R3.4": "Reprezentācijai vajadzētu atbalstīt validāciju, izmantojot atklāti publicētas shēmas, gramatikas vai līdzvērtīgus mašīnlasāmus ierobežojumus, ja izvēlētajam formātam šādi validācijas mehānismi pastāv.",
     "MIM2 · R4.1": "Lietojumprogrammu profiliem, kas paplašina datu modeli, nevajadzētu ietekmēt jau esošo modeli un tā lietotājus",
     "MIM2 · R4.2": "Modeļa lietojumprogrammas profilā ieviestajām specializācijām vai paplašinājumiem vajadzētu būt labi dokumentētiem, atsevišķi no bāzes datu modeļa",
-    "MIM3 · RC1.1": "Datu ekosistēmas vadītājam vajadzētu spēt definēt pārvaldības modeli (piemēram, noteikumu kopumu), kurā izklāstīti dalības noteikumi, ekosistēmas dalībnieku lomas, pienākumi un saistības, kā arī vispārējie principi, kas regulē datu apmaiņu starp tiem.",
+    "MIM3 · RC1.1": "Datu ekosistēmas orķestratoram vajadzētu spēt definēt pārvaldības modeli (piemēram, noteikumu kopumu), kurā izklāstīti dalības noteikumi, ekosistēmas dalībnieku lomas, pienākumi un saistības, kā arī vispārējie principi, kas regulē datu apmaiņu starp tiem.",
     "MIM3 · RC1.2": "Dalībniekiem, kuri piedalās datu ekosistēmā, vajadzētu būt informētiem par tās pārvaldības modeli un jebkādām tajā veiktajām izmaiņām.",
     "MIM3 · RC1.3": "Pārvaldības modelim vajadzētu būt viegli saprotamam visiem ekosistēmas dalībniekiem.",
     "MIM3 · RC2.1": "Datu sniedzēji var brīvi noteikt noteikumus un nosacījumus, saskaņā ar kuriem tie vēlas nodrošināt savu datu apmaiņu. (Piezīme: Pirms datu aktīvu kopīgošanas datu sniedzējiem vajadzētu pārliecināties, ka tiem ir atbilstoša datu īpašnieku atļauja.)",
     "MIM3 · RC2.2": "Datu apmaiņas noteikumiem un nosacījumiem vajadzētu būt aprakstītiem skaidri un viennozīmīgi, lai tie būtu viegli saprotami datu lietotājiem.",
     "MIM3 · RC2.3": "Datu apmaiņas noteikumiem un nosacījumiem vajadzētu būt izteiktiem ar datu licencēm vai datu kopīgošanas līgumiem, kuru pamatā ir skaidri definēti paraugi vai standarti.",
-    "MIM3 · RC2.4": "Noteikumiem un nosacījumiem vajadzētu atbilst datu ekosistēmas vispārējam pārvaldības modelim, un tie NEDRĪKST būt pretrunā ar to. (Piezīme: Datu sniedzējs var izlemt nepiedalīties datu ekosistēmā, ja tās pamatā esošais pārvaldības modelis ir pārāk ierobežojošs vai pārāk pieļaujošs.)",
+    "MIM3 · RC2.4": "Noteikumiem un nosacījumiem vajadzētu atbilst datu ekosistēmas vispārējam pārvaldības modelim, un tie nedrīkst būt pretrunā ar to. (Piezīme: Datu sniedzējs var izlemt nepiedalīties datu ekosistēmā, ja tās pamatā esošais pārvaldības modelis ir pārāk ierobežojošs vai pārāk pieļaujošs.)",
     "MIM3 · RC3.1": "Datu ekosistēmas vadītājam jāspēj pārliecināties par tās dalībnieku atbilstību pamatā esošajam pārvaldības modelim.",
     "MIM3 · RC3.2": "Datu sniedzējiem vajadzētu spēt pārliecināties, ka datu lietotāja veikta datu izmantošana atbilst iepriekš saskaņotajiem noteikumiem un nosacījumiem.",
     "MIM3 · RC3.3": "Datu lietotājiem vajadzētu spēt pārliecināties, ka datu sniedzēja veiktā datu piegāde atbilst iepriekš saskaņotajiem noteikumiem un nosacījumiem.",
@@ -736,12 +736,12 @@
     "MIM3 · RC7.2": "Datu sniedzējiem vajadzētu spēt saņemt datu lietotāju izteiktos pieprasījumus pēc jauniem datu aktīviem.",
     "MIM6 · R1.1": "Noteikumiem fiziskās un loģiskās piekļuves kontrolei informācijai un citiem saistītajiem aktīviem JĀBŪT izstrādātiem un ieviestiem, pamatojoties uz darbības un informācijas drošības prasībām. (ISO 27001 5.15 Piekļuves kontrole)",
     "MIM6 · R1.2": "Autentifikācijas informācijas piešķiršanai un pārvaldībai JĀBŪT kontrolētai ar pārvaldības procesu, tostarp konsultējot personālu par atbilstošu rīcību ar autentifikācijas informāciju. (ISO 27001 5.17: Autentifikācijas informācija)",
-    "MIM6 · R1.3": "Piekļuves tiesībām informācijai un citiem saistītajiem aktīviem JĀBŪT piešķirtām, pārskatītām, modificētām un atceltām saskaņā ar organizācijas konkrētajai tēmai veltīto politiku un piekļuves kontroles noteikumiem. (ISO 27001 5.18: Piekļuves tiesības)",
+    "MIM6 · R1.3": "Piekļuves tiesībām informācijai un citiem saistītajiem aktīviem JĀBŪT piešķirtām, pārskatītām, modificētām un atceltām saskaņā ar organizācijas tematiskajām rīcībpolitikām un piekļuves kontroles noteikumiem. (ISO 27001 5.18: Piekļuves tiesības)",
     "MIM6 · R2.1": "Kriptogrāfijas efektīvas izmantošanas noteikumiem, tostarp kriptogrāfisko atslēgu pārvaldībai, JĀBŪT definētiem un ieviestiem. (ISO 27001 8.24 Kriptogrāfijas izmantošana)",
     "MIM6 · R3.1": "Drošas autentifikācijas tehnoloģijām un procedūrām jābūt ieviestām, pamatojoties uz informācijas piekļuves ierobežojumiem un konkrētajai tēmai veltīto piekļuves kontroles politiku. (ISO 27001 8.5 Droša autentifikācija)",
     "MIM6 · M1.1": "Transport Layer Security (TLS) protokols, versija 1.3",
     "MIM6 · M1.2": "OAuth 2.0 autorizācijas ietvars",
-    "MIM6 · M1.3": "OpenID Connect 1.0, identitātes slānis autentifikācijai virs OAuth 2.0",
+    "MIM6 · M1.3": "OpenID Connect 1.0, identitātes slānis autentifikācijai, kas balstīts uz OAuth 2.0",
     "MIM6 · M1.4": "OIDC4VCI / OIDC4VP, OpenID pārbaudāmu akreditācijas datu izsniegšanai un uzrādīšanai",
     "MIM7 · R1.1": "Ģeotelpiskajiem datiem jābūt pieejamiem, izmantojot uz standartiem balstītu tīmekļa pakalpojumu saskarni.",
     "MIM7 · R2.1": "Ģeotelpiskajiem datiem jābūt kodētiem, izmantojot atvērtos standartus. Ieteicams izmantot attiecīgos OGC un BuildingSMART International standartus.",
@@ -754,7 +754,7 @@
     "MIM8 · R3.1": "Modelim vajadzētu nodrošināt standarta modeļa metadatus, tostarp tā metožu un parametru, kā arī datu parametru aprakstu (pēc vērtības vai pēc atsauces). Šim nolūkam vajadzētu izmantot kopīgus metadatu standartus.",
     "MIM8 · R3.2": "Modelim jānodrošina piekļuve vai jābūt izsaucamam, izmantojot dokumentētu saskarni, vēlams izmantojot zināmu standartizētu API. Datu kopai, kas veido modeļa rezultātu, jābūt aprakstītai (datu līmenī).",
     "MIM8 · R3.3": "Vajadzētu nodrošināt inovatīvu metožu (LLM, aģentu MI u. c.) uzticamu, drošu un ētisku izmantošanu. Nobīdēm vajadzētu būt samazinātām līdz minimumam, kur tas attiecināms. Izmantotajām metodēm, kas to garantē, vajadzētu būt aprakstītām.",
-    "MIM8 · R3.4": "Modelim jāspēj piekļūt datiem gala lietotāja vai organizācijas vārdā. Sk. MIM3",
+    "MIM8 · R3.4": "Modelim jāspēj piekļūt datiem galalietotāja vai organizācijas vārdā. Sk. MIM3",
     "MIM8 · R3.5": "Datiem, ko izmanto MI modeļos, vajadzētu garantēt izcelsmi un uzticamību. Dažos gadījumos jānorāda autoritatīvs avots, piemēram, valsts iestāde.",
     "MIM8 · R4.1": "LDT atbalsta darbplūsmas, kas savieno datu avotus, datu transformācijas, modeļu izpildi, simulācijas procesus un rezultātus.",
     "MIM8 · R4.2": "LDT savieno darbplūsmas soļus ķēdē, kur viena soļa rezultātu var izmantot kā cita soļa ievaddatus.",

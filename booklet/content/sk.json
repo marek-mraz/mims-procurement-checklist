@@ -1,20 +1,20 @@
 {
   "cover": {
-    "title": "Kontrolný zoznam · pre verejné obstarávanie · pomocou minimálnych mechanizmov · interoperability (MIMs)",
-    "subtitle": "Čo dať do súťažných podkladov, aby údaje zostali mestu",
-    "tagline": "K MIMs Plus 9.0 siete OASC",
+    "title": "Kontrolný zoznam · pre verejné obstarávanie · podľa minimálnych mechanizmov · interoperability (MIMs)",
+    "subtitle": "Čo uviesť v súťažných podkladoch, aby údaje zostali pod kontrolou mesta",
+    "tagline": "Špecifikácia: MIMs Plus 9.0 siete OASC",
     "footer": "Pre referentov verejného obstarávania, projektových manažérov a vedúcich IT samospráv"
   },
   "why": {
-    "title": "Prečo táto brožúra",
+    "title": "Účel brožúry",
     "paras": [
       "Mestá každý rok nakupujú softvér: parkovacie systémy, senzorové platformy, mapové portály, digitálne dvojčatá. Údaje, ktoré tieto systémy zbierajú, v nich často zostanú uzamknuté. Zmluva sa skončí a údaje zaplatené z verejných peňazí odídu s dodávateľom alebo ostanú vo formáte, ktorý nikto iný neprečíta.",
-      "Nemusí to tak byť. Minimálne mechanizmy interoperability (MIMs) spravuje sieť Open & Agile Smart Cities (OASC) a podporuje ich európska iniciatíva living-in.eu. Opisujú minimálne technické požiadavky, vďaka ktorým vaše údaje zostanú otvorené, opakovane použiteľné a nezávislé od dodávateľa. Sú zámerne malé: žiadna veľkolepá architektúra, len tých pár vecí, ktoré musia platiť, aby sa systémy dohovorili.",
-      "Nemusíte byť inžinier. Každý kontrolný zoznam premieňa jeden MIM na zrozumiteľné požiadavky, ktoré skopírujete priamo do súťažných podkladov, aj s dôvodom, prečo vás chránia. Hneď za zoznamom nájdete presné znenie všetkých požiadaviek špecifikácie, aby si detaily overili vaši technici aj uchádzači.",
-      "Mestá, ktoré MIMs vyžadujú, obstarajú raz a používajú mnohokrát: údaje o kvalite ovzdušia napájajú školský prehľad, evidencia verejného osvetlenia energetický plán a ďalší dodávateľ nadviaže tam, kde predchádzajúci skončil. To je interoperabilita v praxi. Pri projektoch z fondov EÚ sa interoperabilita čoraz častejšie očakáva."
+      "Nemusí to tak byť. Minimálne mechanizmy interoperability (MIMs) spravuje sieť Open & Agile Smart Cities (OASC) a podporuje ich európska iniciatíva living-in.eu. Opisujú minimálne technické požiadavky, vďaka ktorým vaše údaje zostanú otvorené, opakovane použiteľné a nezávislé od dodávateľa. Sú zámerne malé: nejde o rozsiahlu architektúru, len o niekoľko podmienok, ktoré musia platiť, aby si systémy vymieňali údaje.",
+      "Na použitie brožúry nie sú potrebné technické znalosti. Každý kontrolný zoznam premieňa jeden MIM na zrozumiteľné požiadavky, ktoré skopírujete priamo do súťažných podkladov, aj s dôvodom, prečo vás chránia. Hneď za zoznamom nájdete presné znenie všetkých požiadaviek špecifikácie, aby si detaily overili vaši technici aj uchádzači.",
+      "Mestá, ktoré MIMs vyžadujú, obstarajú raz a používajú mnohokrát: údaje o kvalite ovzdušia napájajú školský prehľad, evidencia verejného osvetlenia slúži ako podklad pre energetický plán a ďalší dodávateľ nadviaže tam, kde predchádzajúci skončil. To je interoperabilita v praxi. Pri projektoch z fondov EÚ sa interoperabilita čoraz častejšie očakáva."
     ],
     "quote": {
-      "text": "Minimálne mechanizmy interoperability (MIMs) umožňujú minimálnu, no dostatočnú úroveň interoperability údajov, systémov a služieb, osobitne v kontexte riešení pre inteligentné mestá. · Tento dokument je určený pre: · 1. Dodávateľov riešení, ktorí chcú zabezpečiť, aby ich riešenia boli interoperabilné s inými a umožňovali plynulú výmenu údajov v kontexte inteligentných miest a komunít. · 2. Obstarávateľov, ktorí chcú nakupovať riešenia pripravené na budúcnosť a nákladovo efektívne integrovateľné do existujúcej architektúry informačných a komunikačných technológií (IKT) inteligentných miest a komunít."
+      "text": "Minimálne mechanizmy interoperability (MIMs) umožňujú minimálnu, no dostatočnú úroveň interoperability údajov, systémov a služieb, osobitne v kontexte riešení pre inteligentné mestá. · Tento dokument je určený pre: · 1. Dodávateľov riešení, ktorí chcú zabezpečiť, aby ich riešenia boli interoperabilné s inými a umožňovali plynulú výmenu údajov v kontexte inteligentných miest a komunít. · 2. Obstarávateľov, ktorí chcú obstarávať riešenia pripravené na budúcnosť a nákladovo efektívne integrovateľné do existujúcej architektúry informačných a komunikačných technológií (IKT) inteligentných miest a komunít."
     },
     "policy": {
       "title": "Ako MIMs zapadajú do práva EÚ",
@@ -64,18 +64,18 @@
     "steps": [
       {
         "name": "Príprava",
-        "text": "Prečítajte si sedem kontrolných zoznamov. Označte tie, ktoré sa týkajú vášho nákupu. Väčšina zákaziek potrebuje MIM0, MIM1, MIM2 a MIM6; pridajte MIM3, keď sa údaje zdieľajú s tretími stranami alebo cez dátový portál, MIM7 pri čomkoľvek s mapou a MIM8 pri digitálnych dvojčatách."
+        "text": "Prečítajte si sedem kontrolných zoznamov. Označte tie, ktoré sa týkajú vašej zákazky. Väčšina zákaziek potrebuje MIM0, MIM1, MIM2 a MIM6; pridajte MIM3, keď sa údaje zdieľajú s tretími stranami alebo cez dátový portál, MIM7 pri čomkoľvek s mapou a MIM8 pri digitálnych dvojčatách."
       },
       {
-        "name": "Súťaž",
+        "name": "Súťažné podklady",
         "text": "Skopírujte označené položky do opisu predmetu zákazky. Každá je napísaná ako veta na priame vloženie. Pridajte prierezové zmluvné klauzuly: stoja málo a bránia závislosti od dodávateľa."
       },
       {
-        "name": "Hodnotenie",
-        "text": "Žiadajte od uchádzačov ukázať, nie sľubovať (pozri klauzulu s týmto názvom). Splnenie overte podľa tabuľky zhody, ktorú uchádzač vyplnil."
+        "name": "Vyhodnotenie ponúk",
+        "text": "Žiadajte od uchádzačov ukázať, nie sľúbiť (pozri klauzulu s týmto názvom). Splnenie overte podľa tabuľky zhody, ktorú uchádzač vyplnil."
       },
       {
-        "name": "Odovzdanie",
+        "name": "Prevzatie plnenia",
         "text": "Pri odovzdaní a prevzatí znovu otestujte každú označenú položku. Požiadavka, ktorá sa pri prevzatí netestuje, nikdy nebola požiadavkou."
       }
     ],
@@ -95,19 +95,19 @@
       },
       "MAY": {
         "term": "MÔŽE, MÔŽU (MAY)",
-        "text": "voliteľné. Príjemný bonus, nikdy nie podmienka."
+        "text": "voliteľné. Vítané, nikdy nie podmienka."
       },
       "CAN": {
         "term": "MOŽNO, DÁ SA (CAN)",
         "text": "možnosť, nie požiadavka. Hovorí, čo je možné, a nikomu nič neukladá."
       }
     },
-    "note": "Každá položka zoznamu nesie malý odkaz ako → MIM0 R1.1. To je požiadavka špecifikácie MIMs Plus 9.0, z ktorej vychádza; hneď za zoznamom nájdete všetky požiadavky daného MIM doslovne. Kľúčové slová definuje len MIM0: platia, keď sú napísané verzálkami, čo je konvencia IETF RFC 2119 a RFC 8174 (CAN pochádza z pravidiel ISO/IEC Directives, Part 2). Ostatné MIMs definíciu nemajú: MIM6 píše SHALL prevažne verzálkami, MIM2, MIM3, MIM7 a MIM8 píšu shall, should a must malým a MIM1 ich používa len v popise mechanizmu (MUST NOT v časti 3.1). Táto brožúra číta malé slová rovnako; uchádzač ich môže čítať voľnejšie.",
-    "legend_note": "Položky zoznamu hovoria „musí“, aj keď špecifikácia miestami len odporúča (should) alebo uvádza kandidátsky mechanizmus. Je to rozhodnutie verejného obstarávateľa."
+    "note": "Každá položka zoznamu nesie malý odkaz ako → MIM0 R1.1. To je požiadavka špecifikácie MIMs Plus 9.0, z ktorej vychádza; hneď za zoznamom nájdete všetky požiadavky daného MIM doslovne. Kľúčové slová definuje len MIM0: platia, keď sú napísané verzálkami, čo je konvencia IETF RFC 2119 a RFC 8174 (CAN pochádza z pravidiel ISO/IEC Directives, Part 2). Ostatné MIMs definíciu nemajú: MIM6 píše SHALL prevažne verzálkami, MIM2, MIM3, MIM7 a MIM8 píšu shall, should a must malými písmenami a MIM1 ich používa len v opise mechanizmu (MUST NOT v časti 3.1). Táto brožúra číta malé slová rovnako; uchádzač ich môže čítať voľnejšie.",
+    "legend_note": "Položky zoznamu formulujú požiadavky ako záväzné („musí“), aj keď špecifikácia miestami len odporúča (should) alebo uvádza kandidátsky mechanizmus. Je to rozhodnutie verejného obstarávateľa."
   },
   "glance": {
     "title": "Sedem MIMs a tri nástroje",
-    "intro": "Sedem malých mechanizmov, jeden cieľ: vaše údaje zostanú vaše a vaše systémy sa dohovoria.",
+    "intro": "Sedem malých mechanizmov, jeden cieľ: údaje zostanú pod kontrolou mesta a systémy budú vzájomne komunikovať.",
     "items": {
       "MIM0": {
         "name": "Prístup k údajom",
@@ -145,7 +145,7 @@
         "d": "Údaje, modely a výsledky dvojčaťa zostávajú prístupné, zdokumentované a znovu použiteľné."
       }
     },
-    "numbering_note": "K číslovaniu: MIMs Plus 9.0 špecifikuje sedem mechanizmov s číslami 0, 1, 2, 3, 6, 7 a 8. MIM4 (osobné údaje) a MIM5 (férová umelá inteligencia) patria k starším verziám OASC a súčasťou verzie 9.0 nie sú. V brožúre nič nechýba.",
+    "numbering_note": "K číslovaniu: MIMs Plus 9.0 špecifikuje sedem mechanizmov s číslami 0, 1, 2, 3, 6, 7 a 8. MIM4 (osobné údaje) a MIM5 (spravodlivá umelá inteligencia) patria k starším verziám OASC a súčasťou verzie 9.0 nie sú. V brožúre nič nechýba.",
     "tools_title": "Nástroje pre vašu zákazku",
     "tools": {
       "clauses": {
@@ -191,7 +191,7 @@
           "why": "Váš ďalší dodávateľ alebo vlastní zamestnanci použijú údaje bez žiadostí o súčinnosť."
         },
         {
-          "text": "API musí byť formálne popísané v otvorenom, strojovo čitateľnom dokumente (napr. OpenAPI) zverejnenom na stálej adrese.",
+          "text": "API musí byť formálne opísané v otvorenom, strojovo čitateľnom dokumente (napr. OpenAPI) zverejnenom na stálej adrese.",
           "why": "Ktorýkoľvek vývojár sa pripojí bez platenej integračnej analýzy."
         },
         {
@@ -199,7 +199,7 @@
           "why": "Stiahnete len to, čo potrebujete, nie nočný export celej databázy."
         },
         {
-          "text": "Pri potrebe údajov v reálnom čase musí systém umožniť odber zmien (webhooky, MQTT a pod.).",
+          "text": "Pri potrebe údajov v reálnom čase musí systém umožniť odber zmien (webhooky, MQTT a pod.) namiesto neustáleho dopytovania.",
           "why": "Prehľady a notifikácie v reálnom čase sú možné a lacné."
         },
         {
@@ -229,7 +229,7 @@
         },
         {
           "text": "Podľa identifikátora musí byť možné dohľadať údaje entity aj jej význam (typ) v strojovo čitateľnej podobe.",
-          "why": "Iné systémy sledujú väzby automaticky."
+          "why": "Iné systémy dokážu odkaz automaticky nasledovať."
         },
         {
           "text": "Ak tá istá vec existuje vo viacerých systémoch, identifikátory musí byť možné vzájomne namapovať.",
@@ -247,7 +247,7 @@
       ],
       "red_flags": [
         "„ID sú interné pre našu platformu.“",
-        "Identifikátory sa pregenerujú pri každej migrácii."
+        "Identifikátory sa pri každej migrácii vygenerujú nanovo."
       ]
     },
     "MIM2": {
@@ -279,7 +279,7 @@
       ],
       "red_flags": [
         "„Náš proprietárny model je bohatší než štandard.“",
-        "Dokumentácia len pod NDA."
+        "Dokumentácia len po podpise dohody o mlčanlivosti (NDA)."
       ]
     },
     "MIM3": {
@@ -288,7 +288,7 @@
       "intro": "Nie všetky mestské údaje možno jednoducho zverejniť. Niektoré sú komerčné, iné citlivé. MIM3 je o tom, ako aj tak zdieľať bezpečne: katalóg, v ktorom sa dá hľadať, licencie zo šablón namiesto právneho textu na mieru a pravidlá, ktoré si každý môže prečítať. Špecifikácia formuluje takmer celý MIM3 ako odporúčanie (pozri s. 3).",
       "items": [
         {
-          "text": "Každý dataset musí byť popísaný štandardnými metadátami (napr. DCAT-AP) v katalógu, aby ho ostatní vedeli vyhľadať.",
+          "text": "Každý dataset, ktorý systém poskytuje, musí byť opísaný štandardnými metadátami (napr. DCAT-AP) v katalógu, aby ho ostatní vedeli vyhľadať.",
           "why": "Údaje, ktoré nikto nenájde, nikto nepoužije."
         },
         {
@@ -296,17 +296,17 @@
           "why": "Šablóny šetria čas; právne oddelenie nemusí riešiť každý dataset zvlášť."
         },
         {
-          "text": "Verejný obstarávateľ musí vedieť sám určiť, kto má prístup ku ktorým údajom a za akých podmienok, bez súčinnosti dodávateľa.",
+          "text": "Verejný obstarávateľ musí mať možnosť sám určiť, kto má prístup ku ktorým údajom a za akých podmienok, a toto nastavenie meniť bez súčinnosti dodávateľa.",
           "why": "Správa údajov zostáva na úrade."
         }
       ],
       "why_panel": [
         "Miestne firmy a výskumníci stavajú na mestských údajoch; hodnota ostáva v regióne.",
         "Citlivé údaje sa zdieľajú presne s tými správnymi partnermi, nie so všetkými či s nikým.",
-        "Jeden súbor pravidiel nahradí zásuvku plnú dvojstranných zmlúv."
+        "Jeden súbor pravidiel nahradí množstvo jednotlivých zmlúv o zdieľaní údajov."
       ],
       "red_flags": [
-        "Dodávateľ si nárokuje práva na údaje mesta (pozri klauzulu „Vlastníctvo údajov“).",
+        "Dodávateľ si nárokuje práva na údaje mesta (pozri klauzulu „Práva k údajom“).",
         "Zdieľanie s treťou stranou vyžaduje súhlas alebo poplatok dodávateľovi."
       ]
     },
@@ -316,12 +316,12 @@
       "intro": "Inteligentné mestá sú terčom útokov. MIM6 drží rozsah zámerne úzky a praktický: šifrovať údaje pri prenose, používať štandardné prihlasovanie namiesto proprietárneho, riadiť a zaznamenávať, kto k čomu pristupuje. Nič z toho nie je exotika. Všetko z toho musí byť v zmluve.",
       "items": [
         {
-          "text": "Všetok prenos údajov musí byť šifrovaný (TLS 1.3, resp. aktuálna dobrá prax).",
+          "text": "Všetok prenos údajov musí byť šifrovaný (TLS 1.3, resp. aktuálne osvedčené postupy).",
           "why": "Základná hygiena; vyžaduje ju aj smernica NIS2 tam, kde sa na vás vzťahuje."
         },
         {
           "text": "Prihlasovanie osôb aj systémov musí používať otvorené štandardy OAuth 2.0 / OpenID Connect a musí sa dať napojiť na existujúcu správu identít mesta.",
-          "why": "Jeden účet na zamestnanca; pri odchode stráca prístup všade naraz."
+          "why": "Jeden účet na zamestnanca, nie jeden na každý produkt dodávateľa; pri odchode stráca prístup všade naraz."
         },
         {
           "text": "Prístupové práva musia byť rolové, kontrolovateľné a odoberateľné; prístupy aj zásahy administrátorov sa musia zaznamenávať (logovať).",
@@ -329,14 +329,14 @@
         },
         {
           "label": "Patrí do podmienok účasti, nie do opisu predmetu zákazky",
-          "text": "Dodávateľ musí preukázať súlad s ISO/IEC 27001:2022 (alebo ekvivalentom) pre prevádzkovanú službu.",
-          "why": "Bezpečnosť je proces, nie políčko pri odovzdaní. Špecifikácia cituje opatrenia ISO/IEC 27001, nie certifikát."
+          "text": "Uchádzač preukáže súlad s ISO/IEC 27001:2022 (alebo ekvivalentom) pre prevádzkovanú službu.",
+          "why": "Bezpečnosť je proces, nie položka odškrtnutá pri prevzatí. Špecifikácia cituje opatrenia ISO/IEC 27001, nie certifikát."
         }
       ],
       "why_panel": [
         "Prienik do jedného systému neotvorí všetky ostatné.",
         "Tam, kde sa na vás NIS2 vzťahuje, je súlad s ňou a s národnou legislatívou o kybernetickej bezpečnosti merateľne ľahší.",
-        "Keď sa niečo pokazí, záznamy povedia čo a kto."
+        "Pri incidente záznamy umožnia zistiť, čo sa stalo a kto konal."
       ],
       "red_flags": [
         "Len proprietárne prihlasovanie.",
@@ -347,7 +347,7 @@
     "MIM7": {
       "name": "Geopriestorové údaje",
       "question": "Funguje to na mape?",
-      "intro": "Takmer všetko, čo mesto vlastní, má svoje miesto. MIM7 zabezpečí, že to miesto nie je len obrázok: priestorové údaje tečú cez štandardné rozhrania OGC, v otvorených formátoch, so vždy uvedeným súradnicovým systémom. Každá kúpená mapová vrstva potom je zlučiteľná s tými, ktoré už máte.",
+      "intro": "Takmer všetko, čo mesto vlastní, má svoje miesto. MIM7 zabezpečí, že to miesto nie je len obrázok: priestorové údaje tečú cez štandardné rozhrania OGC, v otvorených formátoch, so vždy uvedeným súradnicovým systémom. Každá obstaraná mapová vrstva je potom zlučiteľná s tými, ktoré už máte.",
       "items": [
         {
           "text": "Geopriestorové údaje musia byť dostupné cez štandardné rozhrania (OGC API Features, OGC SensorThings; WFS pri starších systémoch).",
@@ -359,7 +359,7 @@
         },
         {
           "text": "Súradnicový systém musí byť vždy uvedený (kód EPSG) a údaje musí byť možné transformovať do spoločného súradnicového systému.",
-          "why": "Vrstvy z rôznych zdrojov na mape skutočne sedia."
+          "why": "Vrstvy z rôznych zdrojov sa na mape správne prekrývajú."
         },
         {
           "text": "Priestorové objekty musia niesť tie isté trvalé identifikátory ako v MIM1.",
@@ -383,7 +383,7 @@
       "items": [
         {
           "text": "Datasety, vstupy modelov aj výstupy simulácií musia byť dostupné cez API (podľa MIM0), nie uzavreté v platforme dvojčaťa.",
-          "why": "Výsledky napájajú správy, prehľady a ďalší projekt."
+          "why": "Výsledky slúžia ako podklad pre správy a prehľady a využijú sa v ďalšom projekte."
         },
         {
           "text": "Modely musia byť zdokumentované (metóda, parametre, vstupy a výstupy) a volateľné cez zdokumentované rozhranie.",
@@ -391,7 +391,7 @@
         },
         {
           "text": "Výstupy musia byť v štandardných formátoch (GeoJSON, CityJSON, 3D Tiles, NetCDF…), čitateľných aj nástrojmi iných dodávateľov.",
-          "why": "Vizualizácia a analýzy zostávajú konkurenčným trhom."
+          "why": "Trh s vizualizačnými a analytickými nástrojmi tak zostáva otvorený hospodárskej súťaži."
         },
         {
           "text": "Pracovné postupy musia zaznamenávať pôvod výsledkov: ktorá verzia údajov, ktorý model a ktoré parametre k nim viedli.",
@@ -412,10 +412,10 @@
   "cross": {
     "title": "Prierezové zmluvné klauzuly",
     "subtitle": "Poistky proti závislosti od dodávateľa",
-    "intro": "Tieto klauzuly patria do každej zákazky bez ohľadu na to, čo nakupujete. Vychádzajú z obstarávacej praxe okolo MIMs a living-in.eu. Väčšina sa neopiera o jednu konkrétnu požiadavku špecifikácie, preto nenesú referenčné kódy (verzovanie API odporúča aj MIM0 C2). Stoja málo; ich vynechanie môže stáť všetko.",
+    "intro": "Tieto klauzuly patria do každej zákazky bez ohľadu na to, čo obstarávate. Vychádzajú z obstarávacej praxe okolo MIMs a living-in.eu. Väčšina sa neopiera o jednu konkrétnu požiadavku špecifikácie, preto nenesú referenčné kódy (verzovanie API odporúča aj MIM0 C2). Stoja málo; ich vynechanie môže stáť všetko.",
     "items": [
       {
-        "name": "Exit stratégia",
+        "name": "Exitová stratégia",
         "text": "Pri skončení zmluvy dodávateľ bezodplatne odovzdá všetky údaje a konfiguráciu v otvorených, zdokumentovaných formátoch."
       },
       {
@@ -424,7 +424,7 @@
       },
       {
         "name": "Žiadne poplatky za vlastné údaje",
-        "text": "Prístup verejného obstarávateľa k vlastným údajom nesmie byť spoplatnený podľa počtu používateľov ani požiadaviek."
+        "text": "Verejný obstarávateľ neplatí za prístup k vlastným údajom žiadny poplatok, ani podľa počtu používateľov, ani podľa počtu požiadaviek."
       },
       {
         "name": "Stabilita a verzie API",
@@ -432,11 +432,11 @@
       },
       {
         "name": "Ukázať, nie sľúbiť",
-        "text": "Uchádzači preukážu splnenie požiadaviek už pri hodnotení ponúk, nie čestným vyhlásením. Pri API to znamená zverejnenú interaktívnu dokumentáciu (napr. OpenAPI) a živé volanie, ktoré vráti platné údaje. Každá označená položka sa znovu otestuje pri odovzdaní a prevzatí."
+        "text": "Uchádzači preukážu splnenie požiadaviek už pri vyhodnocovaní ponúk, nie čestným vyhlásením. Pri API to znamená zverejnenú interaktívnu dokumentáciu (napr. OpenAPI) a živé volanie, ktoré vráti platné údaje. Každá označená položka sa znovu otestuje pri odovzdaní a prevzatí."
       },
       {
-        "name": "Menované otvorené štandardy",
-        "text": "Súťažné podklady menujú konkrétne štandardy; tvrdenie „kompatibilné s…“ musí uviesť presné rozhranie a verziu. Pri každom odkaze na normu alebo technickú špecifikáciu sa pripúšťa ekvivalentné riešenie; ekvivalentnosť preukazuje uchádzač."
+        "name": "Konkrétne otvorené štandardy",
+        "text": "Súťažné podklady uvádzajú konkrétne štandardy; tvrdenie „kompatibilné s…“ musí uviesť presné rozhranie a verziu. Pri každom odkaze na normu alebo technickú špecifikáciu sa pripúšťa ekvivalentné riešenie; ekvivalentnosť preukazuje uchádzač."
       },
       {
         "name": "Súlad s MIMs",
@@ -472,10 +472,10 @@
       [
         "Návrh zmluvy",
         "podmienky plnenia zákazky (čl. 70)",
-        "Exit stratégia, Vlastníctvo údajov, Žiadne poplatky za vlastné údaje, Stabilita a verzie API; vyplnená tabuľka zhody ako príloha"
+        "Exitová stratégia, Práva k údajom, Žiadne poplatky za vlastné údaje, Stabilita a verzie API; vyplnená tabuľka zhody ako príloha"
       ],
       [
-        "Akceptačný protokol",
+        "Preberací (akceptačný) protokol",
         "podmienky plnenia zákazky (čl. 70)",
         "stĺpec „Overené“ tabuľky zhody ako testovací protokol"
       ]
@@ -484,11 +484,11 @@
     "sample": [
       "4.3 Interoperabilita a prístup k údajom",
       "4.3.1 Systém musí sprístupňovať všetky údaje, ktoré zbiera alebo vytvára, aspoň v jednom strojovo čitateľnom formáte (napr. JSON, CSV) cez štandardné webové API. (MIMs Plus 9.0, MIM0 R1.1, R1.2)",
-      "4.3.2 API musí byť formálne popísané v otvorenom, strojovo čitateľnom dokumente (napr. OpenAPI) zverejnenom na stálej adrese. (MIM0 R1.3)",
+      "4.3.2 API musí byť formálne opísané v otvorenom, strojovo čitateľnom dokumente (napr. OpenAPI) zverejnenom na stálej adrese. (MIM0 R1.3)",
       "4.3.3 API musí umožňovať filtrovanie údajov podľa času a miesta merania. (MIM0 R2.1, R2.2)",
       "… 4.3.4 až 4.3.21: ďalšie označené položky …",
       "4.3.22 Pri každom odkaze na normu alebo technickú špecifikáciu sa pripúšťa ekvivalentné riešenie; ekvivalentnosť preukazuje uchádzač.",
-      "4.3.23 Uchádzač vyplní tabuľku zhody (príloha súťažných podkladov) a pri každej vyžadovanej položke uvedie dôkaz. Splnenie bodov 4.3.1 až 4.3.21 predvedie živým volaním API pri vyhodnocovaní ponúk; verejný obstarávateľ ich znovu otestuje pri prevzatí. Nesplnenie je dôvodom na odmietnutie prevzatia plnenia."
+      "4.3.23 Uchádzač vyplní tabuľku zhody (príloha súťažných podkladov) a pri každej vyžadovanej položke uvedie dôkaz. Pri vyhodnocovaní ponúk uchádzač splnenie bodov 4.3.1 až 4.3.21 predvedie (napr. živým volaním API); ponuka, ktorá vyžadovaný bod nesplní, nespĺňa požiadavky na predmet zákazky. Verejný obstarávateľ body znovu otestuje pri prevzatí; nesplnenie je vtedy dôvodom na odmietnutie prevzatia plnenia."
     ],
     "tip": "Bod 4.3.3 ukazuje, že položku môžete spresniť podľa nákupu: pri senzoroch má zmysel žiadať filtrovanie podľa času a miesta merania.",
     "note": "Znenie prispôsobte vnútroštátnemu právu a dajte skontrolovať osobe zodpovednej za obstarávanie.",
@@ -516,12 +516,12 @@
         "✓"
       ]
     ],
-    "filled_note": "Sľub do budúcna je N: komisia overuje len to, čo uchádzač vie predviesť."
+    "filled_note": "Prísľub budúcej funkcionality sa hodnotí ako N: komisia overuje len to, čo uchádzač vie predviesť. Pri vyžadovanej položke znamená N nesplnenie požiadaviek na predmet zákazky."
   },
   "tearout": {
     "title": "Tabuľka zhody",
-    "intro": "Jeden riadok na položku. Verejný obstarávateľ označí, čo zákazka vyžaduje, a tabuľku priloží k súťažným podkladom ako povinnú prílohu ponuky. Uchádzač pri každej vyžadovanej položke uvedie S (spĺňa), E (spĺňa ekvivalentom) alebo N (nespĺňa), stručne ako, a kde je dôkaz: adresa dokumentácie, testovací prístup, strana ponuky. Vyhlásenie bez dôkazu nestačí. Komisia každú položku overí pri hodnotení ponúk a znovu pri prevzatí (✓ potvrdené, ✗ nepotvrdené, — neoverovalo sa).",
-    "intro2": "Vyplnená tabuľka je súčasťou ponuky a stáva sa prílohou zmluvy. Overuje splnenie požiadaviek na predmet zákazky (splnil alebo nesplnil); nie je kritériom na vyhodnotenie ponúk. Ak chcete zhodu bodovať, uveďte to medzi kritériami zverejnenými vopred v súťažných podkladoch (smernica 2014/24/EÚ, článok 67).",
+    "intro": "Jeden riadok na položku. Verejný obstarávateľ označí, čo zákazka vyžaduje, a tabuľku priloží k súťažným podkladom ako povinnú prílohu ponuky. Uchádzač pri každej vyžadovanej položke uvedie S (spĺňa), E (spĺňa ekvivalentom) alebo N (nespĺňa), stručne ako, a kde je dôkaz: adresa dokumentácie, testovací prístup, strana ponuky. Vyhlásenie bez dôkazu nestačí. Komisia každú položku overí pri vyhodnocovaní ponúk a znovu pri prevzatí (✓ potvrdené, ✗ nepotvrdené, — neoverovalo sa).",
+    "intro2": "Vyplnená tabuľka je súčasťou ponuky a stáva sa prílohou zmluvy. Overuje splnenie požiadaviek na predmet zákazky (splnil alebo nesplnil); nie je kritériom na vyhodnotenie ponúk. Ak chcete mieru zhody hodnotiť bodmi, uveďte to medzi kritériami na vyhodnotenie ponúk zverejnenými vopred v súťažných podkladoch (smernica 2014/24/EÚ, článok 67).",
     "headers": [
       "#",
       "Požiadavka (skrátene)",
@@ -544,7 +544,7 @@
   "tearout_short": {
     "MIM0": [
       "Strojovo čitateľné údaje cez štandardné webové API",
-      "Otvorený popis API (OpenAPI) na stálej adrese",
+      "Otvorený opis API (OpenAPI) na stálej adrese",
       "Filtrovanie podľa času, miesta, atribútov",
       "Odber zmien tam, kde treba",
       "Štandardné HTTP chyby, cache, limity"
@@ -556,9 +556,9 @@
       "Žiadne interné detaily dodávateľa v ID"
     ],
     "MIM2": [
-      "Štandardné dátové modely, kde sa dá",
+      "Štandardné dátové modely, kde je to možné",
       "Modely zdokumentované, jednotky explicitné",
-      "Rozšírenia ako profily, nikdy forky",
+      "Rozšírenia ako profily, nie ako fork",
       "Otvorená serializácia s validáciou schémou"
     ],
     "MIM3": [
@@ -585,7 +585,7 @@
       "Zaznamenaný pôvod výsledkov"
     ],
     "CROSS": [
-      "Exit stratégia: bezodplatné odovzdanie v otvorených formátoch",
+      "Exitová stratégia: bezodplatné odovzdanie v otvorených formátoch",
       "Práva k údajom patria verejnému obstarávateľovi",
       "Žiadne poplatky za vlastné údaje",
       "Stabilita API: verzie, 6 mesiacov na oznámenie zmien"
@@ -596,7 +596,7 @@
     "terms": [
       {
         "t": "API",
-        "d": "Rozhranie, cez ktoré si jeden program pýta údaje od druhého: cez web, bez klikania človeka."
+        "d": "Rozhranie, cez ktoré si jeden program pýta údaje od druhého: cez web, bez zásahu človeka."
       },
       {
         "t": "Dátový model",
@@ -640,11 +640,11 @@
       },
       {
         "t": "OpenAPI",
-        "d": "Otvorený formát strojovo čitateľného popisu webového API: adresy, parametre, odpovede."
+        "d": "Otvorený formát strojovo čitateľného opisu webového API: adresy, parametre, odpovede."
       },
       {
         "t": "Otvorený štandard",
-        "d": "Technické pravidlo, ktoré si každý môže prečítať a implementovať bez platenia či pýtania povolenia."
+        "d": "Technické pravidlo, ktoré si každý môže prečítať a implementovať bez poplatkov a bez osobitného povolenia."
       },
       {
         "t": "Serializácia",
@@ -664,7 +664,7 @@
       },
       {
         "t": "Závislosť od dodávateľa (vendor lock-in)",
-        "d": "Keď odchod od dodávateľa stojí toľko na údajoch, formátoch či poplatkoch, že prakticky nemôžete odísť."
+        "d": "Stav, keď je zmena dodávateľa pre náklady spojené s údajmi, formátmi alebo poplatkami prakticky nemožná."
       }
     ],
     "more_title": "Kde sa dozvedieť viac",
@@ -683,7 +683,7 @@
   "quote_translations": {
     "MIM0 · R1.1": "Systémy MUSIA umožniť získanie údajov aspoň v jednom strojovo čitateľnom formáte. Formáty možno špecifikovať cez HTTP Content-Negotiation (dohodu o obsahu).",
     "MIM0 · R1.2": "Údaje MUSIA byť dostupné aspoň jedným štandardným webovým mechanizmom.",
-    "MIM0 · R1.3": "Mechanizmy prístupu MUSIA byť formálne popísané.",
+    "MIM0 · R1.3": "Mechanizmy prístupu MUSIA byť formálne opísané.",
     "MIM0 · R1.4": "Dátové modely použité v prenášaných údajoch majú byť špecifikované (pozri MIM2).",
     "MIM0 · R2.1": "Systémy MUSIA poskytovať údaje cez štruktúrované a konzistentné rozhranie.",
     "MIM0 · R2.2": "Systémy MUSIA podporovať základné dopytovanie a/alebo filtrovanie (napr. podľa času, polohy, atribútov).",
@@ -697,10 +697,10 @@
     "MIM1 · R1.4": "Ak na tú istú entitu ukazuje viacero jedinečných identifikátorov, je možné ich vzájomne namapovať.",
     "MIM1 · R1.5": "Je možné vytvárať identifikátory, ktoré sú trvalé v čase.",
     "MIM1 · R2.1": "Existuje spôsob, ako získať sémantiku entity len pomocou jej jedinečného identifikátora.",
-    "MIM1 · R2.2": "Táto sémantika je popísaná v strojovo čitateľnom formáte.",
+    "MIM1 · R2.2": "Táto sémantika je opísaná v strojovo čitateľnom formáte.",
     "MIM1 · R3.1": "Existuje spôsob, ako dereferencovať vzťah definovaný na entite.",
     "MIM1 · R3.2": "Existuje spôsob, ako k existujúcej ontológii doplniť ďalšiu sémantiku.",
-    "MIM2 · R1.1": "Dátové modely použité pre všetky entity v ktoromkoľvek zdroji údajov musia byť explicitne uvedené. Musia byť dobre zdokumentované a mať popisné metadáta, v ktorých sú použité pojmy sémanticky jednoznačné. Pri atribútoch týkajúcich sa merných jednotiek, formátov času a pod. musia byť použité jednotky, formáty a pod. explicitne uvedené. Dátové modely majú byť katalogizované, aby sa dali ľahko nájsť.",
+    "MIM2 · R1.1": "Dátové modely použité pre všetky entity v ktoromkoľvek zdroji údajov musia byť explicitne uvedené. Musia byť dobre zdokumentované a mať opisné metadáta, v ktorých sú použité pojmy sémanticky jednoznačné. Pri atribútoch týkajúcich sa merných jednotiek, formátov času a pod. musia byť použité jednotky, formáty a pod. explicitne uvedené. Dátové modely majú byť katalogizované, aby sa dali ľahko nájsť.",
     "MIM2 · R1.2a": "Použité dátové modely musia (vždy, keď je to možné) vychádzať zo všeobecne uznávaných štandardizovaných dátových modelov uvedených v špecifikácii.",
     "MIM2 · R1.2b": "Ak nie je možné použiť existujúce štandardizované dátové modely, je potrebné usilovať sa o rozšírenie tých existujúcich štandardizovaných dátových modelov, ktoré sú najbližšie, alebo definovať nové, a to podľa osvedčených postupov a konvencií komunity alebo organizácie, ktorá dátové modely definuje.",
     "MIM2 · R1.3": "Použité dátové modely musia podporovať výmenu údajov uplatnením príslušných požiadaviek MIMs o prístupe k údajom a prepojení údajov.",
@@ -715,15 +715,15 @@
     "MIM3 · RC1.2": "Členovia, ktorí sa zúčastňujú na dátovom ekosystéme, majú poznať jeho model správy a všetky jeho zmeny.",
     "MIM3 · RC1.3": "Model správy má byť ľahko zrozumiteľný pre všetkých účastníkov ekosystému.",
     "MIM3 · RC2.1": "Poskytovatelia údajov môžu slobodne určiť podmienky, za ktorých chcú svoje údaje vymieňať. (Poznámka: Pred zdieľaním dátových aktív si majú poskytovatelia overiť, že majú primerané povolenie od vlastníkov údajov.)",
-    "MIM3 · RC2.2": "Podmienky výmeny údajov majú byť popísané jasne a jednoznačne, aby boli pre používateľov údajov ľahko zrozumiteľné.",
+    "MIM3 · RC2.2": "Podmienky výmeny údajov majú byť opísané jasne a jednoznačne, aby boli pre používateľov údajov ľahko zrozumiteľné.",
     "MIM3 · RC2.3": "Podmienky výmeny údajov majú byť vyjadrené prostredníctvom dátových licencií alebo zmlúv o zdieľaní údajov založených na dobre definovaných šablónach alebo štandardoch.",
-    "MIM3 · RC2.4": "Podmienky majú byť v súlade s celkovým modelom správy dátového ekosystému a nesmú mu odporovať. (Poznámka: Poskytovateľ údajov sa môže rozhodnúť, že sa na dátovom ekosystéme nezúčastní, ak je jeho model správy príliš reštriktívny alebo príliš voľný.)",
+    "MIM3 · RC2.4": "Podmienky majú byť v súlade s celkovým modelom správy dátového ekosystému a nesmú mu odporovať. (Poznámka: Poskytovateľ údajov sa môže rozhodnúť, že sa na dátovom ekosystéme nezúčastní, ak je jeho model správy príliš reštriktívny alebo príliš benevolentný.)",
     "MIM3 · RC3.1": "Orchestrátor dátového ekosystému musí byť schopný overiť, či účastníci dodržiavajú príslušný model správy.",
     "MIM3 · RC3.2": "Poskytovatelia údajov majú mať možnosť overiť, že používateľ údajov ich používa v súlade s vopred dohodnutými podmienkami.",
     "MIM3 · RC3.3": "Používatelia údajov majú mať možnosť overiť, že poskytovateľ dodáva údaje v súlade s vopred dohodnutými podmienkami.",
     "MIM3 · RC4.1": "Používatelia údajov majú mať možnosť zistiť, aké údaje sú v ekosystéme zdieľania dostupné, aj bez predchádzajúcej znalosti o nich.",
-    "MIM3 · RC4.2": "Dátové aktíva majú byť primerane popísané metadátami, aby sa používatelia údajov mohli spoľahlivo rozhodnúť o ich ďalšom zamýšľanom použití.",
-    "MIM3 · RC4.3": "Metadáta popisujúce dátové aktíva majú vychádzať z dobre definovaných, ľahko zrozumiteľných formátov čitateľných pre ľudí aj stroje.",
+    "MIM3 · RC4.2": "Dátové aktíva majú byť primerane opísané metadátami, aby sa používatelia údajov mohli spoľahlivo rozhodnúť o ich ďalšom zamýšľanom použití.",
+    "MIM3 · RC4.3": "Metadáta opisujúce dátové aktíva majú vychádzať z dobre definovaných, ľahko zrozumiteľných formátov čitateľných pre ľudí aj stroje.",
     "MIM3 · RC5.1": "Účastníci ekosystému (napr. používatelia a poskytovatelia údajov) majú mať možnosť navzájom sa v ekosystéme zdieľania údajov vyhľadať.",
     "MIM3 · RC5.2": "O každom účastníkovi ekosystému majú byť dostupné dostatočné metadáta na posúdenie jeho dôveryhodnosti pre výmenu údajov.",
     "MIM3 · RC5.3": "Poskytovatelia údajov majú mať možnosť spoľahlivo identifikovať používateľov, ktorí chcú pristupovať k ich dátovým aktívam, a pred udelením prístupu overiť ich metadáta.",
@@ -733,7 +733,7 @@
     "MIM3 · RC6.2": "Používatelia a poskytovatelia údajov majú mať možnosť ukončiť vopred dohodnutú výmenu údajov v súlade s podmienkami, ktoré sa k nej viažu.",
     "MIM3 · RC6.3": "Ak je to možné, na dohodnutie a ukončenie výmeny údajov môžu byť poskytnuté elektronické prostriedky.",
     "MIM3 · RC7.1": "Používatelia údajov majú mať možnosť vyjadriť záujem o dátové aktíva, ktoré v ekosystéme zdieľania údajov zatiaľ nie sú dostupné.",
-    "MIM3 · RC7.2": "Poskytovatelia údajov majú mať možnosť získať žiadosti používateľov o nové dátové aktíva.",
+    "MIM3 · RC7.2": "Poskytovatelia údajov majú mať možnosť prijímať žiadosti používateľov o nové dátové aktíva.",
     "MIM6 · R1.1": "Pravidlá riadenia fyzického a logického prístupu k informáciám a iným súvisiacim aktívam MUSIA byť stanovené a zavedené na základe požiadaviek organizácie a požiadaviek informačnej bezpečnosti. (ISO 27001 5.15 Riadenie prístupu)",
     "MIM6 · R1.2": "Prideľovanie a správa autentifikačných informácií MUSIA byť riadené procesom správy vrátane poučenia pracovníkov o správnom zaobchádzaní s autentifikačnými informáciami. (ISO 27001 5.17: Autentifikačné informácie)",
     "MIM6 · R1.3": "Prístupové práva k informáciám a iným súvisiacim aktívam MUSIA byť prideľované, preskúmavané, upravované a odoberané v súlade s tematickou politikou organizácie a pravidlami riadenia prístupu. (ISO 27001 5.18: Prístupové práva)",
@@ -747,19 +747,19 @@
     "MIM7 · R2.1": "Geopriestorové údaje musia byť kódované v otvorených štandardoch. Odporúča sa použiť príslušné štandardy OGC a BuildingSMART International.",
     "MIM7 · R3.1": "Všetky datasety, ktoré dopĺňajú informácie o kontexte pokrytom geopriestorovými údajmi, musia byť v súlade s MIM1 a MIM2.",
     "MIM7 · R4.1": "Na identifikáciu konkrétnych inštancií akejkoľvek entity v datasetoch sa musia používať jedinečné a trvalé identifikátory. (Pozri MIM1: Prepojenie údajov.)",
-    "MIM7 · R5.1": "Súradnicové referenčné systémy (CRS) musia byť v súlade so štandardmi a musí byť uvedené, ktorý štandard (napr. EPSG:4326, EPSG:3857) sa používa. Patrí sem číslo EPSG alebo WGS spolu s informáciou o prípadných odchýlkach vychádzajúcich z národných systémov, ako je lotyšský LKS-92, aby bolo možné údaje transformovať do spoločného CRS. (Poznámka: V EÚ sa pre geopriestorové údaje vyžadujú metadáta v súlade so smernicou INSPIRE vrátane metadát potrebných na popis CRS.)",
+    "MIM7 · R5.1": "Súradnicové referenčné systémy (CRS) musia byť v súlade so štandardmi a musí byť uvedené, ktorý štandard (napr. EPSG:4326, EPSG:3857) sa používa. Patrí sem číslo EPSG alebo WGS spolu s informáciou o prípadných odchýlkach vychádzajúcich z národných systémov, ako je lotyšský LKS-92, aby bolo možné údaje transformovať do spoločného CRS. (Poznámka: V EÚ sa pre geopriestorové údaje vyžadujú metadáta v súlade so smernicou INSPIRE vrátane metadát potrebných na opis CRS.)",
     "MIM8 · R1.1": "LDT musí sprístupniť výstupy simulácií a vstupy výpočtových modelov tam, kde sú potrebné v rámci pracovných postupov LDT.",
     "MIM8 · R1.2": "LDT má jasne rozlišovať medzi surovými zdrojovými údajmi, transformovanými údajmi pripravenými pre pracovné postupy, vstupmi modelov a výstupmi modelov.",
     "MIM8 · C2": "Táto schopnosť sa pri výmene údajov opiera o MIM3 (Výmena údajov).",
-    "MIM8 · R3.1": "Model má poskytovať štandardné metadáta modelu vrátane popisu jeho metód a parametrov a dátových parametrov (hodnotou alebo odkazom). Na tento účel sa majú používať bežné štandardy metadát.",
-    "MIM8 · R3.2": "Model musí byť vystavený alebo volateľný cez zdokumentované rozhranie, prednostne cez známe štandardizované API. Dataset, ktorý je výstupom modelu, musí byť popísaný (na úrovni údajov).",
-    "MIM8 · R3.3": "Má byť zabezpečené dôveryhodné, spoľahlivé a etické používanie inovatívnych metód (LLM, agentová AI a pod.). Skreslenie (bias) sa má tam, kde je to relevantné, minimalizovať. Metódy, ktorými sa to zaručuje, majú byť popísané.",
+    "MIM8 · R3.1": "Model má poskytovať štandardné metadáta modelu vrátane opisu jeho metód a parametrov a dátových parametrov (hodnotou alebo odkazom). Na tento účel sa majú používať bežné štandardy metadát.",
+    "MIM8 · R3.2": "Model musí byť vystavený alebo volateľný cez zdokumentované rozhranie, prednostne cez známe štandardizované API. Dataset, ktorý je výstupom modelu, musí byť opísaný (na úrovni údajov).",
+    "MIM8 · R3.3": "Má byť zabezpečené dôveryhodné, spoľahlivé a etické používanie inovatívnych metód (LLM, agentová AI a pod.). Skreslenie (bias) sa má tam, kde je to relevantné, minimalizovať. Metódy, ktorými sa to zaručuje, majú byť opísané.",
     "MIM8 · R3.4": "Model musí byť schopný pristupovať k údajom v mene koncového používateľa alebo organizácie. Pozri MIM3.",
     "MIM8 · R3.5": "Pri údajoch určených pre modely AI má byť zaručený ich pôvod a dôveryhodnosť. V niektorých prípadoch musí byť uvedený autoritatívny zdroj, napríklad orgán verejnej správy.",
     "MIM8 · R4.1": "LDT podporuje pracovné postupy, ktoré prepájajú zdroje údajov, transformácie údajov, spúšťanie modelov, simulačné procesy a výstupy.",
     "MIM8 · R4.2": "LDT reťazí kroky pracovného postupu tak, že výstup jedného kroku môže byť vstupom ďalšieho.",
     "MIM8 · R4.3": "LDT sleduje stav vykonávania pracovných postupov vrátane dokončených, neúspešných a prerušených procesov.",
-    "MIM8 · R4.4": "LDT zaznamenáva pôvod pracovných postupov vrátane použitých datasetov (s verziou a časovou pečiatkou), spustených modelov, zvolených parametrov a vygenerovaných výstupov.",
+    "MIM8 · R4.4": "LDT zaznamenáva pôvod výsledkov pracovných postupov vrátane použitých datasetov (s verziou a časovou pečiatkou), spustených modelov, zvolených parametrov a vygenerovaných výstupov.",
     "MIM8 · R5.1": "LDT poskytuje metadáta vysvetľujúce, čo je vizualizované, vrátane časovej pečiatky, priestorového rozsahu, zdroja údajov a prípadných predpokladov scenárov a variantov.",
     "MIM8 · R5.2": "LDT podporuje rôzne typy interaktívnych vizualizácií, napríklad 2D mapy, 3D scény, prehľady, správy alebo pohľady pre verejnosť.",
     "MIM8 · R6.1": "LDT má dokumentovať nevyriešené sémantické medzery, predpoklady alebo mapovania, ktoré môžu ovplyvniť interpretáciu, opätovné použitie alebo porovnanie výsledkov.",
@@ -780,7 +780,7 @@
     "MIM1 · C1": "Entity sú identifikované jedinečnými identifikátormi",
     "MIM1 · C2": "Entitám je možné priradiť typ",
     "MIM1 · C3": "Na entity je možné odkazovať a odkazy vyhodnocovať (dereferencovanie)",
-    "MIM2 · C1": "Všetky entity v zdrojoch údajov sú popísané konzistentnými dátovými modelmi, aby boli aplikácie a systémy interoperabilné",
+    "MIM2 · C1": "Všetky entity v zdrojoch údajov sú opísané konzistentnými dátovými modelmi, aby boli aplikácie a systémy interoperabilné",
     "MIM2 · C2": "Rôzne dátové modely tej istej entity používané v spoločnom ekosystéme zdieľania údajov majú byť ľahko transformovateľné do spoločného dátového modelu",
     "MIM2 · C3": "Údaje aj ich metadáta možno zdieľať v otvorených, štandardizovaných prenosových formátoch, aby ich rôzne nástroje a implementácie vymieňali a interpretovali konzistentne",
     "MIM2 · C4": "Ak je to užitočné, má byť možné vytvárať pre dátový model „aplikačné profily“, aby sa dali pridať alebo spresniť atribúty špecifické pre prípad použitia bez zmeny základného dátového modelu",

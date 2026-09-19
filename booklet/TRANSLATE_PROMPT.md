@@ -9,7 +9,9 @@ follows are in [TRANSLATING.md](TRANSLATING.md).
 - `translate.py` does all of this with Gemini 3.8 Flash on OpenRouter: one request per
   language (three parts when the answer is cut), a repair request for strings that lost a
   code or grew too long, then the validator. `python3 translate.py de`, or `--all`;
-  `--dry-run` prints the estimated cost. It needs `OPENROUTER_API_KEY`.
+  `--dry-run` prints the estimated cost. It needs `OPENROUTER_API_KEY`. After an edit of
+  `en.json`, `python3 translate.py --changed de fr` sends only the strings whose English
+  differs from the last commit and leaves the rest of each file as it is.
 - By hand: `en.json` holds about 49,000 characters. It fits in one request, but the answer
   is as long: raise the output limit of the model, or the answer stops half way.
 - The validator stops the build on a missing or extra key, an empty string, a lost MIM
@@ -52,6 +54,11 @@ VOCABULARY AND TONE
 - Plain, direct sentences. Address the reader the way an official guide in your
   language does. No marketing tone.
 - The booklet is international. Do not add references to national laws.
+- English IT terms that practitioners in your language use in English stay in English:
+  fork, webhook, API, cache, token, endpoint, open source, dashboard where it is the
+  usual word. Do not coin a translation for them ("fork" is never "branch"); inflect
+  them the way your language does. A term with an established native word keeps it
+  (interface, identifier, data model).
 
 LENGTH
 - Aim for the English length; up to a third longer is acceptable. Prefer the

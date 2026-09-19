@@ -25,9 +25,9 @@
 // ════════════════════════════════════════════════════════════════════════════
 #cover(
   title:    "Beschaffungs-Checkliste · auf Basis der Minimal · Interoperability Mechanisms (MIMs)",
-  subtitle: "Was in eine Ausschreibung gehört, damit Ihre Stadt ihre Daten behält",
-  tagline:  "Für MIMs Plus 9.0 von OASC",
-  footer:   "Für Beschaffungsverantwortliche, Projektleitende und CIOs europäischer Kommunen",
+  subtitle: "Was Vergabeunterlagen vorgeben müssen, damit die Stadt die Kontrolle über ihre Daten behält",
+  tagline:  "Spezifikation: MIMs Plus 9.0 von OASC",
+  footer:   "Für Beschaffungsverantwortliche, Projektleitende und IT-Leitungen europäischer Kommunen",
   author:   "Autor des Leitfadens: Marek Mráz",
 )
 
@@ -36,15 +36,15 @@
 //  WHY THIS BOOKLET
 // ════════════════════════════════════════════════════════════════════════════
 #fit-page("why")[
-  #band("Warum dieser Leitfaden")
+  #band("Zweck dieses Leitfadens")
 
-  #lead("Jedes Jahr beschaffen Städte Software: Parkleitsysteme, Sensorplattformen, Geoportale, digitale Zwillinge. Zu oft bleiben die von diesen Systemen erfassten Daten darin eingesperrt. Endet der Vertrag, gehen die mit öffentlichen Geldern bezahlten Daten mit dem Anbieter verloren oder verbleiben in einem Format, das niemand sonst lesen kann.")
+  #lead("Jedes Jahr beschaffen Städte Software: Parkleitsysteme, Sensorplattformen, Geoportale, digitale Zwillinge. Zu oft bleiben die von diesen Systemen erfassten Daten darin eingesperrt. Endet der Vertrag, wandern die mit öffentlichen Geldern bezahlten Daten mit dem Anbieter ab oder verbleiben in einem Format, das niemand sonst lesen kann.")
 
-  #lead("Das muss nicht so sein. Die Minimal Interoperability Mechanisms (MIMs), gepflegt von Open & Agile Smart Cities (OASC) und unterstützt durch die europäische Bewegung living-in.eu, beschreiben die minimalen technischen Anforderungen, die Ihre Daten offen, wiederverwendbar und anbieterneutral halten. Sie sind bewusst schlank gehalten: keine monumentale Architektur, sondern nur die wenigen Vorgaben, die zwingend gelten müssen, damit Systeme miteinander kommunizieren können.")
+  #lead("Das muss nicht so sein. Die Minimal Interoperability Mechanisms (MIMs), gepflegt von Open & Agile Smart Cities (OASC) und unterstützt durch die europäische Bewegung living-in.eu, beschreiben die minimalen technischen Anforderungen, die Ihre Daten offen, wiederverwendbar und anbieterneutral halten. Sie sind bewusst schlank gehalten: keine umfassende Architektur, sondern nur die wenigen Bedingungen, die zwingend gelten müssen, damit Systeme Daten austauschen können.")
 
-  #lead("Sie müssen keine IT-Fachkraft sein, um sie anzuwenden. Jede Checkliste übersetzt einen MIM in verständliche Kriterien, die Sie direkt in eine Leistungsbeschreibung übernehmen können – samt der Begründung, warum Sie jedes Kriterium absichert. Direkt nach der Checkliste finden Sie alle Anforderungen des jeweiligen MIM im Wortlaut, damit Ihre technischen Fachbereiche und die Bieter die Details prüfen können.")
+  #lead("Für die Nutzung dieses Leitfadens sind keine technischen Vorkenntnisse erforderlich. Jede Checkliste übersetzt einen MIM in verständliche Kriterien, die Sie in eine Ausschreibung übernehmen können – samt der Begründung, warum jedes Kriterium Sie schützt. Direkt nach der Checkliste finden Sie alle Anforderungen dieses MIM im Wortlaut, damit Ihre technischen Fachbereiche und Ihre Bieter die Details prüfen können.")
 
-  #lead("Städte, welche die MIMs fordern, investieren einmal und nutzen Daten vielfach: Luftqualitätsdaten speisen das Schul-Dashboard, das Kataster der Straßenbeleuchtung fließt in die Wärmeplanung ein und das Nachfolgeunternehmen knüpft nahtlos dort an, wo der vorherige Auftragnehmer aufgehört hat. Das bedeutet Interoperabilität in der Praxis – und genau das wird in EU-geförderten Projekten zunehmend vorausgesetzt.")
+  #lead("Städte, welche die MIMs fordern, investieren einmal und nutzen Daten vielfach: Luftqualitätsdaten speisen das Schul-Dashboard, das Kataster der Straßenbeleuchtung fließt in die Energieplanung ein und das Nachfolgeunternehmen knüpft nahtlos dort an, wo der vorherige Auftragnehmer aufgehört hat. Das bedeutet Interoperabilität in der Praxis – und genau das wird in EU-geförderten Projekten zunehmend vorausgesetzt.")
 
   #pull-quote(
     "Die Minimal Interoperability Mechanisms (MIMs) ermöglichen ein minimales, aber ausreichendes Maß an Interoperabilität für Daten, Systeme und Dienste, speziell im Kontext von Smart-City-Lösungen. · Der vorgesehene Adressatenkreis für dieses Dokument umfasst: · 1. Lösungsanbieter, die sicherstellen möchten, dass ihre Lösungen mit anderen interoperabel sind und einen reibungslosen Datenaustausch im Kontext von Smart Cities and Communities ermöglichen. · 2. Beschaffer, die zukunftssichere Lösungen beschaffen möchten, die eine kosteneffiziente Integration in eine bestehende Informations- und Kommunikationstechnologie-(IKT-)Architektur für Smart Cities and Communities erlauben.",
@@ -56,7 +56,7 @@
       "Technische Spezifikationen dürfen auf Normen verweisen, stets mit dem Zusatz „oder gleichwertig“; sie dürfen grundsätzlich keine bestimmten Fabrikate oder Erzeugnisse benennen."),
     law("Data Act (Daten-VO)", "Verordnung (EU) 2023/2854",
       "Zugang zu Daten aus vernetzten Produkten und Wechsel zwischen Cloud-Diensten ohne Lock-in-Effekte."),
-    law("Interoperable-Europe-Akt", "Verordnung (EU) 2024/903",
+    law("Verordnung für ein interoperables Europa", "Verordnung (EU) 2024/903",
       "Interoperabilitätsbewertungen für grenzüberschreitende digitale öffentliche Dienste und Wiederverwendung offener Lösungen."),
     law("Open-Data-Richtlinie", "Richtlinie (EU) 2019/1024",
       "Kostenfreie Bereitstellung hochwertiger Datensätze in maschinenlesbaren Formaten über Programmierschnittstellen (APIs)."),
@@ -93,7 +93,7 @@
   )
 
   #legend("Verständnis der Zitate aus der Spezifikation",
-    note: "Die Kriterien der Checklisten formulieren ein klares „muss“, selbst wenn die Spezifikation eine Funktion nur empfiehlt (should) oder als Kandidatenmechanismus anführt. Dies obliegt der Entscheidung des öffentlichen Auftraggebers.",
+    note: "Die Kriterien der Checkliste formulieren jeden Punkt als Anforderung, selbst wenn die Spezifikation eine Funktion nur empfiehlt (should) oder als Kandidatenmechanismus anführt. Dies obliegt der Entscheidung des öffentlichen Auftraggebers.",
     entry("MUSS, MÜSSEN (SHALL / MUST)", "verbindlich. Ohne diese Eigenschaft ist das System nicht konform."),
     entry("DARF NICHT, DÜRFEN NICHT (MUST NOT)", "unzulässig. Ein System, das dies tut, ist nicht konform."),
     entry("SOLLTE, SOLLTEN (SHOULD)", "dringend empfohlen. Abweichungen erfordern eine stichhaltige schriftliche Begründung."),
@@ -112,7 +112,7 @@
 #fit-page("glance")[
   #band("Sieben MIMs und drei Werkzeuge", id: "glance")
 
-  #intro("Sieben handhabbare Mechanismen, ein Ziel: Ihre Daten bleiben in Ihrer Hand und Ihre Systeme verstehen sich untereinander.")
+  #intro("Sieben handhabbare Mechanismen, ein Ziel: Die Daten bleiben unter der Kontrolle der Stadt und die Systeme arbeiten zusammen.")
 
   #glance(
     note: "Zur Nummerierung: MIMs Plus 9.0 definiert sieben Mechanismen mit den Ziffern 0, 1, 2, 3, 6, 7 und 8. MIM4 (personenbezogene Daten) und MIM5 (faire KI) stammen aus früheren OASC-Versionen und sind nicht Teil von 9.0. In diesem Leitfaden fehlt somit nichts.",
@@ -124,7 +124,7 @@
       "Besitzt jedes Objekt eine dauerhafte Kennung?",
       "Jeder Sensor, jede Leuchte und jedes Gebäude besitzt einen eindeutigen, persistenten Identifikator.",
       "https://mims.oascities.org/interlinking-data"),
-    card("MIM2", "Datendarstellung",
+    card("MIM2", "Datenrepräsentation",
       "Sprechen wir eine gemeinsame Sprache?",
       "Daten folgen standardisierten, dokumentierten Datenmodellen mit expliziten Maßeinheiten.",
       "https://mims.oascities.org/representing-data"),
@@ -149,7 +149,7 @@
   #tools("Werkzeuge für Ihre Ausschreibung",
     tool("clauses", "Querschnittliche Vertragsklauseln",
       "Was gehört in jeden Vertrag?",
-      "Exit-Strategie, Datenrechte, API-Stabilität."),
+      "Exit-Klausel, Datenrechte, API-Stabilität."),
     tool("example", "Beispiel: Luftgütesensoren",
       "Wie sieht das in der Praxis aus?",
       "Zuordnung der Inhalte und Textbausteine zum Übernehmen."),
@@ -181,7 +181,7 @@
     refs: "MIM0 R1.1, R1.2",
     num:  "0.1")
 
-  #item("Die API ist in einem offenen, maschinenlesbaren Dokument (beispielsweise OpenAPI) formell beschrieben und unter einer stabilen Adresse veröffentlicht.",
+  #item("Die API ist in einem offenen, maschinenlesbaren Dokument (beispielsweise OpenAPI) formal beschrieben und unter einer stabilen Adresse veröffentlicht.",
     why:  "Jeder Entwickler kann sich ohne kostenpflichtigen „Integrations-Workshop“ anbinden.",
     refs: "MIM0 R1.3",
     num:  "0.2")
@@ -197,7 +197,7 @@
     num:  "0.4")
 
   #item("Fehlerbehandlung, Caching und Ratenbegrenzungen folgen HTTP-Standardkonventionen und sind dokumentiert.",
-    why:  "Integrationen schlagen unüberhörbar und behebbar fehl, nicht lautlos.",
+    why:  "Integrationen schlagen erkennbar und behebbar fehl, nicht stillschweigend.",
     refs: "MIM0 C2",
     num:  "0.5")
 
@@ -210,7 +210,7 @@
     flags: ("Warnsignale", (
       "„Datenexport auf Anfrage über unser Support-Team.“",
       "„Die API ist als kostenpflichtiges Zusatzmodul erhältlich.“",
-      "Preise pro Anfrage für die eigenen Daten der Stadt (siehe die Klausel „Keine Gebühren pro Arbeitsplatz / pro Anfrage“).",
+      "Preise pro Abfrage für die eigenen Daten der Stadt (siehe die Klausel „Keine Gebühren für eigene Daten“).",
     )),
   )
 ]
@@ -241,7 +241,7 @@
       tr: "Zugriffsmechanismen MÜSSEN formal beschrieben sein.",
       en: "Access mechanism(s) SHALL be formally described"),
     req("R1.4",
-      tr: "Von Payloads verwendete Datenmodelle SOLLTEN spezifiziert werden (siehe MIM2).",
+      tr: "Von Payloads verwendete Datenmodelle sollten spezifiziert werden (siehe MIM2).",
       en: "Data Models used by payloads should be specified (see MIM2)"),
     capability("C2", "Access is structured and queryable",
       tr: "Der Zugriff ist strukturiert und abfragbar"),
@@ -283,7 +283,7 @@
   #mim-page(
     id:       "MIM1",
     name:     "Datenverknüpfung",
-    question: "Hat jedes Objekt einen dauerhaften Namen?",
+    question: "Besitzt jedes Objekt eine dauerhafte Kennung?",
     url:      "https://mims.oascities.org/interlinking-data",
     intro:    "Eine Stadt besteht aus unzähligen Objekten: Laternen, Rohre, Gebäude, Parkplätze. Systeme kommen und gehen, aber die Objekte bleiben. MIM1 fordert für jedes Objekt einen Namen – einen Identifikator –, der die Software überdauert, die ihn ursprünglich erfasst hat, damit Historie und Verknüpfungen jede Migration überstehen.",
     list:     "Checkliste",
@@ -387,7 +387,7 @@
 #fit-page("MIM2 checklist")[
   #mim-page(
     id:       "MIM2",
-    name:     "Datendarstellung",
+    name:     "Datenrepräsentation",
     question: "Sprechen wir eine gemeinsame Sprache?",
     url:      "https://mims.oascities.org/representing-data",
     intro:    "Zwei Systeme können beide JSON exportieren und sich dennoch nicht verstehen. Bei MIM2 geht es um die Bedeutung: gemeinsame, dokumentierte Datenmodelle – mit eindeutigen Einheiten und Formaten –, damit „Temperatur“, „Parkplatz“ oder „Luftqualität“ in jedem Ihrer Systeme exakt dasselbe bedeutet.",
@@ -444,43 +444,43 @@
     capability("C1", "All entities included in data sources are described using consistent data models to enable interoperability for applications and systems",
       tr: "Alle in Datenquellen enthaltenen Entitäten werden mithilfe einheitlicher Datenmodelle beschrieben, um Interoperabilität für Anwendungen und Systeme zu ermöglichen"),
     req("R1.1",
-      tr: "Für alle Entitäten in jeder Datenquelle verwendete Datenmodelle MÜSSEN explizit ausgewiesen werden. Sie MÜSSEN gut dokumentiert sein und beschreibende Metadaten aufweisen, wobei die verwendeten Begriffe semantisch eindeutig sein MÜSSEN. Für Attribute bezüglich Maßeinheiten, Zeitformaten usw. MÜSSEN die verwendeten Einheiten, Formate usw. explizit ausgewiesen werden. Die Datenmodelle SOLLTEN katalogisiert werden, damit sie leicht auffindbar sind.",
+      tr: "Für alle Entitäten in jeder Datenquelle verwendete Datenmodelle müssen explizit ausgewiesen werden. Sie müssen gut dokumentiert sein und beschreibende Metadaten aufweisen, wobei die verwendeten Begriffe semantisch eindeutig sein müssen. Für Attribute bezüglich Maßeinheiten, Zeitformaten usw. müssen die verwendeten Einheiten, Formate usw. explizit ausgewiesen werden. Die Datenmodelle sollten katalogisiert werden, damit sie leicht auffindbar sind.",
       en: "Data models used for all entities in any data source shall be made explicit. They shall be well documented and have descriptive metadata, where the terms used shall be semantically unambiguous. For attributes related to units of measurement, time formats etc, the units, formats etc, used shall be made explicit. The data models should be catalogued so that they can be easily findable."),
     req("R1.2a",
-      tr: "Verwendete Datenmodelle MÜSSEN (wann immer möglich) auf allgemein anerkannten standardisierten Datenmodellen gemäß der nachstehenden Liste basieren.",
+      tr: "Verwendete Datenmodelle müssen (wann immer möglich) auf allgemein anerkannten standardisierten Datenmodellen gemäß der nachstehenden Liste basieren.",
       en: "Data models used shall be based (wherever possible) on commonly recognised standardised data models as listed below"),
     req("R1.2b",
-      tr: "Ist die Verwendung bestehender standardisierter Datenmodelle nicht möglich, MÜSSEN Anstrengungen unternommen werden, um am besten passende bestehende standardisierte Datenmodelle zu erweitern oder neue zu definieren, wobei bewährte Praktiken und Konventionen der das Datenmodell definierenden Gemeinschaft oder Organisation zu befolgen sind.",
+      tr: "Ist die Verwendung bestehender standardisierter Datenmodelle nicht möglich, müssen Anstrengungen unternommen werden, um am besten passende bestehende standardisierte Datenmodelle zu erweitern oder neue zu definieren, wobei bewährte Praktiken und Konventionen der das Datenmodell definierenden Gemeinschaft oder Organisation zu befolgen sind.",
       en: "Where it is not possible to use existing standardised data models, efforts shall be made to extend existing standardised data models that are most closely aligned or to define new ones, following best practice and conventions of the community or organisation defining the data models."),
     req("R1.3",
-      tr: "Verwendete Datenmodelle MÜSSEN den Datenaustausch durch Anwendung der relevanten Anforderungen der MIMs zu Datenzugriff und Datenverknüpfung unterstützen.",
+      tr: "Verwendete Datenmodelle müssen den Datenaustausch durch Anwendung der relevanten Anforderungen der MIMs zu Datenzugriff und Datenverknüpfung unterstützen.",
       en: "Data models used shall support the exchange of data by using the relevant requirements of the MIMs on Accessing data and Interlinking data"),
     capability("C2", "Different data models for the same entity that are used within a common data sharing ecosystem should be easily transformable into a common data model",
       tr: "Unterschiedliche Datenmodelle für dieselbe Entität, die innerhalb eines gemeinsamen Datenaustausch-Ökosystems verwendet werden, sollten leicht in ein gemeinsames Datenmodell transformierbar sein"),
     req("R2.1",
-      tr: "Für jedes Datenökosystem SOLLTE ein gemeinsames Datenmodell für jede Schlüsselentität entwickelt werden. Dieses gemeinsame Datenmodell SOLLTE alle Felder enthalten, die in den verschiedenen für diese Entität innerhalb dieses Datenökosystems verwendeten Datenmodellen enthalten sind. Jedes innerhalb dieses Datenökosystems verwendete abweichende Datenmodell KÖNNTE dann in das gemeinsame Datenmodell transformiert werden.",
+      tr: "Für jedes Datenökosystem sollte ein gemeinsames Datenmodell für jede Schlüsselentität entwickelt werden. Dieses gemeinsame Datenmodell sollte alle Felder enthalten, die in den verschiedenen für diese Entität innerhalb dieses Datenökosystems verwendeten Datenmodellen enthalten sind. Jedes innerhalb dieses Datenökosystems verwendete abweichende Datenmodell könnte dann in das gemeinsame Datenmodell transformiert werden.",
       en: "A common data model for each key entity should be developed for any data ecosystem. That common data model should contain all the fields included within the different data models for that entity that are used within that data ecosystem. Each different data model used within that data ecosystem could then be transformed into the common data model."),
     capability("C3", "Any data and its associated metadata can be shared in open, standardised, data transport formats so that data can be exchanged and interpreted consistently by different tools and implementations",
       tr: "Jegliche Daten und deren zugehörige Metadaten können in offenen, standardisierten Datentransportformaten geteilt werden, sodass Daten einheitlich ausgetauscht und von verschiedenen Werkzeugen und Implementierungen interpretiert werden können"),
     req("R3.1",
-      tr: "Jedes verwendete Datenmodell MUSS über mindestens ein definiertes maschinenlesbares Datentransportformat („Serialisierung“) verfügen, das offen, öffentlich verfügbar und implementierungsunabhängig ist.",
+      tr: "Jedes verwendete Datenmodell muss über mindestens ein definiertes maschinenlesbares Datentransportformat („Serialisierung“) verfügen, das offen, öffentlich verfügbar und implementierungsunabhängig ist.",
       en: "Each data model used shall have at least one defined machine-readable data transport format (“serialisation”) that is open, publicly available and implementation-independent."),
     req("R3.2",
-      tr: "Die Dokumentation des Datentransportformats SOLLTE ausreichend sein, um die Erstellung einer herstellerunabhängigen Anwendung oder eines Interpreters zu ermöglichen, die oder der in der Lage ist, alle in einem solchen Datenformat gespeicherten Daten zu rekonstruieren.",
-      en: "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor that is able to reconstruct all the data stored in such a data format."),
+      tr: "Die Dokumentation des Datentransportformats sollte ausreichend sein, um die Erstellung einer herstellerunabhängigen Anwendung oder eines Interpreters zu ermöglichen, die oder der in der Lage ist, alle in einem solchen Datenformat gespeicherten Daten zu rekonstruieren.",
+      en: "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor [sic] that is able to reconstruct all the data stored in such a data format."),
     req("R3.3",
-      tr: "Werden für dasselbe Datenmodell mehrere Datentransportformate unterstützt, MÜSSEN sie denselben Informationsgehalt konsistent und ohne Bedeutungsverlust darstellen.",
+      tr: "Werden für dasselbe Datenmodell mehrere Datentransportformate unterstützt, müssen sie denselben Informationsgehalt konsistent und ohne Bedeutungsverlust darstellen.",
       en: "Where multiple data transport formats are supported for the same data model, they shall represent the same information content consistently and without loss of meaning."),
     req("R3.4",
-      tr: "Die Darstellung SOLLTE die Validierung mittels offen veröffentlichter Schemata, Grammatiken oder gleichwertiger maschinenlesbarer Beschränkungen unterstützen, sofern solche Validierungsmechanismen für das gewählte Format existieren.",
+      tr: "Die Darstellung sollte die Validierung mittels offen veröffentlichter Schemata, Grammatiken oder gleichwertiger maschinenlesbarer Beschränkungen unterstützen, sofern solche Validierungsmechanismen für das gewählte Format existieren.",
       en: "The representation should support validation using openly published schemas, grammars, or equivalent machine-readable constraints, where such validation mechanisms exist for the chosen format."),
     capability("C4", "When useful, it should be possible to create \"Application Profiles\" for a data model, so that use case specific attributes can be added or specified without changing the underlying data model",
       tr: "Sofern sinnvoll, sollte es möglich sein, „Anwendungsprofile“ für ein Datenmodell zu erstellen, sodass anwendungsfallspezifische Attribute hinzugefügt oder spezifiziert werden können, ohne das zugrunde liegende Datenmodell zu verändern"),
     req("R4.1",
-      tr: "Anwendungsprofile, die ein Datenmodell erweitern, SOLLTEN das bereits bestehende Modell und dessen Nutzer NICHT beeinträchtigen.",
+      tr: "Anwendungsprofile, die ein Datenmodell erweitern, sollten das bereits bestehende Modell und dessen Nutzer nicht beeinträchtigen.",
       en: "Application Profiles that extend a data model should not impact the already existing model and its users"),
     req("R4.2",
-      tr: "Die im Anwendungsprofil des Modells eingeführten Spezialisierungen oder Erweiterungen SOLLTEN gut und getrennt vom Basisdatenmodell dokumentiert werden.",
+      tr: "Die im Anwendungsprofil des Modells eingeführten Spezialisierungen oder Erweiterungen sollten gut und getrennt vom Basisdatenmodell dokumentiert werden.",
       en: "The specialisations or extensions introduced in the Application Profile of the model should be well documented, separate from the base data model"),
   )
 
@@ -498,7 +498,7 @@
     name:     "Datenaustausch",
     question: "Können wir zu klaren Bedingungen teilen?",
     url:      "https://mims.oascities.org/exchanging-data",
-    intro:    "Nicht alle kommunalen Daten können einfach veröffentlicht werden: manche sind vertraulich, manche sensibel. MIM3 regelt, wie der Rest sicher geteilt wird: ein durchsuchbarer Katalog, Lizenzen nach Vorlage statt individueller Klauseln und für alle lesbare Governance-Regeln. Die Spezifikation formuliert fast ganz MIM3 als Empfehlung (siehe S. 3).",
+    intro:    "Nicht alle Daten der Stadt können einfach veröffentlicht werden: manche sind geschäftlich, manche sensibel. Bei MIM3 geht es darum, die restlichen Daten dennoch sicher zu teilen: ein Katalog, den man durchsuchen kann, Lizenzen nach Vorlage statt individueller Rechtstexte und Governance-Regeln, die jeder einsehen kann. Die Spezifikation formuliert fast ganz MIM3 als Empfehlung (siehe S. 3).",
     list:     "Checkliste",
   )
 
@@ -507,8 +507,8 @@
     refs: "MIM3 RC4.1–RC4.3",
     num:  "3.1")
 
-  #item("Nutzungsbedingungen und Lizenzen für Daten basieren auf gängigen Vorlagen (z. B. offene Lizenzen, Standard-Datenbereitstellungsverträge), nicht auf individuellen Klauseln pro Datensatz.",
-    why:  "Vereinbarungen sind skalierbar; Rechtsabteilungen werden nicht zum Engpass.",
+  #item("Bedingungen und Lizenzen für die Datennutzung stammen aus allgemein bekannten Vorlagen (z. B. offene Lizenzen, Standardvereinbarungen zur Datenteilung), nicht aus individuellen Rechtstexten pro Datensatz.",
+    why:  "Vereinbarungen lassen sich ohne Einzelfallprüfung durch Juristen skalieren.",
     refs: "MIM3 RC2.2, RC2.3",
     num:  "3.2")
 
@@ -524,7 +524,7 @@
       "Ein einheitliches Regelwerk ersetzt viele einzelne Datenüberlassungsverträge.",
     )),
     flags: ("Warnsignale", (
-      "Der Anbieter beansprucht Rechte an den Daten der Stadt (siehe die Klausel „Eigentum an den Daten“).",
+      "Der Anbieter beansprucht Rechte an den Daten der Stadt (siehe die Klausel „Rechte an den Daten“).",
       "Die Weitergabe an Dritte erfordert die Zustimmung oder Gebühren des Anbieters.",
     )),
   )
@@ -547,85 +547,85 @@
     capability("C1", "Governance rules for the data sharing ecosystem can be defined",
       tr: "Governance-Regeln für das Datenaustausch-Ökosystem können definiert werden"),
     req("RC1.1",
-      tr: "Der Orchestrator eines Datenökosystems SOLLTE in der Lage sein, ein Governance-Modell (z. B. ein Regelwerk) zu definieren, das Mitgliedschaftsregeln, die Rollen, Verantwortlichkeiten und Pflichten der Ökosystemteilnehmer sowie die allgemeinen Grundsätze für den Datenaustausch zwischen ihnen festlegt.",
+      tr: "Der Orchestrator eines Datenökosystems sollte in der Lage sein, ein Governance-Modell (z. B. ein Regelwerk) zu definieren, das Mitgliedschaftsregeln, die Rollen, Verantwortlichkeiten und Pflichten der Ökosystemteilnehmer sowie die allgemeinen Grundsätze für den Datenaustausch zwischen ihnen festlegt.",
       en: "The orchestrator of a data ecosystem should be able to define a governance model (e.g. a rulebook) that outlines membership rules, the roles, responsibilities and obligations of ecosystem participants, and the overall principles that govern data exchange between them."),
     req("RC1.2",
-      tr: "Mitglieder, die an einem Datenökosystem teilnehmen, SOLLTEN dessen Governance-Modell und alle daran vorgenommenen Änderungen kennen.",
+      tr: "Mitglieder, die an einem Datenökosystem teilnehmen, sollten dessen Governance-Modell und alle daran vorgenommenen Änderungen kennen.",
       en: "Members who participate in a data ecosystem should be aware of its governance model and any changes made to it."),
     req("RC1.3",
-      tr: "Das Governance-Modell SOLLTE für alle Ökosystemteilnehmer leicht verständlich sein.",
+      tr: "Das Governance-Modell sollte für alle Ökosystemteilnehmer leicht verständlich sein.",
       en: "The governance model should be easily comprehensible by all ecosystem participants."),
     capability("C2", "Terms and conditions for data sharing can be defined",
       tr: "Bedingungen für den Datenaustausch können definiert werden"),
     req("RC2.1",
-      tr: "Datenbereitsteller sind frei darin, Bedingungen festzulegen, unter denen ihre Daten ausgetauscht werden sollen. (Hinweis: Vor der Bereitstellung von Datenbeständen SOLLTEN Datenbereitsteller sicherstellen, dass sie über die entsprechende Erlaubnis der Dateneigentümer verfügen.)",
+      tr: "Datenbereitsteller sind frei darin, Bedingungen festzulegen, unter denen ihre Daten ausgetauscht werden sollen. (Hinweis: Vor der Bereitstellung von Datenbeständen sollten Datenbereitsteller sicherstellen, dass sie über die entsprechende Erlaubnis der Dateneigentümer verfügen.)",
       en: "Data providers are free to define terms and conditions under which they want their data to be exchanged. (Note: Before sharing data assets, data providers should ensure they have adequate permission from data owners.)"),
     req("RC2.2",
-      tr: "Bedingungen für einen Datenaustausch SOLLTEN klar und unmissverständlich beschrieben sein, sodass sie für Datennutzer leicht verständlich sind.",
+      tr: "Bedingungen für einen Datenaustausch sollten klar und unmissverständlich beschrieben sein, sodass sie für Datennutzer leicht verständlich sind.",
       en: "Terms and conditions for a data exchange should be described clearly and unambiguously so that they are easily understandable for data users."),
     req("RC2.3",
-      tr: "Bedingungen für einen Datenaustausch SOLLTEN durch Datenlizenzen oder Datenaustauschvereinbarungen auf der Grundlage klar definierter Vorlagen oder Standards ausgedrückt werden.",
+      tr: "Bedingungen für einen Datenaustausch sollten durch Datenlizenzen oder Datenaustauschvereinbarungen auf der Grundlage klar definierter Vorlagen oder Standards ausgedrückt werden.",
       en: "Terms and conditions for a data exchange should be expressed through data licences or data sharing agreements based on well-defined templates or standards."),
     req("RC2.4",
-      tr: "Bedingungen SOLLTEN im Einklang mit dem allgemeinen Governance-Modell des Datenökosystems stehen und DÜRFEN NICHT im Widerspruch dazu stehen. (Hinweis: Ein Datenbereitsteller KANN entscheiden, nicht an einem Datenökosystem teilzunehmen, wenn das zugrunde liegende Governance-Modell zu restriktiv oder zu freizügig ist.)",
+      tr: "Bedingungen sollten im Einklang mit dem allgemeinen Governance-Modell des Datenökosystems stehen und dürfen nicht im Widerspruch dazu stehen. (Hinweis: Ein Datenbereitsteller kann entscheiden, nicht an einem Datenökosystem teilzunehmen, wenn das zugrunde liegende Governance-Modell zu restriktiv oder zu freizügig ist.)",
       en: "Terms and conditions should be in line with the overall governance model of the data ecosystem and must not conflict with it. (Note: A data provider can decide not to participate in a data ecosystem if the underlying governance model is too restrictive or too permissive.)"),
     capability("C3", "Compliance with data sharing terms and conditions can be validated",
       tr: "Die Einhaltung von Bedingungen für den Datenaustausch kann validiert werden"),
     req("RC3.1",
-      tr: "Der Orchestrator eines Datenökosystems MUSS in der Lage sein, die Einhaltung des zugrunde liegenden Governance-Modells durch seine Teilnehmer zu überprüfen.",
+      tr: "Der Orchestrator eines Datenökosystems muss in der Lage sein, die Einhaltung des zugrunde liegenden Governance-Modells durch seine Teilnehmer zu überprüfen.",
       en: "The orchestrator of a data ecosystem must be able to ascertain compliance of its participants with the underlying governance model."),
     req("RC3.2",
-      tr: "Datenbereitsteller SOLLTEN in der Lage sein zu überprüfen, ob die Nutzung von Daten durch einen Datennutzer den zuvor vereinbarten Bedingungen entspricht.",
+      tr: "Datenbereitsteller sollten in der Lage sein zu überprüfen, ob die Nutzung von Daten durch einen Datennutzer den zuvor vereinbarten Bedingungen entspricht.",
       en: "Data providers should be able to ascertain that the use of data by a data user complies with previously agreed-upon terms and conditions."),
     req("RC3.3",
-      tr: "Datennutzer SOLLTEN in der Lage sein zu überprüfen, ob die Bereitstellung von Daten durch den Datenbereitsteller den zuvor vereinbarten Bedingungen folgt.",
+      tr: "Datennutzer sollten in der Lage sein zu überprüfen, ob die Bereitstellung von Daten durch den Datenbereitsteller den zuvor vereinbarten Bedingungen folgt.",
       en: "Data users should be able to ascertain that the data provider's supply of data follows previously agreed-upon terms and conditions."),
     capability("C4", "Available data assets can be discovered",
       tr: "Verfügbare Datenbestände können aufgefunden werden"),
     req("RC4.1",
-      tr: "Datennutzer SOLLTEN in der Lage sein, ohne Vorwissen zu ermitteln, welche Daten in einem Datenaustausch-Ökosystem verfügbar sind.",
+      tr: "Datennutzer sollten in der Lage sein, ohne Vorwissen zu ermitteln, welche Daten in einem Datenaustausch-Ökosystem verfügbar sind.",
       en: "Data users should be able to discover what data is available in a data sharing ecosystem without prior knowledge of it."),
     req("RC4.2",
-      tr: "Datenbestände SOLLTEN mit Metadaten adäquat beschrieben sein, sodass Datennutzer verlässliche Entscheidungen über deren beabsichtigte Weiterverwendung treffen KÖNNEN.",
+      tr: "Datenbestände sollten mit Metadaten adäquat beschrieben sein, sodass Datennutzer verlässliche Entscheidungen über deren beabsichtigte Weiterverwendung treffen können.",
       en: "Data assets should be adequately described with metadata so that data users can make reliable decisions about their further intended use."),
     req("RC4.3",
-      tr: "Zur Beschreibung von Datenbeständen verwendete Metadaten SOLLTEN auf klar definierten, leicht verständlichen Beschreibungsformaten basieren, die sowohl menschen- als auch maschinenlesbar sind.",
+      tr: "Zur Beschreibung von Datenbeständen verwendete Metadaten sollten auf klar definierten, leicht verständlichen Beschreibungsformaten basieren, die sowohl menschen- als auch maschinenlesbar sind.",
       en: "Metadata used to describe data assets should be based on well-defined, easy-to-understand description formats that are both human- and machine-readable."),
     capability("C5", "Ecosystem participants can be discovered",
       tr: "Ökosystemteilnehmer können aufgefunden werden"),
     req("RC5.1",
-      tr: "Ökosystemteilnehmer (z. B. Datennutzer und Datenbereitsteller) SOLLTEN in der Lage sein, einander innerhalb eines Datenaustausch-Ökosystems aufzufinden.",
+      tr: "Ökosystemteilnehmer (z. B. Datennutzer und Datenbereitsteller) sollten in der Lage sein, einander innerhalb eines Datenaustausch-Ökosystems aufzufinden.",
       en: "Ecosystem participants (e.g. data users and providers) should be able to discover each other within a data-sharing ecosystem."),
     req("RC5.2",
-      tr: "Über jeden Ökosystemteilnehmer SOLLTEN ausreichende Metadaten verfügbar sein, um dessen Vertrauenswürdigkeit für den Datenaustausch festzustellen.",
+      tr: "Über jeden Ökosystemteilnehmer sollten ausreichende Metadaten verfügbar sein, um dessen Vertrauenswürdigkeit für den Datenaustausch festzustellen.",
       en: "Sufficient metadata about each ecosystem participant should be available to ascertain their trustworthiness relevant for data exchange."),
     req("RC5.3",
-      tr: "Datenbereitsteller SOLLTEN in der Lage sein, Datennutzer, die auf ihre Datenbestände zugreifen wollen, zuverlässig zu identifizieren und deren Metadaten vor der Gewährung des Zugriffs zu überprüfen.",
+      tr: "Datenbereitsteller sollten in der Lage sein, Datennutzer, die auf ihre Datenbestände zugreifen wollen, zuverlässig zu identifizieren und deren Metadaten vor der Gewährung des Zugriffs zu überprüfen.",
       en: "Data providers should be able to reliably identify data users who want to access their data assets and verify their metadata before granting access."),
     req("RC5.4",
-      tr: "Datennutzer SOLLTEN in der Lage sein, Datenbereitsteller, die Daten in einem Datenökosystem teilen, vor dem Zugriff auf diese Daten oder deren Nutzung zu identifizieren.",
+      tr: "Datennutzer sollten in der Lage sein, Datenbereitsteller, die Daten in einem Datenökosystem teilen, vor dem Zugriff auf diese Daten oder deren Nutzung zu identifizieren.",
       en: "Data users should be able to identify data providers who share data in a data ecosystem before accessing or using that data."),
     req("RC5.5",
-      tr: "Ökosystemteilnehmer KÖNNEN sich auch dafür entscheiden, anonym zu bleiben, sofern das Governance-Modell des Datenaustausch-Ökosystems dies zulässt. In diesem Fall KÖNNEN RC5.1 bis RC5.4 unberücksichtigt bleiben.",
+      tr: "Ökosystemteilnehmer können sich auch dafür entscheiden, anonym zu bleiben, sofern das Governance-Modell des Datenaustausch-Ökosystems dies zulässt. In diesem Fall können RC5.1 bis RC5.4 unberücksichtigt bleiben.",
       en: "Ecosystem participants may also choose to remain anonymous if the governance model of the data-sharing ecosystem allows for it. In this case, RC5.1 to RC5.4 can be ignored."),
     capability("C6", "Data exchange can be agreed upon",
       tr: "Ein Datenaustausch kann vereinbart werden"),
     req("RC6.1",
-      tr: "Datennutzer und Datenbereitsteller SOLLTEN in der Lage sein, einen Datenaustausch und die damit verbundenen Bedingungen zu vereinbaren (z. B. Annahme von Bedingungen, rechtsgültige Unterzeichnung einer Vereinbarung oder Verhandlung).",
+      tr: "Datennutzer und Datenbereitsteller sollten in der Lage sein, einen Datenaustausch und die damit verbundenen Bedingungen zu vereinbaren (z. B. Annahme von Bedingungen, rechtsgültige Unterzeichnung einer Vereinbarung oder Verhandlung).",
       en: "Data users and providers should be able to agree to a data exchange and the terms and conditions associated with it (e.g. acceptance of terms, legal signature of an agreement, or negotiation)."),
     req("RC6.2",
-      tr: "Datennutzer und Datenbereitsteller SOLLTEN in der Lage sein, einen zuvor vereinbarten Datenaustausch gemäß den damit verbundenen Bedingungen zu beenden.",
+      tr: "Datennutzer und Datenbereitsteller sollten in der Lage sein, einen zuvor vereinbarten Datenaustausch gemäß den damit verbundenen Bedingungen zu beenden.",
       en: "Data users and providers should be able to terminate a previously agreed-upon data exchange in accordance with the terms and conditions associated with it."),
     req("RC6.3",
-      tr: "Wo möglich KÖNNEN elektronische Mittel für die Vereinbarung und Beendigung eines Datenaustauschs bereitgestellt werden.",
+      tr: "Wo möglich können elektronische Mittel für die Vereinbarung und Beendigung eines Datenaustauschs bereitgestellt werden.",
       en: "Where possible, electronic means for the agreement and termination of a data exchange may be provided."),
     capability("C7", "New data currently not available can be requested",
       tr: "Neue, derzeit nicht verfügbare Daten können angefordert werden"),
     req("RC7.1",
-      tr: "Datennutzer SOLLTEN in der Lage sein, ihr Interesse an Datenbeständen zu bekunden, die derzeit im Datenaustausch-Ökosystem nicht verfügbar sind.",
+      tr: "Datennutzer sollten in der Lage sein, ihr Interesse an Datenbeständen zu bekunden, die derzeit im Datenaustausch-Ökosystem nicht verfügbar sind.",
       en: "Data users should be able to express their interest in data assets currently unavailable in the data sharing ecosystem."),
     req("RC7.2",
-      tr: "Datenbereitsteller SOLLTEN in der Lage sein, Anfragen von Datennutzern nach neuen Datenbeständen zu erhalten.",
+      tr: "Datenbereitsteller sollten in der Lage sein, Anfragen von Datennutzern nach neuen Datenbeständen zu erhalten.",
       en: "Data providers should be able to obtain requests made by data users for new data assets."),
   )
 
@@ -641,7 +641,7 @@
   #mim-page(
     id:       "MIM6",
     name:     "Datensicherheit",
-    question: "Sind unsere Daten bei Übertragung und Nutzung sicher?",
+    question: "Sind unsere Daten geschützt?",
     url:      "https://mims.oascities.org/securing-data",
     intro:    "Smart Cities sind Angriffsziele. MIM6 setzt den Rahmen bewusst eng und praxisnah: Verschlüsselung bei der Übertragung, Standard-Logins statt proprietärer Systeme, nachvollziehbare Zugriffskontrolle und Protokollierung. Nichts davon ist exotisch – alles gehört in den Vertrag.",
     list:     "Checkliste",
@@ -662,8 +662,8 @@
     refs: "MIM6 R1.1, R1.3, 8.15",
     num:  "6.3")
 
-  #item("Der Auftragnehmer muss die Ausrichtung an ISO/IEC 27001:2022 (oder gleichwertig) für den von ihm betriebenen Dienst nachweisen.",
-    why:  "Sicherheit ist ein Prozess, kein Prüfpunkt bei Lieferung. Die Spezifikation verweist auf Kontrollen nach ISO/IEC 27001, kein Zertifikat.",
+  #item("Der Bieter weist die Ausrichtung an ISO/IEC 27001:2022 (oder gleichwertig) für den von ihm betriebenen Dienst nach.",
+    why:  "Sicherheit ist ein Prozess, kein Prüfpunkt bei Lieferung. Die Spezifikation verweist auf Maßnahmen nach ISO/IEC 27001, kein Zertifikat.",
     refs: "MIM6 C1–C3 (ISO/IEC 27001)",
     num:  "6.4",
     label: "Gehört in die Teilnahmebedingungen, nicht in die Leistungsbeschreibung")
@@ -672,7 +672,7 @@
     why:   ("Warum das wichtig ist", (
       "Eine Schwachstelle in einem System öffnet nicht automatisch jedes System.",
       "Gilt NIS-2 für Sie, wird die Einhaltung der Richtlinie und nationaler Sicherheitsvorgaben spürbar einfacher.",
-      "Tritt ein Vorfall ein, zeigen die Protokolle, was geschehen ist und durch wen.",
+      "Nach einem Sicherheitsvorfall belegen die Protokolle, was geschehen ist und wer gehandelt hat.",
     )),
     flags: ("Warnsignale", (
       "Nur proprietäre Anmeldung.",
@@ -715,7 +715,7 @@
     capability("C3", "Data accessed by users originates from a verified source",
       tr: "Daten, auf die Nutzer zugreifen, stammen aus einer verifizierten Quelle"),
     req("R3.1",
-      tr: "Sichere Authentifizierungstechnologien und -verfahren MÜSSEN auf Grundlage von Informationszugriffsbeschränkungen und der themenspezifischen Richtlinie zur Zugriffskontrolle umgesetzt werden. (ISO 27001 8.5 Sichere Authentifizierung)",
+      tr: "Sichere Authentifizierungstechnologien und -verfahren müssen auf Grundlage von Informationszugriffsbeschränkungen und der themenspezifischen Richtlinie zur Zugriffskontrolle umgesetzt werden. (ISO 27001 8.5 Sichere Authentifizierung)",
       en: "Secure authentication technologies and procedures shall be implemented based on information access restrictions and the topic-specific policy on access control. (ISO 27001 8.5 Secure authentication)"),
     capability("M1", "Mechanism candidate",
       tr: "Mechanismus-Kandidat"),
@@ -734,7 +734,7 @@
     capability("P", "Pre- and Post-requisites (based on ISO 27001 Annex A): the control this booklet refers to",
       tr: "Vor- und nachgelagerte Anforderungen (basierend auf ISO 27001 Anhang A): die Maßnahme, auf die sich diese Broschüre bezieht"),
     req("8.15",
-      tr: "Protokollierung. Protokolle, die Aktivitäten, Ausnahmen, Fehler und andere relevante Ereignisse aufzeichnen, MÜSSEN erstellt, gespeichert, geschützt und analysiert werden.",
+      tr: "Protokollierung. Protokolle, die Aktivitäten, Ausnahmen, Fehler und andere relevante Ereignisse aufzeichnen, müssen erstellt, gespeichert, geschützt und analysiert werden.",
       en: "Logging. Logs that record activities, exceptions, faults and other relevant events shall be produced, stored, protected and analysed."),
   )
 
@@ -806,27 +806,27 @@
     capability("C1", "Cities and communities can easily transfer geospatial data between internal and external (including IoT-related) IT systems",
       tr: "Städte und Gemeinschaften können Geodaten problemlos zwischen internen und externen IT-Systemen (einschließlich IoT) übertragen"),
     req("R1.1",
-      tr: "Geodaten MÜSSEN über eine standardbasierte Webdienst-Schnittstelle bereitgestellt werden.",
+      tr: "Geodaten müssen über eine standardbasierte Webdienst-Schnittstelle bereitgestellt werden.",
       en: "Geospatial data shall be exposed through a standards-based web service interface."),
     capability("C2", "Cities and communities can integrate 2D and 3D geospatial data coming from a variety of sources, for example geodata and building information models, and share that data within and between them in an interoperable way",
       tr: "Städte und Gemeinschaften können 2D- und 3D-Geodaten aus verschiedenen Quellen integrieren, z. B. Geodaten und Bauwerksdatenmodelle (BIM), und diese Daten innerhalb und untereinander interoperabel austauschen"),
     req("R2.1",
-      tr: "Geodaten MÜSSEN unter Verwendung offener Standards codiert werden. Es wird empfohlen, relevante Standards des OGC und von BuildingSMART International zu verwenden.",
+      tr: "Geodaten müssen unter Verwendung offener Standards codiert werden. Es wird empfohlen, relevante Standards des OGC und von BuildingSMART International zu verwenden.",
       en: "Geospatial data shall be encoded using open standards. It is recommended to use relevant standards from OGC and BuildingSMART International."),
     capability("C3", "Cities and communities can integrate geospatial data with other data that can provide further information about the context",
       tr: "Städte und Gemeinschaften können Geodaten mit anderen Daten integrieren, die weitere Kontextinformationen liefern können"),
     req("R3.1",
-      tr: "Alle Datensätze, die verwendet werden, um weitere Informationen über den durch Geodaten abgedeckten Kontext bereitzustellen, MÜSSEN MIM1 und MIM2 entsprechen.",
+      tr: "Alle Datensätze, die verwendet werden, um weitere Informationen über den durch Geodaten abgedeckten Kontext bereitzustellen, müssen MIM1 und MIM2 entsprechen.",
       en: "All data sets used to provide further information about the context covered by geospatial data shall comply with MIM1 and MIM2."),
     capability("C4", "Cities and communities have a consistent and persistent way of describing individual instances of all features, things or entities included in the geospatial data sources",
       tr: "Städte und Gemeinschaften verfügen über eine einheitliche und persistente Methode zur Beschreibung einzelner Instanzen aller in den Geodatenquellen enthaltenen Objekte, Dinge oder Entitäten"),
     req("R4.1",
-      tr: "Eindeutige und persistente Bezeichner MÜSSEN verwendet werden, um einzelne Instanzen jeder in Datensätzen verwendeten Entität zu identifizieren. (Siehe MIM1: Datenverknüpfung.)",
+      tr: "Eindeutige und persistente Bezeichner müssen verwendet werden, um einzelne Instanzen jeder in Datensätzen verwendeten Entität zu identifizieren. (Siehe MIM1: Datenverknüpfung.)",
       en: "Unique and persistent identifiers shall be used to identify particular instances of any entity used in data sets. (See MIM1: Interlinking Data.)"),
     capability("C5", "Coordinate Reference Systems (CRS) used in data sharing are easily transformable into a common CRS",
       tr: "Beim Datenaustausch verwendete Koordinatenreferenzsysteme (CRS) sind leicht in ein gemeinsames CRS transformierbar"),
     req("R5.1",
-      tr: "Koordinatenreferenzsysteme (CRS) MÜSSEN Standards entsprechen, und es MÜSSEN Informationen darüber bereitgestellt werden, welcher Standard (z. B. EPSG:4326, EPSG:3857) verwendet wird. Dies umfasst die EPSG-Nummer oder WGS-Nummer zusammen mit Informationen über etwaige Abweichungen auf Basis nationaler Systeme wie dem lettischen LKS-92, sodass Daten in ein gemeinsames CRS transformiert werden KÖNNEN. (Hinweis: Innerhalb der EU ist für Geodaten die Verwendung von Metadaten erforderlich, die der INSPIRE-Richtlinie entsprechen, einschließlich der zur Beschreibung der CRS-Informationen erforderlichen Metadaten.)",
+      tr: "Koordinatenreferenzsysteme (CRS) müssen Standards entsprechen, und es müssen Informationen darüber bereitgestellt werden, welcher Standard (z. B. EPSG:4326, EPSG:3857) verwendet wird. Dies umfasst die EPSG-Nummer oder WGS-Nummer zusammen mit Informationen über etwaige Abweichungen auf Basis nationaler Systeme wie dem lettischen LKS-92, sodass Daten in ein gemeinsames CRS transformiert werden können. (Hinweis: Innerhalb der EU ist für Geodaten die Verwendung von Metadaten erforderlich, die der INSPIRE-Richtlinie entsprechen, einschließlich der zur Beschreibung der CRS-Informationen erforderlichen Metadaten.)",
       en: "Coordinate Reference Systems (CRS) shall comply with standards, and information shall be provided regarding which standard (e.g. EPSG:4326, EPSG:3857) is being used. This includes the EPSG number or WGS number, along with information about any variation based on national systems such as the Latvian LKS-92, so that data can be transformed to a common CRS. (Note: Within the EU, for geospatial data it is required to use metadata compliant with the INSPIRE Directive, including the metadata needed to describe the CRS information.)"),
   )
 
@@ -858,7 +858,7 @@
     refs: "MIM8 R3.1, R3.2",
     num:  "8.2")
 
-  #item("Ausgaben nutzen Standardformate (GeoJSON, CityJSON, 3D Tiles, NetCDF…), die von Fremdwerkzeugen verarbeitet werden können.",
+  #item("Ausgaben nutzen Standardformate (GeoJSON, CityJSON, 3D Tiles, NetCDF…), die von Werkzeugen Dritter lesbar sind.",
     why:  "Visualisierung und Analyse bleiben wettbewerbsoffene Märkte.",
     refs: "MIM8 M2",
     num:  "8.3")
@@ -898,10 +898,10 @@
     capability("C1", "Provide access to datasets used within the LDT, including static, real-time, and simulation data and calculation models",
       tr: "Zugriff auf im LDT verwendete Datensätze bereitstellen, einschließlich statischer Daten, Echtzeitdaten, Simulationsdaten und Berechnungsmodellen"),
     req("R1.1",
-      tr: "Der LDT MUSS Zugriff auf Simulationsergebnisse und Berechnungsmodelleingaben bereitstellen, sofern diese im Rahmen von LDT-Workflows benötigt werden.",
+      tr: "Der LDT muss Zugriff auf Simulationsergebnisse und Berechnungsmodelleingaben bereitstellen, sofern diese im Rahmen von LDT-Workflows benötigt werden.",
       en: "The LDT shall provide access to simulation outputs and calculation-model inputs where these are needed as part of LDT workflows."),
     req("R1.2",
-      tr: "Der LDT SOLLTE klar zwischen rohen Quelldaten, transformierten workflow-bereiten Daten, Modelleingaben und Modellausgaben unterscheiden.",
+      tr: "Der LDT sollte klar zwischen rohen Quelldaten, transformierten workflow-bereiten Daten, Modelleingaben und Modellausgaben unterscheiden.",
       en: "The LDT should distinguish clearly between raw source data, transformed workflow-ready data, model inputs, and model outputs."),
     capability("C2", "Exchange data with external systems and other LDTs using interoperable interfaces",
       tr: "Daten mit externen Systemen und anderen LDTs über interoperable Schnittstellen austauschen"),
@@ -911,19 +911,19 @@
     capability("C3", "Reuse deterministic or AI models across different domains, communities, use cases, and/or LDTs",
       tr: "Deterministische oder KI-Modelle über verschiedene Domänen, Gemeinschaften, Anwendungsfälle und/oder LDTs hinweg wiederverwenden"),
     req("R3.1",
-      tr: "Das Modell SOLLTE Standard-Modellmetadaten bereitstellen, einschließlich einer Beschreibung seiner Methoden und Parameter sowie Datenparameter (entweder als Wert oder als Referenz). Hierzu SOLLTEN gemeinsame Metadatenstandards verwendet werden.",
+      tr: "Das Modell sollte Standard-Modellmetadaten bereitstellen, einschließlich einer Beschreibung seiner Methoden und Parameter sowie Datenparameter (entweder als Wert oder als Referenz). Hierzu sollten gemeinsame Metadatenstandards verwendet werden.",
       en: "The model should provide standard model metadata, including a description of its methods and parameters, and data-parameters (either by value or by reference). To this end common metadata standards should be used."),
     req("R3.2",
-      tr: "Das Modell MUSS über eine dokumentierte Schnittstelle bereitgestellt werden oder aufrufbar sein, vorzugsweise unter Verwendung einer bekannten standardisierten API. Der Datensatz, der das Ergebnis des Modells bildet, MUSS (auf Datenebene) beschrieben werden.",
+      tr: "Das Modell muss über eine dokumentierte Schnittstelle bereitgestellt werden oder aufrufbar sein, vorzugsweise unter Verwendung einer bekannten standardisierten API. Der Datensatz, der das Ergebnis des Modells bildet, muss (auf Datenebene) beschrieben werden.",
       en: "The model shall expose or be callable through a documented interface, preferably using a known standardised API. The dataset that forms the outcome of the model shall be described (at data-level)."),
     req("R3.3",
-      tr: "Eine vertrauenswürdige, zuverlässige und ethische Nutzung innovativer Methoden (LLMs, agentische KI usw.) SOLLTE gewährleistet werden. Verzerrungen (Bias) SOLLTEN minimiert werden, sofern zutreffend. Die Methoden, mit denen dies garantiert wird, SOLLTEN beschrieben werden.",
+      tr: "Eine vertrauenswürdige, zuverlässige und ethische Nutzung innovativer Methoden (LLMs, agentische KI usw.) sollte gewährleistet werden. Verzerrungen (Bias) sollten minimiert werden, sofern zutreffend. Die Methoden, mit denen dies garantiert wird, sollten beschrieben werden.",
       en: "Trustworthy, reliable, and ethical use of innovative methods (LLMs, agentic AI, etc.) should be safeguarded. Bias should minimised [sic] where applicable. The methods used to guarantee this, should be described."),
     req("R3.4",
-      tr: "Das Modell MUSS in der Lage sein, im Namen des Endnutzers oder der Organisation auf Daten zuzugreifen. Siehe MIM3.",
+      tr: "Das Modell muss in der Lage sein, im Namen des Endnutzers oder der Organisation auf Daten zuzugreifen. Siehe MIM3.",
       en: "The model must be able to access data on behalf of the end-user or organisation. See MIM3"),
     req("R3.5",
-      tr: "Für Daten, die in KI-Modellen verwendet werden sollen, SOLLTEN Herkunft und Vertrauenswürdigkeit garantiert werden. In manchen Fällen MUSS eine autoritative Quelle, beispielsweise eine Behörde, aufgeführt werden.",
+      tr: "Für Daten, die in KI-Modellen verwendet werden sollen, sollten Herkunft und Vertrauenswürdigkeit garantiert werden. In manchen Fällen muss eine autoritative Quelle, beispielsweise eine Behörde, aufgeführt werden.",
       en: "For data to be used in AI models, provenance and trust should be guaranteed. In some cases, an authoratitive sourc [sic], such as a government agency must be listed."),
     capability("C4", "Coordinate and manage data, models, and processing workflows within an LDT (intra-LDT) and across LDTs (inter-LDT)",
       tr: "Daten, Modelle und Verarbeitungsworkflows innerhalb eines LDT (intra-LDT) und über LDTs hinweg (inter-LDT) koordinieren und verwalten"),
@@ -931,7 +931,7 @@
       tr: "Der LDT unterstützt Workflows, die Datenquellen, Datentransformationen, Modellausführungen, Simulationsprozesse und Ergebnisse verbinden.",
       en: "The LDT supports workflows that connect data sources, data transformations, model execution, simulation processes, and outputs."),
     req("R4.2",
-      tr: "Der LDT verkettet Workflow-Schritte, bei denen die Ausgabe eines Schritts als Eingabe für einen anderen verwendet werden KANN.",
+      tr: "Der LDT verkettet Workflow-Schritte, bei denen die Ausgabe eines Schritts als Eingabe für einen anderen verwendet werden kann.",
       en: "The LDT chains workflow steps, where the output of one step can be used as the input for another."),
     req("R4.3",
       tr: "Der LDT überwacht den Status der Workflow-Ausführung, einschließlich abgeschlossener, fehlgeschlagener und unterbrochener Prozesse.",
@@ -950,7 +950,7 @@
     capability("C6", "Ensure that data exchanged (and simulation outputs) within and between LDTs can be interpreted consistently through shared or mapped semantics and clear provenance",
       tr: "Sicherstellen, dass innerhalb und zwischen LDTs ausgetauschte Daten (und Simulationsergebnisse) durch gemeinsame oder zugeordnete Semantik und klare Herkunft einheitlich interpretiert werden können"),
     req("R6.1",
-      tr: "Der LDT SOLLTE ungelöste semantische Lücken, Annahmen oder Zuordnungen dokumentieren, die die Interpretation, Wiederverwendung oder den Vergleich von Ergebnissen beeinflussen KÖNNEN.",
+      tr: "Der LDT sollte ungelöste semantische Lücken, Annahmen oder Zuordnungen dokumentieren, die die Interpretation, Wiederverwendung oder den Vergleich von Ergebnissen beeinflussen können.",
       en: "The LDT should document unresolved semantic gaps, assumptions, or mappings that may affect the interpretation, reuse, or comparison of results."),
     capability("M", "Mechanisms (under active development)",
       tr: "Mechanismen (in aktiver Entwicklung)"),
@@ -989,16 +989,16 @@
       "Bei Vertragsende werden alle Daten der Stadt (samt Konfigurationen) ohne zusätzliche Kosten in offenen, dokumentierten Formaten übergeben."),
     clause("Rechte an den Daten",
       "Sämtliche Rechte an den im Rahmen des Vertrags erfassten und daraus abgeleiteten Daten stehen dem öffentlichen Auftraggeber zu."),
-    clause("Keine Gebühren pro Arbeitsplatz oder Abfrage",
-      "Keine Gebühren für den Zugriff der Stadt auf ihre eigenen Daten."),
+    clause("Keine Gebühren für eigene Daten",
+      "Der öffentliche Auftraggeber zahlt kein Entgelt für den Zugriff auf seine eigenen Daten, weder pro Nutzer noch pro Abfrage."),
     clause("API-Stabilität und Versionierung",
       "Der Auftragnehmer hält die API über die gesamte Vertragslaufzeit abwärtskompatibel. Inkompatible Änderungen („breaking changes“) werden mindestens 6 Monate im Voraus angekündigt und als neue Version bereitgestellt, während die bisherige Version bis zum vereinbarten Umstellungszeitpunkt verfügbar bleibt."),
     clause("Nachweisen statt versprechen",
       "Bieter weisen die Erfüllung im Rahmen der Angebotswertung nach, statt bloße Eigenerklärungen abzugeben. Bei einer API bedeutet dies eine veröffentlichte interaktive Dokumentation (wie OpenAPI) sowie ein funktionierender Testaufruf, der valide Daten liefert. Jeder ausgewählte Punkt wird bei der Abnahme erneut geprüft."),
     clause("Benennung offener Standards",
-      "Die Ausschreibung benennt die vorstehenden Standards; Angaben zur Kompatibilität müssen die genaue Schnittstelle und Version bezeichnen. Jeder Verweis auf eine Norm oder technische Spezifikation lässt eine gleichwertige Lösung zu; der Bieter weist die Gleichwertigkeit nach."),
+      "Die Ausschreibung benennt konkrete Standards; Angaben zur Kompatibilität müssen die genaue Schnittstelle und Version bezeichnen. Jeder Verweis auf eine Norm oder technische Spezifikation lässt eine gleichwertige Lösung zu; der Bieter weist die Gleichwertigkeit nach."),
     clause("MIMs-Konformitätserklärung",
-      "Der Bieter füllt die Konformitätstabelle (S. 23) vollständig aus; sie wird Bestandteil des Vertrags."),
+      "Der Bieter füllt die Konformitätstabelle (S. 28) vollständig aus; sie wird Bestandteil des Vertrags."),
   )
 ]
 #pagebreak()
@@ -1010,7 +1010,7 @@
 #fit-page("example")[
   #band("Beispiel: Eine Stadt beschafft ein Messnetz für Luftgütesensoren", id: "example")
 
-  #intro(size: 9.8pt, "Ausgewählte Seiten: MIM0, MIM1, MIM2, MIM6 und MIM7 (die Daten werden kartografisch dargestellt). Aus MIM3 nur Kriterium 3.1 (Luftqualitätsdaten werden als offene Daten bereitgestellt und gehören in einen Katalog); MIM8 entfällt, da es sich nicht um einen digitalen Zwilling handelt.")
+  #intro(size: 9.8pt, "Ausgewählte Seiten: MIM0, MIM1, MIM2, MIM6 und MIM7 (die Daten werden auf einer Karte dargestellt). Aus MIM3 nur Kriterium 3.1 (Luftqualitätsdaten werden als offene Daten bereitgestellt, gehören also in einen Katalog); MIM8 findet keine Anwendung: Das System ist kein digitaler Zwilling.")
 
   #text(size: 10pt, weight: "bold", fill: eu-blue, "Was gehört an welche Stelle?")
   #v(4pt)
@@ -1029,7 +1029,7 @@
        "Die Konformitätstabelle als zwingende Anlage zum Angebot: E, G oder N für jedes Kriterium samt Nachweis (Adresse der API-Dokumentation, Testzugang)"),
       ("Vertragsentwurf",
        "Bedingungen für die Ausführung des Auftrags (Art. 70)",
-       "Exit-Klausel, Datenrechte, keine Gebühren pro Arbeitsplatz/Abfrage, API-Stabilität und Versionierung; die ausgefüllte Konformitätstabelle als Vertragsbestandteil"),
+       "Exit-Klausel, Rechte an den Daten, Keine Gebühren für eigene Daten, API-Stabilität und Versionierung; die ausgefüllte Konformitätstabelle als Anlage"),
       ("Abnahmeprotokoll",
        "Bedingungen für die Ausführung des Auftrags (Art. 70)",
        "Die Spalte „Geprüft“ der Konformitätstabelle als Prüfprotokoll"),
@@ -1043,7 +1043,7 @@
     "4.3.3 Die API ermöglicht das Filtern von Daten nach Erfassungszeitpunkt und Messort. (MIM0 R2.1, R2.2)",
     "… 4.3.4 bis 4.3.21: weitere ausgewählte Kriterien …",
     "4.3.22 Jeder Verweis auf eine Norm oder technische Spezifikation lässt eine gleichwertige Lösung zu; der Bieter weist die Gleichwertigkeit nach.",
-    "4.3.23 Der Bieter füllt die Konformitätstabelle (Anlage zu den Vergabeunterlagen) vollständig aus und gibt für jedes geforderte Kriterium die Nachweise an. Die Punkte 4.3.1 bis 4.3.21 weist der Bieter während der Angebotswertung durch einen funktionierenden API-Aufruf nach; der öffentliche Auftraggeber prüft diese bei der Abnahme erneut. Die Nichterfüllung berechtigt zur Verweigerung der Abnahme.",
+    "4.3.23 Der Bieter füllt die Konformitätstabelle (Anlage zu den Vergabeunterlagen) vollständig aus und benennt für jedes geforderte Kriterium die Nachweise. Während der Angebotswertung weist der Bieter die Punkte 4.3.1 bis 4.3.21 nach (beispielsweise durch einen Live-API-Aufruf); ein Angebot, das einen geforderten Punkt nicht erfüllt, entspricht nicht den Anforderungen an den Auftragsgegenstand. Der öffentliche Auftraggeber prüft die Punkte bei der Abnahme erneut; eine Nichterfüllung zu diesem Zeitpunkt berechtigt zur Verweigerung der Abnahme.",
   ))
 
   #note(size: 9pt, "Punkt 4.3.3 zeigt, wie Sie ein Kriterium passgenau schärfen können: Bei Sensoren ist die gezielte Filterung nach Messzeitpunkt und Messort fachlich geboten.")
@@ -1061,7 +1061,7 @@
     ),
   )
 
-  #note(size: 9pt, gap: 5pt, "Ein Versprechen für die Zukunft ist N: Das Gremium prüft nur, was der Bieter vorweisen kann.")
+  #note(size: 9pt, gap: 5pt, "Ein Versprechen künftiger Funktionalität gilt als N: Das Wertungsgremium prüft nur, was der Bieter vorweisen kann. Bei einem geforderten Kriterium bedeutet N, dass das Angebot den Anforderungen an den Auftragsgegenstand nicht entspricht.")
 
   #note(size: 9pt, gap: 5pt, "Passen Sie die Formulierung an das nationale Vergaberecht an und lassen Sie diese durch die vergaberechtlich zuständige Stelle prüfen.")
 ]
@@ -1085,9 +1085,9 @@
     ("0.2", "Offene API-Beschreibung (OpenAPI) unter stabiler Adresse", "MIM0 R1.3"),
     ("0.3", "Filtern nach Zeit, Ort und Attributen", "MIM0 R2.1, R2.2"),
     ("0.4", "Abonnement von Änderungen bei Bedarf", "MIM0 R3.1"),
-    ("0.5", "Standard-HTTP-Fehler, Caching, Abrufbeschränkungen", "MIM0 C2"),
+    ("0.5", "Standard-HTTP-Fehler, Caching, Ratenbegrenzungen", "MIM0 C2"),
   ),
-  section("MIM1 · Hat jedes Objekt einen dauerhaften Namen?",
+  section("MIM1 · Besitzt jedes Objekt eine dauerhafte Kennung?",
     ("1.1", "Eindeutiger persistenter Identifikator pro Entität", "MIM1 R1.1, R1.5"),
     ("1.2", "Identifikator-Abfrage liefert Daten und Typ", "MIM1 R1.2, R2.1, R2.2"),
     ("1.3", "Systemübergreifende Zuordnung von Identifikatoren", "MIM1 R1.3, R1.4"),
@@ -1096,7 +1096,7 @@
   section("MIM2 · Sprechen wir eine gemeinsame Sprache?",
     ("2.1", "Standard-Datenmodelle wo immer möglich", "MIM2 R1.2a"),
     ("2.2", "Modelle dokumentiert, Einheiten explizit angegeben", "MIM2 R1.1"),
-    ("2.3", "Erweiterungen als Profile, niemals als Abspaltungen", "MIM2 R1.2b, R4.1, R4.2"),
+    ("2.3", "Erweiterungen als Profile, niemals als Forks", "MIM2 R1.2b, R4.1, R4.2"),
     ("2.4", "Offene, schemavalidierbare Serialisierung", "MIM2 R3.1, R3.4"),
   ),
   section("MIM3 · Können wir zu klaren Bedingungen teilen?",
@@ -1104,7 +1104,7 @@
     ("3.2", "Musterlizenzen und standardisierte Vereinbarungen", "MIM3 RC2.2, RC2.3"),
     ("3.3", "Stadt bestimmt die Nutzungsbedingungen selbst", "MIM3 RC1.1, RC2.1"),
   ),
-  section("MIM6 · Sind unsere Daten bei Übertragung und Nutzung sicher?",
+  section("MIM6 · Sind unsere Daten geschützt?",
     ("6.1", "Verschlüsselte Übertragung (TLS 1.3)", "MIM6 R2.1, M1.1"),
     ("6.2", "Standard-Anmeldung (OAuth 2.0 / OIDC)", "MIM6 R3.1, M1.2, M1.3"),
     ("6.3", "Rollenbasierter Zugriff und Audit-Protokolle", "MIM6 R1.1, R1.3, 8.15"),
@@ -1114,19 +1114,19 @@
     ("7.1", "OGC-Standardschnittstellen", "MIM7 R1.1"),
     ("7.2", "Offene Geoformate", "MIM7 R2.1"),
     ("7.3", "Koordinatenreferenzsystem deklariert (EPSG)", "MIM7 R5.1"),
-    ("7.4", "Persistente IDs für Geodaten-Features (siehe 1.1)", "MIM7 R4.1"),
+    ("7.4", "Persistente IDs für Geo-Objekte (siehe 1.1)", "MIM7 R4.1"),
   ),
   section("MIM8 · Kann unser digitaler Zwilling wachsen?",
     ("8.1", "Zwilling-Daten und Ergebnisse über APIs", "MIM8 R1.1"),
-    ("8.2", "Modelle dokumentiert und ausführbar", "MIM8 R3.1, R3.2"),
+    ("8.2", "Modelle dokumentiert und aufrufbar", "MIM8 R3.1, R3.2"),
     ("8.3", "Standardisierte Ausgabeformate", "MIM8 M2"),
     ("8.4", "Workflow-Herkunft lückenlos dokumentiert", "MIM8 R4.4"),
   ),
   section("Querschnittliche Vertragsklauseln", accent: magenta, note: "Der Bieter bestätigt die Annahme der Vertragsbedingung (E / N).",
     ("X.1", "Exit-Klausel: Kostenfreie Übergabe in offenen Formaten", "—"),
-    ("X.2", "Rechte an Daten stehen dem Auftraggeber zu", "—"),
+    ("X.2", "Rechte an den Daten stehen dem Auftraggeber zu", "—"),
     ("X.3", "Keine Gebühren für Zugriff auf eigene Daten", "—"),
-    ("X.4", "API-Stabilität: Versioniert, 6 Monate Vorankündigung bei Brücken", "—"),
+    ("X.4", "API-Stabilität: versioniert, 6 Monate Vorlauf bei inkompatiblen Änderungen", "—"),
   ),
 )
 
@@ -1167,7 +1167,7 @@
     term("OGC",
       "Open Geospatial Consortium: Die Organisation, die Standards für Geodaten und Geodienste festlegt (OGC API, WFS, SensorThings)."),
     term("Offener Standard",
-      "Eine technische Spezifikation, die von jedermann ohne Gebühren oder Genehmigung eingesehen und implementiert werden darf."),
+      "Eine technische Regel, die jedermann kostenlos und ohne besondere Genehmigung einsehen und umsetzen darf."),
     term("OpenAPI",
       "Offenes Format für eine maschinenlesbare Schnittstellenbeschreibung einer Web-API: Adressen, Parameter und Antwortformate."),
     term("Serialisierung",
@@ -1175,7 +1175,7 @@
     term("TLS",
       "Das Protokoll zur Verschlüsselung von Daten bei der Netzwerkübertragung (die technische Grundlage von HTTPS)."),
     term("Vendor Lock-in",
-      "Herstellerabhängigkeit: Wenn der Wechsel des Anbieters – durch Datenformate, Schnittstellen oder Kosten – faktisch unmöglich ist."),
+      "Ein Zustand, in dem die Kosten für Daten, Formate oder Gebühren einen Anbieterwechsel praktisch unmöglich machen."),
     term("Webhook / MQTT",
       "Zwei Wege zur ereignisgesteuerten Datenübermittlung: Ein Webhook ruft eine Ziel-URL auf, MQTT verteilt Nachrichten an Abonnenten."),
   )

@@ -25,9 +25,9 @@
 // ════════════════════════════════════════════════════════════════════════════
 #cover(
   title:    "Liste de contrôle pour les marchés publics · fondée sur les mécanismes minimaux · d'interopérabilité (MIMs)",
-  subtitle: "Que prévoir dans un marché public pour que votre ville conserve ses données",
-  tagline:  "Pour MIMs Plus 9.0 par OASC",
-  footer:   "À destination des acheteurs publics, chefs de projet et directeurs des systèmes d'information des municipalités européennes",
+  subtitle: "Ce qu'il faut spécifier dans les pièces de marché pour que la ville conserve la maîtrise de ses données",
+  tagline:  "Spécification : MIMs Plus 9.0 par OASC",
+  footer:   "À destination des acheteurs publics, chefs de projet et responsables informatiques des municipalités européennes",
   author:   "Auteur du livret : Marek Mráz",
 )
 
@@ -36,13 +36,13 @@
 //  WHY THIS BOOKLET
 // ════════════════════════════════════════════════════════════════════════════
 #fit-page("why")[
-  #band("Pourquoi ce livret")
+  #band("Objet de ce livret")
 
   #lead("Chaque année, les villes achètent des logiciels : systèmes de stationnement, plateformes de capteurs, portails cartographiques, jumeaux numériques. Trop souvent, les données collectées restent captives de ces systèmes. À la fin du contrat, les données — financées par l'argent public — partent avec le fournisseur ou restent bloquées dans un format illisible par un tiers.")
 
-  #lead("Cette situation n'est pas une fatalité. Les mécanismes minimaux d'interopérabilité (MIMs), gérés par Open & Agile Smart Cities (OASC) et soutenus par le mouvement européen living-in.eu, décrivent les exigences techniques minimales garantissant des données ouvertes, réutilisables et indépendantes de tout fournisseur. Ils sont délibérément concis : il ne s'agit pas d'une vaste architecture, mais des quelques règles indispensables pour que les systèmes communiquent entre eux.")
+  #lead("Cette situation n'est pas une fatalité. Les mécanismes minimaux d'interopérabilité (MIMs), gérés par Open & Agile Smart Cities (OASC) et soutenus par le mouvement européen living-in.eu, décrivent les exigences techniques minimales garantissant des données ouvertes, réutilisables et indépendantes de tout fournisseur. Ils sont délibérément concis : il ne s'agit pas d'une vaste architecture, mais des quelques conditions indispensables pour que les systèmes échangent des données.")
 
-  #lead("Nul besoin d'être ingénieur pour les utiliser. Chaque liste de contrôle traduit un MIM en points rédigés en langage clair, prêts à être copiés dans un marché public, assortis du motif de protection juridique et technique. Immédiatement après la liste, chaque exigence du MIM est reproduite au mot près, afin que vos services techniques et les soumissionnaires puissent en vérifier le détail.")
+  #lead("Aucune compétence technique n'est requise pour utiliser ce livret. Chaque liste de contrôle traduit un MIM en exigences rédigées en langage clair, prêtes à être copiées dans un dossier de consultation, assorties de leur justification. Immédiatement après la liste de contrôle, chaque exigence de ce MIM est reproduite au mot près, afin que vos services techniques et vos soumissionnaires puissent en vérifier les détails.")
 
   #lead("Les villes qui imposent les MIMs achètent une fois et réutilisent indéfiniment : les données de qualité de l'air alimentent le tableau de bord des écoles, l'inventaire de l'éclairage public nourrit le plan énergétique, et le prestataire suivant poursuit le travail sans rupture. Voilà l'interopérabilité en pratique — une exigence de plus en plus incontournable dans les projets financés par l'Union européenne.")
 
@@ -50,7 +50,7 @@
     "The minimal interoperability mechanisms (MIMs) enable a minimal but sufficient level of interoperability for data, systems, and services specifically in the context of smart city solutions. · The intended audience for this document are: · 1. Solution providers that wish to make sure their solutions are interoperable with other and allow fluid exchange of data within a Smart Cities and Communities context. · 2. Procurers that wish to procure solutions that are future-proof and allow cost-effective integration within an existing Smart Cities and Communities Information and Communication Technology (ICT) architecture.",
   )
 
-  #policy-box("Conformité des MIMs avec le droit de l'Union européenne",
+  #policy-box("Comment les MIMs s’articulent avec le droit de l’UE",
     "Les MIMs constituent une spécification technique et non une loi. Ils convergent avec les règles de l'Union européenne qui s'appliquent déjà aux données publiques et aux services numériques :",
     law("Directive sur les marchés publics", "Directive 2014/24/UE, article 42",
       "les spécifications techniques peuvent faire référence à des normes, toujours accompagnées de la mention « ou équivalent » ; en règle générale, elles ne peuvent mentionner de marque ou de produit déterminé."),
@@ -66,7 +66,7 @@
       "données à caractère personnel dans les systèmes urbains (stationnement, caméras, mobilité)."),
     law("Règlement sur l'IA (AI Act)", "Règlement (UE) 2024/1689",
       "règles applicables aux systèmes d'intelligence artificielle ; pertinent pour les modèles d'IA intégrés aux jumeaux numériques."),
-    note: "À titre indicatif uniquement. Vérifiez les modalités de transposition de chaque texte dans votre législation nationale.",
+    note: "À titre indicatif uniquement. Vérifiez la transposition de chaque texte dans votre pays.",
   )
 ]
 #pagebreak()
@@ -81,7 +81,7 @@
   #steps(
     step("Préparer",
       "Lisez les sept listes de contrôle. Cochez celles qui correspondent à votre achat. La plupart des marchés requièrent MIM0, MIM1, MIM2 et MIM6 ; ajoutez MIM3 pour le partage avec des tiers ou via un portail de données, MIM7 pour toute composante cartographique, MIM8 pour les jumeaux numériques."),
-    step("Passer le marché",
+    step("Lancer la consultation",
       "Copiez les points cochés dans vos spécifications techniques. Chaque point forme une phrase prête à coller. Intégrez les clauses transversales : peu coûteuses, elles préviennent tout verrouillage technologique.",
       links: (("clauses", "Clauses"), ("example", "Exemple"), )),
     step("Évaluer",
@@ -93,7 +93,7 @@
   )
 
   #legend("Comprendre les citations de la spécification",
-    note: "Les points de la liste emploient « doit », y compris lorsque la spécification ne fait que recommander (devrait) ou mentionne un mécanisme candidat. Ce choix relève de la décision du pouvoir adjudicateur.",
+    note: "Les points de la liste de contrôle énoncent chaque point comme une exigence, y compris lorsque la spécification ne fait que recommander (devrait) ou mentionne un mécanisme candidat. Ce choix relève de la décision du pouvoir adjudicateur.",
     entry("DOIT, DOIVENT (SHALL / MUST)", "obligatoire. Le système n'est pas conforme sans cet élément."),
     entry("NE DOIT PAS, NE DOIVENT PAS (MUST NOT)", "interdit. Tout système qui le fait est non conforme."),
     entry("DEVRAIT, DEVRAIENT (SHOULD)", "fortement recommandé. Tout écart exige une justification écrite probante."),
@@ -112,7 +112,7 @@
 #fit-page("glance")[
   #band("Sept MIMs et trois outils", id: "glance")
 
-  #intro("Sept mécanismes ciblés, un objectif : garder la maîtrise de vos données et garantir l'interopérabilité de vos systèmes.")
+  #intro("Sept mécanismes ciblés, un objectif : les données restent sous le contrôle de la ville et les systèmes fonctionnent ensemble.")
 
   #glance(
     note: "À propos de la numérotation : MIMs Plus 9.0 définit sept mécanismes, numérotés 0, 1, 2, 3, 6, 7 et 8. MIM4 (données personnelles) et MIM5 (IA éthique) sont issus d'anciennes versions d'OASC et ne figurent pas dans la 9.0. Ce livret ne comporte aucune omission.",
@@ -120,7 +120,7 @@
       "Pouvons-nous extraire nos données ?",
       "Les données sont accessibles via des API web standards, dans des formats lisibles par machine.",
       "https://mims.oascities.org/accessing-data"),
-    card("MIM1", "Relier les données",
+    card("MIM1", "Interconnecter les données",
       "Chaque entité possède-t-elle un nom pérenne ?",
       "Chaque capteur, lampadaire ou bâtiment dispose d'un identifiant unique et persistant.",
       "https://mims.oascities.org/interlinking-data"),
@@ -129,7 +129,7 @@
       "Les données respectent des modèles standards et documentés, aux unités explicites.",
       "https://mims.oascities.org/representing-data"),
     card("MIM3", "Échanger les données",
-      "Pouvons-nous partager selon des règles claires ?",
+      "Pouvons-nous partager selon des conditions claires ?",
       "Les jeux de données sont catalogués et partagés selon des licences types et une gouvernance claire.",
       "https://mims.oascities.org/exchanging-data"),
     card("MIM6", "Sécuriser les données",
@@ -170,7 +170,7 @@
   #mim-page(
     id:       "MIM0",
     name:     "Accéder aux données",
-    question: "Pouvons-nous récupérer nos données ?",
+    question: "Pouvons-nous extraire nos données ?",
     url:      "https://mims.oascities.org/accessing-data",
     intro:    "C'est le socle. Si les données ne peuvent pas quitter le système par une interface standardisée, tout le reste de ce guide n'est que théorie. Le MIM0 exige une chose pour chaque système que vous achetez : les données doivent être accessibles, dans un format lisible par machine, via le web ordinaire.",
     list:     "Liste de contrôle",
@@ -197,20 +197,20 @@
     num:  "0.4")
 
   #item("Les erreurs, la mise en cache et les limites de débit respectent les conventions HTTP standard et sont documentées.",
-    why:  "Les intégrations échouent de manière explicite et réparable, et non silencieusement.",
+    why:  "Les erreurs d'intégration sont explicites et corrigibles, et ne surviennent pas de façon silencieuse.",
     refs: "MIM0 C2",
     num:  "0.5")
 
   #panels(
     why:   ("Pourquoi c'est important", (
-      "Les données payées restent utilisables après la fin du marché.",
+      "Les données financées par la collectivité restent exploitables après la fin du marché.",
       "Les nouveaux services s'appuient sur les données existantes au lieu de repartir de zéro.",
       "Les coûts d'intégration diminuent pour tous les projets suivants.",
     )),
     flags: ("Signaux d'alerte", (
       "« Export de données sur demande auprès de notre support. »",
       "« L'API est disponible sous forme de module complémentaire payant. »",
-      "Facturation à la requête pour les propres données de la ville (voir la clause « Pas de frais par utilisateur / par requête »).",
+      "Facturation à la requête pour les propres données de la ville (voir la clause « Pas de frais pour l’accès à ses propres données »).",
     )),
   )
 ]
@@ -241,7 +241,7 @@
       tr: "Le ou les mécanismes d'accès DOIVENT être formellement décrits.",
       en: "Access mechanism(s) SHALL be formally described"),
     req("R1.4",
-      tr: "Les modèles de données utilisés par les charges utiles DEVRAIENT être spécifiés (voir MIM2).",
+      tr: "Les modèles de données utilisés par les charges utiles devraient être spécifiés (voir MIM2).",
       en: "Data Models used by payloads should be specified (see MIM2)"),
     capability("C2", "Access is structured and queryable",
       tr: "L'accès est structuré et interrogeable"),
@@ -249,7 +249,7 @@
       tr: "Les systèmes DOIVENT fournir des données via une interface structurée et cohérente.",
       en: "Systems SHALL provide data through a structured and consistent interface"),
     req("R2.2",
-      tr: "Les systèmes DOIVENT prendre en charge les requêtes et/ou le filtrage de base (par exemple par heure, localisation, attributs).",
+      tr: "Les systèmes DOIVENT prendre en charge les requêtes et/ou le filtrage de base (par exemple par date et heure, localisation, attributs).",
       en: "Systems SHALL support basic querying and/or filtering (e.g. by time, location, attributes)"),
     capability("C2 best practice", "Additional best practice to consider:",
       tr: "Bonne pratique supplémentaire à considérer :", sub: true),
@@ -257,7 +257,7 @@
       tr: "Les API DEVRAIENT prendre en charge la récupération des données actuelles · Les API DEVRAIENT prendre en charge la récupération des données historiques le cas échéant · Les API DEVRAIENT prendre en charge les requêtes géospatiales le cas échéant (voir MIM7) · Les API DEVRAIENT prendre en charge l'abonnement aux modifications le cas échéant · Les API DEVRAIENT exposer l'horodatage de la prochaine mise à jour attendue · Les API DEVRAIENT prendre en charge le versionnage explicite des points de terminaison · Les API DEVRAIENT fournir des exemples de charges utiles ou de requêtes de test · Les API DEVRAIENT prendre en charge les en-têtes HTTP standard de mise en cache · Les API DEVRAIENT communiquer l'état des limites de requêtes via des en-têtes HTTP standard · Les API DEVRAIENT renvoyer des corps d'erreur structurés · Les API PEUVENT prendre en charge des réponses partielles ou des projections de requêtes · Les API PEUVENT exposer un point de terminaison standard d'état/santé",
       en: "APIs SHOULD support retrieval of current data · APIs SHOULD support retrieval of historical data when applicable · APIs SHOULD support geospatial querying when applicable (see MIM7) · APIs SHOULD support subscription to changes when applicable · APIs SHOULD expose next expected update timestamp · APIs SHOULD support explicit versioning of endpoints · APIs SHOULD provide example payloads or test queries · APIs SHOULD support standard HTTP caching headers · APIs SHOULD communicate rate limit status via standard HTTP headers · APIs SHOULD return structured error bodies · APIs MAY support partial responses or query projections · APIs MAY expose a standard health/status endpoint"),
     capability("C3", "Changes in data can be subscribed to",
-      tr: "Il est possible de s'abonner aux modifications des données"),
+      tr: "Les modifications de données peuvent faire l’objet d’un abonnement"),
     req("R3.1",
       tr: "Les systèmes destinés à des cas d'usage nécessitant des notifications DOIVENT fournir au moins un mécanisme pour recevoir les mises à jour sur les modifications de données.",
       en: "Systems for use cases that require notifications SHALL provide at least one mechanism to receive updates on data changes"),
@@ -283,7 +283,7 @@
   #mim-page(
     id:       "MIM1",
     name:     "Interconnecter les données",
-    question: "Chaque élément possède-t-il un nom pérenne ?",
+    question: "Chaque entité possède-t-elle un nom pérenne ?",
     url:      "https://mims.oascities.org/interlinking-data",
     intro:    "Une ville regorge d'éléments : lampadaires, canalisations, bâtiments, places de stationnement. Les systèmes passent, mais ces éléments demeurent. Le MIM1 exige que chaque élément reçoive un nom — un identifiant — qui subsiste au logiciel l'ayant initialement enregistré, afin que son historique et ses liens avec d'autres données survivent à chaque migration.",
     list:     "Liste de contrôle",
@@ -300,11 +300,11 @@
     num:  "1.2")
 
   #item("Lorsqu'un même élément réel existe dans plusieurs systèmes, les identifiants peuvent être mis en correspondance.",
-    why:  "Le bâtiment du SIG et le bâtiment du système de gestion de l'énergie sont démontrablement le même bâtiment.",
+    why:  "Il est possible de prouver que le bâtiment du SIG et le bâtiment du système de gestion de l'énergie sont le même bâtiment.",
     refs: "MIM1 R1.3, R1.4",
     num:  "1.3")
 
-  #item("Les identifiants n'intègrent pas de données internes au fournisseur (identifiants de lignes de base de données, noms de serveurs).",
+  #item("Les identifiants n’intègrent pas de données internes au fournisseur (identifiants de lignes de base de données, noms de serveurs).",
     why:  "Sinon, les identifiants s'éteignent avec le marché.",
     refs: "MIM1 M1 §3.1",
     num:  "1.4")
@@ -404,7 +404,7 @@
     refs: "MIM2 R1.1",
     num:  "2.2")
 
-  #item("Les extensions sont livrées sous forme de profils ou ajouts documentés au-dessus du modèle standard — jamais sous forme d'une branche privée modifiée.",
+  #item("Les extensions sont livrées sous forme de profils ou ajouts documentés complétant le modèle standard — jamais sous forme d'un fork privé modifié.",
     why:  "Vous restez compatible avec la communauté et les mises à jour futures.",
     refs: "MIM2 R1.2b, R4.1, R4.2",
     num:  "2.3")
@@ -422,7 +422,7 @@
     )),
     flags: ("Signaux d'alerte", (
       "« Notre modèle de données propriétaire est plus riche que le standard. »",
-      "Documentation accessible uniquement sous accord de confidentialité (NDA).",
+      "Documentation disponible uniquement sous accord de confidentialité.",
     )),
   )
 ]
@@ -444,7 +444,7 @@
     capability("C1", "All entities included in data sources are described using consistent data models to enable interoperability for applications and systems",
       tr: "Toutes les entités incluses dans les sources de données sont décrites à l'aide de modèles de données cohérents afin de permettre l'interopérabilité pour les applications et les systèmes"),
     req("R1.1",
-      tr: "Les modèles de données utilisés pour toutes les entités de toute source de données doivent être rendus explicites. Ils doivent être bien documentés et comporter des métadonnées descriptives, où les termes utilisés doivent être sémantiquement sans ambiguïté. Pour les attributs liés aux unités de mesure, aux formats d'heure, etc., les unités, formats, etc. utilisés doivent être rendus explicites. Les modèles de données devraient être catalogués afin de pouvoir être facilement trouvables.",
+      tr: "Les modèles de données utilisés pour toutes les entités de toute source de données doivent être rendus explicites. Ils doivent être bien documentés et comporter des métadonnées descriptives, où les termes utilisés doivent être sémantiquement sans ambiguïté. Pour les attributs liés aux unités de mesure, aux formats d'heure, etc., les unités, formats, etc. utilisés doivent être rendus explicites. Les modèles de données devraient être catalogués afin d'être faciles à trouver.",
       en: "Data models used for all entities in any data source shall be made explicit. They shall be well documented and have descriptive metadata, where the terms used shall be semantically unambiguous. For attributes related to units of measurement, time formats etc, the units, formats etc, used shall be made explicit. The data models should be catalogued so that they can be easily findable."),
     req("R1.2a",
       tr: "Les modèles de données utilisés doivent être fondés (dans la mesure du possible) sur des modèles de données standardisés communément reconnus tels qu'énumérés ci-dessous.",
@@ -467,7 +467,7 @@
       en: "Each data model used shall have at least one defined machine-readable data transport format (“serialisation”) that is open, publicly available and implementation-independent."),
     req("R3.2",
       tr: "La documentation du format de transport de données devrait être suffisante pour permettre la création d'une application ou d'un interpréteur non propriétaire capable de reconstruire toutes les données stockées dans un tel format de données.",
-      en: "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor that is able to reconstruct all the data stored in such a data format."),
+      en: "The documentation of the data transport format should be sufficient to allow the creation of non-proprietary application or interpretor [sic] that is able to reconstruct all the data stored in such a data format."),
     req("R3.3",
       tr: "Lorsque plusieurs formats de transport de données sont pris en charge pour le même modèle de données, ils doivent représenter le même contenu informatif de manière cohérente et sans perte de sens.",
       en: "Where multiple data transport formats are supported for the same data model, they shall represent the same information content consistently and without loss of meaning."),
@@ -496,19 +496,19 @@
   #mim-page(
     id:       "MIM3",
     name:     "Échanger les données",
-    question: "Pouvons-nous partager selon des modalités claires ?",
+    question: "Pouvons-nous partager selon des conditions claires ?",
     url:      "https://mims.oascities.org/exchanging-data",
-    intro:    "Toutes les données de la ville ne peuvent pas être simplement publiées : certaines sont commerciales, d'autres sensibles. Le MIM3 vise à partager le reste en toute sécurité : un catalogue consultable, des licences types plutôt qu'un jargon juridique sur mesure, et des règles de gouvernance lisibles par tous. La spécification formule la quasi-totalité du MIM3 sous forme de recommandation (voir p. 3).",
+    intro:    "Toutes les données de la ville ne peuvent pas être simplement publiées : certaines sont commerciales, d'autres sensibles. Le MIM3 vise à partager le reste malgré tout, en toute sécurité : un catalogue consultable, des licences issues de modèles plutôt qu'un texte juridique sur mesure, et des règles de gouvernance lisibles par tous. La spécification formule la quasi-totalité du MIM3 sous forme de recommandation (voir p. 3).",
     list:     "Liste de contrôle",
   )
 
-  #item("Chaque jeu de données offert par le système est décrit avec des métadonnées standards (par exemple DCAT-AP) dans un catalogue, afin que d'autres puissent le découvrir.",
+  #item("Chaque jeu de données mis à disposition par le système est décrit avec des métadonnées standards (par exemple DCAT-AP) dans un catalogue, afin que d'autres puissent le découvrir.",
     why:  "Une donnée introuvable est une donnée inutilisée.",
     refs: "MIM3 RC4.1–RC4.3",
     num:  "3.1")
 
-  #item("Les conditions et licences d'utilisation des données sont issues de modèles reconnus (par ex. licences ouvertes, accords types de partage de données), et non d'un jargon juridique spécifique par jeu de données.",
-    why:  "Les accords s'adaptent à l'échelle ; les juristes ne deviennent pas le goulot d'étranglement.",
+  #item("Les conditions et licences d'utilisation des données sont issues de modèles reconnus (par ex. licences ouvertes, accords types de partage de données), et non d'un texte juridique sur mesure par jeu de données.",
+    why:  "Les accords passent à l'échelle sans examen juridique au cas par cas.",
     refs: "MIM3 RC2.2, RC2.3",
     num:  "3.2")
 
@@ -524,7 +524,7 @@
       "Un référentiel unique remplace de multiples contrats individuels de partage de données.",
     )),
     flags: ("Signaux d'alerte", (
-      "Le fournisseur revendique des droits sur les données de la ville (voir la clause « Propriété des données »).",
+      "Le fournisseur revendique des droits sur les données de la ville (voir la clause « Droits sur les données »).",
       "Le partage avec un tiers requiert l'accord ou le paiement du fournisseur.",
     )),
   )
@@ -611,7 +611,7 @@
     capability("C6", "Data exchange can be agreed upon",
       tr: "Un échange de données peut être convenu"),
     req("RC6.1",
-      tr: "Les utilisateurs et les fournisseurs de données devraient pouvoir s'accorder sur un échange de données et les conditions générales qui y sont associées (par exemple, acceptation des conditions, signature juridique d'un accord ou négociation).",
+      tr: "Les utilisateurs et les fournisseurs de données devraient pouvoir s'accorder sur un échange de données et les conditions générales qui y sont associées (par exemple, acceptation des conditions, signature formelle d'un accord ou négociation).",
       en: "Data users and providers should be able to agree to a data exchange and the terms and conditions associated with it (e.g. acceptance of terms, legal signature of an agreement, or negotiation)."),
     req("RC6.2",
       tr: "Les utilisateurs et les fournisseurs de données devraient pouvoir mettre fin à un échange de données préalablement convenu conformément aux conditions générales qui y sont associées.",
@@ -641,7 +641,7 @@
   #mim-page(
     id:       "MIM6",
     name:     "Sécuriser les données",
-    question: "Nos données sont-elles sûres lors du transit et de l'usage ?",
+    question: "Nos données sont-elles protégées ?",
     url:      "https://mims.oascities.org/securing-data",
     intro:    "Les villes intelligentes sont des cibles. Le MIM6 adopte un périmètre délibérément ciblé et pragmatique : chiffrer les données en circulation, utiliser des mécanismes de connexion standards plutôt que propriétaires, contrôler et tracer qui accède à quoi. Rien d'exotique — tout doit figurer au contrat.",
     list:     "Liste de contrôle",
@@ -653,7 +653,7 @@
     num:  "6.1")
 
   #item("La connexion et l'accès applicatif utilisent des normes ouvertes — OAuth 2.0 / OpenID Connect — et peuvent s'intégrer au fournisseur d'identité existant de la ville.",
-    why:  "Un compte par agent, et non un par produit de fournisseur ; les sortants perdent leurs accès partout en une seule fois.",
+    why:  "Un compte par agent, et non un par produit de fournisseur ; les agents qui quittent la collectivité perdent leurs accès partout en une seule fois.",
     refs: "MIM6 R3.1, M1.2, M1.3",
     num:  "6.2")
 
@@ -662,7 +662,7 @@
     refs: "MIM6 R1.1, R1.3, 8.15",
     num:  "6.3")
 
-  #item("Le fournisseur doit démontrer sa conformité avec l'ISO/IEC 27001:2022 (ou équivalent) pour le service qu'il exploite.",
+  #item("Le soumissionnaire démontre son alignement sur l'ISO/IEC 27001:2022 (ou équivalent) pour le service qu'il exploite.",
     why:  "La sécurité est un processus, pas une simple case à cocher à la livraison. La spécification cite les mesures de l'ISO/IEC 27001, non un certificat.",
     refs: "MIM6 C1–C3 (ISO/IEC 27001)",
     num:  "6.4",
@@ -672,10 +672,10 @@
     why:   ("Pourquoi c'est important", (
       "Une faille dans un système n'ouvre pas tous les systèmes.",
       "Lorsque NIS 2 s'applique à vous, s'y conformer ainsi qu'aux règles nationales de cybersécurité devient nettement plus aisé.",
-      "En cas d'incident, les journaux indiquent quoi et qui.",
+      "Après un incident, les journaux montrent ce qui s'est passé et qui est intervenu.",
     )),
     flags: ("Signaux d'alerte", (
-      "Authentification propriétaire exclusive.",
+      "Connexion propriétaire uniquement.",
       "« Journaux disponibles sur demande. »",
       "Comptes d'administration partagés.",
     )),
@@ -699,7 +699,7 @@
     capability("C1", "Data is only accessible to users that should have access to it",
       tr: "Les données ne sont accessibles qu'aux utilisateurs qui devraient y avoir accès"),
     req("R1.1",
-      tr: "Des règles pour contrôler l'accès physique et logique aux informations et aux autres actifs associés DOIVENT être établies et mises en œuvre en fonction des exigences de l'activité et de sécurité de l'information. (ISO 27001 5.15 Contrôle d'accès)",
+      tr: "Des règles pour contrôler l'accès physique et logique aux informations et aux autres actifs associés DOIVENT être établies et mises en œuvre en fonction des exigences métier et de sécurité de l'information. (ISO 27001 5.15 Contrôle d'accès)",
       en: "Rules to control physical and logical access to information and other associated assets SHALL be established and implemented based on business and information security requirements. (ISO 27001 5.15 Access control)"),
     req("R1.2",
       tr: "L'attribution et la gestion des informations d'authentification DOIVENT être contrôlées par un processus de gestion, incluant le conseil au personnel sur le traitement approprié des informations d'authentification. (ISO 27001 5.17 : Informations d'authentification)",
@@ -750,7 +750,7 @@
   #mim-page(
     id:       "MIM7",
     name:     "Données géospatiales",
-    question: "Cela fonctionne-t-il sur une carte ?",
+    question: "S'intègrent-elles sur une carte ?",
     url:      "https://mims.oascities.org/geospatial-data",
     intro:    "Presque tout ce qu'une ville possède a un emplacement. Le MIM7 veille à ce que l'emplacement ne soit pas une capture d'écran : les données spatiales circulent via des interfaces standards de l'OGC, dans des formats ouverts, avec un système de coordonnées toujours explicite — afin que chaque couche cartographique acquise s'aligne avec chaque couche déjà possédée.",
     list:     "Liste de contrôle",
@@ -762,7 +762,7 @@
     num:  "7.1")
 
   #item("Les données géospatiales sont encodées dans des formats ouverts (GeoJSON, CityJSON ; GML/CityGML si nécessaire).",
-    why:  "Pas de licences de convertisseurs, pas d'impasses techniques.",
+    why:  "Aucune licence de convertisseur, aucune impasse.",
     refs: "MIM7 R2.1",
     num:  "7.2")
 
@@ -778,12 +778,12 @@
 
   #panels(
     why:   ("Pourquoi c'est important", (
-      "Une carte urbaine unique au lieu de dix visionneuses de fournisseurs.",
+      "Une seule carte de la ville au lieu de dix visualiseurs de fournisseurs.",
       "Les obligations liées à INSPIRE et aux géoportails nationaux deviennent plus simples, pas plus lourdes.",
-      "Les données 3D et du BIM peuvent s'intégrer plus tard à la même vue d'ensemble.",
+      "Les données 3D et du BIM peuvent rejoindre la même vue plus tard.",
     )),
     flags: ("Signaux d'alerte", (
-      "Les données cartographiques ne vivent qu'au sein de la visionneuse du fournisseur.",
+      "Les données cartographiques ne vivent qu’à l’intérieur du visualiseur du fournisseur.",
       "« Export en PDF ou capture d'écran. »",
     )),
   )
@@ -809,7 +809,7 @@
       tr: "Les données géospatiales doivent être exposées via une interface de service Web fondée sur des normes.",
       en: "Geospatial data shall be exposed through a standards-based web service interface."),
     capability("C2", "Cities and communities can integrate 2D and 3D geospatial data coming from a variety of sources, for example geodata and building information models, and share that data within and between them in an interoperable way",
-      tr: "Les villes et communautés peuvent intégrer des données géospatiales 2D et 3D provenant de diverses sources, par exemple des données géographiques et des modèles d'information du bâtiment (BIM), et partager ces données au sein d'elles-mêmes et entre elles de manière interopérable"),
+      tr: "Les villes et communautés peuvent intégrer des données géospatiales 2D et 3D provenant de diverses sources, par exemple des données géographiques et des modèles d'information du bâtiment (BIM), et partager ces données en leur sein et entre elles de manière interopérable"),
     req("R2.1",
       tr: "Les données géospatiales doivent être encodées à l'aide de normes ouvertes. Il est recommandé d'utiliser les normes pertinentes de l'OGC et de BuildingSMART International.",
       en: "Geospatial data shall be encoded using open standards. It is recommended to use relevant standards from OGC and BuildingSMART International."),
@@ -858,7 +858,7 @@
     refs: "MIM8 R3.1, R3.2",
     num:  "8.2")
 
-  #item("Les résultats utilisent des formats standards (GeoJSON, CityJSON, 3D Tiles, NetCDF…) exploitables par des outils non fournis par ce prestataire.",
+  #item("Les résultats utilisent des formats standards (GeoJSON, CityJSON, 3D Tiles, NetCDF…) lisibles par des outils tiers.",
     why:  "La visualisation et l'analyse restent des marchés concurrentiels.",
     refs: "MIM8 M2",
     num:  "8.3")
@@ -948,7 +948,7 @@
       tr: "Le LDT prend en charge différents types de visualisation interactive, tels que des cartes 2D, des scènes 3D, des tableaux de bord, des rapports ou des vues destinées au public.",
       en: "The LDT supports different interactive visualisation types, such as 2D maps, 3D scenes, dashboards, reports, or public-facing views."),
     capability("C6", "Ensure that data exchanged (and simulation outputs) within and between LDTs can be interpreted consistently through shared or mapped semantics and clear provenance",
-      tr: "Garantir que les données échangées (et les résultats de simulation) au sein des LDT et entre eux peuvent être interprétées de manière cohérente grâce à une sémantique partagée ou mise en correspondance et une provenance claire"),
+      tr: "Garantir que les données échangées (et les résultats de simulation) au sein des LDT et entre eux peuvent être interprétés de manière cohérente grâce à une sémantique partagée ou mise en correspondance et une provenance claire"),
     req("R6.1",
       tr: "Le LDT devrait documenter les écarts sémantiques non résolus, les hypothèses ou les correspondances susceptibles d'affecter l'interprétation, la réutilisation ou la comparaison des résultats.",
       en: "The LDT should document unresolved semantic gaps, assumptions, or mappings that may affect the interpretation, reuse, or comparison of results."),
@@ -989,16 +989,16 @@
       "À l'échéance du contrat, l'ensemble des données de la ville (et les configurations) est restitué dans des formats ouverts et documentés, sans frais supplémentaires."),
     clause("Droits sur les données",
       "L'ensemble des droits sur les données collectées et dérivées dans le cadre du contrat appartient au pouvoir adjudicateur."),
-    clause("Absence de redevance par utilisateur ou par requête",
-      "Aucune redevance n'est due pour l'accès de la ville à ses propres données."),
+    clause("Pas de frais pour l’accès à ses propres données",
+      "Le pouvoir adjudicateur ne paie aucun frais pour l'accès à ses propres données, ni par utilisateur ni par requête."),
     clause("Stabilité et gestion des versions d'API",
-      "Le titulaire garantit la rétrocompatibilité de l'API pendant toute la durée du contrat. Tout changement de rupture est notifié au moins 6 mois à l'avance et fait l'objet d'une nouvelle version, la version antérieure restant accessible jusqu'à la date de transition convenue."),
+      "Le titulaire garantit la rétrocompatibilité de l'API pendant toute la durée du contrat. Toute modification entraînant une rupture de compatibilité est notifiée au moins 6 mois à l'avance et fait l'objet d'une nouvelle version, la version antérieure restant accessible jusqu'à la date de transition convenue."),
     clause("Démontrer au lieu de promettre",
-      "Les soumissionnaires apportent la preuve de leur conformité dès l'évaluation des offres au lieu de produire de simples déclarations sur l'honneur. Pour une API, cela implique la publication d'une documentation interactive (de type OpenAPI) et une requête directe retournant des données valides. Chaque point coché fait l'objet d'un nouveau contrôle lors de la réception."),
+      "Les soumissionnaires apportent la preuve de leur conformité dès l'évaluation des offres au lieu de produire de simples déclarations sur l'honneur. Pour une API, cela implique la publication d'une documentation interactive (de type OpenAPI) et un appel en direct retournant des données valides. Chaque point coché fait l'objet d'un nouveau contrôle lors de la réception."),
     clause("Désignation de standards ouverts",
-      "Le marché public désigne les standards ci-dessus ; toute prétention de compatibilité doit mentionner précisément l'interface et la version. Chaque référence à une norme ou spécification technique admet une solution équivalente ; il incombe au soumissionnaire d'en prouver l'équivalence."),
+      "Les documents de la consultation désignent des normes précises ; les déclarations de « compatibilité avec » doivent citer l'interface et la version exactes. Chaque référence à une norme ou à une spécification technique admet une solution équivalente ; le soumissionnaire prouve l'équivalence."),
     clause("Déclaration de conformité aux MIMs",
-      "Le soumissionnaire complète le tableau de conformité (p. 23) ; celui-ci devient une annexe au contrat."),
+      "Le soumissionnaire complète le tableau de conformité (p. 28) ; celui-ci devient une annexe au contrat."),
   )
 ]
 #pagebreak()
@@ -1010,7 +1010,7 @@
 #fit-page("example")[
   #band("Exemple : acquisition d'un réseau de capteurs de qualité de l'air", id: "example")
 
-  #intro(size: 9.8pt, "Pages cochées : MIM0, MIM1, MIM2, MIM6 et MIM7 (les données sont visualisées sur une carte). De MIM3, seul le point 3.1 est retenu (les données de qualité de l'air étant diffusées en open data, elles doivent figurer dans un catalogue) ; MIM8 est exclu : il ne s'agit pas d'un jumeau numérique.")
+  #intro(size: 9.8pt, "Pages cochées : MIM0, MIM1, MIM2, MIM6 et MIM7 (les données sont intégrées sur une carte). De MIM3, seul le point 3.1 est retenu (les données sur la qualité de l'air sont publiées en données ouvertes, elles doivent donc figurer dans un catalogue) ; MIM8 ne s'applique pas : le système n'est pas un jumeau numérique.")
 
   #text(size: 10pt, weight: "bold", fill: eu-blue, "Ventilation dans les documents du marché")
   #v(4pt)
@@ -1018,7 +1018,7 @@
   #doc-table(
     ("Document", "Terme dans la directive 2014/24/UE", "Contenu à intégrer"),
     (
-      ("Cahier des clauses techniques particulières (CCTP)",
+      ("Spécification technique",
        "spécifications techniques (art. 42)",
        "les points cochés de MIM0, MIM1, MIM2, MIM3 (3.1 uniquement), MIM6 (sauf 6.4) et MIM7, au mot près, avec la référence à la spécification, accompagnés de la mention relative à l'équivalence"),
       ("Règlement de la consultation",
@@ -1029,7 +1029,7 @@
        "le tableau de conformité en annexe obligatoire de l'offre : C, E ou N pour chaque point, avec les éléments de preuve (adresse de la documentation d'API, accès d'essai)"),
       ("Projet de contrat (CCAP)",
        "conditions d'exécution du contrat (art. 70)",
-       "clause de réversibilité, propriété des données, absence de redevance par utilisateur ou par requête, stabilité et gestion des versions d'API ; le tableau de conformité complété annexé au contrat"),
+       "Clause de réversibilité, Droits sur les données, Pas de frais pour l’accès à ses propres données, Stabilité et gestion des versions d'API; le tableau de conformité complété annexé au contrat"),
       ("Protocole de réception",
        "conditions d'exécution du contrat (art. 70)",
        "la colonne « Vérifié » du tableau de conformité faisant office de protocole d'essai"),
@@ -1043,17 +1043,17 @@
     "4.3.3 L'API permet le filtrage des données selon l'horodatage et le lieu de mesure. (MIM0 R2.1, R2.2)",
     "… 4.3.4 à 4.3.21 : autres points cochés …",
     "4.3.22 Chaque référence à une norme ou spécification technique admet une solution équivalente ; le soumissionnaire apporte la preuve de cette équivalence.",
-    "4.3.23 Le soumissionnaire renseigne le tableau de conformité (annexe aux pièces de marché) et produit les éléments de preuve pour chaque point exigé. Le soumissionnaire démontre le respect des points 4.3.1 à 4.3.21 par une requête d'API en direct lors de l'évaluation des offres ; le pouvoir adjudicateur les contrôle de nouveau lors de la réception. Un défaut de conformité constitue un motif de refus de réception.",
+    "4.3.23 Le soumissionnaire renseigne le tableau de conformité (annexé aux pièces de marché) et fournit les preuves pour chaque point exigé. Pendant l'évaluation des offres, le soumissionnaire démontre le respect des points 4.3.1 à 4.3.21 (par exemple par un appel d'API en direct) ; une offre non conforme sur un point exigé ne répond pas aux exigences de l'objet du marché. Le pouvoir adjudicateur contrôle à nouveau ces points lors de la réception ; tout manquement constitue alors un motif de refus de réception.",
   ))
 
-  #note(size: 9pt, "Le point 4.3.3 montre qu'il est possible d'adapter un point à l'objet du marché : pour des capteurs, il est pertinent d'exiger un filtrage par date et par lieu de mesure.")
+  #note(size: 9pt, "Le point 4.3.3 montre qu'il est possible d'adapter un point à l'objet du marché : pour des capteurs, il est pertinent d'exiger un filtrage par horodatage et par lieu de mesure.")
 
   #v(4pt)
   #text(size: 10pt, weight: "bold", fill: eu-blue, "Exemple de tableau de conformité complété (extrait)")
   #v(4pt)
 
   #filled-table(
-    ("#", "Exigence (résumé)", "C / E / N", "Éléments de preuve : méthode et référence", "Vérifié"),
+    ("#", "Exigence (résumé)", "C / E / N", "Preuve : comment et où", "Vérifié"),
     (
       ("0.1", "Données lisibles par machine via une API web standard", "C", "L'API REST retourne du JSON et du CSV ; documentation disponible à l'adresse indiquée dans l'offre, p. 12 ; accès d'essai en annexe 3", "✓"),
       ("0.4", "Abonnement aux modifications si requis", "N", "non pris en charge actuellement ; planifié pour la prochaine version", "—"),
@@ -1061,7 +1061,7 @@
     ),
   )
 
-  #note(size: 9pt, gap: 5pt, "Une promesse future correspond à la mention N : la commission ne valide que ce que le soumissionnaire est en mesure de démontrer.")
+  #note(size: 9pt, gap: 5pt, "Une promesse de fonctionnalité future correspond à la mention N : la commission ne vérifie que ce que le soumissionnaire est en mesure de démontrer. Pour un point exigé, N signifie que l'offre ne satisfait pas aux exigences de l'objet du marché.")
 
   #note(size: 9pt, gap: 5pt, "Adaptez la formulation au droit national et faites-la valider par votre responsable des marchés publics.")
 ]
@@ -1073,65 +1073,65 @@
 // ════════════════════════════════════════════════════════════════════════════
 #band("Tableau de conformité", id: "table")
 
-#intro(size: 9.4pt, gap: 5pt, "Une ligne par point. Le pouvoir adjudicateur coche les exigences applicables au marché et joint ce tableau aux pièces de marché en tant qu'annexe obligatoire de l'offre. Pour chaque point requis, le soumissionnaire indique C (conforme), E (conforme par équivalent) ou N (non conforme), décrit brièvement la solution et précise la localisation des preuves : adresse de documentation, accès de test, page de l'offre. Une simple déclaration non étayée est irrecevable. La commission d'évaluation examine chaque point lors de l'évaluation des offres et de nouveau lors de la réception (✓ validé, ✗ non validé, — non vérifié).")
+#intro(size: 9.4pt, gap: 5pt, "Une ligne par point. Le pouvoir adjudicateur coche les exigences applicables au marché et joint ce tableau aux pièces de marché en tant qu'annexe obligatoire de l'offre. Pour chaque point requis, le soumissionnaire indique C (conforme), E (conforme par équivalent) ou N (non conforme), décrit brièvement la solution et précise la localisation des preuves : adresse de documentation, accès de test, page de l'offre. Une simple déclaration sans élément de preuve ne saurait suffire. La commission d'évaluation examine chaque point lors de l'évaluation des offres et de nouveau lors de la réception (✓ validé, ✗ non validé, — non vérifié).")
 
 #intro(size: 9.4pt, gap: 8pt, "Le tableau complété fait partie intégrante de l'offre et devient une annexe au contrat. Il sert à vérifier la conformité aux exigences de l'objet du marché (satisfait ou non satisfait) ; il ne constitue pas un critère d'attribution. Pour noter la conformité, indiquez-le expressément parmi les critères d'attribution publiés préalablement dans les documents de la consultation (Directive 2014/24/UE, article 67).")
 
 #score-sheet(
-  headers: ("#", "Exigence (résumé)", "Réf. spéc.", "Exigé ?", "C / E / N", "Éléments de preuve : méthode et référence", "Vérifié"),
+  headers: ("#", "Exigence (résumé)", "Réf. spéc.", "Exigé ?", "C / E / N", "Preuve : comment et où", "Vérifié"),
   roles: ("pouvoir adjudicateur", "soumissionnaire", "soumissionnaire", "commission"),
-  section("MIM0 · Pouvons-nous récupérer nos données ?",
-    ("0.1", "Données lisibles par machine via API standard", "MIM0 R1.1, R1.2"),
+  section("MIM0 · Pouvons-nous extraire nos données ?",
+    ("0.1", "Données lisibles par machine via API web standard", "MIM0 R1.1, R1.2"),
     ("0.2", "Description d'API ouverte (OpenAPI) à adresse stable", "MIM0 R1.3"),
     ("0.3", "Filtrage par critères temporels, spatiaux et attributs", "MIM0 R2.1, R2.2"),
     ("0.4", "Abonnement aux modifications si requis", "MIM0 R3.1"),
-    ("0.5", "Erreurs HTTP standard, mise en cache et quotas", "MIM0 C2"),
+    ("0.5", "Erreurs HTTP standard, mise en cache et limitation de débit", "MIM0 C2"),
   ),
-  section("MIM1 · Chaque élément possède-t-il un nom pérenne ?",
+  section("MIM1 · Chaque entité possède-t-elle un nom pérenne ?",
     ("1.1", "Identifiant pérenne et unique par entité", "MIM1 R1.1, R1.5"),
     ("1.2", "Résolution de l'identifiant avec données et type", "MIM1 R1.2, R2.1, R2.2"),
-    ("1.3", "Mise en correspondance inter-systèmes des identifiants", "MIM1 R1.3, R1.4"),
+    ("1.3", "Correspondance des identifiants entre systèmes", "MIM1 R1.3, R1.4"),
     ("1.4", "Identifiants exempts de données internes propriétaires", "MIM1 M1 §3.1"),
   ),
   section("MIM2 · Parlons-nous un langage commun ?",
-    ("2.1", "Modèles de données standards privilégiés", "MIM2 R1.2a"),
+    ("2.1", "Modèles de données standards dans la mesure du possible", "MIM2 R1.2a"),
     ("2.2", "Modèles documentés et unités explicites", "MIM2 R1.1"),
-    ("2.3", "Extensions sous forme de profils, sans fragmentation", "MIM2 R1.2b, R4.1, R4.2"),
+    ("2.3", "Extensions sous forme de profils, jamais de forks", "MIM2 R1.2b, R4.1, R4.2"),
     ("2.4", "Sérialisation ouverte validable par schéma", "MIM2 R3.1, R3.4"),
   ),
-  section("MIM3 · Pouvons-nous partager selon des modalités claires ?",
+  section("MIM3 · Pouvons-nous partager selon des conditions claires ?",
     ("3.1", "Jeux de données catalogués avec métadonnées standards", "MIM3 RC4.1–RC4.3"),
     ("3.2", "Licences types et accords contractuels modèles", "MIM3 RC2.2, RC2.3"),
-    ("3.3", "Contrôle autonome des conditions d'accès par la ville", "MIM3 RC1.1, RC2.1"),
+    ("3.3", "La ville contrôle elle-même les conditions d’accès", "MIM3 RC1.1, RC2.1"),
   ),
-  section("MIM6 · Nos données sont-elles sûres lors du transit et de l'usage ?",
+  section("MIM6 · Nos données sont-elles protégées ?",
     ("6.1", "Chiffrement des transferts (TLS 1.3)", "MIM6 R2.1, M1.1"),
     ("6.2", "Authentification standard (OAuth 2.0 / OIDC)", "MIM6 R3.1, M1.2, M1.3"),
     ("6.3", "Contrôle d'accès par rôles et journaux d'audit", "MIM6 R1.1, R1.3, 8.15"),
-    ("6.4", "Conformité démontrée avec ISO/IEC 27001:2022", "MIM6 C1–C3 (ISO/IEC 27001)"),
+    ("6.4", "Alignement démontré sur ISO/IEC 27001:2022", "MIM6 C1–C3 (ISO/IEC 27001)"),
   ),
-  section("MIM7 · Cela fonctionne-t-il sur une carte ?",
-    ("7.1", "Interfaces conformes aux standards OGC", "MIM7 R1.1"),
+  section("MIM7 · S'intègrent-elles sur une carte ?",
+    ("7.1", "Interfaces standards OGC", "MIM7 R1.1"),
     ("7.2", "Formats géospatiaux ouverts", "MIM7 R2.1"),
     ("7.3", "Système de coordonnées déclaré (EPSG)", "MIM7 R5.1"),
     ("7.4", "Identifiants pérennes sur les entités spatiales (cf. 1.1)", "MIM7 R4.1"),
   ),
   section("MIM8 · Notre jumeau numérique peut-il évoluer ?",
-    ("8.1", "Données et résultats du jumeau accessibles par API", "MIM8 R1.1"),
+    ("8.1", "Données et résultats du jumeau via des API", "MIM8 R1.1"),
     ("8.2", "Modèles documentés et exécutables", "MIM8 R3.1, R3.2"),
     ("8.3", "Formats de sortie standards", "MIM8 M2"),
-    ("8.4", "Traçabilité de provenance des traitements enregistrée", "MIM8 R4.4"),
+    ("8.4", "Provenance des flux de travail enregistrée", "MIM8 R4.4"),
   ),
   section("Clauses contractuelles transversales", accent: magenta, note: "Le soumissionnaire confirme l'acceptation de la clause contractuelle (C / N).",
     ("X.1", "Réversibilité : restitution gratuite en formats ouverts", "—"),
     ("X.2", "Droits sur les données détenus par le pouvoir adjudicateur", "—"),
-    ("X.3", "Accès gratuit de la collectivité à ses propres données", "—"),
-    ("X.4", "Stabilité API : versionnée, préavis de 6 mois si rupture", "—"),
+    ("X.3", "Pas de frais pour accéder à ses propres données", "—"),
+    ("X.4", "Stabilité de l'API : versionnée, préavis de 6 mois si incompatibilité", "—"),
   ),
 )
 
 #note(size: 8.4pt, gap: 6pt, "Les intitulés abrégés ci-dessous renvoient aux points complets de la liste de contrôle figurant sur les pages des MIMs — en cas de divergence, le texte complet prévaut.")
-#spec-link("Une version modifiable de ce tableau est disponible à l'adresse :", "https://marek-mraz.github.io/mims-procurement-checklist/")
+#spec-link("Une version modifiable du tableau se trouve à :", "https://marek-mraz.github.io/mims-procurement-checklist/")
 #pagebreak()
 
 
@@ -1167,7 +1167,7 @@
     term("OGC",
       "Open Geospatial Consortium : organisme d'édiction de standards relatifs aux données et services géospatiaux (OGC API, WFS, SensorThings)."),
     term("Standard ouvert",
-      "Spécification technique que chacun peut consulter et mettre en œuvre librement, sans droits d'auteur ni autorisation préalable."),
+      "Règle technique que chacun peut consulter et mettre en œuvre gratuitement et sans autorisation particulière."),
     term("OpenAPI",
       "Format ouvert de description lisible par machine d'une API web : points d'accès, paramètres, structures des réponses."),
     term("Sérialisation",
@@ -1175,7 +1175,7 @@
     term("TLS",
       "Protocole assurant le chiffrement des flux de données sur les réseaux informatiques (protocole sous-jacent à HTTPS)."),
     term("Verrouillage propriétaire",
-      "Situation dans laquelle le coût de sortie d'un prestataire — en pertes de données, conversions ou frais — rend le changement captif."),
+      "Situation dans laquelle le coût des données, des formats ou des frais rend un changement de fournisseur pratiquement impossible."),
     term("Webhook / MQTT",
       "Deux protocoles de transmission d'événements : un webhook appelle une URL définie, MQTT transmet les messages aux abonnés."),
   )
@@ -1184,7 +1184,7 @@
     more-link("mims.oascities.org", "Spécification complète des MIMs Plus, maintenue par OASC."),
     more-link("living-in.eu", "Mouvement européen pour la transformation numérique des villes — déclaration et cadre des MIMs Plus."),
     more-link("smartdatamodels.org", "Référentiel ouvert de modèles de données standards (FIWARE, TM Forum, IUDX, OASC)."),
-    more-link("oascities.org/academy", "CITYxCITY Academy — formations à destination des agents territoriaux, conçues par les collectivités."),
+    more-link("oascities.org/academy", "CITYxCITY Academy — cours pour le personnel municipal, par les villes."),
   )
 ]
 
@@ -1194,7 +1194,7 @@
 // ════════════════════════════════════════════════════════════════════════════
 #pagebreak()
 #back-cover(
-  "Établi à partir de la spécification MIMs Plus 9.0 élaborée par Open & Agile Smart Cities (mims.oascities.org). Contenu de la spécification © OASC. Ce livret est un guide pratique indépendant destiné à la commande publique municipale ; en cas de litige, seule la spécification fait foi.",
+  "Établi à partir de la spécification MIMs Plus 9.0 élaborée par Open & Agile Smart Cities (mims.oascities.org). Contenu de la spécification © OASC. Ce livret est un guide pratique indépendant destiné à la commande publique municipale ; en cas de doute, la spécification fait foi.",
   "Conçu avec des outils ouverts. Réutilisable et adaptable librement par votre collectivité.",
   author: "Auteur du livret : Marek Mráz",
 )
